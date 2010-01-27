@@ -1,0 +1,694 @@
+GUIKernel.cpp.o: GUIKernel.cpp SGInterface.h ../shogun/lib/memory.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../libshogun/lib/memory.h \
+ ../libshogun/lib/config.h ../shogun/base/SGObject.h \
+ ../libshogun/lib/io.h ../libshogun/lib/common.h ../libshogun/base/init.h \
+ ../libshogun/base/Parallel.h ../libshogun/base/Version.h \
+ ../libshogun/lib/versionstring.h ../shogun/features/Features.h \
+ ../libshogun/base/SGObject.h ../libshogun/preproc/PreProc.h \
+ ../libshogun/features/FeatureTypes.h ../libshogun/features/Features.h \
+ ../shogun/features/StringFeatures.h ../libshogun/lib/Cache.h \
+ ../libshogun/lib/Mathematics.h ../libshogun/lib/lapack.h \
+ ../libshogun/preproc/StringPreProc.h \
+ ../libshogun/features/StringFeatures.h ../libshogun/features/Alphabet.h \
+ ../libshogun/lib/DynamicArray.h ../libshogun/lib/File.h \
+ ../libshogun/lib/SimpleFile.h ../libshogun/lib/MemoryMappedFile.h \
+ ../libshogun/lib/Compressor.h ../shogun/lib/io.h \
+ ../shogun/features/SparseFeatures.h ../libshogun/features/Labels.h \
+ ../libshogun/features/DotFeatures.h \
+ ../libshogun/features/SimpleFeatures.h \
+ ../libshogun/preproc/SimplePreProc.h \
+ ../libshogun/preproc/SparsePreProc.h \
+ ../libshogun/features/SparseFeatures.h \
+ ../shogun/features/AttributeFeatures.h ../shogun/kernel/Kernel.h \
+ ../libshogun/lib/Signal.h ../libshogun/lib/ShogunException.h \
+ ../libshogun/kernel/KernelNormalizer.h ../libshogun/kernel/Kernel.h \
+ GUIClassifier.h ../shogun/classifier/Classifier.h \
+ ../shogun/classifier/svm/SVM.h ../libshogun/classifier/KernelMachine.h \
+ ../libshogun/classifier/Classifier.h GUIDistance.h \
+ ../shogun/distance/Distance.h GUIFeatures.h ../shogun/features/Labels.h \
+ ../shogun/features/RealFileFeatures.h ../shogun/features/TOPFeatures.h \
+ ../libshogun/distributions/HMM.h \
+ ../libshogun/distributions/Distribution.h \
+ ../shogun/features/FKFeatures.h ../shogun/features/SimpleFeatures.h \
+ ../shogun/features/CombinedFeatures.h ../libshogun/lib/List.h \
+ ../shogun/features/CombinedDotFeatures.h ../shogun/features/WDFeatures.h \
+ ../shogun/features/ExplicitSpecFeatures.h \
+ ../shogun/features/ImplicitWeightedSpecFeatures.h GUIHMM.h \
+ ../shogun/distributions/HMM.h GUIKernel.h GUILabels.h GUIMath.h \
+ GUIPluginEstimate.h ../shogun/classifier/PluginEstimate.h \
+ ../libshogun/distributions/LinearHMM.h GUIPreProc.h ../shogun/lib/List.h \
+ ../shogun/preproc/PreProc.h GUITime.h ../shogun/lib/Time.h \
+ GUIStructure.h ../shogun/structure/Plif.h \
+ ../libshogun/structure/PlifBase.h ../shogun/structure/PlifArray.h \
+ ../shogun/structure/PlifBase.h ../shogun/structure/DynProg.h \
+ ../libshogun/structure/PlifMatrix.h ../libshogun/structure/Plif.h \
+ ../libshogun/lib/Array.h ../libshogun/lib/Array2.h \
+ ../libshogun/lib/Array3.h ../libshogun/structure/IntronList.h \
+ ../libshogun/structure/SegmentLoss.h ../libshogun/lib/Time.h \
+ ../shogun/structure/PlifMatrix.h ../shogun/kernel/CombinedKernel.h \
+ ../libshogun/features/CombinedFeatures.h ../shogun/kernel/Chi2Kernel.h \
+ ../libshogun/kernel/SimpleKernel.h ../shogun/kernel/LinearKernel.h \
+ ../shogun/kernel/LinearByteKernel.h \
+ ../shogun/kernel/LinearStringKernel.h ../libshogun/kernel/StringKernel.h \
+ ../shogun/kernel/LinearWordKernel.h \
+ ../shogun/kernel/WeightedDegreeStringKernel.h ../libshogun/lib/Trie.h \
+ ../shogun/kernel/WeightedDegreePositionStringKernel.h \
+ ../libshogun/kernel/WeightedDegreeStringKernel.h \
+ ../shogun/kernel/FixedDegreeStringKernel.h \
+ ../shogun/kernel/LocalityImprovedStringKernel.h \
+ ../shogun/kernel/SimpleLocalityImprovedStringKernel.h \
+ ../shogun/kernel/PolyKernel.h ../shogun/kernel/CustomKernel.h \
+ ../shogun/kernel/ConstKernel.h \
+ ../shogun/kernel/PolyMatchWordStringKernel.h \
+ ../shogun/kernel/PolyMatchStringKernel.h \
+ ../shogun/kernel/LocalAlignmentStringKernel.h \
+ ../shogun/kernel/MatchWordStringKernel.h \
+ ../shogun/kernel/CommWordStringKernel.h \
+ ../shogun/kernel/WeightedCommWordStringKernel.h \
+ ../libshogun/kernel/CommWordStringKernel.h \
+ ../shogun/kernel/CommUlongStringKernel.h \
+ ../shogun/kernel/HistogramWordStringKernel.h \
+ ../libshogun/classifier/PluginEstimate.h \
+ ../shogun/kernel/SalzbergWordStringKernel.h \
+ ../shogun/kernel/GaussianKernel.h ../shogun/kernel/GaussianShiftKernel.h \
+ ../libshogun/kernel/GaussianKernel.h ../shogun/kernel/SigmoidKernel.h \
+ ../shogun/kernel/SparseLinearKernel.h ../libshogun/kernel/SparseKernel.h \
+ ../shogun/kernel/SparsePolyKernel.h \
+ ../shogun/kernel/SparseGaussianKernel.h ../shogun/kernel/DiagKernel.h \
+ ../shogun/kernel/OligoStringKernel.h ../shogun/kernel/DistanceKernel.h \
+ ../libshogun/distance/Distance.h \
+ ../shogun/kernel/TensorProductPairKernel.h \
+ ../shogun/kernel/AvgDiagKernelNormalizer.h \
+ ../shogun/kernel/RidgeKernelNormalizer.h \
+ ../shogun/kernel/FirstElementKernelNormalizer.h \
+ ../shogun/kernel/IdentityKernelNormalizer.h \
+ ../shogun/kernel/SqrtDiagKernelNormalizer.h \
+ ../shogun/kernel/VarianceKernelNormalizer.h
+GUIStructure.cpp.o: GUIStructure.cpp SGInterface.h ../shogun/lib/memory.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../libshogun/lib/memory.h \
+ ../libshogun/lib/config.h ../shogun/base/SGObject.h \
+ ../libshogun/lib/io.h ../libshogun/lib/common.h ../libshogun/base/init.h \
+ ../libshogun/base/Parallel.h ../libshogun/base/Version.h \
+ ../libshogun/lib/versionstring.h ../shogun/features/Features.h \
+ ../libshogun/base/SGObject.h ../libshogun/preproc/PreProc.h \
+ ../libshogun/features/FeatureTypes.h ../libshogun/features/Features.h \
+ ../shogun/features/StringFeatures.h ../libshogun/lib/Cache.h \
+ ../libshogun/lib/Mathematics.h ../libshogun/lib/lapack.h \
+ ../libshogun/preproc/StringPreProc.h \
+ ../libshogun/features/StringFeatures.h ../libshogun/features/Alphabet.h \
+ ../libshogun/lib/DynamicArray.h ../libshogun/lib/File.h \
+ ../libshogun/lib/SimpleFile.h ../libshogun/lib/MemoryMappedFile.h \
+ ../libshogun/lib/Compressor.h ../shogun/lib/io.h \
+ ../shogun/features/SparseFeatures.h ../libshogun/features/Labels.h \
+ ../libshogun/features/DotFeatures.h \
+ ../libshogun/features/SimpleFeatures.h \
+ ../libshogun/preproc/SimplePreProc.h \
+ ../libshogun/preproc/SparsePreProc.h \
+ ../libshogun/features/SparseFeatures.h \
+ ../shogun/features/AttributeFeatures.h ../shogun/kernel/Kernel.h \
+ ../libshogun/lib/Signal.h ../libshogun/lib/ShogunException.h \
+ ../libshogun/kernel/KernelNormalizer.h ../libshogun/kernel/Kernel.h \
+ GUIClassifier.h ../shogun/classifier/Classifier.h \
+ ../shogun/classifier/svm/SVM.h ../libshogun/classifier/KernelMachine.h \
+ ../libshogun/classifier/Classifier.h GUIDistance.h \
+ ../shogun/distance/Distance.h GUIFeatures.h ../shogun/features/Labels.h \
+ ../shogun/features/RealFileFeatures.h ../shogun/features/TOPFeatures.h \
+ ../libshogun/distributions/HMM.h \
+ ../libshogun/distributions/Distribution.h \
+ ../shogun/features/FKFeatures.h ../shogun/features/SimpleFeatures.h \
+ ../shogun/features/CombinedFeatures.h ../libshogun/lib/List.h \
+ ../shogun/features/CombinedDotFeatures.h ../shogun/features/WDFeatures.h \
+ ../shogun/features/ExplicitSpecFeatures.h \
+ ../shogun/features/ImplicitWeightedSpecFeatures.h GUIHMM.h \
+ ../shogun/distributions/HMM.h GUIKernel.h GUILabels.h GUIMath.h \
+ GUIPluginEstimate.h ../shogun/classifier/PluginEstimate.h \
+ ../libshogun/distributions/LinearHMM.h GUIPreProc.h ../shogun/lib/List.h \
+ ../shogun/preproc/PreProc.h GUITime.h ../shogun/lib/Time.h \
+ GUIStructure.h ../shogun/structure/Plif.h \
+ ../libshogun/structure/PlifBase.h ../shogun/structure/PlifArray.h \
+ ../shogun/structure/PlifBase.h ../shogun/structure/DynProg.h \
+ ../libshogun/structure/PlifMatrix.h ../libshogun/structure/Plif.h \
+ ../libshogun/lib/Array.h ../libshogun/lib/Array2.h \
+ ../libshogun/lib/Array3.h ../libshogun/structure/IntronList.h \
+ ../libshogun/structure/SegmentLoss.h ../libshogun/lib/Time.h \
+ ../shogun/structure/PlifMatrix.h
+GUIClassifier.cpp.o: GUIClassifier.cpp GUIClassifier.h \
+ ../shogun/lib/config.h ../shogun/base/SGObject.h ../libshogun/lib/io.h \
+ ../libshogun/lib/common.h ../libshogun/lib/memory.h \
+ ../libshogun/lib/config.h ../libshogun/base/init.h \
+ ../libshogun/base/Parallel.h ../libshogun/base/Version.h \
+ ../libshogun/lib/versionstring.h ../shogun/classifier/Classifier.h \
+ ../libshogun/base/SGObject.h ../libshogun/lib/Mathematics.h \
+ ../libshogun/lib/lapack.h ../libshogun/features/Labels.h \
+ ../libshogun/features/Features.h ../libshogun/preproc/PreProc.h \
+ ../libshogun/features/FeatureTypes.h ../shogun/classifier/svm/SVM.h \
+ ../libshogun/kernel/Kernel.h ../libshogun/lib/Signal.h \
+ ../libshogun/lib/ShogunException.h \
+ ../libshogun/kernel/KernelNormalizer.h \
+ ../libshogun/classifier/KernelMachine.h \
+ ../libshogun/classifier/Classifier.h SGInterface.h \
+ ../shogun/lib/memory.h ../shogun/lib/common.h \
+ ../shogun/features/Features.h ../shogun/features/StringFeatures.h \
+ ../libshogun/lib/Cache.h ../libshogun/preproc/StringPreProc.h \
+ ../libshogun/features/StringFeatures.h ../libshogun/features/Alphabet.h \
+ ../libshogun/lib/DynamicArray.h ../libshogun/lib/File.h \
+ ../libshogun/lib/SimpleFile.h ../libshogun/lib/MemoryMappedFile.h \
+ ../libshogun/lib/Compressor.h ../shogun/lib/io.h \
+ ../shogun/features/SparseFeatures.h ../libshogun/features/DotFeatures.h \
+ ../libshogun/features/SimpleFeatures.h \
+ ../libshogun/preproc/SimplePreProc.h \
+ ../libshogun/preproc/SparsePreProc.h \
+ ../libshogun/features/SparseFeatures.h \
+ ../shogun/features/AttributeFeatures.h ../shogun/kernel/Kernel.h \
+ GUIDistance.h ../shogun/distance/Distance.h GUIFeatures.h \
+ ../shogun/features/Labels.h ../shogun/features/RealFileFeatures.h \
+ ../shogun/features/TOPFeatures.h ../libshogun/distributions/HMM.h \
+ ../libshogun/distributions/Distribution.h \
+ ../shogun/features/FKFeatures.h ../shogun/features/SimpleFeatures.h \
+ ../shogun/features/CombinedFeatures.h ../libshogun/lib/List.h \
+ ../shogun/features/CombinedDotFeatures.h ../shogun/features/WDFeatures.h \
+ ../shogun/features/ExplicitSpecFeatures.h \
+ ../shogun/features/ImplicitWeightedSpecFeatures.h GUIHMM.h \
+ ../shogun/distributions/HMM.h GUIKernel.h GUILabels.h GUIMath.h \
+ GUIPluginEstimate.h ../shogun/classifier/PluginEstimate.h \
+ ../libshogun/distributions/LinearHMM.h GUIPreProc.h ../shogun/lib/List.h \
+ ../shogun/preproc/PreProc.h GUITime.h ../shogun/lib/Time.h \
+ GUIStructure.h ../shogun/structure/Plif.h \
+ ../libshogun/structure/PlifBase.h ../shogun/structure/PlifArray.h \
+ ../shogun/structure/PlifBase.h ../shogun/structure/DynProg.h \
+ ../libshogun/structure/PlifMatrix.h ../libshogun/structure/Plif.h \
+ ../libshogun/lib/Array.h ../libshogun/lib/Array2.h \
+ ../libshogun/lib/Array3.h ../libshogun/structure/IntronList.h \
+ ../libshogun/structure/SegmentLoss.h ../libshogun/lib/Time.h \
+ ../shogun/structure/PlifMatrix.h ../shogun/kernel/AUCKernel.h \
+ ../libshogun/kernel/SimpleKernel.h ../shogun/classifier/KNN.h \
+ ../libshogun/distance/Distance.h \
+ ../libshogun/classifier/DistanceMachine.h ../shogun/clustering/KMeans.h \
+ ../shogun/clustering/Hierarchical.h ../shogun/classifier/LDA.h \
+ ../libshogun/classifier/LinearClassifier.h ../shogun/classifier/LPM.h \
+ ../shogun/classifier/LPBoost.h ../shogun/classifier/Perceptron.h \
+ ../shogun/classifier/KernelPerceptron.h \
+ ../shogun/classifier/LinearClassifier.h \
+ ../shogun/classifier/svm/SVM_light.h ../libshogun/classifier/svm/SVM.h \
+ ../shogun/regression/svr/SVR_light.h \
+ ../libshogun/regression/Regression.h \
+ ../libshogun/classifier/svm/SVM_light.h \
+ ../shogun/classifier/mkl/MKLClassification.h \
+ ../libshogun/classifier/mkl/MKL.h \
+ ../shogun/regression/svr/MKLRegression.h \
+ ../shogun/classifier/mkl/MKLOneClass.h \
+ ../shogun/classifier/mkl/MKLMultiClass.h \
+ ../libshogun/kernel/CombinedKernel.h \
+ ../libshogun/features/CombinedFeatures.h \
+ ../libshogun/classifier/svm/GMNPSVM.h \
+ ../libshogun/classifier/svm/MultiClassSVM.h \
+ ../libshogun/classifier/mkl/MKLMultiClassGLPK.h \
+ ../shogun/classifier/svm/LibSVM.h \
+ ../libshogun/classifier/svm/SVM_libsvm.h \
+ ../shogun/classifier/svm/LaRank.h ../shogun/classifier/svm/GPBTSVM.h \
+ ../shogun/classifier/svm/LibSVMOneClass.h \
+ ../shogun/classifier/svm/LibSVMMultiClass.h \
+ ../libshogun/classifier/svm/LibSVM.h ../shogun/regression/svr/LibSVR.h \
+ ../shogun/regression/KRR.h ../shogun/classifier/svm/LibLinear.h \
+ ../shogun/classifier/svm/MPDSVM.h ../shogun/classifier/svm/GNPPSVM.h \
+ ../shogun/classifier/svm/GMNPSVM.h ../shogun/classifier/svm/ScatterSVM.h \
+ ../shogun/classifier/svm/SVMLin.h \
+ ../shogun/classifier/svm/SubGradientSVM.h \
+ ../shogun/classifier/SubGradientLPM.h ../shogun/classifier/svm/SVMOcas.h \
+ ../shogun/classifier/svm/SVMSGD.h ../shogun/classifier/svm/WDSVMOcas.h \
+ ../libshogun/classifier/svm/SVMOcas.h
+GUIHMM.cpp.o: GUIHMM.cpp GUIHMM.h ../shogun/lib/config.h \
+ ../shogun/base/SGObject.h ../libshogun/lib/io.h \
+ ../libshogun/lib/common.h ../libshogun/lib/memory.h \
+ ../libshogun/lib/config.h ../libshogun/base/init.h \
+ ../libshogun/base/Parallel.h ../libshogun/base/Version.h \
+ ../libshogun/lib/versionstring.h ../shogun/distributions/HMM.h \
+ ../libshogun/lib/Mathematics.h ../libshogun/lib/lapack.h \
+ ../libshogun/base/SGObject.h ../libshogun/features/Features.h \
+ ../libshogun/preproc/PreProc.h ../libshogun/features/FeatureTypes.h \
+ ../libshogun/features/StringFeatures.h ../libshogun/lib/Cache.h \
+ ../libshogun/preproc/StringPreProc.h ../libshogun/features/Alphabet.h \
+ ../libshogun/lib/DynamicArray.h ../libshogun/lib/File.h \
+ ../libshogun/lib/SimpleFile.h ../libshogun/lib/MemoryMappedFile.h \
+ ../libshogun/lib/Compressor.h ../shogun/lib/common.h ../shogun/lib/io.h \
+ ../libshogun/distributions/Distribution.h ../shogun/features/Labels.h \
+ SGInterface.h ../shogun/lib/memory.h ../shogun/features/Features.h \
+ ../shogun/features/StringFeatures.h ../shogun/features/SparseFeatures.h \
+ ../libshogun/features/Labels.h ../libshogun/features/DotFeatures.h \
+ ../libshogun/features/SimpleFeatures.h \
+ ../libshogun/preproc/SimplePreProc.h \
+ ../libshogun/preproc/SparsePreProc.h \
+ ../libshogun/features/SparseFeatures.h \
+ ../shogun/features/AttributeFeatures.h ../shogun/kernel/Kernel.h \
+ ../libshogun/lib/Signal.h ../libshogun/lib/ShogunException.h \
+ ../libshogun/kernel/KernelNormalizer.h ../libshogun/kernel/Kernel.h \
+ GUIClassifier.h ../shogun/classifier/Classifier.h \
+ ../shogun/classifier/svm/SVM.h ../libshogun/classifier/KernelMachine.h \
+ ../libshogun/classifier/Classifier.h GUIDistance.h \
+ ../shogun/distance/Distance.h GUIFeatures.h \
+ ../shogun/features/RealFileFeatures.h ../shogun/features/TOPFeatures.h \
+ ../libshogun/distributions/HMM.h ../shogun/features/FKFeatures.h \
+ ../shogun/features/SimpleFeatures.h \
+ ../shogun/features/CombinedFeatures.h ../libshogun/lib/List.h \
+ ../shogun/features/CombinedDotFeatures.h ../shogun/features/WDFeatures.h \
+ ../shogun/features/ExplicitSpecFeatures.h \
+ ../shogun/features/ImplicitWeightedSpecFeatures.h GUIKernel.h \
+ GUILabels.h GUIMath.h GUIPluginEstimate.h \
+ ../shogun/classifier/PluginEstimate.h \
+ ../libshogun/distributions/LinearHMM.h GUIPreProc.h ../shogun/lib/List.h \
+ ../shogun/preproc/PreProc.h GUITime.h ../shogun/lib/Time.h \
+ GUIStructure.h ../shogun/structure/Plif.h \
+ ../libshogun/structure/PlifBase.h ../shogun/structure/PlifArray.h \
+ ../shogun/structure/PlifBase.h ../shogun/structure/DynProg.h \
+ ../libshogun/structure/PlifMatrix.h ../libshogun/structure/Plif.h \
+ ../libshogun/lib/Array.h ../libshogun/lib/Array2.h \
+ ../libshogun/lib/Array3.h ../libshogun/structure/IntronList.h \
+ ../libshogun/structure/SegmentLoss.h ../libshogun/lib/Time.h \
+ ../shogun/structure/PlifMatrix.h
+GUIPluginEstimate.cpp.o: GUIPluginEstimate.cpp SGInterface.h \
+ ../shogun/lib/memory.h ../shogun/lib/config.h ../shogun/lib/common.h \
+ ../libshogun/lib/memory.h ../libshogun/lib/config.h \
+ ../shogun/base/SGObject.h ../libshogun/lib/io.h \
+ ../libshogun/lib/common.h ../libshogun/base/init.h \
+ ../libshogun/base/Parallel.h ../libshogun/base/Version.h \
+ ../libshogun/lib/versionstring.h ../shogun/features/Features.h \
+ ../libshogun/base/SGObject.h ../libshogun/preproc/PreProc.h \
+ ../libshogun/features/FeatureTypes.h ../libshogun/features/Features.h \
+ ../shogun/features/StringFeatures.h ../libshogun/lib/Cache.h \
+ ../libshogun/lib/Mathematics.h ../libshogun/lib/lapack.h \
+ ../libshogun/preproc/StringPreProc.h \
+ ../libshogun/features/StringFeatures.h ../libshogun/features/Alphabet.h \
+ ../libshogun/lib/DynamicArray.h ../libshogun/lib/File.h \
+ ../libshogun/lib/SimpleFile.h ../libshogun/lib/MemoryMappedFile.h \
+ ../libshogun/lib/Compressor.h ../shogun/lib/io.h \
+ ../shogun/features/SparseFeatures.h ../libshogun/features/Labels.h \
+ ../libshogun/features/DotFeatures.h \
+ ../libshogun/features/SimpleFeatures.h \
+ ../libshogun/preproc/SimplePreProc.h \
+ ../libshogun/preproc/SparsePreProc.h \
+ ../libshogun/features/SparseFeatures.h \
+ ../shogun/features/AttributeFeatures.h ../shogun/kernel/Kernel.h \
+ ../libshogun/lib/Signal.h ../libshogun/lib/ShogunException.h \
+ ../libshogun/kernel/KernelNormalizer.h ../libshogun/kernel/Kernel.h \
+ GUIClassifier.h ../shogun/classifier/Classifier.h \
+ ../shogun/classifier/svm/SVM.h ../libshogun/classifier/KernelMachine.h \
+ ../libshogun/classifier/Classifier.h GUIDistance.h \
+ ../shogun/distance/Distance.h GUIFeatures.h ../shogun/features/Labels.h \
+ ../shogun/features/RealFileFeatures.h ../shogun/features/TOPFeatures.h \
+ ../libshogun/distributions/HMM.h \
+ ../libshogun/distributions/Distribution.h \
+ ../shogun/features/FKFeatures.h ../shogun/features/SimpleFeatures.h \
+ ../shogun/features/CombinedFeatures.h ../libshogun/lib/List.h \
+ ../shogun/features/CombinedDotFeatures.h ../shogun/features/WDFeatures.h \
+ ../shogun/features/ExplicitSpecFeatures.h \
+ ../shogun/features/ImplicitWeightedSpecFeatures.h GUIHMM.h \
+ ../shogun/distributions/HMM.h GUIKernel.h GUILabels.h GUIMath.h \
+ GUIPluginEstimate.h ../shogun/classifier/PluginEstimate.h \
+ ../libshogun/distributions/LinearHMM.h GUIPreProc.h ../shogun/lib/List.h \
+ ../shogun/preproc/PreProc.h GUITime.h ../shogun/lib/Time.h \
+ GUIStructure.h ../shogun/structure/Plif.h \
+ ../libshogun/structure/PlifBase.h ../shogun/structure/PlifArray.h \
+ ../shogun/structure/PlifBase.h ../shogun/structure/DynProg.h \
+ ../libshogun/structure/PlifMatrix.h ../libshogun/structure/Plif.h \
+ ../libshogun/lib/Array.h ../libshogun/lib/Array2.h \
+ ../libshogun/lib/Array3.h ../libshogun/structure/IntronList.h \
+ ../libshogun/structure/SegmentLoss.h ../libshogun/lib/Time.h \
+ ../shogun/structure/PlifMatrix.h
+GUIDistance.cpp.o: GUIDistance.cpp GUIDistance.h ../shogun/lib/config.h \
+ ../shogun/base/SGObject.h ../libshogun/lib/io.h \
+ ../libshogun/lib/common.h ../libshogun/lib/memory.h \
+ ../libshogun/lib/config.h ../libshogun/base/init.h \
+ ../libshogun/base/Parallel.h ../libshogun/base/Version.h \
+ ../libshogun/lib/versionstring.h ../shogun/distance/Distance.h \
+ ../libshogun/lib/Mathematics.h ../libshogun/lib/lapack.h \
+ ../libshogun/base/SGObject.h ../libshogun/features/Features.h \
+ ../libshogun/preproc/PreProc.h ../libshogun/features/FeatureTypes.h \
+ ../shogun/features/Features.h SGInterface.h ../shogun/lib/memory.h \
+ ../shogun/lib/common.h ../shogun/features/StringFeatures.h \
+ ../libshogun/lib/Cache.h ../libshogun/preproc/StringPreProc.h \
+ ../libshogun/features/StringFeatures.h ../libshogun/features/Alphabet.h \
+ ../libshogun/lib/DynamicArray.h ../libshogun/lib/File.h \
+ ../libshogun/lib/SimpleFile.h ../libshogun/lib/MemoryMappedFile.h \
+ ../libshogun/lib/Compressor.h ../shogun/lib/io.h \
+ ../shogun/features/SparseFeatures.h ../libshogun/features/Labels.h \
+ ../libshogun/features/DotFeatures.h \
+ ../libshogun/features/SimpleFeatures.h \
+ ../libshogun/preproc/SimplePreProc.h \
+ ../libshogun/preproc/SparsePreProc.h \
+ ../libshogun/features/SparseFeatures.h \
+ ../shogun/features/AttributeFeatures.h ../shogun/kernel/Kernel.h \
+ ../libshogun/lib/Signal.h ../libshogun/lib/ShogunException.h \
+ ../libshogun/kernel/KernelNormalizer.h ../libshogun/kernel/Kernel.h \
+ GUIClassifier.h ../shogun/classifier/Classifier.h \
+ ../shogun/classifier/svm/SVM.h ../libshogun/classifier/KernelMachine.h \
+ ../libshogun/classifier/Classifier.h GUIFeatures.h \
+ ../shogun/features/Labels.h ../shogun/features/RealFileFeatures.h \
+ ../shogun/features/TOPFeatures.h ../libshogun/distributions/HMM.h \
+ ../libshogun/distributions/Distribution.h \
+ ../shogun/features/FKFeatures.h ../shogun/features/SimpleFeatures.h \
+ ../shogun/features/CombinedFeatures.h ../libshogun/lib/List.h \
+ ../shogun/features/CombinedDotFeatures.h ../shogun/features/WDFeatures.h \
+ ../shogun/features/ExplicitSpecFeatures.h \
+ ../shogun/features/ImplicitWeightedSpecFeatures.h GUIHMM.h \
+ ../shogun/distributions/HMM.h GUIKernel.h GUILabels.h GUIMath.h \
+ GUIPluginEstimate.h ../shogun/classifier/PluginEstimate.h \
+ ../libshogun/distributions/LinearHMM.h GUIPreProc.h ../shogun/lib/List.h \
+ ../shogun/preproc/PreProc.h GUITime.h ../shogun/lib/Time.h \
+ GUIStructure.h ../shogun/structure/Plif.h \
+ ../libshogun/structure/PlifBase.h ../shogun/structure/PlifArray.h \
+ ../shogun/structure/PlifBase.h ../shogun/structure/DynProg.h \
+ ../libshogun/structure/PlifMatrix.h ../libshogun/structure/Plif.h \
+ ../libshogun/lib/Array.h ../libshogun/lib/Array2.h \
+ ../libshogun/lib/Array3.h ../libshogun/structure/IntronList.h \
+ ../libshogun/structure/SegmentLoss.h ../libshogun/lib/Time.h \
+ ../shogun/structure/PlifMatrix.h ../shogun/distance/SimpleDistance.h \
+ ../libshogun/distance/Distance.h ../shogun/distance/CanberraMetric.h \
+ ../libshogun/distance/SimpleDistance.h \
+ ../shogun/distance/ChebyshewMetric.h ../shogun/distance/GeodesicMetric.h \
+ ../shogun/distance/JensenMetric.h ../shogun/distance/ManhattanMetric.h \
+ ../shogun/distance/MinkowskiMetric.h \
+ ../shogun/distance/CanberraWordDistance.h \
+ ../libshogun/distance/StringDistance.h \
+ ../shogun/distance/ManhattanWordDistance.h \
+ ../shogun/distance/HammingWordDistance.h \
+ ../shogun/distance/EuclidianDistance.h \
+ ../libshogun/distance/RealDistance.h \
+ ../shogun/distance/SparseEuclidianDistance.h \
+ ../libshogun/distance/SparseDistance.h \
+ ../shogun/distance/TanimotoDistance.h \
+ ../shogun/distance/ChiSquareDistance.h \
+ ../shogun/distance/CosineDistance.h \
+ ../shogun/distance/BrayCurtisDistance.h
+SGInterface.cpp.o: SGInterface.cpp ../libshogun/lib/memory.cpp \
+ ../libshogun/lib/ShogunException.h ../libshogun/lib/memory.h \
+ ../libshogun/lib/common.h ../libshogun/lib/config.h \
+ ../libshogun/lib/Set.h ../libshogun/lib/Mathematics.h \
+ ../libshogun/lib/io.h ../libshogun/base/init.h ../libshogun/lib/lapack.h \
+ ../libshogun/base/SGObject.h ../libshogun/base/Parallel.h \
+ ../libshogun/base/Version.h ../libshogun/lib/versionstring.h \
+ ../libshogun/lib/DynamicArray.h GUICommands.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h SGInterface.h ../shogun/lib/memory.h \
+ ../shogun/base/SGObject.h ../shogun/features/Features.h \
+ ../libshogun/preproc/PreProc.h ../libshogun/features/FeatureTypes.h \
+ ../libshogun/features/Features.h ../shogun/features/StringFeatures.h \
+ ../libshogun/lib/Cache.h ../libshogun/preproc/StringPreProc.h \
+ ../libshogun/features/StringFeatures.h ../libshogun/features/Alphabet.h \
+ ../libshogun/lib/File.h ../libshogun/lib/SimpleFile.h \
+ ../libshogun/lib/MemoryMappedFile.h ../libshogun/lib/Compressor.h \
+ ../shogun/lib/io.h ../shogun/features/SparseFeatures.h \
+ ../libshogun/features/Labels.h ../libshogun/features/DotFeatures.h \
+ ../libshogun/features/SimpleFeatures.h \
+ ../libshogun/preproc/SimplePreProc.h \
+ ../libshogun/preproc/SparsePreProc.h \
+ ../libshogun/features/SparseFeatures.h \
+ ../shogun/features/AttributeFeatures.h ../shogun/kernel/Kernel.h \
+ ../libshogun/lib/Signal.h ../libshogun/kernel/KernelNormalizer.h \
+ ../libshogun/kernel/Kernel.h GUIClassifier.h \
+ ../shogun/classifier/Classifier.h ../shogun/classifier/svm/SVM.h \
+ ../libshogun/classifier/KernelMachine.h \
+ ../libshogun/classifier/Classifier.h GUIDistance.h \
+ ../shogun/distance/Distance.h GUIFeatures.h ../shogun/features/Labels.h \
+ ../shogun/features/RealFileFeatures.h ../shogun/features/TOPFeatures.h \
+ ../libshogun/distributions/HMM.h \
+ ../libshogun/distributions/Distribution.h \
+ ../shogun/features/FKFeatures.h ../shogun/features/SimpleFeatures.h \
+ ../shogun/features/CombinedFeatures.h ../libshogun/lib/List.h \
+ ../shogun/features/CombinedDotFeatures.h ../shogun/features/WDFeatures.h \
+ ../shogun/features/ExplicitSpecFeatures.h \
+ ../shogun/features/ImplicitWeightedSpecFeatures.h GUIHMM.h \
+ ../shogun/distributions/HMM.h GUIKernel.h GUILabels.h GUIMath.h \
+ GUIPluginEstimate.h ../shogun/classifier/PluginEstimate.h \
+ ../libshogun/distributions/LinearHMM.h GUIPreProc.h ../shogun/lib/List.h \
+ ../shogun/preproc/PreProc.h GUITime.h ../shogun/lib/Time.h \
+ GUIStructure.h ../shogun/structure/Plif.h \
+ ../libshogun/structure/PlifBase.h ../shogun/structure/PlifArray.h \
+ ../shogun/structure/PlifBase.h ../shogun/structure/DynProg.h \
+ ../libshogun/structure/PlifMatrix.h ../libshogun/structure/Plif.h \
+ ../libshogun/lib/Array.h ../libshogun/lib/Array2.h \
+ ../libshogun/lib/Array3.h ../libshogun/structure/IntronList.h \
+ ../libshogun/structure/SegmentLoss.h ../libshogun/lib/Time.h \
+ ../shogun/structure/PlifMatrix.h SyntaxHighLight.h \
+ ../shogun/lib/ShogunException.h ../shogun/lib/Mathematics.h \
+ ../shogun/lib/Hash.h ../shogun/lib/Signal.h \
+ ../shogun/classifier/LinearClassifier.h ../shogun/classifier/mkl/MKL.h \
+ ../libshogun/classifier/svm/SVM.h \
+ ../shogun/kernel/WeightedDegreePositionStringKernel.h \
+ ../libshogun/kernel/StringKernel.h \
+ ../libshogun/kernel/WeightedDegreeStringKernel.h ../libshogun/lib/Trie.h \
+ ../shogun/kernel/WeightedDegreeStringKernel.h \
+ ../shogun/kernel/CommWordStringKernel.h \
+ ../shogun/kernel/WeightedCommWordStringKernel.h \
+ ../libshogun/kernel/CommWordStringKernel.h \
+ ../shogun/kernel/LinearKernel.h ../libshogun/kernel/SimpleKernel.h \
+ ../shogun/kernel/SparseLinearKernel.h ../libshogun/kernel/SparseKernel.h \
+ ../shogun/kernel/CombinedKernel.h \
+ ../libshogun/features/CombinedFeatures.h ../shogun/kernel/CustomKernel.h \
+ ../shogun/kernel/SalzbergWordStringKernel.h \
+ ../libshogun/classifier/PluginEstimate.h \
+ ../shogun/features/PolyFeatures.h ../shogun/preproc/SortWordString.h \
+ ../shogun/structure/IntronList.h ../shogun/structure/SegmentLoss.h
+GUIPreProc.cpp.o: GUIPreProc.cpp GUIPreProc.h ../shogun/lib/config.h \
+ ../shogun/lib/List.h ../libshogun/lib/common.h ../libshogun/lib/memory.h \
+ ../libshogun/lib/config.h ../libshogun/base/SGObject.h \
+ ../libshogun/lib/io.h ../libshogun/base/init.h \
+ ../libshogun/base/Parallel.h ../libshogun/base/Version.h \
+ ../libshogun/lib/versionstring.h ../shogun/base/SGObject.h \
+ ../shogun/preproc/PreProc.h ../libshogun/features/FeatureTypes.h \
+ ../libshogun/features/Features.h ../libshogun/preproc/PreProc.h \
+ SGInterface.h ../shogun/lib/memory.h ../shogun/lib/common.h \
+ ../shogun/features/Features.h ../shogun/features/StringFeatures.h \
+ ../libshogun/lib/Cache.h ../libshogun/lib/Mathematics.h \
+ ../libshogun/lib/lapack.h ../libshogun/preproc/StringPreProc.h \
+ ../libshogun/features/StringFeatures.h ../libshogun/features/Alphabet.h \
+ ../libshogun/lib/DynamicArray.h ../libshogun/lib/File.h \
+ ../libshogun/lib/SimpleFile.h ../libshogun/lib/MemoryMappedFile.h \
+ ../libshogun/lib/Compressor.h ../shogun/lib/io.h \
+ ../shogun/features/SparseFeatures.h ../libshogun/features/Labels.h \
+ ../libshogun/features/DotFeatures.h \
+ ../libshogun/features/SimpleFeatures.h \
+ ../libshogun/preproc/SimplePreProc.h \
+ ../libshogun/preproc/SparsePreProc.h \
+ ../libshogun/features/SparseFeatures.h \
+ ../shogun/features/AttributeFeatures.h ../shogun/kernel/Kernel.h \
+ ../libshogun/lib/Signal.h ../libshogun/lib/ShogunException.h \
+ ../libshogun/kernel/KernelNormalizer.h ../libshogun/kernel/Kernel.h \
+ GUIClassifier.h ../shogun/classifier/Classifier.h \
+ ../shogun/classifier/svm/SVM.h ../libshogun/classifier/KernelMachine.h \
+ ../libshogun/classifier/Classifier.h GUIDistance.h \
+ ../shogun/distance/Distance.h GUIFeatures.h ../shogun/features/Labels.h \
+ ../shogun/features/RealFileFeatures.h ../shogun/features/TOPFeatures.h \
+ ../libshogun/distributions/HMM.h \
+ ../libshogun/distributions/Distribution.h \
+ ../shogun/features/FKFeatures.h ../shogun/features/SimpleFeatures.h \
+ ../shogun/features/CombinedFeatures.h ../libshogun/lib/List.h \
+ ../shogun/features/CombinedDotFeatures.h ../shogun/features/WDFeatures.h \
+ ../shogun/features/ExplicitSpecFeatures.h \
+ ../shogun/features/ImplicitWeightedSpecFeatures.h GUIHMM.h \
+ ../shogun/distributions/HMM.h GUIKernel.h GUILabels.h GUIMath.h \
+ GUIPluginEstimate.h ../shogun/classifier/PluginEstimate.h \
+ ../libshogun/distributions/LinearHMM.h GUITime.h ../shogun/lib/Time.h \
+ GUIStructure.h ../shogun/structure/Plif.h \
+ ../libshogun/structure/PlifBase.h ../shogun/structure/PlifArray.h \
+ ../shogun/structure/PlifBase.h ../shogun/structure/DynProg.h \
+ ../libshogun/structure/PlifMatrix.h ../libshogun/structure/Plif.h \
+ ../libshogun/lib/Array.h ../libshogun/lib/Array2.h \
+ ../libshogun/lib/Array3.h ../libshogun/structure/IntronList.h \
+ ../libshogun/structure/SegmentLoss.h ../libshogun/lib/Time.h \
+ ../shogun/structure/PlifMatrix.h ../shogun/preproc/LogPlusOne.h \
+ ../shogun/preproc/NormOne.h ../shogun/preproc/PruneVarSubMean.h \
+ ../shogun/preproc/PCACut.h ../shogun/preproc/DecompressString.h \
+ ../shogun/preproc/SortWordString.h ../shogun/preproc/SortUlongString.h
+GUIFeatures.cpp.o: GUIFeatures.cpp GUIFeatures.h ../shogun/lib/config.h \
+ ../shogun/base/SGObject.h ../libshogun/lib/io.h \
+ ../libshogun/lib/common.h ../libshogun/lib/memory.h \
+ ../libshogun/lib/config.h ../libshogun/base/init.h \
+ ../libshogun/base/Parallel.h ../libshogun/base/Version.h \
+ ../libshogun/lib/versionstring.h ../shogun/features/Labels.h \
+ ../libshogun/base/SGObject.h ../shogun/features/Features.h \
+ ../libshogun/preproc/PreProc.h ../libshogun/features/FeatureTypes.h \
+ ../libshogun/features/Features.h ../shogun/features/RealFileFeatures.h \
+ ../libshogun/features/SimpleFeatures.h ../libshogun/lib/Mathematics.h \
+ ../libshogun/lib/lapack.h ../libshogun/lib/Cache.h \
+ ../libshogun/lib/File.h ../libshogun/lib/DynamicArray.h \
+ ../libshogun/lib/SimpleFile.h ../libshogun/preproc/SimplePreProc.h \
+ ../libshogun/features/DotFeatures.h \
+ ../libshogun/features/StringFeatures.h \
+ ../libshogun/preproc/StringPreProc.h ../libshogun/features/Alphabet.h \
+ ../libshogun/lib/MemoryMappedFile.h ../libshogun/lib/Compressor.h \
+ ../shogun/lib/common.h ../shogun/lib/io.h \
+ ../shogun/features/TOPFeatures.h ../libshogun/distributions/HMM.h \
+ ../libshogun/distributions/Distribution.h \
+ ../shogun/features/FKFeatures.h ../shogun/features/StringFeatures.h \
+ ../shogun/features/SimpleFeatures.h ../shogun/features/SparseFeatures.h \
+ ../libshogun/features/Labels.h ../libshogun/preproc/SparsePreProc.h \
+ ../libshogun/features/SparseFeatures.h \
+ ../shogun/features/CombinedFeatures.h ../libshogun/lib/List.h \
+ ../shogun/features/CombinedDotFeatures.h ../shogun/features/WDFeatures.h \
+ ../shogun/features/ExplicitSpecFeatures.h \
+ ../shogun/features/ImplicitWeightedSpecFeatures.h SGInterface.h \
+ ../shogun/lib/memory.h ../shogun/features/AttributeFeatures.h \
+ ../shogun/kernel/Kernel.h ../libshogun/lib/Signal.h \
+ ../libshogun/lib/ShogunException.h \
+ ../libshogun/kernel/KernelNormalizer.h ../libshogun/kernel/Kernel.h \
+ GUIClassifier.h ../shogun/classifier/Classifier.h \
+ ../shogun/classifier/svm/SVM.h ../libshogun/classifier/KernelMachine.h \
+ ../libshogun/classifier/Classifier.h GUIDistance.h \
+ ../shogun/distance/Distance.h GUIHMM.h ../shogun/distributions/HMM.h \
+ GUIKernel.h GUILabels.h GUIMath.h GUIPluginEstimate.h \
+ ../shogun/classifier/PluginEstimate.h \
+ ../libshogun/distributions/LinearHMM.h GUIPreProc.h ../shogun/lib/List.h \
+ ../shogun/preproc/PreProc.h GUITime.h ../shogun/lib/Time.h \
+ GUIStructure.h ../shogun/structure/Plif.h \
+ ../libshogun/structure/PlifBase.h ../shogun/structure/PlifArray.h \
+ ../shogun/structure/PlifBase.h ../shogun/structure/DynProg.h \
+ ../libshogun/structure/PlifMatrix.h ../libshogun/structure/Plif.h \
+ ../libshogun/lib/Array.h ../libshogun/lib/Array2.h \
+ ../libshogun/lib/Array3.h ../libshogun/structure/IntronList.h \
+ ../libshogun/structure/SegmentLoss.h ../libshogun/lib/Time.h \
+ ../shogun/structure/PlifMatrix.h
+GUITime.cpp.o: GUITime.cpp SGInterface.h ../shogun/lib/memory.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../libshogun/lib/memory.h \
+ ../libshogun/lib/config.h ../shogun/base/SGObject.h \
+ ../libshogun/lib/io.h ../libshogun/lib/common.h ../libshogun/base/init.h \
+ ../libshogun/base/Parallel.h ../libshogun/base/Version.h \
+ ../libshogun/lib/versionstring.h ../shogun/features/Features.h \
+ ../libshogun/base/SGObject.h ../libshogun/preproc/PreProc.h \
+ ../libshogun/features/FeatureTypes.h ../libshogun/features/Features.h \
+ ../shogun/features/StringFeatures.h ../libshogun/lib/Cache.h \
+ ../libshogun/lib/Mathematics.h ../libshogun/lib/lapack.h \
+ ../libshogun/preproc/StringPreProc.h \
+ ../libshogun/features/StringFeatures.h ../libshogun/features/Alphabet.h \
+ ../libshogun/lib/DynamicArray.h ../libshogun/lib/File.h \
+ ../libshogun/lib/SimpleFile.h ../libshogun/lib/MemoryMappedFile.h \
+ ../libshogun/lib/Compressor.h ../shogun/lib/io.h \
+ ../shogun/features/SparseFeatures.h ../libshogun/features/Labels.h \
+ ../libshogun/features/DotFeatures.h \
+ ../libshogun/features/SimpleFeatures.h \
+ ../libshogun/preproc/SimplePreProc.h \
+ ../libshogun/preproc/SparsePreProc.h \
+ ../libshogun/features/SparseFeatures.h \
+ ../shogun/features/AttributeFeatures.h ../shogun/kernel/Kernel.h \
+ ../libshogun/lib/Signal.h ../libshogun/lib/ShogunException.h \
+ ../libshogun/kernel/KernelNormalizer.h ../libshogun/kernel/Kernel.h \
+ GUIClassifier.h ../shogun/classifier/Classifier.h \
+ ../shogun/classifier/svm/SVM.h ../libshogun/classifier/KernelMachine.h \
+ ../libshogun/classifier/Classifier.h GUIDistance.h \
+ ../shogun/distance/Distance.h GUIFeatures.h ../shogun/features/Labels.h \
+ ../shogun/features/RealFileFeatures.h ../shogun/features/TOPFeatures.h \
+ ../libshogun/distributions/HMM.h \
+ ../libshogun/distributions/Distribution.h \
+ ../shogun/features/FKFeatures.h ../shogun/features/SimpleFeatures.h \
+ ../shogun/features/CombinedFeatures.h ../libshogun/lib/List.h \
+ ../shogun/features/CombinedDotFeatures.h ../shogun/features/WDFeatures.h \
+ ../shogun/features/ExplicitSpecFeatures.h \
+ ../shogun/features/ImplicitWeightedSpecFeatures.h GUIHMM.h \
+ ../shogun/distributions/HMM.h GUIKernel.h GUILabels.h GUIMath.h \
+ GUIPluginEstimate.h ../shogun/classifier/PluginEstimate.h \
+ ../libshogun/distributions/LinearHMM.h GUIPreProc.h ../shogun/lib/List.h \
+ ../shogun/preproc/PreProc.h GUITime.h ../shogun/lib/Time.h \
+ GUIStructure.h ../shogun/structure/Plif.h \
+ ../libshogun/structure/PlifBase.h ../shogun/structure/PlifArray.h \
+ ../shogun/structure/PlifBase.h ../shogun/structure/DynProg.h \
+ ../libshogun/structure/PlifMatrix.h ../libshogun/structure/Plif.h \
+ ../libshogun/lib/Array.h ../libshogun/lib/Array2.h \
+ ../libshogun/lib/Array3.h ../libshogun/structure/IntronList.h \
+ ../libshogun/structure/SegmentLoss.h ../libshogun/lib/Time.h \
+ ../shogun/structure/PlifMatrix.h
+GUILabels.cpp.o: GUILabels.cpp GUILabels.h ../shogun/lib/config.h \
+ ../shogun/base/SGObject.h ../libshogun/lib/io.h \
+ ../libshogun/lib/common.h ../libshogun/lib/memory.h \
+ ../libshogun/lib/config.h ../libshogun/base/init.h \
+ ../libshogun/base/Parallel.h ../libshogun/base/Version.h \
+ ../libshogun/lib/versionstring.h ../shogun/features/Labels.h \
+ ../libshogun/base/SGObject.h SGInterface.h ../shogun/lib/memory.h \
+ ../shogun/lib/common.h ../shogun/features/Features.h \
+ ../libshogun/preproc/PreProc.h ../libshogun/features/FeatureTypes.h \
+ ../libshogun/features/Features.h ../shogun/features/StringFeatures.h \
+ ../libshogun/lib/Cache.h ../libshogun/lib/Mathematics.h \
+ ../libshogun/lib/lapack.h ../libshogun/preproc/StringPreProc.h \
+ ../libshogun/features/StringFeatures.h ../libshogun/features/Alphabet.h \
+ ../libshogun/lib/DynamicArray.h ../libshogun/lib/File.h \
+ ../libshogun/lib/SimpleFile.h ../libshogun/lib/MemoryMappedFile.h \
+ ../libshogun/lib/Compressor.h ../shogun/lib/io.h \
+ ../shogun/features/SparseFeatures.h ../libshogun/features/Labels.h \
+ ../libshogun/features/DotFeatures.h \
+ ../libshogun/features/SimpleFeatures.h \
+ ../libshogun/preproc/SimplePreProc.h \
+ ../libshogun/preproc/SparsePreProc.h \
+ ../libshogun/features/SparseFeatures.h \
+ ../shogun/features/AttributeFeatures.h ../shogun/kernel/Kernel.h \
+ ../libshogun/lib/Signal.h ../libshogun/lib/ShogunException.h \
+ ../libshogun/kernel/KernelNormalizer.h ../libshogun/kernel/Kernel.h \
+ GUIClassifier.h ../shogun/classifier/Classifier.h \
+ ../shogun/classifier/svm/SVM.h ../libshogun/classifier/KernelMachine.h \
+ ../libshogun/classifier/Classifier.h GUIDistance.h \
+ ../shogun/distance/Distance.h GUIFeatures.h \
+ ../shogun/features/RealFileFeatures.h ../shogun/features/TOPFeatures.h \
+ ../libshogun/distributions/HMM.h \
+ ../libshogun/distributions/Distribution.h \
+ ../shogun/features/FKFeatures.h ../shogun/features/SimpleFeatures.h \
+ ../shogun/features/CombinedFeatures.h ../libshogun/lib/List.h \
+ ../shogun/features/CombinedDotFeatures.h ../shogun/features/WDFeatures.h \
+ ../shogun/features/ExplicitSpecFeatures.h \
+ ../shogun/features/ImplicitWeightedSpecFeatures.h GUIHMM.h \
+ ../shogun/distributions/HMM.h GUIKernel.h GUIMath.h GUIPluginEstimate.h \
+ ../shogun/classifier/PluginEstimate.h \
+ ../libshogun/distributions/LinearHMM.h GUIPreProc.h ../shogun/lib/List.h \
+ ../shogun/preproc/PreProc.h GUITime.h ../shogun/lib/Time.h \
+ GUIStructure.h ../shogun/structure/Plif.h \
+ ../libshogun/structure/PlifBase.h ../shogun/structure/PlifArray.h \
+ ../shogun/structure/PlifBase.h ../shogun/structure/DynProg.h \
+ ../libshogun/structure/PlifMatrix.h ../libshogun/structure/Plif.h \
+ ../libshogun/lib/Array.h ../libshogun/lib/Array2.h \
+ ../libshogun/lib/Array3.h ../libshogun/structure/IntronList.h \
+ ../libshogun/structure/SegmentLoss.h ../libshogun/lib/Time.h \
+ ../shogun/structure/PlifMatrix.h
+GUIMath.cpp.o: GUIMath.cpp GUIMath.h ../shogun/lib/config.h \
+ ../shogun/base/SGObject.h ../libshogun/lib/io.h \
+ ../libshogun/lib/common.h ../libshogun/lib/memory.h \
+ ../libshogun/lib/config.h ../libshogun/base/init.h \
+ ../libshogun/base/Parallel.h ../libshogun/base/Version.h \
+ ../libshogun/lib/versionstring.h SGInterface.h ../shogun/lib/memory.h \
+ ../shogun/lib/common.h ../shogun/features/Features.h \
+ ../libshogun/base/SGObject.h ../libshogun/preproc/PreProc.h \
+ ../libshogun/features/FeatureTypes.h ../libshogun/features/Features.h \
+ ../shogun/features/StringFeatures.h ../libshogun/lib/Cache.h \
+ ../libshogun/lib/Mathematics.h ../libshogun/lib/lapack.h \
+ ../libshogun/preproc/StringPreProc.h \
+ ../libshogun/features/StringFeatures.h ../libshogun/features/Alphabet.h \
+ ../libshogun/lib/DynamicArray.h ../libshogun/lib/File.h \
+ ../libshogun/lib/SimpleFile.h ../libshogun/lib/MemoryMappedFile.h \
+ ../libshogun/lib/Compressor.h ../shogun/lib/io.h \
+ ../shogun/features/SparseFeatures.h ../libshogun/features/Labels.h \
+ ../libshogun/features/DotFeatures.h \
+ ../libshogun/features/SimpleFeatures.h \
+ ../libshogun/preproc/SimplePreProc.h \
+ ../libshogun/preproc/SparsePreProc.h \
+ ../libshogun/features/SparseFeatures.h \
+ ../shogun/features/AttributeFeatures.h ../shogun/kernel/Kernel.h \
+ ../libshogun/lib/Signal.h ../libshogun/lib/ShogunException.h \
+ ../libshogun/kernel/KernelNormalizer.h ../libshogun/kernel/Kernel.h \
+ GUIClassifier.h ../shogun/classifier/Classifier.h \
+ ../shogun/classifier/svm/SVM.h ../libshogun/classifier/KernelMachine.h \
+ ../libshogun/classifier/Classifier.h GUIDistance.h \
+ ../shogun/distance/Distance.h GUIFeatures.h ../shogun/features/Labels.h \
+ ../shogun/features/RealFileFeatures.h ../shogun/features/TOPFeatures.h \
+ ../libshogun/distributions/HMM.h \
+ ../libshogun/distributions/Distribution.h \
+ ../shogun/features/FKFeatures.h ../shogun/features/SimpleFeatures.h \
+ ../shogun/features/CombinedFeatures.h ../libshogun/lib/List.h \
+ ../shogun/features/CombinedDotFeatures.h ../shogun/features/WDFeatures.h \
+ ../shogun/features/ExplicitSpecFeatures.h \
+ ../shogun/features/ImplicitWeightedSpecFeatures.h GUIHMM.h \
+ ../shogun/distributions/HMM.h GUIKernel.h GUILabels.h \
+ GUIPluginEstimate.h ../shogun/classifier/PluginEstimate.h \
+ ../libshogun/distributions/LinearHMM.h GUIPreProc.h ../shogun/lib/List.h \
+ ../shogun/preproc/PreProc.h GUITime.h ../shogun/lib/Time.h \
+ GUIStructure.h ../shogun/structure/Plif.h \
+ ../libshogun/structure/PlifBase.h ../shogun/structure/PlifArray.h \
+ ../shogun/structure/PlifBase.h ../shogun/structure/DynProg.h \
+ ../libshogun/structure/PlifMatrix.h ../libshogun/structure/Plif.h \
+ ../libshogun/lib/Array.h ../libshogun/lib/Array2.h \
+ ../libshogun/lib/Array3.h ../libshogun/structure/IntronList.h \
+ ../libshogun/structure/SegmentLoss.h ../libshogun/lib/Time.h \
+ ../shogun/structure/PlifMatrix.h ../shogun/lib/Mathematics.h

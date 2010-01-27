@@ -1,0 +1,37 @@
+set_features TRAIN fm_train_sparsereal.dat
+set_labels TRAIN label_train_twoclass.dat
+new_classifier LIBLINEAR_L1RLR
+svm_epsilon 1e-5
+svm_use_bias 0
+c 0.42
+train_classifier
+set_features TEST fm_test_sparsereal.dat
+out.txt = classifytrain 
+
+
+
+
+set_features TRAIN australian_scale.dat
+set_labels TRAIN australian_scale.label
+new_classifier LIBLINEAR_L1RL2
+svm_epsilon 0.01
+svm_use_bias 0
+c 1
+train_classifier
+set_features TEST australian_scale.t.dat
+out.txt = classify
+
+
+Not a two class labeling label[1]=2.000000 (only +1/-1 allowed)
+
+Check LIBSVM for Multicalss implementation since it has not implemented yet in shogun
+
+
+
+
+set_features TRAIN test.dat
+set_labels TRAIN test.label
+new_classifier LIBLINEAR_L1RL2
+train_classifier
+set_features TEST australian_scale.t.dat
+out.txt = classify

@@ -1,0 +1,1352 @@
+evaluation/PerformanceMeasures.cpp.o: evaluation/PerformanceMeasures.cpp \
+ evaluation/PerformanceMeasures.h base/SGObject.h lib/io.h lib/common.h \
+ lib/memory.h lib/config.h base/init.h base/Parallel.h base/Version.h \
+ lib/versionstring.h features/Labels.h lib/DynamicArray.h \
+ lib/Mathematics.h lib/lapack.h lib/ShogunException.h
+structure/Plif.cpp.o: structure/Plif.cpp lib/config.h lib/io.h \
+ lib/common.h lib/memory.h base/init.h structure/Plif.h lib/Mathematics.h \
+ lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h structure/PlifBase.h
+structure/DynProg.cpp.o: structure/DynProg.cpp structure/DynProg.h \
+ lib/Mathematics.h lib/common.h lib/memory.h lib/config.h lib/io.h \
+ base/init.h lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h structure/PlifMatrix.h structure/Plif.h \
+ structure/PlifBase.h features/StringFeatures.h lib/Cache.h \
+ preproc/PreProc.h features/FeatureTypes.h features/Features.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/DynamicArray.h \
+ lib/File.h lib/SimpleFile.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h lib/Array.h lib/Array2.h lib/Array3.h \
+ structure/IntronList.h structure/SegmentLoss.h features/SparseFeatures.h \
+ features/Labels.h features/DotFeatures.h features/SimpleFeatures.h \
+ preproc/SimplePreProc.h preproc/SparsePreProc.h \
+ distributions/Distribution.h lib/Time.h
+structure/PlifMatrix.cpp.o: structure/PlifMatrix.cpp \
+ structure/PlifMatrix.h base/SGObject.h lib/io.h lib/common.h \
+ lib/memory.h lib/config.h base/init.h base/Parallel.h base/Version.h \
+ lib/versionstring.h structure/Plif.h lib/Mathematics.h lib/lapack.h \
+ structure/PlifBase.h features/StringFeatures.h lib/Cache.h \
+ preproc/PreProc.h features/FeatureTypes.h features/Features.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/DynamicArray.h \
+ lib/File.h lib/SimpleFile.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h lib/Array.h lib/Array2.h lib/Array3.h \
+ structure/PlifArray.h
+structure/SegmentLoss.cpp.o: structure/SegmentLoss.cpp lib/Mathematics.h \
+ lib/common.h lib/memory.h lib/config.h lib/io.h base/init.h lib/lapack.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ structure/SegmentLoss.h lib/Array.h lib/Array2.h lib/Array3.h
+structure/PlifArray.cpp.o: structure/PlifArray.cpp lib/config.h lib/io.h \
+ lib/common.h lib/memory.h base/init.h structure/PlifArray.h \
+ lib/Mathematics.h lib/lapack.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h lib/DynamicArray.h \
+ structure/PlifBase.h structure/Plif.h
+structure/IntronList.cpp.o: structure/IntronList.cpp lib/Mathematics.h \
+ lib/common.h lib/memory.h lib/config.h lib/io.h base/init.h lib/lapack.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ structure/IntronList.h
+regression/svr/MKLRegression.cpp.o: regression/svr/MKLRegression.cpp \
+ regression/svr/MKLRegression.h lib/common.h lib/memory.h lib/config.h \
+ classifier/mkl/MKL.h features/Features.h base/SGObject.h lib/io.h \
+ base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/Kernel.h lib/Signal.h \
+ lib/ShogunException.h lib/Mathematics.h lib/lapack.h \
+ kernel/KernelNormalizer.h classifier/svm/SVM.h \
+ classifier/KernelMachine.h features/Labels.h classifier/Classifier.h \
+ regression/svr/LibSVR.h classifier/svm/SVM_libsvm.h \
+ regression/Regression.h regression/svr/SVR_light.h \
+ classifier/svm/SVM_light.h
+regression/svr/LibSVR.cpp.o: regression/svr/LibSVR.cpp \
+ regression/svr/LibSVR.h lib/common.h lib/memory.h lib/config.h \
+ classifier/svm/SVM.h features/Features.h base/SGObject.h lib/io.h \
+ base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/Kernel.h lib/Signal.h \
+ lib/ShogunException.h lib/Mathematics.h lib/lapack.h \
+ kernel/KernelNormalizer.h classifier/KernelMachine.h features/Labels.h \
+ classifier/Classifier.h classifier/svm/SVM_libsvm.h \
+ regression/Regression.h
+regression/svr/SVR_light.cpp.o: regression/svr/SVR_light.cpp lib/config.h \
+ lib/io.h lib/common.h lib/memory.h base/init.h lib/lapack.h lib/Signal.h \
+ lib/ShogunException.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h lib/Mathematics.h regression/svr/SVR_light.h \
+ regression/Regression.h classifier/svm/SVM_light.h classifier/svm/SVM.h \
+ features/Features.h preproc/PreProc.h features/FeatureTypes.h \
+ kernel/Kernel.h kernel/KernelNormalizer.h classifier/KernelMachine.h \
+ features/Labels.h classifier/Classifier.h kernel/CombinedKernel.h \
+ lib/List.h features/CombinedFeatures.h
+regression/KRR.cpp.o: regression/KRR.cpp lib/config.h regression/KRR.h \
+ regression/Regression.h classifier/KernelMachine.h lib/common.h \
+ lib/memory.h lib/io.h base/init.h kernel/Kernel.h lib/Signal.h \
+ lib/ShogunException.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h lib/Mathematics.h lib/lapack.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/Labels.h classifier/Classifier.h
+clustering/Hierarchical.cpp.o: clustering/Hierarchical.cpp \
+ clustering/Hierarchical.h lib/common.h lib/memory.h lib/config.h \
+ lib/io.h base/init.h distance/Distance.h lib/Mathematics.h lib/lapack.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ features/Features.h preproc/PreProc.h features/FeatureTypes.h \
+ classifier/DistanceMachine.h features/Labels.h classifier/Classifier.h
+clustering/KMeans.cpp.o: clustering/KMeans.cpp clustering/KMeans.h \
+ lib/common.h lib/memory.h lib/config.h lib/io.h base/init.h \
+ features/SimpleFeatures.h lib/Mathematics.h lib/lapack.h base/SGObject.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/Cache.h \
+ lib/File.h lib/DynamicArray.h lib/SimpleFile.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h preproc/SimplePreProc.h \
+ features/DotFeatures.h features/StringFeatures.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h distance/Distance.h classifier/DistanceMachine.h \
+ features/Labels.h classifier/Classifier.h
+classifier/Classifier.cpp.o: classifier/Classifier.cpp \
+ classifier/Classifier.h lib/common.h lib/memory.h lib/config.h \
+ base/SGObject.h lib/io.h base/init.h base/Parallel.h base/Version.h \
+ lib/versionstring.h lib/Mathematics.h lib/lapack.h features/Labels.h \
+ features/Features.h preproc/PreProc.h features/FeatureTypes.h
+classifier/KNN.cpp.o: classifier/KNN.cpp classifier/KNN.h lib/common.h \
+ lib/memory.h lib/config.h lib/io.h base/init.h features/Features.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h distance/Distance.h \
+ lib/Mathematics.h lib/lapack.h classifier/DistanceMachine.h \
+ features/Labels.h classifier/Classifier.h lib/Signal.h \
+ lib/ShogunException.h
+classifier/KernelPerceptron.cpp.o: classifier/KernelPerceptron.cpp \
+ classifier/KernelPerceptron.h lib/common.h lib/memory.h lib/config.h \
+ features/Features.h base/SGObject.h lib/io.h base/init.h base/Parallel.h \
+ base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h classifier/KernelMachine.h kernel/Kernel.h \
+ lib/Signal.h lib/ShogunException.h lib/Mathematics.h lib/lapack.h \
+ kernel/KernelNormalizer.h features/Labels.h classifier/Classifier.h
+classifier/svm/DomainAdaptationSVM.cpp.o: \
+ classifier/svm/DomainAdaptationSVM.cpp lib/config.h \
+ classifier/svm/DomainAdaptationSVM.h lib/common.h lib/memory.h \
+ classifier/svm/SVM_light.h classifier/svm/SVM.h features/Features.h \
+ base/SGObject.h lib/io.h base/init.h base/Parallel.h base/Version.h \
+ lib/versionstring.h preproc/PreProc.h features/FeatureTypes.h \
+ kernel/Kernel.h lib/Signal.h lib/ShogunException.h lib/Mathematics.h \
+ lib/lapack.h kernel/KernelNormalizer.h classifier/KernelMachine.h \
+ features/Labels.h classifier/Classifier.h
+classifier/svm/gpdt.cpp.o: classifier/svm/gpdt.cpp classifier/svm/gpdt.h \
+ kernel/Kernel.h lib/common.h lib/memory.h lib/config.h lib/Signal.h \
+ lib/ShogunException.h base/SGObject.h lib/io.h base/init.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/Mathematics.h \
+ lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ classifier/svm/gpdtsolve.h
+classifier/svm/SVM.cpp.o: classifier/svm/SVM.cpp lib/common.h \
+ lib/memory.h lib/config.h lib/io.h base/init.h base/Parallel.h \
+ classifier/svm/SVM.h features/Features.h base/SGObject.h base/Version.h \
+ lib/versionstring.h preproc/PreProc.h features/FeatureTypes.h \
+ kernel/Kernel.h lib/Signal.h lib/ShogunException.h lib/Mathematics.h \
+ lib/lapack.h kernel/KernelNormalizer.h classifier/KernelMachine.h \
+ features/Labels.h classifier/Classifier.h classifier/mkl/MKL.h
+classifier/svm/SVM_libsvm.cpp.o: classifier/svm/SVM_libsvm.cpp \
+ lib/memory.h classifier/svm/SVM_libsvm.h kernel/Kernel.h lib/common.h \
+ lib/config.h lib/Signal.h lib/ShogunException.h base/SGObject.h lib/io.h \
+ base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ lib/Mathematics.h lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h
+classifier/svm/CPLEXSVM.cpp.o: classifier/svm/CPLEXSVM.cpp \
+ classifier/svm/CPLEXSVM.h lib/common.h lib/memory.h lib/config.h
+classifier/svm/Tron.cpp.o: classifier/svm/Tron.cpp lib/config.h \
+ lib/Signal.h lib/ShogunException.h base/SGObject.h lib/io.h lib/common.h \
+ lib/memory.h base/init.h base/Parallel.h base/Version.h \
+ lib/versionstring.h lib/Mathematics.h lib/lapack.h classifier/svm/Tron.h
+classifier/svm/LibSVM.cpp.o: classifier/svm/LibSVM.cpp \
+ classifier/svm/LibSVM.h lib/common.h lib/memory.h lib/config.h \
+ classifier/svm/SVM.h features/Features.h base/SGObject.h lib/io.h \
+ base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/Kernel.h lib/Signal.h \
+ lib/ShogunException.h lib/Mathematics.h lib/lapack.h \
+ kernel/KernelNormalizer.h classifier/KernelMachine.h features/Labels.h \
+ classifier/Classifier.h classifier/svm/SVM_libsvm.h
+classifier/svm/SVMLin.cpp.o: classifier/svm/SVMLin.cpp \
+ classifier/svm/SVMLin.h lib/common.h lib/memory.h lib/config.h \
+ classifier/LinearClassifier.h features/Labels.h lib/io.h base/init.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ features/DotFeatures.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h classifier/Classifier.h lib/Mathematics.h \
+ lib/lapack.h classifier/svm/ssl.h
+classifier/svm/LibSVMOneClass.cpp.o: classifier/svm/LibSVMOneClass.cpp \
+ classifier/svm/LibSVMOneClass.h lib/common.h lib/memory.h lib/config.h \
+ classifier/svm/SVM.h features/Features.h base/SGObject.h lib/io.h \
+ base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/Kernel.h lib/Signal.h \
+ lib/ShogunException.h lib/Mathematics.h lib/lapack.h \
+ kernel/KernelNormalizer.h classifier/KernelMachine.h features/Labels.h \
+ classifier/Classifier.h classifier/svm/SVM_libsvm.h
+classifier/svm/SVMOcas.cpp.o: classifier/svm/SVMOcas.cpp \
+ features/Labels.h lib/common.h lib/memory.h lib/config.h lib/io.h \
+ base/init.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h lib/Mathematics.h lib/lapack.h lib/Time.h \
+ classifier/LinearClassifier.h features/DotFeatures.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h classifier/Classifier.h \
+ classifier/svm/SVMOcas.h classifier/svm/libocas.h
+classifier/svm/qpssvmlib.cpp.o: classifier/svm/qpssvmlib.cpp \
+ classifier/svm/libocas_common.h lib/Mathematics.h lib/common.h \
+ lib/memory.h lib/config.h lib/io.h base/init.h lib/lapack.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ classifier/svm/qpssvmlib.h
+classifier/svm/gnpplib.cpp.o: classifier/svm/gnpplib.cpp lib/common.h \
+ lib/memory.h lib/config.h lib/io.h base/init.h lib/Mathematics.h \
+ lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h classifier/svm/gnpplib.h kernel/Kernel.h \
+ lib/Signal.h lib/ShogunException.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h
+classifier/svm/MultiClassSVM.cpp.o: classifier/svm/MultiClassSVM.cpp \
+ lib/common.h lib/memory.h lib/config.h lib/io.h base/init.h \
+ classifier/svm/MultiClassSVM.h features/Features.h base/SGObject.h \
+ base/Parallel.h base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h classifier/svm/SVM.h kernel/Kernel.h \
+ lib/Signal.h lib/ShogunException.h lib/Mathematics.h lib/lapack.h \
+ kernel/KernelNormalizer.h classifier/KernelMachine.h features/Labels.h \
+ classifier/Classifier.h
+classifier/svm/MPDSVM.cpp.o: classifier/svm/MPDSVM.cpp \
+ classifier/svm/MPDSVM.h lib/common.h lib/memory.h lib/config.h \
+ classifier/svm/SVM.h features/Features.h base/SGObject.h lib/io.h \
+ base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/Kernel.h lib/Signal.h \
+ lib/ShogunException.h lib/Mathematics.h lib/lapack.h \
+ kernel/KernelNormalizer.h classifier/KernelMachine.h features/Labels.h \
+ classifier/Classifier.h lib/Cache.h
+classifier/svm/SubGradientSVM.cpp.o: classifier/svm/SubGradientSVM.cpp \
+ lib/config.h lib/Mathematics.h lib/common.h lib/memory.h lib/io.h \
+ base/init.h lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h lib/Signal.h lib/ShogunException.h lib/Time.h \
+ classifier/LinearClassifier.h features/Labels.h features/DotFeatures.h \
+ features/Features.h preproc/PreProc.h features/FeatureTypes.h \
+ classifier/Classifier.h classifier/svm/SubGradientSVM.h \
+ classifier/svm/qpbsvmlib.h kernel/Kernel.h kernel/KernelNormalizer.h
+classifier/svm/GMNPSVM.cpp.o: classifier/svm/GMNPSVM.cpp lib/io.h \
+ lib/common.h lib/memory.h lib/config.h base/init.h \
+ classifier/svm/GMNPSVM.h classifier/svm/MultiClassSVM.h \
+ features/Features.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h preproc/PreProc.h features/FeatureTypes.h \
+ classifier/svm/SVM.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ lib/Mathematics.h lib/lapack.h kernel/KernelNormalizer.h \
+ classifier/KernelMachine.h features/Labels.h classifier/Classifier.h \
+ classifier/svm/gmnplib.h
+classifier/svm/LibLinear.cpp.o: classifier/svm/LibLinear.cpp lib/config.h \
+ lib/io.h lib/common.h lib/memory.h base/init.h \
+ classifier/svm/LibLinear.h classifier/LinearClassifier.h \
+ features/Labels.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h features/DotFeatures.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h classifier/Classifier.h \
+ lib/Mathematics.h lib/lapack.h classifier/svm/SVM_linear.h \
+ classifier/svm/Tron.h
+classifier/svm/qpbsvmlib.cpp.o: classifier/svm/qpbsvmlib.cpp lib/config.h \
+ lib/io.h lib/common.h lib/memory.h base/init.h lib/Cplex.h \
+ lib/Mathematics.h lib/lapack.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h classifier/svm/qpbsvmlib.h \
+ kernel/Kernel.h lib/Signal.h lib/ShogunException.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/KernelNormalizer.h \
+ classifier/svm/pr_loqo.h
+classifier/svm/libocas.cpp.o: classifier/svm/libocas.cpp \
+ classifier/svm/libocas.h lib/common.h lib/memory.h lib/config.h \
+ classifier/svm/libocas_common.h lib/Mathematics.h lib/io.h base/init.h \
+ lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h classifier/svm/qpssvmlib.h
+classifier/svm/LibSVMMultiClass.cpp.o: \
+ classifier/svm/LibSVMMultiClass.cpp classifier/svm/LibSVMMultiClass.h \
+ lib/common.h lib/memory.h lib/config.h classifier/svm/MultiClassSVM.h \
+ features/Features.h base/SGObject.h lib/io.h base/init.h base/Parallel.h \
+ base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h classifier/svm/SVM.h kernel/Kernel.h \
+ lib/Signal.h lib/ShogunException.h lib/Mathematics.h lib/lapack.h \
+ kernel/KernelNormalizer.h classifier/KernelMachine.h features/Labels.h \
+ classifier/Classifier.h classifier/svm/SVM_libsvm.h \
+ classifier/svm/LibSVM.h
+classifier/svm/WDSVMOcas.cpp.o: classifier/svm/WDSVMOcas.cpp \
+ features/Labels.h lib/common.h lib/memory.h lib/config.h lib/io.h \
+ base/init.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h lib/Mathematics.h lib/lapack.h lib/DynamicArray.h \
+ lib/Time.h classifier/Classifier.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h classifier/svm/libocas.h \
+ classifier/svm/WDSVMOcas.h classifier/svm/SVMOcas.h \
+ classifier/LinearClassifier.h features/DotFeatures.h \
+ features/StringFeatures.h lib/Cache.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/File.h lib/SimpleFile.h lib/MemoryMappedFile.h \
+ lib/Compressor.h ../shogun/lib/config.h ../shogun/lib/common.h \
+ ../shogun/base/SGObject.h ../shogun/lib/io.h
+classifier/svm/gmnplib.cpp.o: classifier/svm/gmnplib.cpp \
+ classifier/svm/gmnplib.h base/SGObject.h lib/io.h lib/common.h \
+ lib/memory.h lib/config.h base/init.h base/Parallel.h base/Version.h \
+ lib/versionstring.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ lib/Mathematics.h lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h
+classifier/svm/GNPPSVM.cpp.o: classifier/svm/GNPPSVM.cpp lib/io.h \
+ lib/common.h lib/memory.h lib/config.h base/init.h \
+ classifier/svm/GNPPSVM.h classifier/svm/SVM.h features/Features.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/Kernel.h lib/Signal.h \
+ lib/ShogunException.h lib/Mathematics.h lib/lapack.h \
+ kernel/KernelNormalizer.h classifier/KernelMachine.h features/Labels.h \
+ classifier/Classifier.h classifier/svm/gnpplib.h
+classifier/svm/ssl.cpp.o: classifier/svm/ssl.cpp lib/io.h lib/common.h \
+ lib/memory.h lib/config.h base/init.h lib/Mathematics.h lib/lapack.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ features/SparseFeatures.h lib/Cache.h features/Labels.h \
+ features/Features.h preproc/PreProc.h features/FeatureTypes.h \
+ features/DotFeatures.h features/SimpleFeatures.h lib/File.h \
+ lib/DynamicArray.h lib/SimpleFile.h preproc/SimplePreProc.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ preproc/SparsePreProc.h classifier/svm/ssl.h
+classifier/svm/ScatterSVM.cpp.o: classifier/svm/ScatterSVM.cpp \
+ classifier/svm/ScatterSVM.h lib/common.h lib/memory.h lib/config.h \
+ classifier/svm/MultiClassSVM.h features/Features.h base/SGObject.h \
+ lib/io.h base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h classifier/svm/SVM.h \
+ kernel/Kernel.h lib/Signal.h lib/ShogunException.h lib/Mathematics.h \
+ lib/lapack.h kernel/KernelNormalizer.h classifier/KernelMachine.h \
+ features/Labels.h classifier/Classifier.h classifier/svm/SVM_libsvm.h
+classifier/svm/LaRank.cpp.o: classifier/svm/LaRank.cpp lib/io.h \
+ lib/common.h lib/memory.h lib/config.h base/init.h lib/Signal.h \
+ lib/ShogunException.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h lib/Time.h lib/Mathematics.h lib/lapack.h \
+ classifier/svm/LaRank.h kernel/Kernel.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/KernelNormalizer.h \
+ classifier/svm/MultiClassSVM.h classifier/svm/SVM.h \
+ classifier/KernelMachine.h features/Labels.h classifier/Classifier.h
+classifier/svm/gpdtsolve.cpp.o: classifier/svm/gpdtsolve.cpp \
+ classifier/svm/gpm.h lib/common.h lib/memory.h lib/config.h \
+ classifier/svm/gpdt.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ base/SGObject.h lib/io.h base/init.h base/Parallel.h base/Version.h \
+ lib/versionstring.h lib/Mathematics.h lib/lapack.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/KernelNormalizer.h \
+ classifier/svm/gpdtsolve.h
+classifier/svm/GPBTSVM.cpp.o: classifier/svm/GPBTSVM.cpp \
+ classifier/svm/GPBTSVM.h lib/common.h lib/memory.h lib/config.h \
+ classifier/svm/SVM.h features/Features.h base/SGObject.h lib/io.h \
+ base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/Kernel.h lib/Signal.h \
+ lib/ShogunException.h lib/Mathematics.h lib/lapack.h \
+ kernel/KernelNormalizer.h classifier/KernelMachine.h features/Labels.h \
+ classifier/Classifier.h classifier/svm/SVM_libsvm.h \
+ classifier/svm/gpdt.h classifier/svm/gpdtsolve.h
+classifier/svm/gpm.cpp.o: classifier/svm/gpm.cpp classifier/svm/gpdt.h \
+ kernel/Kernel.h lib/common.h lib/memory.h lib/config.h lib/Signal.h \
+ lib/ShogunException.h base/SGObject.h lib/io.h base/init.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/Mathematics.h \
+ lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h
+classifier/svm/SVM_linear.cpp.o: classifier/svm/SVM_linear.cpp \
+ lib/config.h classifier/svm/SVM_linear.h classifier/svm/Tron.h \
+ base/SGObject.h lib/io.h lib/common.h lib/memory.h base/init.h \
+ base/Parallel.h base/Version.h lib/versionstring.h \
+ features/DotFeatures.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h
+classifier/svm/SVM_light.cpp.o: classifier/svm/SVM_light.cpp lib/config.h \
+ lib/io.h lib/common.h lib/memory.h base/init.h lib/Signal.h \
+ lib/ShogunException.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h lib/Mathematics.h lib/lapack.h lib/Time.h \
+ features/SimpleFeatures.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h preproc/SimplePreProc.h features/DotFeatures.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ classifier/svm/SVM_light.h classifier/svm/SVM.h kernel/Kernel.h \
+ kernel/KernelNormalizer.h classifier/KernelMachine.h features/Labels.h \
+ classifier/Classifier.h classifier/svm/pr_loqo.h kernel/CombinedKernel.h \
+ lib/List.h features/CombinedFeatures.h
+classifier/svm/pr_loqo.cpp.o: classifier/svm/pr_loqo.cpp lib/common.h \
+ lib/memory.h lib/config.h lib/io.h base/init.h lib/lapack.h \
+ lib/Mathematics.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h classifier/svm/pr_loqo.h
+classifier/svm/SVMSGD.cpp.o: classifier/svm/SVMSGD.cpp \
+ classifier/svm/SVMSGD.h lib/common.h lib/memory.h lib/config.h \
+ classifier/LinearClassifier.h features/Labels.h lib/io.h base/init.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ features/DotFeatures.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h classifier/Classifier.h lib/Mathematics.h \
+ lib/lapack.h lib/Signal.h lib/ShogunException.h
+classifier/KernelMachine.cpp.o: classifier/KernelMachine.cpp \
+ classifier/KernelMachine.h lib/common.h lib/memory.h lib/config.h \
+ lib/io.h base/init.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ lib/Mathematics.h lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h features/Labels.h \
+ classifier/Classifier.h
+classifier/LinearClassifier.cpp.o: classifier/LinearClassifier.cpp \
+ classifier/LinearClassifier.h lib/common.h lib/memory.h lib/config.h \
+ features/Labels.h lib/io.h base/init.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h features/DotFeatures.h \
+ features/Features.h preproc/PreProc.h features/FeatureTypes.h \
+ classifier/Classifier.h lib/Mathematics.h lib/lapack.h
+classifier/SubGradientLPM.cpp.o: classifier/SubGradientLPM.cpp \
+ lib/config.h
+classifier/mkl/MKLMultiClassGLPK.cpp.o: \
+ classifier/mkl/MKLMultiClassGLPK.cpp classifier/mkl/MKLMultiClassGLPK.h \
+ base/SGObject.h lib/io.h lib/common.h lib/memory.h lib/config.h \
+ base/init.h base/Parallel.h base/Version.h lib/versionstring.h
+classifier/mkl/MKLOneClass.cpp.o: classifier/mkl/MKLOneClass.cpp \
+ classifier/mkl/MKLOneClass.h lib/common.h lib/memory.h lib/config.h \
+ classifier/mkl/MKL.h features/Features.h base/SGObject.h lib/io.h \
+ base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/Kernel.h lib/Signal.h \
+ lib/ShogunException.h lib/Mathematics.h lib/lapack.h \
+ kernel/KernelNormalizer.h classifier/svm/SVM.h \
+ classifier/KernelMachine.h features/Labels.h classifier/Classifier.h \
+ classifier/svm/LibSVMOneClass.h classifier/svm/SVM_libsvm.h
+classifier/mkl/MKLClassification.cpp.o: \
+ classifier/mkl/MKLClassification.cpp classifier/mkl/MKLClassification.h \
+ lib/common.h lib/memory.h lib/config.h classifier/mkl/MKL.h \
+ features/Features.h base/SGObject.h lib/io.h base/init.h base/Parallel.h \
+ base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/Kernel.h lib/Signal.h \
+ lib/ShogunException.h lib/Mathematics.h lib/lapack.h \
+ kernel/KernelNormalizer.h classifier/svm/SVM.h \
+ classifier/KernelMachine.h features/Labels.h classifier/Classifier.h \
+ classifier/svm/SVM_light.h classifier/svm/LibSVM.h \
+ classifier/svm/SVM_libsvm.h
+classifier/mkl/MKLMultiClass.cpp.o: classifier/mkl/MKLMultiClass.cpp \
+ classifier/mkl/MKLMultiClass.h base/SGObject.h lib/io.h lib/common.h \
+ lib/memory.h lib/config.h base/init.h base/Parallel.h base/Version.h \
+ lib/versionstring.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ lib/Mathematics.h lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ kernel/CombinedKernel.h lib/List.h features/CombinedFeatures.h \
+ classifier/svm/GMNPSVM.h classifier/svm/MultiClassSVM.h \
+ classifier/svm/SVM.h classifier/KernelMachine.h features/Labels.h \
+ classifier/Classifier.h classifier/mkl/MKLMultiClassGLPK.h
+classifier/mkl/MKL.cpp.o: classifier/mkl/MKL.cpp lib/Signal.h \
+ lib/config.h lib/ShogunException.h base/SGObject.h lib/io.h lib/common.h \
+ lib/memory.h base/init.h base/Parallel.h base/Version.h \
+ lib/versionstring.h classifier/mkl/MKL.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/Kernel.h \
+ lib/Mathematics.h lib/lapack.h kernel/KernelNormalizer.h \
+ classifier/svm/SVM.h classifier/KernelMachine.h features/Labels.h \
+ classifier/Classifier.h classifier/svm/LibSVM.h \
+ classifier/svm/SVM_libsvm.h kernel/CombinedKernel.h lib/List.h \
+ features/CombinedFeatures.h
+classifier/DistanceMachine.cpp.o: classifier/DistanceMachine.cpp \
+ classifier/DistanceMachine.h lib/common.h lib/memory.h lib/config.h \
+ distance/Distance.h lib/Mathematics.h lib/io.h base/init.h lib/lapack.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ features/Features.h preproc/PreProc.h features/FeatureTypes.h \
+ features/Labels.h classifier/Classifier.h
+classifier/LDA.cpp.o: classifier/LDA.cpp lib/common.h lib/memory.h \
+ lib/config.h classifier/Classifier.h base/SGObject.h lib/io.h \
+ base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ lib/Mathematics.h lib/lapack.h features/Labels.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h classifier/LinearClassifier.h \
+ features/DotFeatures.h classifier/LDA.h features/SimpleFeatures.h \
+ lib/Cache.h lib/File.h lib/DynamicArray.h lib/SimpleFile.h \
+ preproc/SimplePreProc.h features/StringFeatures.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/MemoryMappedFile.h \
+ lib/Compressor.h ../shogun/lib/config.h ../shogun/lib/common.h \
+ ../shogun/base/SGObject.h ../shogun/lib/io.h
+classifier/LPBoost.cpp.o: classifier/LPBoost.cpp lib/config.h
+classifier/PluginEstimate.cpp.o: classifier/PluginEstimate.cpp \
+ lib/common.h lib/memory.h lib/config.h lib/io.h base/init.h \
+ features/StringFeatures.h lib/Cache.h lib/Mathematics.h lib/lapack.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h features/Features.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/DynamicArray.h \
+ lib/File.h lib/SimpleFile.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h features/Labels.h distributions/LinearHMM.h \
+ distributions/Distribution.h classifier/PluginEstimate.h \
+ classifier/Classifier.h
+classifier/LPM.cpp.o: classifier/LPM.cpp lib/config.h
+classifier/Perceptron.cpp.o: classifier/Perceptron.cpp \
+ classifier/Perceptron.h lib/common.h lib/memory.h lib/config.h \
+ features/DotFeatures.h features/Features.h base/SGObject.h lib/io.h \
+ base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h classifier/LinearClassifier.h \
+ features/Labels.h classifier/Classifier.h lib/Mathematics.h lib/lapack.h
+distance/JensenMetric.cpp.o: distance/JensenMetric.cpp lib/config.h \
+ lib/common.h lib/memory.h lib/io.h base/init.h distance/JensenMetric.h \
+ distance/SimpleDistance.h distance/Distance.h lib/Mathematics.h \
+ lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h features/SimpleFeatures.h lib/Cache.h lib/File.h \
+ lib/DynamicArray.h lib/SimpleFile.h preproc/SimplePreProc.h \
+ features/DotFeatures.h features/StringFeatures.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h
+distance/SparseEuclidianDistance.cpp.o: \
+ distance/SparseEuclidianDistance.cpp lib/common.h lib/memory.h \
+ lib/config.h lib/io.h base/init.h distance/SparseEuclidianDistance.h \
+ distance/SparseDistance.h distance/Distance.h lib/Mathematics.h \
+ lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h features/SparseFeatures.h lib/Cache.h \
+ features/Labels.h features/DotFeatures.h features/SimpleFeatures.h \
+ lib/File.h lib/DynamicArray.h lib/SimpleFile.h preproc/SimplePreProc.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ preproc/SparsePreProc.h
+distance/CanberraMetric.cpp.o: distance/CanberraMetric.cpp lib/config.h \
+ lib/common.h lib/memory.h lib/io.h base/init.h distance/CanberraMetric.h \
+ distance/SimpleDistance.h distance/Distance.h lib/Mathematics.h \
+ lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h features/SimpleFeatures.h lib/Cache.h lib/File.h \
+ lib/DynamicArray.h lib/SimpleFile.h preproc/SimplePreProc.h \
+ features/DotFeatures.h features/StringFeatures.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h
+distance/TanimotoDistance.cpp.o: distance/TanimotoDistance.cpp \
+ lib/config.h lib/common.h lib/memory.h lib/io.h base/init.h \
+ distance/TanimotoDistance.h distance/SimpleDistance.h \
+ distance/Distance.h lib/Mathematics.h lib/lapack.h base/SGObject.h \
+ base/Parallel.h base/Version.h lib/versionstring.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h features/SimpleFeatures.h \
+ lib/Cache.h lib/File.h lib/DynamicArray.h lib/SimpleFile.h \
+ preproc/SimplePreProc.h features/DotFeatures.h features/StringFeatures.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/MemoryMappedFile.h \
+ lib/Compressor.h ../shogun/lib/config.h ../shogun/lib/common.h \
+ ../shogun/base/SGObject.h ../shogun/lib/io.h
+distance/Distance.cpp.o: distance/Distance.cpp lib/config.h lib/common.h \
+ lib/memory.h lib/io.h base/init.h lib/File.h base/SGObject.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/DynamicArray.h \
+ lib/Mathematics.h lib/lapack.h lib/SimpleFile.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h lib/Time.h distance/Distance.h
+distance/BrayCurtisDistance.cpp.o: distance/BrayCurtisDistance.cpp \
+ lib/config.h lib/common.h lib/memory.h lib/io.h base/init.h \
+ distance/BrayCurtisDistance.h distance/SimpleDistance.h \
+ distance/Distance.h lib/Mathematics.h lib/lapack.h base/SGObject.h \
+ base/Parallel.h base/Version.h lib/versionstring.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h features/SimpleFeatures.h \
+ lib/Cache.h lib/File.h lib/DynamicArray.h lib/SimpleFile.h \
+ preproc/SimplePreProc.h features/DotFeatures.h features/StringFeatures.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/MemoryMappedFile.h \
+ lib/Compressor.h ../shogun/lib/config.h ../shogun/lib/common.h \
+ ../shogun/base/SGObject.h ../shogun/lib/io.h
+distance/ChiSquareDistance.cpp.o: distance/ChiSquareDistance.cpp \
+ lib/config.h lib/common.h lib/memory.h lib/io.h base/init.h \
+ distance/ChiSquareDistance.h distance/SimpleDistance.h \
+ distance/Distance.h lib/Mathematics.h lib/lapack.h base/SGObject.h \
+ base/Parallel.h base/Version.h lib/versionstring.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h features/SimpleFeatures.h \
+ lib/Cache.h lib/File.h lib/DynamicArray.h lib/SimpleFile.h \
+ preproc/SimplePreProc.h features/DotFeatures.h features/StringFeatures.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/MemoryMappedFile.h \
+ lib/Compressor.h ../shogun/lib/config.h ../shogun/lib/common.h \
+ ../shogun/base/SGObject.h ../shogun/lib/io.h
+distance/ChebyshewMetric.cpp.o: distance/ChebyshewMetric.cpp lib/config.h \
+ lib/common.h lib/memory.h lib/io.h base/init.h \
+ distance/ChebyshewMetric.h distance/SimpleDistance.h distance/Distance.h \
+ lib/Mathematics.h lib/lapack.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h features/SimpleFeatures.h lib/Cache.h lib/File.h \
+ lib/DynamicArray.h lib/SimpleFile.h preproc/SimplePreProc.h \
+ features/DotFeatures.h features/StringFeatures.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h
+distance/ManhattanMetric.cpp.o: distance/ManhattanMetric.cpp lib/config.h \
+ lib/common.h lib/memory.h lib/io.h base/init.h \
+ distance/ManhattanMetric.h distance/SimpleDistance.h distance/Distance.h \
+ lib/Mathematics.h lib/lapack.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h features/SimpleFeatures.h lib/Cache.h lib/File.h \
+ lib/DynamicArray.h lib/SimpleFile.h preproc/SimplePreProc.h \
+ features/DotFeatures.h features/StringFeatures.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h
+distance/ManhattanWordDistance.cpp.o: distance/ManhattanWordDistance.cpp \
+ lib/common.h lib/memory.h lib/config.h distance/ManhattanWordDistance.h \
+ features/Features.h base/SGObject.h lib/io.h base/init.h base/Parallel.h \
+ base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h features/StringFeatures.h lib/Cache.h \
+ lib/Mathematics.h lib/lapack.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ distance/StringDistance.h distance/Distance.h
+distance/EuclidianDistance.cpp.o: distance/EuclidianDistance.cpp \
+ lib/common.h lib/memory.h lib/config.h lib/io.h base/init.h \
+ distance/EuclidianDistance.h distance/RealDistance.h \
+ distance/SimpleDistance.h distance/Distance.h lib/Mathematics.h \
+ lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h features/SimpleFeatures.h lib/Cache.h lib/File.h \
+ lib/DynamicArray.h lib/SimpleFile.h preproc/SimplePreProc.h \
+ features/DotFeatures.h features/StringFeatures.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h
+distance/GeodesicMetric.cpp.o: distance/GeodesicMetric.cpp lib/config.h \
+ lib/common.h lib/memory.h lib/io.h base/init.h distance/GeodesicMetric.h \
+ distance/SimpleDistance.h distance/Distance.h lib/Mathematics.h \
+ lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h features/SimpleFeatures.h lib/Cache.h lib/File.h \
+ lib/DynamicArray.h lib/SimpleFile.h preproc/SimplePreProc.h \
+ features/DotFeatures.h features/StringFeatures.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h
+distance/HammingWordDistance.cpp.o: distance/HammingWordDistance.cpp \
+ lib/common.h lib/memory.h lib/config.h distance/HammingWordDistance.h \
+ features/Features.h base/SGObject.h lib/io.h base/init.h base/Parallel.h \
+ base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h features/StringFeatures.h lib/Cache.h \
+ lib/Mathematics.h lib/lapack.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ distance/StringDistance.h distance/Distance.h
+distance/CosineDistance.cpp.o: distance/CosineDistance.cpp lib/config.h \
+ lib/common.h lib/memory.h lib/io.h base/init.h distance/CosineDistance.h \
+ distance/SimpleDistance.h distance/Distance.h lib/Mathematics.h \
+ lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h features/SimpleFeatures.h lib/Cache.h lib/File.h \
+ lib/DynamicArray.h lib/SimpleFile.h preproc/SimplePreProc.h \
+ features/DotFeatures.h features/StringFeatures.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h
+distance/MinkowskiMetric.cpp.o: distance/MinkowskiMetric.cpp lib/config.h \
+ lib/common.h lib/memory.h lib/io.h base/init.h \
+ distance/MinkowskiMetric.h distance/SimpleDistance.h distance/Distance.h \
+ lib/Mathematics.h lib/lapack.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h features/SimpleFeatures.h lib/Cache.h lib/File.h \
+ lib/DynamicArray.h lib/SimpleFile.h preproc/SimplePreProc.h \
+ features/DotFeatures.h features/StringFeatures.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h
+distance/CanberraWordDistance.cpp.o: distance/CanberraWordDistance.cpp \
+ lib/common.h lib/memory.h lib/config.h distance/CanberraWordDistance.h \
+ features/Features.h base/SGObject.h lib/io.h base/init.h base/Parallel.h \
+ base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h features/StringFeatures.h lib/Cache.h \
+ lib/Mathematics.h lib/lapack.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ distance/StringDistance.h distance/Distance.h
+base/Version.cpp.o: base/Version.cpp base/Version.h base/init.h \
+ lib/common.h lib/memory.h lib/config.h lib/io.h lib/versionstring.h
+base/Parallel.cpp.o: base/Parallel.cpp base/Parallel.h lib/common.h \
+ lib/memory.h lib/config.h lib/io.h base/init.h
+base/SGObject.cpp.o: base/SGObject.cpp base/SGObject.h lib/io.h \
+ lib/common.h lib/memory.h lib/config.h base/init.h base/Parallel.h \
+ base/Version.h lib/versionstring.h
+base/init.cpp.o: base/init.cpp base/init.h lib/Mathematics.h lib/common.h \
+ lib/memory.h lib/config.h lib/io.h lib/lapack.h base/SGObject.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/Set.h \
+ lib/DynamicArray.h
+kernel/PolyMatchWordStringKernel.cpp.o: \
+ kernel/PolyMatchWordStringKernel.cpp lib/common.h lib/memory.h \
+ lib/config.h lib/io.h base/init.h kernel/PolyMatchWordStringKernel.h \
+ kernel/StringKernel.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ lib/Mathematics.h lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/StringFeatures.h lib/Cache.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ kernel/SqrtDiagKernelNormalizer.h kernel/CommWordStringKernel.h
+kernel/PolyKernel.cpp.o: kernel/PolyKernel.cpp lib/config.h lib/common.h \
+ lib/memory.h lib/io.h base/init.h kernel/PolyKernel.h \
+ kernel/SimpleKernel.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ lib/Mathematics.h lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/SimpleFeatures.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h preproc/SimplePreProc.h features/DotFeatures.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ kernel/SqrtDiagKernelNormalizer.h kernel/CommWordStringKernel.h \
+ kernel/StringKernel.h
+kernel/WeightedCommWordStringKernel.cpp.o: \
+ kernel/WeightedCommWordStringKernel.cpp lib/common.h lib/memory.h \
+ lib/config.h kernel/WeightedCommWordStringKernel.h lib/Mathematics.h \
+ lib/io.h base/init.h lib/lapack.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h kernel/CommWordStringKernel.h \
+ kernel/StringKernel.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ features/Features.h preproc/PreProc.h features/FeatureTypes.h \
+ kernel/KernelNormalizer.h features/StringFeatures.h lib/Cache.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/DynamicArray.h \
+ lib/File.h lib/SimpleFile.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h
+kernel/LinearKernel.cpp.o: kernel/LinearKernel.cpp lib/common.h \
+ lib/memory.h lib/config.h lib/io.h base/init.h features/Features.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h features/SimpleFeatures.h \
+ lib/Mathematics.h lib/lapack.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h preproc/SimplePreProc.h features/DotFeatures.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ kernel/LinearKernel.h kernel/SimpleKernel.h kernel/Kernel.h lib/Signal.h \
+ lib/ShogunException.h kernel/KernelNormalizer.h
+kernel/AUCKernel.cpp.o: kernel/AUCKernel.cpp lib/common.h lib/memory.h \
+ lib/config.h lib/Mathematics.h lib/io.h base/init.h lib/lapack.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ kernel/AUCKernel.h kernel/SimpleKernel.h kernel/Kernel.h lib/Signal.h \
+ lib/ShogunException.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/SimpleFeatures.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h preproc/SimplePreProc.h features/DotFeatures.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ features/Labels.h
+kernel/Kernel.cpp.o: kernel/Kernel.cpp lib/config.h lib/common.h \
+ lib/memory.h lib/io.h base/init.h lib/File.h base/SGObject.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/DynamicArray.h \
+ lib/Mathematics.h lib/lapack.h lib/SimpleFile.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h lib/Time.h lib/Signal.h \
+ lib/ShogunException.h kernel/Kernel.h kernel/KernelNormalizer.h \
+ kernel/IdentityKernelNormalizer.h classifier/svm/SVM.h \
+ classifier/KernelMachine.h features/Labels.h classifier/Classifier.h
+kernel/OligoStringKernel.cpp.o: kernel/OligoStringKernel.cpp \
+ kernel/OligoStringKernel.h kernel/StringKernel.h kernel/Kernel.h \
+ lib/common.h lib/memory.h lib/config.h lib/Signal.h \
+ lib/ShogunException.h base/SGObject.h lib/io.h base/init.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/Mathematics.h \
+ lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/StringFeatures.h lib/Cache.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ kernel/SqrtDiagKernelNormalizer.h kernel/CommWordStringKernel.h
+kernel/SimpleLocalityImprovedStringKernel.cpp.o: \
+ kernel/SimpleLocalityImprovedStringKernel.cpp lib/common.h lib/memory.h \
+ lib/config.h lib/io.h base/init.h \
+ kernel/SimpleLocalityImprovedStringKernel.h kernel/StringKernel.h \
+ kernel/Kernel.h lib/Signal.h lib/ShogunException.h base/SGObject.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/Mathematics.h \
+ lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/StringFeatures.h lib/Cache.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+kernel/LinearByteKernel.cpp.o: kernel/LinearByteKernel.cpp lib/common.h \
+ lib/memory.h lib/config.h lib/io.h base/init.h lib/Mathematics.h \
+ lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h kernel/LinearByteKernel.h kernel/SimpleKernel.h \
+ kernel/Kernel.h lib/Signal.h lib/ShogunException.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/SimpleFeatures.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h preproc/SimplePreProc.h features/DotFeatures.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+kernel/LocalityImprovedStringKernel.cpp.o: \
+ kernel/LocalityImprovedStringKernel.cpp lib/common.h lib/memory.h \
+ lib/config.h lib/io.h base/init.h kernel/LocalityImprovedStringKernel.h \
+ kernel/StringKernel.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ lib/Mathematics.h lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/StringFeatures.h lib/Cache.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+kernel/CommUlongStringKernel.cpp.o: kernel/CommUlongStringKernel.cpp \
+ lib/common.h lib/memory.h lib/config.h kernel/CommUlongStringKernel.h \
+ lib/Mathematics.h lib/io.h base/init.h lib/lapack.h base/SGObject.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/DynamicArray.h \
+ kernel/StringKernel.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ features/Features.h preproc/PreProc.h features/FeatureTypes.h \
+ kernel/KernelNormalizer.h features/StringFeatures.h lib/Cache.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ kernel/SqrtDiagKernelNormalizer.h kernel/CommWordStringKernel.h
+kernel/RegulatoryModulesStringKernel.cpp.o: \
+ kernel/RegulatoryModulesStringKernel.cpp lib/common.h lib/memory.h \
+ lib/config.h kernel/RegulatoryModulesStringKernel.h \
+ kernel/StringKernel.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ base/SGObject.h lib/io.h base/init.h base/Parallel.h base/Version.h \
+ lib/versionstring.h lib/Mathematics.h lib/lapack.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/StringFeatures.h lib/Cache.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ features/SimpleFeatures.h preproc/SimplePreProc.h features/DotFeatures.h
+kernel/SparseLinearKernel.cpp.o: kernel/SparseLinearKernel.cpp \
+ lib/common.h lib/memory.h lib/config.h lib/io.h base/init.h \
+ features/Features.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h preproc/PreProc.h features/FeatureTypes.h \
+ features/SparseFeatures.h lib/Mathematics.h lib/lapack.h lib/Cache.h \
+ features/Labels.h features/DotFeatures.h features/SimpleFeatures.h \
+ lib/File.h lib/DynamicArray.h lib/SimpleFile.h preproc/SimplePreProc.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ preproc/SparsePreProc.h kernel/SparseLinearKernel.h \
+ kernel/SparseKernel.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ kernel/KernelNormalizer.h
+kernel/DiagKernel.cpp.o: kernel/DiagKernel.cpp lib/config.h lib/common.h \
+ lib/memory.h kernel/DiagKernel.h kernel/Kernel.h lib/Signal.h \
+ lib/ShogunException.h base/SGObject.h lib/io.h base/init.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/Mathematics.h \
+ lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h
+kernel/DistanceKernel.cpp.o: kernel/DistanceKernel.cpp lib/config.h \
+ lib/common.h lib/memory.h lib/io.h base/init.h kernel/DistanceKernel.h \
+ kernel/Kernel.h lib/Signal.h lib/ShogunException.h base/SGObject.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/Mathematics.h \
+ lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h distance/Distance.h \
+ features/SimpleFeatures.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h preproc/SimplePreProc.h features/DotFeatures.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+kernel/LocalAlignmentStringKernel.cpp.o: \
+ kernel/LocalAlignmentStringKernel.cpp \
+ kernel/LocalAlignmentStringKernel.h lib/common.h lib/memory.h \
+ lib/config.h kernel/StringKernel.h kernel/Kernel.h lib/Signal.h \
+ lib/ShogunException.h base/SGObject.h lib/io.h base/init.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/Mathematics.h \
+ lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/StringFeatures.h lib/Cache.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+kernel/WeightedDegreePositionStringKernel.cpp.o: \
+ kernel/WeightedDegreePositionStringKernel.cpp lib/common.h lib/memory.h \
+ lib/config.h lib/io.h base/init.h lib/Signal.h lib/ShogunException.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ lib/Trie.h lib/DynamicArray.h lib/Mathematics.h lib/lapack.h \
+ kernel/WeightedDegreePositionStringKernel.h kernel/StringKernel.h \
+ kernel/Kernel.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/StringFeatures.h lib/Cache.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/File.h lib/SimpleFile.h lib/MemoryMappedFile.h \
+ lib/Compressor.h ../shogun/lib/config.h ../shogun/lib/common.h \
+ ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ kernel/WeightedDegreeStringKernel.h kernel/SqrtDiagKernelNormalizer.h \
+ kernel/CommWordStringKernel.h classifier/svm/SVM.h \
+ classifier/KernelMachine.h features/Labels.h classifier/Classifier.h
+kernel/WeightedDegreeStringKernel.cpp.o: \
+ kernel/WeightedDegreeStringKernel.cpp lib/common.h lib/memory.h \
+ lib/config.h lib/io.h base/init.h lib/Signal.h lib/ShogunException.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ lib/Trie.h lib/DynamicArray.h lib/Mathematics.h lib/lapack.h \
+ kernel/WeightedDegreeStringKernel.h kernel/StringKernel.h \
+ kernel/Kernel.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/StringFeatures.h lib/Cache.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/File.h lib/SimpleFile.h lib/MemoryMappedFile.h \
+ lib/Compressor.h ../shogun/lib/config.h ../shogun/lib/common.h \
+ ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ kernel/FirstElementKernelNormalizer.h
+kernel/HistogramWordStringKernel.cpp.o: \
+ kernel/HistogramWordStringKernel.cpp lib/common.h lib/memory.h \
+ lib/config.h kernel/HistogramWordStringKernel.h kernel/StringKernel.h \
+ kernel/Kernel.h lib/Signal.h lib/ShogunException.h base/SGObject.h \
+ lib/io.h base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ lib/Mathematics.h lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/StringFeatures.h lib/Cache.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ classifier/PluginEstimate.h classifier/Classifier.h features/Labels.h \
+ distributions/LinearHMM.h distributions/Distribution.h
+kernel/MatchWordStringKernel.cpp.o: kernel/MatchWordStringKernel.cpp \
+ lib/common.h lib/memory.h lib/config.h lib/Mathematics.h lib/io.h \
+ base/init.h lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h kernel/MatchWordStringKernel.h kernel/StringKernel.h \
+ kernel/Kernel.h lib/Signal.h lib/ShogunException.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/StringFeatures.h lib/Cache.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ kernel/AvgDiagKernelNormalizer.h
+kernel/SalzbergWordStringKernel.cpp.o: \
+ kernel/SalzbergWordStringKernel.cpp lib/common.h lib/memory.h \
+ lib/config.h lib/io.h base/init.h kernel/SalzbergWordStringKernel.h \
+ kernel/StringKernel.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ lib/Mathematics.h lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/StringFeatures.h lib/Cache.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ classifier/PluginEstimate.h classifier/Classifier.h features/Labels.h \
+ distributions/LinearHMM.h distributions/Distribution.h
+kernel/ConstKernel.cpp.o: kernel/ConstKernel.cpp lib/common.h \
+ lib/memory.h lib/config.h kernel/ConstKernel.h lib/Mathematics.h \
+ lib/io.h base/init.h lib/lapack.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h kernel/Kernel.h lib/Signal.h \
+ lib/ShogunException.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h
+kernel/GaussianShortRealKernel.cpp.o: kernel/GaussianShortRealKernel.cpp \
+ lib/common.h lib/memory.h lib/config.h kernel/GaussianShortRealKernel.h \
+ kernel/SimpleKernel.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ base/SGObject.h lib/io.h base/init.h base/Parallel.h base/Version.h \
+ lib/versionstring.h lib/Mathematics.h lib/lapack.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/SimpleFeatures.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h preproc/SimplePreProc.h features/DotFeatures.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+kernel/CommWordStringKernel.cpp.o: kernel/CommWordStringKernel.cpp \
+ lib/common.h lib/memory.h lib/config.h kernel/CommWordStringKernel.h \
+ lib/Mathematics.h lib/io.h base/init.h lib/lapack.h base/SGObject.h \
+ base/Parallel.h base/Version.h lib/versionstring.h kernel/StringKernel.h \
+ kernel/Kernel.h lib/Signal.h lib/ShogunException.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/StringFeatures.h lib/Cache.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ kernel/SqrtDiagKernelNormalizer.h
+kernel/LinearStringKernel.cpp.o: kernel/LinearStringKernel.cpp \
+ lib/common.h lib/memory.h lib/config.h lib/io.h base/init.h \
+ lib/Mathematics.h lib/lapack.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h kernel/LinearStringKernel.h \
+ kernel/StringKernel.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ features/Features.h preproc/PreProc.h features/FeatureTypes.h \
+ kernel/KernelNormalizer.h features/StringFeatures.h lib/Cache.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/DynamicArray.h \
+ lib/File.h lib/SimpleFile.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h
+kernel/Chi2Kernel.cpp.o: kernel/Chi2Kernel.cpp lib/common.h lib/memory.h \
+ lib/config.h kernel/Chi2Kernel.h kernel/SimpleKernel.h kernel/Kernel.h \
+ lib/Signal.h lib/ShogunException.h base/SGObject.h lib/io.h base/init.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/Mathematics.h \
+ lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/SimpleFeatures.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h preproc/SimplePreProc.h features/DotFeatures.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+kernel/SigmoidKernel.cpp.o: kernel/SigmoidKernel.cpp lib/config.h \
+ lib/common.h lib/memory.h lib/io.h base/init.h lib/lapack.h \
+ kernel/SigmoidKernel.h kernel/SimpleKernel.h kernel/Kernel.h \
+ lib/Signal.h lib/ShogunException.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h lib/Mathematics.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/SimpleFeatures.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h preproc/SimplePreProc.h features/DotFeatures.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+kernel/SparsePolyKernel.cpp.o: kernel/SparsePolyKernel.cpp lib/common.h \
+ lib/memory.h lib/config.h lib/io.h base/init.h kernel/SparsePolyKernel.h \
+ kernel/SparseKernel.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ lib/Mathematics.h lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/SparseFeatures.h lib/Cache.h features/Labels.h \
+ features/DotFeatures.h features/SimpleFeatures.h lib/File.h \
+ lib/DynamicArray.h lib/SimpleFile.h preproc/SimplePreProc.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ preproc/SparsePreProc.h kernel/SqrtDiagKernelNormalizer.h \
+ kernel/CommWordStringKernel.h kernel/StringKernel.h
+kernel/TensorProductPairKernel.cpp.o: kernel/TensorProductPairKernel.cpp \
+ lib/common.h lib/memory.h lib/config.h lib/Mathematics.h lib/io.h \
+ base/init.h lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h kernel/TensorProductPairKernel.h \
+ kernel/SimpleKernel.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ features/Features.h preproc/PreProc.h features/FeatureTypes.h \
+ kernel/KernelNormalizer.h features/SimpleFeatures.h lib/Cache.h \
+ lib/File.h lib/DynamicArray.h lib/SimpleFile.h preproc/SimplePreProc.h \
+ features/DotFeatures.h features/StringFeatures.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h
+kernel/CustomKernel.cpp.o: kernel/CustomKernel.cpp lib/common.h \
+ lib/memory.h lib/config.h kernel/CustomKernel.h lib/Mathematics.h \
+ lib/io.h base/init.h lib/lapack.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h kernel/Kernel.h lib/Signal.h \
+ lib/ShogunException.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/DummyFeatures.h
+kernel/FixedDegreeStringKernel.cpp.o: kernel/FixedDegreeStringKernel.cpp \
+ lib/common.h lib/memory.h lib/config.h kernel/FixedDegreeStringKernel.h \
+ kernel/StringKernel.h kernel/Kernel.h lib/Signal.h lib/ShogunException.h \
+ base/SGObject.h lib/io.h base/init.h base/Parallel.h base/Version.h \
+ lib/versionstring.h lib/Mathematics.h lib/lapack.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/StringFeatures.h lib/Cache.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ kernel/SqrtDiagKernelNormalizer.h kernel/CommWordStringKernel.h
+kernel/PolyMatchStringKernel.cpp.o: kernel/PolyMatchStringKernel.cpp \
+ lib/common.h lib/memory.h lib/config.h lib/io.h base/init.h \
+ kernel/PolyMatchStringKernel.h kernel/StringKernel.h kernel/Kernel.h \
+ lib/Signal.h lib/ShogunException.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h lib/Mathematics.h lib/lapack.h \
+ features/Features.h preproc/PreProc.h features/FeatureTypes.h \
+ kernel/KernelNormalizer.h features/StringFeatures.h lib/Cache.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/DynamicArray.h \
+ lib/File.h lib/SimpleFile.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h kernel/SqrtDiagKernelNormalizer.h \
+ kernel/CommWordStringKernel.h
+kernel/PyramidChi2.cpp.o: kernel/PyramidChi2.cpp kernel/PyramidChi2.h \
+ lib/common.h lib/memory.h lib/config.h kernel/SimpleKernel.h \
+ kernel/Kernel.h lib/Signal.h lib/ShogunException.h base/SGObject.h \
+ lib/io.h base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ lib/Mathematics.h lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/SimpleFeatures.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h preproc/SimplePreProc.h features/DotFeatures.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ kernel/GaussianKernel.h
+kernel/LinearWordKernel.cpp.o: kernel/LinearWordKernel.cpp lib/common.h \
+ lib/memory.h lib/config.h lib/io.h base/init.h lib/Mathematics.h \
+ lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h kernel/LinearWordKernel.h kernel/SimpleKernel.h \
+ kernel/Kernel.h lib/Signal.h lib/ShogunException.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/SimpleFeatures.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h preproc/SimplePreProc.h features/DotFeatures.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+kernel/CombinedKernel.cpp.o: kernel/CombinedKernel.cpp lib/common.h \
+ lib/memory.h lib/config.h lib/io.h base/init.h lib/Signal.h \
+ lib/ShogunException.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h kernel/Kernel.h lib/Mathematics.h lib/lapack.h \
+ features/Features.h preproc/PreProc.h features/FeatureTypes.h \
+ kernel/KernelNormalizer.h kernel/CombinedKernel.h lib/List.h \
+ features/CombinedFeatures.h kernel/CustomKernel.h
+kernel/GaussianKernel.cpp.o: kernel/GaussianKernel.cpp lib/common.h \
+ lib/memory.h lib/config.h kernel/GaussianKernel.h kernel/SimpleKernel.h \
+ kernel/Kernel.h lib/Signal.h lib/ShogunException.h base/SGObject.h \
+ lib/io.h base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ lib/Mathematics.h lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/SimpleFeatures.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h preproc/SimplePreProc.h features/DotFeatures.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+kernel/GaussianShiftKernel.cpp.o: kernel/GaussianShiftKernel.cpp \
+ lib/common.h lib/memory.h lib/config.h kernel/GaussianShiftKernel.h \
+ kernel/GaussianKernel.h kernel/SimpleKernel.h kernel/Kernel.h \
+ lib/Signal.h lib/ShogunException.h base/SGObject.h lib/io.h base/init.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/Mathematics.h \
+ lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/SimpleFeatures.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h preproc/SimplePreProc.h features/DotFeatures.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+kernel/SimpleKernel.cpp.o: kernel/SimpleKernel.cpp kernel/SimpleKernel.h \
+ kernel/Kernel.h lib/common.h lib/memory.h lib/config.h lib/Signal.h \
+ lib/ShogunException.h base/SGObject.h lib/io.h base/init.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/Mathematics.h \
+ lib/lapack.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h kernel/KernelNormalizer.h \
+ features/SimpleFeatures.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h preproc/SimplePreProc.h features/DotFeatures.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+kernel/SparseGaussianKernel.cpp.o: kernel/SparseGaussianKernel.cpp \
+ lib/common.h lib/memory.h lib/config.h lib/io.h base/init.h \
+ kernel/SparseGaussianKernel.h kernel/SparseKernel.h kernel/Kernel.h \
+ lib/Signal.h lib/ShogunException.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h lib/Mathematics.h lib/lapack.h \
+ features/Features.h preproc/PreProc.h features/FeatureTypes.h \
+ kernel/KernelNormalizer.h features/SparseFeatures.h lib/Cache.h \
+ features/Labels.h features/DotFeatures.h features/SimpleFeatures.h \
+ lib/File.h lib/DynamicArray.h lib/SimpleFile.h preproc/SimplePreProc.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ preproc/SparsePreProc.h
+preproc/SortUlongString.cpp.o: preproc/SortUlongString.cpp \
+ preproc/SortUlongString.h features/StringFeatures.h lib/common.h \
+ lib/memory.h lib/config.h lib/io.h base/init.h lib/Cache.h \
+ lib/Mathematics.h lib/lapack.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h features/Features.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+preproc/PCACut.cpp.o: preproc/PCACut.cpp lib/config.h lib/Mathematics.h \
+ lib/common.h lib/memory.h lib/io.h base/init.h lib/lapack.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PCACut.h preproc/SimplePreProc.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h features/SimpleFeatures.h \
+ lib/Cache.h lib/File.h lib/DynamicArray.h lib/SimpleFile.h \
+ features/DotFeatures.h features/StringFeatures.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h
+preproc/SortWordString.cpp.o: preproc/SortWordString.cpp \
+ preproc/SortWordString.h features/StringFeatures.h lib/common.h \
+ lib/memory.h lib/config.h lib/io.h base/init.h lib/Cache.h \
+ lib/Mathematics.h lib/lapack.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h features/Features.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+preproc/NormOne.cpp.o: preproc/NormOne.cpp preproc/NormOne.h \
+ preproc/SimplePreProc.h features/Features.h lib/common.h lib/memory.h \
+ lib/config.h base/SGObject.h lib/io.h base/init.h base/Parallel.h \
+ base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h features/SimpleFeatures.h lib/Mathematics.h \
+ lib/lapack.h lib/Cache.h lib/File.h lib/DynamicArray.h lib/SimpleFile.h \
+ features/DotFeatures.h features/StringFeatures.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h
+preproc/NormDerivativeLem3.cpp.o: preproc/NormDerivativeLem3.cpp \
+ preproc/NormDerivativeLem3.h preproc/SimplePreProc.h features/Features.h \
+ lib/common.h lib/memory.h lib/config.h base/SGObject.h lib/io.h \
+ base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h features/SimpleFeatures.h \
+ lib/Mathematics.h lib/lapack.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h features/DotFeatures.h features/StringFeatures.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/MemoryMappedFile.h \
+ lib/Compressor.h ../shogun/lib/config.h ../shogun/lib/common.h \
+ ../shogun/base/SGObject.h ../shogun/lib/io.h
+preproc/LogPlusOne.cpp.o: preproc/LogPlusOne.cpp preproc/LogPlusOne.h \
+ preproc/SimplePreProc.h features/Features.h lib/common.h lib/memory.h \
+ lib/config.h base/SGObject.h lib/io.h base/init.h base/Parallel.h \
+ base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h features/SimpleFeatures.h lib/Mathematics.h \
+ lib/lapack.h lib/Cache.h lib/File.h lib/DynamicArray.h lib/SimpleFile.h \
+ features/DotFeatures.h features/StringFeatures.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h
+preproc/PruneVarSubMean.cpp.o: preproc/PruneVarSubMean.cpp \
+ preproc/PruneVarSubMean.h preproc/SimplePreProc.h features/Features.h \
+ lib/common.h lib/memory.h lib/config.h base/SGObject.h lib/io.h \
+ base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h features/SimpleFeatures.h \
+ lib/Mathematics.h lib/lapack.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h features/DotFeatures.h features/StringFeatures.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/MemoryMappedFile.h \
+ lib/Compressor.h ../shogun/lib/config.h ../shogun/lib/common.h \
+ ../shogun/base/SGObject.h ../shogun/lib/io.h
+preproc/PreProc.cpp.o: preproc/PreProc.cpp preproc/PreProc.h lib/common.h \
+ lib/memory.h lib/config.h base/SGObject.h lib/io.h base/init.h \
+ base/Parallel.h base/Version.h lib/versionstring.h \
+ features/FeatureTypes.h features/Features.h
+distributions/LinearHMM.cpp.o: distributions/LinearHMM.cpp \
+ distributions/LinearHMM.h features/StringFeatures.h lib/common.h \
+ lib/memory.h lib/config.h lib/io.h base/init.h lib/Cache.h \
+ lib/Mathematics.h lib/lapack.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h features/Features.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ features/Labels.h distributions/Distribution.h
+distributions/Distribution.cpp.o: distributions/Distribution.cpp \
+ distributions/Distribution.h features/Features.h lib/common.h \
+ lib/memory.h lib/config.h base/SGObject.h lib/io.h base/init.h \
+ base/Parallel.h base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h lib/Mathematics.h lib/lapack.h
+distributions/Histogram.cpp.o: distributions/Histogram.cpp \
+ distributions/Histogram.h features/StringFeatures.h lib/common.h \
+ lib/memory.h lib/config.h lib/io.h base/init.h lib/Cache.h \
+ lib/Mathematics.h lib/lapack.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h features/Features.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ distributions/Distribution.h
+distributions/HMM.cpp.o: distributions/HMM.cpp distributions/HMM.h \
+ lib/Mathematics.h lib/common.h lib/memory.h lib/config.h lib/io.h \
+ base/init.h lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h features/StringFeatures.h lib/Cache.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/DynamicArray.h \
+ lib/File.h lib/SimpleFile.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h distributions/Distribution.h lib/Signal.h \
+ lib/ShogunException.h
+distributions/GHMM.cpp.o: distributions/GHMM.cpp distributions/GHMM.h \
+ lib/Mathematics.h lib/common.h lib/memory.h lib/config.h lib/io.h \
+ base/init.h lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h distributions/Distribution.h
+lib/Compressor.cpp.o: lib/Compressor.cpp lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h lib/memory.h lib/config.h \
+ ../shogun/base/SGObject.h lib/io.h lib/common.h base/init.h \
+ base/Parallel.h base/Version.h lib/versionstring.h ../shogun/lib/io.h \
+ lib/Mathematics.h lib/lapack.h base/SGObject.h
+lib/File.cpp.o: lib/File.cpp lib/File.h base/SGObject.h lib/io.h \
+ lib/common.h lib/memory.h lib/config.h base/init.h base/Parallel.h \
+ base/Version.h lib/versionstring.h lib/DynamicArray.h lib/Mathematics.h \
+ lib/lapack.h lib/SimpleFile.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h features/StringFeatures.h lib/Cache.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/MemoryMappedFile.h \
+ lib/Compressor.h ../shogun/lib/config.h ../shogun/lib/common.h \
+ ../shogun/base/SGObject.h ../shogun/lib/io.h features/SparseFeatures.h \
+ features/Labels.h features/DotFeatures.h features/SimpleFeatures.h \
+ preproc/SimplePreProc.h preproc/SparsePreProc.h
+lib/Cplex.cpp.o: lib/Cplex.cpp lib/config.h
+lib/ShogunException.cpp.o: lib/ShogunException.cpp lib/ShogunException.h \
+ lib/Signal.h lib/config.h base/SGObject.h lib/io.h lib/common.h \
+ lib/memory.h base/init.h base/Parallel.h base/Version.h \
+ lib/versionstring.h
+lib/Signal.cpp.o: lib/Signal.cpp lib/config.h lib/io.h lib/common.h \
+ lib/memory.h base/init.h lib/Signal.h lib/ShogunException.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h
+lib/Time.cpp.o: lib/Time.cpp lib/Time.h lib/common.h lib/memory.h \
+ lib/config.h lib/io.h base/init.h base/SGObject.h base/Parallel.h \
+ base/Version.h lib/versionstring.h
+lib/Trie.cpp.o: lib/Trie.cpp lib/common.h lib/memory.h lib/config.h \
+ lib/io.h base/init.h lib/Trie.h lib/DynamicArray.h lib/Mathematics.h \
+ lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h
+lib/io.cpp.o: lib/io.cpp lib/config.h lib/io.h lib/common.h lib/memory.h \
+ base/init.h lib/ShogunException.h lib/Signal.h base/SGObject.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/Time.h \
+ lib/Mathematics.h lib/lapack.h
+lib/memory.cpp.o: lib/memory.cpp lib/ShogunException.h lib/memory.h \
+ lib/common.h lib/config.h lib/Set.h lib/Mathematics.h lib/io.h \
+ base/init.h lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h lib/DynamicArray.h
+lib/Mathematics.cpp.o: lib/Mathematics.cpp lib/common.h lib/memory.h \
+ lib/config.h lib/Mathematics.h lib/io.h base/init.h lib/lapack.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h
+lib/lapack.cpp.o: lib/lapack.cpp lib/config.h lib/lapack.h lib/common.h \
+ lib/memory.h lib/io.h base/init.h
+lib/Hash.cpp.o: lib/Hash.cpp lib/common.h lib/memory.h lib/config.h \
+ lib/Hash.h base/SGObject.h lib/io.h base/init.h base/Parallel.h \
+ base/Version.h lib/versionstring.h
+features/CombinedFeatures.cpp.o: features/CombinedFeatures.cpp \
+ features/CombinedFeatures.h features/Features.h lib/common.h \
+ lib/memory.h lib/config.h base/SGObject.h lib/io.h base/init.h \
+ base/Parallel.h base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h lib/List.h
+features/WDFeatures.cpp.o: features/WDFeatures.cpp features/WDFeatures.h \
+ lib/common.h lib/memory.h lib/config.h features/DotFeatures.h \
+ features/Features.h base/SGObject.h lib/io.h base/init.h base/Parallel.h \
+ base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h features/StringFeatures.h lib/Cache.h \
+ lib/Mathematics.h lib/lapack.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+features/CombinedDotFeatures.cpp.o: features/CombinedDotFeatures.cpp \
+ features/CombinedDotFeatures.h lib/common.h lib/memory.h lib/config.h \
+ lib/List.h base/SGObject.h lib/io.h base/init.h base/Parallel.h \
+ base/Version.h lib/versionstring.h features/DotFeatures.h \
+ features/Features.h preproc/PreProc.h features/FeatureTypes.h \
+ lib/Mathematics.h lib/lapack.h
+features/ExplicitSpecFeatures.cpp.o: features/ExplicitSpecFeatures.cpp \
+ features/ExplicitSpecFeatures.h lib/common.h lib/memory.h lib/config.h \
+ lib/io.h base/init.h features/DotFeatures.h features/Features.h \
+ base/SGObject.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h features/StringFeatures.h \
+ lib/Cache.h lib/Mathematics.h lib/lapack.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/DynamicArray.h lib/File.h lib/SimpleFile.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+features/ImplicitWeightedSpecFeatures.cpp.o: \
+ features/ImplicitWeightedSpecFeatures.cpp \
+ features/ImplicitWeightedSpecFeatures.h lib/common.h lib/memory.h \
+ lib/config.h lib/io.h base/init.h features/DotFeatures.h \
+ features/Features.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h preproc/PreProc.h features/FeatureTypes.h \
+ features/StringFeatures.h lib/Cache.h lib/Mathematics.h lib/lapack.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/DynamicArray.h \
+ lib/File.h lib/SimpleFile.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h
+features/RealFileFeatures.cpp.o: features/RealFileFeatures.cpp \
+ features/RealFileFeatures.h lib/common.h lib/memory.h lib/config.h \
+ features/SimpleFeatures.h lib/Mathematics.h lib/io.h base/init.h \
+ lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h preproc/SimplePreProc.h features/DotFeatures.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h
+features/AttributeFeatures.cpp.o: features/AttributeFeatures.cpp \
+ features/Features.h lib/common.h lib/memory.h lib/config.h \
+ base/SGObject.h lib/io.h base/init.h base/Parallel.h base/Version.h \
+ lib/versionstring.h preproc/PreProc.h features/FeatureTypes.h \
+ features/AttributeFeatures.h lib/DynamicArray.h lib/Mathematics.h \
+ lib/lapack.h
+features/FKFeatures.cpp.o: features/FKFeatures.cpp features/FKFeatures.h \
+ features/SimpleFeatures.h lib/common.h lib/memory.h lib/config.h \
+ lib/Mathematics.h lib/io.h base/init.h lib/lapack.h base/SGObject.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/Cache.h \
+ lib/File.h lib/DynamicArray.h lib/SimpleFile.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h preproc/SimplePreProc.h \
+ features/DotFeatures.h features/StringFeatures.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h distributions/HMM.h distributions/Distribution.h
+features/TOPFeatures.cpp.o: features/TOPFeatures.cpp \
+ features/TOPFeatures.h features/SimpleFeatures.h lib/common.h \
+ lib/memory.h lib/config.h lib/Mathematics.h lib/io.h base/init.h \
+ lib/lapack.h base/SGObject.h base/Parallel.h base/Version.h \
+ lib/versionstring.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h features/Features.h preproc/PreProc.h \
+ features/FeatureTypes.h preproc/SimplePreProc.h features/DotFeatures.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ distributions/HMM.h distributions/Distribution.h
+features/Alphabet.cpp.o: features/Alphabet.cpp features/Alphabet.h \
+ base/SGObject.h lib/io.h lib/common.h lib/memory.h lib/config.h \
+ base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ lib/Mathematics.h lib/lapack.h
+features/StringFeatures.cpp.o: features/StringFeatures.cpp
+features/SimpleFeatures.cpp.o: features/SimpleFeatures.cpp \
+ features/SimpleFeatures.h lib/common.h lib/memory.h lib/config.h \
+ lib/Mathematics.h lib/io.h base/init.h lib/lapack.h base/SGObject.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/Cache.h \
+ lib/File.h lib/DynamicArray.h lib/SimpleFile.h features/Features.h \
+ preproc/PreProc.h features/FeatureTypes.h preproc/SimplePreProc.h \
+ features/DotFeatures.h features/StringFeatures.h preproc/StringPreProc.h \
+ features/Alphabet.h lib/MemoryMappedFile.h lib/Compressor.h \
+ ../shogun/lib/config.h ../shogun/lib/common.h ../shogun/base/SGObject.h \
+ ../shogun/lib/io.h
+features/Labels.cpp.o: features/Labels.cpp features/Labels.h lib/common.h \
+ lib/memory.h lib/config.h lib/io.h base/init.h base/SGObject.h \
+ base/Parallel.h base/Version.h lib/versionstring.h lib/File.h \
+ lib/DynamicArray.h lib/Mathematics.h lib/lapack.h lib/SimpleFile.h \
+ features/Features.h preproc/PreProc.h features/FeatureTypes.h
+features/DotFeatures.cpp.o: features/DotFeatures.cpp \
+ features/DotFeatures.h lib/common.h lib/memory.h lib/config.h \
+ features/Features.h base/SGObject.h lib/io.h base/init.h base/Parallel.h \
+ base/Version.h lib/versionstring.h preproc/PreProc.h \
+ features/FeatureTypes.h lib/Signal.h lib/ShogunException.h
+features/Features.cpp.o: features/Features.cpp features/Features.h \
+ lib/common.h lib/memory.h lib/config.h base/SGObject.h lib/io.h \
+ base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h
+features/PolyFeatures.cpp.o: features/PolyFeatures.cpp \
+ features/PolyFeatures.h lib/common.h lib/memory.h lib/config.h \
+ features/DotFeatures.h features/Features.h base/SGObject.h lib/io.h \
+ base/init.h base/Parallel.h base/Version.h lib/versionstring.h \
+ preproc/PreProc.h features/FeatureTypes.h features/SimpleFeatures.h \
+ lib/Mathematics.h lib/lapack.h lib/Cache.h lib/File.h lib/DynamicArray.h \
+ lib/SimpleFile.h preproc/SimplePreProc.h features/StringFeatures.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/MemoryMappedFile.h \
+ lib/Compressor.h ../shogun/lib/config.h ../shogun/lib/common.h \
+ ../shogun/base/SGObject.h ../shogun/lib/io.h
