@@ -228,24 +228,6 @@ bool CGUIClassifier::new_classifier(char* name, int32_t d, int32_t from_d)
 		((CLibLinear*) classifier)->set_bias_enabled(svm_use_bias);
 		SG_INFO("created LibLinear logistic regression object\n") ;
 	}
-	else if (strcmp(name,"LIBLINEAR_L1RL2")==0)
-	{
-		SG_UNREF(classifier);
-		classifier= new CLibLinear(L1RL2);
-		((CLibLinear*) classifier)->set_C(svm_C1, svm_C2);
-		((CLibLinear*) classifier)->set_epsilon(svm_epsilon);
-		((CLibLinear*) classifier)->set_bias_enabled(svm_use_bias);
-		SG_INFO("created LibLinear l2 loss object\n") ;
-	}
-	else if (strcmp(name,"LIBLINEAR_L1RLR")==0)
-	{
-		SG_UNREF(classifier);
-		classifier= new CLibLinear(L1RLR);
-		((CLibLinear*) classifier)->set_C(svm_C1, svm_C2);
-		((CLibLinear*) classifier)->set_epsilon(svm_epsilon);
-		((CLibLinear*) classifier)->set_bias_enabled(svm_use_bias);
-		SG_INFO("created LibLinear l2 loss object\n") ;
-	}
 	else if (strcmp(name,"LIBLINEAR_L2")==0)
 	{
 		SG_UNREF(classifier);
@@ -254,6 +236,15 @@ bool CGUIClassifier::new_classifier(char* name, int32_t d, int32_t from_d)
 		((CLibLinear*) classifier)->set_epsilon(svm_epsilon);
 		((CLibLinear*) classifier)->set_bias_enabled(svm_use_bias);
 		SG_INFO("created LibLinear l2 loss object\n") ;
+	}
+	else if (strcmp(name,"LIBLINEAR_L1")==0)
+	{
+		SG_UNREF(classifier);
+		classifier= new CLibLinear(L1);
+		((CLibLinear*) classifier)->set_C(svm_C1, svm_C2);
+		((CLibLinear*) classifier)->set_epsilon(svm_epsilon);
+		((CLibLinear*) classifier)->set_bias_enabled(svm_use_bias);
+		SG_INFO("created LibLinear l1 loss object\n") ;
 	}
 	else if (strcmp(name,"LDA")==0)
 	{

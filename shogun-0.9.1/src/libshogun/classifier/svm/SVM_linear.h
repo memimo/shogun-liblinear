@@ -8,6 +8,7 @@
 #ifdef HAVE_LAPACK
 #include "classifier/svm/Tron.h"
 #include "features/DotFeatures.h"
+#include "features/SparseFeatures.h"
 #include "lib/io.h"
 
 namespace shogun
@@ -31,6 +32,22 @@ struct problem
 	/** if bias shall be used */
 	bool use_bias;
 };
+
+/** problem restricted to sparse features for l1*/
+struct problem_l1
+{
+	/** l */
+	int32_t l;
+	/** n */
+	int32_t n;
+	/** y */
+	int32_t *y;
+	/** sparse features x */
+	TSparse<float64_t>* x;
+	/** if bias shall be used */
+	bool use_bias;
+};
+
 
 /** parameter */
 struct parameter
@@ -201,10 +218,10 @@ private:
 class l1r_l2_svc
 {
 public:
-	l1r_l2_svc(problem *prob_col, float64_t *w, float64_t eps, float64_t Cp, float64_t Cn);
+	l1r_l2_svc(problem_l1 *prob_col, float64_t *w, float64_t eps, float64_t Cp, float64_t Cn);
 private:
 	void solve_l1r_l2_svc(float64_t *w, float64_t eps, float64_t Cp, float64_t Cn);
-	const problem *prob;
+	const problem_l1 *prob_col;
 };
 
 /** class l1r_lr */

@@ -2,12 +2,12 @@
 
 int main(void) { return 0; }
 
-cc  -fPIC ./configure-10801-24121.c -o ./configure-29388-24121.o  
+cc  -fPIC ./configure-6768-11465.c -o ./configure-1203-11465.o  
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00210000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00e75000)
-	/lib/ld-linux.so.2 (0x0036b000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00696000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x002d0000)
+	/lib/ld-linux.so.2 (0x009b2000)
 
 Result is: 4.4.1, ok
 ##########################################
@@ -16,122 +16,122 @@ Result is: 4.4.1, ok
 
 int main(void) { return 0; }
 
-cc  -fPIC ./configure-10801-24121.c -o ./configure-29388-24121.o  -g
+cc  -fPIC ./configure-6768-11465.c -o ./configure-1203-11465.o  -g
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00944000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00da7000)
-	/lib/ld-linux.so.2 (0x00863000)
-
-
-int main(void) { return 0; }
-
-cc  -fPIC -g ./configure-10801-24121.c -o ./configure-29388-24121.o  -Wall
-
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00f08000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x005c5000)
-	/lib/ld-linux.so.2 (0x00d91000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00613000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00119000)
+	/lib/ld-linux.so.2 (0x00e12000)
 
 
 int main(void) { return 0; }
 
-cc  -fPIC -g -Wall ./configure-10801-24121.c -o ./configure-29388-24121.o  -O9
+cc  -fPIC -g ./configure-6768-11465.c -o ./configure-1203-11465.o  -Wall
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00cd4000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00356000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00723000)
+	/lib/ld-linux.so.2 (0x00603000)
+
+
+int main(void) { return 0; }
+
+cc  -fPIC -g -Wall ./configure-6768-11465.c -o ./configure-1203-11465.o  -O9
+
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00b24000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00215000)
+	/lib/ld-linux.so.2 (0x001a4000)
+
+
+int main(void) { return 0; }
+
+cc  -fPIC -g -Wall -O9 ./configure-6768-11465.c -o ./configure-1203-11465.o  -fexpensive-optimizations
+
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x007f2000)
 	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00110000)
-	/lib/ld-linux.so.2 (0x00b35000)
+	/lib/ld-linux.so.2 (0x0084a000)
 
 
 int main(void) { return 0; }
 
-cc  -fPIC -g -Wall -O9 ./configure-10801-24121.c -o ./configure-29388-24121.o  -fexpensive-optimizations
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations ./configure-6768-11465.c -o ./configure-1203-11465.o  -frerun-cse-after-loop
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00b45000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x009df000)
-	/lib/ld-linux.so.2 (0x00c36000)
-
-
-int main(void) { return 0; }
-
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations ./configure-10801-24121.c -o ./configure-29388-24121.o  -frerun-cse-after-loop
-
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00f05000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x0042d000)
-	/lib/ld-linux.so.2 (0x008c5000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00c75000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00767000)
+	/lib/ld-linux.so.2 (0x00591000)
 
 
 int main(void) { return 0; }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop ./configure-10801-24121.c -o ./configure-29388-24121.o  -fcse-follow-jumps
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop ./configure-6768-11465.c -o ./configure-1203-11465.o  -fcse-follow-jumps
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00923000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00dc9000)
 	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00110000)
-	/lib/ld-linux.so.2 (0x00796000)
+	/lib/ld-linux.so.2 (0x00c00000)
 
 
 int main(void) { return 0; }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps ./configure-10801-24121.c -o ./configure-29388-24121.o  -finline-functions
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps ./configure-6768-11465.c -o ./configure-1203-11465.o  -finline-functions
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x0096c000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00bf4000)
-	/lib/ld-linux.so.2 (0x003d0000)
-
-
-int main(void) { return 0; }
-
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions ./configure-10801-24121.c -o ./configure-29388-24121.o  -fschedule-insns2
-
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00171000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00e2c000)
-	/lib/ld-linux.so.2 (0x00336000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00491000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x009aa000)
+	/lib/ld-linux.so.2 (0x003c9000)
 
 
 int main(void) { return 0; }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 ./configure-10801-24121.c -o ./configure-29388-24121.o  -fthread-jumps
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions ./configure-6768-11465.c -o ./configure-1203-11465.o  -fschedule-insns2
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x001bc000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x0062a000)
-	/lib/ld-linux.so.2 (0x0028c000)
-
-
-int main(void) { return 0; }
-
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps ./configure-10801-24121.c -o ./configure-29388-24121.o  -fforce-addr
-
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00afa000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x0054d000)
-	/lib/ld-linux.so.2 (0x003ea000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00b60000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00110000)
+	/lib/ld-linux.so.2 (0x00985000)
 
 
 int main(void) { return 0; }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr ./configure-10801-24121.c -o ./configure-29388-24121.o  -fstrength-reduce
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 ./configure-6768-11465.c -o ./configure-1203-11465.o  -fthread-jumps
 
-ldd ./configure-29388-24121.o
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x008fe000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00985000)
+	/lib/ld-linux.so.2 (0x00f36000)
+
+
+int main(void) { return 0; }
+
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps ./configure-6768-11465.c -o ./configure-1203-11465.o  -fforce-addr
+
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00ad0000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00964000)
+	/lib/ld-linux.so.2 (0x00704000)
+
+
+int main(void) { return 0; }
+
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr ./configure-6768-11465.c -o ./configure-1203-11465.o  -fstrength-reduce
+
+ldd ./configure-1203-11465.o
 	linux-gate.so.1 =>  (0x00eab000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x006ed000)
-	/lib/ld-linux.so.2 (0x0045b000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00804000)
+	/lib/ld-linux.so.2 (0x009a3000)
 
 
 int main(void) { return 0; }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce ./configure-10801-24121.c -o ./configure-29388-24121.o  -funroll-loops
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce ./configure-6768-11465.c -o ./configure-1203-11465.o  -funroll-loops
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00fb6000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x0068e000)
-	/lib/ld-linux.so.2 (0x00225000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x006b2000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00aea000)
+	/lib/ld-linux.so.2 (0x00e80000)
 
 Result is: -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops
 ##########################################
@@ -140,15 +140,15 @@ Result is: -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -
 
 int main(void) { return 0; }
 
-c++  -fPIC ./configure-10801-24121.c -o ./configure-29388-24121.o  
+c++  -fPIC ./configure-6768-11465.c -o ./configure-1203-11465.o  
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00a22000)
-	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00850000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00829000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x004a7000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00110000)
-	/lib/ld-linux.so.2 (0x003dd000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00512000)
+	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00a5d000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x009ca000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00729000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x0084b000)
+	/lib/ld-linux.so.2 (0x00128000)
 
 Result is: 4.4.1, ok
 ##########################################
@@ -157,158 +157,158 @@ Result is: 4.4.1, ok
 
 int main(void) { return 0; }
 
-c++  -fPIC ./configure-10801-24121.c -o ./configure-29388-24121.o  -g
+c++  -fPIC ./configure-6768-11465.c -o ./configure-1203-11465.o  -g
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x0037f000)
-	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00946000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x008b9000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x004e8000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00699000)
-	/lib/ld-linux.so.2 (0x002ee000)
-
-
-int main(void) { return 0; }
-
-c++  -fPIC -g ./configure-10801-24121.c -o ./configure-29388-24121.o  -Wall
-
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x004d8000)
-	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00712000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00c92000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00d72000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x0096a000)
-	/lib/ld-linux.so.2 (0x001c6000)
-
-
-int main(void) { return 0; }
-
-c++  -fPIC -g -Wall ./configure-10801-24121.c -o ./configure-29388-24121.o  -O9
-
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x002e7000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x007a1000)
 	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00110000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00320000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00ca6000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00b2d000)
-	/lib/ld-linux.so.2 (0x00cc8000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00202000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x005ef000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00228000)
+	/lib/ld-linux.so.2 (0x009eb000)
 
 
 int main(void) { return 0; }
 
-c++  -fPIC -g -Wall -O9 ./configure-10801-24121.c -o ./configure-29388-24121.o  -fexpensive-optimizations
+c++  -fPIC -g ./configure-6768-11465.c -o ./configure-1203-11465.o  -Wall
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00a2d000)
-	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x0075a000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00cbc000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x0017f000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x0019d000)
-	/lib/ld-linux.so.2 (0x00514000)
-
-
-int main(void) { return 0; }
-
-c++  -fPIC -g -Wall -O9 -fexpensive-optimizations ./configure-10801-24121.c -o ./configure-29388-24121.o  -frerun-cse-after-loop
-
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00c9e000)
-	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00e0f000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00365000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x009ae000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00214000)
-	/lib/ld-linux.so.2 (0x00484000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00d24000)
+	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00206000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00871000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00110000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x002f8000)
+	/lib/ld-linux.so.2 (0x00b0d000)
 
 
 int main(void) { return 0; }
 
-c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop ./configure-10801-24121.c -o ./configure-29388-24121.o  -fcse-follow-jumps
+c++  -fPIC -g -Wall ./configure-6768-11465.c -o ./configure-1203-11465.o  -O9
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00744000)
-	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00d7a000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00b68000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x003f7000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x008a1000)
-	/lib/ld-linux.so.2 (0x00a29000)
-
-
-int main(void) { return 0; }
-
-c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps ./configure-10801-24121.c -o ./configure-29388-24121.o  -finline-functions
-
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00970000)
-	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x002d1000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00add000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00527000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00678000)
-	/lib/ld-linux.so.2 (0x00eb0000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00938000)
+	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00294000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00f18000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x007f4000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00abf000)
+	/lib/ld-linux.so.2 (0x00d0c000)
 
 
 int main(void) { return 0; }
 
-c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions ./configure-10801-24121.c -o ./configure-29388-24121.o  -fschedule-insns2
+c++  -fPIC -g -Wall -O9 ./configure-6768-11465.c -o ./configure-1203-11465.o  -fexpensive-optimizations
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00844000)
-	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x0024b000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00618000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00dad000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00649000)
-	/lib/ld-linux.so.2 (0x00c8b000)
-
-
-int main(void) { return 0; }
-
-c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 ./configure-10801-24121.c -o ./configure-29388-24121.o  -fthread-jumps
-
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00521000)
-	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00998000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00110000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x0030b000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x0036f000)
-	/lib/ld-linux.so.2 (0x00882000)
-
-
-int main(void) { return 0; }
-
-c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps ./configure-10801-24121.c -o ./configure-29388-24121.o  -fforce-addr
-
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x007f3000)
-	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x0049b000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00d77000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x0059b000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x0067d000)
-	/lib/ld-linux.so.2 (0x002ed000)
-
-
-int main(void) { return 0; }
-
-c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr ./configure-10801-24121.c -o ./configure-29388-24121.o  -fstrength-reduce
-
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x0023f000)
-	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00c5f000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00257000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00d54000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x005f2000)
-	/lib/ld-linux.so.2 (0x00369000)
-
-
-int main(void) { return 0; }
-
-c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce ./configure-10801-24121.c -o ./configure-29388-24121.o  -funroll-loops
-
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x003a2000)
-	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00633000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00ca3000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00c70000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x009d3000)
+	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x005d8000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00c23000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00f52000)
 	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00110000)
-	/lib/ld-linux.so.2 (0x00823000)
+	/lib/ld-linux.so.2 (0x00362000)
+
+
+int main(void) { return 0; }
+
+c++  -fPIC -g -Wall -O9 -fexpensive-optimizations ./configure-6768-11465.c -o ./configure-1203-11465.o  -frerun-cse-after-loop
+
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00a59000)
+	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x0045a000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00110000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00e28000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00136000)
+	/lib/ld-linux.so.2 (0x00898000)
+
+
+int main(void) { return 0; }
+
+c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop ./configure-6768-11465.c -o ./configure-1203-11465.o  -fcse-follow-jumps
+
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x0056b000)
+	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x006b8000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x008f8000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00f2c000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00c7a000)
+	/lib/ld-linux.so.2 (0x00967000)
+
+
+int main(void) { return 0; }
+
+c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps ./configure-6768-11465.c -o ./configure-1203-11465.o  -finline-functions
+
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00426000)
+	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x0081f000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x001ee000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00d3d000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x002b9000)
+	/lib/ld-linux.so.2 (0x00d75000)
+
+
+int main(void) { return 0; }
+
+c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions ./configure-6768-11465.c -o ./configure-1203-11465.o  -fschedule-insns2
+
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00d98000)
+	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00394000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x0085b000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00263000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00bec000)
+	/lib/ld-linux.so.2 (0x00f24000)
+
+
+int main(void) { return 0; }
+
+c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 ./configure-6768-11465.c -o ./configure-1203-11465.o  -fthread-jumps
+
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00391000)
+	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00110000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00814000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00efd000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00202000)
+	/lib/ld-linux.so.2 (0x0063f000)
+
+
+int main(void) { return 0; }
+
+c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps ./configure-6768-11465.c -o ./configure-1203-11465.o  -fforce-addr
+
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x006d3000)
+	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00e73000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00ae7000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x003b8000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x006f3000)
+	/lib/ld-linux.so.2 (0x001db000)
+
+
+int main(void) { return 0; }
+
+c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr ./configure-6768-11465.c -o ./configure-1203-11465.o  -fstrength-reduce
+
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00300000)
+	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00527000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x0017a000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x009fd000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00679000)
+	/lib/ld-linux.so.2 (0x00ed7000)
+
+
+int main(void) { return 0; }
+
+c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce ./configure-6768-11465.c -o ./configure-1203-11465.o  -funroll-loops
+
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x005ad000)
+	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00de0000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00d17000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x007a1000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x003ea000)
+	/lib/ld-linux.so.2 (0x009a9000)
 
 Result is: -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops
 ##########################################
@@ -318,7 +318,7 @@ Result is: gcc -MM
 ##########################################
 
 ============ Checking for Python ============
-Result is: 2.5.4
+Result is: 2.6.4
 ##########################################
 
 ============ Checking for GNU Make ============
@@ -326,7 +326,7 @@ Result is: GNU Make 3.81
 ##########################################
 
 ============ Checking for Doxygen ============
-Result is: doxygen not detected, for documentation please install
+Result is: 1.6.1
 ##########################################
 
 ============ Checking for CPU vendor ============
@@ -341,12 +341,12 @@ Result is:  AMD Athlon(tm) 64 X2 Dual Core Processor 4400+
 
 int main(void) { return 0; }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-10801-24121.c -o ./configure-29388-24121.o  -march=native
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-6768-11465.c -o ./configure-1203-11465.o  -march=native
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x003a5000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00dc7000)
-	/lib/ld-linux.so.2 (0x00212000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00295000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00d8b000)
+	/lib/ld-linux.so.2 (0x00fd8000)
 
 Result is: native
 ##########################################
@@ -361,12 +361,12 @@ int main(void){
   __asm__ volatile ("emms":::"memory"); return(0);
 }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-10801-24121.c -o ./configure-29388-24121.o  
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-6768-11465.c -o ./configure-1203-11465.o  
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00d2a000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x004f1000)
-	/lib/ld-linux.so.2 (0x0014f000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00e59000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00a35000)
+	/lib/ld-linux.so.2 (0x00867000)
 
 Result is: yes
 ##########################################
@@ -381,12 +381,12 @@ int main(void){
   __asm__ volatile ("sfence":::"memory"); return(0);
 }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-10801-24121.c -o ./configure-29388-24121.o  
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-6768-11465.c -o ./configure-1203-11465.o  
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00a6a000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00110000)
-	/lib/ld-linux.so.2 (0x009f9000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00262000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x002bd000)
+	/lib/ld-linux.so.2 (0x00774000)
 
 Result is: yes
 ##########################################
@@ -401,12 +401,12 @@ int main(void){
   __asm__ volatile ("femms":::"memory"); return(0);
 }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-10801-24121.c -o ./configure-29388-24121.o  
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-6768-11465.c -o ./configure-1203-11465.o  
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00af1000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x001fa000)
-	/lib/ld-linux.so.2 (0x00814000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00921000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x001d6000)
+	/lib/ld-linux.so.2 (0x00b58000)
 
 Result is: yes
 ##########################################
@@ -421,12 +421,12 @@ int main(void){
   __asm__ volatile ("xorps %%xmm0, %%xmm0":::"memory"); return(0);
 }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-10801-24121.c -o ./configure-29388-24121.o  
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-6768-11465.c -o ./configure-1203-11465.o  
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00a66000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00b48000)
-	/lib/ld-linux.so.2 (0x00afb000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00e67000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00110000)
+	/lib/ld-linux.so.2 (0x00438000)
 
 Result is: yes
 ##########################################
@@ -441,12 +441,12 @@ int main(void){
   __asm__ volatile ("xorpd %%xmm0, %%xmm0":::"memory"); return(0);
 }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-10801-24121.c -o ./configure-29388-24121.o  
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-6768-11465.c -o ./configure-1203-11465.o  
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00ad6000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00439000)
-	/lib/ld-linux.so.2 (0x00794000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x0044a000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x0085c000)
+	/lib/ld-linux.so.2 (0x00ee6000)
 
 Result is: yes
 ##########################################
@@ -461,12 +461,12 @@ int main(void){
   __asm__ volatile ("cmovb %%eax,%%ebx":::"memory"); return(0);
 }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-10801-24121.c -o ./configure-29388-24121.o  
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-6768-11465.c -o ./configure-1203-11465.o  
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00135000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x001f3000)
-	/lib/ld-linux.so.2 (0x00fc2000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00e33000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00cb2000)
+	/lib/ld-linux.so.2 (0x0014d000)
 
 Result is: yes
 ##########################################
@@ -476,12 +476,12 @@ Result is: yes
 #include <xmmintrin.h>
 int main() { _mm_sfence(); return 0; }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-10801-24121.c -o ./configure-29388-24121.o  -msse
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-6768-11465.c -o ./configure-1203-11465.o  -msse
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00f6d000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00c69000)
-	/lib/ld-linux.so.2 (0x0019d000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00309000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x005b5000)
+	/lib/ld-linux.so.2 (0x00f27000)
 
 Result is: yes
 ##########################################
@@ -491,12 +491,12 @@ Result is: yes
 #include <mm3dnow.h>
 int main() { _m_femms(); return 0; }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-10801-24121.c -o ./configure-29388-24121.o  -m3dnow
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops ./configure-6768-11465.c -o ./configure-1203-11465.o  -m3dnow
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00c7f000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00110000)
-	/lib/ld-linux.so.2 (0x0077d000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00b5f000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x007db000)
+	/lib/ld-linux.so.2 (0x00b28000)
 
 Result is: yes
 ##########################################
@@ -510,13 +510,13 @@ Result is: 32 bit
 #include <math.h>
 int main(void) { return 0; }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00873000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x0093a000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x009f0000)
-	/lib/ld-linux.so.2 (0x008d5000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00c63000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00d8b000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00737000)
+	/lib/ld-linux.so.2 (0x008a4000)
 
 Result is: yes
 ##########################################
@@ -530,15 +530,15 @@ int main(int argc, char** argv)
 	return (int) a;
 }
 
-c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm -lm
+c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm -lm
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00ac0000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00475000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x003df000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x0052c000)
 	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00110000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00a3b000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00dd2000)
-	/lib/ld-linux.so.2 (0x004ef000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x009b6000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00c00000)
+	/lib/ld-linux.so.2 (0x0059d000)
 
 Result is: yes
 ##########################################
@@ -552,15 +552,15 @@ int main(int argc, char** argv)
 	return (int) a;
 }
 
-c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm -lm
+c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm -lm
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00648000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x004c1000)
-	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00edc000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x008ef000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00930000)
-	/lib/ld-linux.so.2 (0x006df000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00110000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00514000)
+	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00111000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00a38000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00203000)
+	/lib/ld-linux.so.2 (0x00e8d000)
 
 Result is: yes
 ##########################################
@@ -574,15 +574,15 @@ int main(int argc, char** argv)
 	return (int) a;
 }
 
-c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm -lm
+c++  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm -lm
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00fe3000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x005aa000)
-	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x008f3000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00e33000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00e78000)
-	/lib/ld-linux.so.2 (0x00d67000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x008d9000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00890000)
+	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x005e0000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00edd000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00110000)
+	/lib/ld-linux.so.2 (0x00d96000)
 
 Result is: yes
 ##########################################
@@ -592,14 +592,14 @@ Result is: yes
 #include <pthread.h>
 int main(void) { return 0; }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm -pthread
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm -pthread
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00205000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x0029b000)
-	libpthread.so.0 => /lib/tls/i686/cmov/libpthread.so.0 (0x00529000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x002c1000)
-	/lib/ld-linux.so.2 (0x00bbc000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x006d8000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x003f2000)
+	libpthread.so.0 => /lib/tls/i686/cmov/libpthread.so.0 (0x00251000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x0026a000)
+	/lib/ld-linux.so.2 (0x00860000)
 
 Result is: yes
 ##########################################
@@ -621,9 +621,9 @@ int main(int argc, char** argv)
 	return 0;
 }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm -pthread -lacml -lcblas -lgfortran
-./configure-10801-24121.c: In function ‘main’:
-./configure-10801-24121.c:12: warning: unused variable ‘r’
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm -pthread -lacml -lcblas -lgfortran
+./configure-6768-11465.c: In function ‘main’:
+./configure-6768-11465.c:12: warning: unused variable ‘r’
 /usr/bin/ld: cannot find -lacml
 collect2: ld returned 1 exit status
 no object file created
@@ -648,11 +648,11 @@ int main(int argc, char** argv)
 	return 0;
 }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm -pthread -lmkl -lguide -lmkl_lapack
-./configure-10801-24121.c:1:23: error: mkl_cblas.h: No such file or directory
-./configure-10801-24121.c: In function ‘main’:
-./configure-10801-24121.c:12: warning: implicit declaration of function ‘cblas_ddot’
-./configure-10801-24121.c:12: warning: unused variable ‘r’
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm -pthread -lmkl -lguide -lmkl_lapack
+./configure-6768-11465.c:1:23: error: mkl_cblas.h: No such file or directory
+./configure-6768-11465.c: In function ‘main’:
+./configure-6768-11465.c:12: warning: implicit declaration of function ‘cblas_ddot’
+./configure-6768-11465.c:12: warning: unused variable ‘r’
 no object file created
 
 
@@ -671,11 +671,11 @@ int main(int argc, char** argv)
 	return 0;
 }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm -pthread -lmkl -lguide -lmkl_lapack64
-./configure-10801-24121.c:1:23: error: mkl_cblas.h: No such file or directory
-./configure-10801-24121.c: In function ‘main’:
-./configure-10801-24121.c:12: warning: implicit declaration of function ‘cblas_ddot’
-./configure-10801-24121.c:12: warning: unused variable ‘r’
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm -pthread -lmkl -lguide -lmkl_lapack64
+./configure-6768-11465.c:1:23: error: mkl_cblas.h: No such file or directory
+./configure-6768-11465.c: In function ‘main’:
+./configure-6768-11465.c:12: warning: implicit declaration of function ‘cblas_ddot’
+./configure-6768-11465.c:12: warning: unused variable ‘r’
 no object file created
 
 Result is: no
@@ -695,25 +695,25 @@ int main(int argc, char** argv)
 	return 0;
 }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas
-./configure-10801-24121.c: In function ‘main’:
-./configure-10801-24121.c:9: warning: unused variable ‘r’
-./configure-10801-24121.c:8: warning: unused variable ‘result’
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas
+./configure-6768-11465.c: In function ‘main’:
+./configure-6768-11465.c:9: warning: unused variable ‘r’
+./configure-6768-11465.c:8: warning: unused variable ‘result’
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x008f7000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00290000)
-	liblapack.so.3gf => /usr/lib/atlas/liblapack.so.3gf (0x008f8000)
-	libcblas.so.3gf => /usr/lib/libcblas.so.3gf (0x0023a000)
-	liblapack_atlas.so.3gf => /usr/lib/liblapack_atlas.so.3gf (0x00110000)
-	libpthread.so.0 => /lib/tls/i686/cmov/libpthread.so.0 (0x00135000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x0031a000)
-	/lib/ld-linux.so.2 (0x002fd000)
-	libblas.so.3gf => /usr/lib/atlas/libblas.so.3gf (0x0045f000)
-	libgfortran.so.3 => /usr/lib/libgfortran.so.3 (0x0014e000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00215000)
-	libatlas.so.3gf => /usr/lib/libatlas.so.3gf (0x046ae000)
-	libf77blas.so.3gf => /usr/lib/libf77blas.so.3gf (0x0025b000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00218000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00cb4000)
+	liblapack.so.3gf => /usr/lib/atlas/liblapack.so.3gf (0x00cda000)
+	libcblas.so.3gf => /usr/lib/libcblas.so.3gf (0x00110000)
+	liblapack_atlas.so.3gf => /usr/lib/liblapack_atlas.so.3gf (0x0082f000)
+	libpthread.so.0 => /lib/tls/i686/cmov/libpthread.so.0 (0x00131000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00af1000)
+	/lib/ld-linux.so.2 (0x0057f000)
+	libblas.so.3gf => /usr/lib/atlas/libblas.so.3gf (0x03bd8000)
+	libgfortran.so.3 => /usr/lib/libgfortran.so.3 (0x00893000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x009f2000)
+	libatlas.so.3gf => /usr/lib/libatlas.so.3gf (0x00219000)
+	libf77blas.so.3gf => /usr/lib/libf77blas.so.3gf (0x0014a000)
 
 Result is: yes
 ##########################################
@@ -733,27 +733,27 @@ lpx_delete_prob(lp);
 return 0;
 }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas -lglpk -lm
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas -lglpk -lm
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00dde000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00bb0000)
-	liblapack.so.3gf => /usr/lib/atlas/liblapack.so.3gf (0x00332000)
-	libcblas.so.3gf => /usr/lib/libcblas.so.3gf (0x00110000)
-	liblapack_atlas.so.3gf => /usr/lib/liblapack_atlas.so.3gf (0x00131000)
-	libglpk.so.0 => /usr/lib/libglpk.so.0 (0x00156000)
-	libpthread.so.0 => /lib/tls/i686/cmov/libpthread.so.0 (0x00c9b000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00ddf000)
-	/lib/ld-linux.so.2 (0x00c75000)
-	libblas.so.3gf => /usr/lib/atlas/libblas.so.3gf (0x00f24000)
-	libgfortran.so.3 => /usr/lib/libgfortran.so.3 (0x0021d000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x002e4000)
-	libatlas.so.3gf => /usr/lib/libatlas.so.3gf (0x05248000)
-	libf77blas.so.3gf => /usr/lib/libf77blas.so.3gf (0x00302000)
-	libltdl.so.7 => /usr/lib/libltdl.so.7 (0x00c36000)
-	libdl.so.2 => /lib/tls/i686/cmov/libdl.so.2 (0x0031f000)
-	libz.so.1 => /lib/libz.so.1 (0x00cd5000)
-	libgmp.so.3 => /usr/lib/libgmp.so.3 (0x00aa5000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00655000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x007b3000)
+	liblapack.so.3gf => /usr/lib/atlas/liblapack.so.3gf (0x007d9000)
+	libcblas.so.3gf => /usr/lib/libcblas.so.3gf (0x00696000)
+	liblapack_atlas.so.3gf => /usr/lib/liblapack_atlas.so.3gf (0x00110000)
+	libglpk.so.0 => /usr/lib/libglpk.so.0 (0x00555000)
+	libpthread.so.0 => /lib/tls/i686/cmov/libpthread.so.0 (0x00135000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x0014e000)
+	/lib/ld-linux.so.2 (0x0050a000)
+	libblas.so.3gf => /usr/lib/atlas/libblas.so.3gf (0x00f4c000)
+	libgfortran.so.3 => /usr/lib/libgfortran.so.3 (0x00293000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x0035a000)
+	libatlas.so.3gf => /usr/lib/libatlas.so.3gf (0x01e56000)
+	libf77blas.so.3gf => /usr/lib/libf77blas.so.3gf (0x00378000)
+	libltdl.so.7 => /usr/lib/libltdl.so.7 (0x00395000)
+	libdl.so.2 => /lib/tls/i686/cmov/libdl.so.2 (0x0039f000)
+	libz.so.1 => /lib/libz.so.1 (0x003a3000)
+	libgmp.so.3 => /usr/lib/libgmp.so.3 (0x003b9000)
 
 Result is: yes
 ##########################################
@@ -769,18 +769,18 @@ int main(int argc, char** argv)
     return (lzo_init() != LZO_E_OK) ? 1 : 0;
 }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas -lglpk -lm -llzo2
-./configure-10801-24121.c:1:25: error: lzo/lzoconf.h: No such file or directory
-./configure-10801-24121.c:2:23: error: lzo/lzo1x.h: No such file or directory
-./configure-10801-24121.c: In function ‘main’:
-./configure-10801-24121.c:5: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘in’
-./configure-10801-24121.c:5: error: ‘in’ undeclared (first use in this function)
-./configure-10801-24121.c:5: error: (Each undeclared identifier is reported only once
-./configure-10801-24121.c:5: error: for each function it appears in.)
-./configure-10801-24121.c:6: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘in_len’
-./configure-10801-24121.c:6: error: ‘in_len’ undeclared (first use in this function)
-./configure-10801-24121.c:7: warning: implicit declaration of function ‘lzo_init’
-./configure-10801-24121.c:7: error: ‘LZO_E_OK’ undeclared (first use in this function)
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas -lglpk -lm -llzo2
+./configure-6768-11465.c:1:25: error: lzo/lzoconf.h: No such file or directory
+./configure-6768-11465.c:2:23: error: lzo/lzo1x.h: No such file or directory
+./configure-6768-11465.c: In function ‘main’:
+./configure-6768-11465.c:5: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘in’
+./configure-6768-11465.c:5: error: ‘in’ undeclared (first use in this function)
+./configure-6768-11465.c:5: error: (Each undeclared identifier is reported only once
+./configure-6768-11465.c:5: error: for each function it appears in.)
+./configure-6768-11465.c:6: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘in_len’
+./configure-6768-11465.c:6: error: ‘in_len’ undeclared (first use in this function)
+./configure-6768-11465.c:7: warning: implicit declaration of function ‘lzo_init’
+./configure-6768-11465.c:7: error: ‘LZO_E_OK’ undeclared (first use in this function)
 no object file created
 
 Result is: no
@@ -795,17 +795,17 @@ int main(int argc, char** argv)
 	return (compress2((Bytef*) argv, &l, (Bytef*) argv, l, argc) != Z_OK);
 }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas -lglpk -lm -lz
-./configure-10801-24121.c:1:18: error: zlib.h: No such file or directory
-./configure-10801-24121.c: In function ‘main’:
-./configure-10801-24121.c:4: error: ‘uLongf’ undeclared (first use in this function)
-./configure-10801-24121.c:4: error: (Each undeclared identifier is reported only once
-./configure-10801-24121.c:4: error: for each function it appears in.)
-./configure-10801-24121.c:4: error: expected ‘;’ before ‘l’
-./configure-10801-24121.c:5: warning: implicit declaration of function ‘compress2’
-./configure-10801-24121.c:5: error: ‘Bytef’ undeclared (first use in this function)
-./configure-10801-24121.c:5: error: expected expression before ‘)’ token
-./configure-10801-24121.c:5: error: ‘Z_OK’ undeclared (first use in this function)
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas -lglpk -lm -lz
+./configure-6768-11465.c:1:18: error: zlib.h: No such file or directory
+./configure-6768-11465.c: In function ‘main’:
+./configure-6768-11465.c:4: error: ‘uLongf’ undeclared (first use in this function)
+./configure-6768-11465.c:4: error: (Each undeclared identifier is reported only once
+./configure-6768-11465.c:4: error: for each function it appears in.)
+./configure-6768-11465.c:4: error: expected ‘;’ before ‘l’
+./configure-6768-11465.c:5: warning: implicit declaration of function ‘compress2’
+./configure-6768-11465.c:5: error: ‘Bytef’ undeclared (first use in this function)
+./configure-6768-11465.c:5: error: expected expression before ‘)’ token
+./configure-6768-11465.c:5: error: ‘Z_OK’ undeclared (first use in this function)
 no object file created
 
 Result is: no
@@ -820,15 +820,15 @@ int main(int argc, char** argv)
 	return BZ2_bzCompress(strm, argc);
 }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas -lglpk -lm -lbz2
-./configure-10801-24121.c:1:19: error: bzlib.h: No such file or directory
-./configure-10801-24121.c: In function ‘main’:
-./configure-10801-24121.c:4: error: ‘bz_stream’ undeclared (first use in this function)
-./configure-10801-24121.c:4: error: (Each undeclared identifier is reported only once
-./configure-10801-24121.c:4: error: for each function it appears in.)
-./configure-10801-24121.c:4: error: ‘strm’ undeclared (first use in this function)
-./configure-10801-24121.c:4: error: ‘NULL’ undeclared (first use in this function)
-./configure-10801-24121.c:5: warning: implicit declaration of function ‘BZ2_bzCompress’
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas -lglpk -lm -lbz2
+./configure-6768-11465.c:1:19: error: bzlib.h: No such file or directory
+./configure-6768-11465.c: In function ‘main’:
+./configure-6768-11465.c:4: error: ‘bz_stream’ undeclared (first use in this function)
+./configure-6768-11465.c:4: error: (Each undeclared identifier is reported only once
+./configure-6768-11465.c:4: error: for each function it appears in.)
+./configure-6768-11465.c:4: error: ‘strm’ undeclared (first use in this function)
+./configure-6768-11465.c:4: error: ‘NULL’ undeclared (first use in this function)
+./configure-6768-11465.c:5: warning: implicit declaration of function ‘BZ2_bzCompress’
 no object file created
 
 Result is: no
@@ -842,14 +842,14 @@ int main(int argc, char** argv)
 	return (int) lzma_stream_buffer_bound((size_t) argc) ;
 }
 
-cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas -lglpk -lm -llzma
-./configure-10801-24121.c:1:18: error: lzma.h: No such file or directory
-./configure-10801-24121.c: In function ‘main’:
-./configure-10801-24121.c:4: warning: implicit declaration of function ‘lzma_stream_buffer_bound’
-./configure-10801-24121.c:4: error: ‘size_t’ undeclared (first use in this function)
-./configure-10801-24121.c:4: error: (Each undeclared identifier is reported only once
-./configure-10801-24121.c:4: error: for each function it appears in.)
-./configure-10801-24121.c:4: error: expected ‘)’ before ‘argc’
+cc  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas -lglpk -lm -llzma
+./configure-6768-11465.c:1:18: error: lzma.h: No such file or directory
+./configure-6768-11465.c: In function ‘main’:
+./configure-6768-11465.c:4: warning: implicit declaration of function ‘lzma_stream_buffer_bound’
+./configure-6768-11465.c:4: error: ‘size_t’ undeclared (first use in this function)
+./configure-6768-11465.c:4: error: (Each undeclared identifier is reported only once
+./configure-6768-11465.c:4: error: for each function it appears in.)
+./configure-6768-11465.c:4: error: expected ‘)’ before ‘argc’
 no object file created
 
 Result is: no
@@ -868,8 +868,8 @@ Result is: yes (internal in source tree)
 #include <readline/readline.h>
 int main(void) { return 0; }
 
-cc -I. -I.. -I. -I..  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas -lglpk -lm -lreadline
-./configure-10801-24121.c:1:31: error: readline/readline.h: No such file or directory
+cc -I. -I.. -I. -I..  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas -lglpk -lm -lreadline
+./configure-6768-11465.c:1:31: error: readline/readline.h: No such file or directory
 no object file created
 
 Result is: no
@@ -896,33 +896,33 @@ PyMODINIT_FUNC initsg(void)
 
 PyMODINIT_FUNC initsg(void);
 
-cc -I. -I.. -I. -I..  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas -lglpk -lm -fno-strict-aliasing -fPIC -I/usr/include/python2.5 -I/usr/lib/python2.5/site-packages/numpy/core/include -shared -lpython2.5
-./configure-10801-24121.c: In function ‘initsg’:
-./configure-10801-24121.c:11: warning: unused variable ‘outArray’
-./configure-10801-24121.c: At top level:
-/usr/include/python2.5/numpy/__multiarray_api.h:968: warning: ‘_import_array’ defined but not used
+cc -I. -I.. -I. -I..  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas -lglpk -lm -fno-strict-aliasing -fPIC -I/usr/include/python2.6 -I/usr/lib/python2.6/dist-packages/numpy/core/include -shared -lpython2.6
+./configure-6768-11465.c: In function ‘initsg’:
+./configure-6768-11465.c:11: warning: unused variable ‘outArray’
+./configure-6768-11465.c: At top level:
+/usr/include/python2.6/numpy/__multiarray_api.h:968: warning: ‘_import_array’ defined but not used
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x00e6f000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x0032c000)
-	liblapack.so.3gf => /usr/lib/atlas/liblapack.so.3gf (0x00e70000)
-	libcblas.so.3gf => /usr/lib/libcblas.so.3gf (0x005a5000)
-	liblapack_atlas.so.3gf => /usr/lib/liblapack_atlas.so.3gf (0x002c2000)
-	libglpk.so.0 => /usr/lib/libglpk.so.0 (0x00b9d000)
-	libpython2.5.so.1.0 => /usr/lib/libpython2.5.so.1.0 (0x00628000)
-	libpthread.so.0 => /lib/tls/i686/cmov/libpthread.so.0 (0x00110000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00129000)
-	/lib/ld-linux.so.2 (0x00a81000)
-	libblas.so.3gf => /usr/lib/atlas/libblas.so.3gf (0x04844000)
-	libgfortran.so.3 => /usr/lib/libgfortran.so.3 (0x00352000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00ab1000)
-	libatlas.so.3gf => /usr/lib/libatlas.so.3gf (0x03e1b000)
-	libf77blas.so.3gf => /usr/lib/libf77blas.so.3gf (0x00a0a000)
-	libltdl.so.7 => /usr/lib/libltdl.so.7 (0x0026e000)
-	libdl.so.2 => /lib/tls/i686/cmov/libdl.so.2 (0x00278000)
-	libz.so.1 => /lib/libz.so.1 (0x0027c000)
-	libgmp.so.3 => /usr/lib/libgmp.so.3 (0x00460000)
-	libutil.so.1 => /lib/tls/i686/cmov/libutil.so.1 (0x00292000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00f94000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x004dc000)
+	liblapack.so.3gf => /usr/lib/atlas/liblapack.so.3gf (0x00f95000)
+	libcblas.so.3gf => /usr/lib/libcblas.so.3gf (0x002a3000)
+	liblapack_atlas.so.3gf => /usr/lib/liblapack_atlas.so.3gf (0x0015f000)
+	libglpk.so.0 => /usr/lib/libglpk.so.0 (0x00d07000)
+	libpython2.6.so.1.0 => /usr/lib/libpython2.6.so.1.0 (0x00626000)
+	libpthread.so.0 => /lib/tls/i686/cmov/libpthread.so.0 (0x00344000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x0035d000)
+	/lib/ld-linux.so.2 (0x00a25000)
+	libblas.so.3gf => /usr/lib/atlas/libblas.so.3gf (0x01708000)
+	libgfortran.so.3 => /usr/lib/libgfortran.so.3 (0x00184000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x00110000)
+	libatlas.so.3gf => /usr/lib/libatlas.so.3gf (0x02966000)
+	libf77blas.so.3gf => /usr/lib/libf77blas.so.3gf (0x0012e000)
+	libltdl.so.7 => /usr/lib/libltdl.so.7 (0x0014b000)
+	libdl.so.2 => /lib/tls/i686/cmov/libdl.so.2 (0x00ad2000)
+	libz.so.1 => /lib/libz.so.1 (0x00ce6000)
+	libgmp.so.3 => /usr/lib/libgmp.so.3 (0x002c4000)
+	libutil.so.1 => /lib/tls/i686/cmov/libutil.so.1 (0x00155000)
 
 Result is: yes
 ##########################################
@@ -950,30 +950,30 @@ void mexFunction(int nlhs,mxArray *plhs[],int nrhs,const mxArray *prhs[])
 
 int main(void) { return 0; }
 
-cc -I. -I.. -I. -I..  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-10801-24121.c -o ./configure-29388-24121.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas -lglpk -lm -I/usr/local/matlabr2009a/extern/include -I/usr/local/matlabr2009a/extern/src -shared -Wl,--version-script,/usr/local/matlabr2009a/extern/lib/glnx86/mexFunction.map -Wl,--rpath-link,/usr/local/matlabr2009a/extern/lib/glnx86 -L/usr/local/matlabr2009a/bin/glnx86 -lmx -lmex -lmat
+cc -I. -I.. -I. -I..  -fPIC -g -Wall -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread ./configure-6768-11465.c -o ./configure-1203-11465.o  -Xlinker --no-undefined -lm -pthread -llapack -lcblas -llapack_atlas -lglpk -lm -I/usr/local/matlabr2009a/extern/include -I/usr/local/matlabr2009a/extern/src -shared -Wl,--version-script,/usr/local/matlabr2009a/extern/lib/glnx86/mexFunction.map -Wl,--rpath-link,/usr/local/matlabr2009a/extern/lib/glnx86 -L/usr/local/matlabr2009a/bin/glnx86 -lmx -lmex -lmat
 
-ldd ./configure-29388-24121.o
-	linux-gate.so.1 =>  (0x0084f000)
-	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00fa3000)
-	liblapack.so.3gf => /usr/lib/atlas/liblapack.so.3gf (0x00fc9000)
-	libcblas.so.3gf => /usr/lib/libcblas.so.3gf (0x00e3f000)
-	liblapack_atlas.so.3gf => /usr/lib/liblapack_atlas.so.3gf (0x00ad5000)
-	libglpk.so.0 => /usr/lib/libglpk.so.0 (0x002b5000)
+ldd ./configure-1203-11465.o
+	linux-gate.so.1 =>  (0x00812000)
+	libm.so.6 => /lib/tls/i686/cmov/libm.so.6 (0x00f26000)
+	liblapack.so.3gf => /usr/lib/atlas/liblapack.so.3gf (0x00f4c000)
+	libcblas.so.3gf => /usr/lib/libcblas.so.3gf (0x0061e000)
+	liblapack_atlas.so.3gf => /usr/lib/liblapack_atlas.so.3gf (0x00110000)
+	libglpk.so.0 => /usr/lib/libglpk.so.0 (0x0037d000)
 	libmx.so => not found
 	libmex.so => not found
 	libmat.so => not found
-	libpthread.so.0 => /lib/tls/i686/cmov/libpthread.so.0 (0x00110000)
-	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00ccb000)
-	/lib/ld-linux.so.2 (0x0082e000)
-	libblas.so.3gf => /usr/lib/atlas/libblas.so.3gf (0x003f8000)
-	libgfortran.so.3 => /usr/lib/libgfortran.so.3 (0x00129000)
-	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x0090e000)
-	libatlas.so.3gf => /usr/lib/libatlas.so.3gf (0xb7586000)
-	libf77blas.so.3gf => /usr/lib/libf77blas.so.3gf (0x008de000)
-	libltdl.so.7 => /usr/lib/libltdl.so.7 (0x001f0000)
-	libdl.so.2 => /lib/tls/i686/cmov/libdl.so.2 (0x001fa000)
-	libz.so.1 => /lib/libz.so.1 (0x00e75000)
-	libgmp.so.3 => /usr/lib/libgmp.so.3 (0x001fe000)
+	libpthread.so.0 => /lib/tls/i686/cmov/libpthread.so.0 (0x00135000)
+	libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x0014e000)
+	/lib/ld-linux.so.2 (0x00bf1000)
+	libblas.so.3gf => /usr/lib/atlas/libblas.so.3gf (0x00813000)
+	libgfortran.so.3 => /usr/lib/libgfortran.so.3 (0x00e48000)
+	libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x004d2000)
+	libatlas.so.3gf => /usr/lib/libatlas.so.3gf (0xb73c3000)
+	libf77blas.so.3gf => /usr/lib/libf77blas.so.3gf (0x00686000)
+	libltdl.so.7 => /usr/lib/libltdl.so.7 (0x00293000)
+	libdl.so.2 => /lib/tls/i686/cmov/libdl.so.2 (0x00474000)
+	libz.so.1 => /lib/libz.so.1 (0x005e5000)
+	libgmp.so.3 => /usr/lib/libgmp.so.3 (0x0029d000)
 
 Result is: yes
 ##########################################

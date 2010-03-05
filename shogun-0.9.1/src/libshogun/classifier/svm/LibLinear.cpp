@@ -97,10 +97,6 @@ bool CLibLinear::train(CFeatures* data)
 	float64_t eps = get_epsilon();
 	int pos = 0;
 	int neg = 0;
-	for(int i=0;i<prob.l;i++)
-		if(prob.y[i]==+1)
-			pos++;
-	neg = prob.l - pos;
 
 	switch (loss)
 	{
@@ -110,14 +106,30 @@ bool CLibLinear::train(CFeatures* data)
 		case L2:
 			fun_obj=new l2loss_svm_fun(&prob, get_C1(), get_C2());
 			break;
-		case L1RL2:
-			l1l2_obj=new l1r_l2_svc(&prob, w, eps*min(pos,neg)/prob.l, get_C1(), get_C2());
-			break;
-		case L1RLR:
-			l1lr_obj=new l1r_lr(&prob, w, eps*min(pos,neg)/prob.l, get_C1(), get_C2());
+		case L1:
+			//The feature matrix should be transposed, and since transposed is just declared either for Sparse or Dense feature, new problec struct has been used
+			problem_l1 prob_col;
+			prob_col.l = num_vec;
+			prob_col.n = prob.n;
+			//((CSparseFeatures<float64_t>*) features)->get_transposed(num_feat, num_vec);
+			///prob_col.x = ((CSparseFeatures<float64_t>*) features);
+			///prob_col.x = prob_col.x->get_transposed(num_feat, num_vec);
+			prob_col.x =  ((CSparseFeatures<float64_t>*) features)->get_transposed(num_feat, num_vec);
+			//prob_col.x = prob_col.x->get_transposed(num_feat, num_vec);
+			prob_col.y = new int[prob.l];
+			prob_col.use_bias = use_bias;
+
+			for (int32_t i=0; i<prob.l; i++)
+				prob_col.y[i]=labels->get_int_label(i);
+			
+			l1l2_obj=new l1r_l2_svc(&prob_col, w, eps*min(pos,neg)/prob.l, get_C1(), get_C2());
+			//printf( "a: %d  %d\n", prob_col.l, prob_col.n);
+			//printf( "a: %f  %f\n", prob_col.x[5].features[0].entry ,  prob_col.x[5].features[1].entry);
+			//printf( "a: %d  %d\n", prob_col.x[5].features[0].feat_index ,  prob_col.x[5].features[1].feat_index);
+
 			break;
 		default:
-			SG_ERROR("unknown loss\n");
+			SG_ERROR("unknown loss %d\n", loss);
 			break;
 	}
 

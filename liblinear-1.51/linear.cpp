@@ -925,9 +925,6 @@ static void solve_l1r_l2_svc(
 	feature_node *x;
 
 	double C[3] = {Cn,0,Cp};
-	
-	int myLength = sizeof(w);
-	info("W = %d , eps = %lf , Cp = %f , Cn =%f\n", myLength, eps, Cp, Cn);
 
 	for(j=0; j<l; j++)
 	{
@@ -947,7 +944,6 @@ static void solve_l1r_l2_svc(
 		{
 			int ind = x->index-1;
 			double val = x->value;
-			printf("ind=%d val=%f  -  ",ind, val);
 			x->value *= y[ind]; // x->value stores yi*xij
 			xj_sq[j] += C[GETI(ind)]*val*val;
 			x++;

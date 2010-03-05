@@ -164,7 +164,6 @@ void CDotFeatures::get_feature_matrix(float64_t** dst, int32_t* num_feat, int32_
 
     int64_t sz=((uint64_t) num)* dim;
 
-    SG_INFO("inside %d", dim);
     *num_feat=dim;
     *num_vec=num;
     *dst=new float64_t[sz];

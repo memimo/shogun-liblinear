@@ -23,8 +23,7 @@ enum LIBLINEAR_LOSS
 {
 	LR = 0,
 	L2 = 1,
-	L1RL2 = 2,
-	L1RLR = 3
+	L1 = 3
 };
 
 /** @brief class to implement LibLinear */

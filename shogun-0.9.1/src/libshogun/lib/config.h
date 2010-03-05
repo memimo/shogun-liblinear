@@ -35,7 +35,7 @@
 #define USE_REFERENCE_COUNTING 1
 #define OCTAVE_APIVERSION 
 #define LINUX 1
-#define CONFIGURE_OPTIONS "configure options --python=python2.5 --enable-debug"
+#define CONFIGURE_OPTIONS "configure options "
 #define MACHINE "i686"
 #define COMPFLAGS_C	"-fPIC -g -Wall -Wno-unused-parameter -Wformat -Wformat-security -Wimplicit -Wparentheses -Wshadow -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread"
 #define COMPFLAGS_CPP "-fPIC -g -Wall -Wno-unused-parameter -Wformat -Wformat-security -Wimplicit -Wparentheses -Wshadow -Wno-deprecated -O9 -fexpensive-optimizations -frerun-cse-after-loop -fcse-follow-jumps -finline-functions -fschedule-insns2 -fthread-jumps -fforce-addr -fstrength-reduce -funroll-loops -march=native -mtune=native -pthread"
