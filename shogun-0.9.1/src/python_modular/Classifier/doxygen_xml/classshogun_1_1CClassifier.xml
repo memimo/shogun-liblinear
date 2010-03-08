@@ -1,0 +1,648 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CClassifier" kind="class" prot="public">
+    <compoundname>shogun::CClassifier</compoundname>
+    <derivedcompoundref refid="classshogun_1_1CDistanceMachine" prot="public" virt="non-virtual">shogun::CDistanceMachine</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CKernelMachine" prot="public" virt="non-virtual">shogun::CKernelMachine</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CLinearClassifier" prot="public" virt="non-virtual">shogun::CLinearClassifier</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CPluginEstimate" prot="public" virt="non-virtual">shogun::CPluginEstimate</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CWDSVMOcas" prot="public" virt="non-virtual">shogun::CWDSVMOcas</derivedcompoundref>
+    <includes local="no">Classifier.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CClassifier_1a8524d634a67f3538b112f72d7835af46" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CClassifier::max_train_time</definition>
+        <argsstring></argsstring>
+        <name>max_train_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum training time </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="227" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CClassifier_1a68f1285e63422a24319ed95910d72f73" prot="protected" static="no" mutable="no">
+        <type>CLabels *</type>
+        <definition>CLabels* shogun::CClassifier::labels</definition>
+        <argsstring></argsstring>
+        <name>labels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>labels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="230" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CClassifier_1a360902e938d7b8890084c5bc6df617be" prot="protected" static="no" mutable="no">
+        <type>ESolverType</type>
+        <definition>ESolverType shogun::CClassifier::solver_type</definition>
+        <argsstring></argsstring>
+        <name>solver_type</name>
+        <reimplementedby refid="classshogun_1_1CLibSVMMultiClass_1a673868d11697baa0fb56260661d3d6dd">solver_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLibSVM_1af3afa8caf5ce8d290cc210730cc059f7">solver_type</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>solver type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="233" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CClassifier_1a37259b3ffbe96af1eda8dd2d9428221c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CClassifier::CClassifier</definition>
+        <argsstring>()</argsstring>
+        <name>CClassifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CClassifier_1ae7d6c7d39fb314c1092163e958ef66a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CClassifier::~CClassifier</definition>
+        <argsstring>()</argsstring>
+        <name>~CClassifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CClassifier_1a9904cc0a8d7ec077cc1fede8d64ebb22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CClassifier::train</definition>
+        <argsstring>(CFeatures *data=NULL)</argsstring>
+        <name>train</name>
+        <reimplementedby refid="classshogun_1_1CWDSVMOcas_1ad610a6f1faf908c8790491fe5e3dafca">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSVMSGD_1ad480ce2c6b6a9b1f0d2b3b27a5e4d909">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSVMOcas_1aa1d07bc45b3d374c064ff9f6c08d1b28">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSVMLin_1af7d65061b1b7b8b317de40eeee11e56f">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSubGradientSVM_1a261e022ca68a47eecf234e123f75bbbe">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CScatterSVM_1a6112dbc14eb694a024d1a7c7ed9a5549">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMPDSVM_1ad2658a63523457d56747a29eaacaec8b">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLibSVMOneClass_1afe9915b0875acfdc4f6b7f5f639a39be">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLibSVMMultiClass_1aa1626c8b4125044e57ccfe00dae48007">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLibSVM_1a6465d301187aad83260d001baa42482e">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLaRank_1afc6b18f029e3b95adfc53e285ac76d87">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CGPBTSVM_1a1ebfe00dd65ed1470d81e514b5f44bad">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CGNPPSVM_1a0103145327d9f8b78638bc924eb1a323">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CGMNPSVM_1a6115740d423c0ed8bf2338420a4fc643">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPluginEstimate_1a45bec45391c14faca0536ab5bf6c6678">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPerceptron_1ab2ccf7d5150ae5dd44244a65f7662680">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMKLMultiClass_1a431961dfba8a5e8439a4cce600c46c6c">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMKL_1a81e15c891b0ca00c378cd6dfe5b8b7f0">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CKNN_1adc0634cbe1c31bae16a7e0bd90618263">train</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CKernelPerceptron_1a107d111da115ce209b5258fcb3e0d2a2">train</reimplementedby>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>train classifier</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training <ref refid="structshogun_1_1data" kindref="compound">data</ref> (parameter can be avoided if distance or kernel-based classifiers are used and distance/kernels are initialized with train <ref refid="structshogun_1_1data" kindref="compound">data</ref>)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether training was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="103" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" bodystart="102" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CClassifier_1a3944cff6766ecc2b913a08f04918f129" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>CLabels *</type>
+        <definition>virtual CLabels* shogun::CClassifier::classify</definition>
+        <argsstring>()=0</argsstring>
+        <name>classify</name>
+        <reimplementedby refid="classshogun_1_1CWDSVMOcas_1a4a43b6ecac242fd87d060f59bbba82fb">classify</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMultiClassSVM_1a079fd56e82890c78bcd620c5ed5fe602">classify</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPluginEstimate_1a0ed965b6f9e9ae2f98a55b03c515dfaa">classify</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLinearClassifier_1ac1f1aac929b7958f5a7d48d9ea40f2f2">classify</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CKNN_1ab7237af0d40e27a40f7c8ca6698a962c">classify</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CKernelMachine_1a38ead2ce9c9b727eb20a463c42c9ce53">classify</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify objects using the currently set features</para><para><simplesect kind="return"><para>classified labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CClassifier_1a66b1e113e7b30bd88b0e238c6ccc3bd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>CLabels *</type>
+        <definition>virtual CLabels* shogun::CClassifier::classify</definition>
+        <argsstring>(CFeatures *data)=0</argsstring>
+        <name>classify</name>
+        <reimplementedby refid="classshogun_1_1CWDSVMOcas_1ab3ac20239fce0590ce3bbb603e15684a">classify</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPluginEstimate_1a171940568b50733a0b3a6de35522d506">classify</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLinearClassifier_1a15ae96a018644322d1c7848a44b1afce">classify</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CKNN_1a79efcecc52bc528c18f5d1c63690fd15">classify</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CKernelMachine_1ad9cf8044ff5e5dadb06f74903cf248a8">classify</reimplementedby>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify objects</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(test)<ref refid="structshogun_1_1data" kindref="compound">data</ref> to be classified </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>classified labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CClassifier_1a57f85b028e040e0c79dd09903b118bdd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CClassifier::classify_example</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>classify_example</name>
+        <reimplementedby refid="classshogun_1_1CWDSVMOcas_1a3eba9a202d5475f97eb21a7dea861d19">classify_example</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CScatterSVM_1ae9005b86365b3643a6b29289f1f6cf11">classify_example</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMultiClassSVM_1acc0b1b93eba5946d4047369aecfe9881">classify_example</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPluginEstimate_1af257affa1d9f8a86a7ec0face054f334">classify_example</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLinearClassifier_1a3d2b2e860b03a856019e5eafb41a03e4">classify_example</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CKNN_1acd63833cb295830e905333df1d782746">classify_example</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CKernelPerceptron_1ac710cce5601d6009b03e7885d43c2324">classify_example</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CKernelMachine_1ab081d4a3c5762b75e9b786b8d1025402">classify_example</reimplementedby>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify one example</para><para>abstract base method</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which example to classify </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>infinite float value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="129" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" bodystart="128" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CClassifier_1a956f6d34ff60d2d775eed5cbef17e8f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CClassifier::load</definition>
+        <argsstring>(FILE *srcfile)</argsstring>
+        <name>load</name>
+        <reimplementedby refid="classshogun_1_1CSVM_1a53bdb4afaf8f88c2e52d783b28d68703">load</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMultiClassSVM_1aae1a53b37fde5117f1447b73ea1c48e8">load</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLinearClassifier_1a78010edf322d0188013cadfd891c1f61">load</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CKNN_1adaa3d52034860e63d4e26d461c09bea6">load</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CKernelPerceptron_1aa2ac3efb22458f81b212beb2f9d08d5c">load</reimplementedby>
+        <param>
+          <type>FILE *</type>
+          <declname>srcfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load Classifier from file</para><para>abstract base method</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>srcfile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to load from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="141" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CClassifier_1a3df725f5632f1c052028899d8bbe28f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CClassifier::save</definition>
+        <argsstring>(FILE *dstfile)</argsstring>
+        <name>save</name>
+        <reimplementedby refid="classshogun_1_1CSVM_1aec8a6cbb16a1803a291f383ef8eb7c71">save</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMultiClassSVM_1a3e6e8e7881d36abb38e4b65cb632e0a9">save</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLinearClassifier_1ad6012c92f6dd565478a43da7e3c779ab">save</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CKNN_1a1d662f71918b97fb449f898a092ce3c1">save</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CKernelPerceptron_1aa373203c09c08d402bdd25befd2d0319">save</reimplementedby>
+        <param>
+          <type>FILE *</type>
+          <declname>dstfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save Classifier to file</para><para>abstract base method</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dstfile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to save to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="150" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" bodystart="150" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CClassifier_1aa6b87d22c14fc2b6970d8bf1edbb15fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CClassifier::set_labels</definition>
+        <argsstring>(CLabels *lab)</argsstring>
+        <name>set_labels</name>
+        <param>
+          <type>CLabels *</type>
+          <declname>lab</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set labels</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>labels </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="157" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" bodystart="156" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CClassifier_1a5f1f62d263b6201e1624990deadba5a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>CLabels *</type>
+        <definition>virtual CLabels* shogun::CClassifier::get_labels</definition>
+        <argsstring>()</argsstring>
+        <name>get_labels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get labels</para><para><simplesect kind="return"><para>labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="167" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" bodystart="167" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CClassifier_1a787dcde8fe53a734fcb77f988d821408" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CClassifier::get_label</definition>
+        <argsstring>(int32_t i)</argsstring>
+        <name>get_label</name>
+        <param>
+          <type>int32_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get one specific label</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of label to get </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value of label at index i </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="174" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" bodystart="174" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CClassifier_1af8930a0a848388d8647c9e4604a7856d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CClassifier::set_max_train_time</definition>
+        <argsstring>(float64_t t)</argsstring>
+        <name>set_max_train_time</name>
+        <param>
+          <type>float64_t</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set maximum training time</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximimum training time </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="180" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" bodystart="180" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CClassifier_1a6e48967294c55850d95235d487ce2c02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CClassifier::get_max_train_time</definition>
+        <argsstring>()</argsstring>
+        <name>get_max_train_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get maximum training time</para><para><simplesect kind="return"><para>maximum training time </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="186" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" bodystart="186" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CClassifier_1a52d05215c6b6a252650c41a0b29d8cc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EClassifierType</type>
+        <definition>virtual EClassifierType shogun::CClassifier::get_classifier_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_classifier_type</name>
+        <reimplementedby refid="classshogun_1_1CWDSVMOcas_1a98439d73ede04b698e64cf6406898a1c">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSVMSGD_1adc317800a5ed8ac1519a7bee7dce0637">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSVMOcas_1afefb269b134cd01605e4864b0be35d87">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSVMLin_1a8eee841a0f05a40f4efc2341863d2270">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSubGradientSVM_1a7db8f0ea6877c1b5e14a859de1922dad">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CScatterSVM_1a187368f6399c8270c9f8a522f576b113">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMPDSVM_1a17ff102801b0752cf425640a41f0180f">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLibSVMOneClass_1afe1eebaacc4dbb7cd09856f97699658c">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLibSVMMultiClass_1a38c78b1ae29b6e1dba17433d22a85b16">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLibSVM_1aa8ac8f8c50bc7581be2c1db3c279bf9b">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLaRank_1aed9838bfab32990319a2ee5dce86ecac">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CGPBTSVM_1acfebdbe79dd8988bcf19083e243c10b5">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CGNPPSVM_1ab6edf4f3b967d74ec562c91b28186332">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CGMNPSVM_1a1db3da6a72a083ede67fc9fc86a05d91">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPerceptron_1a3bb1dfd3802728a0a9d080241b80d851">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMKLOneClass_1a7ec1b2e6ad175c6132ad04292d2e0567">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMKLMultiClass_1ab8746d18e28bafde4d9afd00499dc984">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMKLClassification_1aa144a1ed9301e66dcf7288b47d447449">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CKNN_1a58a9588aa0563f478200356ef6a62e54">get_classifier_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CKernelPerceptron_1a0efad4008f86ee7db5a22a6536622cbd">get_classifier_type</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier type</para><para><simplesect kind="return"><para>classifier type NONE </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="192" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" bodystart="192" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CClassifier_1a4c87d6f3a2342c3053aeca82c3cf528c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CClassifier::set_solver_type</definition>
+        <argsstring>(ESolverType st)</argsstring>
+        <name>set_solver_type</name>
+        <param>
+          <type>ESolverType</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set solver type</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>solver type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="198" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" bodystart="198" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CClassifier_1a8a3acda6819b4a4b77b656b6b9e1817c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ESolverType</type>
+        <definition>ESolverType shogun::CClassifier::get_solver_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_solver_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get solver type</para><para><simplesect kind="return"><para>solver </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="204" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" bodystart="204" bodyend="204"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A generic classifier interface. </para>    </briefdescription>
+    <detaileddescription>
+<para>A classifier takes as input CLabels. Later subclasses may specialize the classifier to require labels and a kernel or labels and (real-valued) features.</para><para>A classifier needs to override the <ref refid="classshogun_1_1CClassifier_1a9904cc0a8d7ec077cc1fede8d64ebb22" kindref="member">train()</ref> function for training, the function <ref refid="classshogun_1_1CClassifier_1a57f85b028e040e0c79dd09903b118bdd" kindref="member">classify_example()</ref> (optionally <ref refid="classshogun_1_1CClassifier_1a3944cff6766ecc2b913a08f04918f129" kindref="member">classify()</ref> to predict on the whole set of examples) and the load and save routines. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>shogun::CMKLOneClass</label>
+        <link refid="classshogun_1_1CMKLOneClass"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>shogun::CGPBTSVM</label>
+        <link refid="classshogun_1_1CGPBTSVM"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>shogun::CSubGradientSVM</label>
+        <link refid="classshogun_1_1CSubGradientSVM"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>shogun::CLibSVMMultiClass</label>
+        <link refid="classshogun_1_1CLibSVMMultiClass"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>shogun::CGNPPSVM</label>
+        <link refid="classshogun_1_1CGNPPSVM"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>shogun::CLibSVMOneClass</label>
+        <link refid="classshogun_1_1CLibSVMOneClass"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>shogun::CKNN</label>
+        <link refid="classshogun_1_1CKNN"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>shogun::CMPDSVM</label>
+        <link refid="classshogun_1_1CMPDSVM"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>shogun::CMKLMultiClass</label>
+        <link refid="classshogun_1_1CMKLMultiClass"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>shogun::CKernelMachine</label>
+        <link refid="classshogun_1_1CKernelMachine"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>shogun::CMultiClassSVM</label>
+        <link refid="classshogun_1_1CMultiClassSVM"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>shogun::CMKL</label>
+        <link refid="classshogun_1_1CMKL"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>shogun::CScatterSVM</label>
+        <link refid="classshogun_1_1CScatterSVM"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>shogun::CLinearClassifier</label>
+        <link refid="classshogun_1_1CLinearClassifier"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>shogun::CDistanceMachine</label>
+        <link refid="classshogun_1_1CDistanceMachine"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>shogun::CPerceptron</label>
+        <link refid="classshogun_1_1CPerceptron"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>shogun::CLibSVM</label>
+        <link refid="classshogun_1_1CLibSVM"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>shogun::CSVMSGD</label>
+        <link refid="classshogun_1_1CSVMSGD"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>shogun::CSVMLin</label>
+        <link refid="classshogun_1_1CSVMLin"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+      <node id="5">
+        <label>shogun::CSVM</label>
+        <link refid="classshogun_1_1CSVM"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>shogun::CSVMOcas</label>
+        <link refid="classshogun_1_1CSVMOcas"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>shogun::CGMNPSVM</label>
+        <link refid="classshogun_1_1CGMNPSVM"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>shogun::CPluginEstimate</label>
+        <link refid="classshogun_1_1CPluginEstimate"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>shogun::CLaRank</label>
+        <link refid="classshogun_1_1CLaRank"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>shogun::CKernelPerceptron</label>
+        <link refid="classshogun_1_1CKernelPerceptron"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>shogun::CMKLClassification</label>
+        <link refid="classshogun_1_1CMKLClassification"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>shogun::CWDSVMOcas</label>
+        <link refid="classshogun_1_1CWDSVMOcas"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" line="88" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Classifier.h" bodystart="87" bodyend="234"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CClassifier_1a37259b3ffbe96af1eda8dd2d9428221c" prot="public" virt="non-virtual"><scope>shogun::CClassifier</scope><name>CClassifier</name></member>
+      <member refid="classshogun_1_1CClassifier_1a3944cff6766ecc2b913a08f04918f129" prot="public" virt="pure-virtual"><scope>shogun::CClassifier</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CClassifier_1a66b1e113e7b30bd88b0e238c6ccc3bd4" prot="public" virt="pure-virtual"><scope>shogun::CClassifier</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CClassifier_1a57f85b028e040e0c79dd09903b118bdd" prot="public" virt="virtual"><scope>shogun::CClassifier</scope><name>classify_example</name></member>
+      <member refid="classshogun_1_1CClassifier_1a52d05215c6b6a252650c41a0b29d8cc5" prot="public" virt="virtual"><scope>shogun::CClassifier</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CClassifier_1a787dcde8fe53a734fcb77f988d821408" prot="public" virt="virtual"><scope>shogun::CClassifier</scope><name>get_label</name></member>
+      <member refid="classshogun_1_1CClassifier_1a5f1f62d263b6201e1624990deadba5a8" prot="public" virt="virtual"><scope>shogun::CClassifier</scope><name>get_labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1a6e48967294c55850d95235d487ce2c02" prot="public" virt="non-virtual"><scope>shogun::CClassifier</scope><name>get_max_train_time</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8a3acda6819b4a4b77b656b6b9e1817c" prot="public" virt="non-virtual"><scope>shogun::CClassifier</scope><name>get_solver_type</name></member>
+      <member refid="classshogun_1_1CClassifier_1a68f1285e63422a24319ed95910d72f73" prot="protected" virt="non-virtual"><scope>shogun::CClassifier</scope><name>labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1a956f6d34ff60d2d775eed5cbef17e8f3" prot="public" virt="virtual"><scope>shogun::CClassifier</scope><name>load</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8524d634a67f3538b112f72d7835af46" prot="protected" virt="non-virtual"><scope>shogun::CClassifier</scope><name>max_train_time</name></member>
+      <member refid="classshogun_1_1CClassifier_1a3df725f5632f1c052028899d8bbe28f6" prot="public" virt="virtual"><scope>shogun::CClassifier</scope><name>save</name></member>
+      <member refid="classshogun_1_1CClassifier_1aa6b87d22c14fc2b6970d8bf1edbb15fb" prot="public" virt="virtual"><scope>shogun::CClassifier</scope><name>set_labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1af8930a0a848388d8647c9e4604a7856d" prot="public" virt="non-virtual"><scope>shogun::CClassifier</scope><name>set_max_train_time</name></member>
+      <member refid="classshogun_1_1CClassifier_1a4c87d6f3a2342c3053aeca82c3cf528c" prot="public" virt="non-virtual"><scope>shogun::CClassifier</scope><name>set_solver_type</name></member>
+      <member refid="classshogun_1_1CClassifier_1a360902e938d7b8890084c5bc6df617be" prot="protected" virt="non-virtual"><scope>shogun::CClassifier</scope><name>solver_type</name></member>
+      <member refid="classshogun_1_1CClassifier_1a9904cc0a8d7ec077cc1fede8d64ebb22" prot="public" virt="virtual"><scope>shogun::CClassifier</scope><name>train</name></member>
+      <member refid="classshogun_1_1CClassifier_1ae7d6c7d39fb314c1092163e958ef66a8" prot="public" virt="virtual"><scope>shogun::CClassifier</scope><name>~CClassifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,962 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CIO" kind="class" prot="public">
+    <compoundname>shogun::CIO</compoundname>
+    <includes local="no">io.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CIO_1a315ce070b2d60d83dd7ba642601eceb2" prot="protected" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* shogun::CIO::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>target file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="373" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CIO_1a41765a3fcb5ef9721d18b972706e0ebf" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CIO::last_progress_time</definition>
+        <argsstring></argsstring>
+        <name>last_progress_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>last progress time </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="375" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CIO_1a89f184dfc83afc0eb9089ae6ca818383" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CIO::progress_start_time</definition>
+        <argsstring></argsstring>
+        <name>progress_start_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>progress start time </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="377" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CIO_1a060e4678c54f6a79f24654aa6c0466a8" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CIO::last_progress</definition>
+        <argsstring></argsstring>
+        <name>last_progress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>last progress </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="379" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CIO_1acd5a4e08555b01f31dab20409fdce0d9" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CIO::show_progress</definition>
+        <argsstring></argsstring>
+        <name>show_progress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if progress bar shall be shown </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="381" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CIO_1ad2f86539cf56821f815fc1a44b885970" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CIO::show_file_and_line</definition>
+        <argsstring></argsstring>
+        <name>show_file_and_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if each print function should append filename and linenumber of where the print occurs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="384" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CIO_1acbe29324b5ff492ea7c350ce56c87afc" prot="protected" static="no" mutable="no">
+        <type>EMessageType</type>
+        <definition>EMessageType shogun::CIO::loglevel</definition>
+        <argsstring></argsstring>
+        <name>loglevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>log level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="387" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CIO_1aa3c088903905949125c00b87b6a0094a" prot="protected" static="yes" mutable="no">
+        <type>const EMessageType</type>
+        <definition>const EMessageType shogun::CIO::levels[NUM_LOG_LEVELS]</definition>
+        <argsstring>[NUM_LOG_LEVELS]</argsstring>
+        <name>levels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>available log levels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="389" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CIO_1a27d2e763442a32d2381b30a147aef113" prot="protected" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* shogun::CIO::message_strings[NUM_LOG_LEVELS]</definition>
+        <argsstring>[NUM_LOG_LEVELS]</argsstring>
+        <name>message_strings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>message strings </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="391" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CIO_1ae109efcd1320aec13db295435949b21d" prot="protected" static="yes" mutable="no">
+        <type>char</type>
+        <definition>char shogun::CIO::file_buffer[FBUFSIZE]</definition>
+        <argsstring>[FBUFSIZE]</argsstring>
+        <name>file_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>file buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="394" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CIO_1aa5e133bf5851d0f78e78549422373723" prot="protected" static="yes" mutable="no">
+        <type>char</type>
+        <definition>char shogun::CIO::directory_name[FBUFSIZE]</definition>
+        <argsstring>[FBUFSIZE]</argsstring>
+        <name>directory_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>directory name (for filter function) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="396" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CIO_1ab084389095bb894f68ad2397cc1ad740" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CIO::refcount</definition>
+        <argsstring></argsstring>
+        <name>refcount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="399" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CIO_1a818ee21e116e4b24947c223482e9f941" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CIO::CIO</definition>
+        <argsstring>()</argsstring>
+        <name>CIO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1a86b43710e057cda5bbe76466dc1f6e20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CIO::CIO</definition>
+        <argsstring>(const CIO &amp;orig)</argsstring>
+        <name>CIO</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIO" kindref="compound">CIO</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1a399f91c25dd4d4ec0913c73e646c8bc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIO::set_loglevel</definition>
+        <argsstring>(EMessageType level)</argsstring>
+        <name>set_loglevel</name>
+        <param>
+          <type>EMessageType</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set loglevel</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>level of log messages </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1a4d833dd85080f2cea45d6163e5ec10db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>EMessageType</type>
+        <definition>EMessageType shogun::CIO::get_loglevel</definition>
+        <argsstring>() const </argsstring>
+        <name>get_loglevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get loglevel</para><para><simplesect kind="return"><para>level of log messages </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1aa96b9b8f7c4e634277fb5b27a94f2021" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CIO::get_show_progress</definition>
+        <argsstring>() const </argsstring>
+        <name>get_show_progress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get show_progress</para><para><simplesect kind="return"><para>if progress bar is shown </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="127" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1ac4bf60a6b565cea14e69f3cd38c97aa9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CIO::get_show_file_and_line</definition>
+        <argsstring>() const </argsstring>
+        <name>get_show_file_and_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get show file and line</para><para><simplesect kind="return"><para>if file and line should prefix messages </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="136" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1aa42cfa92b0b57964a10054b17541bffc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIO::message</definition>
+        <argsstring>(EMessageType prio, const char *file, int32_t line, const char *fmt,...) const </argsstring>
+        <name>message</name>
+        <param>
+          <type>EMessageType</type>
+          <declname>prio</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print a message</para><para>optionally prefixed with file name and line number from (use -1 in line to disable this)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message priority </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file name from where the message is called </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>line number from where the message is called </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>format string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1a35200cfd0914eb55ed9ff2c700031cc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIO::progress</definition>
+        <argsstring>(float64_t current_val, float64_t min_val=0.0, float64_t max_val=1.0, int32_t decimals=1, const char *prefix=&quot;PROGRESS:\t&quot;)</argsstring>
+        <name>progress</name>
+        <param>
+          <type>float64_t</type>
+          <declname>current_val</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>min_val</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>max_val</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>decimals</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>prefix</declname>
+          <defval>&quot;PROGRESS:\t&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print progress bar</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>current_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>decimals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>decimals </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message prefix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1ac41ef9a0093e7eeb9e56e04b669e05e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIO::absolute_progress</definition>
+        <argsstring>(float64_t current_val, float64_t val, float64_t min_val=0.0, float64_t max_val=1.0, int32_t decimals=1, const char *prefix=&quot;PROGRESS:\t&quot;)</argsstring>
+        <name>absolute_progress</name>
+        <param>
+          <type>float64_t</type>
+          <declname>current_val</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>min_val</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>max_val</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>decimals</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>prefix</declname>
+          <defval>&quot;PROGRESS:\t&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print absolute progress bar</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>current_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>decimals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>decimals </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message prefix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1a4991c435a9ca3cca73aa40877d7f62f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIO::done</definition>
+        <argsstring>()</argsstring>
+        <name>done</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print &apos;done&apos; with priority INFO, but only if progress bar is enabled </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1af76522e780d7fc3fd0bc09699bddec29" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIO::not_implemented</definition>
+        <argsstring>(const char *file, int32_t line) const </argsstring>
+        <name>not_implemented</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print error message &apos;not implemented&apos; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="188" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1a3ff5d6e92ce6ced5e6b669ad9b17bbed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIO::deprecated</definition>
+        <argsstring>(const char *file, int32_t line) const </argsstring>
+        <name>deprecated</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print warning message &apos;function deprecated&apos; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="194" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="193" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1afdaf4c9191a04c5e73496ec80d398af1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIO::buffered_message</definition>
+        <argsstring>(EMessageType prio, const char *fmt,...) const </argsstring>
+        <name>buffered_message</name>
+        <param>
+          <type>EMessageType</type>
+          <declname>prio</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print a buffered message</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message priority </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>format string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1ad3b6df7697d19fe2d11c7c5a0f495038" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>FILE *</type>
+        <definition>FILE* shogun::CIO::get_target</definition>
+        <argsstring>() const </argsstring>
+        <name>get_target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get target</para><para><simplesect kind="return"><para>file descriptor for target </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="225" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="224" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1a4450793b5dc3ba31f46259d0294c1bfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIO::set_target</definition>
+        <argsstring>(FILE *target)</argsstring>
+        <name>set_target</name>
+        <param>
+          <type>FILE *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set target</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file descriptor for target </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1a2662a1867eef60ff7d18374e64777c23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIO::set_target_to_stderr</definition>
+        <argsstring>()</argsstring>
+        <name>set_target_to_stderr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set target to stderr </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="236" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="236" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1a7043cbe72602b0146d325dd43e8dfc12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIO::set_target_to_stdout</definition>
+        <argsstring>()</argsstring>
+        <name>set_target_to_stdout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set target to stdout </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="239" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="239" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1aa0598489d939abd1784c9a70959e0f54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIO::enable_progress</definition>
+        <argsstring>()</argsstring>
+        <name>enable_progress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enable progress bar </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="243" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="242" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1a6259b8dfa64e090e87baf7311e3fb181" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIO::disable_progress</definition>
+        <argsstring>()</argsstring>
+        <name>disable_progress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>disable progress bar </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="253" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="252" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1a42e461cb4d9141403c85ffd94f6c80f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIO::enable_file_and_line</definition>
+        <argsstring>()</argsstring>
+        <name>enable_file_and_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enable displaying of file and line when printing messages </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="263" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="262" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1af57b8236ee85d7168fd2f1986ea01625" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIO::disable_file_and_line</definition>
+        <argsstring>()</argsstring>
+        <name>disable_file_and_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>disable displaying of file and line when printing messages </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="272" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="271" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1a8ee00328b795ed5bd5e3baa2991309e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CIO::ref</definition>
+        <argsstring>()</argsstring>
+        <name>ref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>increase reference counter</para><para><simplesect kind="return"><para>reference count </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="329" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="328" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1a26da76ed57f868efb8fd4b186c7e4eb2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CIO::ref_count</definition>
+        <argsstring>() const </argsstring>
+        <name>ref_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>display reference counter</para><para><simplesect kind="return"><para>reference count </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="339" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="338" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1a43f00a658174a3d53ec35dbe187b20aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CIO::unref</definition>
+        <argsstring>()</argsstring>
+        <name>unref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>decrement reference counter and deallocate object if refcount is zero before or after decrementing it</para><para><simplesect kind="return"><para>reference count </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="349" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="348" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1abecf221cc2195c85e4291f377ffd9dae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* shogun::CIO::get_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="360" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="360" bodyend="360"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classshogun_1_1CIO_1a03acb6f00a3c7275cd119568b691688d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* shogun::CIO::skip_spaces</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>skip_spaces</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>skip leading spaces</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string in which to look for spaces </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>string after after skipping leading spaces </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1abd8e4fa93552227f467c354ee27d80f6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* shogun::CIO::skip_blanks</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>skip_blanks</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>skip leading spaces + tabs</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string in which to look for blanks </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>string after after skipping leading blanks </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1a33c44d24c39c922547b4409e97887f7e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CIO::set_dirname</definition>
+        <argsstring>(const char *dirname)</argsstring>
+        <name>set_dirname</name>
+        <param>
+          <type>const char *</type>
+          <declname>dirname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set directory name</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new directory name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="284" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="283" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1add500b02ae34a930cbd6c4844a18115c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* shogun::CIO::concat_filename</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>concat_filename</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>concatenate directory and filename ( non thread safe )</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new filename </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>concatenated directory and filename </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="295" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="294" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIO_1a2350d8765cee7fc7d31eead09def7d61" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int shogun::CIO::filter</definition>
+        <argsstring>(CONST_DIRENT_T *d)</argsstring>
+        <name>filter</name>
+        <param>
+          <type>CONST_DIRENT_T *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>filter</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>directory entry </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if d is a readable file </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="308" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="307" bodyend="322"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CIO_1a75cd443a4b5dd9240a9ae700caf2b91c" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* shogun::CIO::get_msg_intro</definition>
+        <argsstring>(EMessageType prio) const </argsstring>
+        <name>get_msg_intro</name>
+        <param>
+          <type>EMessageType</type>
+          <declname>prio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get message intro</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message priority </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>message intro or NULL if message is not to be printed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="369"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class IO, used to do input output operations throughout shogun. </para>    </briefdescription>
+    <detaileddescription>
+<para>Any debug or error or progress message is passed through the functions of this class to be in the end written to the screen. Note that messages don&apos;t have to be written to stdout or stderr, but can be redirected to a file. </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="103" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="102" bodyend="400"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CIO_1ac41ef9a0093e7eeb9e56e04b669e05e9" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>absolute_progress</name></member>
+      <member refid="classshogun_1_1CIO_1afdaf4c9191a04c5e73496ec80d398af1" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>buffered_message</name></member>
+      <member refid="classshogun_1_1CIO_1a818ee21e116e4b24947c223482e9f941" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>CIO</name></member>
+      <member refid="classshogun_1_1CIO_1a86b43710e057cda5bbe76466dc1f6e20" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>CIO</name></member>
+      <member refid="classshogun_1_1CIO_1add500b02ae34a930cbd6c4844a18115c" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>concat_filename</name></member>
+      <member refid="classshogun_1_1CIO_1a3ff5d6e92ce6ced5e6b669ad9b17bbed" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>deprecated</name></member>
+      <member refid="classshogun_1_1CIO_1aa5e133bf5851d0f78e78549422373723" prot="protected" virt="non-virtual"><scope>shogun::CIO</scope><name>directory_name</name></member>
+      <member refid="classshogun_1_1CIO_1af57b8236ee85d7168fd2f1986ea01625" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>disable_file_and_line</name></member>
+      <member refid="classshogun_1_1CIO_1a6259b8dfa64e090e87baf7311e3fb181" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>disable_progress</name></member>
+      <member refid="classshogun_1_1CIO_1a4991c435a9ca3cca73aa40877d7f62f3" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>done</name></member>
+      <member refid="classshogun_1_1CIO_1a42e461cb4d9141403c85ffd94f6c80f8" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>enable_file_and_line</name></member>
+      <member refid="classshogun_1_1CIO_1aa0598489d939abd1784c9a70959e0f54" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>enable_progress</name></member>
+      <member refid="classshogun_1_1CIO_1ae109efcd1320aec13db295435949b21d" prot="protected" virt="non-virtual"><scope>shogun::CIO</scope><name>file_buffer</name></member>
+      <member refid="classshogun_1_1CIO_1a2350d8765cee7fc7d31eead09def7d61" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>filter</name></member>
+      <member refid="classshogun_1_1CIO_1a4d833dd85080f2cea45d6163e5ec10db" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>get_loglevel</name></member>
+      <member refid="classshogun_1_1CIO_1a75cd443a4b5dd9240a9ae700caf2b91c" prot="protected" virt="non-virtual"><scope>shogun::CIO</scope><name>get_msg_intro</name></member>
+      <member refid="classshogun_1_1CIO_1abecf221cc2195c85e4291f377ffd9dae" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CIO_1ac4bf60a6b565cea14e69f3cd38c97aa9" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>get_show_file_and_line</name></member>
+      <member refid="classshogun_1_1CIO_1aa96b9b8f7c4e634277fb5b27a94f2021" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>get_show_progress</name></member>
+      <member refid="classshogun_1_1CIO_1ad3b6df7697d19fe2d11c7c5a0f495038" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>get_target</name></member>
+      <member refid="classshogun_1_1CIO_1a060e4678c54f6a79f24654aa6c0466a8" prot="protected" virt="non-virtual"><scope>shogun::CIO</scope><name>last_progress</name></member>
+      <member refid="classshogun_1_1CIO_1a41765a3fcb5ef9721d18b972706e0ebf" prot="protected" virt="non-virtual"><scope>shogun::CIO</scope><name>last_progress_time</name></member>
+      <member refid="classshogun_1_1CIO_1aa3c088903905949125c00b87b6a0094a" prot="protected" virt="non-virtual"><scope>shogun::CIO</scope><name>levels</name></member>
+      <member refid="classshogun_1_1CIO_1acbe29324b5ff492ea7c350ce56c87afc" prot="protected" virt="non-virtual"><scope>shogun::CIO</scope><name>loglevel</name></member>
+      <member refid="classshogun_1_1CIO_1aa42cfa92b0b57964a10054b17541bffc" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>message</name></member>
+      <member refid="classshogun_1_1CIO_1a27d2e763442a32d2381b30a147aef113" prot="protected" virt="non-virtual"><scope>shogun::CIO</scope><name>message_strings</name></member>
+      <member refid="classshogun_1_1CIO_1af76522e780d7fc3fd0bc09699bddec29" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>not_implemented</name></member>
+      <member refid="classshogun_1_1CIO_1a35200cfd0914eb55ed9ff2c700031cc0" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>progress</name></member>
+      <member refid="classshogun_1_1CIO_1a89f184dfc83afc0eb9089ae6ca818383" prot="protected" virt="non-virtual"><scope>shogun::CIO</scope><name>progress_start_time</name></member>
+      <member refid="classshogun_1_1CIO_1a8ee00328b795ed5bd5e3baa2991309e6" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>ref</name></member>
+      <member refid="classshogun_1_1CIO_1a26da76ed57f868efb8fd4b186c7e4eb2" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>ref_count</name></member>
+      <member refid="classshogun_1_1CIO_1ab084389095bb894f68ad2397cc1ad740" prot="private" virt="non-virtual"><scope>shogun::CIO</scope><name>refcount</name></member>
+      <member refid="classshogun_1_1CIO_1a33c44d24c39c922547b4409e97887f7e" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>set_dirname</name></member>
+      <member refid="classshogun_1_1CIO_1a399f91c25dd4d4ec0913c73e646c8bc1" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>set_loglevel</name></member>
+      <member refid="classshogun_1_1CIO_1a4450793b5dc3ba31f46259d0294c1bfd" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>set_target</name></member>
+      <member refid="classshogun_1_1CIO_1a2662a1867eef60ff7d18374e64777c23" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>set_target_to_stderr</name></member>
+      <member refid="classshogun_1_1CIO_1a7043cbe72602b0146d325dd43e8dfc12" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>set_target_to_stdout</name></member>
+      <member refid="classshogun_1_1CIO_1ad2f86539cf56821f815fc1a44b885970" prot="protected" virt="non-virtual"><scope>shogun::CIO</scope><name>show_file_and_line</name></member>
+      <member refid="classshogun_1_1CIO_1acd5a4e08555b01f31dab20409fdce0d9" prot="protected" virt="non-virtual"><scope>shogun::CIO</scope><name>show_progress</name></member>
+      <member refid="classshogun_1_1CIO_1abd8e4fa93552227f467c354ee27d80f6" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>skip_blanks</name></member>
+      <member refid="classshogun_1_1CIO_1a03acb6f00a3c7275cd119568b691688d" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>skip_spaces</name></member>
+      <member refid="classshogun_1_1CIO_1a315ce070b2d60d83dd7ba642601eceb2" prot="protected" virt="non-virtual"><scope>shogun::CIO</scope><name>target</name></member>
+      <member refid="classshogun_1_1CIO_1a43f00a658174a3d53ec35dbe187b20aa" prot="public" virt="non-virtual"><scope>shogun::CIO</scope><name>unref</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,652 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="io_8h" kind="file">
+    <compoundname>io.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">dirent.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes local="no">sys/types.h</includes>
+    <includes local="no">sys/stat.h</includes>
+    <includes refid="common_8h" local="yes">lib/common.h</includes>
+    <includes local="yes">base/init.h</includes>
+    <includedby refid="BinaryStream_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h</includedby>
+    <includedby refid="BitString_8h" local="no">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h</includedby>
+    <includedby refid="Cache_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h</includedby>
+    <includedby refid="Compressor_8h" local="no">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Compressor.h</includedby>
+    <includedby refid="DynInt_8h" local="no">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynInt.h</includedby>
+    <includedby refid="Mathematics_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h</includedby>
+    <includedby refid="MemoryMappedFile_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h</includedby>
+    <includedby refid="SimpleFile_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h</includedby>
+    <includedby refid="Time_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Time.h</includedby>
+    <includedby refid="Trie_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h</includedby>
+    <incdepgraph>
+      <node id="60">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="55">
+        <label>stdarg.h</label>
+      </node>
+      <node id="53">
+        <label>/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h</label>
+        <link refid="io.h"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>base/init.h</label>
+      </node>
+      <node id="59">
+        <label>sys/types.h</label>
+      </node>
+      <node id="56">
+        <label>string.h</label>
+      </node>
+      <node id="58">
+        <label>unistd.h</label>
+      </node>
+      <node id="54">
+        <label>stdio.h</label>
+      </node>
+      <node id="57">
+        <label>dirent.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classshogun_1_1CIO" prot="public">shogun::CIO</innerclass>
+    <innernamespace refid="namespaceshogun">shogun</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="io_8h_1aa9ca4ac67a64f5748b5c46c11caef6fd" prot="public" static="no">
+        <name>NUM_LOG_LEVELS</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="55" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1af1e4ac89327c8a30556095fc4431b71e" prot="public" static="no">
+        <name>FBUFSIZE</name>
+        <initializer>4096</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="56" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1add0c6b5f52d48c24204c9f4212b71178" prot="public" static="no">
+        <name>CONST_DIRENT_T</name>
+        <initializer>const struct dirent</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="61" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1ae9b3ec1539b4958ed5ecb089ec8e81ce" prot="public" static="no">
+        <name>SG_GCDEBUG</name>
+        <param><defname>...</defname></param>
+        <initializer>io-&gt;message(MSG_GCDEBUG, __FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="66" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1ac570249a880d6a0ce40830251f42eafa" prot="public" static="no">
+        <name>SG_DEBUG</name>
+        <param><defname>...</defname></param>
+        <initializer>io-&gt;message(MSG_DEBUG, __FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="67" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1a3d4594f031be4a5020e10c553f326584" prot="public" static="no">
+        <name>SG_INFO</name>
+        <param><defname>...</defname></param>
+        <initializer>io-&gt;message(MSG_INFO, __FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="68" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1a36a936dea08107d7ccca510d2971b531" prot="public" static="no">
+        <name>SG_WARNING</name>
+        <param><defname>...</defname></param>
+        <initializer>io-&gt;message(MSG_WARN, __FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="69" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1a44a50042a2c8e37a4972d9597209c6e6" prot="public" static="no">
+        <name>SG_ERROR</name>
+        <param><defname>...</defname></param>
+        <initializer>io-&gt;message(MSG_ERROR, __FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="70" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1afd5efaabcd324f8a3f8ae8b61c991e84" prot="public" static="no">
+        <name>SG_PRINT</name>
+        <param><defname>...</defname></param>
+        <initializer>io-&gt;message(MSG_MESSAGEONLY, __FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="72" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1a5d2c1d82e9895f4432f070f360fb2395" prot="public" static="no">
+        <name>SG_NOTIMPLEMENTED</name>
+        <initializer>io-&gt;not_implemented(__FILE__, __LINE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="73" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1a488a3e504e00e7131a557d5f19630264" prot="public" static="no">
+        <name>SG_DEPRECATED</name>
+        <initializer>io-&gt;deprecated(__FILE__, __LINE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="74" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1aa233439f05e250d90e48c2e4a62c3c8c" prot="public" static="no">
+        <name>SG_PROGRESS</name>
+        <param><defname>...</defname></param>
+        <initializer>io-&gt;progress(__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="76" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1a1aa10b630b228b009aa497b641eddbdb" prot="public" static="no">
+        <name>SG_ABS_PROGRESS</name>
+        <param><defname>...</defname></param>
+        <initializer>io-&gt;absolute_progress(__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="77" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1a19ed71a00d973f0a9c27f4fd68c2cb3a" prot="public" static="no">
+        <name>SG_DONE</name>
+        <param></param>
+        <initializer>io-&gt;done()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="78" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1a6bc924f9626815048488200c36f5677a" prot="public" static="no">
+        <name>SG_SGCDEBUG</name>
+        <param><defname>...</defname></param>
+        <initializer>sg_io-&gt;message(MSG_GCDEBUG,__FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="81" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1aa09762766c9b466065573643d641c43c" prot="public" static="no">
+        <name>SG_SDEBUG</name>
+        <param><defname>...</defname></param>
+        <initializer>sg_io-&gt;message(MSG_DEBUG,__FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="82" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1a7ebe8e85c6e0f89d052d5e435ce34021" prot="public" static="no">
+        <name>SG_SINFO</name>
+        <param><defname>...</defname></param>
+        <initializer>sg_io-&gt;message(MSG_INFO,__FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="83" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1a2c899b9cead872ad632faa499a9eee84" prot="public" static="no">
+        <name>SG_SWARNING</name>
+        <param><defname>...</defname></param>
+        <initializer>sg_io-&gt;message(MSG_WARN,__FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="84" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1a4d191ba171a7aecb5e3daa8f32bcdaff" prot="public" static="no">
+        <name>SG_SERROR</name>
+        <param><defname>...</defname></param>
+        <initializer>sg_io-&gt;message(MSG_ERROR,__FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="85" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1afd3fb52baba404d565b9e1aefac97750" prot="public" static="no">
+        <name>SG_SPRINT</name>
+        <param><defname>...</defname></param>
+        <initializer>sg_io-&gt;message(MSG_MESSAGEONLY,__FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="86" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1a8204b8b92f074831b384f427e3960938" prot="public" static="no">
+        <name>SG_SPROGRESS</name>
+        <param><defname>...</defname></param>
+        <initializer>sg_io-&gt;progress(__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="87" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1a4382b972122856e06a905cc7c015a172" prot="public" static="no">
+        <name>SG_SABS_PROGRESS</name>
+        <param><defname>...</defname></param>
+        <initializer>sg_io-&gt;absolute_progress(__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="88" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1a2ba6fc2d05bd5a6fb5332759d45451f6" prot="public" static="no">
+        <name>SG_SDONE</name>
+        <param></param>
+        <initializer>sg_io-&gt;done()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="89" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1acf8a2333db9ef38f776ea57f4893255f" prot="public" static="no">
+        <name>SG_SNOTIMPLEMENTED</name>
+        <initializer>sg_io-&gt;not_implemented(__FILE__, __LINE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="90" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1a056913f5376cf2d4021612a258a514cd" prot="public" static="no">
+        <name>SG_SDEPRECATED</name>
+        <initializer>sg_io-&gt;deprecated(__FILE__, __LINE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="91" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io_8h_1aca68c0d4ac8df0838e209fb5300f7be3" prot="public" static="no">
+        <name>ASSERT</name>
+        <param><defname>x</defname></param>
+        <initializer>{ if (!(x)) SG_SERROR(&quot;assertion %s failed in file %s line %d\n&quot;,#x, __FILE__, __LINE__);}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="93" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Written<sp/>(W)<sp/>1999-2009<sp/>Soeren<sp/>Sonnenburg</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Written<sp/>(W)<sp/>1999-2008<sp/>Gunnar<sp/>Raetsch</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>1999-2009<sp/>Fraunhofer<sp/>Institute<sp/>FIRST<sp/>and<sp/>Max-Planck-Society</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__CIO_H__</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__CIO_H__</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dirent.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;base/init.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">shogun</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CIO;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>CIO*<sp/>sg_io;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">shogun</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>EMessageType</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_GCDEBUG,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_DEBUG,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_INFO,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_NOTICE,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WARN,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_ERROR,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_CRITICAL,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_ALERT,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_EMERGENCY,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_MESSAGEONLY</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUM_LOG_LEVELS<sp/>10</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FBUFSIZE<sp/>4096</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DARWIN</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CONST_DIRENT_T<sp/>struct<sp/>dirent</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else<sp/>//DARWIN</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CONST_DIRENT_T<sp/>const<sp/>struct<sp/>dirent</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/>//DARWIN</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/>printf<sp/>like<sp/>funktions<sp/>(with<sp/>additional<sp/>severity<sp/>level)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/>for<sp/>object<sp/>derived<sp/>from<sp/>CSGObject</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SG_GCDEBUG(...)<sp/>io-&gt;message(MSG_GCDEBUG,<sp/>__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_DEBUG(...)<sp/>io-&gt;message(MSG_DEBUG,<sp/>__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_INFO(...)<sp/>io-&gt;message(MSG_INFO,<sp/>__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_WARNING(...)<sp/>io-&gt;message(MSG_WARN,<sp/>__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_ERROR(...)<sp/>io-&gt;message(MSG_ERROR,<sp/>__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SG_PRINT(...)<sp/>io-&gt;message(MSG_MESSAGEONLY,<sp/>__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_NOTIMPLEMENTED<sp/>io-&gt;not_implemented(__FILE__,<sp/>__LINE__)</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_DEPRECATED<sp/>io-&gt;deprecated(__FILE__,<sp/>__LINE__)</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SG_PROGRESS(...)<sp/>io-&gt;progress(__VA_ARGS__)</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_ABS_PROGRESS(...)<sp/>io-&gt;absolute_progress(__VA_ARGS__)</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_DONE()<sp/>io-&gt;done()</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//<sp/>printf<sp/>like<sp/>function<sp/>using<sp/>the<sp/>global<sp/>sg_io<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SG_SGCDEBUG(...)<sp/>sg_io-&gt;message(MSG_GCDEBUG,__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_SDEBUG(...)<sp/>sg_io-&gt;message(MSG_DEBUG,__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_SINFO(...)<sp/>sg_io-&gt;message(MSG_INFO,__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_SWARNING(...)<sp/>sg_io-&gt;message(MSG_WARN,__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_SERROR(...)<sp/>sg_io-&gt;message(MSG_ERROR,__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_SPRINT(...)<sp/>sg_io-&gt;message(MSG_MESSAGEONLY,__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_SPROGRESS(...)<sp/>sg_io-&gt;progress(__VA_ARGS__)</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_SABS_PROGRESS(...)<sp/>sg_io-&gt;absolute_progress(__VA_ARGS__)</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_SDONE()<sp/>sg_io-&gt;done()</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_SNOTIMPLEMENTED<sp/>sg_io-&gt;not_implemented(__FILE__,<sp/>__LINE__)</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SG_SDEPRECATED<sp/>sg_io-&gt;deprecated(__FILE__,<sp/>__LINE__)</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSERT(x)<sp/>{<sp/>if<sp/>(!(x))<sp/>SG_SERROR(&quot;assertion<sp/>%s<sp/>failed<sp/>in<sp/>file<sp/>%s<sp/>line<sp/>%d\n&quot;,#x,<sp/>__FILE__,<sp/>__LINE__);}</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classshogun_1_1CIO" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classshogun_1_1CIO" kindref="compound" tooltip="Class IO, used to do input output operations throughout shogun.">CIO</ref></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CIO_1a818ee21e116e4b24947c223482e9f941" kindref="member">CIO</ref>();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CIO_1a818ee21e116e4b24947c223482e9f941" kindref="member">CIO</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO" kindref="compound" tooltip="Class IO, used to do input output operations throughout shogun.">CIO</ref>&amp;<sp/>orig);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1a399f91c25dd4d4ec0913c73e646c8bc1" kindref="member">set_loglevel</ref>(EMessageType<sp/>level);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EMessageType<sp/><ref refid="classshogun_1_1CIO_1a4d833dd85080f2cea45d6163e5ec10db" kindref="member">get_loglevel</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1aa96b9b8f7c4e634277fb5b27a94f2021" kindref="member">get_show_progress</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="127"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1acd5a4e08555b01f31dab20409fdce0d9" kindref="member">show_progress</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1ac4bf60a6b565cea14e69f3cd38c97aa9" kindref="member">get_show_file_and_line</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="136"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1ad2f86539cf56821f815fc1a44b885970" kindref="member">show_file_and_line</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1aa42cfa92b0b57964a10054b17541bffc" kindref="member">message</ref>(EMessageType<sp/>prio,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1a35200cfd0914eb55ed9ff2c700031cc0" kindref="member">progress</ref>(</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>current_val,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>min_val=0.0,<sp/>float64_t<sp/>max_val=1.0,<sp/>int32_t<sp/>decimals=1,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>prefix=</highlight><highlight class="stringliteral">&quot;PROGRESS:\t&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1ac41ef9a0093e7eeb9e56e04b669e05e9" kindref="member">absolute_progress</ref>(</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>current_val,<sp/>float64_t<sp/>val,</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>min_val=0.0,<sp/>float64_t<sp/>max_val=1.0,<sp/>int32_t<sp/>decimals=1,</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>prefix=</highlight><highlight class="stringliteral">&quot;PROGRESS:\t&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1a4991c435a9ca3cca73aa40877d7f62f3" kindref="member">done</ref>();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1af76522e780d7fc3fd0bc09699bddec29" kindref="member">not_implemented</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file,<sp/>int32_t<sp/>line)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="188"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CIO_1aa42cfa92b0b57964a10054b17541bffc" kindref="member">message</ref>(MSG_ERROR,<sp/>file,<sp/>line,<sp/></highlight><highlight class="stringliteral">&quot;Sorry,<sp/>not<sp/>yet<sp/>implemented<sp/>.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1a3ff5d6e92ce6ced5e6b669ad9b17bbed" kindref="member">deprecated</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file,<sp/>int32_t<sp/>line)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="194"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CIO_1aa42cfa92b0b57964a10054b17541bffc" kindref="member">message</ref>(MSG_WARN,<sp/>file,<sp/>line,</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;This<sp/>function<sp/>is<sp/>deprecated<sp/>and<sp/>will<sp/>be<sp/>removed<sp/>soon.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1afdaf4c9191a04c5e73496ec80d398af1" kindref="member">buffered_message</ref>(EMessageType<sp/>prio,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classshogun_1_1CIO_1a03acb6f00a3c7275cd119568b691688d" kindref="member">skip_spaces</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classshogun_1_1CIO_1abd8e4fa93552227f467c354ee27d80f6" kindref="member">skip_blanks</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>FILE*<sp/><ref refid="classshogun_1_1CIO_1ad3b6df7697d19fe2d11c7c5a0f495038" kindref="member">get_target</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="225"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1a315ce070b2d60d83dd7ba642601eceb2" kindref="member">target</ref>;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1a4450793b5dc3ba31f46259d0294c1bfd" kindref="member">set_target</ref>(FILE*<sp/><ref refid="classshogun_1_1CIO_1a315ce070b2d60d83dd7ba642601eceb2" kindref="member">target</ref>);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1a2662a1867eef60ff7d18374e64777c23" kindref="member">set_target_to_stderr</ref>()<sp/>{<sp/><ref refid="classshogun_1_1CIO_1a4450793b5dc3ba31f46259d0294c1bfd" kindref="member">set_target</ref>(stderr);<sp/>}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1a7043cbe72602b0146d325dd43e8dfc12" kindref="member">set_target_to_stdout</ref>()<sp/>{<sp/><ref refid="classshogun_1_1CIO_1a4450793b5dc3ba31f46259d0294c1bfd" kindref="member">set_target</ref>(stdout);<sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1aa0598489d939abd1784c9a70959e0f54" kindref="member">enable_progress</ref>()</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CIO_1acd5a4e08555b01f31dab20409fdce0d9" kindref="member">show_progress</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>static<sp/>functions<sp/>like<sp/>CSVM::classify_example_helper<sp/>call<sp/>SG_PROGRESS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sg_io!=</highlight><highlight class="keyword">this</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sg_io-&gt;<ref refid="classshogun_1_1CIO_1aa0598489d939abd1784c9a70959e0f54" kindref="member">enable_progress</ref>();</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1a6259b8dfa64e090e87baf7311e3fb181" kindref="member">disable_progress</ref>()</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CIO_1acd5a4e08555b01f31dab20409fdce0d9" kindref="member">show_progress</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>static<sp/>functions<sp/>like<sp/>CSVM::classify_example_helper<sp/>call<sp/>SG_PROGRESS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sg_io!=</highlight><highlight class="keyword">this</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sg_io-&gt;<ref refid="classshogun_1_1CIO_1a6259b8dfa64e090e87baf7311e3fb181" kindref="member">disable_progress</ref>();</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1a42e461cb4d9141403c85ffd94f6c80f8" kindref="member">enable_file_and_line</ref>()</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CIO_1ad2f86539cf56821f815fc1a44b885970" kindref="member">show_file_and_line</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sg_io!=</highlight><highlight class="keyword">this</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sg_io-&gt;<ref refid="classshogun_1_1CIO_1a42e461cb4d9141403c85ffd94f6c80f8" kindref="member">enable_file_and_line</ref>();</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1af57b8236ee85d7168fd2f1986ea01625" kindref="member">disable_file_and_line</ref>()</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CIO_1ad2f86539cf56821f815fc1a44b885970" kindref="member">show_file_and_line</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sg_io!=</highlight><highlight class="keyword">this</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sg_io-&gt;<ref refid="classshogun_1_1CIO_1af57b8236ee85d7168fd2f1986ea01625" kindref="member">disable_file_and_line</ref>();</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1a33c44d24c39c922547b4409e97887f7e" kindref="member">set_dirname</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>dirname)</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strncpy(<ref refid="classshogun_1_1CIO_1aa5e133bf5851d0f78e78549422373723" kindref="member">directory_name</ref>,<sp/>dirname,<sp/>FBUFSIZE);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classshogun_1_1CIO_1add500b02ae34a930cbd6c4844a18115c" kindref="member">concat_filename</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filename)</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(snprintf(<ref refid="classshogun_1_1CIO_1ae109efcd1320aec13db295435949b21d" kindref="member">file_buffer</ref>,<sp/>FBUFSIZE,<sp/></highlight><highlight class="stringliteral">&quot;%s/%s&quot;</highlight><highlight class="normal">,<sp/><ref refid="classshogun_1_1CIO_1aa5e133bf5851d0f78e78549422373723" kindref="member">directory_name</ref>,<sp/>filename)<sp/>&gt;<sp/>FBUFSIZE)</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SG_SERROR(</highlight><highlight class="stringliteral">&quot;filename<sp/>too<sp/>long&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SG_SDEBUG(</highlight><highlight class="stringliteral">&quot;filename=\&quot;%s\&quot;\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="classshogun_1_1CIO_1ae109efcd1320aec13db295435949b21d" kindref="member">file_buffer</ref>);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1ae109efcd1320aec13db295435949b21d" kindref="member">file_buffer</ref>;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1a2350d8765cee7fc7d31eead09def7d61" kindref="member">filter</ref>(CONST_DIRENT_T*<sp/>d)</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(d)</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>fname=<ref refid="classshogun_1_1CIO_1add500b02ae34a930cbd6c4844a18115c" kindref="member">concat_filename</ref>(d-&gt;d_name);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!access(fname,<sp/>R_OK))</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">stat<sp/>s;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!stat(fname,<sp/>&amp;s)<sp/>&amp;&amp;<sp/>S_ISREG(s.st_mode))</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="classshogun_1_1CIO_1a8ee00328b795ed5bd5e3baa2991309e6" kindref="member">ref</ref>()</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++refcount;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>refcount;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="classshogun_1_1CIO_1a26da76ed57f868efb8fd4b186c7e4eb2" kindref="member">ref_count</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="339"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>refcount;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="classshogun_1_1CIO_1a43f00a658174a3d53ec35dbe187b20aa" kindref="member">unref</ref>()</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(refcount==0<sp/>||<sp/>--refcount==0)</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>refcount;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classshogun_1_1CIO_1abecf221cc2195c85e4291f377ffd9dae" kindref="member">get_name</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;IO&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classshogun_1_1CIO_1a75cd443a4b5dd9240a9ae700caf2b91c" kindref="member">get_msg_intro</ref>(EMessageType<sp/>prio)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILE*<sp/>target;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1CIO_1a41765a3fcb5ef9721d18b972706e0ebf" kindref="member">last_progress_time</ref>;</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1CIO_1a89f184dfc83afc0eb9089ae6ca818383" kindref="member">progress_start_time</ref>;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1CIO_1a060e4678c54f6a79f24654aa6c0466a8" kindref="member">last_progress</ref>;</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1acd5a4e08555b01f31dab20409fdce0d9" kindref="member">show_progress</ref>;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1ad2f86539cf56821f815fc1a44b885970" kindref="member">show_file_and_line</ref>;</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EMessageType<sp/><ref refid="classshogun_1_1CIO_1acbe29324b5ff492ea7c350ce56c87afc" kindref="member">loglevel</ref>;</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EMessageType<sp/><ref refid="classshogun_1_1CIO_1aa3c088903905949125c00b87b6a0094a" kindref="member">levels</ref>[NUM_LOG_LEVELS];</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classshogun_1_1CIO_1a27d2e763442a32d2381b30a147aef113" kindref="member">message_strings</ref>[NUM_LOG_LEVELS];</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1ae109efcd1320aec13db295435949b21d" kindref="member">file_buffer</ref>[FBUFSIZE];</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CIO_1aa5e133bf5851d0f78e78549422373723" kindref="member">directory_name</ref>[FBUFSIZE];</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>refcount;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="401"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__CIO_H__</highlight></codeline>
+    </programlisting>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h"/>
+  </compounddef>
+</doxygen>

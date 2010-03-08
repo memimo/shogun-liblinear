@@ -1,0 +1,2676 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CMath" kind="class" prot="public">
+    <compoundname>shogun::CMath</compoundname>
+    <includes local="no">Mathematics.h</includes>
+      <sectiondef kind="user-defined">
+      <header>constants</header>
+      <description><para><anchor id="_1amgrp93fb40ec02c008121fa9199899b31202"/> </para></description>
+      <memberdef kind="variable" id="classshogun_1_1CMath_1a034c21b22d19deec5c972b99c5f1b9ec" prot="public" static="yes" mutable="no">
+        <type>const float64_t</type>
+        <definition>const float64_t shogun::CMath::INFTY</definition>
+        <argsstring></argsstring>
+        <name>INFTY</name>
+        <briefdescription>
+<para>infinity </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1247" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CMath_1a6731b189cbdd606bf4a85b7d33b3834f" prot="public" static="yes" mutable="no">
+        <type>const float64_t</type>
+        <definition>const float64_t shogun::CMath::ALMOST_INFTY</definition>
+        <argsstring></argsstring>
+        <name>ALMOST_INFTY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1248" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CMath_1a3aa36c1ff86d9a91ad3880e332003521" prot="public" static="yes" mutable="no">
+        <type>const float64_t</type>
+        <definition>const float64_t shogun::CMath::ALMOST_NEG_INFTY</definition>
+        <argsstring></argsstring>
+        <name>ALMOST_NEG_INFTY</name>
+        <briefdescription>
+<para>almost neg (log) infinity </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1251" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CMath_1ad8af83dcc60ed67e4c8bcc744cf22daf" prot="public" static="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CMath::LOGRANGE</definition>
+        <argsstring></argsstring>
+        <name>LOGRANGE</name>
+        <briefdescription>
+<para>range for logtable: log(1+exp(x)) -LOGRANGE &lt;= x &lt;= 0 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1254" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CMath_1a6061244af61b18307bee89b9368d70c5" prot="public" static="yes" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t shogun::CMath::seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <briefdescription>
+<para>random generator seed </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1257" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CMath_1a7855cec6c3de586bfb5e2a145450bddc" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* shogun::CMath::rand_state</definition>
+        <argsstring></argsstring>
+        <name>rand_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1258" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1258" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Constructor/Destructor.</header>
+      <description><para><anchor id="_1amgrp2d029f746163a8a6235c7b32088d5744"/> </para></description>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a666e556cac712254e0c105c39d5a24eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CMath::CMath</definition>
+        <argsstring>()</argsstring>
+        <name>CMath</name>
+        <briefdescription>
+<para>Constructor - initializes log-table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a4c83a7d6ec134cf506ea6cee37023115" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CMath::~CMath</definition>
+        <argsstring>()</argsstring>
+        <name>~CMath</name>
+        <briefdescription>
+<para>Destructor - frees logtable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="133"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>min/max/abs functions.</header>
+      <description><para><anchor id="_1amgrpc67ca01f0a067b39585c76a8f910053d"/> </para></description>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a4fdec60ce5be42b17dd3205bc94c53e4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T shogun::CMath::min</definition>
+        <argsstring>(T a, T b)</argsstring>
+        <name>min</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>return the minimum of two integers </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="144" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="143" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a70bfb4cc08bab88576ec4a8b0228a862" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T shogun::CMath::max</definition>
+        <argsstring>(T a, T b)</argsstring>
+        <name>max</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>return the maximum of two integers </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="151" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1aa4721e42ed2a26672d58636726ed3233" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T shogun::CMath::clamp</definition>
+        <argsstring>(T value, T lb, T ub)</argsstring>
+        <name>clamp</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>lb</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>ub</declname>
+        </param>
+        <briefdescription>
+<para>return the value clamped to interval [lb,ub] </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="158" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="157" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a520051a3792408cac9f0b19c08323573" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T shogun::CMath::abs</definition>
+        <argsstring>(T a)</argsstring>
+        <name>abs</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>return the maximum of two integers </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="170" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="169" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>misc functions</header>
+      <description><para><anchor id="_1amgrpda170a44be7ad9b9770b1828ad92ffad"/> </para></description>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a7c3b7504a8134ef584c5a0eaa7806456" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::round</definition>
+        <argsstring>(float64_t d)</argsstring>
+        <name>round</name>
+        <param>
+          <type>float64_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="186" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a121438d88447d218774c1a523a62977d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::floor</definition>
+        <argsstring>(float64_t d)</argsstring>
+        <name>floor</name>
+        <param>
+          <type>float64_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="191" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="190" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a58df8be599d8ac8278da6cfbb2ccbba3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::ceil</definition>
+        <argsstring>(float64_t d)</argsstring>
+        <name>ceil</name>
+        <param>
+          <type>float64_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="196" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="195" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1aa56f3c7afc92d8b5e9b4920e45edcc1f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T shogun::CMath::sign</definition>
+        <argsstring>(T a)</argsstring>
+        <name>sign</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>signum of type T variable a </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="203" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="202" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1af532b42be85bb30a84d33f9aa1d3718a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::swap</definition>
+        <argsstring>(T &amp;a, T &amp;b)</argsstring>
+        <name>swap</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>swap e.g. floats a and b </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="212" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="211" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a42c220146fd5322d43f7f2a77d14e250" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::resize</definition>
+        <argsstring>(T *&amp;data, int64_t old_size, int64_t new_size)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>T *&amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>old_size</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>new_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>resize array from old_size to new_size (keeping as much array content as possible intact) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="223" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="222" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1aa4c4f94d4a411b85ddf745edb248f3ab" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T shogun::CMath::twonorm</definition>
+        <argsstring>(T *x, int32_t len)</argsstring>
+        <name>twonorm</name>
+        <param>
+          <type>T *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>|| x ||_2 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="236" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="235" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a178859eac8fd7ed35f09c9cd8bb6bc8d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T shogun::CMath::qsq</definition>
+        <argsstring>(T *x, int32_t len, float64_t q)</argsstring>
+        <name>qsq</name>
+        <param>
+          <type>T *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+<para>|| x ||_q^q </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="247" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="246" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a1ea8367ee3a5edba9d5ab74911934e12" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T shogun::CMath::qnorm</definition>
+        <argsstring>(T *x, int32_t len, float64_t q)</argsstring>
+        <name>qnorm</name>
+        <param>
+          <type>T *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+<para>|| x ||_q </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="258" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="257" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a24d171aeb17e72cdc915ca5ed9993484" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T shogun::CMath::sq</definition>
+        <argsstring>(T x)</argsstring>
+        <name>sq</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>x^2 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="266" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="265" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1ad941be77b5f88cadf34b6e8cfaef78aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float32_t</type>
+        <definition>static float32_t shogun::CMath::sqrt</definition>
+        <argsstring>(float32_t x)</argsstring>
+        <name>sqrt</name>
+        <param>
+          <type>float32_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>x^0.5 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="272" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="271" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1aed7cfebac2e4665344fea59824d0b390" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::sqrt</definition>
+        <argsstring>(float64_t x)</argsstring>
+        <name>sqrt</name>
+        <param>
+          <type>float64_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>x^0.5 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="278" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="277" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a944c342ef90a8089a6d986f5941e16d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>floatmax_t</type>
+        <definition>static floatmax_t shogun::CMath::sqrt</definition>
+        <argsstring>(floatmax_t x)</argsstring>
+        <name>sqrt</name>
+        <param>
+          <type>floatmax_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>x^0.5 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="284" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="283" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a0b578fd06f0f5cf36318cd325d8a3198" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>floatmax_t</type>
+        <definition>static floatmax_t shogun::CMath::powl</definition>
+        <argsstring>(floatmax_t x, floatmax_t n)</argsstring>
+        <name>powl</name>
+        <param>
+          <type>floatmax_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>floatmax_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>x^n </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="297" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="296" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a56eca94741a728e99268606ec33662f0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t shogun::CMath::pow</definition>
+        <argsstring>(int32_t x, int32_t n)</argsstring>
+        <name>pow</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="308" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="307" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a2b1e11ba506b73c2885f52d72b0ed31e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::pow</definition>
+        <argsstring>(float64_t x, int32_t n)</argsstring>
+        <name>pow</name>
+        <param>
+          <type>float64_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="318" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="317" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a058a44f75ad3d3ec14a86ff2bed089df" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::pow</definition>
+        <argsstring>(float64_t x, float64_t n)</argsstring>
+        <name>pow</name>
+        <param>
+          <type>float64_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="328" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="327" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1ac2e21ff2ed5a98baab991e6c987701a6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::exp</definition>
+        <argsstring>(float64_t x)</argsstring>
+        <name>exp</name>
+        <param>
+          <type>float64_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="333" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="332" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a7e350b61edc62fe1b60ca34986e46a2d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::log10</definition>
+        <argsstring>(float64_t v)</argsstring>
+        <name>log10</name>
+        <param>
+          <type>float64_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="338" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="337" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1aea83b91d41c4b772643c2e692d6470d7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::log2</definition>
+        <argsstring>(float64_t v)</argsstring>
+        <name>log2</name>
+        <param>
+          <type>float64_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="344" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="343" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1af1ef0ccd8ddaab3c3cb50688f3a0a767" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::log</definition>
+        <argsstring>(float64_t v)</argsstring>
+        <name>log</name>
+        <param>
+          <type>float64_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="355" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="354" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a474e24fdb408bdbcc24d7659d8c0ee92" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::transpose_matrix</definition>
+        <argsstring>(T *&amp;matrix, int32_t &amp;num_feat, int32_t &amp;num_vec)</argsstring>
+        <name>transpose_matrix</name>
+        <param>
+          <type>T *&amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="362" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="360" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1abe3373a814152b229c5e9850dbc80dc5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t *</type>
+        <definition>static float64_t* shogun::CMath::pinv</definition>
+        <argsstring>(float64_t *matrix, int32_t rows, int32_t cols, float64_t *target=NULL)</argsstring>
+        <name>pinv</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>cols</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>target</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return the pseudo inverse for matrix when matrix has shape (rows, cols) the pseudo inverse has (cols, rows) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="381"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a1d7914058cb9a06668f7f2a34933e4ba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CMath::dgemm</definition>
+        <argsstring>(double alpha, const double *A, int rows, int cols, CBLAS_TRANSPOSE transposeA, double *B, int cols_B, CBLAS_TRANSPOSE transposeB, double beta, double *C)</argsstring>
+        <name>dgemm</name>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <param>
+          <type>CBLAS_TRANSPOSE</type>
+          <declname>transposeA</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols_B</declname>
+        </param>
+        <param>
+          <type>CBLAS_TRANSPOSE</type>
+          <declname>transposeB</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="390" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="386" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a0d7a106ad89a5bc3044f9ebe0e55366d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CMath::dgemv</definition>
+        <argsstring>(double alpha, const double *A, int rows, int cols, const CBLAS_TRANSPOSE transposeA, const double *X, double beta, double *Y)</argsstring>
+        <name>dgemv</name>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <param>
+          <type>const CBLAS_TRANSPOSE</type>
+          <declname>transposeA</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>Y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="400" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="396" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a18a6fb4d469f611de1d0005ddf2895d8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>static int64_t shogun::CMath::factorial</definition>
+        <argsstring>(int32_t n)</argsstring>
+        <name>factorial</name>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="408" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="407" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a92733c139fa46f6b9dd09f75ac60dca8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CMath::init_random</definition>
+        <argsstring>(uint32_t initseed=0)</argsstring>
+        <name>init_random</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>initseed</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="416" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="415" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a93e9f6c33ab909ee0e14e6f9d311b723" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>static int64_t shogun::CMath::random</definition>
+        <argsstring>()</argsstring>
+        <name>random</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="433" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="432" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1aeb43e877e5859a188ea8ca9d21c7f15a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t shogun::CMath::random</definition>
+        <argsstring>(int32_t min_value, int32_t max_value)</argsstring>
+        <name>random</name>
+        <param>
+          <type>int32_t</type>
+          <declname>min_value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="442" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="441" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a9728c04e9c32f3934349f3a69278d421" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float32_t</type>
+        <definition>static float32_t shogun::CMath::random</definition>
+        <argsstring>(float32_t min_value, float32_t max_value)</argsstring>
+        <name>random</name>
+        <param>
+          <type>float32_t</type>
+          <declname>min_value</declname>
+        </param>
+        <param>
+          <type>float32_t</type>
+          <declname>max_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="449" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="448" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a6c655933600886d09edef1625b6b9e91" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::random</definition>
+        <argsstring>(float64_t min_value, float64_t max_value)</argsstring>
+        <name>random</name>
+        <param>
+          <type>float64_t</type>
+          <declname>min_value</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>max_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="459" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="458" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a4baec74e77f6b7a5c16cb606e64fa9c1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>static T* shogun::CMath::clone_vector</definition>
+        <argsstring>(const T *vec, int32_t len)</argsstring>
+        <name>clone_vector</name>
+        <param>
+          <type>const T *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="470" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="469" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1ad99f885ad7688c8171b77be81e413b4a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::fill_vector</definition>
+        <argsstring>(T *vec, int32_t len, T value)</argsstring>
+        <name>fill_vector</name>
+        <param>
+          <type>T *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="479" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="478" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a63485ce2b421b6d1ad932d9935b90e97" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::range_fill_vector</definition>
+        <argsstring>(T *vec, int32_t len, T start=0)</argsstring>
+        <name>range_fill_vector</name>
+        <param>
+          <type>T *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>start</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="485" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="484" bodyend="488"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a518019ff67bd2731404c09b88abb7c73" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::random_vector</definition>
+        <argsstring>(T *vec, int32_t len, T min_value, T max_value)</argsstring>
+        <name>random_vector</name>
+        <param>
+          <type>T *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>min_value</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>max_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="492" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="491" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a0b1934cdaeffd6ee9a8075c8d83cf681" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t *</type>
+        <definition>static int32_t* shogun::CMath::randperm</definition>
+        <argsstring>(int32_t n)</argsstring>
+        <name>randperm</name>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="498" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="497" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1acf113030c32a7e9019f6a010f8e6b01d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>static int64_t shogun::CMath::nchoosek</definition>
+        <argsstring>(int32_t n, int32_t k)</argsstring>
+        <name>nchoosek</name>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="511" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="510" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a892e3c98bf03db1a05cce07580e19f52" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::vec1_plus_scalar_times_vec2</definition>
+        <argsstring>(T *vec1, T scalar, const T *vec2, int32_t n)</argsstring>
+        <name>vec1_plus_scalar_times_vec2</name>
+        <param>
+          <type>T *</type>
+          <declname>vec1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>scalar</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>x=x+alpha*y </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="524" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="522" bodyend="527"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1adf47def11d222f1a0014fbe86f6e8329" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::dot</definition>
+        <argsstring>(const bool *v1, const bool *v2, int32_t n)</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const bool *</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const bool *</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>compute dot product between v1 and v2 (blas optimized) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="531" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="530" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a6699764f00bede48e9ec6e6fb39273ea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>floatmax_t</type>
+        <definition>static floatmax_t shogun::CMath::dot</definition>
+        <argsstring>(const floatmax_t *v1, const floatmax_t *v2, int32_t n)</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const floatmax_t *</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const floatmax_t *</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>compute dot product between v1 and v2 (blas optimized) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="540" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="539" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a6bbc52ff88a7af4d00ffae0a37343a48" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::dot</definition>
+        <argsstring>(const float64_t *v1, const float64_t *v2, int32_t n)</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const float64_t *</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>compute dot product between v1 and v2 (blas optimized) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="549" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="548" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1aa05aecb53833ffaf50eb400d19822186" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float32_t</type>
+        <definition>static float32_t shogun::CMath::dot</definition>
+        <argsstring>(const float32_t *v1, const float32_t *v2, int32_t n)</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const float32_t *</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const float32_t *</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>compute dot product between v1 and v2 (blas optimized) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="564" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="562" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a41c0a4dcba37e5985374b6ad7b7f94e2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::dot</definition>
+        <argsstring>(const uint64_t *v1, const uint64_t *v2, int32_t n)</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const uint64_t *</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const uint64_t *</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>compute dot product between v1 and v2 (for 64bit unsigned ints) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="579" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="577" bodyend="585"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1ac11a56e21a71b35b7ffda00f9829882e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::dot</definition>
+        <argsstring>(const int64_t *v1, const int64_t *v2, int32_t n)</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const int64_t *</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const int64_t *</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>compute dot product between v1 and v2 (for 64bit ints) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="589" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="587" bodyend="595"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1ad91005a21334af9af56190cd48222600" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::dot</definition>
+        <argsstring>(const int32_t *v1, const int32_t *v2, int32_t n)</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const int32_t *</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const int32_t *</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>compute dot product between v1 and v2 (for 32bit ints) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="600" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="598" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1afda255ed13962d323cc72a165bf75ee1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::dot</definition>
+        <argsstring>(const uint32_t *v1, const uint32_t *v2, int32_t n)</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const uint32_t *</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const uint32_t *</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>compute dot product between v1 and v2 (for 32bit unsigned ints) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="611" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="609" bodyend="617"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1af8a4d39d116d71ccda3bdeef6f402b17" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::dot</definition>
+        <argsstring>(const uint16_t *v1, const uint16_t *v2, int32_t n)</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const uint16_t *</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const uint16_t *</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>compute dot product between v1 and v2 (for 16bit unsigned ints) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="622" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="620" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1aa2c09bf0ac41c1f646bd6ef92ed06dd4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::dot</definition>
+        <argsstring>(const int16_t *v1, const int16_t *v2, int32_t n)</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const int16_t *</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const int16_t *</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>compute dot product between v1 and v2 (for 16bit unsigned ints) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="633" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="631" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1afb12d039aa3acebc4edbf6c5573f5d5e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::dot</definition>
+        <argsstring>(const char *v1, const char *v2, int32_t n)</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const char *</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>compute dot product between v1 and v2 (for 8bit (un)signed ints) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="644" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="642" bodyend="650"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a850024e9d85ad7eb6af04850e048b2cf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::dot</definition>
+        <argsstring>(const uint8_t *v1, const uint8_t *v2, int32_t n)</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>compute dot product between v1 and v2 (for 8bit (un)signed ints) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="655" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="653" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a9bcf0bb38f38ec352c54e07b8a99d957" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::dot</definition>
+        <argsstring>(const float64_t *v1, const char *v2, int32_t n)</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const float64_t *</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>compute dot product between v1 and v2 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="666" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="664" bodyend="672"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a56b3390a1898e938fb4a560ce68c4083" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::add</definition>
+        <argsstring>(T *target, T alpha, const T *v1, T beta, const T *v2, int32_t len)</argsstring>
+        <name>add</name>
+        <param>
+          <type>T *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>target=alpha*vec1 + beta*vec2 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="679" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="676" bodyend="682"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1aad9d8a4ad1c7bfefac67a61c936faa2e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::add_scalar</definition>
+        <argsstring>(T alpha, T *vec, int32_t len)</argsstring>
+        <name>add_scalar</name>
+        <param>
+          <type>T</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>add scalar to vector inplace </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="687" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="686" bodyend="690"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1adae9998b1f46dd7b118dfbdfcf43e021" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::scale_vector</definition>
+        <argsstring>(T alpha, T *vec, int32_t len)</argsstring>
+        <name>scale_vector</name>
+        <param>
+          <type>T</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>scale vector inplace </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="695" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="694" bodyend="698"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a9d662e738c08f42bf4a123c3805f627e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T shogun::CMath::sum</definition>
+        <argsstring>(T *vec, int32_t len)</argsstring>
+        <name>sum</name>
+        <param>
+          <type>T *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>return sum(vec) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="703" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="702" bodyend="709"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a0fda591b51f3e9fe22977d8ae67d01c6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T shogun::CMath::max</definition>
+        <argsstring>(T *vec, int32_t len)</argsstring>
+        <name>max</name>
+        <param>
+          <type>T *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>return max(vec) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="714" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="713" bodyend="722"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a8fdb461b3038f7e211dbddf7faea5988" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T shogun::CMath::sum_abs</definition>
+        <argsstring>(T *vec, int32_t len)</argsstring>
+        <name>sum_abs</name>
+        <param>
+          <type>T *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>return sum(abs(vec)) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="727" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="726" bodyend="733"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1aab98fc2586d89a9514a1c4e1574c580c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool shogun::CMath::fequal</definition>
+        <argsstring>(T x, T y, float64_t precision=1e-6)</argsstring>
+        <name>fequal</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>precision</declname>
+          <defval>1e-6</defval>
+        </param>
+        <briefdescription>
+<para>return sum(abs(vec)) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="738" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="737" bodyend="740"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a8e1c9c010efce191e05648f34ce4e5f9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::mean</definition>
+        <argsstring>(float64_t *vec, int32_t len)</argsstring>
+        <name>mean</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="743" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="742" bodyend="751"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a9c61b1063294075d95432ce0fc3a16a7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::trace</definition>
+        <argsstring>(float64_t *mat, int32_t cols, int32_t rows)</argsstring>
+        <name>trace</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>cols</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>rows</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="755" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="753" bodyend="760"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a9bafc9a727346a0ea477ee4987a0f4eb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CMath::sort</definition>
+        <argsstring>(int32_t *a, int32_t cols, int32_t sort_col=0)</argsstring>
+        <name>sort</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>cols</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>sort_col</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>performs a bubblesort on a given matrix a. it is sorted in ascending order from top to bottom and left to right </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="765"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a356d95ff4d6bef492dfe4673e1bca0cd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CMath::sort</definition>
+        <argsstring>(float64_t *a, int32_t *idx, int32_t N)</argsstring>
+        <name>sort</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="766"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a3e8d3ad94ba5eb6350f20d589733fe1e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::radix_sort</definition>
+        <argsstring>(T *array, int32_t size)</argsstring>
+        <name>radix_sort</name>
+        <param>
+          <type>T *</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>performs a in-place radix sort in ascending order </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="777" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="776" bodyend="779"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a25b0c6047499175ebaf999e15bfa686c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>uint8_t</type>
+        <definition>static uint8_t shogun::CMath::byte</definition>
+        <argsstring>(T word, uint16_t p)</argsstring>
+        <name>byte</name>
+        <param>
+          <type>T</type>
+          <declname>word</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="783" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="782" bodyend="785"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a8172161fcc807fcfd2c260403f6eca64" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::radix_sort_helper</definition>
+        <argsstring>(T *array, int32_t size, uint16_t i)</argsstring>
+        <name>radix_sort_helper</name>
+        <param>
+          <type>T *</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="789" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="788" bodyend="884"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a073046f83a0cc6ac2f0d54fffb8421e4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::insertion_sort</definition>
+        <argsstring>(T *output, int32_t size)</argsstring>
+        <name>insertion_sort</name>
+        <param>
+          <type>T *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>performs insertion sort of an array output of length size it is sorted from in ascending (for type T) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="890" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="889" bodyend="902"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a3f35e945a44a838c068ecf3193efb73a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::qsort</definition>
+        <argsstring>(T *output, int32_t size)</argsstring>
+        <name>qsort</name>
+        <param>
+          <type>T *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>performs a quicksort on an array output of length size it is sorted from in ascending (for type T) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="909" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="908" bodyend="942"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1afcec659b4e01ad74cd4a1ceddbe1daa4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::display_bits</definition>
+        <argsstring>(T word, int32_t width=8 *sizeof(T))</argsstring>
+        <name>display_bits</name>
+        <param>
+          <type>T</type>
+          <declname>word</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>width</declname>
+          <defval>8 *sizeof(T)</defval>
+        </param>
+        <briefdescription>
+<para>display bits (useful for debugging) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="946" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="945" bodyend="961"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a03983724a6f0d439f674cfefea42c573" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::display_vector</definition>
+        <argsstring>(const T *vector, int32_t n, const char *name=&quot;vector&quot;)</argsstring>
+        <name>display_vector</name>
+        <param>
+          <type>const T *</type>
+          <declname>vector</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+          <defval>&quot;vector&quot;</defval>
+        </param>
+        <briefdescription>
+<para>display vector (useful for debugging) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="965"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1ab8140111a50d5fa9d9fca0b7e1bf9418" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::display_matrix</definition>
+        <argsstring>(const T *matrix, int32_t rows, int32_t cols, const char *name=&quot;matrix&quot;)</argsstring>
+        <name>display_matrix</name>
+        <param>
+          <type>const T *</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>cols</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+          <defval>&quot;matrix&quot;</defval>
+        </param>
+        <briefdescription>
+<para>display matrix (useful for debugging) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="969"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a39365d9c8fb2784c6512422d377049eb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T1</type>
+          </param>
+          <param>
+            <type>class T2</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CMath::qsort_index</definition>
+        <argsstring>(T1 *output, T2 *index, uint32_t size)</argsstring>
+        <name>qsort_index</name>
+        <param>
+          <type>T1 *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>T2 *</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>performs a quicksort on an array output of length size it is sorted in ascending order (for type T1) and returns the index (type T2) matlab alike [sorted,index]=sort(output) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="977" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1377" bodyend="1415"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a5afcbf15ff5203b0cd2a56ae08a9cecf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T1</type>
+          </param>
+          <param>
+            <type>class T2</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CMath::qsort_backward_index</definition>
+        <argsstring>(T1 *output, T2 *index, int32_t size)</argsstring>
+        <name>qsort_backward_index</name>
+        <param>
+          <type>T1 *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>T2 *</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>performs a quicksort on an array output of length size it is sorted in ascending order (for type T1) and returns the index (type T2) matlab alike [sorted,index]=sort(output) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="986" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1418" bodyend="1457"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1ad6a0a01a498f973d7d492ecb752a2343" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T1</type>
+          </param>
+          <param>
+            <type>class T2</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CMath::parallel_qsort_index</definition>
+        <argsstring>(T1 *output, T2 *index, uint32_t size, int32_t n_threads, int32_t limit=262144)</argsstring>
+        <name>parallel_qsort_index</name>
+        <param>
+          <type>T1 *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>T2 *</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n_threads</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>limit</declname>
+          <defval>262144</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>performs a quicksort on an array output of length size it is sorted in ascending order (for type T1) and returns the index (type T2) matlab alike [sorted,index]=sort(output)</para><para>parallel version </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="997" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="996" bodyend="1007"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1ad7a01b95c5d4c729baad199671e9ff40" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T1</type>
+          </param>
+          <param>
+            <type>class T2</type>
+          </param>
+        </templateparamlist>
+        <type>void *</type>
+        <definition>void * shogun::CMath::parallel_qsort_index</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>parallel_qsort_index</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1011" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1273" bodyend="1374"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a9efaf34943b472dbd956b909382bf351" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CMath::min</definition>
+        <argsstring>(float64_t *output, T *index, int32_t size)</argsstring>
+        <name>min</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1017" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1471" bodyend="1487"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1ab28f5f88c7df412a42351e164c62d1c0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CMath::nmin</definition>
+        <argsstring>(float64_t *output, T *index, int32_t size, int32_t n)</argsstring>
+        <name>nmin</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1023" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1460" bodyend="1467"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a5d8cd9f3384c4dc818c79f413f0d5e86" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>int32_t</type>
+        <definition>static int32_t shogun::CMath::unique</definition>
+        <argsstring>(T *output, int32_t size)</argsstring>
+        <name>unique</name>
+        <param>
+          <type>T *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1029" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1028" bodyend="1036"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a4d98b4322dd69ea23a1d152218293361" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>int32_t</type>
+        <definition>static int32_t shogun::CMath::binary_search_helper</definition>
+        <argsstring>(T *output, int32_t size, T elem)</argsstring>
+        <name>binary_search_helper</name>
+        <param>
+          <type>T *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>elem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1042" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1041" bodyend="1062"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1ae2fbc5a82935a1d373f2b90449b2b092" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>int32_t</type>
+        <definition>static int32_t shogun::CMath::binary_search</definition>
+        <argsstring>(T *output, int32_t size, T elem)</argsstring>
+        <name>binary_search</name>
+        <param>
+          <type>T *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>elem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1068" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1067" bodyend="1073"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1ac76aa43d33b561cf098df2e36ff7305f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>int32_t</type>
+        <definition>static int32_t shogun::CMath::binary_search_max_lower_equal</definition>
+        <argsstring>(T *output, int32_t size, T elem)</argsstring>
+        <name>binary_search_max_lower_equal</name>
+        <param>
+          <type>T *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>elem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1082" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1080" bodyend="1090"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a6d6dde9d8ff7f36ab665bd0dd7583785" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::Align</definition>
+        <argsstring>(char *seq1, char *seq2, int32_t l1, int32_t l2, float64_t gapCost)</argsstring>
+        <name>Align</name>
+        <param>
+          <type>char *</type>
+          <declname>seq1</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>seq2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>l1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>l2</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>gapCost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>align two sequences seq1 &amp; seq2 of length l1 and l2 using gapCost return alignment cost </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1095"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a77a18c28dbc21296aa3a6616b9de4167" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t shogun::CMath::calcroc</definition>
+        <argsstring>(float64_t *fp, float64_t *tp, float64_t *output, int32_t *label, int32_t &amp;size, int32_t &amp;possize, int32_t &amp;negsize, float64_t &amp;tresh, FILE *rocfile)</argsstring>
+        <name>calcroc</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>fp</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>tp</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>possize</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>negsize</declname>
+        </param>
+        <param>
+          <type>float64_t &amp;</type>
+          <declname>tresh</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>rocfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>calculates ROC into (fp,tp) from output and label of length size returns index with smallest error=fp+fn </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1104"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>summing functions</header>
+      <description><para><anchor id="_1amgrp6f44280541ad5e2e8b78d5b63da562c5"/> </para></description>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a53802c113fcb4b3f9e00f8d4e0e3a33c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::logarithmic_sum</definition>
+        <argsstring>(float64_t p, float64_t q)</argsstring>
+        <name>logarithmic_sum</name>
+        <param>
+          <type>float64_t</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sum logarithmic probabilities. Probability measures are summed up but are now given in logspace where direct summation of exp(operand) is not possible due to numerical problems, i.e. eg. exp(-1000)=0. Therefore we do log( exp(a) + exp(b)) = a + log (1 + exp (b-a)) where a = max(p,q) and b min(p,q). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1199" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1197" bodyend="1210"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CMath_1a1641ac4836813a4bf1652ad1656c1dde" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CMath::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1242" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1242" bodyend="1242"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classshogun_1_1CMath_1adc9f7a45e7e5348626f75aaf26fc67b7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::mutual_info</definition>
+        <argsstring>(float64_t *p1, float64_t *p2, int32_t len)</argsstring>
+        <name>mutual_info</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>returns the mutual information of p which is given in logspace where p,q are given in logspace </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1109"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a389c7c3a362e7af64990333d8b3d7db1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::relative_entropy</definition>
+        <argsstring>(float64_t *p, float64_t *q, int32_t len)</argsstring>
+        <name>relative_entropy</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>returns the relative entropy H(P||Q), where p,q are given in logspace </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1114"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1af2fda21733f492c45c51fa8d63267ac7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CMath::entropy</definition>
+        <argsstring>(float64_t *p, int32_t len)</argsstring>
+        <name>entropy</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>returns entropy of p which is given in logspace </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1117"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a27b76b7f7ede0a232682c6293237d24f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t shogun::CMath::get_seed</definition>
+        <argsstring>()</argsstring>
+        <name>get_seed</name>
+        <briefdescription>
+<para>returns number generator seed </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1121" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1120" bodyend="1123"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1aaa98d34ae00e0391cc9d40a1e6b9f12e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int shogun::CMath::is_finite</definition>
+        <argsstring>(double f)</argsstring>
+        <name>is_finite</name>
+        <param>
+          <type>double</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>checks whether a float is finite </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1127" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1126" bodyend="1133"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1abf3a777f87ed0f43007fb8eb0db8bffe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int shogun::CMath::is_infinity</definition>
+        <argsstring>(double f)</argsstring>
+        <name>is_infinity</name>
+        <param>
+          <type>double</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>checks whether a float is infinity </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1137" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1136" bodyend="1146"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMath_1a115948189e8b3b3fc5aa87d3947328f2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int shogun::CMath::is_nan</definition>
+        <argsstring>(double f)</argsstring>
+        <name>is_nan</name>
+        <param>
+          <type>double</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>checks whether a float is nan </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="1150" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="1149" bodyend="1156"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class which collects generic mathematical functions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="124" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="123" bodyend="1269"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CMath_1a520051a3792408cac9f0b19c08323573" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>abs</name></member>
+      <member refid="classshogun_1_1CMath_1a56b3390a1898e938fb4a560ce68c4083" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>add</name></member>
+      <member refid="classshogun_1_1CMath_1aad9d8a4ad1c7bfefac67a61c936faa2e" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>add_scalar</name></member>
+      <member refid="classshogun_1_1CMath_1a6d6dde9d8ff7f36ab665bd0dd7583785" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>Align</name></member>
+      <member refid="classshogun_1_1CMath_1a6731b189cbdd606bf4a85b7d33b3834f" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>ALMOST_INFTY</name></member>
+      <member refid="classshogun_1_1CMath_1a3aa36c1ff86d9a91ad3880e332003521" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>ALMOST_NEG_INFTY</name></member>
+      <member refid="classshogun_1_1CMath_1ae2fbc5a82935a1d373f2b90449b2b092" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>binary_search</name></member>
+      <member refid="classshogun_1_1CMath_1a4d98b4322dd69ea23a1d152218293361" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>binary_search_helper</name></member>
+      <member refid="classshogun_1_1CMath_1ac76aa43d33b561cf098df2e36ff7305f" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>binary_search_max_lower_equal</name></member>
+      <member refid="classshogun_1_1CMath_1a25b0c6047499175ebaf999e15bfa686c" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>byte</name></member>
+      <member refid="classshogun_1_1CMath_1a77a18c28dbc21296aa3a6616b9de4167" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>calcroc</name></member>
+      <member refid="classshogun_1_1CMath_1a58df8be599d8ac8278da6cfbb2ccbba3" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>ceil</name></member>
+      <member refid="classshogun_1_1CMath_1aa4721e42ed2a26672d58636726ed3233" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>clamp</name></member>
+      <member refid="classshogun_1_1CMath_1a4baec74e77f6b7a5c16cb606e64fa9c1" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>clone_vector</name></member>
+      <member refid="classshogun_1_1CMath_1a666e556cac712254e0c105c39d5a24eb" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>CMath</name></member>
+      <member refid="classshogun_1_1CMath_1a1d7914058cb9a06668f7f2a34933e4ba" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>dgemm</name></member>
+      <member refid="classshogun_1_1CMath_1a0d7a106ad89a5bc3044f9ebe0e55366d" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>dgemv</name></member>
+      <member refid="classshogun_1_1CMath_1afcec659b4e01ad74cd4a1ceddbe1daa4" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>display_bits</name></member>
+      <member refid="classshogun_1_1CMath_1ab8140111a50d5fa9d9fca0b7e1bf9418" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>display_matrix</name></member>
+      <member refid="classshogun_1_1CMath_1a03983724a6f0d439f674cfefea42c573" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>display_vector</name></member>
+      <member refid="classshogun_1_1CMath_1adf47def11d222f1a0014fbe86f6e8329" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CMath_1a6699764f00bede48e9ec6e6fb39273ea" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CMath_1a6bbc52ff88a7af4d00ffae0a37343a48" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CMath_1aa05aecb53833ffaf50eb400d19822186" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CMath_1a41c0a4dcba37e5985374b6ad7b7f94e2" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CMath_1ac11a56e21a71b35b7ffda00f9829882e" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CMath_1ad91005a21334af9af56190cd48222600" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CMath_1afda255ed13962d323cc72a165bf75ee1" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CMath_1af8a4d39d116d71ccda3bdeef6f402b17" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CMath_1aa2c09bf0ac41c1f646bd6ef92ed06dd4" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CMath_1afb12d039aa3acebc4edbf6c5573f5d5e" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CMath_1a850024e9d85ad7eb6af04850e048b2cf" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CMath_1a9bcf0bb38f38ec352c54e07b8a99d957" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CMath_1af2fda21733f492c45c51fa8d63267ac7" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>entropy</name></member>
+      <member refid="classshogun_1_1CMath_1ac2e21ff2ed5a98baab991e6c987701a6" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>exp</name></member>
+      <member refid="classshogun_1_1CMath_1a18a6fb4d469f611de1d0005ddf2895d8" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>factorial</name></member>
+      <member refid="classshogun_1_1CMath_1aab98fc2586d89a9514a1c4e1574c580c" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>fequal</name></member>
+      <member refid="classshogun_1_1CMath_1ad99f885ad7688c8171b77be81e413b4a" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>fill_vector</name></member>
+      <member refid="classshogun_1_1CMath_1a121438d88447d218774c1a523a62977d" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>floor</name></member>
+      <member refid="classshogun_1_1CMath_1a1641ac4836813a4bf1652ad1656c1dde" prot="public" virt="virtual"><scope>shogun::CMath</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CMath_1a27b76b7f7ede0a232682c6293237d24f" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>get_seed</name></member>
+      <member refid="classshogun_1_1CMath_1a034c21b22d19deec5c972b99c5f1b9ec" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>INFTY</name></member>
+      <member refid="classshogun_1_1CMath_1a92733c139fa46f6b9dd09f75ac60dca8" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>init_random</name></member>
+      <member refid="classshogun_1_1CMath_1a073046f83a0cc6ac2f0d54fffb8421e4" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>insertion_sort</name></member>
+      <member refid="classshogun_1_1CMath_1aaa98d34ae00e0391cc9d40a1e6b9f12e" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>is_finite</name></member>
+      <member refid="classshogun_1_1CMath_1abf3a777f87ed0f43007fb8eb0db8bffe" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>is_infinity</name></member>
+      <member refid="classshogun_1_1CMath_1a115948189e8b3b3fc5aa87d3947328f2" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>is_nan</name></member>
+      <member refid="classshogun_1_1CMath_1af1ef0ccd8ddaab3c3cb50688f3a0a767" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>log</name></member>
+      <member refid="classshogun_1_1CMath_1a7e350b61edc62fe1b60ca34986e46a2d" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>log10</name></member>
+      <member refid="classshogun_1_1CMath_1aea83b91d41c4b772643c2e692d6470d7" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>log2</name></member>
+      <member refid="classshogun_1_1CMath_1a53802c113fcb4b3f9e00f8d4e0e3a33c" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>logarithmic_sum</name></member>
+      <member refid="classshogun_1_1CMath_1ad8af83dcc60ed67e4c8bcc744cf22daf" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>LOGRANGE</name></member>
+      <member refid="classshogun_1_1CMath_1a70bfb4cc08bab88576ec4a8b0228a862" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>max</name></member>
+      <member refid="classshogun_1_1CMath_1a0fda591b51f3e9fe22977d8ae67d01c6" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>max</name></member>
+      <member refid="classshogun_1_1CMath_1a8e1c9c010efce191e05648f34ce4e5f9" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>mean</name></member>
+      <member refid="classshogun_1_1CMath_1a4fdec60ce5be42b17dd3205bc94c53e4" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>min</name></member>
+      <member refid="classshogun_1_1CMath_1a9efaf34943b472dbd956b909382bf351" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>min</name></member>
+      <member refid="classshogun_1_1CMath_1adc9f7a45e7e5348626f75aaf26fc67b7" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>mutual_info</name></member>
+      <member refid="classshogun_1_1CMath_1acf113030c32a7e9019f6a010f8e6b01d" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>nchoosek</name></member>
+      <member refid="classshogun_1_1CMath_1ab28f5f88c7df412a42351e164c62d1c0" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>nmin</name></member>
+      <member refid="classshogun_1_1CMath_1ad6a0a01a498f973d7d492ecb752a2343" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>parallel_qsort_index</name></member>
+      <member refid="classshogun_1_1CMath_1ad7a01b95c5d4c729baad199671e9ff40" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>parallel_qsort_index</name></member>
+      <member refid="classshogun_1_1CMath_1abe3373a814152b229c5e9850dbc80dc5" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>pinv</name></member>
+      <member refid="classshogun_1_1CMath_1a56eca94741a728e99268606ec33662f0" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>pow</name></member>
+      <member refid="classshogun_1_1CMath_1a2b1e11ba506b73c2885f52d72b0ed31e" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>pow</name></member>
+      <member refid="classshogun_1_1CMath_1a058a44f75ad3d3ec14a86ff2bed089df" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>pow</name></member>
+      <member refid="classshogun_1_1CMath_1a0b578fd06f0f5cf36318cd325d8a3198" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>powl</name></member>
+      <member refid="classshogun_1_1CMath_1a1ea8367ee3a5edba9d5ab74911934e12" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>qnorm</name></member>
+      <member refid="classshogun_1_1CMath_1a3f35e945a44a838c068ecf3193efb73a" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>qsort</name></member>
+      <member refid="classshogun_1_1CMath_1a5afcbf15ff5203b0cd2a56ae08a9cecf" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>qsort_backward_index</name></member>
+      <member refid="classshogun_1_1CMath_1a39365d9c8fb2784c6512422d377049eb" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>qsort_index</name></member>
+      <member refid="classshogun_1_1CMath_1a178859eac8fd7ed35f09c9cd8bb6bc8d" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>qsq</name></member>
+      <member refid="classshogun_1_1CMath_1a3e8d3ad94ba5eb6350f20d589733fe1e" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>radix_sort</name></member>
+      <member refid="classshogun_1_1CMath_1a8172161fcc807fcfd2c260403f6eca64" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>radix_sort_helper</name></member>
+      <member refid="classshogun_1_1CMath_1a7855cec6c3de586bfb5e2a145450bddc" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>rand_state</name></member>
+      <member refid="classshogun_1_1CMath_1a93e9f6c33ab909ee0e14e6f9d311b723" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>random</name></member>
+      <member refid="classshogun_1_1CMath_1aeb43e877e5859a188ea8ca9d21c7f15a" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>random</name></member>
+      <member refid="classshogun_1_1CMath_1a9728c04e9c32f3934349f3a69278d421" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>random</name></member>
+      <member refid="classshogun_1_1CMath_1a6c655933600886d09edef1625b6b9e91" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>random</name></member>
+      <member refid="classshogun_1_1CMath_1a518019ff67bd2731404c09b88abb7c73" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>random_vector</name></member>
+      <member refid="classshogun_1_1CMath_1a0b1934cdaeffd6ee9a8075c8d83cf681" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>randperm</name></member>
+      <member refid="classshogun_1_1CMath_1a63485ce2b421b6d1ad932d9935b90e97" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>range_fill_vector</name></member>
+      <member refid="classshogun_1_1CMath_1a389c7c3a362e7af64990333d8b3d7db1" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>relative_entropy</name></member>
+      <member refid="classshogun_1_1CMath_1a42c220146fd5322d43f7f2a77d14e250" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>resize</name></member>
+      <member refid="classshogun_1_1CMath_1a7c3b7504a8134ef584c5a0eaa7806456" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>round</name></member>
+      <member refid="classshogun_1_1CMath_1adae9998b1f46dd7b118dfbdfcf43e021" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>scale_vector</name></member>
+      <member refid="classshogun_1_1CMath_1a6061244af61b18307bee89b9368d70c5" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>seed</name></member>
+      <member refid="classshogun_1_1CMath_1aa56f3c7afc92d8b5e9b4920e45edcc1f" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>sign</name></member>
+      <member refid="classshogun_1_1CMath_1a9bafc9a727346a0ea477ee4987a0f4eb" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>sort</name></member>
+      <member refid="classshogun_1_1CMath_1a356d95ff4d6bef492dfe4673e1bca0cd" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>sort</name></member>
+      <member refid="classshogun_1_1CMath_1a24d171aeb17e72cdc915ca5ed9993484" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>sq</name></member>
+      <member refid="classshogun_1_1CMath_1ad941be77b5f88cadf34b6e8cfaef78aa" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>sqrt</name></member>
+      <member refid="classshogun_1_1CMath_1aed7cfebac2e4665344fea59824d0b390" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>sqrt</name></member>
+      <member refid="classshogun_1_1CMath_1a944c342ef90a8089a6d986f5941e16d6" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>sqrt</name></member>
+      <member refid="classshogun_1_1CMath_1a9d662e738c08f42bf4a123c3805f627e" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>sum</name></member>
+      <member refid="classshogun_1_1CMath_1a8fdb461b3038f7e211dbddf7faea5988" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>sum_abs</name></member>
+      <member refid="classshogun_1_1CMath_1af532b42be85bb30a84d33f9aa1d3718a" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>swap</name></member>
+      <member refid="classshogun_1_1CMath_1a9c61b1063294075d95432ce0fc3a16a7" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>trace</name></member>
+      <member refid="classshogun_1_1CMath_1a474e24fdb408bdbcc24d7659d8c0ee92" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>transpose_matrix</name></member>
+      <member refid="classshogun_1_1CMath_1aa4c4f94d4a411b85ddf745edb248f3ab" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>twonorm</name></member>
+      <member refid="classshogun_1_1CMath_1a5d8cd9f3384c4dc818c79f413f0d5e86" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>unique</name></member>
+      <member refid="classshogun_1_1CMath_1a892e3c98bf03db1a05cce07580e19f52" prot="public" virt="non-virtual"><scope>shogun::CMath</scope><name>vec1_plus_scalar_times_vec2</name></member>
+      <member refid="classshogun_1_1CMath_1a4c83a7d6ec134cf506ea6cee37023115" prot="public" virt="virtual"><scope>shogun::CMath</scope><name>~CMath</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

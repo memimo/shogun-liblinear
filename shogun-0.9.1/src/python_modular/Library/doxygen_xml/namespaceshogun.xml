@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="namespaceshogun" kind="namespace">
+    <compoundname>shogun</compoundname>
+    <innerclass refid="classshogun_1_1CArray" prot="public">shogun::CArray</innerclass>
+    <innerclass refid="classshogun_1_1CArray2" prot="public">shogun::CArray2</innerclass>
+    <innerclass refid="classshogun_1_1CArray3" prot="public">shogun::CArray3</innerclass>
+    <innerclass refid="classshogun_1_1CBinaryStream" prot="public">shogun::CBinaryStream</innerclass>
+    <innerclass refid="classshogun_1_1CBitString" prot="public">shogun::CBitString</innerclass>
+    <innerclass refid="classshogun_1_1CCache" prot="public">shogun::CCache</innerclass>
+    <innerclass refid="classshogun_1_1CCompressor" prot="public">shogun::CCompressor</innerclass>
+    <innerclass refid="classshogun_1_1CDynamicArray" prot="public">shogun::CDynamicArray</innerclass>
+    <innerclass refid="classshogun_1_1CDynInt" prot="public">shogun::CDynInt</innerclass>
+    <innerclass refid="classshogun_1_1CFile" prot="public">shogun::CFile</innerclass>
+    <innerclass refid="classshogun_1_1CGCArray" prot="public">shogun::CGCArray</innerclass>
+    <innerclass refid="classshogun_1_1CHash" prot="public">shogun::CHash</innerclass>
+    <innerclass refid="classshogun_1_1CIndirectObject" prot="public">shogun::CIndirectObject</innerclass>
+    <innerclass refid="classshogun_1_1CIO" prot="public">shogun::CIO</innerclass>
+    <innerclass refid="classshogun_1_1CListElement" prot="public">shogun::CListElement</innerclass>
+    <innerclass refid="classshogun_1_1CList" prot="public">shogun::CList</innerclass>
+    <innerclass refid="classshogun_1_1CMath" prot="public">shogun::CMath</innerclass>
+    <innerclass refid="classshogun_1_1CMemoryMappedFile" prot="public">shogun::CMemoryMappedFile</innerclass>
+    <innerclass refid="classshogun_1_1CSet" prot="public">shogun::CSet</innerclass>
+    <innerclass refid="classshogun_1_1ShogunException" prot="public">shogun::ShogunException</innerclass>
+    <innerclass refid="classshogun_1_1CSignal" prot="public">shogun::CSignal</innerclass>
+    <innerclass refid="classshogun_1_1CSimpleFile" prot="public">shogun::CSimpleFile</innerclass>
+    <innerclass refid="classshogun_1_1CTime" prot="public">shogun::CTime</innerclass>
+    <innerclass refid="structshogun_1_1ConsensusEntry" prot="public">shogun::ConsensusEntry</innerclass>
+    <innerclass refid="structshogun_1_1POIMTrie" prot="public">shogun::POIMTrie</innerclass>
+    <innerclass refid="structshogun_1_1DNATrie" prot="public">shogun::DNATrie</innerclass>
+    <innerclass refid="structshogun_1_1TreeParseInfo" prot="public">shogun::TreeParseInfo</innerclass>
+    <innerclass refid="classshogun_1_1CTrie" prot="public">shogun::CTrie</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceshogun_1a9795ddfb05fc09b7ab0934d8db496b06" prot="public" static="no">
+        <name>E_COMPRESSION_TYPE</name>
+        <enumvalue id="namespaceshogun_1a9795ddfb05fc09b7ab0934d8db496b06ad29edbe6076c36339eee683e4c16aa06" prot="public">
+          <name>UNCOMPRESSED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a9795ddfb05fc09b7ab0934d8db496b06afd123d510c56a83a388c5b28261662bc" prot="public">
+          <name>LZO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a9795ddfb05fc09b7ab0934d8db496b06a0d58ecf0f400646e9e608507f0e8bb99" prot="public">
+          <name>GZIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a9795ddfb05fc09b7ab0934d8db496b06afe36bb82657be9f737b062593335f71c" prot="public">
+          <name>BZIP2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a9795ddfb05fc09b7ab0934d8db496b06a7a03a46f3a360050cceb977a959cb38b" prot="public">
+          <name>LZMA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Compressor.h" line="26" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Compressor.h" bodystart="25" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceshogun_1a2a481e936d9958c0a3cf12fc88144806" prot="public" static="no">
+        <name>EMessageType</name>
+        <enumvalue id="namespaceshogun_1a2a481e936d9958c0a3cf12fc88144806a13c2c92caec79cf93929691b4987967e" prot="public">
+          <name>MSG_GCDEBUG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a2a481e936d9958c0a3cf12fc88144806a9ef647b7a62b59d6d77aa5765acfa901" prot="public">
+          <name>MSG_DEBUG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a2a481e936d9958c0a3cf12fc88144806ae9d50c41b5c66bcc2217588d19d71685" prot="public">
+          <name>MSG_INFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a2a481e936d9958c0a3cf12fc88144806aa505e6a47635dc095a0a137a37b3199d" prot="public">
+          <name>MSG_NOTICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a2a481e936d9958c0a3cf12fc88144806adfe3a5bfc7d49e7dca26330b858282cc" prot="public">
+          <name>MSG_WARN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a2a481e936d9958c0a3cf12fc88144806a3173e6feb1c704f3f1201cb0788509e6" prot="public">
+          <name>MSG_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a2a481e936d9958c0a3cf12fc88144806a535f67c1a589a6b9d83699539db3a67a" prot="public">
+          <name>MSG_CRITICAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a2a481e936d9958c0a3cf12fc88144806a63c640c1716f8e7051f0a01a9cbff2e2" prot="public">
+          <name>MSG_ALERT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a2a481e936d9958c0a3cf12fc88144806a7c302e6b1cabdaf9ae3d8511ef7addd3" prot="public">
+          <name>MSG_EMERGENCY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a2a481e936d9958c0a3cf12fc88144806a77003b0d59ba9b54240687b6940d4bf7" prot="public">
+          <name>MSG_MESSAGEONLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The io libs output [DEBUG] etc in front of every message &apos;higher&apos; messages filter output depending on the loglevel, i.e. CRITICAL messages will print all MSG_CRITICAL TO MSG_EMERGENCY messages. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="41" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" bodystart="40" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceshogun_1a52650c4fe33436eef42d08c04e81bb54" prot="public" static="no">
+        <type><ref refid="classshogun_1_1CDynInt" kindref="compound">CDynInt</ref>&lt; uint64_t, 3 &gt;</type>
+        <definition>typedef CDynInt&lt;uint64_t,3&gt; shogun::uint192_t</definition>
+        <argsstring></argsstring>
+        <name>uint192_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>convenience typedefs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynInt.h" line="562" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynInt.h" bodystart="562" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceshogun_1a7e5e0c79d0d4161dc999fa7273afd786" prot="public" static="no">
+        <type><ref refid="classshogun_1_1CDynInt" kindref="compound">CDynInt</ref>&lt; uint64_t, 3 &gt;</type>
+        <definition>typedef CDynInt&lt;uint64_t,3&gt; shogun::uint256_t</definition>
+        <argsstring></argsstring>
+        <name>uint256_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynInt.h" line="563" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynInt.h" bodystart="563" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceshogun_1a22b80715773ee44ace483b129b4082df" prot="public" static="no">
+        <type><ref refid="classshogun_1_1CDynInt" kindref="compound">CDynInt</ref>&lt; uint64_t, 3 &gt;</type>
+        <definition>typedef CDynInt&lt;uint64_t,3&gt; shogun::uint512_t</definition>
+        <argsstring></argsstring>
+        <name>uint512_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynInt.h" line="564" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynInt.h" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceshogun_1ace93b4e557b8164e32bdacb01de5fe07" prot="public" static="no">
+        <type><ref refid="classshogun_1_1CDynInt" kindref="compound">CDynInt</ref>&lt; uint64_t, 3 &gt;</type>
+        <definition>typedef CDynInt&lt;uint64_t,3&gt; shogun::uint1024_t</definition>
+        <argsstring></argsstring>
+        <name>uint1024_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynInt.h" line="565" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynInt.h" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceshogun_1aecc5f8e58162102ed8ace5723e5c06ad" prot="public" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1CIO" kindref="compound">CIO</ref> *</type>
+        <definition>CIO* shogun::sg_io</definition>
+        <argsstring></argsstring>
+        <name>sg_io</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h" line="30"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceshogun_1a236fb4ae23bdf2f47e5e42262a9c4966" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* shogun::sg_cancel_computations)(bool &amp;delayed, bool &amp;immediately)</definition>
+        <argsstring>)(bool &amp;delayed, bool &amp;immediately)</argsstring>
+        <name>sg_cancel_computations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceshogun_1a21aff6d4e0c07108a4b0c9395d40e2c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::wrap_dsyev</definition>
+        <argsstring>(char jobz, char uplo, int n, double *a, int lda, double *w, int *info)</argsstring>
+        <name>wrap_dsyev</name>
+        <param>
+          <type>char</type>
+          <declname>jobz</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>uplo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lda</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/lapack.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceshogun_1a5feabb2975e8baa473fc77a4572377c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::wrap_dgesvd</definition>
+        <argsstring>(char jobu, char jobvt, int m, int n, double *a, int lda, double *sing, double *u, int ldu, double *vt, int ldvt, int *info)</argsstring>
+        <name>wrap_dgesvd</name>
+        <param>
+          <type>char</type>
+          <declname>jobu</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>jobvt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lda</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>sing</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ldu</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>vt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ldvt</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/lapack.h" line="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array.h" line="24"/>
+  </compounddef>
+</doxygen>

@@ -233,7 +233,12 @@ classifier/svm/LibLinear.cpp.o: classifier/svm/LibLinear.cpp lib/config.h \
  lib/versionstring.h features/DotFeatures.h features/Features.h \
  preproc/PreProc.h features/FeatureTypes.h classifier/Classifier.h \
  lib/Mathematics.h lib/lapack.h classifier/svm/SVM_linear.h \
- classifier/svm/Tron.h
+ classifier/svm/Tron.h features/SparseFeatures.h lib/Cache.h \
+ features/SimpleFeatures.h lib/File.h lib/DynamicArray.h lib/SimpleFile.h \
+ preproc/SimplePreProc.h features/StringFeatures.h \
+ preproc/StringPreProc.h features/Alphabet.h lib/MemoryMappedFile.h \
+ lib/Compressor.h ../shogun/lib/config.h ../shogun/lib/common.h \
+ ../shogun/base/SGObject.h ../shogun/lib/io.h preproc/SparsePreProc.h
 classifier/svm/qpbsvmlib.cpp.o: classifier/svm/qpbsvmlib.cpp lib/config.h \
  lib/io.h lib/common.h lib/memory.h base/init.h lib/Cplex.h \
  lib/Mathematics.h lib/lapack.h base/SGObject.h base/Parallel.h \
@@ -336,7 +341,13 @@ classifier/svm/SVM_linear.cpp.o: classifier/svm/SVM_linear.cpp \
  base/SGObject.h lib/io.h lib/common.h lib/memory.h base/init.h \
  base/Parallel.h base/Version.h lib/versionstring.h \
  features/DotFeatures.h features/Features.h preproc/PreProc.h \
- features/FeatureTypes.h
+ features/FeatureTypes.h features/SparseFeatures.h lib/Mathematics.h \
+ lib/lapack.h lib/Cache.h features/Labels.h features/SimpleFeatures.h \
+ lib/File.h lib/DynamicArray.h lib/SimpleFile.h preproc/SimplePreProc.h \
+ features/StringFeatures.h preproc/StringPreProc.h features/Alphabet.h \
+ lib/MemoryMappedFile.h lib/Compressor.h ../shogun/lib/config.h \
+ ../shogun/lib/common.h ../shogun/base/SGObject.h ../shogun/lib/io.h \
+ preproc/SparsePreProc.h
 classifier/svm/SVM_light.cpp.o: classifier/svm/SVM_light.cpp lib/config.h \
  lib/io.h lib/common.h lib/memory.h base/init.h lib/Signal.h \
  lib/ShogunException.h base/SGObject.h base/Parallel.h base/Version.h \

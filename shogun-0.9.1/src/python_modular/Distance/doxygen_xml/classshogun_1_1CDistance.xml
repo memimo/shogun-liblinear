@@ -1,0 +1,960 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CDistance" kind="class" prot="public">
+    <compoundname>shogun::CDistance</compoundname>
+    <derivedcompoundref refid="classshogun_1_1CSimpleDistance" prot="public" virt="non-virtual">shogun::CSimpleDistance&lt; float64_t &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CSparseDistance" prot="public" virt="non-virtual">shogun::CSparseDistance&lt; float64_t &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CStringDistance" prot="public" virt="non-virtual">shogun::CStringDistance&lt; uint16_t &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CSimpleDistance" prot="public" virt="non-virtual">shogun::CSimpleDistance&lt; ST &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CSparseDistance" prot="public" virt="non-virtual">shogun::CSparseDistance&lt; ST &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CStringDistance" prot="public" virt="non-virtual">shogun::CStringDistance&lt; ST &gt;</derivedcompoundref>
+    <includes local="no">Distance.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CDistance_1af6a193233bec588c95ab38d43e0f14be" prot="protected" static="no" mutable="no">
+        <type>float32_t *</type>
+        <definition>float32_t* shogun::CDistance::precomputed_matrix</definition>
+        <argsstring></argsstring>
+        <name>precomputed_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FIXME: precompute matrix should be dropped, handling should be via customdistance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="300" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDistance_1a96e1d129ebafe7d69fc43147ae52e97f" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CDistance::precompute_matrix</definition>
+        <argsstring></argsstring>
+        <name>precompute_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FIXME: precompute matrix should be dropped, handling should be via customdistance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="305" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDistance_1adb921211288ff18826b285ab214b87eb" prot="protected" static="no" mutable="no">
+        <type>CFeatures *</type>
+        <definition>CFeatures* shogun::CDistance::lhs</definition>
+        <argsstring></argsstring>
+        <name>lhs</name>
+        <briefdescription>
+<para>feature vectors to occur on left hand side </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="308" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDistance_1ae35805ff2db463ffb6b18e9cece75f02" prot="protected" static="no" mutable="no">
+        <type>CFeatures *</type>
+        <definition>CFeatures* shogun::CDistance::rhs</definition>
+        <argsstring></argsstring>
+        <name>rhs</name>
+        <briefdescription>
+<para>feature vectors to occur on right hand side </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="310" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CDistance_1ac7711f406989e3650d18dc83d31e51e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CDistance::CDistance</definition>
+        <argsstring>()</argsstring>
+        <name>CDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1aa3d9c5357102a59379da320189734ebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CDistance::CDistance</definition>
+        <argsstring>(CFeatures *lhs, CFeatures *rhs)</argsstring>
+        <name>CDistance</name>
+        <param>
+          <type>CFeatures *</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>CFeatures *</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>init distance</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of left-hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of right-hand side </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if init was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1ae781fab41be1536aa17cca88e3002022" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CDistance::~CDistance</definition>
+        <argsstring>()</argsstring>
+        <name>~CDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a162c1fa451dd9267c15216aef28b4003" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CDistance::distance</definition>
+        <argsstring>(int32_t idx_a, int32_t idx_b)</argsstring>
+        <name>distance</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_a</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get distance function for lhs feature vector a and rhs feature vector b</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx_a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature vector a at idx_a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature vector b at idx_b </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>distance value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="76" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" bodystart="75" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a84c529f0578ef7c4084c2457c2fb5188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDistance::get_distance_matrix</definition>
+        <argsstring>(float64_t **dst, int32_t *m, int32_t *n)</argsstring>
+        <name>get_distance_matrix</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get distance matrix</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distance matrix is stored in here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension m of matrix is stored in here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension n of matrix is stored in here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a612d2ffac1258ec986ae836ce3a78d6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t *</type>
+        <definition>virtual float64_t* shogun::CDistance::get_distance_matrix_real</definition>
+        <argsstring>(int32_t &amp;m, int32_t &amp;n, float64_t *target)</argsstring>
+        <name>get_distance_matrix_real</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get distance matrix real</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension m </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension n </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>target matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>target matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a9681314057e505ad5c1aa93a05983e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float32_t *</type>
+        <definition>virtual float32_t* shogun::CDistance::get_distance_matrix_shortreal</definition>
+        <argsstring>(int32_t &amp;m, int32_t &amp;n, float32_t *target)</argsstring>
+        <name>get_distance_matrix_shortreal</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>float32_t *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get distance matrix short real</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension m </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension n </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>target matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>target matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a96a90ef016aae62a056c80a440a878f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CDistance::init</definition>
+        <argsstring>(CFeatures *lhs, CFeatures *rhs)</argsstring>
+        <name>init</name>
+        <reimplementedby refid="classshogun_1_1CStringDistance_1a985fe6d1c0d12e38e438278c87f457ab">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseDistance_1a334765221f5d0ba6ce47b2c2b18d763b">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleDistance_1af17ea30fdcb2bd37d0c94f9eca95db86">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CTanimotoDistance_1a5d28568f72a7bb82c3c044fc26d0cbee">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringDistance_1a985fe6d1c0d12e38e438278c87f457ab">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseEuclidianDistance_1ad0e97009e86c7ab307abe60af2833aef">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseDistance_1a334765221f5d0ba6ce47b2c2b18d763b">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleDistance_1af17ea30fdcb2bd37d0c94f9eca95db86">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CRealDistance_1a27ca85268a339c2039c1672fd8f6f827">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMinkowskiMetric_1ad29d2298ed27fabdc812326b00ce60cf">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CManhattanWordDistance_1a671b65f24b39a026a247b3c290c94499">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CManhattanMetric_1a093a7d66ec252e7f591f13c62f5c4fe0">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CJensenMetric_1a41fa39cc203ecb5c59e0a9fcb078e8b9">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CHammingWordDistance_1ae8be69210f43f348318f302be59ebd07">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CGeodesicMetric_1add3ea2c0e721b50230a6364255f1b573">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CEuclidianDistance_1adcf6812e65f9f3a72234c70137a6625d">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCosineDistance_1a28ba1fff0ba5461b123cd2d9385c20b5">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CChiSquareDistance_1a947a63f7001d0e1aa72989544752ae7c">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CChebyshewMetric_1a1c35c0750b45583840a81a92f43170d0">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCanberraWordDistance_1a484582369f69855eb04a1a5d5c93326d">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCanberraMetric_1a07696ad61ba6e41d2b1ff66c2188cbc0">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CBrayCurtisDistance_1afd37db2427f93b1c67504207a32f337f">init</reimplementedby>
+        <param>
+          <type>CFeatures *</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>CFeatures *</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>init distance</para><para>make sure to check that your distance can deal with the supplied features (!)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of left-hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of right-hand side </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if init was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a12832f73a19b04488f0efda083dfa2a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CDistance::cleanup</definition>
+        <argsstring>()=0</argsstring>
+        <name>cleanup</name>
+        <reimplementedby refid="classshogun_1_1CTanimotoDistance_1ae466de3831b47a58854c4a456aa4d054">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseEuclidianDistance_1aca06e34a4898263c604e3707bba3abfb">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMinkowskiMetric_1a27338ceda52c99f048e46ddf6362ee66">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CManhattanWordDistance_1af70405eb6ade2a135c0913b52fd9c58c">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CManhattanMetric_1a84ceb4e5303040b470910e49d4fefda3">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CJensenMetric_1a6e4720247a2d8448f2caa16c56e30879">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CHammingWordDistance_1ad6f42e5c81f3d4c9d267efd60d4112ca">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CGeodesicMetric_1a6332047bf09f8a6124a24b15bbb097ce">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CEuclidianDistance_1a7e5defec7b0c386e621781cdfb586431">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCosineDistance_1a475cff3db6484d9d0080c6a17b7bc05d">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CChiSquareDistance_1a3f448ac701abd64ae5d31a86ae0c87c0">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CChebyshewMetric_1ad3611a716d5a2d0ec693fe9b0271ee9d">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCanberraWordDistance_1a9bc64ec93d970701f7e0bad478687a6c">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCanberraMetric_1ad192c4e70da6042edf70775130c330d8">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CBrayCurtisDistance_1a70553ab91c22b707a9ed6fb42656782e">cleanup</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cleanup distance</para><para>abstract base method </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a44e221e6bcb20925ed6dd1d424c15d54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CDistance::load</definition>
+        <argsstring>(char *fname)</argsstring>
+        <name>load</name>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load distance matrix from file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if loading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a789639ca40faccda219e4c6e509cd5ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CDistance::save</definition>
+        <argsstring>(char *fname)</argsstring>
+        <name>save</name>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save distance matrix to file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to save to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if saving was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1af345439df47a38f294106fe318a3e760" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CFeatures *</type>
+        <definition>CFeatures* shogun::CDistance::get_lhs</definition>
+        <argsstring>()</argsstring>
+        <name>get_lhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get left-hand side features used in distance matrix</para><para><simplesect kind="return"><para>left-hand side features </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="171" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" bodystart="171" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a6bffc5be35b5a80f34125db203821cd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CFeatures *</type>
+        <definition>CFeatures* shogun::CDistance::get_rhs</definition>
+        <argsstring>()</argsstring>
+        <name>get_rhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get right-hand side features used in distance matrix</para><para><simplesect kind="return"><para>right-hand side features </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="177" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" bodystart="177" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a4ae58108d7045ac73b7dcf4b464f3784" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CFeatures *</type>
+        <definition>CFeatures* shogun::CDistance::replace_rhs</definition>
+        <argsstring>(CFeatures *rhs)</argsstring>
+        <name>replace_rhs</name>
+        <param>
+          <type>CFeatures *</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>replace right-hand side features used in distance matrix</para><para>make sure to check that your distance can deal with the supplied features (!)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of right-hand side </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>replaced right-hand side features </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a6adfb2fc33a9ce11e58bc5b203f9bf64" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CDistance::remove_lhs_and_rhs</definition>
+        <argsstring>()</argsstring>
+        <name>remove_lhs_and_rhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>remove lhs and rhs from distance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1afe1e59a6b35a2d35d6f1e6dcdfc94c6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CDistance::remove_lhs</definition>
+        <argsstring>()</argsstring>
+        <name>remove_lhs</name>
+        <briefdescription>
+<para>takes all necessary steps if the lhs is removed from distance matrix </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a179d17698dfd89af6dbdfcc3eb8c7544" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CDistance::remove_rhs</definition>
+        <argsstring>()</argsstring>
+        <name>remove_rhs</name>
+        <briefdescription>
+<para>takes all necessary steps if the rhs is removed from distance matrix </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a93d139c95d20cea805e95db8c36f83a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>EDistanceType</type>
+        <definition>virtual EDistanceType shogun::CDistance::get_distance_type</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_distance_type</name>
+        <reimplementedby refid="classshogun_1_1CTanimotoDistance_1a5206c75368350140524f3cee1bcd0d49">get_distance_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseEuclidianDistance_1a90b61913146fd93fce972e8cb43692c4">get_distance_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMinkowskiMetric_1ad95743a1dd8b72bce35cc9d2fb16aca4">get_distance_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CManhattanWordDistance_1a3a6dec34682b48131e82b6d4a55146eb">get_distance_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CManhattanMetric_1a546900cd4fa43bf7c1581005e384f726">get_distance_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CJensenMetric_1aa0c43483810662ad80efc9a9bf86c830">get_distance_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CHammingWordDistance_1aeb78e1bf63f8891949097963e1276048">get_distance_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CGeodesicMetric_1a4c5b53ddf1e70d6eb4fc045462316881">get_distance_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CEuclidianDistance_1ab2edf1fb917dbb045861b084a9a07179">get_distance_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCosineDistance_1aa1bf30532baf1dd6d3398c565debd4d2">get_distance_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CChiSquareDistance_1a74ed861d723dac96ec29d45f1236ad99">get_distance_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CChebyshewMetric_1af03967636f3400d9b7a61e9b3fee5556">get_distance_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCanberraWordDistance_1a865e0da2496bd118ef73ac8392f56de1">get_distance_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCanberraMetric_1a7cf1cc5f3b2897f29739f5d34f5077fe">get_distance_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CBrayCurtisDistance_1a7907e216c3106fa967a92d4aff4c1878">get_distance_type</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get distance type we are</para><para>abstrace base method</para><para><simplesect kind="return"><para>distance type </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a03920f704c53a2815f5db5a9b42a7b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>EFeatureType</type>
+        <definition>virtual EFeatureType shogun::CDistance::get_feature_type</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_feature_type</name>
+        <reimplementedby refid="classshogun_1_1CStringDistance_1a0b01c1b1081933b16eb13184fbc81da1">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringDistance_1ab39d952ce2f1b883bf53cf4c5c93db39">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringDistance_1af105523443332e17f22b223fd85ee188">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringDistance_1ad4f6186cdb6b91065cf29e2e469f5c3c">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringDistance_1a8d63a2cfd70613e96a4c57a294d90a4f">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringDistance_1af7142df960b0cd3afb78f318384aca30">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringDistance_1abcd8e13919524415e0f8669857ee6ae6">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseDistance_1ab8d18a8cef2883893397643f3e2482d7">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseDistance_1a897ca8fd1dee646a2cdc979332fdaf25">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseDistance_1a9058b8d97aeceec8941bc272f2d4b3a7">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseDistance_1a022504f6b0e79d0d1a571dfad5a50c4e">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseDistance_1a26171d27d25f6b9382b1efac57f5f569">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseDistance_1ad24e426a2a3d1f2e35b1f85b3207fc2f">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseDistance_1ab824deb16070a191fc53e10c49b4e17d">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleDistance_1a0f608e5699d0b74e40ec8adcade71f6d">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleDistance_1af84aa1b194b58609444cbb4287ff5297">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleDistance_1aee59d1a69b228607982ed02e8b0049bf">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleDistance_1a49dc0bc273897723f89f59797369a344">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleDistance_1a646a65bc285e2ed0d7746549043d7961">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleDistance_1a150ed3ee1f473063d547b9c2f335056e">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleDistance_1a31d605891a02ff2d788358404c7b4bcc">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringDistance_1ae767969351dcba55f4a7e66394e8c74e">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseDistance_1afe141110a0a3705bdab17e55ea78dc4a">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleDistance_1a33a5b1fdb5a8095b1cb817f2d36b460a">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringDistance_1ae767969351dcba55f4a7e66394e8c74e">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseEuclidianDistance_1afc0a7ec416f93fc5f7801555c9f731e4">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseDistance_1afe141110a0a3705bdab17e55ea78dc4a">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleDistance_1a33a5b1fdb5a8095b1cb817f2d36b460a">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CRealDistance_1a29658564f913e671d9dc9319867dab2e">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CEuclidianDistance_1aa59973b8257044038a50052a3afbe227">get_feature_type</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the distance can deal with</para><para>abstrace base method</para><para><simplesect kind="return"><para>feature type </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a2b6bbc08663743e3c52ebcf9ddd7cede" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>EFeatureClass</type>
+        <definition>virtual EFeatureClass shogun::CDistance::get_feature_class</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_feature_class</name>
+        <reimplementedby refid="classshogun_1_1CStringDistance_1a8eca766ad2eb241e8998ef7a96228d3e">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseDistance_1a7768e37fc8e647691e51f7d7c006bd9e">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleDistance_1a01020ebeb5cf65bb9a8053f3184bed9c">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringDistance_1a8eca766ad2eb241e8998ef7a96228d3e">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseDistance_1a7768e37fc8e647691e51f7d7c006bd9e">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleDistance_1a01020ebeb5cf65bb9a8053f3184bed9c">get_feature_class</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature class the distance can deal with</para><para>abstract base method</para><para><simplesect kind="return"><para>feature class </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1ac83a7393d28483420996597a402ac8be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CDistance::get_precompute_matrix</definition>
+        <argsstring>()</argsstring>
+        <name>get_precompute_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FIXME: precompute matrix should be dropped, handling should be via customdistance</para><para><simplesect kind="return"><para>if precompute_matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="227" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" bodystart="227" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a29136001933dfc82c5f76e0255f401c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CDistance::set_precompute_matrix</definition>
+        <argsstring>(bool flag)</argsstring>
+        <name>set_precompute_matrix</name>
+        <param>
+          <type>bool</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FIXME: precompute matrix should be dropped, handling should be via customdistance</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if precompute_matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="235" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" bodystart="234" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1acb26117edc0ef325aa36989328db9941" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDistance::get_num_vec_lhs</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_vec_lhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of vectors of lhs features</para><para><simplesect kind="return"><para>number of vectors of left-hand side </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="250" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" bodystart="249" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a57a7d3f55de91c8467633ae94c92fb7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDistance::get_num_vec_rhs</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_vec_rhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of vectors of rhs features</para><para><simplesect kind="return"><para>number of vectors of right-hand side </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="262" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" bodystart="261" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a5d8ea29b5d0de2bd5f350122b6ff0465" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CDistance::has_features</definition>
+        <argsstring>()</argsstring>
+        <name>has_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>test whether features have been assigned to lhs and rhs</para><para><simplesect kind="return"><para>true if features are assigned </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="274" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" bodystart="273" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1adc977a31f34e849d64ddfbb3bca1ee06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CDistance::lhs_equals_rhs</definition>
+        <argsstring>()</argsstring>
+        <name>lhs_equals_rhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>test whether features on lhs and rhs are the same</para><para><simplesect kind="return"><para>true if features are the same </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="283" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" bodystart="282" bodyend="285"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CDistance_1aa55722bf35a997e7502d4d84c21d5f01" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CDistance::compute</definition>
+        <argsstring>(int32_t x, int32_t y)=0</argsstring>
+        <name>compute</name>
+        <reimplementedby refid="classshogun_1_1CTanimotoDistance_1ab60b88cb9d4e7ab277bff43bb349b3ef">compute</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseEuclidianDistance_1a035d70f52908040655f0fb5bd715593c">compute</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMinkowskiMetric_1ad15a999c9463d7b2ee48ec92d4be44be">compute</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CManhattanWordDistance_1a3d109f4a7aa99840d9fffc7a3ad672d2">compute</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CManhattanMetric_1a5906e6e516704b0dcef71b73306a4d79">compute</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CJensenMetric_1a24ec5ae45ea208916151fe98b4763fbd">compute</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CHammingWordDistance_1ab378f84b3b3aad851ba91d359a417238">compute</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CGeodesicMetric_1a70e6f63b644a554b6c6b2ec5960fffb3">compute</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CEuclidianDistance_1af84d80eb7f1eb4672b641ccf4d7dd8a8">compute</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCosineDistance_1a4df3a94c212a9dea99e83b83baa327c5">compute</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CChiSquareDistance_1a611debe8b29eb96377bd5cc01aa33dfe">compute</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CChebyshewMetric_1a1ec2c897a9906043e1ca71064372f75a">compute</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCanberraWordDistance_1aa2c29ad3be272499eb7f2b76ab2fa27e">compute</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCanberraMetric_1a4d5ab4bde9ae357526a9d5d698132b9c">compute</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CBrayCurtisDistance_1aa718dde3851674d085e8fc1f0ad560ca">compute</reimplementedby>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute distance function for features a and b idx_{a,b} denote the index of the feature vectors in the corresponding feature object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDistance_1a8089932a048d5ebff0bf279448c98960" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDistance::do_precompute_matrix</definition>
+        <argsstring>()</argsstring>
+        <name>do_precompute_matrix</name>
+        <briefdescription>
+<para>matrix precomputation </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="294"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class Distance </para>    </briefdescription>
+    <detaileddescription>
+<para>All distance classes are derived from this base class. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="52">
+        <label>shogun::CStringDistance&lt; uint16_t &gt;</label>
+        <link refid="classshogun_1_1CStringDistance"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>shogun::CCanberraMetric</label>
+        <link refid="classshogun_1_1CCanberraMetric"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>shogun::CGeodesicMetric</label>
+        <link refid="classshogun_1_1CGeodesicMetric"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>shogun::CSparseEuclidianDistance</label>
+        <link refid="classshogun_1_1CSparseEuclidianDistance"/>
+        <childnode refid="50" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>shogun::CTanimotoDistance</label>
+        <link refid="classshogun_1_1CTanimotoDistance"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>shogun::CSimpleDistance&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimpleDistance"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>shogun::CManhattanWordDistance</label>
+        <link refid="classshogun_1_1CManhattanWordDistance"/>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>shogun::CEuclidianDistance</label>
+        <link refid="classshogun_1_1CEuclidianDistance"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>shogun::CStringDistance&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CStringDistance"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>shogun::CManhattanMetric</label>
+        <link refid="classshogun_1_1CManhattanMetric"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>shogun::CSparseDistance&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSparseDistance"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>shogun::CHammingWordDistance</label>
+        <link refid="classshogun_1_1CHammingWordDistance"/>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>shogun::CChebyshewMetric</label>
+        <link refid="classshogun_1_1CChebyshewMetric"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>shogun::CCosineDistance</label>
+        <link refid="classshogun_1_1CCosineDistance"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>shogun::CJensenMetric</label>
+        <link refid="classshogun_1_1CJensenMetric"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>shogun::CCanberraWordDistance</label>
+        <link refid="classshogun_1_1CCanberraWordDistance"/>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>shogun::CSparseDistance&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CSparseDistance"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>shogun::CChiSquareDistance</label>
+        <link refid="classshogun_1_1CChiSquareDistance"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>shogun::CRealDistance</label>
+        <link refid="classshogun_1_1CRealDistance"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>shogun::CBrayCurtisDistance</label>
+        <link refid="classshogun_1_1CBrayCurtisDistance"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>shogun::CMinkowskiMetric</label>
+        <link refid="classshogun_1_1CMinkowskiMetric"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>shogun::CSimpleDistance&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CSimpleDistance"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>shogun::CDistance</label>
+        <link refid="classshogun_1_1CDistance"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="54" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" bodystart="53" bodyend="312"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CDistance_1ac7711f406989e3650d18dc83d31e51e4" prot="public" virt="non-virtual"><scope>shogun::CDistance</scope><name>CDistance</name></member>
+      <member refid="classshogun_1_1CDistance_1aa3d9c5357102a59379da320189734ebd" prot="public" virt="non-virtual"><scope>shogun::CDistance</scope><name>CDistance</name></member>
+      <member refid="classshogun_1_1CDistance_1a12832f73a19b04488f0efda083dfa2a4" prot="public" virt="pure-virtual"><scope>shogun::CDistance</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CDistance_1aa55722bf35a997e7502d4d84c21d5f01" prot="protected" virt="pure-virtual"><scope>shogun::CDistance</scope><name>compute</name></member>
+      <member refid="classshogun_1_1CDistance_1a162c1fa451dd9267c15216aef28b4003" prot="public" virt="non-virtual"><scope>shogun::CDistance</scope><name>distance</name></member>
+      <member refid="classshogun_1_1CDistance_1a8089932a048d5ebff0bf279448c98960" prot="protected" virt="non-virtual"><scope>shogun::CDistance</scope><name>do_precompute_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1a84c529f0578ef7c4084c2457c2fb5188" prot="public" virt="non-virtual"><scope>shogun::CDistance</scope><name>get_distance_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1a612d2ffac1258ec986ae836ce3a78d6c" prot="public" virt="virtual"><scope>shogun::CDistance</scope><name>get_distance_matrix_real</name></member>
+      <member refid="classshogun_1_1CDistance_1a9681314057e505ad5c1aa93a05983e2a" prot="public" virt="virtual"><scope>shogun::CDistance</scope><name>get_distance_matrix_shortreal</name></member>
+      <member refid="classshogun_1_1CDistance_1a93d139c95d20cea805e95db8c36f83a3" prot="public" virt="pure-virtual"><scope>shogun::CDistance</scope><name>get_distance_type</name></member>
+      <member refid="classshogun_1_1CDistance_1a2b6bbc08663743e3c52ebcf9ddd7cede" prot="public" virt="pure-virtual"><scope>shogun::CDistance</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CDistance_1a03920f704c53a2815f5db5a9b42a7b9f" prot="public" virt="pure-virtual"><scope>shogun::CDistance</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CDistance_1af345439df47a38f294106fe318a3e760" prot="public" virt="non-virtual"><scope>shogun::CDistance</scope><name>get_lhs</name></member>
+      <member refid="classshogun_1_1CDistance_1acb26117edc0ef325aa36989328db9941" prot="public" virt="non-virtual"><scope>shogun::CDistance</scope><name>get_num_vec_lhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a57a7d3f55de91c8467633ae94c92fb7f" prot="public" virt="non-virtual"><scope>shogun::CDistance</scope><name>get_num_vec_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1ac83a7393d28483420996597a402ac8be" prot="public" virt="non-virtual"><scope>shogun::CDistance</scope><name>get_precompute_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1a6bffc5be35b5a80f34125db203821cd3" prot="public" virt="non-virtual"><scope>shogun::CDistance</scope><name>get_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a5d8ea29b5d0de2bd5f350122b6ff0465" prot="public" virt="non-virtual"><scope>shogun::CDistance</scope><name>has_features</name></member>
+      <member refid="classshogun_1_1CDistance_1a96a90ef016aae62a056c80a440a878f5" prot="public" virt="virtual"><scope>shogun::CDistance</scope><name>init</name></member>
+      <member refid="classshogun_1_1CDistance_1adb921211288ff18826b285ab214b87eb" prot="protected" virt="non-virtual"><scope>shogun::CDistance</scope><name>lhs</name></member>
+      <member refid="classshogun_1_1CDistance_1adc977a31f34e849d64ddfbb3bca1ee06" prot="public" virt="non-virtual"><scope>shogun::CDistance</scope><name>lhs_equals_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a44e221e6bcb20925ed6dd1d424c15d54" prot="public" virt="non-virtual"><scope>shogun::CDistance</scope><name>load</name></member>
+      <member refid="classshogun_1_1CDistance_1a96e1d129ebafe7d69fc43147ae52e97f" prot="protected" virt="non-virtual"><scope>shogun::CDistance</scope><name>precompute_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1af6a193233bec588c95ab38d43e0f14be" prot="protected" virt="non-virtual"><scope>shogun::CDistance</scope><name>precomputed_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1afe1e59a6b35a2d35d6f1e6dcdfc94c6a" prot="public" virt="virtual"><scope>shogun::CDistance</scope><name>remove_lhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a6adfb2fc33a9ce11e58bc5b203f9bf64" prot="public" virt="virtual"><scope>shogun::CDistance</scope><name>remove_lhs_and_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a179d17698dfd89af6dbdfcc3eb8c7544" prot="public" virt="virtual"><scope>shogun::CDistance</scope><name>remove_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a4ae58108d7045ac73b7dcf4b464f3784" prot="public" virt="non-virtual"><scope>shogun::CDistance</scope><name>replace_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1ae35805ff2db463ffb6b18e9cece75f02" prot="protected" virt="non-virtual"><scope>shogun::CDistance</scope><name>rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a789639ca40faccda219e4c6e509cd5ca" prot="public" virt="non-virtual"><scope>shogun::CDistance</scope><name>save</name></member>
+      <member refid="classshogun_1_1CDistance_1a29136001933dfc82c5f76e0255f401c1" prot="public" virt="virtual"><scope>shogun::CDistance</scope><name>set_precompute_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1ae781fab41be1536aa17cca88e3002022" prot="public" virt="virtual"><scope>shogun::CDistance</scope><name>~CDistance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

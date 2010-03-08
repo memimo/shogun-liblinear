@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="SalzbergWordStringKernel_8h" kind="file">
+    <compoundname>SalzbergWordStringKernel.h</compoundname>
+    <includes local="yes">lib/common.h</includes>
+    <includes refid="StringKernel_8h" local="yes">kernel/StringKernel.h</includes>
+    <includes local="yes">classifier/PluginEstimate.h</includes>
+    <includes local="yes">features/StringFeatures.h</includes>
+    <incdepgraph>
+      <node id="134">
+        <label>classifier/PluginEstimate.h</label>
+      </node>
+      <node id="132">
+        <label>/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SalzbergWordStringKernel.h</label>
+        <link refid="SalzbergWordStringKernel.h"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>lib/common.h</label>
+      </node>
+      <node id="135">
+        <label>features/StringFeatures.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classshogun_1_1CSalzbergWordStringKernel" prot="public">shogun::CSalzbergWordStringKernel</innerclass>
+    <innernamespace refid="namespaceshogun">shogun</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Written<sp/>(W)<sp/>1999-2008<sp/>Gunnar<sp/>Raetsch</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>1999-2009<sp/>Fraunhofer<sp/>Institute<sp/>FIRST<sp/>and<sp/>Max-Planck-Society</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_SALZBERGWORDSTRINGKERNEL_H___</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_SALZBERGWORDSTRINGKERNEL_H___</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;kernel/StringKernel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;classifier/PluginEstimate.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;features/StringFeatures.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">shogun</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29" refid="classshogun_1_1CSalzbergWordStringKernel" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classshogun_1_1CSalzbergWordStringKernel" kindref="compound" tooltip="The SalzbergWordString kernel implements the Salzberg kernel.">CSalzbergWordStringKernel</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CStringKernel" kindref="compound" tooltip="Template class StringKernel, is the base class of all String Kernels.">CStringKernel</ref>&lt;uint16_t&gt;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a898ab1ab1b396379a36ed8b83d8eac0f" kindref="member">CSalzbergWordStringKernel</ref>(int32_t<sp/>size,<sp/>CPluginEstimate*<sp/>pie,<sp/>CLabels*<sp/>labels=NULL);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a898ab1ab1b396379a36ed8b83d8eac0f" kindref="member">CSalzbergWordStringKernel</ref>(</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CStringFeatures&lt;uint16_t&gt;*<sp/>l,<sp/>CStringFeatures&lt;uint16_t&gt;*<sp/>r,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CPluginEstimate<sp/>*pie,<sp/>CLabels*<sp/>labels=NULL);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classshogun_1_1CSalzbergWordStringKernel" kindref="compound" tooltip="The SalzbergWordString kernel implements the Salzberg kernel.">CSalzbergWordStringKernel</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a9c31f6a4451d85316c44d9f92e2b416a" kindref="member">set_prior_probs</ref>(float64_t<sp/>pos_prior_,<sp/>float64_t<sp/>neg_prior_)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a1a2478b34bb710aacc22a9e4cc75bb78" kindref="member">pos_prior</ref>=pos_prior_<sp/>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1abb2a375177d878872d397824b9d556a7" kindref="member">neg_prior</ref>=neg_prior_<sp/>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fabs(<ref refid="classshogun_1_1CSalzbergWordStringKernel_1a1a2478b34bb710aacc22a9e4cc75bb78" kindref="member">pos_prior</ref>+<ref refid="classshogun_1_1CSalzbergWordStringKernel_1abb2a375177d878872d397824b9d556a7" kindref="member">neg_prior</ref>-1)&gt;1e-6)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SG_WARNING(<sp/></highlight><highlight class="stringliteral">&quot;priors<sp/>don&apos;t<sp/>sum<sp/>to<sp/>1:<sp/>%f+%f-1=%f\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a1a2478b34bb710aacc22a9e4cc75bb78" kindref="member">pos_prior</ref>,<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1abb2a375177d878872d397824b9d556a7" kindref="member">neg_prior</ref>,<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a1a2478b34bb710aacc22a9e4cc75bb78" kindref="member">pos_prior</ref>+<ref refid="classshogun_1_1CSalzbergWordStringKernel_1abb2a375177d878872d397824b9d556a7" kindref="member">neg_prior</ref>-1)<sp/>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a347383a14c7ccd8c59a77d566cc5d125" kindref="member">set_prior_probs_from_labels</ref>(CLabels*<sp/>labels);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1aeb7a188aaab899d95abb89ec0eeba180" kindref="member">init</ref>(CFeatures*<sp/>l,<sp/>CFeatures*<sp/>r);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a7c06c51b176c8aa57aa1658dfa829ddd" kindref="member">cleanup</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>EKernelType<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a8439287dbc95674b3232f8b46827908b" kindref="member">get_kernel_type</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>K_SALZBERG;<sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a67aecdda489afb2d32ea8afb55deb8b0" kindref="member">get_name</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Salzberg&quot;</highlight><highlight class="normal"><sp/>;<sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1af01ad9e3356756f975ddc982efa6ca17" kindref="member">compute</ref>(int32_t<sp/>idx_a,<sp/>int32_t<sp/>idx_b);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>compute_slow(int64_t<sp/>idx_a,<sp/>int64_t<sp/>idx_b);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1ad5d341b5dab48fcf07260e441fa5c010" kindref="member">compute_index</ref>(int32_t<sp/>position,<sp/>uint16_t<sp/>symbol)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>position*<ref refid="classshogun_1_1CSalzbergWordStringKernel_1a50ccb5b45fe807261d287ba63df9b44c" kindref="member">num_symbols</ref>+symbol;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CPluginEstimate*<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a36b61a0b0ff2399923ecab2379820edd" kindref="member">estimate</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t*<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1ae91d3f6f3f0b70f04a544ff4cead0211" kindref="member">mean</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t*<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1ab58685afc2bc2234f6ea20e83d26de9c" kindref="member">variance</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t*<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1afb3aa8b2b63b3d2080ac9719be64ac29" kindref="member">sqrtdiag_lhs</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t*<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a99dd3c86ad29ef938d02be3d9b914fbe" kindref="member">sqrtdiag_rhs</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t*<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a6757ba39a1eecca65b2b61817d97ad70" kindref="member">ld_mean_lhs</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t*<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a0e41231b36eff5c329833b02ce660c8b" kindref="member">ld_mean_rhs</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a9a3f62cced9c21b346b699c0cbe56b9f" kindref="member">num_params</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a50ccb5b45fe807261d287ba63df9b44c" kindref="member">num_symbols</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1afea25fdf282813bc2ca6149a2c74f0f5" kindref="member">sum_m2_s2</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a1a2478b34bb710aacc22a9e4cc75bb78" kindref="member">pos_prior</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1abb2a375177d878872d397824b9d556a7" kindref="member">neg_prior</ref>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CSalzbergWordStringKernel_1a02327062f041ea15cbe8a6dd4aea2893" kindref="member">initialized</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_SALZBERGWORDKERNEL_H__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SalzbergWordStringKernel.h"/>
+  </compounddef>
+</doxygen>

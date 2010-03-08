@@ -1,0 +1,1352 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CAlphabet" kind="class" prot="public">
+    <compoundname>shogun::CAlphabet</compoundname>
+    <includes local="no">Alphabet.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CAlphabet_1af11947f16f08d64a3a0c148855723149" prot="public" static="yes" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t shogun::CAlphabet::B_A</definition>
+        <argsstring></argsstring>
+        <name>B_A</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>B_A </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="553" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="553" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CAlphabet_1aad44c5380c7deb33232e77495825c078" prot="public" static="yes" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t shogun::CAlphabet::B_C</definition>
+        <argsstring></argsstring>
+        <name>B_C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>B_C </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="555" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CAlphabet_1a7e86f9ce02514c6d15110946ed2de561" prot="public" static="yes" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t shogun::CAlphabet::B_G</definition>
+        <argsstring></argsstring>
+        <name>B_G</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>B_G </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="557" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CAlphabet_1ad5c58db27b546bbc8c34e48b93f82f62" prot="public" static="yes" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t shogun::CAlphabet::B_T</definition>
+        <argsstring></argsstring>
+        <name>B_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>B_T </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="559" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="559" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CAlphabet_1ac78dffbf9ecb1f455859b9d21696bd85" prot="public" static="yes" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t shogun::CAlphabet::MAPTABLE_UNDEF</definition>
+        <argsstring></argsstring>
+        <name>MAPTABLE_UNDEF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MAPTABLE UNDEF </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="561" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="561" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CAlphabet_1a4eea16f9b44fed1be493c7b9f23c95fd" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* shogun::CAlphabet::alphabet_names[12]</definition>
+        <argsstring>[12]</argsstring>
+        <name>alphabet_names</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>alphabet names </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="563" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="563" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CAlphabet_1ae29141a80f11278334154e7b8f4dc7ba" prot="protected" static="no" mutable="no">
+        <type>EAlphabet</type>
+        <definition>EAlphabet shogun::CAlphabet::alphabet</definition>
+        <argsstring></argsstring>
+        <name>alphabet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>alphabet </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="567" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CAlphabet_1ac3ca72743bfc8108108d32c857f84bd4" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CAlphabet::num_symbols</definition>
+        <argsstring></argsstring>
+        <name>num_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of symbols </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="569" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="569" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CAlphabet_1a4f4fbae4e38e02abfe5d193d575e06a8" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CAlphabet::num_bits</definition>
+        <argsstring></argsstring>
+        <name>num_bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of bits </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="571" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="571" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CAlphabet_1aac724d3e19856b617fbc541414c77fd6" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CAlphabet::valid_chars[1&lt;&lt; (sizeof(uint8_t)*8)]</definition>
+        <argsstring>[1&lt;&lt; (sizeof(uint8_t)*8)]</argsstring>
+        <name>valid_chars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>valid chars </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="573" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="573" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CAlphabet_1aa80a5eb4639747374a424e59cb42809a" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t shogun::CAlphabet::maptable_to_bin[1&lt;&lt; (sizeof(uint8_t)*8)]</definition>
+        <argsstring>[1&lt;&lt; (sizeof(uint8_t)*8)]</argsstring>
+        <name>maptable_to_bin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maptable to bin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="575" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="575" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CAlphabet_1a9c5db4169e6e73545c61d185850cb6fc" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t shogun::CAlphabet::maptable_to_char[1&lt;&lt; (sizeof(uint8_t)*8)]</definition>
+        <argsstring>[1&lt;&lt; (sizeof(uint8_t)*8)]</argsstring>
+        <name>maptable_to_char</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maptable to char </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="577" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="577" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CAlphabet_1a0bcbb10c295f110525da45c8a4d2b6da" prot="protected" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t shogun::CAlphabet::histogram[1&lt;&lt; (sizeof(uint8_t)*8)]</definition>
+        <argsstring>[1&lt;&lt; (sizeof(uint8_t)*8)]</argsstring>
+        <name>histogram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>histogram </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="579" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a7a27b7eeb42089fff8ef9278094f4ec4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CAlphabet::CAlphabet</definition>
+        <argsstring>(char *alpha, int32_t len)</argsstring>
+        <name>CAlphabet</name>
+        <param>
+          <type>char *</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alphabet to use </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a37c719fc77bfa7b10dc1bb795ba8d86a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CAlphabet::CAlphabet</definition>
+        <argsstring>(EAlphabet alpha)</argsstring>
+        <name>CAlphabet</name>
+        <param>
+          <type>EAlphabet</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alphabet (type) to use </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a846f0c9cd0479d6ab1936ce133b974b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CAlphabet::CAlphabet</definition>
+        <argsstring>(CAlphabet *alpha)</argsstring>
+        <name>CAlphabet</name>
+        <param>
+          <type><ref refid="classshogun_1_1CAlphabet" kindref="compound">CAlphabet</ref> *</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alphabet to use </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a9a822617f835a731eddbdd98c5f3f7d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CAlphabet::~CAlphabet</definition>
+        <argsstring>()</argsstring>
+        <name>~CAlphabet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a26ba2fd44210f8df8592427cfe0b51d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CAlphabet::set_alphabet</definition>
+        <argsstring>(EAlphabet alpha)</argsstring>
+        <name>set_alphabet</name>
+        <param>
+          <type>EAlphabet</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set alphabet and initialize mapping table (for remap)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new alphabet </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a90c332704eb3c1b55f45f67528eb5b9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>EAlphabet</type>
+        <definition>EAlphabet shogun::CAlphabet::get_alphabet</definition>
+        <argsstring>() const </argsstring>
+        <name>get_alphabet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get alphabet</para><para><simplesect kind="return"><para>alphabet </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="112" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a2bd802a333e4a7a3df0b928bba07eae8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CAlphabet::get_num_symbols</definition>
+        <argsstring>() const </argsstring>
+        <name>get_num_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of symbols in alphabet</para><para><simplesect kind="return"><para>number of symbols </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="121" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1acbb4c4a21180f3a1a64724d7922ad076" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CAlphabet::get_num_bits</definition>
+        <argsstring>() const </argsstring>
+        <name>get_num_bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of bits necessary to store all symbols in alphabet</para><para><simplesect kind="return"><para>number of necessary storage bits </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="131" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a45cf3d4d8b3f61d36bb8d1d73f18ee3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t shogun::CAlphabet::remap_to_bin</definition>
+        <argsstring>(uint8_t c)</argsstring>
+        <name>remap_to_bin</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>remap element e.g translate ACGT to 0123</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>element to remap </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>remapped element </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="141" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a88c4f1e5612212f86bdf49eef0a34ad9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t shogun::CAlphabet::remap_to_char</definition>
+        <argsstring>(uint8_t c)</argsstring>
+        <name>remap_to_char</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>remap element e.g translate 0123 to ACGT</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>element to remap </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>remapped element </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="151" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1aa545b9556e20a2fe28e5c2dd34d78369" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CAlphabet::clear_histogram</definition>
+        <argsstring>()</argsstring>
+        <name>clear_histogram</name>
+        <briefdescription>
+<para>clear histogram </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1abc577356b0ba244f5b289a9bb16696e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CAlphabet::add_string_to_histogram</definition>
+        <argsstring>(T *p, int64_t len)</argsstring>
+        <name>add_string_to_histogram</name>
+        <param>
+          <type>T *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>make histogram for whole string</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="165" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="164" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a01f0787d8262d66a890c0d4179b40e4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CAlphabet::add_byte_to_histogram</definition>
+        <argsstring>(uint8_t p)</argsstring>
+        <name>add_byte_to_histogram</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add element to histogram</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>element </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="175" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="174" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1acfca811ec6402d6443f5784d99c98beb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CAlphabet::print_histogram</definition>
+        <argsstring>()</argsstring>
+        <name>print_histogram</name>
+        <briefdescription>
+<para>print histogram </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a50a84cc215d1199f130053aa6b481526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CAlphabet::get_hist</definition>
+        <argsstring>(int64_t **h, int32_t *len)</argsstring>
+        <name>get_hist</name>
+        <param>
+          <type>int64_t **</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get histogram</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where the histogram will be stored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of histogram </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="188" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="187" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1aa11de2eaa167b39c80f3c15b63e67838" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int64_t *</type>
+        <definition>const int64_t* shogun::CAlphabet::get_histogram</definition>
+        <argsstring>()</argsstring>
+        <name>get_histogram</name>
+        <briefdescription>
+<para>get pointer to histogram </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="200" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="199" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1afb5a2bc3dfb809c7d5c6a64e4565ec3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CAlphabet::check_alphabet</definition>
+        <argsstring>(bool print_error=true)</argsstring>
+        <name>check_alphabet</name>
+        <param>
+          <type>bool</type>
+          <declname>print_error</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check whether symbols in histogram are valid in alphabet e.g. for DNA if only letters ACGT appear</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>print_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if errors shall be printed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if symbols in histogram are valid in alphabet </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1aa4b111a656777b4d7e77423b1de9e727" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CAlphabet::is_valid</definition>
+        <argsstring>(uint8_t c)</argsstring>
+        <name>is_valid</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check whether symbols are valid in alphabet e.g. for DNA if symbol is one of the A,C,G or T</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>symbol </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if symbol is a valid character in alphabet </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="219" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="218" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1aeaa5f1bcc021e6e9917879d7cbef0285" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CAlphabet::check_alphabet_size</definition>
+        <argsstring>(bool print_error=true)</argsstring>
+        <name>check_alphabet_size</name>
+        <param>
+          <type>bool</type>
+          <declname>print_error</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check whether symbols in histogram ALL fit in alphabet</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>print_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if errors shall be printed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if symbols in histogram ALL fit in alphabet </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1aa992c281fbc90c86c46edd491374d254" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CAlphabet::get_num_symbols_in_histogram</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_symbols_in_histogram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return number of symbols in histogram</para><para><simplesect kind="return"><para>number of symbols in histogram </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a38e9c874d4468ac67284ad83cbafbb1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CAlphabet::get_max_value_in_histogram</definition>
+        <argsstring>()</argsstring>
+        <name>get_max_value_in_histogram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return maximum value in histogram</para><para><simplesect kind="return"><para>maximum value in histogram </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1ad58c7f96f51c8adb8d27ef7ee1db65e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CAlphabet::get_num_bits_in_histogram</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_bits_in_histogram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return number of bits required to store all symbols in histogram</para><para><simplesect kind="return"><para>number of bits required to store all symbols in histogram </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1aabbc7b1f888a97b2f6a6782e46e0bbc2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CAlphabet::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="258" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="258" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a59539a9b42c8f3e00b4ee434e0f5a12b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CAlphabet::translate_from_single_order</definition>
+        <argsstring>(float32_t *obs, int32_t sequence_length, int32_t start, int32_t p_order, int32_t max_val, int32_t gap)</argsstring>
+        <name>translate_from_single_order</name>
+        <param>
+          <type>float32_t *</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>sequence_length</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max_val</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>gap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="585" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="584" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a7651903dd35ead4970cf6206ce1b7b33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CAlphabet::translate_from_single_order</definition>
+        <argsstring>(float64_t *obs, int32_t sequence_length, int32_t start, int32_t p_order, int32_t max_val, int32_t gap)</argsstring>
+        <name>translate_from_single_order</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>sequence_length</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max_val</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>gap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="589" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="588" bodyend="590"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a4d4ffd558bae805060dd5f0032c66278" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CAlphabet::translate_from_single_order</definition>
+        <argsstring>(floatmax_t *obs, int32_t sequence_length, int32_t start, int32_t p_order, int32_t max_val, int32_t gap)</argsstring>
+        <name>translate_from_single_order</name>
+        <param>
+          <type>floatmax_t *</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>sequence_length</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max_val</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>gap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="593" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="592" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a5d77eda2bbf5f8e7fdc276a5de989c8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CAlphabet::translate_from_single_order_reversed</definition>
+        <argsstring>(float32_t *obs, int32_t sequence_length, int32_t start, int32_t p_order, int32_t max_val, int32_t gap)</argsstring>
+        <name>translate_from_single_order_reversed</name>
+        <param>
+          <type>float32_t *</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>sequence_length</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max_val</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>gap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="597" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="596" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a9d4ac40e955337cb50335e613b348c65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CAlphabet::translate_from_single_order_reversed</definition>
+        <argsstring>(float64_t *obs, int32_t sequence_length, int32_t start, int32_t p_order, int32_t max_val, int32_t gap)</argsstring>
+        <name>translate_from_single_order_reversed</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>sequence_length</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max_val</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>gap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="601" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="600" bodyend="602"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1ac3010185d328c9d2c12bd121c3dcf5f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CAlphabet::translate_from_single_order_reversed</definition>
+        <argsstring>(floatmax_t *obs, int32_t sequence_length, int32_t start, int32_t p_order, int32_t max_val, int32_t gap)</argsstring>
+        <name>translate_from_single_order_reversed</name>
+        <param>
+          <type>floatmax_t *</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>sequence_length</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max_val</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>gap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="605" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="604" bodyend="606"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1af9e75e6869e92801cc654859d656eb7d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* shogun::CAlphabet::get_alphabet_name</definition>
+        <argsstring>(EAlphabet alphabet)</argsstring>
+        <name>get_alphabet_name</name>
+        <param>
+          <type>EAlphabet</type>
+          <declname>alphabet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return alphabet name</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alphabet</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alphabet type to get name from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a5f5b793cf6ae75fa85eda585ccfb6eb7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ST</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CAlphabet::translate_from_single_order</definition>
+        <argsstring>(ST *obs, int32_t sequence_length, int32_t start, int32_t p_order, int32_t max_val)</argsstring>
+        <name>translate_from_single_order</name>
+        <param>
+          <type>ST *</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>sequence_length</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>translate from single order</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>observation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sequence_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of sequence </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>order </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="270" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="269" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1ac1d5ba6ceb968e5cab1a6207c5f6360f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ST</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CAlphabet::translate_from_single_order_reversed</definition>
+        <argsstring>(ST *obs, int32_t sequence_length, int32_t start, int32_t p_order, int32_t max_val)</argsstring>
+        <name>translate_from_single_order_reversed</name>
+        <param>
+          <type>ST *</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>sequence_length</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>translate from single order reversed</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>observation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sequence_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of sequence </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>order </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="316" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="315" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1aaf430abf88919244ea0493f5981d6075" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ST</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CAlphabet::translate_from_single_order</definition>
+        <argsstring>(ST *obs, int32_t sequence_length, int32_t start, int32_t p_order, int32_t max_val, int32_t gap)</argsstring>
+        <name>translate_from_single_order</name>
+        <param>
+          <type>ST *</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>sequence_length</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max_val</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>gap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>translate from single order</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>observation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sequence_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of sequence </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>order </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gap </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="363" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="362" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1adff10edcd7a3f1b6bc820cff0bbfa98a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ST</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void shogun::CAlphabet::translate_from_single_order_reversed</definition>
+        <argsstring>(ST *obs, int32_t sequence_length, int32_t start, int32_t p_order, int32_t max_val, int32_t gap)</argsstring>
+        <name>translate_from_single_order_reversed</name>
+        <param>
+          <type>ST *</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>sequence_length</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max_val</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>gap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>translate from single order reversed</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>observation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sequence_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of sequence </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>order </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gap </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="434" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="433" bodyend="488"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1aa123db1554ddfbc7e4a75184944c7e6c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CAlphabet::init_map_table</definition>
+        <argsstring>()</argsstring>
+        <name>init_map_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>init map table </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="493"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAlphabet_1a65e6b9811bc8f7add45908e55e309b01" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CAlphabet::copy_histogram</definition>
+        <argsstring>(CAlphabet *src)</argsstring>
+        <name>copy_histogram</name>
+        <param>
+          <type><ref refid="classshogun_1_1CAlphabet" kindref="compound">CAlphabet</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy histogram</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alphabet to copy histogram from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="499"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class Alphabet implements an alphabet and alphabet utility functions. </para>    </briefdescription>
+    <detaileddescription>
+<para>These utility functions can be used to remap characters to more (bit-)efficient representations, check if a string is valid, compute histograms etc.</para><para>Currently supported alphabets are DNA, RAWDNA, RNA, PROTEIN, BINARY, ALPHANUM, CUBE, RAW, IUPAC_NUCLEIC_ACID and IUPAC_AMINO_ACID. </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" line="72" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Alphabet.h" bodystart="71" bodyend="580"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CAlphabet_1a01f0787d8262d66a890c0d4179b40e4a" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>add_byte_to_histogram</name></member>
+      <member refid="classshogun_1_1CAlphabet_1abc577356b0ba244f5b289a9bb16696e4" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>add_string_to_histogram</name></member>
+      <member refid="classshogun_1_1CAlphabet_1ae29141a80f11278334154e7b8f4dc7ba" prot="protected" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>alphabet</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a4eea16f9b44fed1be493c7b9f23c95fd" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>alphabet_names</name></member>
+      <member refid="classshogun_1_1CAlphabet_1af11947f16f08d64a3a0c148855723149" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>B_A</name></member>
+      <member refid="classshogun_1_1CAlphabet_1aad44c5380c7deb33232e77495825c078" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>B_C</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a7e86f9ce02514c6d15110946ed2de561" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>B_G</name></member>
+      <member refid="classshogun_1_1CAlphabet_1ad5c58db27b546bbc8c34e48b93f82f62" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>B_T</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a7a27b7eeb42089fff8ef9278094f4ec4" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>CAlphabet</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a37c719fc77bfa7b10dc1bb795ba8d86a" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>CAlphabet</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a846f0c9cd0479d6ab1936ce133b974b9" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>CAlphabet</name></member>
+      <member refid="classshogun_1_1CAlphabet_1afb5a2bc3dfb809c7d5c6a64e4565ec3f" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>check_alphabet</name></member>
+      <member refid="classshogun_1_1CAlphabet_1aeaa5f1bcc021e6e9917879d7cbef0285" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>check_alphabet_size</name></member>
+      <member refid="classshogun_1_1CAlphabet_1aa545b9556e20a2fe28e5c2dd34d78369" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>clear_histogram</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a65e6b9811bc8f7add45908e55e309b01" prot="protected" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>copy_histogram</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a90c332704eb3c1b55f45f67528eb5b9e" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>get_alphabet</name></member>
+      <member refid="classshogun_1_1CAlphabet_1af9e75e6869e92801cc654859d656eb7d" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>get_alphabet_name</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a50a84cc215d1199f130053aa6b481526" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>get_hist</name></member>
+      <member refid="classshogun_1_1CAlphabet_1aa11de2eaa167b39c80f3c15b63e67838" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>get_histogram</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a38e9c874d4468ac67284ad83cbafbb1a" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>get_max_value_in_histogram</name></member>
+      <member refid="classshogun_1_1CAlphabet_1aabbc7b1f888a97b2f6a6782e46e0bbc2" prot="public" virt="virtual"><scope>shogun::CAlphabet</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CAlphabet_1acbb4c4a21180f3a1a64724d7922ad076" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>get_num_bits</name></member>
+      <member refid="classshogun_1_1CAlphabet_1ad58c7f96f51c8adb8d27ef7ee1db65e4" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>get_num_bits_in_histogram</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a2bd802a333e4a7a3df0b928bba07eae8" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>get_num_symbols</name></member>
+      <member refid="classshogun_1_1CAlphabet_1aa992c281fbc90c86c46edd491374d254" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>get_num_symbols_in_histogram</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a0bcbb10c295f110525da45c8a4d2b6da" prot="protected" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>histogram</name></member>
+      <member refid="classshogun_1_1CAlphabet_1aa123db1554ddfbc7e4a75184944c7e6c" prot="protected" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>init_map_table</name></member>
+      <member refid="classshogun_1_1CAlphabet_1aa4b111a656777b4d7e77423b1de9e727" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>is_valid</name></member>
+      <member refid="classshogun_1_1CAlphabet_1aa80a5eb4639747374a424e59cb42809a" prot="protected" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>maptable_to_bin</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a9c5db4169e6e73545c61d185850cb6fc" prot="protected" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>maptable_to_char</name></member>
+      <member refid="classshogun_1_1CAlphabet_1ac78dffbf9ecb1f455859b9d21696bd85" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>MAPTABLE_UNDEF</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a4f4fbae4e38e02abfe5d193d575e06a8" prot="protected" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>num_bits</name></member>
+      <member refid="classshogun_1_1CAlphabet_1ac3ca72743bfc8108108d32c857f84bd4" prot="protected" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>num_symbols</name></member>
+      <member refid="classshogun_1_1CAlphabet_1acfca811ec6402d6443f5784d99c98beb" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>print_histogram</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a45cf3d4d8b3f61d36bb8d1d73f18ee3f" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>remap_to_bin</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a88c4f1e5612212f86bdf49eef0a34ad9" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>remap_to_char</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a26ba2fd44210f8df8592427cfe0b51d2" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>set_alphabet</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a5f5b793cf6ae75fa85eda585ccfb6eb7" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>translate_from_single_order</name></member>
+      <member refid="classshogun_1_1CAlphabet_1aaf430abf88919244ea0493f5981d6075" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>translate_from_single_order</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a59539a9b42c8f3e00b4ee434e0f5a12b" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>translate_from_single_order</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a7651903dd35ead4970cf6206ce1b7b33" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>translate_from_single_order</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a4d4ffd558bae805060dd5f0032c66278" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>translate_from_single_order</name></member>
+      <member refid="classshogun_1_1CAlphabet_1ac1d5ba6ceb968e5cab1a6207c5f6360f" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>translate_from_single_order_reversed</name></member>
+      <member refid="classshogun_1_1CAlphabet_1adff10edcd7a3f1b6bc820cff0bbfa98a" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>translate_from_single_order_reversed</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a5d77eda2bbf5f8e7fdc276a5de989c8f" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>translate_from_single_order_reversed</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a9d4ac40e955337cb50335e613b348c65" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>translate_from_single_order_reversed</name></member>
+      <member refid="classshogun_1_1CAlphabet_1ac3010185d328c9d2c12bd121c3dcf5f4" prot="public" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>translate_from_single_order_reversed</name></member>
+      <member refid="classshogun_1_1CAlphabet_1aac724d3e19856b617fbc541414c77fd6" prot="protected" virt="non-virtual"><scope>shogun::CAlphabet</scope><name>valid_chars</name></member>
+      <member refid="classshogun_1_1CAlphabet_1a9a822617f835a731eddbdd98c5f3f7d7" prot="public" virt="virtual"><scope>shogun::CAlphabet</scope><name>~CAlphabet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

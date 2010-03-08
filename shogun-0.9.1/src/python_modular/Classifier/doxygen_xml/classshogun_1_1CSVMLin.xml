@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CSVMLin" kind="class" prot="public">
+    <compoundname>shogun::CSVMLin</compoundname>
+    <basecompoundref refid="classshogun_1_1CLinearClassifier" prot="public" virt="non-virtual">shogun::CLinearClassifier</basecompoundref>
+    <includes local="no">SVMLin.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CSVMLin_1ac02a94e0a625aa65a4ecd2345c8d6f61" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVMLin::C1</definition>
+        <argsstring></argsstring>
+        <name>C1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>C1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="103" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVMLin_1ae205abc2101d9b0a336f8053b39fd518" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVMLin::C2</definition>
+        <argsstring></argsstring>
+        <name>C2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>C2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="105" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVMLin_1a6fb1c506ae333368e4cbc7b6dfa8d054" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVMLin::epsilon</definition>
+        <argsstring></argsstring>
+        <name>epsilon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>epsilon </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="107" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVMLin_1ad7d6661259d54bfd80ebe9c8892273ca" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CSVMLin::use_bias</definition>
+        <argsstring></argsstring>
+        <name>use_bias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if bias is used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="110" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CSVMLin_1a372f0c6ef6605154512d3ad98dc69a31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSVMLin::CSVMLin</definition>
+        <argsstring>()</argsstring>
+        <name>CSVMLin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMLin_1a6d6c0278c042670414ad9c44427dc7c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSVMLin::CSVMLin</definition>
+        <argsstring>(float64_t C, CDotFeatures *traindat, CLabels *trainlab)</argsstring>
+        <name>CSVMLin</name>
+        <param>
+          <type>float64_t</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>CDotFeatures *</type>
+          <declname>traindat</declname>
+        </param>
+        <param>
+          <type>CLabels *</type>
+          <declname>trainlab</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant C </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>traindat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>trainlab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>labels for features </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMLin_1ab0530770558cd3e976c79d2da9eb3e9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CSVMLin::~CSVMLin</definition>
+        <argsstring>()</argsstring>
+        <name>~CSVMLin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMLin_1a8eee841a0f05a40f4efc2341863d2270" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EClassifierType</type>
+        <definition>virtual EClassifierType shogun::CSVMLin::get_classifier_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_classifier_type</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a52d05215c6b6a252650c41a0b29d8cc5">get_classifier_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier type</para><para><simplesect kind="return"><para>classifier type SVMLIN </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="43" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMLin_1af7d65061b1b7b8b317de40eeee11e56f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSVMLin::train</definition>
+        <argsstring>(CFeatures *data=NULL)</argsstring>
+        <name>train</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a9904cc0a8d7ec077cc1fede8d64ebb22">train</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>train SVM classifier</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training <ref refid="structshogun_1_1data" kindref="compound">data</ref> (parameter can be avoided if distance or kernel-based classifiers are used and distance/kernels are initialized with train <ref refid="structshogun_1_1data" kindref="compound">data</ref>)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether training was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMLin_1ad0aa207e17ba3b08ef27ffefe1e86d96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVMLin::set_C</definition>
+        <argsstring>(float64_t c1, float64_t c2)</argsstring>
+        <name>set_C</name>
+        <param>
+          <type>float64_t</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set C</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new C1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new C2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="60" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMLin_1a8adaf44ac6c2f3f543ac95e58f121742" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVMLin::get_C1</definition>
+        <argsstring>()</argsstring>
+        <name>get_C1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get C1</para><para><simplesect kind="return"><para>C1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="66" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMLin_1a88fc10a45f2e17074b64d18b5aad221b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVMLin::get_C2</definition>
+        <argsstring>()</argsstring>
+        <name>get_C2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get C2</para><para><simplesect kind="return"><para>C2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="72" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMLin_1a05befb101005ce643e65a33350ea4636" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVMLin::set_bias_enabled</definition>
+        <argsstring>(bool enable_bias)</argsstring>
+        <name>set_bias_enabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enable_bias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set if bias shall be enabled</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable_bias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if bias shall be enabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="78" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMLin_1a396a67481274fd75c2a2bd3c514c6a5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CSVMLin::get_bias_enabled</definition>
+        <argsstring>()</argsstring>
+        <name>get_bias_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get if bias is enabled</para><para><simplesect kind="return"><para>if bias is enabled </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="84" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMLin_1aa9f86ebcf3b40c1e41ca0ff24dd2c3dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVMLin::set_epsilon</definition>
+        <argsstring>(float64_t eps)</argsstring>
+        <name>set_epsilon</name>
+        <param>
+          <type>float64_t</type>
+          <declname>eps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set epsilon</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new epsilon </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="90" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMLin_1ab6032d695a45c95a7bd30f242738746b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVMLin::get_epsilon</definition>
+        <argsstring>()</argsstring>
+        <name>get_epsilon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get epsilon</para><para><simplesect kind="return"><para>epsilon </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="96" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMLin_1a2111c28c26e6075ab8cc9681e085cf8b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CSVMLin::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="99" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class SVMLin </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="291">
+        <label>shogun::CLinearClassifier</label>
+        <link refid="classshogun_1_1CLinearClassifier"/>
+        <childnode refid="292" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>shogun::CSVMLin</label>
+        <link refid="classshogun_1_1CSVMLin"/>
+        <childnode refid="291" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="294">
+        <label>shogun::CLinearClassifier</label>
+        <link refid="classshogun_1_1CLinearClassifier"/>
+        <childnode refid="295" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>shogun::CSVMLin</label>
+        <link refid="classshogun_1_1CSVMLin"/>
+        <childnode refid="294" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" line="23" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMLin.h" bodystart="22" bodyend="111"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CLinearClassifier_1a8f920d6d3dce0a27cbb8b36aed8a6220" prot="protected" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>bias</name></member>
+      <member refid="classshogun_1_1CSVMLin_1ac02a94e0a625aa65a4ecd2345c8d6f61" prot="protected" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>C1</name></member>
+      <member refid="classshogun_1_1CSVMLin_1ae205abc2101d9b0a336f8053b39fd518" prot="protected" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>C2</name></member>
+      <member refid="classshogun_1_1CClassifier_1a37259b3ffbe96af1eda8dd2d9428221c" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>CClassifier</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1ac1f1aac929b7958f5a7d48d9ea40f2f2" prot="public" virt="virtual"><scope>shogun::CSVMLin</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a15ae96a018644322d1c7848a44b1afce" prot="public" virt="virtual"><scope>shogun::CSVMLin</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a3d2b2e860b03a856019e5eafb41a03e4" prot="public" virt="virtual"><scope>shogun::CSVMLin</scope><name>classify_example</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a1e353d4462e0c790543683a7cd35261c" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>CLinearClassifier</name></member>
+      <member refid="classshogun_1_1CSVMLin_1a372f0c6ef6605154512d3ad98dc69a31" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>CSVMLin</name></member>
+      <member refid="classshogun_1_1CSVMLin_1a6d6c0278c042670414ad9c44427dc7c3" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>CSVMLin</name></member>
+      <member refid="classshogun_1_1CSVMLin_1a6fb1c506ae333368e4cbc7b6dfa8d054" prot="protected" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>epsilon</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1abd48587ed93efcbb8b1ea3c40c229b1e" prot="protected" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>features</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a6966226c35c31bf278b6b038159786fe" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>get_bias</name></member>
+      <member refid="classshogun_1_1CSVMLin_1a396a67481274fd75c2a2bd3c514c6a5f" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>get_bias_enabled</name></member>
+      <member refid="classshogun_1_1CSVMLin_1a8adaf44ac6c2f3f543ac95e58f121742" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>get_C1</name></member>
+      <member refid="classshogun_1_1CSVMLin_1a88fc10a45f2e17074b64d18b5aad221b" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>get_C2</name></member>
+      <member refid="classshogun_1_1CSVMLin_1a8eee841a0f05a40f4efc2341863d2270" prot="public" virt="virtual"><scope>shogun::CSVMLin</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CSVMLin_1ab6032d695a45c95a7bd30f242738746b" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>get_epsilon</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a8ee7a0fc2702e98784765eb8ecc5d8db" prot="public" virt="virtual"><scope>shogun::CSVMLin</scope><name>get_features</name></member>
+      <member refid="classshogun_1_1CClassifier_1a787dcde8fe53a734fcb77f988d821408" prot="public" virt="virtual"><scope>shogun::CSVMLin</scope><name>get_label</name></member>
+      <member refid="classshogun_1_1CClassifier_1a5f1f62d263b6201e1624990deadba5a8" prot="public" virt="virtual"><scope>shogun::CSVMLin</scope><name>get_labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1a6e48967294c55850d95235d487ce2c02" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>get_max_train_time</name></member>
+      <member refid="classshogun_1_1CSVMLin_1a2111c28c26e6075ab8cc9681e085cf8b" prot="public" virt="virtual"><scope>shogun::CSVMLin</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8a3acda6819b4a4b77b656b6b9e1817c" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>get_solver_type</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a847be7aabc3656ae0263e75b7e7933c6" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>get_w</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1aae7a04f5eeb75662a3740afa3662dd83" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>get_w</name></member>
+      <member refid="classshogun_1_1CClassifier_1a68f1285e63422a24319ed95910d72f73" prot="protected" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>labels</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a78010edf322d0188013cadfd891c1f61" prot="public" virt="virtual"><scope>shogun::CSVMLin</scope><name>load</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8524d634a67f3538b112f72d7835af46" prot="protected" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>max_train_time</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1ad6012c92f6dd565478a43da7e3c779ab" prot="public" virt="virtual"><scope>shogun::CSVMLin</scope><name>save</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1af150779eb78b46fe736d56b06f76113d" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>set_bias</name></member>
+      <member refid="classshogun_1_1CSVMLin_1a05befb101005ce643e65a33350ea4636" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>set_bias_enabled</name></member>
+      <member refid="classshogun_1_1CSVMLin_1ad0aa207e17ba3b08ef27ffefe1e86d96" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>set_C</name></member>
+      <member refid="classshogun_1_1CSVMLin_1aa9f86ebcf3b40c1e41ca0ff24dd2c3dc" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>set_epsilon</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1ac2ecfddeb611425961499b644a86acaf" prot="public" virt="virtual"><scope>shogun::CSVMLin</scope><name>set_features</name></member>
+      <member refid="classshogun_1_1CClassifier_1aa6b87d22c14fc2b6970d8bf1edbb15fb" prot="public" virt="virtual"><scope>shogun::CSVMLin</scope><name>set_labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1af8930a0a848388d8647c9e4604a7856d" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>set_max_train_time</name></member>
+      <member refid="classshogun_1_1CClassifier_1a4c87d6f3a2342c3053aeca82c3cf528c" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>set_solver_type</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a6e5d80ca592587317e5c8842d92c60f7" prot="public" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>set_w</name></member>
+      <member refid="classshogun_1_1CClassifier_1a360902e938d7b8890084c5bc6df617be" prot="protected" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>solver_type</name></member>
+      <member refid="classshogun_1_1CSVMLin_1af7d65061b1b7b8b317de40eeee11e56f" prot="public" virt="virtual"><scope>shogun::CSVMLin</scope><name>train</name></member>
+      <member refid="classshogun_1_1CSVMLin_1ad7d6661259d54bfd80ebe9c8892273ca" prot="protected" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>use_bias</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a3f02f85d6c001c1fcfb4f67fbddaffe8" prot="protected" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>w</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1ad0ca6a36ee07ca0beba61def547f6564" prot="protected" virt="non-virtual"><scope>shogun::CSVMLin</scope><name>w_dim</name></member>
+      <member refid="classshogun_1_1CClassifier_1ae7d6c7d39fb314c1092163e958ef66a8" prot="public" virt="virtual"><scope>shogun::CSVMLin</scope><name>~CClassifier</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a9c6ccea8f5bf3a0e055aec1b4ef9fdf2" prot="public" virt="virtual"><scope>shogun::CSVMLin</scope><name>~CLinearClassifier</name></member>
+      <member refid="classshogun_1_1CSVMLin_1ab0530770558cd3e976c79d2da9eb3e9d" prot="public" virt="virtual"><scope>shogun::CSVMLin</scope><name>~CSVMLin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

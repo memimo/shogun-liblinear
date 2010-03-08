@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="common_8h" kind="file">
+    <compoundname>common.h</compoundname>
+    <includes refid="memory_8h" local="yes">lib/memory.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes refid="config_8h" local="yes">lib/config.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="Array_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array.h</includedby>
+    <includedby refid="Array2_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array2.h</includedby>
+    <includedby refid="Array3_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h</includedby>
+    <includedby refid="BitString_8h" local="no">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h</includedby>
+    <includedby refid="Cache_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h</includedby>
+    <includedby refid="Compressor_8h" local="no">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Compressor.h</includedby>
+    <includedby refid="DynamicArray_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h</includedby>
+    <includedby refid="DynInt_8h" local="no">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynInt.h</includedby>
+    <includedby refid="GCArray_8h" local="no">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h</includedby>
+    <includedby refid="Hash_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Hash.h</includedby>
+    <includedby refid="IndirectObject_8h" local="no">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h</includedby>
+    <includedby refid="io_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/io.h</includedby>
+    <includedby refid="lapack_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/lapack.h</includedby>
+    <includedby refid="List_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/List.h</includedby>
+    <includedby refid="Mathematics_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h</includedby>
+    <includedby refid="Set_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Set.h</includedby>
+    <includedby refid="Time_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Time.h</includedby>
+    <includedby refid="Trie_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h</includedby>
+    <incdepgraph>
+      <node id="24">
+        <label>stdint.h</label>
+      </node>
+      <node id="22">
+        <label>stdlib.h</label>
+      </node>
+      <node id="21">
+        <label>/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/common.h</label>
+        <link refid="common.h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>Standard Types</header>
+      <description><para><anchor id="_1amgrp780933ce94d6c2fadb200dbb109d2e53"/> Definition of Platform independent Types </para></description>
+      <memberdef kind="typedef" id="common_8h_1a4611b605e45ab401f02cab15c5e38715" prot="public" static="no">
+        <type>float</type>
+        <definition>typedef float float32_t</definition>
+        <argsstring></argsstring>
+        <name>float32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Implementations tend to follow IEEE754 <simplesect kind="see"><para><ulink url="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=4610935">http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=4610935</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/common.h" line="41" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/common.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1ac55f3ae81b5bc9053760baacf57e47f4" prot="public" static="no">
+        <type>double</type>
+        <definition>typedef double float64_t</definition>
+        <argsstring></argsstring>
+        <name>float64_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/common.h" line="42" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/common.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1a4ca6ad9dd54ef5b6e900e44b78cc2040" prot="public" static="no">
+        <type>long double</type>
+        <definition>typedef long double floatmax_t</definition>
+        <argsstring></argsstring>
+        <name>floatmax_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/common.h" line="43" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/common.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="common_8h_1a3bd31f0d9a9127548b734e7ca03cc6df" prot="public" static="no">
+        <name>RANDOM_MAX</name>
+        <initializer>2147483647</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/common.h" line="25" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/common.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Written<sp/>(W)<sp/>1999-2009<sp/>Soeren<sp/>Sonnenburg</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Written<sp/>(W)<sp/>1999-2008<sp/>Gunnar<sp/>Raetsch</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Written<sp/>(W)<sp/>2006<sp/>Fabio<sp/>De<sp/>Bona</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>Written<sp/>(W)<sp/>2006<sp/>Konrad<sp/>Rieck</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Written<sp/>(W)<sp/>2006-2008<sp/>Christian<sp/>Gehl</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>1999-2009<sp/>Fraunhofer<sp/>Institute<sp/>FIRST<sp/>and<sp/>Max-Planck-Society</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/memory.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__COMMON_H__</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__COMMON_H__</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/config.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINUX</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RANDOM_MAX<sp/>2147483647</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RANDOM_MAX<sp/>RAND_MAX</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>float32_t;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>float64_t;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>floatmax_t;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_BOOST_SERIALIZATION</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="comment">//<sp/>split<sp/>member<sp/>function<sp/>serialize<sp/>funcition<sp/>into<sp/>save/load</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLOBAL_BOOST_SERIALIZATION_SPLIT_MEMBER()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor">template&lt;class<sp/>Archive&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor">void<sp/>serialize(Archive<sp/>&amp;ar,<sp/>const<sp/>unsigned<sp/>int<sp/>file_version)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>::boost::serialization::split_member(ar,<sp/>*this,<sp/>file_version);<sp/>\</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor">}</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//HAVE_BOOST_SERIALIZATION</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//__COMMON_H__</highlight></codeline>
+    </programlisting>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/common.h"/>
+  </compounddef>
+</doxygen>

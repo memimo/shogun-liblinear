@@ -1,0 +1,606 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1sKernel" kind="class" prot="public">
+    <compoundname>shogun::sKernel</compoundname>
+    <includes local="no">gpdt.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1a8241cfb189293f01a3d69967b3e9ca9d" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::sKernel::ker_type</definition>
+        <argsstring></argsstring>
+        <name>ker_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>kernel type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="90" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1a34ffeade91ce3ed15c95be6f1b8e4ea5" prot="public" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::sKernel::lx</definition>
+        <argsstring></argsstring>
+        <name>lx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>lx </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="92" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1a156eb07f0ddbf44cf7c5714d6f25a3b7" prot="public" static="no" mutable="no">
+        <type>int32_t **</type>
+        <definition>int32_t** shogun::sKernel::ix</definition>
+        <argsstring></argsstring>
+        <name>ix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="94" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1ad2070275b258c912e2bb69313fdca460" prot="public" static="no" mutable="no">
+        <type>float32_t **</type>
+        <definition>float32_t** shogun::sKernel::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>x </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="96" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1ae04fcba24df0582b5046cfdc8207f402" prot="public" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::sKernel::nor</definition>
+        <argsstring></argsstring>
+        <name>nor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>nor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="98" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1a4ea75b24157e2dda7c8c392f451167b2" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::sKernel::sigma</definition>
+        <argsstring></argsstring>
+        <name>sigma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sigma </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="100" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1a3a5b7d3a5dc6ea3e229d075ff56f61a1" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::sKernel::degree</definition>
+        <argsstring></argsstring>
+        <name>degree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>degree </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="102" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1a546d92405caa05b029abef5a18af51b2" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::sKernel::norm</definition>
+        <argsstring></argsstring>
+        <name>norm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalization factor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="104" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1a55173194d8a2fd23047d2d3d3bcf6ec2" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::sKernel::c_poly</definition>
+        <argsstring></argsstring>
+        <name>c_poly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>c poly </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="106" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1a8b91c3eca64905b7e849976358ecd5cb" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::sKernel::KernelEvaluations</definition>
+        <argsstring></argsstring>
+        <name>KernelEvaluations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>kernel evaluations </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="108" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1a55150ca60f3929d5468db37bd0622127" prot="public" static="no" mutable="no">
+        <type>float64_t(sKernel::*</type>
+        <definition>float64_t(sKernel::* shogun::sKernel::kernel_fun)(int32_t i, int32_t j)</definition>
+        <argsstring>)(int32_t i, int32_t j)</argsstring>
+        <name>kernel_fun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>call kernel fun</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>something floaty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="116"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1a9cad79b832b501c7b6d0325d262a5dcb" prot="private" static="no" mutable="no">
+        <type>CKernel *</type>
+        <definition>CKernel* shogun::sKernel::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="183" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1a8497352b4c72fc967a81f616152e66c9" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::sKernel::vauxRow</definition>
+        <argsstring></argsstring>
+        <name>vauxRow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="184" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1a459977d5e35f288242e6e4bd241a92e4" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::sKernel::IsSubproblem</definition>
+        <argsstring></argsstring>
+        <name>IsSubproblem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="185" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1aa54db5b23a80c275f1c2e3a779dd113e" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::sKernel::ell</definition>
+        <argsstring></argsstring>
+        <name>ell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="186" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1ae8c647800250296a0483577de58aa6e6" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::sKernel::dim</definition>
+        <argsstring></argsstring>
+        <name>dim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="186" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1sKernel_1a63f5e83e161f2dcf49a47b3a77189d9b" prot="private" static="no" mutable="no">
+        <type>float32_t *</type>
+        <definition>float32_t* shogun::sKernel::vaux</definition>
+        <argsstring></argsstring>
+        <name>vaux</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="187" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1sKernel_1a08bb5141cd86d13b3a7f7fcce2e14cf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::sKernel::sKernel</definition>
+        <argsstring>(shogun::CKernel *k, int32_t ell)</argsstring>
+        <name>sKernel</name>
+        <param>
+          <type>shogun::CKernel *</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>ell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ell </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1sKernel_1a38ced4c87ab4dfbfedf19b7cc861701a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::sKernel::~sKernel</definition>
+        <argsstring>()</argsstring>
+        <name>~sKernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1sKernel_1a46654e4ab6c14b7cc3a26441d60547f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::sKernel::SetData</definition>
+        <argsstring>(float32_t **x_, int32_t **ix_, int32_t *lx_, int32_t ell, int32_t dim)</argsstring>
+        <name>SetData</name>
+        <param>
+          <type>float32_t **</type>
+          <declname>x_</declname>
+        </param>
+        <param>
+          <type>int32_t **</type>
+          <declname>ix_</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>lx_</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>ell</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set <ref refid="structshogun_1_1data" kindref="compound">data</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new x </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ix_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new ix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lx_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new lx </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new ell </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dim </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1sKernel_1aa686fd86597ae119b83c69ffc8fc5561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::sKernel::SetSubproblem</definition>
+        <argsstring>(sKernel *ker, int32_t len, int32_t *perm)</argsstring>
+        <name>SetSubproblem</name>
+        <param>
+          <type><ref refid="classshogun_1_1sKernel" kindref="compound">sKernel</ref> *</type>
+          <declname>ker</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>perm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set subproblem</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>perm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>perm </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1sKernel_1ac3eda258aa769a52cd5b449448dc438f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::sKernel::Get</definition>
+        <argsstring>(int32_t i, int32_t j)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>int32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get an item from the kernel</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index i </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index j </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>item from kernel at index i, j </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="152" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="151" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1sKernel_1ae1b13081bde30ceec350f759529abb65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::sKernel::Add</definition>
+        <argsstring>(float64_t *v, int32_t j, float64_t mul)</argsstring>
+        <name>Add</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>mul</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add something</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>v </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>j </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mul</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mul </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1sKernel_1a4f27f3b312112f20cc194d08da67f175" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::sKernel::Prod</definition>
+        <argsstring>(float64_t *v, int32_t j)</argsstring>
+        <name>Prod</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>prod something</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>v </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>j </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>something floaty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1sKernel_1a405644b79a1144700239d510986b5060" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CKernel *</type>
+        <definition>CKernel* shogun::sKernel::get_kernel</definition>
+        <argsstring>()</argsstring>
+        <name>get_kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get kernel</para><para><simplesect kind="return"><para>kernel </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="178" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="177" bodyend="180"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classshogun_1_1sKernel_1a6fc12ff8d2c9c5de0faebed0795a4bfc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::sKernel::dot</definition>
+        <argsstring>(int32_t i, int32_t j)</argsstring>
+        <name>dot</name>
+        <param>
+          <type>int32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="189"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>s kernel </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="87" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="86" bodyend="190"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1sKernel_1ae1b13081bde30ceec350f759529abb65" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>Add</name></member>
+      <member refid="classshogun_1_1sKernel_1a55173194d8a2fd23047d2d3d3bcf6ec2" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>c_poly</name></member>
+      <member refid="classshogun_1_1sKernel_1a3a5b7d3a5dc6ea3e229d075ff56f61a1" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>degree</name></member>
+      <member refid="classshogun_1_1sKernel_1ae8c647800250296a0483577de58aa6e6" prot="private" virt="non-virtual"><scope>shogun::sKernel</scope><name>dim</name></member>
+      <member refid="classshogun_1_1sKernel_1a6fc12ff8d2c9c5de0faebed0795a4bfc" prot="private" virt="non-virtual"><scope>shogun::sKernel</scope><name>dot</name></member>
+      <member refid="classshogun_1_1sKernel_1aa54db5b23a80c275f1c2e3a779dd113e" prot="private" virt="non-virtual"><scope>shogun::sKernel</scope><name>ell</name></member>
+      <member refid="classshogun_1_1sKernel_1ac3eda258aa769a52cd5b449448dc438f" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>Get</name></member>
+      <member refid="classshogun_1_1sKernel_1a405644b79a1144700239d510986b5060" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>get_kernel</name></member>
+      <member refid="classshogun_1_1sKernel_1a459977d5e35f288242e6e4bd241a92e4" prot="private" virt="non-virtual"><scope>shogun::sKernel</scope><name>IsSubproblem</name></member>
+      <member refid="classshogun_1_1sKernel_1a156eb07f0ddbf44cf7c5714d6f25a3b7" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>ix</name></member>
+      <member refid="classshogun_1_1sKernel_1a8241cfb189293f01a3d69967b3e9ca9d" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>ker_type</name></member>
+      <member refid="classshogun_1_1sKernel_1a9cad79b832b501c7b6d0325d262a5dcb" prot="private" virt="non-virtual"><scope>shogun::sKernel</scope><name>kernel</name></member>
+      <member refid="classshogun_1_1sKernel_1a55150ca60f3929d5468db37bd0622127" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>kernel_fun</name></member>
+      <member refid="classshogun_1_1sKernel_1a8b91c3eca64905b7e849976358ecd5cb" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>KernelEvaluations</name></member>
+      <member refid="classshogun_1_1sKernel_1a34ffeade91ce3ed15c95be6f1b8e4ea5" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>lx</name></member>
+      <member refid="classshogun_1_1sKernel_1ae04fcba24df0582b5046cfdc8207f402" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>nor</name></member>
+      <member refid="classshogun_1_1sKernel_1a546d92405caa05b029abef5a18af51b2" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>norm</name></member>
+      <member refid="classshogun_1_1sKernel_1a4f27f3b312112f20cc194d08da67f175" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>Prod</name></member>
+      <member refid="classshogun_1_1sKernel_1a46654e4ab6c14b7cc3a26441d60547f9" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>SetData</name></member>
+      <member refid="classshogun_1_1sKernel_1aa686fd86597ae119b83c69ffc8fc5561" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>SetSubproblem</name></member>
+      <member refid="classshogun_1_1sKernel_1a4ea75b24157e2dda7c8c392f451167b2" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>sigma</name></member>
+      <member refid="classshogun_1_1sKernel_1a08bb5141cd86d13b3a7f7fcce2e14cf6" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>sKernel</name></member>
+      <member refid="classshogun_1_1sKernel_1a63f5e83e161f2dcf49a47b3a77189d9b" prot="private" virt="non-virtual"><scope>shogun::sKernel</scope><name>vaux</name></member>
+      <member refid="classshogun_1_1sKernel_1a8497352b4c72fc967a81f616152e66c9" prot="private" virt="non-virtual"><scope>shogun::sKernel</scope><name>vauxRow</name></member>
+      <member refid="classshogun_1_1sKernel_1ad2070275b258c912e2bb69313fdca460" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>x</name></member>
+      <member refid="classshogun_1_1sKernel_1a38ced4c87ab4dfbfedf19b7cc861701a" prot="public" virt="non-virtual"><scope>shogun::sKernel</scope><name>~sKernel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

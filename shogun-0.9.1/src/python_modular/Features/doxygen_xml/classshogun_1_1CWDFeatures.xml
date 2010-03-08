@@ -1,0 +1,645 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CWDFeatures" kind="class" prot="public">
+    <compoundname>shogun::CWDFeatures</compoundname>
+    <basecompoundref refid="classshogun_1_1CDotFeatures" prot="public" virt="non-virtual">shogun::CDotFeatures</basecompoundref>
+    <includes local="no">WDFeatures.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CWDFeatures_1a95596e0a1e82b85511cf5d25141112f4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1CStringFeatures" kindref="compound">CStringFeatures</ref>&lt; uint8_t &gt; *</type>
+        <definition>CStringFeatures&lt;uint8_t&gt;* shogun::CWDFeatures::strings</definition>
+        <argsstring></argsstring>
+        <name>strings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>stringfeatures the wdfeatures are based on </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="139" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDFeatures_1a22971412415bfa1a465aceb3dedae516" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWDFeatures::normalization_const</definition>
+        <argsstring></argsstring>
+        <name>normalization_const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalization const </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="142" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDFeatures_1affd171abfd98ba7f454d4727c5c110a0" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDFeatures::degree</definition>
+        <argsstring></argsstring>
+        <name>degree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>degree </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="145" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDFeatures_1aa258be0f7ca60b2a5ea95cb581951088" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDFeatures::from_degree</definition>
+        <argsstring></argsstring>
+        <name>from_degree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>from degree </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="147" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDFeatures_1ae0170becdf4d302c7bec531672e48fb8" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDFeatures::string_length</definition>
+        <argsstring></argsstring>
+        <name>string_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of string in vector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="149" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDFeatures_1a886ba6434a9eaa5638fe7e8f602b2f63" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDFeatures::num_strings</definition>
+        <argsstring></argsstring>
+        <name>num_strings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of strings </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="151" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDFeatures_1a8f847ac107d115061aa46dd18366549d" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDFeatures::alphabet_size</definition>
+        <argsstring></argsstring>
+        <name>alphabet_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>size of alphabet </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="153" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDFeatures_1ac62c8cb191336e28e26a3916359bacb5" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDFeatures::w_dim</definition>
+        <argsstring></argsstring>
+        <name>w_dim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>w dim </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="155" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDFeatures_1afeb5ebcf1212f37f798a7e2dcfa4a8e5" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CWDFeatures::wd_weights</definition>
+        <argsstring></argsstring>
+        <name>wd_weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>wd weights </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="157" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CWDFeatures_1a383c386cf33e5c241328c59bd5641c5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CWDFeatures::CWDFeatures</definition>
+        <argsstring>(CStringFeatures&lt; uint8_t &gt; *str, int32_t order, int32_t from_order)</argsstring>
+        <name>CWDFeatures</name>
+        <param>
+          <type><ref refid="classshogun_1_1CStringFeatures" kindref="compound">CStringFeatures</ref>&lt; uint8_t &gt; *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>from_order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stringfeatures (of bytes) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of wd kernel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>from_order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>use first order weights from higher order weighting </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDFeatures_1af2c9d0c8eb26979774d553f9fe27b0a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CWDFeatures::CWDFeatures</definition>
+        <argsstring>(const CWDFeatures &amp;orig)</argsstring>
+        <name>CWDFeatures</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CWDFeatures" kindref="compound">CWDFeatures</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDFeatures_1a45eaa3aad75bac529c024a26b6575333" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CWDFeatures::~CWDFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>~CWDFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDFeatures_1ad7e1014f94e8923c66aa7f4f118bfa6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CWDFeatures::get_dim_feature_space</definition>
+        <argsstring>()</argsstring>
+        <name>get_dim_feature_space</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a49b51004870dd777108e8935c5102070">get_dim_feature_space</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>obtain the dimensionality of the feature space</para><para>(not mix this up with the dimensionality of the input space, usually obtained via get_num_features())</para><para><simplesect kind="return"><para>dimensionality </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="53" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDFeatures_1a66791d3f00e1c7cf6c4cfb5369bd7a2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CWDFeatures::dot</definition>
+        <argsstring>(int32_t vec_idx1, int32_t vec_idx2)</argsstring>
+        <name>dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1aceb2b9cfc936eee500067ae102d2e0cb">dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and vector2, appointed by their indices</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec_idx2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of second vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDFeatures_1a3d817b64070bb6374155fc4c200d0564" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CWDFeatures::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDFeatures_1a0bc4e1f22d49f4c6bc0e7246fd304e34" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CWDFeatures::add_to_dense_vec</definition>
+        <argsstring>(float64_t alpha, int32_t vec_idx1, float64_t *vec2, int32_t vec2_len, bool abs_val=false)</argsstring>
+        <name>add_to_dense_vec</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a96e00d9794bbe0ad0248bce58c4a346d">add_to_dense_vec</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>abs_val</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add vector 1 multiplied with alpha to dense vector2</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scalar alpha </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>abs_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true add the absolute value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDFeatures_1aa831c967271f4ba4ea1a8e5d33fef203" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CWDFeatures::get_nnz_features_for_vector</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>get_nnz_features_for_vector</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a45e751c294896ffb6faae83e0dc5f140">get_nnz_features_for_vector</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of non-zero features in vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of non-zero features in vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="89" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDFeatures_1acbe38270fd1a92bcc54a2bc46a98a360" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+        <definition>virtual CFeatures* shogun::CWDFeatures::duplicate</definition>
+        <argsstring>() const </argsstring>
+        <name>duplicate</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a2f7adf01a52fee35ac71e455501125a9">duplicate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>duplicate feature object</para><para><simplesect kind="return"><para>feature object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDFeatures_1a1543e01d51ed576e43f29cd54dad7190" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureType</type>
+        <definition>virtual EFeatureType shogun::CWDFeatures::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type</para><para><simplesect kind="return"><para>templated feature type </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="104" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDFeatures_1a926fec48a11424e17620a45d165cf925" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureClass</type>
+        <definition>virtual EFeatureClass shogun::CWDFeatures::get_feature_class</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_class</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a8e1c6229db82a9215cb2994202e657f5">get_feature_class</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature class</para><para><simplesect kind="return"><para>feature class </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="113" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDFeatures_1a24d07f66e633a50d8bc7e563e76d1b16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CWDFeatures::get_num_vectors</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_vectors</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a1f30fccf7c6c9af03277d75d0d983c52">get_num_vectors</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of examples/vectors</para><para>abstract base method</para><para><simplesect kind="return"><para>number of examples/vectors </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="118" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDFeatures_1a7af21f8ee52b8c9fe181ea89103d0622" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CWDFeatures::get_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_size</name>
+        <reimplements refid="classshogun_1_1CFeatures_1aeed80a002f6255d1ca5c8d1698deb7bc">get_size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get memory footprint of one feature</para><para>abstract base method</para><para><simplesect kind="return"><para>memory footprint of one feature </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="123" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDFeatures_1aa5dfe96d80b5783dd1d4131d41bc103c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CWDFeatures::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="128" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="128" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CWDFeatures_1ad8c8d63226918c289b63f09326f1c6d1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CWDFeatures::set_normalization_const</definition>
+        <argsstring>()</argsstring>
+        <name>set_normalization_const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set normalization constant </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDFeatures_1a1af833bcc1315f938dde38952be34463" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CWDFeatures::set_wd_weights</definition>
+        <argsstring>()</argsstring>
+        <name>set_wd_weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>create wd kernel weighting heuristic </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="135"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Features that compute the Weighted Degreee Kernel feature space explicitly. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para>CWeightedDegreeStringKernel </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="136">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="137" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+      <node id="135">
+        <label>shogun::CWDFeatures</label>
+        <link refid="classshogun_1_1CWDFeatures"/>
+        <childnode refid="136" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="142">
+        <label>shogun::CAlphabet</label>
+        <link refid="classshogun_1_1CAlphabet"/>
+      </node>
+      <node id="139">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="140" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>shogun::T_STRING&lt; uint8_t &gt;</label>
+        <link refid="classshogun_1_1T__STRING"/>
+      </node>
+      <node id="141">
+        <label>shogun::CStringFeatures&lt; uint8_t &gt;</label>
+        <link refid="classshogun_1_1CStringFeatures"/>
+        <childnode refid="140" relation="public-inheritance">
+        </childnode>
+        <childnode refid="142" relation="usage">
+          <edgelabel>alphabet</edgelabel>
+        </childnode>
+        <childnode refid="143" relation="usage">
+          <edgelabel>features</edgelabel>
+        </childnode>
+      </node>
+      <node id="140">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+      <node id="138">
+        <label>shogun::CWDFeatures</label>
+        <link refid="classshogun_1_1CWDFeatures"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+        <childnode refid="141" relation="usage">
+          <edgelabel>strings</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" line="28" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/WDFeatures.h" bodystart="27" bodyend="158"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CFeatures_1a793f371cc7dd4897997b01612f7d4b77" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>add_preproc</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1a0bc4e1f22d49f4c6bc0e7246fd304e34" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>add_to_dense_vec</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1a8f847ac107d115061aa46dd18366549d" prot="protected" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>alphabet_size</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ad688539536313914ec3711bce1739445" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a040fa070f47a2845e5fdcb89ca7c4565" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a91054c534e25c0e934ebb1a2b7217d2a" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a91ac9daf871dd99b358da47eea74eeb3" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1be7a2c5d471a3586c44988e2b4e1129" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a4ad3a39235806ab1999a1c5fb5290486" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a89609a765e1ab682ea6e73402b56c961" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>check_feature_compatibility</name></member>
+      <member refid="classshogun_1_1CFeatures_1afab00f1403d1349fd18cca31a6d63de3" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>clean_preprocs</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a4cb73c0a47276f345c49bc583d8344b2" prot="protected" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>combined_weight</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1a383c386cf33e5c241328c59bd5641c5a" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>CWDFeatures</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1af2c9d0c8eb26979774d553f9fe27b0a6" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>CWDFeatures</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1affd171abfd98ba7f454d4727c5c110a0" prot="protected" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>degree</name></member>
+      <member refid="classshogun_1_1CFeatures_1accdc453796e319852dd41fffa0c0f70c" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>del_preproc</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1a3d817b64070bb6374155fc4c200d0564" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ae81ed7be6b000db0ae624eb781e93590" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>dense_dot_range</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a2a69a10f3ffcc5ed76322ebbd09b5fcb" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>dense_dot_range_helper</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a01ce37f41f397454c58bc2f05987d0c1" prot="protected" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>display_progress</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1a66791d3f00e1c7cf6c4cfb5369bd7a2c" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1acbe38270fd1a92bcc54a2bc46a98a360" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>duplicate</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1aa258be0f7ca60b2a5ea95cb581951088" prot="protected" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>from_degree</name></member>
+      <member refid="classshogun_1_1CFeatures_1a29b93c241dca0eba1415f873c83d27d8" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a199b84c188e8f98f088c248fe5c0adea" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>get_combined_feature_weight</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1ad7e1014f94e8923c66aa7f4f118bfa6a" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>get_dim_feature_space</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1a926fec48a11424e17620a45d165cf925" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ab3b9a12fc4f02f03e8a655e8e4884058" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>get_feature_matrix</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1a1543e01d51ed576e43f29cd54dad7190" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1aa5dfe96d80b5783dd1d4131d41bc103c" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1aa831c967271f4ba4ea1a8e5d33fef203" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>get_nnz_features_for_vector</name></member>
+      <member refid="classshogun_1_1CFeatures_1a7662d240eab24d5753385b0f9e6e9bae" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>get_num_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a9010a03b11399648cc5da7194fb5e707" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>get_num_preprocessed</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1a24d07f66e633a50d8bc7e563e76d1b16" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>get_num_vectors</name></member>
+      <member refid="classshogun_1_1CFeatures_1ac1015e3a736e4e6d4d6fbe24416af6c4" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>get_preproc</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1a7af21f8ee52b8c9fe181ea89103d0622" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>get_size</name></member>
+      <member refid="classshogun_1_1CFeatures_1a07f1d7dc618a9f5f76663d80ad549d38" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1248f8829f63f9c9a42ac36065961295" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>is_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1a6412ef81478c3c9dadac2a87a544f640" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>list_feature_obj</name></member>
+      <member refid="classshogun_1_1CFeatures_1adef76a926672875a64aedd2b00c8f2bd" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>load</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1a22971412415bfa1a465aceb3dedae516" prot="protected" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>normalization_const</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1a886ba6434a9eaa5638fe7e8f602b2f63" prot="protected" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>num_strings</name></member>
+      <member refid="classshogun_1_1CFeatures_1a57d67048d44a7a7ea92bcbdfed9060ea" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>reshape</name></member>
+      <member refid="classshogun_1_1CFeatures_1ae1341e3fa42733d8729d8f2dcf73709b" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>save</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a3cbcb41f5f6fb4817568469120204c10" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>set_combined_feature_weight</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1ad8c8d63226918c289b63f09326f1c6d1" prot="protected" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>set_normalization_const</name></member>
+      <member refid="classshogun_1_1CFeatures_1aa88c27c0f3885d23ac71c4cc2e55c431" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>set_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab43db0bd4a231249ce4bc65f6e15f695" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1a1af833bcc1315f938dde38952be34463" prot="protected" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>set_wd_weights</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1ae0170becdf4d302c7bec531672e48fb8" prot="protected" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>string_length</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1a95596e0a1e82b85511cf5d25141112f4" prot="protected" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>strings</name></member>
+      <member refid="classshogun_1_1CFeatures_1a3ff3f03688a7f6a1b36dab8677407166" prot="public" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1ac62c8cb191336e28e26a3916359bacb5" prot="protected" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>w_dim</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1afeb5ebcf1212f37f798a7e2dcfa4a8e5" prot="protected" virt="non-virtual"><scope>shogun::CWDFeatures</scope><name>wd_weights</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a7c86c8f9ba308b59a8cf17f236be70d2" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>~CDotFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab0e2a8a18ac5056f802e4aa51d4fcd4f" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>~CFeatures</name></member>
+      <member refid="classshogun_1_1CWDFeatures_1a45eaa3aad75bac529c024a26b6575333" prot="public" virt="virtual"><scope>shogun::CWDFeatures</scope><name>~CWDFeatures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

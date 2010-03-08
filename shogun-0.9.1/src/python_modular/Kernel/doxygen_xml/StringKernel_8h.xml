@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="StringKernel_8h" kind="file">
+    <compoundname>StringKernel.h</compoundname>
+    <includes refid="Kernel_8h" local="yes">kernel/Kernel.h</includes>
+    <includes local="yes">features/StringFeatures.h</includes>
+    <includedby refid="CommUlongStringKernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CommUlongStringKernel.h</includedby>
+    <includedby refid="CommWordStringKernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CommWordStringKernel.h</includedby>
+    <includedby refid="FixedDegreeStringKernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FixedDegreeStringKernel.h</includedby>
+    <includedby refid="HistogramWordStringKernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/HistogramWordStringKernel.h</includedby>
+    <includedby refid="LinearStringKernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearStringKernel.h</includedby>
+    <includedby refid="LocalAlignmentStringKernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LocalAlignmentStringKernel.h</includedby>
+    <includedby refid="LocalityImprovedStringKernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LocalityImprovedStringKernel.h</includedby>
+    <includedby refid="MatchWordStringKernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MatchWordStringKernel.h</includedby>
+    <includedby refid="OligoStringKernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/OligoStringKernel.h</includedby>
+    <includedby refid="PolyMatchStringKernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/PolyMatchStringKernel.h</includedby>
+    <includedby refid="PolyMatchWordStringKernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/PolyMatchWordStringKernel.h</includedby>
+    <includedby refid="RegulatoryModulesStringKernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RegulatoryModulesStringKernel.h</includedby>
+    <includedby refid="SalzbergWordStringKernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SalzbergWordStringKernel.h</includedby>
+    <includedby refid="SimpleLocalityImprovedStringKernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SimpleLocalityImprovedStringKernel.h</includedby>
+    <includedby refid="WeightedDegreePositionStringKernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreePositionStringKernel.h</includedby>
+    <includedby refid="WeightedDegreeStringKernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h</includedby>
+    <incdepgraph>
+      <node id="165">
+        <label>/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/StringKernel.h</label>
+        <link refid="StringKernel.h"/>
+        <childnode refid="166" relation="include">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>features/StringFeatures.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classshogun_1_1CStringKernel" prot="public">shogun::CStringKernel</innerclass>
+    <innernamespace refid="namespaceshogun">shogun</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Written<sp/>(W)<sp/>1999-2009<sp/>Soeren<sp/>Sonnenburg</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>1999-2009<sp/>Fraunhofer<sp/>Institute<sp/>FIRST<sp/>and<sp/>Max-Planck-Society</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_STRINGKERNEL_H___</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_STRINGKERNEL_H___</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;kernel/Kernel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;features/StringFeatures.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">shogun</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24" refid="classshogun_1_1CStringKernel" refkind="compound"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ST&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classshogun_1_1CStringKernel" kindref="compound" tooltip="Template class StringKernel, is the base class of all String Kernels.">CStringKernel</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CKernel" kindref="compound" tooltip="The Kernel base class.">CKernel</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CStringKernel_1af170456997db0dda48d7abe68c9f94ce" kindref="member">CStringKernel</ref>(int32_t<sp/>cachesize)<sp/>:<sp/><ref refid="classshogun_1_1CKernel_1a77872c37fccc650cd7f918b253bbeb68" kindref="member">CKernel</ref>(cachesize)<sp/>{}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CStringKernel_1af170456997db0dda48d7abe68c9f94ce" kindref="member">CStringKernel</ref>(CFeatures<sp/>*l,<sp/>CFeatures<sp/>*r)<sp/>:<sp/><ref refid="classshogun_1_1CKernel_1a77872c37fccc650cd7f918b253bbeb68" kindref="member">CKernel</ref>(10)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CStringKernel_1a42b3447b58bb35080b980a7fde823376" kindref="member">init</ref>(l,<sp/>r);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CStringKernel_1a42b3447b58bb35080b980a7fde823376" kindref="member">init</ref>(CFeatures*<sp/>l,<sp/>CFeatures*<sp/>r)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CStringKernel_1a42b3447b58bb35080b980a7fde823376" kindref="member">CKernel::init</ref>(l,r);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(l-&gt;get_feature_class()==C_STRING);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(r-&gt;get_feature_class()==C_STRING);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(l-&gt;get_feature_type()==this-&gt;<ref refid="classshogun_1_1CStringKernel_1af95571fddbc562ccf38623511a8a629c" kindref="member">get_feature_type</ref>());</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(r-&gt;get_feature_type()==this-&gt;<ref refid="classshogun_1_1CStringKernel_1af95571fddbc562ccf38623511a8a629c" kindref="member">get_feature_type</ref>());</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>EFeatureClass<sp/><ref refid="classshogun_1_1CStringKernel_1a36d05c13b46e70f5d9bc8d02945b1750" kindref="member">get_feature_class</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>C_STRING;<sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>EFeatureType<sp/><ref refid="classshogun_1_1CStringKernel_1af95571fddbc562ccf38623511a8a629c" kindref="member">get_feature_type</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_BOOST_SERIALIZATION</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>class<sp/>::boost::serialization::access;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Archive&gt;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>serialize(Archive<sp/>&amp;<sp/>ar,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>archive_version)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SG_DEBUG(</highlight><highlight class="stringliteral">&quot;archiving<sp/>CStringKernel\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ar<sp/>&amp;<sp/>::boost::serialization::base_object&lt;CKernel&gt;(*this);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SG_DEBUG(</highlight><highlight class="stringliteral">&quot;done<sp/>CStringKernel\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//HAVE_BOOST_SERIALIZATION</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>EFeatureType<sp/><ref refid="classshogun_1_1CStringKernel_1af95571fddbc562ccf38623511a8a629c" kindref="member">CStringKernel&lt;float64_t&gt;::get_feature_type</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>F_DREAL;<sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>EFeatureType<sp/><ref refid="classshogun_1_1CStringKernel_1af95571fddbc562ccf38623511a8a629c" kindref="member">CStringKernel&lt;uint64_t&gt;::get_feature_type</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>F_ULONG;<sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>EFeatureType<sp/>CStringKernel&lt;int32_t&gt;::get_feature_type()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>F_INT;<sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>EFeatureType<sp/><ref refid="classshogun_1_1CStringKernel_1af95571fddbc562ccf38623511a8a629c" kindref="member">CStringKernel&lt;uint16_t&gt;::get_feature_type</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>F_WORD;<sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>EFeatureType<sp/>CStringKernel&lt;int16_t&gt;::get_feature_type()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>F_SHORT;<sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>EFeatureType<sp/><ref refid="classshogun_1_1CStringKernel_1af95571fddbc562ccf38623511a8a629c" kindref="member">CStringKernel&lt;uint8_t&gt;::get_feature_type</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>F_BYTE;<sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>EFeatureType<sp/><ref refid="classshogun_1_1CStringKernel_1af95571fddbc562ccf38623511a8a629c" kindref="member">CStringKernel&lt;char&gt;::get_feature_type</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>F_CHAR;<sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_STRINGKERNEL_H__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/StringKernel.h"/>
+  </compounddef>
+</doxygen>

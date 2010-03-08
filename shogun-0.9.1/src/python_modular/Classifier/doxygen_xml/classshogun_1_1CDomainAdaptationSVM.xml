@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CDomainAdaptationSVM" kind="class" prot="public">
+    <compoundname>shogun::CDomainAdaptationSVM</compoundname>
+    <includes local="no">DomainAdaptationSVM.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CDomainAdaptationSVM_1ac803068541d97ad0de6efc091930e5a1" prot="protected" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1CSVM" kindref="compound">CSVM</ref> *</type>
+        <definition>CSVM* shogun::CDomainAdaptationSVM::presvm</definition>
+        <argsstring></argsstring>
+        <name>presvm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SVM to regularize against </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" line="137" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDomainAdaptationSVM_1a245430b6e8d708e735aab19e2a827679" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CDomainAdaptationSVM::B</definition>
+        <argsstring></argsstring>
+        <name>B</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>regularization parameter B </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" line="141" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDomainAdaptationSVM_1a605b1728fb95fd6770b6f1ab0a2285ae" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CDomainAdaptationSVM::train_factor</definition>
+        <argsstring></argsstring>
+        <name>train_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flag to switch off regularization in training </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" line="145" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CDomainAdaptationSVM_1a4f5ac2025725931f603dfa85ad72571c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CDomainAdaptationSVM::CDomainAdaptationSVM</definition>
+        <argsstring>()</argsstring>
+        <name>CDomainAdaptationSVM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" line="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDomainAdaptationSVM_1a1df66df15a9305f1d6683f72b8683374" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CDomainAdaptationSVM::CDomainAdaptationSVM</definition>
+        <argsstring>(float64_t C, CKernel *k, CLabels *lab, CSVM *presvm, float64_t B)</argsstring>
+        <name>CDomainAdaptationSVM</name>
+        <param>
+          <type>float64_t</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>CKernel *</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>CLabels *</type>
+          <declname>lab</declname>
+        </param>
+        <param>
+          <type><ref refid="classshogun_1_1CSVM" kindref="compound">CSVM</ref> *</type>
+          <declname>presvm</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cost constant C </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>labels </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>presvm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>trained SVM to regularize against </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>trade-off constant B </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDomainAdaptationSVM_1a9ebf8ae9aa613f4a78efd1e307e9a8be" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CDomainAdaptationSVM::~CDomainAdaptationSVM</definition>
+        <argsstring>()</argsstring>
+        <name>~CDomainAdaptationSVM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDomainAdaptationSVM_1aab1edc22914a75ebb590e15966611de9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDomainAdaptationSVM::init</definition>
+        <argsstring>(CSVM *presvm, float64_t B)</argsstring>
+        <name>init</name>
+        <param>
+          <type><ref refid="classshogun_1_1CSVM" kindref="compound">CSVM</ref> *</type>
+          <declname>presvm</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>init SVM</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>presvm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>trained SVM to regularize against </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>trade-off constant B </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDomainAdaptationSVM_1abf5522db6753bef105b1cbbc30b44b36" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CDomainAdaptationSVM::train</definition>
+        <argsstring>(CFeatures *data=NULL)</argsstring>
+        <name>train</name>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>train SVM classifier</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training <ref refid="structshogun_1_1data" kindref="compound">data</ref> (parameter can be avoided if distance or kernel-based classifiers are used and distance/kernels are initialized with train <ref refid="structshogun_1_1data" kindref="compound">data</ref>)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether training was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDomainAdaptationSVM_1adfc98b1959cd9dc6244c54214718c220" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EClassifierType</type>
+        <definition>virtual EClassifierType shogun::CDomainAdaptationSVM::get_classifier_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_classifier_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier type</para><para><simplesect kind="return"><para>classifier type LIGHT </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" line="70" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDomainAdaptationSVM_1acf5c3097a06186565a5752c25c867a37" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>CLabels *</type>
+        <definition>virtual CLabels* shogun::CDomainAdaptationSVM::classify</definition>
+        <argsstring>(CFeatures *data)</argsstring>
+        <name>classify</name>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify objects</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(test)<ref refid="structshogun_1_1data" kindref="compound">data</ref> to be classified </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>classified labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDomainAdaptationSVM_1ac5ad9f2961760da2b8c671f53aea7819" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classshogun_1_1CSVM" kindref="compound">CSVM</ref> *</type>
+        <definition>virtual CSVM* shogun::CDomainAdaptationSVM::get_presvm</definition>
+        <argsstring>()</argsstring>
+        <name>get_presvm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>returns SVM that is used as prior information</para><para><simplesect kind="return"><para>presvm </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDomainAdaptationSVM_1a4b5d743ba17ad7ab8cf11c6be251da30" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CDomainAdaptationSVM::get_B</definition>
+        <argsstring>()</argsstring>
+        <name>get_B</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>getter for regularization parameter B</para><para><simplesect kind="return"><para>regularization parameter B </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDomainAdaptationSVM_1ade7ad2aa12d767a2f1bb699bae5772ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CDomainAdaptationSVM::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" line="96" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CDomainAdaptationSVM_1a4871b2288ccee9ed71e9792cb6202782" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CDomainAdaptationSVM::is_presvm_sane</definition>
+        <argsstring>()</argsstring>
+        <name>is_presvm_sane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check sanity of presvm</para><para><simplesect kind="return"><para>true if sane, throws SG_ERROR otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" line="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class DomainAdaptiveSVM </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="37">
+        <label>shogun::CKernelMachine</label>
+        <link refid="classshogun_1_1CKernelMachine"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>shogun::CMKL</label>
+        <link refid="classshogun_1_1CMKL"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>svm</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>shogun::CDomainAdaptationSVM</label>
+        <link refid="classshogun_1_1CDomainAdaptationSVM"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>presvm</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+      <node id="36">
+        <label>shogun::CSVM</label>
+        <link refid="classshogun_1_1CSVM"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>mkl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" line="24" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h" bodystart="23" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CDomainAdaptationSVM_1a245430b6e8d708e735aab19e2a827679" prot="protected" virt="non-virtual"><scope>shogun::CDomainAdaptationSVM</scope><name>B</name></member>
+      <member refid="classshogun_1_1CDomainAdaptationSVM_1a4f5ac2025725931f603dfa85ad72571c" prot="public" virt="non-virtual"><scope>shogun::CDomainAdaptationSVM</scope><name>CDomainAdaptationSVM</name></member>
+      <member refid="classshogun_1_1CDomainAdaptationSVM_1a1df66df15a9305f1d6683f72b8683374" prot="public" virt="non-virtual"><scope>shogun::CDomainAdaptationSVM</scope><name>CDomainAdaptationSVM</name></member>
+      <member refid="classshogun_1_1CDomainAdaptationSVM_1acf5c3097a06186565a5752c25c867a37" prot="public" virt="virtual"><scope>shogun::CDomainAdaptationSVM</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CDomainAdaptationSVM_1a4b5d743ba17ad7ab8cf11c6be251da30" prot="public" virt="virtual"><scope>shogun::CDomainAdaptationSVM</scope><name>get_B</name></member>
+      <member refid="classshogun_1_1CDomainAdaptationSVM_1adfc98b1959cd9dc6244c54214718c220" prot="public" virt="virtual"><scope>shogun::CDomainAdaptationSVM</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CDomainAdaptationSVM_1ade7ad2aa12d767a2f1bb699bae5772ee" prot="public" virt="virtual"><scope>shogun::CDomainAdaptationSVM</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CDomainAdaptationSVM_1ac5ad9f2961760da2b8c671f53aea7819" prot="public" virt="virtual"><scope>shogun::CDomainAdaptationSVM</scope><name>get_presvm</name></member>
+      <member refid="classshogun_1_1CDomainAdaptationSVM_1aab1edc22914a75ebb590e15966611de9" prot="public" virt="non-virtual"><scope>shogun::CDomainAdaptationSVM</scope><name>init</name></member>
+      <member refid="classshogun_1_1CDomainAdaptationSVM_1a4871b2288ccee9ed71e9792cb6202782" prot="protected" virt="virtual"><scope>shogun::CDomainAdaptationSVM</scope><name>is_presvm_sane</name></member>
+      <member refid="classshogun_1_1CDomainAdaptationSVM_1ac803068541d97ad0de6efc091930e5a1" prot="protected" virt="non-virtual"><scope>shogun::CDomainAdaptationSVM</scope><name>presvm</name></member>
+      <member refid="classshogun_1_1CDomainAdaptationSVM_1abf5522db6753bef105b1cbbc30b44b36" prot="public" virt="virtual"><scope>shogun::CDomainAdaptationSVM</scope><name>train</name></member>
+      <member refid="classshogun_1_1CDomainAdaptationSVM_1a605b1728fb95fd6770b6f1ab0a2285ae" prot="protected" virt="non-virtual"><scope>shogun::CDomainAdaptationSVM</scope><name>train_factor</name></member>
+      <member refid="classshogun_1_1CDomainAdaptationSVM_1a9ebf8ae9aa613f4a78efd1e307e9a8be" prot="public" virt="virtual"><scope>shogun::CDomainAdaptationSVM</scope><name>~CDomainAdaptationSVM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="gpdtsolve_8h" kind="file">
+    <compoundname>gpdtsolve.h</compoundname>
+    <includes local="yes">base/SGObject.h</includes>
+    <incdepgraph>
+      <node id="119">
+        <label>/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h</label>
+        <link refid="gpdtsolve.h"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>base/SGObject.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classshogun_1_1QPproblem" prot="public">shogun::QPproblem</innerclass>
+    <innernamespace refid="namespaceshogun">shogun</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>***<sp/>Authors:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>***<sp/><sp/>Thomas<sp/>Serafini,<sp/>Luca<sp/>Zanni<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>***<sp/><sp/><sp/>Dept.<sp/>of<sp/>Mathematics,<sp/>University<sp/>of<sp/>Modena<sp/>and<sp/>Reggio<sp/>Emilia<sp/>-<sp/>ITALY<sp/>***</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>***<sp/><sp/><sp/>serafini.thomas@unimo.it,<sp/>zanni.luca@unimo.it<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>***<sp/><sp/>Gaetano<sp/>Zanghirati<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>***<sp/><sp/><sp/>Dept.<sp/>of<sp/>Mathematics,<sp/>University<sp/>of<sp/>Ferrara<sp/>-<sp/>ITALY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>***<sp/><sp/><sp/>g.zanghirati@unife.it<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>***<sp/>Software<sp/>homepage:<sp/>http://dm.unife.it/gpdt<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>***<sp/>This<sp/>work<sp/>is<sp/>supported<sp/>by<sp/>the<sp/>Italian<sp/>FIRB<sp/>Projects<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/>&apos;Statistical<sp/>Learning:<sp/>Theory,<sp/>Algorithms<sp/>and<sp/>Applications&apos;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/>(grant<sp/>RBAU01877P),<sp/>http://slipguru.disi.unige.it/ASTA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>***<sp/>and<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/>&apos;Parallel<sp/>Algorithms<sp/>and<sp/>Numerical<sp/>Nonlinear<sp/>Optimization&apos;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/>(grant<sp/>RBAU01JYPN),<sp/>http://dm.unife.it/pn2o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>***<sp/>Copyright<sp/>(C)<sp/>2004<sp/>by<sp/>T.<sp/>Serafini,<sp/>G.<sp/>Zanghirati,<sp/>L.<sp/>Zanni.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>***<sp/>SHOGUN<sp/>adaptions<sp/><sp/>Written<sp/>(W)<sp/>2006-2008<sp/>Soeren<sp/>Sonnenburg<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;base/SGObject.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">shogun</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35" refid="classshogun_1_1QPproblem" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classshogun_1_1QPproblem" kindref="compound">QPproblem</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>CSGObject</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-----------------<sp/>Public<sp/>Data<sp/>---------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1QPproblem_1a655c11e2df5c9510e35affceccd64023" kindref="member">chunk_size</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1QPproblem_1a6d76807ad4acbf17b459fa6896e3b7ea" kindref="member">ell</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/>*<ref refid="classshogun_1_1QPproblem_1af1d5ecb3122c310877409fb9290cdb12" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1QPproblem_1a62fd3d43e936159832f9290797429371" kindref="member">DELTAsv</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1QPproblem_1ae3ad58d7fb3af7a989205e03026258d1" kindref="member">q</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1QPproblem_1a7b7956f8a5bd676e0b02a97c6ab8479e" kindref="member">maxmw</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>float64_t<sp/><sp/><ref refid="classshogun_1_1QPproblem_1a89437ffa8df835a7519e5c5dae403387" kindref="member">c_const</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>float64_t<sp/><sp/><ref refid="classshogun_1_1QPproblem_1ac2469c14bb93a1b63b5b87ecfb69c44b" kindref="member">bee</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>float64_t<sp/><sp/><ref refid="classshogun_1_1QPproblem_1a94319ec1e985314d5a739a07004e60a2" kindref="member">delta</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1QPproblem_1af719bcc7593abca282c41d1e1cfe61fd" kindref="member">linadd</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><ref refid="classshogun_1_1sKernel" kindref="compound">sKernel</ref>*<sp/><ref refid="classshogun_1_1QPproblem_1ae29cda393231e1a23c02eaf5e48b2b64" kindref="member">KER</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1QPproblem_1ad7fbb962674228165f88d458180bb1b4" kindref="member">ker_type</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1QPproblem_1a513df05170fa974d5452ba53590ce53b" kindref="member">projection_solver</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1QPproblem_1a94fb7ab88cee2d88e00925876b4bf7b1" kindref="member">projection_projector</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1QPproblem_1a3615f7854e4bea1312a5945bbd05e4cf" kindref="member">PreprocessMode</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1QPproblem_1a7ca2fec61765511b8244e7f6e0b01668" kindref="member">preprocess_size</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1QPproblem_1ab1941f4ec2d59450e870cebd20088a76" kindref="member">verbosity</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>float64_t<sp/><sp/><ref refid="classshogun_1_1QPproblem_1a8291438cee2e59e400061f2dc7ed2d53" kindref="member">tau_proximal</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1QPproblem_1a571922ff5177f80974ea40eec630e71b" kindref="member">objective_value</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-----------------<sp/>Public<sp/>Methods<sp/>---------------</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="classshogun_1_1QPproblem_1a7ec46116126bc9f3aaa3421e2636263b" kindref="member">QPproblem</ref><sp/>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>~<ref refid="classshogun_1_1QPproblem" kindref="compound">QPproblem</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><ref refid="classshogun_1_1QPproblem_1a2c24366805d7523b78141685bc5a9595" kindref="member">ReadSVMFile</ref><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fInput);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><ref refid="classshogun_1_1QPproblem_1a0a74b1699a5af29346018c66c80cd031" kindref="member">ReadGPDTBinary</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fName);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><ref refid="classshogun_1_1QPproblem_1abb9978cd8ee115eb8a71ca713adfd380" kindref="member">Check2Class</ref><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1QPproblem_1a7abd881fd8fece27cd43cc889ac2366e" kindref="member">Subproblem</ref><sp/><sp/><sp/><sp/><sp/>(<ref refid="classshogun_1_1QPproblem" kindref="compound">QPproblem</ref><sp/>&amp;ker,<sp/>int32_t<sp/>len,<sp/>int32_t<sp/>*perm);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1QPproblem_1ab115b390b8c3b696a6342fdff304fbbb" kindref="member">PrepMP</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>float64_t<sp/><sp/><ref refid="classshogun_1_1QPproblem_1a351660a8b3a0fa5a6140679be8e53c96" kindref="member">gpdtsolve</ref><sp/><sp/><sp/><sp/><sp/><sp/>(float64_t<sp/>*solution);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>float64_t<sp/><sp/><ref refid="classshogun_1_1QPproblem_1a017791d2743a2558e50f5593f8431e40" kindref="member">pgpdtsolve</ref><sp/><sp/><sp/><sp/><sp/>(float64_t<sp/>*solution);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1QPproblem_1aea7a747fd084dcf01711b46542a508f7" kindref="member">get_linadd_enabled</ref>()</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1QPproblem_1af719bcc7593abca282c41d1e1cfe61fd" kindref="member">linadd</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classshogun_1_1QPproblem_1aed69e96269fbb3ba4966ddee1c563db2" kindref="member">get_name</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;QProblem&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-----------------<sp/>Private<sp/>Data<sp/><sp/>---------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/>dim;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/>*index_in,<sp/>*index_out;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/>*ing,<sp/>*inaux,<sp/>*inold,<sp/>*incom;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/>*cec;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/>nb;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/>*bmem,<sp/>*bmemrid,<sp/>*pbmr;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/>my_chunk_size;<sp/><sp/></highlight><highlight class="comment">//<sp/>chunk_size<sp/>for<sp/>the<sp/>current<sp/>processor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/>my_spD_offset;<sp/><sp/></highlight><highlight class="comment">//<sp/>offset<sp/>of<sp/>the<sp/>current<sp/>processor<sp/>into<sp/>sp_D<sp/>matrix</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/>recvl[32],<sp/>displ[32];</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>float64_t<sp/>kktold;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>float64_t<sp/>DELTAvpm,<sp/>InitialDELTAvpm,<sp/>DELTAkin;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>float64_t<sp/>*alpha;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/>float64_t<sp/>*grad,<sp/>*st;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-----------------<sp/>Private<sp/>Methods<sp/>---------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/>Preprocess0<sp/>(int32_t<sp/>*aux,<sp/>int32_t<sp/>*sv);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/>Preprocess1<sp/>(<ref refid="classshogun_1_1sKernel" kindref="compound">sKernel</ref>*<sp/><ref refid="classshogun_1_1QPproblem_1ae29cda393231e1a23c02eaf5e48b2b64" kindref="member">KER</ref>,<sp/>int32_t<sp/>*aux,<sp/>int32_t<sp/>*sv);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/>optimal<sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_zero(int32_t<sp/><sp/>i)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(alpha[i]<sp/>&lt;<sp/><ref refid="classshogun_1_1QPproblem_1a62fd3d43e936159832f9290797429371" kindref="member">DELTAsv</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_free(int32_t<sp/><sp/>i)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(alpha[i]<sp/>&gt;<sp/><ref refid="classshogun_1_1QPproblem_1a62fd3d43e936159832f9290797429371" kindref="member">DELTAsv</ref><sp/>&amp;&amp;<sp/>alpha[i]<sp/>&lt;<sp/>(<ref refid="classshogun_1_1QPproblem_1a89437ffa8df835a7519e5c5dae403387" kindref="member">c_const</ref><sp/>-<sp/><ref refid="classshogun_1_1QPproblem_1a62fd3d43e936159832f9290797429371" kindref="member">DELTAsv</ref>));<sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_bound(int32_t<sp/>i)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(alpha[i]<sp/>&gt;<sp/>(<ref refid="classshogun_1_1QPproblem_1a89437ffa8df835a7519e5c5dae403387" kindref="member">c_const</ref><sp/>-<sp/><ref refid="classshogun_1_1QPproblem_1a62fd3d43e936159832f9290797429371" kindref="member">DELTAsv</ref>));<sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight></codeline>
+    </programlisting>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,548 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CTOPFeatures" kind="class" prot="public">
+    <compoundname>shogun::CTOPFeatures</compoundname>
+    <basecompoundref refid="classshogun_1_1CSimpleFeatures" prot="public" virt="non-virtual">shogun::CSimpleFeatures&lt; float64_t &gt;</basecompoundref>
+    <includes local="no">TOPFeatures.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CTOPFeatures_1a97c83586400bdb3cffffba985dc42505" prot="protected" static="no" mutable="no">
+        <type>CHMM *</type>
+        <definition>CHMM* shogun::CTOPFeatures::pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>positive HMM </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="137" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CTOPFeatures_1ac907190d8414d5323956be3864614671" prot="protected" static="no" mutable="no">
+        <type>CHMM *</type>
+        <definition>CHMM* shogun::CTOPFeatures::neg</definition>
+        <argsstring></argsstring>
+        <name>neg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>negative HMM </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="139" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CTOPFeatures_1a0fe050dc72ed4855e5203dfb1defcc7c" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CTOPFeatures::neglinear</definition>
+        <argsstring></argsstring>
+        <name>neglinear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if negative HMM is a LinearHMM </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="141" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CTOPFeatures_1a7b384633de39601e7351843458122ea1" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CTOPFeatures::poslinear</definition>
+        <argsstring></argsstring>
+        <name>poslinear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if positive HMM is a LinearHMM </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="143" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CTOPFeatures_1a75cb69d92b3f6b5a4e91934af45517fd" prot="protected" static="no" mutable="no">
+        <type><ref refid="structshogun_1_1T__HMM__INDIZES" kindref="compound">T_HMM_INDIZES</ref></type>
+        <definition>T_HMM_INDIZES shogun::CTOPFeatures::pos_relevant_indizes</definition>
+        <argsstring></argsstring>
+        <name>pos_relevant_indizes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>positive relevant indices </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="146" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CTOPFeatures_1a38f803a2c17fb5df48e41ef5e6a4dc04" prot="protected" static="no" mutable="no">
+        <type><ref refid="structshogun_1_1T__HMM__INDIZES" kindref="compound">T_HMM_INDIZES</ref></type>
+        <definition>T_HMM_INDIZES shogun::CTOPFeatures::neg_relevant_indizes</definition>
+        <argsstring></argsstring>
+        <name>neg_relevant_indizes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>negative relevant indices </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="148" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CTOPFeatures_1a37c0cd70d6b76ae6fa974f936d8b4e2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CTOPFeatures::CTOPFeatures</definition>
+        <argsstring>(int32_t size, CHMM *p, CHMM *n, bool neglin, bool poslin)</argsstring>
+        <name>CTOPFeatures</name>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>CHMM *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>CHMM *</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>neglin</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>poslin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cache size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>positive HMM </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>negative HMM </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>neglin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if negative HMM is of linear shape </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>poslin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if positive HMM is of linear shape </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTOPFeatures_1a2ba575eff285b470164594ca2454df49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CTOPFeatures::CTOPFeatures</definition>
+        <argsstring>(const CTOPFeatures &amp;orig)</argsstring>
+        <name>CTOPFeatures</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CTOPFeatures" kindref="compound">CTOPFeatures</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTOPFeatures_1a68c7a50390fcb4aadc7d52d599c12146" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CTOPFeatures::~CTOPFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>~CTOPFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTOPFeatures_1a504dea38725888917615e5c0867c8f41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTOPFeatures::set_models</definition>
+        <argsstring>(CHMM *p, CHMM *n)</argsstring>
+        <name>set_models</name>
+        <param>
+          <type>CHMM *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>CHMM *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set HMMs</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>positive HMM </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>negative HMM </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTOPFeatures_1a86cf7b8d9097dcaafc804d9aab9feba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t *</type>
+        <definition>virtual float64_t* shogun::CTOPFeatures::set_feature_matrix</definition>
+        <argsstring>()</argsstring>
+        <name>set_feature_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set feature matrix</para><para><simplesect kind="return"><para>something floaty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTOPFeatures_1acf5821a68b092b391a3b3be86cd6374e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CTOPFeatures::compute_num_features</definition>
+        <argsstring>()</argsstring>
+        <name>compute_num_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute number of features</para><para><simplesect kind="return"><para>number of features </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTOPFeatures_1a81318588787e10d9b178807b4b5c0e94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CTOPFeatures::compute_relevant_indizes</definition>
+        <argsstring>(CHMM *hmm, T_HMM_INDIZES *hmm_idx)</argsstring>
+        <name>compute_relevant_indizes</name>
+        <param>
+          <type>CHMM *</type>
+          <declname>hmm</declname>
+        </param>
+        <param>
+          <type><ref refid="structshogun_1_1T__HMM__INDIZES" kindref="compound">T_HMM_INDIZES</ref> *</type>
+          <declname>hmm_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute relevant indices</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hmm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HMM to compute for </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hmm_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HMM index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if computing was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTOPFeatures_1adc7cb7211f86f3838920c1ae0d470582" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CTOPFeatures::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <reimplements refid="classshogun_1_1CSimpleFeatures_1a20dddb53f5fc7e42187373122a968aad">get_name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="114" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" bodystart="114" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CTOPFeatures_1a47dc3b1dbafbe4a00abac0f01b9c6c71" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t *</type>
+        <definition>virtual float64_t* shogun::CTOPFeatures::compute_feature_vector</definition>
+        <argsstring>(int32_t num, int32_t &amp;len, float64_t *target=NULL)</argsstring>
+        <name>compute_feature_vector</name>
+        <reimplements refid="classshogun_1_1CSimpleFeatures_1a0506c8081e682a34cdfb69b3bf345674">compute_feature_vector</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>target</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute feature vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>num </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>something floaty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTOPFeatures_1abf2124c912506c2d601f17bc2f31b6e4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTOPFeatures::compute_feature_vector</definition>
+        <argsstring>(float64_t *addr, int32_t num, int32_t &amp;len)</argsstring>
+        <name>compute_feature_vector</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>computes the feature vector to the address addr</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>num </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class TOPFeatures implements TOP kernel features obtained from two Hidden Markov models. </para>    </briefdescription>
+    <detaileddescription>
+<para>It was used in</para><para>K. Tsuda, M. Kawanabe, G. Raetsch, S. Sonnenburg, and K.R. Mueller. A new discriminative kernel from probabilistic models. Neural Computation, 14:2397-2414, 2002.</para><para>which also has the details.</para><para>Note that TOP-features are computed on the fly, so to be effective feature caching should be enabled.</para><para>It inherits its functionality from <ref refid="classshogun_1_1CSimpleFeatures" kindref="compound">CSimpleFeatures</ref>, which should be consulted for further reference. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="126">
+        <label>shogun::CTOPFeatures</label>
+        <link refid="classshogun_1_1CTOPFeatures"/>
+        <childnode refid="127" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="129" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>shogun::CSimpleFeatures&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimpleFeatures"/>
+        <childnode refid="128" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="130">
+        <label>shogun::CTOPFeatures</label>
+        <link refid="classshogun_1_1CTOPFeatures"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+        <childnode refid="134" relation="usage">
+          <edgelabel>neg_relevant_indizes</edgelabel>
+          <edgelabel>pos_relevant_indizes</edgelabel>
+        </childnode>
+      </node>
+      <node id="132">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="133" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>shogun::CSimpleFeatures&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimpleFeatures"/>
+        <childnode refid="132" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>shogun::T_HMM_INDIZES</label>
+        <link refid="structshogun_1_1T__HMM__INDIZES"/>
+      </node>
+      <node id="133">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" line="69" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/TOPFeatures.h" bodystart="68" bodyend="149"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CFeatures_1a793f371cc7dd4897997b01612f7d4b77" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>add_preproc</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a184d2e7ec90b743c112b835d248be8fc" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>add_to_dense_vec</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a144f492d6406399e59c1d716ac611889" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>Align_char_features</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ab87dadb5c15d2688e0d1f2e46bc1aee3" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>apply_preproc</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ad688539536313914ec3711bce1739445" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a040fa070f47a2845e5fdcb89ca7c4565" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a91054c534e25c0e934ebb1a2b7217d2a" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a91ac9daf871dd99b358da47eea74eeb3" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1be7a2c5d471a3586c44988e2b4e1129" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a4ad3a39235806ab1999a1c5fb5290486" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a89609a765e1ab682ea6e73402b56c961" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>check_feature_compatibility</name></member>
+      <member refid="classshogun_1_1CFeatures_1afab00f1403d1349fd18cca31a6d63de3" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>clean_preprocs</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a4cb73c0a47276f345c49bc583d8344b2" prot="protected" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>combined_weight</name></member>
+      <member refid="classshogun_1_1CTOPFeatures_1a47dc3b1dbafbe4a00abac0f01b9c6c71" prot="protected" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>compute_feature_vector</name></member>
+      <member refid="classshogun_1_1CTOPFeatures_1abf2124c912506c2d601f17bc2f31b6e4" prot="protected" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>compute_feature_vector</name></member>
+      <member refid="classshogun_1_1CTOPFeatures_1acf5821a68b092b391a3b3be86cd6374e" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>compute_num_features</name></member>
+      <member refid="classshogun_1_1CTOPFeatures_1a81318588787e10d9b178807b4b5c0e94" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>compute_relevant_indizes</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a45383d6584343e61043ee69d29ca661a" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>copy_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a198731e8c0233cb1fb76df3c5722c6f5" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>CSimpleFeatures</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1addc16375118b6b27dd99cfd58202aa6a" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>CSimpleFeatures</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a0096075ef8d190d58ce97b2336680f12" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>CSimpleFeatures</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a54fda828ffcbbdc836d4b625108ed8c8" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>CSimpleFeatures</name></member>
+      <member refid="classshogun_1_1CTOPFeatures_1a37c0cd70d6b76ae6fa974f936d8b4e2e" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>CTOPFeatures</name></member>
+      <member refid="classshogun_1_1CTOPFeatures_1a2ba575eff285b470164594ca2454df49" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>CTOPFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1accdc453796e319852dd41fffa0c0f70c" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>del_preproc</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a808c4c5b7e5cfa9558cab5e039e34ef4" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ae81ed7be6b000db0ae624eb781e93590" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>dense_dot_range</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a2a69a10f3ffcc5ed76322ebbd09b5fcb" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>dense_dot_range_helper</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a01ce37f41f397454c58bc2f05987d0c1" prot="protected" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>display_progress</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1adb3c5d8eabab09642598c5e7b620557d" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ae485eaec2c9264a0661bfdaf5db19166" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>duplicate</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a907202fa53453a1439e1fec2b2bb90e1" prot="protected" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>feature_cache</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ab92d07e1f66ea2b62abdc63b2b84a1c2" prot="protected" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a1deddc24e882780c97d8d7c012900d3a" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>free_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a5a72ef6f22c82cefb215d7b9b6db65cb" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>free_feature_vector</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1aa8bf02cb2cf32e1581abb44ff7f22784" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>free_features</name></member>
+      <member refid="classshogun_1_1CFeatures_1a29b93c241dca0eba1415f873c83d27d8" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a199b84c188e8f98f088c248fe5c0adea" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>get_combined_feature_weight</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a394940e41980a0084a9223c0e917c63d" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>get_dim_feature_space</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a2dfd5cd8ccd92593a02c9f6dfb9a84cd" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1aa46f724dc813a131a4dcabb36165df0e" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>get_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1acf9004ddf3e7e8ad99c5eaa520f0bbd8" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>get_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a89dcdd2bfa1eeb715e5d12fc319afbd3" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ac20744d3cb7b487d48952e126ebc842e" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>get_feature_vector</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a03b446254712cdf9339c0cc25fc91f4c" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>get_feature_vector</name></member>
+      <member refid="classshogun_1_1CTOPFeatures_1adc7cb7211f86f3838920c1ae0d470582" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1abfd7bc0fc2128e963f9714c62ae6db5c" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>get_nnz_features_for_vector</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ac4d85290b6a9435942ef76371a781b39" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>get_num_features</name></member>
+      <member refid="classshogun_1_1CFeatures_1a7662d240eab24d5753385b0f9e6e9bae" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>get_num_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a9010a03b11399648cc5da7194fb5e707" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>get_num_preprocessed</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a767626119fc7553441164cb4e953eecf" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>get_num_vectors</name></member>
+      <member refid="classshogun_1_1CFeatures_1ac1015e3a736e4e6d4d6fbe24416af6c4" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>get_preproc</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ab1207e479dd9fcf578f629db7b878917" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>get_size</name></member>
+      <member refid="classshogun_1_1CFeatures_1a07f1d7dc618a9f5f76663d80ad549d38" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1248f8829f63f9c9a42ac36065961295" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>is_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1a6412ef81478c3c9dadac2a87a544f640" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>list_feature_obj</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ab3f090ce420bd82313354358bff38705" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>load</name></member>
+      <member refid="classshogun_1_1CTOPFeatures_1ac907190d8414d5323956be3864614671" prot="protected" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>neg</name></member>
+      <member refid="classshogun_1_1CTOPFeatures_1a38f803a2c17fb5df48e41ef5e6a4dc04" prot="protected" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>neg_relevant_indizes</name></member>
+      <member refid="classshogun_1_1CTOPFeatures_1a0fe050dc72ed4855e5203dfb1defcc7c" prot="protected" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>neglinear</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1aacda9efff0e718088499535745934ab1" prot="protected" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>num_features</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1afcdd2b798010c4cb1e5b64da5d0bb805" prot="protected" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>num_vectors</name></member>
+      <member refid="classshogun_1_1CTOPFeatures_1a97c83586400bdb3cffffba985dc42505" prot="protected" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>pos</name></member>
+      <member refid="classshogun_1_1CTOPFeatures_1a75cb69d92b3f6b5a4e91934af45517fd" prot="protected" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>pos_relevant_indizes</name></member>
+      <member refid="classshogun_1_1CTOPFeatures_1a7b384633de39601e7351843458122ea1" prot="protected" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>poslinear</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a0130f7dadc6257d919be40eb7cc173d9" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>reshape</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a5ee15be9a68445fd47d4db97dcdaa888" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>save</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a3cbcb41f5f6fb4817568469120204c10" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>set_combined_feature_weight</name></member>
+      <member refid="classshogun_1_1CTOPFeatures_1a86cf7b8d9097dcaafc804d9aab9feba1" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>set_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a2a44b4c0d05c35a612b2fc1d62df52c3" prot="public" virt="virtual" ambiguityscope="CSimpleFeatures&lt; float64_t &gt;::"><scope>shogun::CTOPFeatures</scope><name>set_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a7c56a23d330e1dbf2e795401159708e8" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>set_feature_vector</name></member>
+      <member refid="classshogun_1_1CTOPFeatures_1a504dea38725888917615e5c0867c8f41" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>set_models</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1aeafe03ff25bff3e82ba5ecaf81390353" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>set_num_features</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1aac7bc310db9f14c07c69a811d39771f2" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>set_num_vectors</name></member>
+      <member refid="classshogun_1_1CFeatures_1aa88c27c0f3885d23ac71c4cc2e55c431" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>set_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab43db0bd4a231249ce4bc65f6e15f695" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a3ff3f03688a7f6a1b36dab8677407166" prot="public" virt="non-virtual"><scope>shogun::CTOPFeatures</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a7c86c8f9ba308b59a8cf17f236be70d2" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>~CDotFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab0e2a8a18ac5056f802e4aa51d4fcd4f" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>~CFeatures</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a480b565d004158a3599ab57109cc7890" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>~CSimpleFeatures</name></member>
+      <member refid="classshogun_1_1CTOPFeatures_1a68c7a50390fcb4aadc7d52d599c12146" prot="public" virt="virtual"><scope>shogun::CTOPFeatures</scope><name>~CTOPFeatures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

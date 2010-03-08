@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CCombinedFeatures" kind="class" prot="public">
+    <compoundname>shogun::CCombinedFeatures</compoundname>
+    <basecompoundref refid="classshogun_1_1CFeatures" prot="public" virt="non-virtual">shogun::CFeatures</basecompoundref>
+    <includes local="no">CombinedFeatures.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CCombinedFeatures_1a65234e57858db85565ab7cccbaa68560" prot="protected" static="no" mutable="no">
+        <type>CList&lt; <ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> * &gt; *</type>
+        <definition>CList&lt;CFeatures*&gt;* shogun::CCombinedFeatures::feature_list</definition>
+        <argsstring></argsstring>
+        <name>feature_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>feature list </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="213" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CCombinedFeatures_1aba98450e220cef6822dd0bfb5f2e2d6d" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CCombinedFeatures::num_vec</definition>
+        <argsstring></argsstring>
+        <name>num_vec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of vectors must match between sub features </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="218" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1af995a63196411438ba84d2ba11de80f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CCombinedFeatures::CCombinedFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>CCombinedFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1a9ffee2370b9a3120bba8164bcefb866e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CCombinedFeatures::CCombinedFeatures</definition>
+        <argsstring>(const CCombinedFeatures &amp;orig)</argsstring>
+        <name>CCombinedFeatures</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CCombinedFeatures" kindref="compound">CCombinedFeatures</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1abb810dba56c7c48a336486007a281861" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+        <definition>virtual CFeatures* shogun::CCombinedFeatures::duplicate</definition>
+        <argsstring>() const </argsstring>
+        <name>duplicate</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a2f7adf01a52fee35ac71e455501125a9">duplicate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>duplicate feature object</para><para><simplesect kind="return"><para>feature object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1a3a09c63e7aec34e578f56402520e9f37" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CCombinedFeatures::~CCombinedFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>~CCombinedFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1a6a093bf38a3a7985900e9123f4426146" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureType</type>
+        <definition>virtual EFeatureType shogun::CCombinedFeatures::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type</para><para><simplesect kind="return"><para>feature type UNKNOWN </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="53" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1ab5e57dcb7c10ef24d7622c221eface37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureClass</type>
+        <definition>virtual EFeatureClass shogun::CCombinedFeatures::get_feature_class</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_class</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a8e1c6229db82a9215cb2994202e657f5">get_feature_class</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature class</para><para><simplesect kind="return"><para>feature class SIMPLE </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="62" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1ac762bae6bfa6ccb25bfcb5f8380df337" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CCombinedFeatures::get_num_vectors</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_vectors</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a1f30fccf7c6c9af03277d75d0d983c52">get_num_vectors</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of feature vectors</para><para><simplesect kind="return"><para>number of feature vectors </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="71" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1aeef626c1df3eb54f7aa9557475cb8654" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CCombinedFeatures::get_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_size</name>
+        <reimplements refid="classshogun_1_1CFeatures_1aeed80a002f6255d1ca5c8d1698deb7bc">get_size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get memory footprint of one feature</para><para><simplesect kind="return"><para>memory footprint of one feature </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="80" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="79" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1aac9179b88d42977cf9f37d59219df60d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CCombinedFeatures::list_feature_objs</definition>
+        <argsstring>()</argsstring>
+        <name>list_feature_objs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>list feature objects </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1a0f8bb1d8bacb3a77b04595542d5ddcbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CCombinedFeatures::check_feature_obj_compatibility</definition>
+        <argsstring>(CCombinedFeatures *comb_feat)</argsstring>
+        <name>check_feature_obj_compatibility</name>
+        <param>
+          <type><ref refid="classshogun_1_1CCombinedFeatures" kindref="compound">CCombinedFeatures</ref> *</type>
+          <declname>comb_feat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check feature object compatibility</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comb_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature to check for compatibility </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if feature is compatible </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1a5030817803bce63a201344ce6ce573d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+        <definition>CFeatures* shogun::CCombinedFeatures::get_first_feature_obj</definition>
+        <argsstring>()</argsstring>
+        <name>get_first_feature_obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get first feature object</para><para><simplesect kind="return"><para>first feature object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="107" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1a93f6c6ec8e3d2851659fbd564cbb66f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+        <definition>CFeatures* shogun::CCombinedFeatures::get_first_feature_obj</definition>
+        <argsstring>(CListElement&lt; CFeatures * &gt; *&amp;current)</argsstring>
+        <name>get_first_feature_obj</name>
+        <param>
+          <type>CListElement&lt; <ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> * &gt; *&amp;</type>
+          <declname>current</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get first feature object</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>current</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of features </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>first feature object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="117" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1a2b74e3b1be9805fa7fdb0c3de58fb39b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+        <definition>CFeatures* shogun::CCombinedFeatures::get_next_feature_obj</definition>
+        <argsstring>()</argsstring>
+        <name>get_next_feature_obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get next feature object</para><para><simplesect kind="return"><para>next feature object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="126" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1a71de93482a323aab8a6f93efa7b89839" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+        <definition>CFeatures* shogun::CCombinedFeatures::get_next_feature_obj</definition>
+        <argsstring>(CListElement&lt; CFeatures * &gt; *&amp;current)</argsstring>
+        <name>get_next_feature_obj</name>
+        <param>
+          <type>CListElement&lt; <ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> * &gt; *&amp;</type>
+          <declname>current</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get next feature object</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>current</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of features </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>next feature object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="136" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1af376fa6e316325a16a2d66bf8f122e9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+        <definition>CFeatures* shogun::CCombinedFeatures::get_last_feature_obj</definition>
+        <argsstring>()</argsstring>
+        <name>get_last_feature_obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get last feature object</para><para><simplesect kind="return"><para>last feature object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="145" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1ad1aeb1b8ed08f1f2417834a65d7618fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CCombinedFeatures::insert_feature_obj</definition>
+        <argsstring>(CFeatures *obj)</argsstring>
+        <name>insert_feature_obj</name>
+        <param>
+          <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>insert feature object</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature object to insert </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if inserting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="155" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="154" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1abb7d86f35e594f563c65d103228a9ba3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CCombinedFeatures::append_feature_obj</definition>
+        <argsstring>(CFeatures *obj)</argsstring>
+        <name>append_feature_obj</name>
+        <param>
+          <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>append feature object</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature object to append </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if appending was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="172" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="171" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1abbeb2c8a3be195a6daf56008931e2f0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CCombinedFeatures::delete_feature_obj</definition>
+        <argsstring>()</argsstring>
+        <name>delete_feature_obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>delete feature object</para><para><simplesect kind="return"><para>if deleting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="188" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="187" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1a4c5d52e3d84edab2257940db2c1a85f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CCombinedFeatures::get_num_feature_obj</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_feature_obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of feature objects</para><para><simplesect kind="return"><para>number of feature objects </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="204" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="203" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCombinedFeatures_1aa52cb294cab79b62e365d9f87681bcd1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CCombinedFeatures::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="209" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="209" bodyend="209"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class CombinedFeatures is used to combine a number of of feature objects into a single CombinedFeatures object. </para>    </briefdescription>
+    <detaileddescription>
+<para>It keeps pointers to the added sub-features and is especially useful to combine kernels working on different domains (c.f. CCombinedKernel) and to combine kernels looking at independent features. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>shogun::CCombinedFeatures</label>
+        <link refid="classshogun_1_1CCombinedFeatures"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="14">
+        <label>shogun::CCombinedFeatures</label>
+        <link refid="classshogun_1_1CCombinedFeatures"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" line="32" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/CombinedFeatures.h" bodystart="31" bodyend="219"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CFeatures_1a793f371cc7dd4897997b01612f7d4b77" prot="public" virt="virtual"><scope>shogun::CCombinedFeatures</scope><name>add_preproc</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1abb7d86f35e594f563c65d103228a9ba3" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>append_feature_obj</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1af995a63196411438ba84d2ba11de80f1" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>CCombinedFeatures</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1a9ffee2370b9a3120bba8164bcefb866e" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>CCombinedFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a91ac9daf871dd99b358da47eea74eeb3" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1be7a2c5d471a3586c44988e2b4e1129" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a4ad3a39235806ab1999a1c5fb5290486" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a89609a765e1ab682ea6e73402b56c961" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>check_feature_compatibility</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1a0f8bb1d8bacb3a77b04595542d5ddcbe" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>check_feature_obj_compatibility</name></member>
+      <member refid="classshogun_1_1CFeatures_1afab00f1403d1349fd18cca31a6d63de3" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>clean_preprocs</name></member>
+      <member refid="classshogun_1_1CFeatures_1accdc453796e319852dd41fffa0c0f70c" prot="public" virt="virtual"><scope>shogun::CCombinedFeatures</scope><name>del_preproc</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1abbeb2c8a3be195a6daf56008931e2f0c" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>delete_feature_obj</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1abb810dba56c7c48a336486007a281861" prot="public" virt="virtual"><scope>shogun::CCombinedFeatures</scope><name>duplicate</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1a65234e57858db85565ab7cccbaa68560" prot="protected" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>feature_list</name></member>
+      <member refid="classshogun_1_1CFeatures_1a29b93c241dca0eba1415f873c83d27d8" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1ab5e57dcb7c10ef24d7622c221eface37" prot="public" virt="virtual"><scope>shogun::CCombinedFeatures</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1a6a093bf38a3a7985900e9123f4426146" prot="public" virt="virtual"><scope>shogun::CCombinedFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1a5030817803bce63a201344ce6ce573d9" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>get_first_feature_obj</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1a93f6c6ec8e3d2851659fbd564cbb66f6" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>get_first_feature_obj</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1af376fa6e316325a16a2d66bf8f122e9b" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>get_last_feature_obj</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1aa52cb294cab79b62e365d9f87681bcd1" prot="public" virt="virtual"><scope>shogun::CCombinedFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1a2b74e3b1be9805fa7fdb0c3de58fb39b" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>get_next_feature_obj</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1a71de93482a323aab8a6f93efa7b89839" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>get_next_feature_obj</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1a4c5d52e3d84edab2257940db2c1a85f9" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>get_num_feature_obj</name></member>
+      <member refid="classshogun_1_1CFeatures_1a7662d240eab24d5753385b0f9e6e9bae" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>get_num_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a9010a03b11399648cc5da7194fb5e707" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>get_num_preprocessed</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1ac762bae6bfa6ccb25bfcb5f8380df337" prot="public" virt="virtual"><scope>shogun::CCombinedFeatures</scope><name>get_num_vectors</name></member>
+      <member refid="classshogun_1_1CFeatures_1ac1015e3a736e4e6d4d6fbe24416af6c4" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>get_preproc</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1aeef626c1df3eb54f7aa9557475cb8654" prot="public" virt="virtual"><scope>shogun::CCombinedFeatures</scope><name>get_size</name></member>
+      <member refid="classshogun_1_1CFeatures_1a07f1d7dc618a9f5f76663d80ad549d38" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1ad1aeb1b8ed08f1f2417834a65d7618fe" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>insert_feature_obj</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1248f8829f63f9c9a42ac36065961295" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>is_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1a6412ef81478c3c9dadac2a87a544f640" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>list_feature_obj</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1aac9179b88d42977cf9f37d59219df60d" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>list_feature_objs</name></member>
+      <member refid="classshogun_1_1CFeatures_1adef76a926672875a64aedd2b00c8f2bd" prot="public" virt="virtual"><scope>shogun::CCombinedFeatures</scope><name>load</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1aba98450e220cef6822dd0bfb5f2e2d6d" prot="protected" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>num_vec</name></member>
+      <member refid="classshogun_1_1CFeatures_1a57d67048d44a7a7ea92bcbdfed9060ea" prot="public" virt="virtual"><scope>shogun::CCombinedFeatures</scope><name>reshape</name></member>
+      <member refid="classshogun_1_1CFeatures_1ae1341e3fa42733d8729d8f2dcf73709b" prot="public" virt="virtual"><scope>shogun::CCombinedFeatures</scope><name>save</name></member>
+      <member refid="classshogun_1_1CFeatures_1aa88c27c0f3885d23ac71c4cc2e55c431" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>set_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab43db0bd4a231249ce4bc65f6e15f695" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a3ff3f03688a7f6a1b36dab8677407166" prot="public" virt="non-virtual"><scope>shogun::CCombinedFeatures</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CCombinedFeatures_1a3a09c63e7aec34e578f56402520e9f37" prot="public" virt="virtual"><scope>shogun::CCombinedFeatures</scope><name>~CCombinedFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab0e2a8a18ac5056f802e4aa51d4fcd4f" prot="public" virt="virtual"><scope>shogun::CCombinedFeatures</scope><name>~CFeatures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -43,7 +43,7 @@ struct problem_l1
 	/** y */
 	int32_t *y;
 	/** sparse features x */
-	TSparse<float64_t>* x;
+	CSparseFeatures<float64_t>* x;
 	/** if bias shall be used */
 	bool use_bias;
 };

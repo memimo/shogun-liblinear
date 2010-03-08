@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CCompressor" kind="class" prot="public">
+    <compoundname>shogun::CCompressor</compoundname>
+    <includes local="no">Compressor.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CCompressor_1aba87e079f12c6df393ac972d164fe1e6" prot="protected" static="no" mutable="no">
+        <type>E_COMPRESSION_TYPE</type>
+        <definition>E_COMPRESSION_TYPE shogun::CCompressor::compression_type</definition>
+        <argsstring></argsstring>
+        <name>compression_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compressor type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Compressor.h" line="98" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Compressor.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CCompressor_1aa44c1efee121046326b49d86135793a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CCompressor::CCompressor</definition>
+        <argsstring>(E_COMPRESSION_TYPE ct)</argsstring>
+        <name>CCompressor</name>
+        <param>
+          <type>E_COMPRESSION_TYPE</type>
+          <declname>ct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>compression to use: one of UNCOMPRESSED, LZO, GZIP, BZIP2 or LZMA </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Compressor.h" line="56" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Compressor.h" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCompressor_1ad4cdf18ef7d3ee1bde7c18d3ed1aa6c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CCompressor::~CCompressor</definition>
+        <argsstring>()</argsstring>
+        <name>~CCompressor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Compressor.h" line="61" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Compressor.h" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCompressor_1a681e195a0def0abaaaae9e1fd3487b70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CCompressor::compress</definition>
+        <argsstring>(uint8_t *uncompressed, uint64_t uncompressed_size, uint8_t *&amp;compressed, uint64_t &amp;compressed_size, int32_t level=1)</argsstring>
+        <name>compress</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>uncompressed</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>uncompressed_size</declname>
+        </param>
+        <param>
+          <type>uint8_t *&amp;</type>
+          <declname>compressed</declname>
+        </param>
+        <param>
+          <type>uint64_t &amp;</type>
+          <declname>compressed_size</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>level</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compress data</para><para>compresses the buffer uncompressed using the selected compression algorithm and returns compressed data and its size</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uncompressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- uncompressed data to be compressed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uncompressed_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- size of the uncompressed data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>compressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to hold compressed data (returned) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>compressed_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- size of compressed data (returned) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- compression level between 1 and 9 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Compressor.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCompressor_1ad47e05cfb5d82f674054d89472c4f378" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CCompressor::decompress</definition>
+        <argsstring>(uint8_t *compressed, uint64_t compressed_size, uint8_t *uncompressed, uint64_t &amp;uncompressed_size)</argsstring>
+        <name>decompress</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>compressed</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>compressed_size</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>uncompressed</declname>
+        </param>
+        <param>
+          <type>uint64_t &amp;</type>
+          <declname>uncompressed_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>decompress data</para><para>Decompresses the buffer using the selected compression algorithm to the memory block specified in uncompressed. Note: Compressed and uncompressed size must be known prior to calling this function.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>compressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to compressed data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>compressed_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- size of compressed data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uncompressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to buffer to hold uncompressed data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uncompressed_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- size of the uncompressed data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Compressor.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCompressor_1a4c8e436849eca818a65246ae7cf98f31" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CCompressor::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Compressor.h" line="94" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Compressor.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Compression library for compressing and decompressing buffers using one of the standard compression algorithms, LZO, GZIP, BZIP2 or LZMA.</para><para>The general recommendation is to use LZO whenever lightweight compression is sufficient but high i/o throughputs are needed (at 1/2 the speed of memcpy).</para><para>If size is all that matters use LZMA (which especially when compressing can be very slow though).</para><para>Note that besides lzo compression, this library is thread safe. </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Compressor.h" line="48" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Compressor.h" bodystart="47" bodyend="99"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CCompressor_1aa44c1efee121046326b49d86135793a5" prot="public" virt="non-virtual"><scope>shogun::CCompressor</scope><name>CCompressor</name></member>
+      <member refid="classshogun_1_1CCompressor_1a681e195a0def0abaaaae9e1fd3487b70" prot="public" virt="non-virtual"><scope>shogun::CCompressor</scope><name>compress</name></member>
+      <member refid="classshogun_1_1CCompressor_1aba87e079f12c6df393ac972d164fe1e6" prot="protected" virt="non-virtual"><scope>shogun::CCompressor</scope><name>compression_type</name></member>
+      <member refid="classshogun_1_1CCompressor_1ad47e05cfb5d82f674054d89472c4f378" prot="public" virt="non-virtual"><scope>shogun::CCompressor</scope><name>decompress</name></member>
+      <member refid="classshogun_1_1CCompressor_1a4c8e436849eca818a65246ae7cf98f31" prot="public" virt="virtual"><scope>shogun::CCompressor</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CCompressor_1ad4cdf18ef7d3ee1bde7c18d3ed1aa6c3" prot="public" virt="virtual"><scope>shogun::CCompressor</scope><name>~CCompressor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CFirstElementKernelNormalizer" kind="class" prot="public">
+    <compoundname>shogun::CFirstElementKernelNormalizer</compoundname>
+    <basecompoundref refid="classshogun_1_1CKernelNormalizer" prot="public" virt="non-virtual">shogun::CKernelNormalizer</basecompoundref>
+    <includes local="no">FirstElementKernelNormalizer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CFirstElementKernelNormalizer_1a409259a99aee214951ab9067852bd019" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CFirstElementKernelNormalizer::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+<para>scale constant obtained from k(0,0) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" line="93" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CFirstElementKernelNormalizer_1ae76ce3db37dada0abc617b49fc8285b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CFirstElementKernelNormalizer::CFirstElementKernelNormalizer</definition>
+        <argsstring>()</argsstring>
+        <name>CFirstElementKernelNormalizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" line="34" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFirstElementKernelNormalizer_1ab22d475809aca01446aefe0a92a84063" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CFirstElementKernelNormalizer::~CFirstElementKernelNormalizer</definition>
+        <argsstring>()</argsstring>
+        <name>~CFirstElementKernelNormalizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" line="39" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFirstElementKernelNormalizer_1a1403c29d273fbf8eb1f1c98f57ea79d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CFirstElementKernelNormalizer::init</definition>
+        <argsstring>(CKernel *k)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1a81e40e31e3ffe03d31d22a87379f195d">init</reimplements>
+        <param>
+          <type><ref refid="classshogun_1_1CKernel" kindref="compound">CKernel</ref> *</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialization of the normalizer (if needed) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" line="45" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" bodystart="44" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFirstElementKernelNormalizer_1a6d42cc248b302bc2f670d2d5c4c5969b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CFirstElementKernelNormalizer::normalize</definition>
+        <argsstring>(float64_t value, int32_t idx_lhs, int32_t idx_rhs)</argsstring>
+        <name>normalize</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1a93c47ed8ce631c3a1350d1aaeeb80fed">normalize</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_lhs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize the kernel value <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of left hand side vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of right hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" line="66" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" bodystart="64" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFirstElementKernelNormalizer_1ac28a40e2706ef52fe512ed4030c82fba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CFirstElementKernelNormalizer::normalize_lhs</definition>
+        <argsstring>(float64_t value, int32_t idx_lhs)</argsstring>
+        <name>normalize_lhs</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1aa25af9b375b533e4cff3768a77bd0e7f">normalize_lhs</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize only the left hand side vector <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of a component of the left hand side feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of left hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" line="75" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFirstElementKernelNormalizer_1a3664a05447f1c03738404b8da8d9d495" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CFirstElementKernelNormalizer::normalize_rhs</definition>
+        <argsstring>(float64_t value, int32_t idx_rhs)</argsstring>
+        <name>normalize_rhs</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1ac98a44e10b6b6b1bb4dc259a877e7491">normalize_rhs</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize only the right hand side vector <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of a component of the right hand side feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of right hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" line="84" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFirstElementKernelNormalizer_1a476c6be5feec8dbdbf85bc9ba82ddd54" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CFirstElementKernelNormalizer::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" line="89" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Normalize the kernel by a constant obtained from the first element of the kernel matrix, i.e. <formula id="15">$ c=k({\bf x},{\bf x})$</formula>. </para>    </briefdescription>
+    <detaileddescription>
+<para><formula id="16">\[ k&apos;(x,x&apos;)= \frac{k(x,x&apos;)}{c} \]</formula></para><para>useful if the kernel returns constant elements along the diagonal anyway and all one wants is to scale the kernel down to 1 on the diagonal. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="63">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+      <node id="62">
+        <label>shogun::CFirstElementKernelNormalizer</label>
+        <link refid="classshogun_1_1CFirstElementKernelNormalizer"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="65">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+      <node id="64">
+        <label>shogun::CFirstElementKernelNormalizer</label>
+        <link refid="classshogun_1_1CFirstElementKernelNormalizer"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" line="29" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h" bodystart="28" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CFirstElementKernelNormalizer_1ae76ce3db37dada0abc617b49fc8285b4" prot="public" virt="non-virtual"><scope>shogun::CFirstElementKernelNormalizer</scope><name>CFirstElementKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CKernelNormalizer_1ac6fe092f0738d7de0aa36183473ae08f" prot="public" virt="non-virtual"><scope>shogun::CFirstElementKernelNormalizer</scope><name>CKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CFirstElementKernelNormalizer_1a476c6be5feec8dbdbf85bc9ba82ddd54" prot="public" virt="virtual"><scope>shogun::CFirstElementKernelNormalizer</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CFirstElementKernelNormalizer_1a1403c29d273fbf8eb1f1c98f57ea79d2" prot="public" virt="virtual"><scope>shogun::CFirstElementKernelNormalizer</scope><name>init</name></member>
+      <member refid="classshogun_1_1CFirstElementKernelNormalizer_1a6d42cc248b302bc2f670d2d5c4c5969b" prot="public" virt="virtual"><scope>shogun::CFirstElementKernelNormalizer</scope><name>normalize</name></member>
+      <member refid="classshogun_1_1CFirstElementKernelNormalizer_1ac28a40e2706ef52fe512ed4030c82fba" prot="public" virt="virtual"><scope>shogun::CFirstElementKernelNormalizer</scope><name>normalize_lhs</name></member>
+      <member refid="classshogun_1_1CFirstElementKernelNormalizer_1a3664a05447f1c03738404b8da8d9d495" prot="public" virt="virtual"><scope>shogun::CFirstElementKernelNormalizer</scope><name>normalize_rhs</name></member>
+      <member refid="classshogun_1_1CFirstElementKernelNormalizer_1a409259a99aee214951ab9067852bd019" prot="protected" virt="non-virtual"><scope>shogun::CFirstElementKernelNormalizer</scope><name>scale</name></member>
+      <member refid="classshogun_1_1CFirstElementKernelNormalizer_1ab22d475809aca01446aefe0a92a84063" prot="public" virt="virtual"><scope>shogun::CFirstElementKernelNormalizer</scope><name>~CFirstElementKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CKernelNormalizer_1a8af9672897eb3da0c1892ef1e16fb29c" prot="public" virt="virtual"><scope>shogun::CFirstElementKernelNormalizer</scope><name>~CKernelNormalizer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

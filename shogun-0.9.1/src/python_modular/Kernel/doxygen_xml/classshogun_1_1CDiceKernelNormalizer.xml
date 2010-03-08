@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CDiceKernelNormalizer" kind="class" prot="public">
+    <compoundname>shogun::CDiceKernelNormalizer</compoundname>
+    <basecompoundref refid="classshogun_1_1CKernelNormalizer" prot="public" virt="non-virtual">shogun::CKernelNormalizer</basecompoundref>
+    <includes local="no">DiceKernelNormalizer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CDiceKernelNormalizer_1a403da5d90beb79767858f6b9c17e0403" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CDiceKernelNormalizer::diag_lhs</definition>
+        <argsstring></argsstring>
+        <name>diag_lhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>diagonal left-hand side </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" line="135" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDiceKernelNormalizer_1af2fe0bcfa3253ccd34a9317c90acfb71" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CDiceKernelNormalizer::diag_rhs</definition>
+        <argsstring></argsstring>
+        <name>diag_rhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>diagonal right-hand side </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" line="137" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDiceKernelNormalizer_1a3cbf4db40d196c0ce446b27cd1f0a2fd" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CDiceKernelNormalizer::use_optimized_diagonal_computation</definition>
+        <argsstring></argsstring>
+        <name>use_optimized_diagonal_computation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flat if optimized diagonal computation is used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" line="139" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CDiceKernelNormalizer_1ac482b61219698526c4e99b42cf1f551a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CDiceKernelNormalizer::CDiceKernelNormalizer</definition>
+        <argsstring>(bool use_opt_diag=false)</argsstring>
+        <name>CDiceKernelNormalizer</name>
+        <param>
+          <type>bool</type>
+          <declname>use_opt_diag</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>use_opt_diag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- some kernels support faster diagonal compuation via compute_diag(idx), this flag enables this </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" line="35" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDiceKernelNormalizer_1a6a8c9218f162caa749ed75b1721fa1c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CDiceKernelNormalizer::~CDiceKernelNormalizer</definition>
+        <argsstring>()</argsstring>
+        <name>~CDiceKernelNormalizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" line="40" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" bodystart="39" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDiceKernelNormalizer_1ac8d25cad59590fce8e6a794d9bd9658f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CDiceKernelNormalizer::init</definition>
+        <argsstring>(CKernel *k)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1a81e40e31e3ffe03d31d22a87379f195d">init</reimplements>
+        <param>
+          <type><ref refid="classshogun_1_1CKernel" kindref="compound">CKernel</ref> *</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialization of the normalizer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" line="48" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" bodystart="47" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDiceKernelNormalizer_1acdbb1686cdf70f904616fe9027f396d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CDiceKernelNormalizer::normalize</definition>
+        <argsstring>(float64_t value, int32_t idx_lhs, int32_t idx_rhs)</argsstring>
+        <name>normalize</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1a93c47ed8ce631c3a1350d1aaeeb80fed">normalize</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_lhs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize the kernel value <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of left hand side vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of right hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" line="79" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" bodystart="77" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDiceKernelNormalizer_1aa2f507a28ff83757265f20c46d9ce52f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CDiceKernelNormalizer::normalize_lhs</definition>
+        <argsstring>(float64_t value, int32_t idx_lhs)</argsstring>
+        <name>normalize_lhs</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1aa25af9b375b533e4cff3768a77bd0e7f">normalize_lhs</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize only the left hand side vector <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of a component of the left hand side feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of left hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" line="89" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" bodystart="88" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDiceKernelNormalizer_1a9c3ebd7ebb4f7e59e4a8e55fd273a518" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CDiceKernelNormalizer::normalize_rhs</definition>
+        <argsstring>(float64_t value, int32_t idx_rhs)</argsstring>
+        <name>normalize_rhs</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1ac98a44e10b6b6b1bb4dc259a877e7491">normalize_rhs</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize only the right hand side vector <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of a component of the right hand side feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of right hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" line="99" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" bodystart="98" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDiceKernelNormalizer_1a821c905b835afc20d9f1e4add0d80eb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CDiceKernelNormalizer::alloc_and_compute_diag</definition>
+        <argsstring>(CKernel *k, float64_t *&amp;v, int32_t num)</argsstring>
+        <name>alloc_and_compute_diag</name>
+        <param>
+          <type><ref refid="classshogun_1_1CKernel" kindref="compound">CKernel</ref> *</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>float64_t *&amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>alloc and compute the vector containing the square root of the diagonal elements of this kernel. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" line="110" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" bodystart="109" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DiceKernelNormalizer performs kernel normalization inspired by the Dice coefficient (see <ulink url="http://en.wikipedia.org/wiki/Dice&apos;s_coefficient">http://en.wikipedia.org/wiki/Dice&apos;s_coefficient</ulink>). </para>    </briefdescription>
+    <detaileddescription>
+<para><formula id="13">\[ k&apos;({\bf x},{\bf x&apos;}) = \frac{2k({\bf x},{\bf x&apos;})}{k({\bf x},{\bf x})+k({\bf x&apos;},{\bf x&apos;}} \]</formula> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="54">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+      <node id="53">
+        <label>shogun::CDiceKernelNormalizer</label>
+        <link refid="classshogun_1_1CDiceKernelNormalizer"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="56">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+      <node id="55">
+        <label>shogun::CDiceKernelNormalizer</label>
+        <link refid="classshogun_1_1CDiceKernelNormalizer"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" line="27" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h" bodystart="26" bodyend="140"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CDiceKernelNormalizer_1a821c905b835afc20d9f1e4add0d80eb4" prot="public" virt="non-virtual"><scope>shogun::CDiceKernelNormalizer</scope><name>alloc_and_compute_diag</name></member>
+      <member refid="classshogun_1_1CDiceKernelNormalizer_1ac482b61219698526c4e99b42cf1f551a" prot="public" virt="non-virtual"><scope>shogun::CDiceKernelNormalizer</scope><name>CDiceKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CKernelNormalizer_1ac6fe092f0738d7de0aa36183473ae08f" prot="public" virt="non-virtual"><scope>shogun::CDiceKernelNormalizer</scope><name>CKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CDiceKernelNormalizer_1a403da5d90beb79767858f6b9c17e0403" prot="protected" virt="non-virtual"><scope>shogun::CDiceKernelNormalizer</scope><name>diag_lhs</name></member>
+      <member refid="classshogun_1_1CDiceKernelNormalizer_1af2fe0bcfa3253ccd34a9317c90acfb71" prot="protected" virt="non-virtual"><scope>shogun::CDiceKernelNormalizer</scope><name>diag_rhs</name></member>
+      <member refid="classshogun_1_1CDiceKernelNormalizer_1ac8d25cad59590fce8e6a794d9bd9658f" prot="public" virt="virtual"><scope>shogun::CDiceKernelNormalizer</scope><name>init</name></member>
+      <member refid="classshogun_1_1CDiceKernelNormalizer_1acdbb1686cdf70f904616fe9027f396d6" prot="public" virt="virtual"><scope>shogun::CDiceKernelNormalizer</scope><name>normalize</name></member>
+      <member refid="classshogun_1_1CDiceKernelNormalizer_1aa2f507a28ff83757265f20c46d9ce52f" prot="public" virt="virtual"><scope>shogun::CDiceKernelNormalizer</scope><name>normalize_lhs</name></member>
+      <member refid="classshogun_1_1CDiceKernelNormalizer_1a9c3ebd7ebb4f7e59e4a8e55fd273a518" prot="public" virt="virtual"><scope>shogun::CDiceKernelNormalizer</scope><name>normalize_rhs</name></member>
+      <member refid="classshogun_1_1CDiceKernelNormalizer_1a3cbf4db40d196c0ce446b27cd1f0a2fd" prot="protected" virt="non-virtual"><scope>shogun::CDiceKernelNormalizer</scope><name>use_optimized_diagonal_computation</name></member>
+      <member refid="classshogun_1_1CDiceKernelNormalizer_1a6a8c9218f162caa749ed75b1721fa1c2" prot="public" virt="virtual"><scope>shogun::CDiceKernelNormalizer</scope><name>~CDiceKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CKernelNormalizer_1a8af9672897eb3da0c1892ef1e16fb29c" prot="public" virt="virtual"><scope>shogun::CDiceKernelNormalizer</scope><name>~CKernelNormalizer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CTanimotoKernelNormalizer" kind="class" prot="public">
+    <compoundname>shogun::CTanimotoKernelNormalizer</compoundname>
+    <basecompoundref refid="classshogun_1_1CKernelNormalizer" prot="public" virt="non-virtual">shogun::CKernelNormalizer</basecompoundref>
+    <includes local="no">TanimotoKernelNormalizer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CTanimotoKernelNormalizer_1a24ae25e41ad2b31c9aea261bd751b724" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CTanimotoKernelNormalizer::diag_lhs</definition>
+        <argsstring></argsstring>
+        <name>diag_lhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>diagonal left-hand side </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" line="135" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CTanimotoKernelNormalizer_1a9bf2a814febe6ecdf34193165f633c0c" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CTanimotoKernelNormalizer::diag_rhs</definition>
+        <argsstring></argsstring>
+        <name>diag_rhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>diagonal right-hand side </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" line="137" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CTanimotoKernelNormalizer_1a6ca90f9d1161fba920c88937abedac15" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CTanimotoKernelNormalizer::use_optimized_diagonal_computation</definition>
+        <argsstring></argsstring>
+        <name>use_optimized_diagonal_computation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flat if optimized diagonal computation is used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" line="139" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CTanimotoKernelNormalizer_1abe54bbde53462993af4b764cdbe31d73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CTanimotoKernelNormalizer::CTanimotoKernelNormalizer</definition>
+        <argsstring>(bool use_opt_diag=false)</argsstring>
+        <name>CTanimotoKernelNormalizer</name>
+        <param>
+          <type>bool</type>
+          <declname>use_opt_diag</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>use_opt_diag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- some kernels support faster diagonal compuation via compute_diag(idx), this flag enables this </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" line="35" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTanimotoKernelNormalizer_1a05a20e2c32ba144c71e35a3674ff00a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CTanimotoKernelNormalizer::~CTanimotoKernelNormalizer</definition>
+        <argsstring>()</argsstring>
+        <name>~CTanimotoKernelNormalizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" line="40" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" bodystart="39" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTanimotoKernelNormalizer_1ab1438088cc37accfdda122a0c2d713c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CTanimotoKernelNormalizer::init</definition>
+        <argsstring>(CKernel *k)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1a81e40e31e3ffe03d31d22a87379f195d">init</reimplements>
+        <param>
+          <type><ref refid="classshogun_1_1CKernel" kindref="compound">CKernel</ref> *</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialization of the normalizer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" line="48" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" bodystart="47" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTanimotoKernelNormalizer_1a73c7e039e98009f934541a66e82d29c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CTanimotoKernelNormalizer::normalize</definition>
+        <argsstring>(float64_t value, int32_t idx_lhs, int32_t idx_rhs)</argsstring>
+        <name>normalize</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1a93c47ed8ce631c3a1350d1aaeeb80fed">normalize</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_lhs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize the kernel value <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of left hand side vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of right hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" line="79" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" bodystart="77" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTanimotoKernelNormalizer_1a0c569b23eab94ae1adc5d984386a3c99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CTanimotoKernelNormalizer::normalize_lhs</definition>
+        <argsstring>(float64_t value, int32_t idx_lhs)</argsstring>
+        <name>normalize_lhs</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1aa25af9b375b533e4cff3768a77bd0e7f">normalize_lhs</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize only the left hand side vector <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of a component of the left hand side feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of left hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" line="89" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" bodystart="88" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTanimotoKernelNormalizer_1abb34c2b18bc6d529c77492455189a2eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CTanimotoKernelNormalizer::normalize_rhs</definition>
+        <argsstring>(float64_t value, int32_t idx_rhs)</argsstring>
+        <name>normalize_rhs</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1ac98a44e10b6b6b1bb4dc259a877e7491">normalize_rhs</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize only the right hand side vector <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of a component of the right hand side feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of right hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" line="99" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" bodystart="98" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTanimotoKernelNormalizer_1a3170ca83fcda5c93902948f5280aadb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CTanimotoKernelNormalizer::alloc_and_compute_diag</definition>
+        <argsstring>(CKernel *k, float64_t *&amp;v, int32_t num)</argsstring>
+        <name>alloc_and_compute_diag</name>
+        <param>
+          <type><ref refid="classshogun_1_1CKernel" kindref="compound">CKernel</ref> *</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>float64_t *&amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>alloc and compute the vector containing the square root of the diagonal elements of this kernel. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" line="110" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" bodystart="109" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>TanimotoKernelNormalizer performs kernel normalization inspired by the Tanimoto coefficient (see <ulink url="http://en.wikipedia.org/wiki/Jaccard_index">http://en.wikipedia.org/wiki/Jaccard_index</ulink> ). </para>    </briefdescription>
+    <detaileddescription>
+<para><formula id="43">\[ k&apos;({\bf x},{\bf x&apos;}) = \frac{k({\bf x},{\bf x&apos;})}{k({\bf x},{\bf x})+k({\bf x&apos;},{\bf x&apos;})-k({\bf x},{\bf x&apos;})} \]</formula> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="332">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+      <node id="331">
+        <label>shogun::CTanimotoKernelNormalizer</label>
+        <link refid="classshogun_1_1CTanimotoKernelNormalizer"/>
+        <childnode refid="332" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="334">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+      <node id="333">
+        <label>shogun::CTanimotoKernelNormalizer</label>
+        <link refid="classshogun_1_1CTanimotoKernelNormalizer"/>
+        <childnode refid="334" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" line="27" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h" bodystart="26" bodyend="140"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CTanimotoKernelNormalizer_1a3170ca83fcda5c93902948f5280aadb5" prot="public" virt="non-virtual"><scope>shogun::CTanimotoKernelNormalizer</scope><name>alloc_and_compute_diag</name></member>
+      <member refid="classshogun_1_1CKernelNormalizer_1ac6fe092f0738d7de0aa36183473ae08f" prot="public" virt="non-virtual"><scope>shogun::CTanimotoKernelNormalizer</scope><name>CKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CTanimotoKernelNormalizer_1abe54bbde53462993af4b764cdbe31d73" prot="public" virt="non-virtual"><scope>shogun::CTanimotoKernelNormalizer</scope><name>CTanimotoKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CTanimotoKernelNormalizer_1a24ae25e41ad2b31c9aea261bd751b724" prot="protected" virt="non-virtual"><scope>shogun::CTanimotoKernelNormalizer</scope><name>diag_lhs</name></member>
+      <member refid="classshogun_1_1CTanimotoKernelNormalizer_1a9bf2a814febe6ecdf34193165f633c0c" prot="protected" virt="non-virtual"><scope>shogun::CTanimotoKernelNormalizer</scope><name>diag_rhs</name></member>
+      <member refid="classshogun_1_1CTanimotoKernelNormalizer_1ab1438088cc37accfdda122a0c2d713c8" prot="public" virt="virtual"><scope>shogun::CTanimotoKernelNormalizer</scope><name>init</name></member>
+      <member refid="classshogun_1_1CTanimotoKernelNormalizer_1a73c7e039e98009f934541a66e82d29c3" prot="public" virt="virtual"><scope>shogun::CTanimotoKernelNormalizer</scope><name>normalize</name></member>
+      <member refid="classshogun_1_1CTanimotoKernelNormalizer_1a0c569b23eab94ae1adc5d984386a3c99" prot="public" virt="virtual"><scope>shogun::CTanimotoKernelNormalizer</scope><name>normalize_lhs</name></member>
+      <member refid="classshogun_1_1CTanimotoKernelNormalizer_1abb34c2b18bc6d529c77492455189a2eb" prot="public" virt="virtual"><scope>shogun::CTanimotoKernelNormalizer</scope><name>normalize_rhs</name></member>
+      <member refid="classshogun_1_1CTanimotoKernelNormalizer_1a6ca90f9d1161fba920c88937abedac15" prot="protected" virt="non-virtual"><scope>shogun::CTanimotoKernelNormalizer</scope><name>use_optimized_diagonal_computation</name></member>
+      <member refid="classshogun_1_1CKernelNormalizer_1a8af9672897eb3da0c1892ef1e16fb29c" prot="public" virt="virtual"><scope>shogun::CTanimotoKernelNormalizer</scope><name>~CKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CTanimotoKernelNormalizer_1a05a20e2c32ba144c71e35a3674ff00a8" prot="public" virt="virtual"><scope>shogun::CTanimotoKernelNormalizer</scope><name>~CTanimotoKernelNormalizer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

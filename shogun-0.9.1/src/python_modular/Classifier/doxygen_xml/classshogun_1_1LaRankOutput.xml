@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1LaRankOutput" kind="class" prot="public">
+    <compoundname>shogun::LaRankOutput</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classshogun_1_1LaRankOutput_1af1f0c60c398b36475d190bf4976dd4b8" prot="private" static="no" mutable="no">
+        <type>float32_t *</type>
+        <definition>float32_t* shogun::LaRankOutput::beta</definition>
+        <argsstring></argsstring>
+        <name>beta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="170" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1LaRankOutput_1a2a4bb363e6457db5c7a302577a45815d" prot="private" static="no" mutable="no">
+        <type>float32_t *</type>
+        <definition>float32_t* shogun::LaRankOutput::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="171" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1LaRankOutput_1a1b2966b561e57dc6977564f7ca065a15" prot="private" static="no" mutable="no">
+        <type><ref refid="structshogun_1_1larank__kcache__s" kindref="compound">larank_kcache_t</ref> *</type>
+        <definition>larank_kcache_t* shogun::LaRankOutput::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="172" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1LaRankOutput_1af947188d5e95e3f43e8e32c155c998d5" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::LaRankOutput::l</definition>
+        <argsstring></argsstring>
+        <name>l</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="173" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1a00db369afb8791fcb55a6f01f5b4b812" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::LaRankOutput::LaRankOutput</definition>
+        <argsstring>()</argsstring>
+        <name>LaRankOutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="100" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="99" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1a9f020bd97a01fa668f41855881c4cf95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::LaRankOutput::~LaRankOutput</definition>
+        <argsstring>()</argsstring>
+        <name>~LaRankOutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="103" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1a6fb494fe7a6a26cb8f236c84fa80efd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::LaRankOutput::initialize</definition>
+        <argsstring>(CKernel *kfunc, int64_t cache)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>CKernel *</type>
+          <declname>kfunc</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>cache</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1ad0a0b7b24bf412b92f833e2cb47b11e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::LaRankOutput::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1a12860eb1af261451684b66f509eb440e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::LaRankOutput::computeScore</definition>
+        <argsstring>(int32_t x_id)</argsstring>
+        <name>computeScore</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1ad80c249a036eb340895bc44b609afb71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::LaRankOutput::computeGradient</definition>
+        <argsstring>(int32_t xi_id, int32_t yi, int32_t ythis)</argsstring>
+        <name>computeGradient</name>
+        <param>
+          <type>int32_t</type>
+          <declname>xi_id</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>yi</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>ythis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1ac53729d7cf956941dda77b1ec7937346" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::LaRankOutput::update</definition>
+        <argsstring>(int32_t x_id, float64_t lambda, float64_t gp)</argsstring>
+        <name>update</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x_id</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>lambda</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>gp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1a4bd6dfa4c6e6f6bc6dd0700a0f338573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::LaRankOutput::set_kernel_buddy</definition>
+        <argsstring>(larank_kcache_t *bud)</argsstring>
+        <name>set_kernel_buddy</name>
+        <param>
+          <type><ref refid="structshogun_1_1larank__kcache__s" kindref="compound">larank_kcache_t</ref> *</type>
+          <declname>bud</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1ab1801004837f0455fb6295d825575f1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::LaRankOutput::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1abf7dc5ec4cd6aa1de05043d43963bdb4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structshogun_1_1larank__kcache__s" kindref="compound">larank_kcache_t</ref> *</type>
+        <definition>larank_kcache_t* shogun::LaRankOutput::getKernel</definition>
+        <argsstring>() const </argsstring>
+        <name>getKernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="134" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1a294b60f64d1643cc5c2a7d9dd5a2df93" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::LaRankOutput::get_l</definition>
+        <argsstring>() const </argsstring>
+        <name>get_l</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="139" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1a3a39c96a4ad1ab54475c95a7932072ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::LaRankOutput::getW2</definition>
+        <argsstring>()</argsstring>
+        <name>getW2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1af8dcfc434675d079306182a1ba3ed705" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::LaRankOutput::getKii</definition>
+        <argsstring>(int32_t x_id)</argsstring>
+        <name>getKii</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1aa26ba480a3ee076af101f91a45cbb949" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::LaRankOutput::getBeta</definition>
+        <argsstring>(int32_t x_id)</argsstring>
+        <name>getBeta</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1aed73e8b1ebe5aa9b709b3f01a4855c78" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float32_t *</type>
+        <definition>float32_t* shogun::LaRankOutput::getBetas</definition>
+        <argsstring>() const </argsstring>
+        <name>getBetas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="154" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="153" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1aac0271d973b146c7374b48468f7d59fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::LaRankOutput::getGradient</definition>
+        <argsstring>(int32_t x_id)</argsstring>
+        <name>getGradient</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1acaa720e99c88ccea5746c19e3b510f1a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::LaRankOutput::isSupportVector</definition>
+        <argsstring>(int32_t x_id) const </argsstring>
+        <name>isSupportVector</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankOutput_1acfcce72219a257683e43b2843c876436" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::LaRankOutput::getSV</definition>
+        <argsstring>(float32_t *&amp;sv) const </argsstring>
+        <name>getSV</name>
+        <param>
+          <type>float32_t *&amp;</type>
+          <declname>sv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="165"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="319">
+        <label>shogun::LaRankOutput</label>
+        <link refid="classshogun_1_1LaRankOutput"/>
+        <childnode refid="320" relation="usage">
+          <edgelabel>kernel</edgelabel>
+        </childnode>
+      </node>
+      <node id="320">
+        <label>shogun::larank_kcache_s</label>
+        <link refid="structshogun_1_1larank__kcache__s"/>
+        <childnode refid="320" relation="usage">
+          <edgelabel>nextbuddy</edgelabel>
+          <edgelabel>prevbuddy</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="97" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="96" bodyend="174"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1LaRankOutput_1af1f0c60c398b36475d190bf4976dd4b8" prot="private" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>beta</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1ab1801004837f0455fb6295d825575f1f" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1ad80c249a036eb340895bc44b609afb71" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>computeGradient</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1a12860eb1af261451684b66f509eb440e" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>computeScore</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1ad0a0b7b24bf412b92f833e2cb47b11e5" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>destroy</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1a2a4bb363e6457db5c7a302577a45815d" prot="private" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>g</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1a294b60f64d1643cc5c2a7d9dd5a2df93" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>get_l</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1aa26ba480a3ee076af101f91a45cbb949" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>getBeta</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1aed73e8b1ebe5aa9b709b3f01a4855c78" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>getBetas</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1aac0271d973b146c7374b48468f7d59fc" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>getGradient</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1abf7dc5ec4cd6aa1de05043d43963bdb4" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>getKernel</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1af8dcfc434675d079306182a1ba3ed705" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>getKii</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1acfcce72219a257683e43b2843c876436" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>getSV</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1a3a39c96a4ad1ab54475c95a7932072ca" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>getW2</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1a6fb494fe7a6a26cb8f236c84fa80efd5" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>initialize</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1acaa720e99c88ccea5746c19e3b510f1a" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>isSupportVector</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1a1b2966b561e57dc6977564f7ca065a15" prot="private" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>kernel</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1af947188d5e95e3f43e8e32c155c998d5" prot="private" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>l</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1a00db369afb8791fcb55a6f01f5b4b812" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>LaRankOutput</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1a4bd6dfa4c6e6f6bc6dd0700a0f338573" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>set_kernel_buddy</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1ac53729d7cf956941dda77b1ec7937346" prot="public" virt="non-virtual"><scope>shogun::LaRankOutput</scope><name>update</name></member>
+      <member refid="classshogun_1_1LaRankOutput_1a9f020bd97a01fa668f41855881c4cf95" prot="public" virt="virtual"><scope>shogun::LaRankOutput</scope><name>~LaRankOutput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

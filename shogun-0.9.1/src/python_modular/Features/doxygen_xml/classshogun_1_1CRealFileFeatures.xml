@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CRealFileFeatures" kind="class" prot="public">
+    <compoundname>shogun::CRealFileFeatures</compoundname>
+    <basecompoundref refid="classshogun_1_1CSimpleFeatures" prot="public" virt="non-virtual">shogun::CSimpleFeatures&lt; float64_t &gt;</basecompoundref>
+    <includes local="no">RealFileFeatures.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CRealFileFeatures_1a6bdc1a2fcd3f5548f39052051398cc8e" prot="protected" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* shogun::CRealFileFeatures::working_file</definition>
+        <argsstring></argsstring>
+        <name>working_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>working file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="102" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CRealFileFeatures_1aa42e18804223ee368b7dd2a7f0e54647" prot="protected" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* shogun::CRealFileFeatures::working_filename</definition>
+        <argsstring></argsstring>
+        <name>working_filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>working filename </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="104" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CRealFileFeatures_1a4246d9ab1f03fc324216e8047405d444" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CRealFileFeatures::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>status </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="106" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CRealFileFeatures_1af64e1090fb76e861b6f046ae8e2281a8" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CRealFileFeatures::labels</definition>
+        <argsstring></argsstring>
+        <name>labels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>labels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="108" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CRealFileFeatures_1aed1282e0c50713f0cbfc5f0c122c681f" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t shogun::CRealFileFeatures::intlen</definition>
+        <argsstring></argsstring>
+        <name>intlen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>intlen </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="111" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CRealFileFeatures_1a0294ed35e80e17f9c5c60a3dcbb4342e" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t shogun::CRealFileFeatures::doublelen</definition>
+        <argsstring></argsstring>
+        <name>doublelen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>doublelen </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="113" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CRealFileFeatures_1ab4f2031d76cd4b591f9cb7cb027fa035" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t shogun::CRealFileFeatures::endian</definition>
+        <argsstring></argsstring>
+        <name>endian</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>endian </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="115" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CRealFileFeatures_1af5a3ed504badef62cd1b4ad55c89c909" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t shogun::CRealFileFeatures::fourcc</definition>
+        <argsstring></argsstring>
+        <name>fourcc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>fourcc </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="117" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CRealFileFeatures_1a47ae767a79f156462e161a0be6c5e430" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t shogun::CRealFileFeatures::preprocd</definition>
+        <argsstring></argsstring>
+        <name>preprocd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>preprocd </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="119" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CRealFileFeatures_1a1ba71006fd1eeb1a461e873638f439e3" prot="protected" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t shogun::CRealFileFeatures::filepos</definition>
+        <argsstring></argsstring>
+        <name>filepos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>filepos </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="121" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CRealFileFeatures_1a35311da8d0c6aff44747469b65451e94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CRealFileFeatures::CRealFileFeatures</definition>
+        <argsstring>(int32_t size, FILE *file)</argsstring>
+        <name>CRealFileFeatures</name>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cache size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to load features from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CRealFileFeatures_1a1adab1c974cff6521530db86029c6a92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CRealFileFeatures::CRealFileFeatures</definition>
+        <argsstring>(int32_t size, char *filename)</argsstring>
+        <name>CRealFileFeatures</name>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cache size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load features from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CRealFileFeatures_1a793f130d05e6a192303eaecb780daddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CRealFileFeatures::CRealFileFeatures</definition>
+        <argsstring>(const CRealFileFeatures &amp;orig)</argsstring>
+        <name>CRealFileFeatures</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CRealFileFeatures" kindref="compound">CRealFileFeatures</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CRealFileFeatures_1a29f444414d97f3907908a11bb5d62197" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CRealFileFeatures::~CRealFileFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>~CRealFileFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CRealFileFeatures_1aabec5c28aa0f9077afd3da566ef24615" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t *</type>
+        <definition>virtual float64_t* shogun::CRealFileFeatures::load_feature_matrix</definition>
+        <argsstring>()</argsstring>
+        <name>load_feature_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load feature matrix</para><para><simplesect kind="return"><para>loaded feature matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CRealFileFeatures_1a2d030889bd2fc32b5f10be781b4a29eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CRealFileFeatures::get_label</definition>
+        <argsstring>(int32_t idx)</argsstring>
+        <name>get_label</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get label at given index</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index to look at </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>label at given index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CRealFileFeatures_1a12c9846ad0b0e5b2a232502e5b045f6b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CRealFileFeatures::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <reimplements refid="classshogun_1_1CSimpleFeatures_1a20dddb53f5fc7e42187373122a968aad">get_name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="61" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CRealFileFeatures_1a555acfd9191163fb4c86bce379e550a5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t *</type>
+        <definition>virtual float64_t* shogun::CRealFileFeatures::compute_feature_vector</definition>
+        <argsstring>(int32_t num, int32_t &amp;len, float64_t *target=NULL)</argsstring>
+        <name>compute_feature_vector</name>
+        <reimplements refid="classshogun_1_1CSimpleFeatures_1a0506c8081e682a34cdfb69b3bf345674">compute_feature_vector</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>target</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute feature vector for sample num len is returned by reference</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>num </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>target </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CRealFileFeatures_1a3c61f9b4ce1b527e31286dcba66061be" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CRealFileFeatures::load_base_data</definition>
+        <argsstring>()</argsstring>
+        <name>load_base_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load base data</para><para><simplesect kind="return"><para>if loading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class RealFileFeatures implements a dense double-precision floating point matrix <bold>from a file</bold>. </para>    </briefdescription>
+    <detaileddescription>
+<para>It inherits its functionality from <ref refid="classshogun_1_1CSimpleFeatures" kindref="compound">CSimpleFeatures</ref>, which should be consulted for further reference. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="90">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="91" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>shogun::CSimpleFeatures&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimpleFeatures"/>
+        <childnode refid="90" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>shogun::CRealFileFeatures</label>
+        <link refid="classshogun_1_1CRealFileFeatures"/>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="94">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>shogun::CSimpleFeatures&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimpleFeatures"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>shogun::CRealFileFeatures</label>
+        <link refid="classshogun_1_1CRealFileFeatures"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" line="26" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/RealFileFeatures.h" bodystart="25" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CFeatures_1a793f371cc7dd4897997b01612f7d4b77" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>add_preproc</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a184d2e7ec90b743c112b835d248be8fc" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>add_to_dense_vec</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a144f492d6406399e59c1d716ac611889" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>Align_char_features</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ab87dadb5c15d2688e0d1f2e46bc1aee3" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>apply_preproc</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ad688539536313914ec3711bce1739445" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a040fa070f47a2845e5fdcb89ca7c4565" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a91054c534e25c0e934ebb1a2b7217d2a" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a91ac9daf871dd99b358da47eea74eeb3" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1be7a2c5d471a3586c44988e2b4e1129" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a4ad3a39235806ab1999a1c5fb5290486" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a89609a765e1ab682ea6e73402b56c961" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>check_feature_compatibility</name></member>
+      <member refid="classshogun_1_1CFeatures_1afab00f1403d1349fd18cca31a6d63de3" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>clean_preprocs</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a4cb73c0a47276f345c49bc583d8344b2" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>combined_weight</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1a555acfd9191163fb4c86bce379e550a5" prot="protected" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>compute_feature_vector</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a45383d6584343e61043ee69d29ca661a" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>copy_feature_matrix</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1a35311da8d0c6aff44747469b65451e94" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>CRealFileFeatures</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1a1adab1c974cff6521530db86029c6a92" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>CRealFileFeatures</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1a793f130d05e6a192303eaecb780daddc" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>CRealFileFeatures</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a198731e8c0233cb1fb76df3c5722c6f5" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>CSimpleFeatures</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1addc16375118b6b27dd99cfd58202aa6a" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>CSimpleFeatures</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a0096075ef8d190d58ce97b2336680f12" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>CSimpleFeatures</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a54fda828ffcbbdc836d4b625108ed8c8" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>CSimpleFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1accdc453796e319852dd41fffa0c0f70c" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>del_preproc</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a808c4c5b7e5cfa9558cab5e039e34ef4" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ae81ed7be6b000db0ae624eb781e93590" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>dense_dot_range</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a2a69a10f3ffcc5ed76322ebbd09b5fcb" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>dense_dot_range_helper</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a01ce37f41f397454c58bc2f05987d0c1" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>display_progress</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1adb3c5d8eabab09642598c5e7b620557d" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1a0294ed35e80e17f9c5c60a3dcbb4342e" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>doublelen</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ae485eaec2c9264a0661bfdaf5db19166" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>duplicate</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1ab4f2031d76cd4b591f9cb7cb027fa035" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>endian</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a907202fa53453a1439e1fec2b2bb90e1" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>feature_cache</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ab92d07e1f66ea2b62abdc63b2b84a1c2" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>feature_matrix</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1a1ba71006fd1eeb1a461e873638f439e3" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>filepos</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1af5a3ed504badef62cd1b4ad55c89c909" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>fourcc</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a1deddc24e882780c97d8d7c012900d3a" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>free_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a5a72ef6f22c82cefb215d7b9b6db65cb" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>free_feature_vector</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1aa8bf02cb2cf32e1581abb44ff7f22784" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>free_features</name></member>
+      <member refid="classshogun_1_1CFeatures_1a29b93c241dca0eba1415f873c83d27d8" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a199b84c188e8f98f088c248fe5c0adea" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>get_combined_feature_weight</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a394940e41980a0084a9223c0e917c63d" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>get_dim_feature_space</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a2dfd5cd8ccd92593a02c9f6dfb9a84cd" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1aa46f724dc813a131a4dcabb36165df0e" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>get_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1acf9004ddf3e7e8ad99c5eaa520f0bbd8" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>get_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a89dcdd2bfa1eeb715e5d12fc319afbd3" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ac20744d3cb7b487d48952e126ebc842e" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>get_feature_vector</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a03b446254712cdf9339c0cc25fc91f4c" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>get_feature_vector</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1a2d030889bd2fc32b5f10be781b4a29eb" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>get_label</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1a12c9846ad0b0e5b2a232502e5b045f6b" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1abfd7bc0fc2128e963f9714c62ae6db5c" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>get_nnz_features_for_vector</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ac4d85290b6a9435942ef76371a781b39" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>get_num_features</name></member>
+      <member refid="classshogun_1_1CFeatures_1a7662d240eab24d5753385b0f9e6e9bae" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>get_num_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a9010a03b11399648cc5da7194fb5e707" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>get_num_preprocessed</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a767626119fc7553441164cb4e953eecf" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>get_num_vectors</name></member>
+      <member refid="classshogun_1_1CFeatures_1ac1015e3a736e4e6d4d6fbe24416af6c4" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>get_preproc</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ab1207e479dd9fcf578f629db7b878917" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>get_size</name></member>
+      <member refid="classshogun_1_1CFeatures_1a07f1d7dc618a9f5f76663d80ad549d38" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1aed1282e0c50713f0cbfc5f0c122c681f" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>intlen</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1248f8829f63f9c9a42ac36065961295" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>is_preprocessed</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1af64e1090fb76e861b6f046ae8e2281a8" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>labels</name></member>
+      <member refid="classshogun_1_1CFeatures_1a6412ef81478c3c9dadac2a87a544f640" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>list_feature_obj</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ab3f090ce420bd82313354358bff38705" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>load</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1a3c61f9b4ce1b527e31286dcba66061be" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>load_base_data</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1aabec5c28aa0f9077afd3da566ef24615" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>load_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1aacda9efff0e718088499535745934ab1" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>num_features</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1afcdd2b798010c4cb1e5b64da5d0bb805" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>num_vectors</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1a47ae767a79f156462e161a0be6c5e430" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>preprocd</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a0130f7dadc6257d919be40eb7cc173d9" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>reshape</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a5ee15be9a68445fd47d4db97dcdaa888" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>save</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a3cbcb41f5f6fb4817568469120204c10" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>set_combined_feature_weight</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a2a44b4c0d05c35a612b2fc1d62df52c3" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>set_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a7c56a23d330e1dbf2e795401159708e8" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>set_feature_vector</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1aeafe03ff25bff3e82ba5ecaf81390353" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>set_num_features</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1aac7bc310db9f14c07c69a811d39771f2" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>set_num_vectors</name></member>
+      <member refid="classshogun_1_1CFeatures_1aa88c27c0f3885d23ac71c4cc2e55c431" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>set_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab43db0bd4a231249ce4bc65f6e15f695" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1a4246d9ab1f03fc324216e8047405d444" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>status</name></member>
+      <member refid="classshogun_1_1CFeatures_1a3ff3f03688a7f6a1b36dab8677407166" prot="public" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1a6bdc1a2fcd3f5548f39052051398cc8e" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>working_file</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1aa42e18804223ee368b7dd2a7f0e54647" prot="protected" virt="non-virtual"><scope>shogun::CRealFileFeatures</scope><name>working_filename</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a7c86c8f9ba308b59a8cf17f236be70d2" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>~CDotFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab0e2a8a18ac5056f802e4aa51d4fcd4f" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>~CFeatures</name></member>
+      <member refid="classshogun_1_1CRealFileFeatures_1a29f444414d97f3907908a11bb5d62197" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>~CRealFileFeatures</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a480b565d004158a3599ab57109cc7890" prot="public" virt="virtual"><scope>shogun::CRealFileFeatures</scope><name>~CSimpleFeatures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CSortUlongString" kind="class" prot="public">
+    <compoundname>shogun::CSortUlongString</compoundname>
+    <basecompoundref refid="classshogun_1_1CStringPreProc" prot="public" virt="non-virtual">shogun::CStringPreProc&lt; uint64_t &gt;</basecompoundref>
+    <includes local="no">SortUlongString.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CSortUlongString_1a7539c9ff041fcc116bf18a198041f347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSortUlongString::CSortUlongString</definition>
+        <argsstring>()</argsstring>
+        <name>CSortUlongString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortUlongString.h" line="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSortUlongString_1a06381f87b1d52a00b065e8792e893563" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CSortUlongString::~CSortUlongString</definition>
+        <argsstring>()</argsstring>
+        <name>~CSortUlongString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortUlongString.h" line="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSortUlongString_1a851d3cf2526937badc750652b24a1425" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSortUlongString::init</definition>
+        <argsstring>(CFeatures *f)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CPreProc_1afe50f73057b75cb494a9a4ab253258d6">init</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>initialize preprocessor from features </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortUlongString.h" line="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSortUlongString_1a3ae2c8558c75a85e797792a905774e50" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CSortUlongString::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <reimplements refid="classshogun_1_1CPreProc_1a0f043eb1dd251b49cb3cf3ecf44b1c4b">cleanup</reimplements>
+        <briefdescription>
+<para>cleanup </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortUlongString.h" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSortUlongString_1abd8966d4d7ad22959f47554e2bdc5316" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSortUlongString::load</definition>
+        <argsstring>(FILE *f)</argsstring>
+        <name>load</name>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>initialize preprocessor from file </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortUlongString.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSortUlongString_1a3a696b7411d4c6a7fc64c15f0d4c6ecc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSortUlongString::save</definition>
+        <argsstring>(FILE *f)</argsstring>
+        <name>save</name>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>save preprocessor init-data to file </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortUlongString.h" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSortUlongString_1a1e6d444e8b1d1643fd24f13390491507" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSortUlongString::apply_to_string_features</definition>
+        <argsstring>(CFeatures *f)</argsstring>
+        <name>apply_to_string_features</name>
+        <reimplements refid="classshogun_1_1CStringPreProc_1ab0073b24dc5e0bc68ca4e4c8a792aaec">apply_to_string_features</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>apply preproc to feature matrix result in feature matrix return pointer to feature_matrix, i.e. f-&gt;get_feature_matrix(); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortUlongString.h" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSortUlongString_1ad68f8293a6a4c080834a97b33724c6ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>uint64_t *</type>
+        <definition>virtual uint64_t* shogun::CSortUlongString::apply_to_string</definition>
+        <argsstring>(uint64_t *f, int32_t &amp;len)</argsstring>
+        <name>apply_to_string</name>
+        <reimplements refid="classshogun_1_1CStringPreProc_1a40d40a99f7596cb86099236c0497aa35">apply_to_string</reimplements>
+        <param>
+          <type>uint64_t *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>apply preproc on single feature vector result in feature matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortUlongString.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSortUlongString_1a3d7da3ca03d470fcb0f14041704d5f55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CSortUlongString::get_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortUlongString.h" line="54" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortUlongString.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Preprocessor SortUlongString, sorts the indivual strings in ascending order. </para>    </briefdescription>
+    <detaileddescription>
+<para>This is useful in conjunction with the CCommUlongStringKernel and will result in the spectrum kernel. For this to work the strings have to be mapped into a binary higher order representation first (cf. obtain_from_*() functions in CStringFeatures) </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="49">
+        <label>shogun::CSortUlongString</label>
+        <link refid="classshogun_1_1CSortUlongString"/>
+        <childnode refid="50" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>shogun::CPreProc</label>
+        <link refid="classshogun_1_1CPreProc"/>
+      </node>
+      <node id="50">
+        <label>shogun::CStringPreProc&lt; uint64_t &gt;</label>
+        <link refid="classshogun_1_1CStringPreProc"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="52">
+        <label>shogun::CSortUlongString</label>
+        <link refid="classshogun_1_1CSortUlongString"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>shogun::CPreProc</label>
+        <link refid="classshogun_1_1CPreProc"/>
+      </node>
+      <node id="53">
+        <label>shogun::CStringPreProc&lt; uint64_t &gt;</label>
+        <link refid="classshogun_1_1CStringPreProc"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortUlongString.h" line="29" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortUlongString.h" bodystart="28" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CSortUlongString_1ad68f8293a6a4c080834a97b33724c6ac" prot="public" virt="virtual"><scope>shogun::CSortUlongString</scope><name>apply_to_string</name></member>
+      <member refid="classshogun_1_1CSortUlongString_1a1e6d444e8b1d1643fd24f13390491507" prot="public" virt="virtual"><scope>shogun::CSortUlongString</scope><name>apply_to_string_features</name></member>
+      <member refid="classshogun_1_1CSortUlongString_1a3ae2c8558c75a85e797792a905774e50" prot="public" virt="virtual"><scope>shogun::CSortUlongString</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CPreProc_1a42cd824b1e730557f07884dc6eb98e51" prot="public" virt="non-virtual"><scope>shogun::CSortUlongString</scope><name>CPreProc</name></member>
+      <member refid="classshogun_1_1CSortUlongString_1a7539c9ff041fcc116bf18a198041f347" prot="public" virt="non-virtual"><scope>shogun::CSortUlongString</scope><name>CSortUlongString</name></member>
+      <member refid="classshogun_1_1CStringPreProc_1a4ed13aecdf635e6a8e310227df167d07" prot="public" virt="non-virtual"><scope>shogun::CSortUlongString</scope><name>CStringPreProc</name></member>
+      <member refid="classshogun_1_1CStringPreProc_1aa5c7ccd36186ce59ae5d98acb3a3f7d8" prot="public" virt="virtual"><scope>shogun::CSortUlongString</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CStringPreProc_1ad4e2089a5baf77716e20da3cb08dbdcf" prot="public" virt="virtual"><scope>shogun::CSortUlongString</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CPreProc_1a66dbec59819cb9ed7023fc47608ccad7" prot="public" virt="non-virtual"><scope>shogun::CSortUlongString</scope><name>get_id</name></member>
+      <member refid="classshogun_1_1CSortUlongString_1a3d7da3ca03d470fcb0f14041704d5f55" prot="public" virt="virtual"><scope>shogun::CSortUlongString</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CPreProc_1ade7d07b45284bdae48abe425b0bf5a40" prot="public" virt="virtual" ambiguityscope="CStringPreProc&lt; uint64_t &gt;::"><scope>shogun::CSortUlongString</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSortUlongString_1a851d3cf2526937badc750652b24a1425" prot="public" virt="virtual"><scope>shogun::CSortUlongString</scope><name>init</name></member>
+      <member refid="classshogun_1_1CSortUlongString_1abd8966d4d7ad22959f47554e2bdc5316" prot="public" virt="virtual"><scope>shogun::CSortUlongString</scope><name>load</name></member>
+      <member refid="classshogun_1_1CPreProc_1a7905211b1e156831e64768d936351fa8" prot="protected" virt="non-virtual"><scope>shogun::CSortUlongString</scope><name>preproc_id</name></member>
+      <member refid="classshogun_1_1CPreProc_1a58f21d152eaba8e982f98806d8496db3" prot="protected" virt="non-virtual"><scope>shogun::CSortUlongString</scope><name>preproc_name</name></member>
+      <member refid="classshogun_1_1CSortUlongString_1a3a696b7411d4c6a7fc64c15f0d4c6ecc" prot="public" virt="virtual"><scope>shogun::CSortUlongString</scope><name>save</name></member>
+      <member refid="classshogun_1_1CPreProc_1a037b99bfd3bacbb3135525e81b134c57" prot="public" virt="virtual"><scope>shogun::CSortUlongString</scope><name>~CPreProc</name></member>
+      <member refid="classshogun_1_1CSortUlongString_1a06381f87b1d52a00b065e8792e893563" prot="public" virt="virtual"><scope>shogun::CSortUlongString</scope><name>~CSortUlongString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

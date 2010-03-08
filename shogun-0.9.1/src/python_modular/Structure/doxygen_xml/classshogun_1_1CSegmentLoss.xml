@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CSegmentLoss" kind="class" prot="public">
+    <compoundname>shogun::CSegmentLoss</compoundname>
+    <includes local="no">SegmentLoss.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CSegmentLoss_1ace8589f7364e5339c7dc9550d5ef8f31" prot="protected" static="no" mutable="no">
+        <type>CArray2&lt; float32_t &gt;</type>
+        <definition>CArray2&lt;float32_t&gt; shogun::CSegmentLoss::m_segment_loss_matrix</definition>
+        <argsstring></argsstring>
+        <name>m_segment_loss_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>segment loss matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" line="97" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSegmentLoss_1ab3ca900d5cbca0bd02a272b4690effda" prot="protected" static="no" mutable="no">
+        <type>CArray3&lt; float64_t &gt;</type>
+        <definition>CArray3&lt;float64_t&gt; shogun::CSegmentLoss::m_segment_loss</definition>
+        <argsstring></argsstring>
+        <name>m_segment_loss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>segment loss two square matrices: one for segment based loss and one for length contribution </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" line="103" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSegmentLoss_1a09e212b637dd3218cd3750de2f995d83" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; int32_t &gt; *</type>
+        <definition>CArray&lt;int32_t&gt;* shogun::CSegmentLoss::m_segment_ids</definition>
+        <argsstring></argsstring>
+        <name>m_segment_ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>segment IDs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" line="106" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSegmentLoss_1a18e0b5cb8ff26443225ed58cade693e4" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; float64_t &gt; *</type>
+        <definition>CArray&lt;float64_t&gt;* shogun::CSegmentLoss::m_segment_mask</definition>
+        <argsstring></argsstring>
+        <name>m_segment_mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>segment mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" line="109" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSegmentLoss_1a40c6c34d07cb1c5bf611cf17ff3694a2" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSegmentLoss::m_num_segment_types</definition>
+        <argsstring></argsstring>
+        <name>m_num_segment_types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of different segment types (former: max_a_id) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" line="112" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CSegmentLoss_1a7521a00ad3a990ab4f50edf784589db2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSegmentLoss::CSegmentLoss</definition>
+        <argsstring>()</argsstring>
+        <name>CSegmentLoss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" line="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSegmentLoss_1a48523e30a6eb04c3d625fa987622229e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CSegmentLoss::~CSegmentLoss</definition>
+        <argsstring>()</argsstring>
+        <name>~CSegmentLoss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSegmentLoss_1ab24b39f97416d068538fcc2fc724d1d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float32_t</type>
+        <definition>float32_t shogun::CSegmentLoss::get_segment_loss</definition>
+        <argsstring>(int32_t from_pos, int32_t to_pos, int32_t segment_id)</argsstring>
+        <name>get_segment_loss</name>
+        <param>
+          <type>int32_t</type>
+          <declname>from_pos</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>to_pos</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>segment_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get segment loss for a given range</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>from_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>segment_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of the segment </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" line="42" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" bodystart="115" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSegmentLoss_1adc9d31459536a31db267045d32934524" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float32_t</type>
+        <definition>float32_t shogun::CSegmentLoss::get_segment_loss_extend</definition>
+        <argsstring>(int32_t from_pos, int32_t to_pos, int32_t segment_id)</argsstring>
+        <name>get_segment_loss_extend</name>
+        <param>
+          <type>int32_t</type>
+          <declname>from_pos</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>to_pos</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>segment_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get segment loss for a given range</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>from_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>segment_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of the segment </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" line="50" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" bodystart="153" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSegmentLoss_1a995cbedc3fadfd540a98e4b7f2021c6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSegmentLoss::set_segment_loss</definition>
+        <argsstring>(float64_t *segment_loss, int32_t m, int32_t n)</argsstring>
+        <name>set_segment_loss</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>segment_loss</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set best path segment loss</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>segment_loss</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>segment loss </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of segment id1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of segment id2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSegmentLoss_1a15890826bab962726e93f5768568849f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSegmentLoss::set_segment_ids</definition>
+        <argsstring>(CArray&lt; int32_t &gt; *segment_ids)</argsstring>
+        <name>set_segment_ids</name>
+        <param>
+          <type>CArray&lt; int32_t &gt; *</type>
+          <declname>segment_ids</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set best path segmend ids</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>segment_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>segment ids </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSegmentLoss_1a24dd989757f4f21275e9ca2c4f33d45b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSegmentLoss::set_segment_mask</definition>
+        <argsstring>(CArray&lt; float64_t &gt; *segment_mask)</argsstring>
+        <name>set_segment_mask</name>
+        <param>
+          <type>CArray&lt; float64_t &gt; *</type>
+          <declname>segment_mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mask parts of the sequence such that there is no loss incured there; this is used if there is uncertainty in the label</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>segment_mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mask </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSegmentLoss_1aaf62a92e67cf2c76443e6edda8865684" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSegmentLoss::set_num_segment_types</definition>
+        <argsstring>(int32_t num_segment_types)</argsstring>
+        <name>set_num_segment_types</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num_segment_types</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set num segment types</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_segment_types</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>num segment types </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" line="79" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSegmentLoss_1ab447040c5c1e8f45fdb8f85221733d1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSegmentLoss::compute_loss</definition>
+        <argsstring>(int32_t *all_pos, int32_t len)</argsstring>
+        <name>compute_loss</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>all_pos</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute loss</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>all_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>all candidate positions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of positions </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSegmentLoss_1a12f5fb5b7ea487b9d05b686182844a08" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CSegmentLoss::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" line="93" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class IntronList </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" line="27" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/SegmentLoss.h" bodystart="26" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CSegmentLoss_1ab447040c5c1e8f45fdb8f85221733d1b" prot="public" virt="non-virtual"><scope>shogun::CSegmentLoss</scope><name>compute_loss</name></member>
+      <member refid="classshogun_1_1CSegmentLoss_1a7521a00ad3a990ab4f50edf784589db2" prot="public" virt="non-virtual"><scope>shogun::CSegmentLoss</scope><name>CSegmentLoss</name></member>
+      <member refid="classshogun_1_1CSegmentLoss_1a12f5fb5b7ea487b9d05b686182844a08" prot="public" virt="virtual"><scope>shogun::CSegmentLoss</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSegmentLoss_1ab24b39f97416d068538fcc2fc724d1d8" prot="public" virt="non-virtual"><scope>shogun::CSegmentLoss</scope><name>get_segment_loss</name></member>
+      <member refid="classshogun_1_1CSegmentLoss_1adc9d31459536a31db267045d32934524" prot="public" virt="non-virtual"><scope>shogun::CSegmentLoss</scope><name>get_segment_loss_extend</name></member>
+      <member refid="classshogun_1_1CSegmentLoss_1a40c6c34d07cb1c5bf611cf17ff3694a2" prot="protected" virt="non-virtual"><scope>shogun::CSegmentLoss</scope><name>m_num_segment_types</name></member>
+      <member refid="classshogun_1_1CSegmentLoss_1a09e212b637dd3218cd3750de2f995d83" prot="protected" virt="non-virtual"><scope>shogun::CSegmentLoss</scope><name>m_segment_ids</name></member>
+      <member refid="classshogun_1_1CSegmentLoss_1ab3ca900d5cbca0bd02a272b4690effda" prot="protected" virt="non-virtual"><scope>shogun::CSegmentLoss</scope><name>m_segment_loss</name></member>
+      <member refid="classshogun_1_1CSegmentLoss_1ace8589f7364e5339c7dc9550d5ef8f31" prot="protected" virt="non-virtual"><scope>shogun::CSegmentLoss</scope><name>m_segment_loss_matrix</name></member>
+      <member refid="classshogun_1_1CSegmentLoss_1a18e0b5cb8ff26443225ed58cade693e4" prot="protected" virt="non-virtual"><scope>shogun::CSegmentLoss</scope><name>m_segment_mask</name></member>
+      <member refid="classshogun_1_1CSegmentLoss_1aaf62a92e67cf2c76443e6edda8865684" prot="public" virt="non-virtual"><scope>shogun::CSegmentLoss</scope><name>set_num_segment_types</name></member>
+      <member refid="classshogun_1_1CSegmentLoss_1a15890826bab962726e93f5768568849f" prot="public" virt="non-virtual"><scope>shogun::CSegmentLoss</scope><name>set_segment_ids</name></member>
+      <member refid="classshogun_1_1CSegmentLoss_1a995cbedc3fadfd540a98e4b7f2021c6b" prot="public" virt="non-virtual"><scope>shogun::CSegmentLoss</scope><name>set_segment_loss</name></member>
+      <member refid="classshogun_1_1CSegmentLoss_1a24dd989757f4f21275e9ca2c4f33d45b" prot="public" virt="non-virtual"><scope>shogun::CSegmentLoss</scope><name>set_segment_mask</name></member>
+      <member refid="classshogun_1_1CSegmentLoss_1a48523e30a6eb04c3d625fa987622229e" prot="public" virt="virtual"><scope>shogun::CSegmentLoss</scope><name>~CSegmentLoss</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

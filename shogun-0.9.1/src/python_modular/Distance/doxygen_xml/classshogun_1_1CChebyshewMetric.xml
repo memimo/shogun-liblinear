@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CChebyshewMetric" kind="class" prot="public">
+    <compoundname>shogun::CChebyshewMetric</compoundname>
+    <basecompoundref refid="classshogun_1_1CSimpleDistance" prot="public" virt="non-virtual">shogun::CSimpleDistance&lt; float64_t &gt;</basecompoundref>
+    <includes local="no">ChebyshewMetric.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CChebyshewMetric_1ab618d682258f489d6fd6f2edcd1b8cd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CChebyshewMetric::CChebyshewMetric</definition>
+        <argsstring>()</argsstring>
+        <name>CChebyshewMetric</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/ChebyshewMetric.h" line="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CChebyshewMetric_1a9734ccbd0b5f1e721129351f414a0628" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CChebyshewMetric::CChebyshewMetric</definition>
+        <argsstring>(CSimpleFeatures&lt; float64_t &gt; *l, CSimpleFeatures&lt; float64_t &gt; *r)</argsstring>
+        <name>CChebyshewMetric</name>
+        <param>
+          <type>CSimpleFeatures&lt; float64_t &gt; *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>CSimpleFeatures&lt; float64_t &gt; *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of left-hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of right-hand side </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/ChebyshewMetric.h" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CChebyshewMetric_1ac1c1b2b811472b8140e64f7a83e79409" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CChebyshewMetric::~CChebyshewMetric</definition>
+        <argsstring>()</argsstring>
+        <name>~CChebyshewMetric</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/ChebyshewMetric.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CChebyshewMetric_1a1c35c0750b45583840a81a92f43170d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CChebyshewMetric::init</definition>
+        <argsstring>(CFeatures *l, CFeatures *r)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CSimpleDistance_1af17ea30fdcb2bd37d0c94f9eca95db86">init</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>CFeatures *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>init distance</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of left-hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of right-hand side </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if init was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/ChebyshewMetric.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CChebyshewMetric_1ad3611a716d5a2d0ec693fe9b0271ee9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CChebyshewMetric::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <reimplements refid="classshogun_1_1CDistance_1a12832f73a19b04488f0efda083dfa2a4">cleanup</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cleanup distance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/ChebyshewMetric.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CChebyshewMetric_1af03967636f3400d9b7a61e9b3fee5556" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EDistanceType</type>
+        <definition>virtual EDistanceType shogun::CChebyshewMetric::get_distance_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_distance_type</name>
+        <reimplements refid="classshogun_1_1CDistance_1a93d139c95d20cea805e95db8c36f83a3">get_distance_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get distance type we are</para><para><simplesect kind="return"><para>distance type CHEBYSHEW </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/ChebyshewMetric.h" line="60" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/ChebyshewMetric.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CChebyshewMetric_1aa4ceb242ecec6181d99222ac21ecc0f8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CChebyshewMetric::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get name of the distance</para><para><simplesect kind="return"><para>name Chebyshew-Metric </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/ChebyshewMetric.h" line="66" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/ChebyshewMetric.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CChebyshewMetric_1a1ec2c897a9906043e1ca71064372f75a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CChebyshewMetric::compute</definition>
+        <argsstring>(int32_t idx_a, int32_t idx_b)</argsstring>
+        <name>compute</name>
+        <reimplements refid="classshogun_1_1CDistance_1aa55722bf35a997e7502d4d84c21d5f01">compute</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_a</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute distance for features a and b idx_{a,b} denote the index of the feature vectors in the corresponding feature object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/ChebyshewMetric.h" line="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class ChebyshewMetric </para>    </briefdescription>
+    <detaileddescription>
+<para>The Chebyshev distance (<formula id="4">$L_{\infty}$</formula> norm) returns the maximum of absolute feature dimension differences between two data points.</para><para><formula id="5">\[\displaystyle d(\bf{x},\bf{x&apos;}) = max|\bf{x_{i}}-\bf{x&apos;_{i}}| \quad x,x&apos; \in R^{n} \]</formula></para><para><simplesect kind="see"><para><ulink url="http://en.wikipedia.org/wiki/Chebyshev_distance">Wikipedia: Chebyshev distance</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="19">
+        <label>shogun::CSimpleDistance&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimpleDistance"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>shogun::CChebyshewMetric</label>
+        <link refid="classshogun_1_1CChebyshewMetric"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>shogun::CDistance</label>
+        <link refid="classshogun_1_1CDistance"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="22">
+        <label>shogun::CSimpleDistance&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimpleDistance"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>shogun::CChebyshewMetric</label>
+        <link refid="classshogun_1_1CChebyshewMetric"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>shogun::CDistance</label>
+        <link refid="classshogun_1_1CDistance"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/ChebyshewMetric.h" line="32" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/ChebyshewMetric.h" bodystart="31" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CChebyshewMetric_1ab618d682258f489d6fd6f2edcd1b8cd9" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>CChebyshewMetric</name></member>
+      <member refid="classshogun_1_1CChebyshewMetric_1a9734ccbd0b5f1e721129351f414a0628" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>CChebyshewMetric</name></member>
+      <member refid="classshogun_1_1CDistance_1ac7711f406989e3650d18dc83d31e51e4" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>CDistance</name></member>
+      <member refid="classshogun_1_1CDistance_1aa3d9c5357102a59379da320189734ebd" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>CDistance</name></member>
+      <member refid="classshogun_1_1CChebyshewMetric_1ad3611a716d5a2d0ec693fe9b0271ee9d" prot="public" virt="virtual"><scope>shogun::CChebyshewMetric</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CChebyshewMetric_1a1ec2c897a9906043e1ca71064372f75a" prot="protected" virt="virtual"><scope>shogun::CChebyshewMetric</scope><name>compute</name></member>
+      <member refid="classshogun_1_1CSimpleDistance_1ad8a3abbb66312e52e26e4289c68eb495" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>CSimpleDistance</name></member>
+      <member refid="classshogun_1_1CDistance_1a162c1fa451dd9267c15216aef28b4003" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>distance</name></member>
+      <member refid="classshogun_1_1CDistance_1a8089932a048d5ebff0bf279448c98960" prot="protected" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>do_precompute_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1a84c529f0578ef7c4084c2457c2fb5188" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>get_distance_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1a612d2ffac1258ec986ae836ce3a78d6c" prot="public" virt="virtual"><scope>shogun::CChebyshewMetric</scope><name>get_distance_matrix_real</name></member>
+      <member refid="classshogun_1_1CDistance_1a9681314057e505ad5c1aa93a05983e2a" prot="public" virt="virtual"><scope>shogun::CChebyshewMetric</scope><name>get_distance_matrix_shortreal</name></member>
+      <member refid="classshogun_1_1CChebyshewMetric_1af03967636f3400d9b7a61e9b3fee5556" prot="public" virt="virtual"><scope>shogun::CChebyshewMetric</scope><name>get_distance_type</name></member>
+      <member refid="classshogun_1_1CSimpleDistance_1a01020ebeb5cf65bb9a8053f3184bed9c" prot="public" virt="virtual"><scope>shogun::CChebyshewMetric</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CSimpleDistance_1a33a5b1fdb5a8095b1cb817f2d36b460a" prot="public" virt="virtual"><scope>shogun::CChebyshewMetric</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CDistance_1af345439df47a38f294106fe318a3e760" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>get_lhs</name></member>
+      <member refid="classshogun_1_1CChebyshewMetric_1aa4ceb242ecec6181d99222ac21ecc0f8" prot="public" virt="virtual"><scope>shogun::CChebyshewMetric</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CDistance_1acb26117edc0ef325aa36989328db9941" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>get_num_vec_lhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a57a7d3f55de91c8467633ae94c92fb7f" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>get_num_vec_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1ac83a7393d28483420996597a402ac8be" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>get_precompute_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1a6bffc5be35b5a80f34125db203821cd3" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>get_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a5d8ea29b5d0de2bd5f350122b6ff0465" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>has_features</name></member>
+      <member refid="classshogun_1_1CChebyshewMetric_1a1c35c0750b45583840a81a92f43170d0" prot="public" virt="virtual"><scope>shogun::CChebyshewMetric</scope><name>init</name></member>
+      <member refid="classshogun_1_1CDistance_1adb921211288ff18826b285ab214b87eb" prot="protected" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>lhs</name></member>
+      <member refid="classshogun_1_1CDistance_1adc977a31f34e849d64ddfbb3bca1ee06" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>lhs_equals_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a44e221e6bcb20925ed6dd1d424c15d54" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>load</name></member>
+      <member refid="classshogun_1_1CDistance_1a96e1d129ebafe7d69fc43147ae52e97f" prot="protected" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>precompute_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1af6a193233bec588c95ab38d43e0f14be" prot="protected" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>precomputed_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1afe1e59a6b35a2d35d6f1e6dcdfc94c6a" prot="public" virt="virtual"><scope>shogun::CChebyshewMetric</scope><name>remove_lhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a6adfb2fc33a9ce11e58bc5b203f9bf64" prot="public" virt="virtual"><scope>shogun::CChebyshewMetric</scope><name>remove_lhs_and_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a179d17698dfd89af6dbdfcc3eb8c7544" prot="public" virt="virtual"><scope>shogun::CChebyshewMetric</scope><name>remove_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a4ae58108d7045ac73b7dcf4b464f3784" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>replace_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1ae35805ff2db463ffb6b18e9cece75f02" prot="protected" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a789639ca40faccda219e4c6e509cd5ca" prot="public" virt="non-virtual"><scope>shogun::CChebyshewMetric</scope><name>save</name></member>
+      <member refid="classshogun_1_1CDistance_1a29136001933dfc82c5f76e0255f401c1" prot="public" virt="virtual"><scope>shogun::CChebyshewMetric</scope><name>set_precompute_matrix</name></member>
+      <member refid="classshogun_1_1CChebyshewMetric_1ac1c1b2b811472b8140e64f7a83e79409" prot="public" virt="virtual"><scope>shogun::CChebyshewMetric</scope><name>~CChebyshewMetric</name></member>
+      <member refid="classshogun_1_1CDistance_1ae781fab41be1536aa17cca88e3002022" prot="public" virt="virtual"><scope>shogun::CChebyshewMetric</scope><name>~CDistance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

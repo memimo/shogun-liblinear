@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CQPBSVMLib" kind="class" prot="public">
+    <compoundname>shogun::CQPBSVMLib</compoundname>
+    <includes local="no">qpbsvmlib.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CQPBSVMLib_1ae883b2e7a94b678e1cf1f0e2d1741ac9" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CQPBSVMLib::m_H</definition>
+        <argsstring></argsstring>
+        <name>m_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>matrix H </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="125" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CQPBSVMLib_1a6e7bd84e0be157ea0ddb17080a75e92a" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CQPBSVMLib::m_diag_H</definition>
+        <argsstring></argsstring>
+        <name>m_diag_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>diagonal of H </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="127" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CQPBSVMLib_1a7bad1dfbc6c606f93b05d0dd97b59ca2" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CQPBSVMLib::m_dim</definition>
+        <argsstring></argsstring>
+        <name>m_dim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dim </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="129" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CQPBSVMLib_1a98a24b55f0a30cfd9d39926186448c2a" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CQPBSVMLib::m_f</definition>
+        <argsstring></argsstring>
+        <name>m_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>vector f </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="132" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CQPBSVMLib_1acf1c2b0aeeb21ce27044d1c53e2f5485" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CQPBSVMLib::m_UB</definition>
+        <argsstring></argsstring>
+        <name>m_UB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UB </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="135" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CQPBSVMLib_1a9d6cdb1b028b624027793ae6e5d3525e" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CQPBSVMLib::m_tmax</definition>
+        <argsstring></argsstring>
+        <name>m_tmax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tmax </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="138" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CQPBSVMLib_1a20f3944ea2cbdbac1b69dbb21637217c" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CQPBSVMLib::m_tolabs</definition>
+        <argsstring></argsstring>
+        <name>m_tolabs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tolabs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="140" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CQPBSVMLib_1a93d08a8cd69a1674101f0d86ce04ea7b" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CQPBSVMLib::m_tolrel</definition>
+        <argsstring></argsstring>
+        <name>m_tolrel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tolrel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="142" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CQPBSVMLib_1a098bbef616779f33f780eaf017c614e2" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CQPBSVMLib::m_tolKKT</definition>
+        <argsstring></argsstring>
+        <name>m_tolKKT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tolKKT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="144" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CQPBSVMLib_1ad1858322eb66edf94766db2a6ea14bb1" prot="protected" static="no" mutable="no">
+        <type>E_QPB_SOLVER</type>
+        <definition>E_QPB_SOLVER shogun::CQPBSVMLib::m_solver</definition>
+        <argsstring></argsstring>
+        <name>m_solver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>solver </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="146" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CQPBSVMLib_1a45e99a0e1e98f0f241949ffc0515f111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CQPBSVMLib::CQPBSVMLib</definition>
+        <argsstring>(float64_t *H, int32_t n, float64_t *f, int32_t m, float64_t UB=1.0)</argsstring>
+        <name>CQPBSVMLib</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>UB</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>H</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>symmetric matrix of size n x n </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of H&apos;s matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is vector of size m </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of vector f </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UB </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CQPBSVMLib_1af2f31c4994895089d5f8c8834230e023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CQPBSVMLib::solve_qp</definition>
+        <argsstring>(float64_t *result, int32_t len)</argsstring>
+        <name>solve_qp</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>result has to be allocated &amp; zeroed </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CQPBSVMLib_1ad2cd4ef8bf4614d80f300931d2cc8833" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CQPBSVMLib::set_solver</definition>
+        <argsstring>(E_QPB_SOLVER solver)</argsstring>
+        <name>set_solver</name>
+        <param>
+          <type>E_QPB_SOLVER</type>
+          <declname>solver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set solver</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>solver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new solver </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="65" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CQPBSVMLib_1aaae8789d0eecf2493f3197a054852875" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CQPBSVMLib::~CQPBSVMLib</definition>
+        <argsstring>()</argsstring>
+        <name>~CQPBSVMLib</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="69"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CQPBSVMLib_1ab6d1814bbc551814f2d56e581c83c79b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CQPBSVMLib::get_col</definition>
+        <argsstring>(int32_t col)</argsstring>
+        <name>get_col</name>
+        <param>
+          <type>int32_t</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get col</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>col to get </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>col indexed by col </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="78" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CQPBSVMLib_1aa27fa408a0735255554f4c4be4b13ff6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CQPBSVMLib::qpbsvm_sca</definition>
+        <argsstring>(float64_t *x, float64_t *Nabla, int32_t *ptr_t, float64_t **ptr_History, int32_t verb)</argsstring>
+        <name>qpbsvm_sca</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>Nabla</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>ptr_t</declname>
+        </param>
+        <param>
+          <type>float64_t **</type>
+          <declname>ptr_History</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>verb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Usage: exitflag = qpbsvm_sca(UB, dim, tmax, tolabs, tolrel, tolKKT, x, Nabla, &amp;t, &amp;History, verb ) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CQPBSVMLib_1a4f0fec3a47f6f14aa84ae0632cf1ed1e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CQPBSVMLib::qpbsvm_scas</definition>
+        <argsstring>(float64_t *x, float64_t *Nabla, int32_t *ptr_t, float64_t **ptr_History, int32_t verb)</argsstring>
+        <name>qpbsvm_scas</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>Nabla</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>ptr_t</declname>
+        </param>
+        <param>
+          <type>float64_t **</type>
+          <declname>ptr_History</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>verb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Usage: exitflag = qpbsvm_scas(UB, dim, tmax, tolabs, tolrel, tolKKT, x, Nabla, &amp;t, &amp;History, verb ) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CQPBSVMLib_1a74aab7404d0b5e8a87954ea79bfa0a58" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CQPBSVMLib::qpbsvm_scamv</definition>
+        <argsstring>(float64_t *x, float64_t *Nabla, int32_t *ptr_t, float64_t **ptr_History, int32_t verb)</argsstring>
+        <name>qpbsvm_scamv</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>Nabla</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>ptr_t</declname>
+        </param>
+        <param>
+          <type>float64_t **</type>
+          <declname>ptr_History</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>verb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Usage: exitflag = qpbsvm_scamv(UB, dim, tmax, tolabs, tolrel, tolKKT, x, Nabla, &amp;t, &amp;History, verb ) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CQPBSVMLib_1a5df2c1fa6a6e7ea656076f219197af18" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CQPBSVMLib::qpbsvm_prloqo</definition>
+        <argsstring>(float64_t *x, float64_t *Nabla, int32_t *ptr_t, float64_t **ptr_History, int32_t verb)</argsstring>
+        <name>qpbsvm_prloqo</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>Nabla</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>ptr_t</declname>
+        </param>
+        <param>
+          <type>float64_t **</type>
+          <declname>ptr_History</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>verb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Usage: exitflag = qpbsvm_prloqo(UB, dim, tmax, tolabs, tolrel, tolKKT, x, Nabla, &amp;t, &amp;History, verb ) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CQPBSVMLib_1ada2d3d640cbcbd987c66cca034e2ae36" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CQPBSVMLib::qpbsvm_gauss_seidel</definition>
+        <argsstring>(float64_t *x, float64_t *Nabla, int32_t *ptr_t, float64_t **ptr_History, int32_t verb)</argsstring>
+        <name>qpbsvm_gauss_seidel</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>Nabla</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>ptr_t</declname>
+        </param>
+        <param>
+          <type>float64_t **</type>
+          <declname>ptr_History</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>verb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Usage: exitflag = qpbsvm_gauss_seidel(UB, dim, tmax, tolabs, tolrel, tolKKT, x, Nabla, &amp;t, &amp;History, verb ) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CQPBSVMLib_1a0e1c7c301b2168fe56168e1fca5d6f7b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CQPBSVMLib::qpbsvm_gradient_descent</definition>
+        <argsstring>(float64_t *x, float64_t *Nabla, int32_t *ptr_t, float64_t **ptr_History, int32_t verb)</argsstring>
+        <name>qpbsvm_gradient_descent</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>Nabla</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>ptr_t</declname>
+        </param>
+        <param>
+          <type>float64_t **</type>
+          <declname>ptr_History</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>verb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Usage: exitflag = qpbsvm_gradient_descent(UB, dim, tmax, tolabs, tolrel, tolKKT, x, Nabla, &amp;t, &amp;History, verb ) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CQPBSVMLib_1a1799aa37823c10f78e9e95b3426b6cdf" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CQPBSVMLib::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="121" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" bodystart="121" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class QPBSVMLib </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" line="44" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/qpbsvmlib.h" bodystart="43" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CQPBSVMLib_1a45e99a0e1e98f0f241949ffc0515f111" prot="public" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>CQPBSVMLib</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1ab6d1814bbc551814f2d56e581c83c79b" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>get_col</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1a1799aa37823c10f78e9e95b3426b6cdf" prot="protected" virt="virtual"><scope>shogun::CQPBSVMLib</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1a6e7bd84e0be157ea0ddb17080a75e92a" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>m_diag_H</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1a7bad1dfbc6c606f93b05d0dd97b59ca2" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>m_dim</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1a98a24b55f0a30cfd9d39926186448c2a" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>m_f</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1ae883b2e7a94b678e1cf1f0e2d1741ac9" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>m_H</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1ad1858322eb66edf94766db2a6ea14bb1" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>m_solver</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1a9d6cdb1b028b624027793ae6e5d3525e" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>m_tmax</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1a20f3944ea2cbdbac1b69dbb21637217c" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>m_tolabs</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1a098bbef616779f33f780eaf017c614e2" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>m_tolKKT</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1a93d08a8cd69a1674101f0d86ce04ea7b" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>m_tolrel</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1acf1c2b0aeeb21ce27044d1c53e2f5485" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>m_UB</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1ada2d3d640cbcbd987c66cca034e2ae36" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>qpbsvm_gauss_seidel</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1a0e1c7c301b2168fe56168e1fca5d6f7b" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>qpbsvm_gradient_descent</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1a5df2c1fa6a6e7ea656076f219197af18" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>qpbsvm_prloqo</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1aa27fa408a0735255554f4c4be4b13ff6" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>qpbsvm_sca</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1a74aab7404d0b5e8a87954ea79bfa0a58" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>qpbsvm_scamv</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1a4f0fec3a47f6f14aa84ae0632cf1ed1e" prot="protected" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>qpbsvm_scas</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1ad2cd4ef8bf4614d80f300931d2cc8833" prot="public" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>set_solver</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1af2f31c4994895089d5f8c8834230e023" prot="public" virt="non-virtual"><scope>shogun::CQPBSVMLib</scope><name>solve_qp</name></member>
+      <member refid="classshogun_1_1CQPBSVMLib_1aaae8789d0eecf2493f3197a054852875" prot="public" virt="virtual"><scope>shogun::CQPBSVMLib</scope><name>~CQPBSVMLib</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

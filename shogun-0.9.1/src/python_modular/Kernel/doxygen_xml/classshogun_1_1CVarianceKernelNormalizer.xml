@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CVarianceKernelNormalizer" kind="class" prot="public">
+    <compoundname>shogun::CVarianceKernelNormalizer</compoundname>
+    <basecompoundref refid="classshogun_1_1CKernelNormalizer" prot="public" virt="non-virtual">shogun::CKernelNormalizer</basecompoundref>
+    <includes local="no">VarianceKernelNormalizer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CVarianceKernelNormalizer_1a1be95d47339df431f9bea6dc4ba7aa2f" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CVarianceKernelNormalizer::meandiff</definition>
+        <argsstring></argsstring>
+        <name>meandiff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>scaling constant </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" line="109" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CVarianceKernelNormalizer_1a165008ef2549304d7a041b29ac13549e" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CVarianceKernelNormalizer::sqrt_meandiff</definition>
+        <argsstring></argsstring>
+        <name>sqrt_meandiff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>square root of scaling constant </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" line="111" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CVarianceKernelNormalizer_1a1218eb2401830de7009ca39a571dbc64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CVarianceKernelNormalizer::CVarianceKernelNormalizer</definition>
+        <argsstring>()</argsstring>
+        <name>CVarianceKernelNormalizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" line="33" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CVarianceKernelNormalizer_1abf88553fb83fd8a853154a6a9f69641a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CVarianceKernelNormalizer::~CVarianceKernelNormalizer</definition>
+        <argsstring>()</argsstring>
+        <name>~CVarianceKernelNormalizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" line="38" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CVarianceKernelNormalizer_1af972d7695c63b5af9c2879907c942575" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CVarianceKernelNormalizer::init</definition>
+        <argsstring>(CKernel *k)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1a81e40e31e3ffe03d31d22a87379f195d">init</reimplements>
+        <param>
+          <type><ref refid="classshogun_1_1CKernel" kindref="compound">CKernel</ref> *</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialization of the normalizer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" line="44" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" bodystart="43" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CVarianceKernelNormalizer_1ae5d782f1506bf1bed303a9ba2ddd1bd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CVarianceKernelNormalizer::normalize</definition>
+        <argsstring>(float64_t value, int32_t idx_lhs, int32_t idx_rhs)</argsstring>
+        <name>normalize</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1a93c47ed8ce631c3a1350d1aaeeb80fed">normalize</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_lhs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize the kernel value <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of left hand side vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of right hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" line="82" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" bodystart="80" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CVarianceKernelNormalizer_1a2cb73beaeeb00d9a63fed896dbd9ab86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CVarianceKernelNormalizer::normalize_lhs</definition>
+        <argsstring>(float64_t value, int32_t idx_lhs)</argsstring>
+        <name>normalize_lhs</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1aa25af9b375b533e4cff3768a77bd0e7f">normalize_lhs</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize only the left hand side vector <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of a component of the left hand side feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of left hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" line="91" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CVarianceKernelNormalizer_1af5a7b39524aee9ebd8c84b846ffa93a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CVarianceKernelNormalizer::normalize_rhs</definition>
+        <argsstring>(float64_t value, int32_t idx_rhs)</argsstring>
+        <name>normalize_rhs</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1ac98a44e10b6b6b1bb4dc259a877e7491">normalize_rhs</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize only the right hand side vector <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of a component of the right hand side feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of right hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" line="100" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CVarianceKernelNormalizer_1a3c4e36074c1784cb4319c0769fbbbf01" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CVarianceKernelNormalizer::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" line="105" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>VarianceKernelNormalizer divides by the ``variance&apos;&apos;. </para>    </briefdescription>
+    <detaileddescription>
+<para>This effectively normalizes the vectors in feature space to variance 1 (see <ref refid="classshogun_1_1CVarianceKernelNormalizer" kindref="compound">CVarianceKernelNormalizer</ref>)</para><para><formula id="48">\[ k&apos;({\bf x},{\bf x&apos;}) = \frac{k({\bf x},{\bf x&apos;})}{\frac{1}{N}\sum_{i=1}^N k({\bf x}_i, {\bf x}_i) - \sum_{i,j=1}^N, k({\bf x}_i,{\bf x&apos;}_j)/N^2} \]</formula> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="342">
+        <label>shogun::CVarianceKernelNormalizer</label>
+        <link refid="classshogun_1_1CVarianceKernelNormalizer"/>
+        <childnode refid="343" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="343">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="344">
+        <label>shogun::CVarianceKernelNormalizer</label>
+        <link refid="classshogun_1_1CVarianceKernelNormalizer"/>
+        <childnode refid="345" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="345">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" line="28" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h" bodystart="27" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CKernelNormalizer_1ac6fe092f0738d7de0aa36183473ae08f" prot="public" virt="non-virtual"><scope>shogun::CVarianceKernelNormalizer</scope><name>CKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CVarianceKernelNormalizer_1a1218eb2401830de7009ca39a571dbc64" prot="public" virt="non-virtual"><scope>shogun::CVarianceKernelNormalizer</scope><name>CVarianceKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CVarianceKernelNormalizer_1a3c4e36074c1784cb4319c0769fbbbf01" prot="public" virt="virtual"><scope>shogun::CVarianceKernelNormalizer</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CVarianceKernelNormalizer_1af972d7695c63b5af9c2879907c942575" prot="public" virt="virtual"><scope>shogun::CVarianceKernelNormalizer</scope><name>init</name></member>
+      <member refid="classshogun_1_1CVarianceKernelNormalizer_1a1be95d47339df431f9bea6dc4ba7aa2f" prot="protected" virt="non-virtual"><scope>shogun::CVarianceKernelNormalizer</scope><name>meandiff</name></member>
+      <member refid="classshogun_1_1CVarianceKernelNormalizer_1ae5d782f1506bf1bed303a9ba2ddd1bd9" prot="public" virt="virtual"><scope>shogun::CVarianceKernelNormalizer</scope><name>normalize</name></member>
+      <member refid="classshogun_1_1CVarianceKernelNormalizer_1a2cb73beaeeb00d9a63fed896dbd9ab86" prot="public" virt="virtual"><scope>shogun::CVarianceKernelNormalizer</scope><name>normalize_lhs</name></member>
+      <member refid="classshogun_1_1CVarianceKernelNormalizer_1af5a7b39524aee9ebd8c84b846ffa93a2" prot="public" virt="virtual"><scope>shogun::CVarianceKernelNormalizer</scope><name>normalize_rhs</name></member>
+      <member refid="classshogun_1_1CVarianceKernelNormalizer_1a165008ef2549304d7a041b29ac13549e" prot="protected" virt="non-virtual"><scope>shogun::CVarianceKernelNormalizer</scope><name>sqrt_meandiff</name></member>
+      <member refid="classshogun_1_1CKernelNormalizer_1a8af9672897eb3da0c1892ef1e16fb29c" prot="public" virt="virtual"><scope>shogun::CVarianceKernelNormalizer</scope><name>~CKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CVarianceKernelNormalizer_1abf88553fb83fd8a853154a6a9f69641a" prot="public" virt="virtual"><scope>shogun::CVarianceKernelNormalizer</scope><name>~CVarianceKernelNormalizer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

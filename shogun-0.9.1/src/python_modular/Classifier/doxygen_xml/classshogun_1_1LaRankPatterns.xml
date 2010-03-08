@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1LaRankPatterns" kind="class" prot="public">
+    <compoundname>shogun::LaRankPatterns</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classshogun_1_1LaRankPatterns_1a651016d1bc79e01d3b530aaa1669fe05" prot="private" static="no" mutable="no">
+        <type>std_hash_set&lt; uint32_t &gt;</type>
+        <definition>std_hash_set&lt; uint32_t &gt; shogun::LaRankPatterns::freeidx</definition>
+        <argsstring></argsstring>
+        <name>freeidx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="295" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1LaRankPatterns_1a4cd8e7abc133b987e826d6deaddf9084" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classshogun_1_1LaRankPattern" kindref="compound">LaRankPattern</ref> &gt;</type>
+        <definition>std::vector&lt; LaRankPattern &gt; shogun::LaRankPatterns::patterns</definition>
+        <argsstring></argsstring>
+        <name>patterns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="296" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1LaRankPatterns_1a185b0cd014a12030d00eeaaf3bf1de71" prot="private" static="no" mutable="no">
+        <type>std_hash_map&lt; int32_t, uint32_t &gt;</type>
+        <definition>std_hash_map&lt; int32_t, uint32_t &gt; shogun::LaRankPatterns::x_id2rank</definition>
+        <argsstring></argsstring>
+        <name>x_id2rank</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="297" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1LaRankPatterns_1a417583509ea62691f7143f0471686601" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::LaRankPatterns::LaRankPatterns</definition>
+        <argsstring>()</argsstring>
+        <name>LaRankPatterns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="207" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="207" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankPatterns_1ac312cb79c06602e04d606384229cd0af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::LaRankPatterns::~LaRankPatterns</definition>
+        <argsstring>()</argsstring>
+        <name>~LaRankPatterns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="208" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="208" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankPatterns_1a4027af007a79941d096f3ab670fbad0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::LaRankPatterns::insert</definition>
+        <argsstring>(const LaRankPattern &amp;pattern)</argsstring>
+        <name>insert</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1LaRankPattern" kindref="compound">LaRankPattern</ref> &amp;</type>
+          <declname>pattern</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="211" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="210" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankPatterns_1ae39243dd226a0c8484010e14654b8e2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::LaRankPatterns::remove</definition>
+        <argsstring>(uint32_t i)</argsstring>
+        <name>remove</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="235" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="234" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankPatterns_1a87abf9313cb56c343ae8a077471b919e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::LaRankPatterns::empty</definition>
+        <argsstring>() const </argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="242" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="241" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankPatterns_1a79c2c6e4d3e33e0f972c9ba400b6e8bc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t shogun::LaRankPatterns::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="247" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="246" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankPatterns_1afae0229fd5296249679bc0e9599abd20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1LaRankPattern" kindref="compound">LaRankPattern</ref> &amp;</type>
+        <definition>LaRankPattern&amp; shogun::LaRankPatterns::sample</definition>
+        <argsstring>()</argsstring>
+        <name>sample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="252" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="251" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankPatterns_1a6cb52a11c91fe858a27ba6c53e4acb26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t shogun::LaRankPatterns::getPatternRank</definition>
+        <argsstring>(int32_t x_id)</argsstring>
+        <name>getPatternRank</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="264" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="263" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankPatterns_1aab445e0c41332a43f5fab07abed64dad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::LaRankPatterns::isPattern</definition>
+        <argsstring>(int32_t x_id)</argsstring>
+        <name>isPattern</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="269" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="268" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankPatterns_1a1a5e109fe48e28afe209affa86947326" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1LaRankPattern" kindref="compound">LaRankPattern</ref> &amp;</type>
+        <definition>LaRankPattern&amp; shogun::LaRankPatterns::getPattern</definition>
+        <argsstring>(int32_t x_id)</argsstring>
+        <name>getPattern</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="274" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="273" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankPatterns_1a433d4621f5d571d6ab99d6ac33281ff2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t shogun::LaRankPatterns::maxcount</definition>
+        <argsstring>() const </argsstring>
+        <name>maxcount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="280" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="279" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankPatterns_1a9acb92251e7b3fd9799047331f4ef176" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1LaRankPattern" kindref="compound">LaRankPattern</ref> &amp;</type>
+        <definition>LaRankPattern&amp; shogun::LaRankPatterns::operator[]</definition>
+        <argsstring>(uint32_t i)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="285" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="284" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1LaRankPatterns_1a03ca0abfd45241049544b694b233fbd5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classshogun_1_1LaRankPattern" kindref="compound">LaRankPattern</ref> &amp;</type>
+        <definition>const LaRankPattern&amp; shogun::LaRankPatterns::operator[]</definition>
+        <argsstring>(uint32_t i) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="290" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="289" bodyend="292"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" line="205" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/LaRank.h" bodystart="204" bodyend="298"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1LaRankPatterns_1a87abf9313cb56c343ae8a077471b919e" prot="public" virt="non-virtual"><scope>shogun::LaRankPatterns</scope><name>empty</name></member>
+      <member refid="classshogun_1_1LaRankPatterns_1a651016d1bc79e01d3b530aaa1669fe05" prot="private" virt="non-virtual"><scope>shogun::LaRankPatterns</scope><name>freeidx</name></member>
+      <member refid="classshogun_1_1LaRankPatterns_1a1a5e109fe48e28afe209affa86947326" prot="public" virt="non-virtual"><scope>shogun::LaRankPatterns</scope><name>getPattern</name></member>
+      <member refid="classshogun_1_1LaRankPatterns_1a6cb52a11c91fe858a27ba6c53e4acb26" prot="public" virt="non-virtual"><scope>shogun::LaRankPatterns</scope><name>getPatternRank</name></member>
+      <member refid="classshogun_1_1LaRankPatterns_1a4027af007a79941d096f3ab670fbad0a" prot="public" virt="non-virtual"><scope>shogun::LaRankPatterns</scope><name>insert</name></member>
+      <member refid="classshogun_1_1LaRankPatterns_1aab445e0c41332a43f5fab07abed64dad" prot="public" virt="non-virtual"><scope>shogun::LaRankPatterns</scope><name>isPattern</name></member>
+      <member refid="classshogun_1_1LaRankPatterns_1a417583509ea62691f7143f0471686601" prot="public" virt="non-virtual"><scope>shogun::LaRankPatterns</scope><name>LaRankPatterns</name></member>
+      <member refid="classshogun_1_1LaRankPatterns_1a433d4621f5d571d6ab99d6ac33281ff2" prot="public" virt="non-virtual"><scope>shogun::LaRankPatterns</scope><name>maxcount</name></member>
+      <member refid="classshogun_1_1LaRankPatterns_1a9acb92251e7b3fd9799047331f4ef176" prot="public" virt="non-virtual"><scope>shogun::LaRankPatterns</scope><name>operator[]</name></member>
+      <member refid="classshogun_1_1LaRankPatterns_1a03ca0abfd45241049544b694b233fbd5" prot="public" virt="non-virtual"><scope>shogun::LaRankPatterns</scope><name>operator[]</name></member>
+      <member refid="classshogun_1_1LaRankPatterns_1a4cd8e7abc133b987e826d6deaddf9084" prot="private" virt="non-virtual"><scope>shogun::LaRankPatterns</scope><name>patterns</name></member>
+      <member refid="classshogun_1_1LaRankPatterns_1ae39243dd226a0c8484010e14654b8e2b" prot="public" virt="non-virtual"><scope>shogun::LaRankPatterns</scope><name>remove</name></member>
+      <member refid="classshogun_1_1LaRankPatterns_1afae0229fd5296249679bc0e9599abd20" prot="public" virt="non-virtual"><scope>shogun::LaRankPatterns</scope><name>sample</name></member>
+      <member refid="classshogun_1_1LaRankPatterns_1a79c2c6e4d3e33e0f972c9ba400b6e8bc" prot="public" virt="non-virtual"><scope>shogun::LaRankPatterns</scope><name>size</name></member>
+      <member refid="classshogun_1_1LaRankPatterns_1a185b0cd014a12030d00eeaaf3bf1de71" prot="private" virt="non-virtual"><scope>shogun::LaRankPatterns</scope><name>x_id2rank</name></member>
+      <member refid="classshogun_1_1LaRankPatterns_1ac312cb79c06602e04d606384229cd0af" prot="public" virt="non-virtual"><scope>shogun::LaRankPatterns</scope><name>~LaRankPatterns</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

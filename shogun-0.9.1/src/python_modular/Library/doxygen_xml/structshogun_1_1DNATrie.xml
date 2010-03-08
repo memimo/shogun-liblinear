@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structshogun_1_1DNATrie" kind="struct" prot="public">
+    <compoundname>shogun::DNATrie</compoundname>
+    <includes local="no">Trie.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structshogun_1_1DNATrie_1a96eb3cea9fd8b8d6d3b3f690deba3c6a" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::DNATrie::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>weight </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="87" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1DNATrie_1a453db269b9608e087e7e15b0b17d4a0f" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t shogun::DNATrie::child_weights[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>child_weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>child weights </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="97" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1DNATrie_1a06c62e6ad2bfc5324190dd31c3f53ce1" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::DNATrie::children[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>children</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>children </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="99" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1DNATrie_1a0be9d65abc09f0b09f13576897d063d3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t shogun::DNATrie::seq[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>seq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sequence </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="101" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1DNATrie_1ad6fadc22570acfbff531bdc0423904d3" prot="public" static="no" mutable="no">
+        <type>union shogun::DNATrie::@2</type>
+        <definition>union shogun::DNATrie::@2 shogun::DNATrie::@3</definition>
+        <argsstring></argsstring>
+        <name>@3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>DNA trie </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="85" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="84" bodyend="103"/>
+    <listofallmembers>
+      <member refid="structshogun_1_1DNATrie_1a453db269b9608e087e7e15b0b17d4a0f" prot="public" virt="non-virtual"><scope>shogun::DNATrie</scope><name>child_weights</name></member>
+      <member refid="structshogun_1_1DNATrie_1a06c62e6ad2bfc5324190dd31c3f53ce1" prot="public" virt="non-virtual"><scope>shogun::DNATrie</scope><name>children</name></member>
+      <member refid="structshogun_1_1DNATrie_1a0be9d65abc09f0b09f13576897d063d3" prot="public" virt="non-virtual"><scope>shogun::DNATrie</scope><name>seq</name></member>
+      <member refid="structshogun_1_1DNATrie_1a96eb3cea9fd8b8d6d3b3f690deba3c6a" prot="public" virt="non-virtual"><scope>shogun::DNATrie</scope><name>weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

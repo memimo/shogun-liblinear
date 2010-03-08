@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CLibSVR" kind="class" prot="public">
+    <compoundname>shogun::CLibSVR</compoundname>
+    <includes local="no">LibSVR.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CLibSVR_1a79b2f421b0baed8e001542a41705ab42" prot="protected" static="no" mutable="no">
+        <type>svm_problem</type>
+        <definition>svm_problem shogun::CLibSVR::problem</definition>
+        <argsstring></argsstring>
+        <name>problem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SVM problem </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/LibSVR.h" line="87" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/LibSVR.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CLibSVR_1ae52ee0b93bbd152db1f21d8d0b2b2126" prot="protected" static="no" mutable="no">
+        <type>svm_parameter</type>
+        <definition>svm_parameter shogun::CLibSVR::param</definition>
+        <argsstring></argsstring>
+        <name>param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SVM parameter </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/LibSVR.h" line="89" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/LibSVR.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CLibSVR_1a58fbbc3f4a520ac9e5b7791f08fdd0f0" prot="protected" static="no" mutable="no">
+        <type>struct svm_model *</type>
+        <definition>struct svm_model* shogun::CLibSVR::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SVM model </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/LibSVR.h" line="92" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/LibSVR.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CLibSVR_1ac2190cd5383a7c549b13f2b9d22a83dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CLibSVR::CLibSVR</definition>
+        <argsstring>()</argsstring>
+        <name>CLibSVR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/LibSVR.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLibSVR_1a2931b5120a0fbb2dbc97656db37450f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CLibSVR::CLibSVR</definition>
+        <argsstring>(float64_t C, float64_t epsilon, CKernel *k, CLabels *lab)</argsstring>
+        <name>CLibSVR</name>
+        <param>
+          <type>float64_t</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>epsilon</declname>
+        </param>
+        <param>
+          <type>CKernel *</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>CLabels *</type>
+          <declname>lab</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant C </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>epsilon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>labels </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/LibSVR.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLibSVR_1ac76e3855b74c7293c00e7daf00a7240a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CLibSVR::~CLibSVR</definition>
+        <argsstring>()</argsstring>
+        <name>~CLibSVR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/LibSVR.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLibSVR_1a1c6c2f325797b36aec752607b9d6c9d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CLibSVR::train</definition>
+        <argsstring>(CFeatures *data=NULL)</argsstring>
+        <name>train</name>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>train regression</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training data (parameter can be avoided if distance or kernel-based regressor are used and distance/kernels are initialized with train data)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether training was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/LibSVR.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLibSVR_1a9f92480209b3d55897b0264bca396c71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EClassifierType</type>
+        <definition>virtual EClassifierType shogun::CLibSVR::get_classifier_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_classifier_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier type</para><para><simplesect kind="return"><para>classifie type LIBSVR </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/LibSVR.h" line="81" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/LibSVR.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLibSVR_1adb76b6128a4ff2a724c94adb27738db1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CLibSVR::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/LibSVR.h" line="84" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/LibSVR.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class LibSVR, performs support vector regression using LibSVM. </para>    </briefdescription>
+    <detaileddescription>
+<para>The SVR solution can be expressed as <formula id="0">\[ f({\bf x})=\sum_{i=1}^{N} \alpha_i k({\bf x}, {\bf x_i})+b \]</formula></para><para>where <formula id="1">$\alpha$</formula> and <formula id="2">$b$</formula> are determined in training, i.e. using a pre-specified kernel, a given tube-epsilon for the epsilon insensitive loss, the follwoing quadratic problem is minimized (using sequential minimal decomposition (SMO))</para><para><formula id="3">\begin{eqnarray*} \max_{{\bf \alpha},{\bf \alpha}^*} &amp;-\frac{1}{2}\sum_{i,j=1}^N(\alpha_i-\alpha_i^*)(\alpha_j-\alpha_j^*){\bf x}_i^T {\bf x}_j -\sum_{i=1}^N(\alpha_i+\alpha_i^*)\epsilon - \sum_{i=1}^N(\alpha_i-\alpha_i^*)y_i\\ \mbox{wrt}:&amp; {\bf \alpha},{\bf \alpha}^*\in{\bf R}^N\\ \mbox{s.t.}:&amp; 0\leq \alpha_i,\alpha_i^*\leq C,\, \forall i=1\dots N\\ &amp;\sum_{i=1}^N(\alpha_i-\alpha_i^*)y_i=0 \end{eqnarray*}</formula></para><para>Note that the SV regression problem is reduced to the standard SV classification problem by introducing artificial labels <formula id="4">$-y_i$</formula> which leads to the epsilon insensitive loss constraints * <formula id="5">\begin{eqnarray*} {\bf w}^T{\bf x}_i+b-c_i-\xi_i\leq 0,&amp;\, \forall i=1\dots N\\ -{\bf w}^T{\bf x}_i-b-c_i^*-\xi_i^*\leq 0,&amp;\, \forall i=1\dots N \end{eqnarray*}</formula> with <formula id="6">$c_i=y_i+ \epsilon$</formula> and <formula id="7">$c_i^*=-y_i+ \epsilon$</formula> </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/LibSVR.h" line="52" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/LibSVR.h" bodystart="51" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CLibSVR_1ac2190cd5383a7c549b13f2b9d22a83dc" prot="public" virt="non-virtual"><scope>shogun::CLibSVR</scope><name>CLibSVR</name></member>
+      <member refid="classshogun_1_1CLibSVR_1a2931b5120a0fbb2dbc97656db37450f0" prot="public" virt="non-virtual"><scope>shogun::CLibSVR</scope><name>CLibSVR</name></member>
+      <member refid="classshogun_1_1CLibSVR_1a9f92480209b3d55897b0264bca396c71" prot="public" virt="virtual"><scope>shogun::CLibSVR</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CLibSVR_1adb76b6128a4ff2a724c94adb27738db1" prot="public" virt="virtual"><scope>shogun::CLibSVR</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CLibSVR_1a58fbbc3f4a520ac9e5b7791f08fdd0f0" prot="protected" virt="non-virtual"><scope>shogun::CLibSVR</scope><name>model</name></member>
+      <member refid="classshogun_1_1CLibSVR_1ae52ee0b93bbd152db1f21d8d0b2b2126" prot="protected" virt="non-virtual"><scope>shogun::CLibSVR</scope><name>param</name></member>
+      <member refid="classshogun_1_1CLibSVR_1a79b2f421b0baed8e001542a41705ab42" prot="protected" virt="non-virtual"><scope>shogun::CLibSVR</scope><name>problem</name></member>
+      <member refid="classshogun_1_1CLibSVR_1a1c6c2f325797b36aec752607b9d6c9d0" prot="public" virt="virtual"><scope>shogun::CLibSVR</scope><name>train</name></member>
+      <member refid="classshogun_1_1CLibSVR_1ac76e3855b74c7293c00e7daf00a7240a" prot="public" virt="virtual"><scope>shogun::CLibSVR</scope><name>~CLibSVR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

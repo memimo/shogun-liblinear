@@ -1,0 +1,991 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1QPproblem" kind="class" prot="public">
+    <compoundname>shogun::QPproblem</compoundname>
+    <includes local="no">gpdtsolve.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a655c11e2df5c9510e35affceccd64023" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::chunk_size</definition>
+        <argsstring></argsstring>
+        <name>chunk_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>chunk size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="40" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a6d76807ad4acbf17b459fa6896e3b7ea" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::ell</definition>
+        <argsstring></argsstring>
+        <name>ell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ell </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="42" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1af1d5ecb3122c310877409fb9290cdb12" prot="public" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::QPproblem::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>y </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="44" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a62fd3d43e936159832f9290797429371" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::QPproblem::DELTAsv</definition>
+        <argsstring></argsstring>
+        <name>DELTAsv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>delta sv </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="46" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1ae3ad58d7fb3af7a989205e03026258d1" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::q</definition>
+        <argsstring></argsstring>
+        <name>q</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>q </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="48" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a7b7956f8a5bd676e0b02a97c6ab8479e" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::maxmw</definition>
+        <argsstring></argsstring>
+        <name>maxmw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>max mw </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="50" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a89437ffa8df835a7519e5c5dae403387" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::QPproblem::c_const</definition>
+        <argsstring></argsstring>
+        <name>c_const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>c const </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="52" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1ac2469c14bb93a1b63b5b87ecfb69c44b" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::QPproblem::bee</definition>
+        <argsstring></argsstring>
+        <name>bee</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bee </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="54" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a94319ec1e985314d5a739a07004e60a2" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::QPproblem::delta</definition>
+        <argsstring></argsstring>
+        <name>delta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>delta </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="56" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1af719bcc7593abca282c41d1e1cfe61fd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::QPproblem::linadd</definition>
+        <argsstring></argsstring>
+        <name>linadd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>linadd </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="58" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1ae29cda393231e1a23c02eaf5e48b2b64" prot="public" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1sKernel" kindref="compound">sKernel</ref> *</type>
+        <definition>sKernel* shogun::QPproblem::KER</definition>
+        <argsstring></argsstring>
+        <name>KER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>kernel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="61" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1ad7fbb962674228165f88d458180bb1b4" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::ker_type</definition>
+        <argsstring></argsstring>
+        <name>ker_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>kernel type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="63" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a513df05170fa974d5452ba53590ce53b" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::projection_solver</definition>
+        <argsstring></argsstring>
+        <name>projection_solver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>projection solver </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="65" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a94fb7ab88cee2d88e00925876b4bf7b1" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::projection_projector</definition>
+        <argsstring></argsstring>
+        <name>projection_projector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>projection projector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="67" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a3615f7854e4bea1312a5945bbd05e4cf" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::PreprocessMode</definition>
+        <argsstring></argsstring>
+        <name>PreprocessMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>preprocess mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="69" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a7ca2fec61765511b8244e7f6e0b01668" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::preprocess_size</definition>
+        <argsstring></argsstring>
+        <name>preprocess_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>preprocess size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="71" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1ab1941f4ec2d59450e870cebd20088a76" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::verbosity</definition>
+        <argsstring></argsstring>
+        <name>verbosity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>verbosity </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="73" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a8291438cee2e59e400061f2dc7ed2d53" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::QPproblem::tau_proximal</definition>
+        <argsstring></argsstring>
+        <name>tau_proximal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tau proximal </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="75" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a571922ff5177f80974ea40eec630e71b" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::QPproblem::objective_value</definition>
+        <argsstring></argsstring>
+        <name>objective_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>objective value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="77" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a1e4b18f6d85d4b4c0f00368335f68af6" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::dim</definition>
+        <argsstring></argsstring>
+        <name>dim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="143" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a225d3e05c465671f775b5d1dcf0d4737" prot="private" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::QPproblem::index_in</definition>
+        <argsstring></argsstring>
+        <name>index_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="144" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a8be20e63344dcd1c7971f537cc8e47ef" prot="private" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t * shogun::QPproblem::index_out</definition>
+        <argsstring></argsstring>
+        <name>index_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="144" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a4c7dac19124d87ed00dc12bf7c7314f2" prot="private" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::QPproblem::ing</definition>
+        <argsstring></argsstring>
+        <name>ing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="145" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a2ad529d7f276a7ce2d472657f65bb06a" prot="private" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t * shogun::QPproblem::inaux</definition>
+        <argsstring></argsstring>
+        <name>inaux</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="145" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1ae6c2f2fae9909d60a752d75171f171f2" prot="private" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t * shogun::QPproblem::inold</definition>
+        <argsstring></argsstring>
+        <name>inold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="145" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a813c923049fbbc1b75460b399d21c1bb" prot="private" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t * shogun::QPproblem::incom</definition>
+        <argsstring></argsstring>
+        <name>incom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="145" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a408d2dd27d24dcb4eb29db88931bc2b1" prot="private" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::QPproblem::cec</definition>
+        <argsstring></argsstring>
+        <name>cec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="146" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1abeb6e2c229128eb9ff144285647fba9d" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::nb</definition>
+        <argsstring></argsstring>
+        <name>nb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="147" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a7ddf95569819df9bb02d96ffa5f28c01" prot="private" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::QPproblem::bmem</definition>
+        <argsstring></argsstring>
+        <name>bmem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="148" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a4d647f190e9c0fc9ae85e6b12e4a2ec9" prot="private" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t * shogun::QPproblem::bmemrid</definition>
+        <argsstring></argsstring>
+        <name>bmemrid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="148" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a9997cb8c57596449e398efd6788c20c5" prot="private" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t * shogun::QPproblem::pbmr</definition>
+        <argsstring></argsstring>
+        <name>pbmr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="148" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1aff3d32e208d734943047f08f943d1908" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::my_chunk_size</definition>
+        <argsstring></argsstring>
+        <name>my_chunk_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="149" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a004975a30b5116a0fb16d65a472c9a75" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::my_spD_offset</definition>
+        <argsstring></argsstring>
+        <name>my_spD_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="150" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a0122ab761c71f42f924a4b3e6aaa582c" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::recvl[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>recvl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="151" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1aa8d645eff60141901a1223491e6b488c" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::displ[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>displ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="151" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a6cb1cc8a14ea1ba9741b013bb1f6a5ab" prot="private" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::QPproblem::kktold</definition>
+        <argsstring></argsstring>
+        <name>kktold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="152" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a1e95f45bf12f316ef973e63d217ad3f7" prot="private" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::QPproblem::DELTAvpm</definition>
+        <argsstring></argsstring>
+        <name>DELTAvpm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="153" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1ab8771668832deffe15cf93cd60b42264" prot="private" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::QPproblem::InitialDELTAvpm</definition>
+        <argsstring></argsstring>
+        <name>InitialDELTAvpm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="153" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a9ae5b3ca608c71980e62e07a12216d9a" prot="private" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::QPproblem::DELTAkin</definition>
+        <argsstring></argsstring>
+        <name>DELTAkin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="153" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1a38f4acac8a285a2f6388ac2756ea4487" prot="private" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::QPproblem::alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="154" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1ac4fcf479176c7f86f5711803625e8f7a" prot="private" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::QPproblem::grad</definition>
+        <argsstring></argsstring>
+        <name>grad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="155" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1QPproblem_1aef27c218e52b526dcee050a6bb50722d" prot="private" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t * shogun::QPproblem::st</definition>
+        <argsstring></argsstring>
+        <name>st</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="155" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1a7ec46116126bc9f3aaa3421e2636263b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::QPproblem::QPproblem</definition>
+        <argsstring>()</argsstring>
+        <name>QPproblem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1a3ed258f17de48359710277de8770b3d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::QPproblem::~QPproblem</definition>
+        <argsstring>()</argsstring>
+        <name>~QPproblem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1a2c24366805d7523b78141685bc5a9595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::ReadSVMFile</definition>
+        <argsstring>(char *fInput)</argsstring>
+        <name>ReadSVMFile</name>
+        <param>
+          <type>char *</type>
+          <declname>fInput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>read SVM file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fInput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input filename </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an int </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1a0a74b1699a5af29346018c66c80cd031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::ReadGPDTBinary</definition>
+        <argsstring>(char *fName)</argsstring>
+        <name>ReadGPDTBinary</name>
+        <param>
+          <type>char *</type>
+          <declname>fName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>read GPDT binary</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input filename </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an int </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1abb9978cd8ee115eb8a71ca713adfd380" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::Check2Class</definition>
+        <argsstring>(void)</argsstring>
+        <name>Check2Class</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check if 2-class</para><para><simplesect kind="return"><para>an int </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1a7abd881fd8fece27cd43cc889ac2366e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::QPproblem::Subproblem</definition>
+        <argsstring>(QPproblem &amp;ker, int32_t len, int32_t *perm)</argsstring>
+        <name>Subproblem</name>
+        <param>
+          <type><ref refid="classshogun_1_1QPproblem" kindref="compound">QPproblem</ref> &amp;</type>
+          <declname>ker</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>perm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>subproblem</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>problem kernel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>perm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>perm </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1ab115b390b8c3b696a6342fdff304fbbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::QPproblem::PrepMP</definition>
+        <argsstring>(void)</argsstring>
+        <name>PrepMP</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PrepMP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1a351660a8b3a0fa5a6140679be8e53c96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::QPproblem::gpdtsolve</definition>
+        <argsstring>(float64_t *solution)</argsstring>
+        <name>gpdtsolve</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>solution</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>solve gpdt</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>solution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>something floaty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1a017791d2743a2558e50f5593f8431e40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::QPproblem::pgpdtsolve</definition>
+        <argsstring>(float64_t *solution)</argsstring>
+        <name>pgpdtsolve</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>solution</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>solve pgpdt</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>solution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>something floaty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1aea7a747fd084dcf01711b46542a508f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::QPproblem::get_linadd_enabled</definition>
+        <argsstring>()</argsstring>
+        <name>get_linadd_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check if lineadd is enabled</para><para><simplesect kind="return"><para>if lineadd is enabled </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="134" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1aed69e96269fbb3ba4966ddee1c563db2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::QPproblem::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="139" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="139" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1ad8a2edf7cba20da4050b4a7d051c4c66" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::Preprocess0</definition>
+        <argsstring>(int32_t *aux, int32_t *sv)</argsstring>
+        <name>Preprocess0</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>aux</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>sv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1a589a8f3993c37543362b1f5348be84fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::Preprocess1</definition>
+        <argsstring>(sKernel *KER, int32_t *aux, int32_t *sv)</argsstring>
+        <name>Preprocess1</name>
+        <param>
+          <type><ref refid="classshogun_1_1sKernel" kindref="compound">sKernel</ref> *</type>
+          <declname>KER</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>aux</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>sv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1a0b19d25c025d4edef920f5b3c7682e7d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::QPproblem::optimal</definition>
+        <argsstring>(void)</argsstring>
+        <name>optimal</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1a620f277f82c92e4098e54a493a52eb59" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::QPproblem::is_zero</definition>
+        <argsstring>(int32_t i)</argsstring>
+        <name>is_zero</name>
+        <param>
+          <type>int32_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="163" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="163" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1ad6f2a1db26505320f5d36f74e7add3d4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::QPproblem::is_free</definition>
+        <argsstring>(int32_t i)</argsstring>
+        <name>is_free</name>
+        <param>
+          <type>int32_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="165" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="164" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1QPproblem_1a2497a28258765a4005428b2ba7a85c1f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::QPproblem::is_bound</definition>
+        <argsstring>(int32_t i)</argsstring>
+        <name>is_bound</name>
+        <param>
+          <type>int32_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="166" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="166" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>class QProblem </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="337">
+        <label>shogun::sKernel</label>
+        <link refid="classshogun_1_1sKernel"/>
+      </node>
+      <node id="336">
+        <label>shogun::QPproblem</label>
+        <link refid="classshogun_1_1QPproblem"/>
+        <childnode refid="337" relation="usage">
+          <edgelabel>KER</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" line="36" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdtsolve.h" bodystart="35" bodyend="168"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1QPproblem_1a38f4acac8a285a2f6388ac2756ea4487" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>alpha</name></member>
+      <member refid="classshogun_1_1QPproblem_1ac2469c14bb93a1b63b5b87ecfb69c44b" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>bee</name></member>
+      <member refid="classshogun_1_1QPproblem_1a7ddf95569819df9bb02d96ffa5f28c01" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>bmem</name></member>
+      <member refid="classshogun_1_1QPproblem_1a4d647f190e9c0fc9ae85e6b12e4a2ec9" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>bmemrid</name></member>
+      <member refid="classshogun_1_1QPproblem_1a89437ffa8df835a7519e5c5dae403387" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>c_const</name></member>
+      <member refid="classshogun_1_1QPproblem_1a408d2dd27d24dcb4eb29db88931bc2b1" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>cec</name></member>
+      <member refid="classshogun_1_1QPproblem_1abb9978cd8ee115eb8a71ca713adfd380" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>Check2Class</name></member>
+      <member refid="classshogun_1_1QPproblem_1a655c11e2df5c9510e35affceccd64023" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>chunk_size</name></member>
+      <member refid="classshogun_1_1QPproblem_1a94319ec1e985314d5a739a07004e60a2" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>delta</name></member>
+      <member refid="classshogun_1_1QPproblem_1a9ae5b3ca608c71980e62e07a12216d9a" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>DELTAkin</name></member>
+      <member refid="classshogun_1_1QPproblem_1a62fd3d43e936159832f9290797429371" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>DELTAsv</name></member>
+      <member refid="classshogun_1_1QPproblem_1a1e95f45bf12f316ef973e63d217ad3f7" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>DELTAvpm</name></member>
+      <member refid="classshogun_1_1QPproblem_1a1e4b18f6d85d4b4c0f00368335f68af6" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>dim</name></member>
+      <member refid="classshogun_1_1QPproblem_1aa8d645eff60141901a1223491e6b488c" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>displ</name></member>
+      <member refid="classshogun_1_1QPproblem_1a6d76807ad4acbf17b459fa6896e3b7ea" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>ell</name></member>
+      <member refid="classshogun_1_1QPproblem_1aea7a747fd084dcf01711b46542a508f7" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>get_linadd_enabled</name></member>
+      <member refid="classshogun_1_1QPproblem_1aed69e96269fbb3ba4966ddee1c563db2" prot="public" virt="virtual"><scope>shogun::QPproblem</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1QPproblem_1a351660a8b3a0fa5a6140679be8e53c96" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>gpdtsolve</name></member>
+      <member refid="classshogun_1_1QPproblem_1ac4fcf479176c7f86f5711803625e8f7a" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>grad</name></member>
+      <member refid="classshogun_1_1QPproblem_1a2ad529d7f276a7ce2d472657f65bb06a" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>inaux</name></member>
+      <member refid="classshogun_1_1QPproblem_1a813c923049fbbc1b75460b399d21c1bb" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>incom</name></member>
+      <member refid="classshogun_1_1QPproblem_1a225d3e05c465671f775b5d1dcf0d4737" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>index_in</name></member>
+      <member refid="classshogun_1_1QPproblem_1a8be20e63344dcd1c7971f537cc8e47ef" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>index_out</name></member>
+      <member refid="classshogun_1_1QPproblem_1a4c7dac19124d87ed00dc12bf7c7314f2" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>ing</name></member>
+      <member refid="classshogun_1_1QPproblem_1ab8771668832deffe15cf93cd60b42264" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>InitialDELTAvpm</name></member>
+      <member refid="classshogun_1_1QPproblem_1ae6c2f2fae9909d60a752d75171f171f2" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>inold</name></member>
+      <member refid="classshogun_1_1QPproblem_1a2497a28258765a4005428b2ba7a85c1f" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>is_bound</name></member>
+      <member refid="classshogun_1_1QPproblem_1ad6f2a1db26505320f5d36f74e7add3d4" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>is_free</name></member>
+      <member refid="classshogun_1_1QPproblem_1a620f277f82c92e4098e54a493a52eb59" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>is_zero</name></member>
+      <member refid="classshogun_1_1QPproblem_1ae29cda393231e1a23c02eaf5e48b2b64" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>KER</name></member>
+      <member refid="classshogun_1_1QPproblem_1ad7fbb962674228165f88d458180bb1b4" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>ker_type</name></member>
+      <member refid="classshogun_1_1QPproblem_1a6cb1cc8a14ea1ba9741b013bb1f6a5ab" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>kktold</name></member>
+      <member refid="classshogun_1_1QPproblem_1af719bcc7593abca282c41d1e1cfe61fd" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>linadd</name></member>
+      <member refid="classshogun_1_1QPproblem_1a7b7956f8a5bd676e0b02a97c6ab8479e" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>maxmw</name></member>
+      <member refid="classshogun_1_1QPproblem_1aff3d32e208d734943047f08f943d1908" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>my_chunk_size</name></member>
+      <member refid="classshogun_1_1QPproblem_1a004975a30b5116a0fb16d65a472c9a75" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>my_spD_offset</name></member>
+      <member refid="classshogun_1_1QPproblem_1abeb6e2c229128eb9ff144285647fba9d" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>nb</name></member>
+      <member refid="classshogun_1_1QPproblem_1a571922ff5177f80974ea40eec630e71b" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>objective_value</name></member>
+      <member refid="classshogun_1_1QPproblem_1a0b19d25c025d4edef920f5b3c7682e7d" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>optimal</name></member>
+      <member refid="classshogun_1_1QPproblem_1a9997cb8c57596449e398efd6788c20c5" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>pbmr</name></member>
+      <member refid="classshogun_1_1QPproblem_1a017791d2743a2558e50f5593f8431e40" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>pgpdtsolve</name></member>
+      <member refid="classshogun_1_1QPproblem_1ab115b390b8c3b696a6342fdff304fbbb" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>PrepMP</name></member>
+      <member refid="classshogun_1_1QPproblem_1ad8a2edf7cba20da4050b4a7d051c4c66" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>Preprocess0</name></member>
+      <member refid="classshogun_1_1QPproblem_1a589a8f3993c37543362b1f5348be84fb" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>Preprocess1</name></member>
+      <member refid="classshogun_1_1QPproblem_1a7ca2fec61765511b8244e7f6e0b01668" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>preprocess_size</name></member>
+      <member refid="classshogun_1_1QPproblem_1a3615f7854e4bea1312a5945bbd05e4cf" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>PreprocessMode</name></member>
+      <member refid="classshogun_1_1QPproblem_1a94fb7ab88cee2d88e00925876b4bf7b1" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>projection_projector</name></member>
+      <member refid="classshogun_1_1QPproblem_1a513df05170fa974d5452ba53590ce53b" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>projection_solver</name></member>
+      <member refid="classshogun_1_1QPproblem_1ae3ad58d7fb3af7a989205e03026258d1" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>q</name></member>
+      <member refid="classshogun_1_1QPproblem_1a7ec46116126bc9f3aaa3421e2636263b" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>QPproblem</name></member>
+      <member refid="classshogun_1_1QPproblem_1a0a74b1699a5af29346018c66c80cd031" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>ReadGPDTBinary</name></member>
+      <member refid="classshogun_1_1QPproblem_1a2c24366805d7523b78141685bc5a9595" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>ReadSVMFile</name></member>
+      <member refid="classshogun_1_1QPproblem_1a0122ab761c71f42f924a4b3e6aaa582c" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>recvl</name></member>
+      <member refid="classshogun_1_1QPproblem_1aef27c218e52b526dcee050a6bb50722d" prot="private" virt="non-virtual"><scope>shogun::QPproblem</scope><name>st</name></member>
+      <member refid="classshogun_1_1QPproblem_1a7abd881fd8fece27cd43cc889ac2366e" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>Subproblem</name></member>
+      <member refid="classshogun_1_1QPproblem_1a8291438cee2e59e400061f2dc7ed2d53" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>tau_proximal</name></member>
+      <member refid="classshogun_1_1QPproblem_1ab1941f4ec2d59450e870cebd20088a76" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>verbosity</name></member>
+      <member refid="classshogun_1_1QPproblem_1af1d5ecb3122c310877409fb9290cdb12" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>y</name></member>
+      <member refid="classshogun_1_1QPproblem_1a3ed258f17de48359710277de8770b3d3" prot="public" virt="non-virtual"><scope>shogun::QPproblem</scope><name>~QPproblem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

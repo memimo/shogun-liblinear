@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="KernelNormalizer_8h" kind="file">
+    <compoundname>KernelNormalizer.h</compoundname>
+    <includes refid="Kernel_8h" local="yes">kernel/Kernel.h</includes>
+    <includedby refid="AvgDiagKernelNormalizer_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/AvgDiagKernelNormalizer.h</includedby>
+    <includedby refid="DiceKernelNormalizer_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/DiceKernelNormalizer.h</includedby>
+    <includedby refid="FirstElementKernelNormalizer_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/FirstElementKernelNormalizer.h</includedby>
+    <includedby refid="IdentityKernelNormalizer_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/IdentityKernelNormalizer.h</includedby>
+    <includedby refid="Kernel_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/Kernel.h</includedby>
+    <includedby refid="MultitaskKernelNormalizer_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h</includedby>
+    <includedby refid="RidgeKernelNormalizer_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h</includedby>
+    <includedby refid="SqrtDiagKernelNormalizer_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h</includedby>
+    <includedby refid="TanimotoKernelNormalizer_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/TanimotoKernelNormalizer.h</includedby>
+    <includedby refid="VarianceKernelNormalizer_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/VarianceKernelNormalizer.h</includedby>
+    <innerclass refid="classshogun_1_1CKernelNormalizer" prot="public">shogun::CKernelNormalizer</innerclass>
+    <innernamespace refid="namespaceshogun">shogun</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Written<sp/>(W)<sp/>2008-2009<sp/>Soeren<sp/>Sonnenburg</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2008-2009<sp/>Fraunhofer<sp/>Institute<sp/>FIRST<sp/>and<sp/>Max-Planck-Society</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_KERNELNORMALIZER_H___</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_KERNELNORMALIZER_H___</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;kernel/Kernel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">shogun</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CKernel;</highlight></codeline>
+<codeline lineno="42" refid="classshogun_1_1CKernelNormalizer" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classshogun_1_1CKernelNormalizer" kindref="compound" tooltip="The class Kernel Normalizer defines a function to postprocess kernel values.">CKernelNormalizer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>CSGObject</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CKernelNormalizer_1ac6fe092f0738d7de0aa36183473ae08f" kindref="member">CKernelNormalizer</ref>()<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CKernelNormalizer_1a8af9672897eb3da0c1892ef1e16fb29c" kindref="member">~CKernelNormalizer</ref>()<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CKernelNormalizer_1a81e40e31e3ffe03d31d22a87379f195d" kindref="member">init</ref>(<ref refid="classshogun_1_1CKernel" kindref="compound" tooltip="The Kernel base class.">CKernel</ref>*<sp/>k)=0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>float64_t<sp/><ref refid="classshogun_1_1CKernelNormalizer_1a93c47ed8ce631c3a1350d1aaeeb80fed" kindref="member">normalize</ref>(</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>value,<sp/>int32_t<sp/>idx_lhs,<sp/>int32_t<sp/>idx_rhs)=0;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>float64_t<sp/><ref refid="classshogun_1_1CKernelNormalizer_1aa25af9b375b533e4cff3768a77bd0e7f" kindref="member">normalize_lhs</ref>(float64_t<sp/>value,<sp/>int32_t<sp/>idx_lhs)=0;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>float64_t<sp/><ref refid="classshogun_1_1CKernelNormalizer_1ac98a44e10b6b6b1bb4dc259a877e7491" kindref="member">normalize_rhs</ref>(float64_t<sp/>value,<sp/>int32_t<sp/>idx_rhs)=0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/KernelNormalizer.h"/>
+  </compounddef>
+</doxygen>

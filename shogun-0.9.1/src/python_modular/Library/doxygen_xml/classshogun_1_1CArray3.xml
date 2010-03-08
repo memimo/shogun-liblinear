@@ -1,0 +1,1054 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CArray3" kind="class" prot="public">
+    <compoundname>shogun::CArray3</compoundname>
+    <basecompoundref refid="classshogun_1_1CArray" prot="public" virt="non-virtual">shogun::CArray&lt; T &gt;</basecompoundref>
+    <includes local="no">Array3.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CArray3_1a906d9b8139bd5f94f289d567c39a003d" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CArray3&lt; T &gt;::dim1_size</definition>
+        <argsstring></argsstring>
+        <name>dim1_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>size of array&apos;s dimension 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="312" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CArray3_1acff64f68d1ef298a4aa8678887bce2ad" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CArray3&lt; T &gt;::dim2_size</definition>
+        <argsstring></argsstring>
+        <name>dim2_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>size of array&apos;s dimension 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="314" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CArray3_1a8df138f6f414cda045079e5041e257ad" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CArray3&lt; T &gt;::dim3_size</definition>
+        <argsstring></argsstring>
+        <name>dim3_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>size of array&apos;s dimension 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="316" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a0667672c76e8e491678176bd2c30d1f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CArray3&lt; T &gt;::CArray3</definition>
+        <argsstring>()</argsstring>
+        <name>CArray3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="34" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a28f43d754a4b886c0deb276ecb9fa51a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CArray3&lt; T &gt;::CArray3</definition>
+        <argsstring>(int32_t dim1, int32_t dim2, int32_t dim3)</argsstring>
+        <name>CArray3</name>
+        <param>
+          <type>int32_t</type>
+          <declname>dim1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dim1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension 2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension 3 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="45" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1af3dcf86b71c0a3371b2cae3e467515ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CArray3&lt; T &gt;::CArray3</definition>
+        <argsstring>(T *p_array, int32_t dim1, int32_t dim2, int32_t dim3, bool p_free_array=true, bool p_copy_array=false)</argsstring>
+        <name>CArray3</name>
+        <param>
+          <type>T *</type>
+          <declname>p_array</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim3</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_free_array</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_copy_array</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>another array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension 2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension 3 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_free_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if array must be freed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_copy_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if array must be copied </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="61" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a394ccecc83fa95034d48c908503cafcc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CArray3&lt; T &gt;::CArray3</definition>
+        <argsstring>(const T *p_array, int32_t dim1, int32_t dim2, int32_t dim3)</argsstring>
+        <name>CArray3</name>
+        <param>
+          <type>const T *</type>
+          <declname>p_array</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>another array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension 2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension 3 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="75" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a79f90a40221b0b58baf6a9471050a128" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CArray3&lt; T &gt;::~CArray3</definition>
+        <argsstring>()</argsstring>
+        <name>~CArray3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="78" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a3923bd4ed923b50f4d6ec6e9c260f8c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CArray3&lt; T &gt;::set_name</definition>
+        <argsstring>(const char *p_name)</argsstring>
+        <name>set_name</name>
+        <reimplements refid="classshogun_1_1CArray_1ae7c7952c0f70c25e03d7d9a967969640">set_name</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>p_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set array&apos;s name</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="85" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1aa9f9eec4a910d96d66a762e1df4406b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CArray3&lt; T &gt;::get_array_size</definition>
+        <argsstring>(int32_t &amp;dim1, int32_t &amp;dim2, int32_t &amp;dim3)</argsstring>
+        <name>get_array_size</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>dim1</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>dim2</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>dim3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return total array size (including granularity buffer)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dim1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension 1 will be stored here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension 2 will be stored here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension 3 will be stored here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="96" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="95" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a0647e523106c4481ff7a146bf417ee5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CArray3&lt; T &gt;::get_dim1</definition>
+        <argsstring>()</argsstring>
+        <name>get_dim1</name>
+        <reimplements refid="classshogun_1_1CArray_1a2d5a7e069d37a7afb50f0c835ed3c377">get_dim1</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get dimension 1</para><para><simplesect kind="return"><para>dimension 1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="106" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1af207020ca5b1b4d6058ef2a8ed8e1e62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CArray3&lt; T &gt;::get_dim2</definition>
+        <argsstring>()</argsstring>
+        <name>get_dim2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get dimension 2</para><para><simplesect kind="return"><para>dimension 2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="112" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a7d0719f7d40f6ddb5ba8fcfdeed94ec9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CArray3&lt; T &gt;::get_dim3</definition>
+        <argsstring>()</argsstring>
+        <name>get_dim3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get dimension 3</para><para><simplesect kind="return"><para>dimension 3 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="118" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="118" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a406aa892424b004ded2701ca75b639c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CArray3&lt; T &gt;::zero</definition>
+        <argsstring>()</argsstring>
+        <name>zero</name>
+        <reimplements refid="classshogun_1_1CArray_1a25eab85b34c1244427cc740534b2edf2">zero</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>zero array </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="122" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="122" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1aa378dc1d8494f0466a7f7af4e31ec9c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CArray3&lt; T &gt;::set_const</definition>
+        <argsstring>(T const_elem)</argsstring>
+        <name>set_const</name>
+        <reimplements refid="classshogun_1_1CArray_1a99f88c3155a99e97db1383461f134d8a">set_const</reimplements>
+        <param>
+          <type>T</type>
+          <declname>const_elem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set array with a constant </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="126" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a370a477b8e0235b053882e18b3886c14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* shogun::CArray3&lt; T &gt;::get_array</definition>
+        <argsstring>()</argsstring>
+        <name>get_array</name>
+        <reimplements refid="classshogun_1_1CArray_1af63b9524eaaac9d9493fcd5967b65f80">get_array</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the array call get_array just before messing with it DO NOT call any [],resize/delete functions after <ref refid="classshogun_1_1CArray3_1a370a477b8e0235b053882e18b3886c14" kindref="member">get_array()</ref>, the pointer may become invalid !</para><para><simplesect kind="return"><para>the array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="137" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="137" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a384a7049a634d24796cb4be43062ea66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CArray3&lt; T &gt;::set_array</definition>
+        <argsstring>(T *p_array, int32_t dim1, int32_t dim2, int32_t dim3, bool p_free_array, bool copy_array=false)</argsstring>
+        <name>set_array</name>
+        <param>
+          <type>T *</type>
+          <declname>p_array</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim3</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_free_array</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>copy_array</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set the array pointer and free previously allocated memory</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>another array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimensino 2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimensino 3 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_free_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if array must be freed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>copy_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if array must be copied </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="149" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="148" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a4d18c20a518fc0baa50c4457a6fb1de7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CArray3&lt; T &gt;::resize_array</definition>
+        <argsstring>(int32_t dim1, int32_t dim2, int32_t dim3)</argsstring>
+        <name>resize_array</name>
+        <param>
+          <type>int32_t</type>
+          <declname>dim1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>resize array</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dim1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new dimension 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new dimension 2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new dimension 3 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if resizing was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="164" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="163" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a2676dd923df309f88536f4769d6a022c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CArray3&lt; T &gt;::get_element</definition>
+        <argsstring>(int32_t idx1, int32_t idx2, int32_t idx3) const </argsstring>
+        <name>get_element</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get array element at index</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 3 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>array element at index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="179" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="178" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a94f30e7dd1177f57aa8122e2373606f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CArray3&lt; T &gt;::set_element</definition>
+        <argsstring>(T p_element, int32_t idx1, int32_t idx2, int32_t idx3)</argsstring>
+        <name>set_element</name>
+        <param>
+          <type>T</type>
+          <declname>p_element</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set array element at index &apos;index&apos;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array element </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 3 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="195" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="194" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a8ff5ee13fa53335ae8c778928634f9d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; shogun::CArray3&lt; T &gt;::element</definition>
+        <argsstring>(int32_t idx1, int32_t idx2, int32_t idx3) const </argsstring>
+        <name>element</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get array element at index</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 3 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>array element at index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="210" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="209" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a701a68aa5ae77270d683eb762cd5e63d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; shogun::CArray3&lt; T &gt;::element</definition>
+        <argsstring>(int32_t idx1, int32_t idx2, int32_t idx3)</argsstring>
+        <name>element</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get array element at index</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 3 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>array element at index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="225" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="224" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a7fa5c41d4cb411b76976b8c7ee8a6c40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; shogun::CArray3&lt; T &gt;::element</definition>
+        <argsstring>(T *p_array, int32_t idx1, int32_t idx2, int32_t idx3)</argsstring>
+        <name>element</name>
+        <param>
+          <type>T *</type>
+          <declname>p_array</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get element of given array at given index</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>another array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 3 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>array element at index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="241" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="240" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1aa3b66dbaa7f26e81f57b192e1309c3bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; shogun::CArray3&lt; T &gt;::element</definition>
+        <argsstring>(T *p_array, int32_t idx1, int32_t idx2, int32_t idx3, int32_t p_dim1_size, int32_t p_dim2_size)</argsstring>
+        <name>element</name>
+        <param>
+          <type>T *</type>
+          <declname>p_array</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx3</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_dim1_size</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_dim2_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get element of given array at given index</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>another array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 3 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_dim1_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of dimension 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_dim2_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of dimension 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>element of given array at given index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="260" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="259" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a96b777975fd28a3ee5bd34e102770c72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CArray3" kindref="compound">CArray3</ref>&lt; T &gt; &amp;</type>
+        <definition>CArray3&lt;T&gt;&amp; shogun::CArray3&lt; T &gt;::operator=</definition>
+        <argsstring>(const CArray3&lt; T &gt; &amp;orig)</argsstring>
+        <name>operator=</name>
+        <reimplements refid="classshogun_1_1CArray_1a0115345716da89b14c4c9387f1cf9d47">operator=</reimplements>
+        <param>
+          <type>const <ref refid="classshogun_1_1CArray3" kindref="compound">CArray3</ref>&lt; T &gt; &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>operator overload for array assignment</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>original array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="276" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="275" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1ae15a00d0e39ba17c0b69bc3593ac0061" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CArray3&lt; T &gt;::display_size</definition>
+        <argsstring>() const </argsstring>
+        <name>display_size</name>
+        <reimplements refid="classshogun_1_1CArray_1ae75e09f2f2614cda39898016b1471b44">display_size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>display array size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="286" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="285" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1a552e1228c4622bde0303c0870e45f5e6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CArray3&lt; T &gt;::display_array</definition>
+        <argsstring>() const </argsstring>
+        <name>display_array</name>
+        <reimplements refid="classshogun_1_1CArray_1a885e56b41c55c61ea3dc81f4d3ca1a67">display_array</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>display array </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="292" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="291" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CArray3_1adebfa0f648018c252becf358341e7406" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CArray3&lt; T &gt;::get_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="308" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="308" bodyend="308"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class Array3 implements a dense three dimensional array. </para>    </briefdescription>
+    <detaileddescription>
+<para>Note that depending on compile options everything will be inlined, such that this is as high performance 3d-array implementation <bold>without</bold> error checking. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="8">
+        <label>shogun::CArray3&lt; T &gt;</label>
+        <link refid="classshogun_1_1CArray3"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>shogun::CArray&lt; T &gt;</label>
+        <link refid="classshogun_1_1CArray"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>shogun::CArray3&lt; T &gt;</label>
+        <link refid="classshogun_1_1CArray3"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>shogun::CArray&lt; T &gt;</label>
+        <link refid="classshogun_1_1CArray"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" line="29" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Array3.h" bodystart="28" bodyend="317"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CArray_1a43c4abe7b4ed39b739614fd099a4a1aa" prot="protected" virt="non-virtual"><scope>shogun::CArray3</scope><name>array</name></member>
+      <member refid="classshogun_1_1CArray_1a114be0c8df934ffb418910b6ca7e642a" prot="protected" virt="non-virtual"><scope>shogun::CArray3</scope><name>array_size</name></member>
+      <member refid="classshogun_1_1CArray_1ac47471d62f906667b4d55517787263e7" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>CArray</name></member>
+      <member refid="classshogun_1_1CArray_1abb1c143f5b1965e1066676bd213ad288" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>CArray</name></member>
+      <member refid="classshogun_1_1CArray_1aa12b94aceedbcd32d3d2d787511bc278" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>CArray</name></member>
+      <member refid="classshogun_1_1CArray3_1a0667672c76e8e491678176bd2c30d1f6" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>CArray3</name></member>
+      <member refid="classshogun_1_1CArray3_1a28f43d754a4b886c0deb276ecb9fa51a" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>CArray3</name></member>
+      <member refid="classshogun_1_1CArray3_1af3dcf86b71c0a3371b2cae3e467515ce" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>CArray3</name></member>
+      <member refid="classshogun_1_1CArray3_1a394ccecc83fa95034d48c908503cafcc" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>CArray3</name></member>
+      <member refid="classshogun_1_1CArray_1a5b08bddba2a03100c56b2c909e53d384" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>clear_array</name></member>
+      <member refid="classshogun_1_1CArray_1ab92167a3aac191c56f9e9a4d70467d29" prot="protected" virt="non-virtual"><scope>shogun::CArray3</scope><name>DECLARE_ARRAY_STATISTICS</name></member>
+      <member refid="classshogun_1_1CArray3_1a906d9b8139bd5f94f289d567c39a003d" prot="protected" virt="non-virtual"><scope>shogun::CArray3</scope><name>dim1_size</name></member>
+      <member refid="classshogun_1_1CArray3_1acff64f68d1ef298a4aa8678887bce2ad" prot="protected" virt="non-virtual"><scope>shogun::CArray3</scope><name>dim2_size</name></member>
+      <member refid="classshogun_1_1CArray3_1a8df138f6f414cda045079e5041e257ad" prot="protected" virt="non-virtual"><scope>shogun::CArray3</scope><name>dim3_size</name></member>
+      <member refid="classshogun_1_1CArray3_1a552e1228c4622bde0303c0870e45f5e6" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>display_array</name></member>
+      <member refid="classshogun_1_1CArray3_1ae15a00d0e39ba17c0b69bc3593ac0061" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>display_size</name></member>
+      <member refid="classshogun_1_1CArray3_1a8ff5ee13fa53335ae8c778928634f9d4" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>element</name></member>
+      <member refid="classshogun_1_1CArray3_1a701a68aa5ae77270d683eb762cd5e63d" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>element</name></member>
+      <member refid="classshogun_1_1CArray3_1a7fa5c41d4cb411b76976b8c7ee8a6c40" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>element</name></member>
+      <member refid="classshogun_1_1CArray3_1aa3b66dbaa7f26e81f57b192e1309c3bc" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>element</name></member>
+      <member refid="classshogun_1_1CArray_1a1f0613d6a1d1505625f380455323db50" prot="public" virt="non-virtual" ambiguityscope="shogun::CArray::"><scope>shogun::CArray3</scope><name>element</name></member>
+      <member refid="classshogun_1_1CArray_1a62b72f2344b01cf5cac4e03c89ab416b" prot="public" virt="non-virtual" ambiguityscope="shogun::CArray::"><scope>shogun::CArray3</scope><name>element</name></member>
+      <member refid="classshogun_1_1CArray_1a8a1bc2a5ff7cd2c0d7f0e46fe0ba34e9" prot="public" virt="non-virtual" ambiguityscope="shogun::CArray::"><scope>shogun::CArray3</scope><name>element</name></member>
+      <member refid="classshogun_1_1CArray_1a4b442a3f00cf0fc6efba503c43b4a153" prot="protected" virt="non-virtual"><scope>shogun::CArray3</scope><name>free_array</name></member>
+      <member refid="classshogun_1_1CArray3_1a370a477b8e0235b053882e18b3886c14" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>get_array</name></member>
+      <member refid="classshogun_1_1CArray3_1aa9f9eec4a910d96d66a762e1df4406b8" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>get_array_size</name></member>
+      <member refid="classshogun_1_1CArray_1ad948b14821ebc3e8bdc46d18e05b5273" prot="public" virt="non-virtual" ambiguityscope="shogun::CArray::"><scope>shogun::CArray3</scope><name>get_array_size</name></member>
+      <member refid="classshogun_1_1CArray3_1a0647e523106c4481ff7a146bf417ee5d" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>get_dim1</name></member>
+      <member refid="classshogun_1_1CArray3_1af207020ca5b1b4d6058ef2a8ed8e1e62" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>get_dim2</name></member>
+      <member refid="classshogun_1_1CArray3_1a7d0719f7d40f6ddb5ba8fcfdeed94ec9" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>get_dim3</name></member>
+      <member refid="classshogun_1_1CArray3_1a2676dd923df309f88536f4769d6a022c" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>get_element</name></member>
+      <member refid="classshogun_1_1CArray_1a1dfffa417d322dca56722937c012f030" prot="public" virt="non-virtual" ambiguityscope="shogun::CArray::"><scope>shogun::CArray3</scope><name>get_element</name></member>
+      <member refid="classshogun_1_1CArray3_1adebfa0f648018c252becf358341e7406" prot="public" virt="virtual"><scope>shogun::CArray3</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CArray_1ad5b4563c5e8b22570dc66e6046faf2d4" prot="public" virt="virtual" ambiguityscope="shogun::CArray::"><scope>shogun::CArray3</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CArray_1a1d71d4b06fbfa33d0f39054e7d768388" prot="protected" virt="non-virtual"><scope>shogun::CArray3</scope><name>name</name></member>
+      <member refid="classshogun_1_1CArray3_1a96b777975fd28a3ee5bd34e102770c72" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>operator=</name></member>
+      <member refid="classshogun_1_1CArray_1a4d8d062ebf534917241301301696c511" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>operator[]</name></member>
+      <member refid="classshogun_1_1CArray_1affa41f4a641317038771ee3c698d9ae4" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>operator[]</name></member>
+      <member refid="classshogun_1_1CArray3_1a4d18c20a518fc0baa50c4457a6fb1de7" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>resize_array</name></member>
+      <member refid="classshogun_1_1CArray_1a25aa6ac5e22ae125ba55c433d514e2fd" prot="public" virt="non-virtual" ambiguityscope="shogun::CArray::"><scope>shogun::CArray3</scope><name>resize_array</name></member>
+      <member refid="classshogun_1_1CArray3_1a384a7049a634d24796cb4be43062ea66" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>set_array</name></member>
+      <member refid="classshogun_1_1CArray_1a1e6f262063d90ea54c239ce2dfa292f2" prot="public" virt="non-virtual" ambiguityscope="shogun::CArray::"><scope>shogun::CArray3</scope><name>set_array</name></member>
+      <member refid="classshogun_1_1CArray_1ac10062753d92f5c36958838b530e2174" prot="public" virt="non-virtual" ambiguityscope="shogun::CArray::"><scope>shogun::CArray3</scope><name>set_array</name></member>
+      <member refid="classshogun_1_1CArray3_1aa378dc1d8494f0466a7f7af4e31ec9c9" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>set_const</name></member>
+      <member refid="classshogun_1_1CArray3_1a94f30e7dd1177f57aa8122e2373606f7" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>set_element</name></member>
+      <member refid="classshogun_1_1CArray_1ab585303492333a80c5974555b061b705" prot="public" virt="non-virtual" ambiguityscope="shogun::CArray::"><scope>shogun::CArray3</scope><name>set_element</name></member>
+      <member refid="classshogun_1_1CArray3_1a3923bd4ed923b50f4d6ec6e9c260f8c5" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>set_name</name></member>
+      <member refid="classshogun_1_1CArray3_1a406aa892424b004ded2701ca75b639c1" prot="public" virt="non-virtual"><scope>shogun::CArray3</scope><name>zero</name></member>
+      <member refid="classshogun_1_1CArray_1a3d1ff1ed2648105594f6f9fddffae964" prot="public" virt="virtual"><scope>shogun::CArray3</scope><name>~CArray</name></member>
+      <member refid="classshogun_1_1CArray3_1a79f90a40221b0b58baf6a9471050a128" prot="public" virt="virtual"><scope>shogun::CArray3</scope><name>~CArray3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

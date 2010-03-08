@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CGMNPLib" kind="class" prot="public">
+    <compoundname>shogun::CGMNPLib</compoundname>
+    <includes local="no">gmnplib.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CGMNPLib_1a78871df3246dbb9a9a79a2b43e84adf0" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CGMNPLib::diag_H</definition>
+        <argsstring></argsstring>
+        <name>diag_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>diag H </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="141" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CGMNPLib_1a81dfe02407bc5ca43bb738fcc9a02309" prot="protected" static="no" mutable="no">
+        <type>float64_t **</type>
+        <definition>float64_t** shogun::CGMNPLib::kernel_columns</definition>
+        <argsstring></argsstring>
+        <name>kernel_columns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>kernel columns </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="143" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CGMNPLib_1a28304263ed1674e62ce9ec8cf2b60ee7" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CGMNPLib::cache_index</definition>
+        <argsstring></argsstring>
+        <name>cache_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cache index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="145" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CGMNPLib_1a4b428160c95409ef60d7cdec19727fa7" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CGMNPLib::first_kernel_inx</definition>
+        <argsstring></argsstring>
+        <name>first_kernel_inx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>first kernel inx </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="147" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CGMNPLib_1a035ea99566bb7090502649b7775bd129" prot="protected" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t shogun::CGMNPLib::Cache_Size</definition>
+        <argsstring></argsstring>
+        <name>Cache_Size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cache size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="149" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CGMNPLib_1a1050b9f6eb73d1331bef7afa783c0d49" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CGMNPLib::m_num_data</definition>
+        <argsstring></argsstring>
+        <name>m_num_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>num <ref refid="structshogun_1_1data" kindref="compound">data</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="151" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CGMNPLib_1ae13facb328de289d29c272772876782e" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CGMNPLib::m_reg_const</definition>
+        <argsstring></argsstring>
+        <name>m_reg_const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>reg const </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="153" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CGMNPLib_1a83b8fd8f1d6fc8bbab6a6358b350892d" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CGMNPLib::m_vector_y</definition>
+        <argsstring></argsstring>
+        <name>m_vector_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>vectory </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="155" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CGMNPLib_1adcd4416004995cf2b4e272c2a5a196cb" prot="protected" static="no" mutable="no">
+        <type>CKernel *</type>
+        <definition>CKernel* shogun::CGMNPLib::m_kernel</definition>
+        <argsstring></argsstring>
+        <name>m_kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>kernel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="157" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CGMNPLib_1af4dbaa045b6b5f4260412315f53dda04" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CGMNPLib::first_virt_inx</definition>
+        <argsstring></argsstring>
+        <name>first_virt_inx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>index of first used column </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="160" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CGMNPLib_1a0201a24ed5d20d1d844651194beb4d21" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CGMNPLib::virt_columns[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>virt_columns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cache for three columns </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="162" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CGMNPLib_1a61c6b1772219a70e557b1384c68d6316" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CGMNPLib::m_num_virt_data</definition>
+        <argsstring></argsstring>
+        <name>m_num_virt_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of virt <ref refid="structshogun_1_1data" kindref="compound">data</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="164" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CGMNPLib_1a2be6945cdbdf961e0c2fde33e5ee61e7" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CGMNPLib::m_num_classes</definition>
+        <argsstring></argsstring>
+        <name>m_num_classes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of classes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="166" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CGMNPLib_1af23d7ae58e413da7a3e4db54eb9dafa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CGMNPLib::CGMNPLib</definition>
+        <argsstring>(float64_t *vector_y, CKernel *kernel, int32_t num_data, int32_t num_virtual_data, int32_t num_classes, float64_t reg_const)</argsstring>
+        <name>CGMNPLib</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>vector_y</declname>
+        </param>
+        <param>
+          <type>CKernel *</type>
+          <declname>kernel</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_data</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_virtual_data</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_classes</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>reg_const</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vector_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector y </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kernel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of <ref refid="structshogun_1_1data" kindref="compound">data</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_virtual_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of virtual <ref refid="structshogun_1_1data" kindref="compound">data</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_classes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of classes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reg_const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reg const </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CGMNPLib_1a0a48ab6dd614e2ee75378504d4e04f21" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CGMNPLib::~CGMNPLib</definition>
+        <argsstring>()</argsstring>
+        <name>~CGMNPLib</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CGMNPLib_1a6fe32a431179355e30145fcb07cc6725" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t shogun::CGMNPLib::gmnp_imdm</definition>
+        <argsstring>(float64_t *vector_c, int32_t dim, int32_t tmax, float64_t tolabs, float64_t tolrel, float64_t th, float64_t *alpha, int32_t *ptr_t, float64_t **ptr_History, int32_t verb)</argsstring>
+        <name>gmnp_imdm</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>vector_c</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>tmax</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>tolabs</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>tolrel</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>th</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>ptr_t</declname>
+        </param>
+        <param>
+          <type>float64_t **</type>
+          <declname>ptr_History</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>verb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>-------------------------------------------------------------- GMNP solver based on improved MDM algorithm 1.</para><para>Search strategy: u determined by common rule and v is optimized.</para><para>Usage: exitflag = gmnp_imdm( &amp;get_col, diag_H, vector_c, dim, tmax, tolabs, tolrel, th, &amp;alpha, &amp;t, &amp;History ); -------------------------------------------------------------- </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CGMNPLib_1adb80bbb088f4239caa0cddbed0b34db9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CGMNPLib::get_indices2</definition>
+        <argsstring>(int32_t *index, int32_t *c, int32_t i)</argsstring>
+        <name>get_indices2</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get indices2</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>c </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="110"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CGMNPLib_1aac4b1bf345c7d2da1f95fc0ca187db72" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CGMNPLib::get_kernel_col</definition>
+        <argsstring>(int32_t a)</argsstring>
+        <name>get_kernel_col</name>
+        <param>
+          <type>int32_t</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get kernel col</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>col at a </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CGMNPLib_1a4b768acd0dd56ce66b947dd0900072ec" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CGMNPLib::get_col</definition>
+        <argsstring>(int32_t a, int32_t b)</argsstring>
+        <name>get_col</name>
+        <param>
+          <type>int32_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get col</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>b </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>col at a, b </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CGMNPLib_1aa49c9b088c7c42a1426fb12a547b4975" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CGMNPLib::kernel_fce</definition>
+        <argsstring>(int32_t a, int32_t b)</argsstring>
+        <name>kernel_fce</name>
+        <param>
+          <type>int32_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>kernel fce</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>b </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>something floaty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CGMNPLib_1ac354ece776605e089d04af98459b0eee" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CGMNPLib::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="137" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" bodystart="137" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class GMNPLib Library of solvers for Generalized Minimal Norm Problem (GMNP). </para>    </briefdescription>
+    <detaileddescription>
+<para>Generalized Minimal Norm Problem to solve is</para><para>min 0.5*alpha&apos;*H*alpha + c&apos;*alpha</para><para>subject to sum(alpha) = 1, alpha(i) &gt;= 0</para><para>H [dim x dim] is symmetric positive definite matrix. c [dim x 1] is an arbitrary vector.</para><para>The precision of the found solution is given by the parameters tmax, tolabs and tolrel which define the stopping conditions:</para><para>UB-LB &lt;= tolabs -&gt; exit_flag = 1 Abs. tolerance. UB-LB &lt;= UB*tolrel -&gt; exit_flag = 2 Relative tolerance. LB &gt; th -&gt; exit_flag = 3 Threshold on lower bound. t &gt;= tmax -&gt; exit_flag = 0 Number of iterations.</para><para>UB ... Upper bound on the optimal solution. LB ... Lower bound on the optimal solution. t ... Number of iterations. History ... Value of LB and UB wrt. number of iterations.</para><para>The following algorithms are implemented: ..............................................</para><para><itemizedlist>
+<listitem><para>GMNP solver based on improved MDM algorithm 1 (u fixed v optimized) exitflag = gmnp_imdm( &amp;get_col, diag_H, vector_c, dim, tmax, tolabs, tolrel, th, &amp;alpha, &amp;t, &amp;History, verb );</para></listitem></itemizedlist>
+</para><para>For more info refer to V.Franc: Optimization Algorithms for Kernel Methods. Research report. CTU-CMP-2005-22. CTU FEL Prague. 2005. <ulink url="ftp://cmp.felk.cvut.cz/pub/cmp/articles/franc/Franc-PhD.pdf">ftp://cmp.felk.cvut.cz/pub/cmp/articles/franc/Franc-PhD.pdf</ulink> . </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" line="67" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gmnplib.h" bodystart="66" bodyend="167"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CGMNPLib_1a28304263ed1674e62ce9ec8cf2b60ee7" prot="protected" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>cache_index</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1a035ea99566bb7090502649b7775bd129" prot="protected" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>Cache_Size</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1af23d7ae58e413da7a3e4db54eb9dafa9" prot="public" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>CGMNPLib</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1a78871df3246dbb9a9a79a2b43e84adf0" prot="protected" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>diag_H</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1a4b428160c95409ef60d7cdec19727fa7" prot="protected" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>first_kernel_inx</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1af4dbaa045b6b5f4260412315f53dda04" prot="protected" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>first_virt_inx</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1a4b768acd0dd56ce66b947dd0900072ec" prot="protected" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>get_col</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1adb80bbb088f4239caa0cddbed0b34db9" prot="public" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>get_indices2</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1aac4b1bf345c7d2da1f95fc0ca187db72" prot="protected" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>get_kernel_col</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1ac354ece776605e089d04af98459b0eee" prot="protected" virt="virtual"><scope>shogun::CGMNPLib</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1a6fe32a431179355e30145fcb07cc6725" prot="public" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>gmnp_imdm</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1a81dfe02407bc5ca43bb738fcc9a02309" prot="protected" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>kernel_columns</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1aa49c9b088c7c42a1426fb12a547b4975" prot="protected" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>kernel_fce</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1adcd4416004995cf2b4e272c2a5a196cb" prot="protected" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>m_kernel</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1a2be6945cdbdf961e0c2fde33e5ee61e7" prot="protected" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>m_num_classes</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1a1050b9f6eb73d1331bef7afa783c0d49" prot="protected" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>m_num_data</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1a61c6b1772219a70e557b1384c68d6316" prot="protected" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>m_num_virt_data</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1ae13facb328de289d29c272772876782e" prot="protected" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>m_reg_const</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1a83b8fd8f1d6fc8bbab6a6358b350892d" prot="protected" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>m_vector_y</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1a0201a24ed5d20d1d844651194beb4d21" prot="protected" virt="non-virtual"><scope>shogun::CGMNPLib</scope><name>virt_columns</name></member>
+      <member refid="classshogun_1_1CGMNPLib_1a0a48ab6dd614e2ee75378504d4e04f21" prot="public" virt="virtual"><scope>shogun::CGMNPLib</scope><name>~CGMNPLib</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

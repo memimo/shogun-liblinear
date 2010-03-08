@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CNormOne" kind="class" prot="public">
+    <compoundname>shogun::CNormOne</compoundname>
+    <basecompoundref refid="classshogun_1_1CSimplePreProc" prot="public" virt="non-virtual">shogun::CSimplePreProc&lt; float64_t &gt;</basecompoundref>
+    <includes local="no">NormOne.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CNormOne_1ae091d45728f6f2ed047765109eb9be09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CNormOne::CNormOne</definition>
+        <argsstring>()</argsstring>
+        <name>CNormOne</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormOne.h" line="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CNormOne_1a696753941050e290dcb3d6dfa0a59e62" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CNormOne::~CNormOne</definition>
+        <argsstring>()</argsstring>
+        <name>~CNormOne</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormOne.h" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CNormOne_1a88c01be55ae23840d294e9046422bdae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CNormOne::init</definition>
+        <argsstring>(CFeatures *f)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CPreProc_1afe50f73057b75cb494a9a4ab253258d6">init</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>initialize preprocessor from features </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormOne.h" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CNormOne_1a5aa76386fdfb9c368cee2c0f0986302d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CNormOne::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <reimplements refid="classshogun_1_1CPreProc_1a0f043eb1dd251b49cb3cf3ecf44b1c4b">cleanup</reimplements>
+        <briefdescription>
+<para>cleanup </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormOne.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CNormOne_1ac697ea098f32843e731a085c8005ad07" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CNormOne::load</definition>
+        <argsstring>(FILE *f)</argsstring>
+        <name>load</name>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>initialize preprocessor from file </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormOne.h" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CNormOne_1a830c7a88a6d8df31fac4efe2cfef9c2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CNormOne::save</definition>
+        <argsstring>(FILE *f)</argsstring>
+        <name>save</name>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>save preprocessor init-data to file </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormOne.h" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CNormOne_1a6c554e9de2c9f6e997e027d5159576b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t *</type>
+        <definition>virtual float64_t* shogun::CNormOne::apply_to_feature_matrix</definition>
+        <argsstring>(CFeatures *f)</argsstring>
+        <name>apply_to_feature_matrix</name>
+        <reimplements refid="classshogun_1_1CSimplePreProc_1adec07199d03e845350456bb3f2e8c240">apply_to_feature_matrix</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>apply preproc on feature matrix result in feature matrix return pointer to feature_matrix, i.e. f-&gt;get_feature_matrix(); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormOne.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CNormOne_1aaeb3c4160aad997d9be858dbbe197678" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t *</type>
+        <definition>virtual float64_t* shogun::CNormOne::apply_to_feature_vector</definition>
+        <argsstring>(float64_t *f, int32_t &amp;len)</argsstring>
+        <name>apply_to_feature_vector</name>
+        <reimplements refid="classshogun_1_1CSimplePreProc_1ad95caddfb7ec5ac7071b43d366da9f2a">apply_to_feature_vector</reimplements>
+        <param>
+          <type>float64_t *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>apply preproc on single feature vector result in feature matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormOne.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CNormOne_1a7087b30ff76654c5dfb279fa5ea631ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CNormOne::get_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormOne.h" line="59" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormOne.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Preprocessor NormOne, normalizes vectors to have norm 1. </para>    </briefdescription>
+    <detaileddescription>
+<para>Formally, it computes</para><para><formula id="1">\[ {\bf x} \leftarrow \frac{{\bf x}}{||{\bf x}||} \]</formula></para><para>It therefore does not need any initialization. It is most useful to get data onto a ball of radius one. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="20">
+        <label>shogun::CPreProc</label>
+        <link refid="classshogun_1_1CPreProc"/>
+      </node>
+      <node id="19">
+        <label>shogun::CSimplePreProc&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimplePreProc"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>shogun::CNormOne</label>
+        <link refid="classshogun_1_1CNormOne"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="23">
+        <label>shogun::CPreProc</label>
+        <link refid="classshogun_1_1CPreProc"/>
+      </node>
+      <node id="22">
+        <label>shogun::CSimplePreProc&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimplePreProc"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>shogun::CNormOne</label>
+        <link refid="classshogun_1_1CNormOne"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormOne.h" line="34" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormOne.h" bodystart="33" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CNormOne_1a6c554e9de2c9f6e997e027d5159576b5" prot="public" virt="virtual"><scope>shogun::CNormOne</scope><name>apply_to_feature_matrix</name></member>
+      <member refid="classshogun_1_1CNormOne_1aaeb3c4160aad997d9be858dbbe197678" prot="public" virt="virtual"><scope>shogun::CNormOne</scope><name>apply_to_feature_vector</name></member>
+      <member refid="classshogun_1_1CNormOne_1a5aa76386fdfb9c368cee2c0f0986302d" prot="public" virt="virtual"><scope>shogun::CNormOne</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CNormOne_1ae091d45728f6f2ed047765109eb9be09" prot="public" virt="non-virtual"><scope>shogun::CNormOne</scope><name>CNormOne</name></member>
+      <member refid="classshogun_1_1CPreProc_1a42cd824b1e730557f07884dc6eb98e51" prot="public" virt="non-virtual"><scope>shogun::CNormOne</scope><name>CPreProc</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1a94752b9091a95a9cba6fdeb729e03bc3" prot="public" virt="non-virtual"><scope>shogun::CNormOne</scope><name>CSimplePreProc</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1aabe2bad66cb5c1c5fdef0a8b4ce5a8db" prot="public" virt="virtual"><scope>shogun::CNormOne</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1a59c6f4e6daddd0b833ab65f1ed6489db" prot="public" virt="virtual"><scope>shogun::CNormOne</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CPreProc_1a66dbec59819cb9ed7023fc47608ccad7" prot="public" virt="non-virtual"><scope>shogun::CNormOne</scope><name>get_id</name></member>
+      <member refid="classshogun_1_1CNormOne_1a7087b30ff76654c5dfb279fa5ea631ca" prot="public" virt="virtual"><scope>shogun::CNormOne</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CPreProc_1ade7d07b45284bdae48abe425b0bf5a40" prot="public" virt="virtual" ambiguityscope="CSimplePreProc&lt; float64_t &gt;::"><scope>shogun::CNormOne</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CNormOne_1a88c01be55ae23840d294e9046422bdae" prot="public" virt="virtual"><scope>shogun::CNormOne</scope><name>init</name></member>
+      <member refid="classshogun_1_1CNormOne_1ac697ea098f32843e731a085c8005ad07" prot="public" virt="virtual"><scope>shogun::CNormOne</scope><name>load</name></member>
+      <member refid="classshogun_1_1CPreProc_1a7905211b1e156831e64768d936351fa8" prot="protected" virt="non-virtual"><scope>shogun::CNormOne</scope><name>preproc_id</name></member>
+      <member refid="classshogun_1_1CPreProc_1a58f21d152eaba8e982f98806d8496db3" prot="protected" virt="non-virtual"><scope>shogun::CNormOne</scope><name>preproc_name</name></member>
+      <member refid="classshogun_1_1CNormOne_1a830c7a88a6d8df31fac4efe2cfef9c2b" prot="public" virt="virtual"><scope>shogun::CNormOne</scope><name>save</name></member>
+      <member refid="classshogun_1_1CNormOne_1a696753941050e290dcb3d6dfa0a59e62" prot="public" virt="virtual"><scope>shogun::CNormOne</scope><name>~CNormOne</name></member>
+      <member refid="classshogun_1_1CPreProc_1a037b99bfd3bacbb3135525e81b134c57" prot="public" virt="virtual"><scope>shogun::CNormOne</scope><name>~CPreProc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

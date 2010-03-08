@@ -1,0 +1,583 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CHierarchical" kind="class" prot="public">
+    <compoundname>shogun::CHierarchical</compoundname>
+    <includes local="no">Hierarchical.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CHierarchical_1aefa04daad55fe6f0419499dca39dfadf" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CHierarchical::merges</definition>
+        <argsstring></argsstring>
+        <name>merges</name>
+        <briefdescription>
+<para>the number of merges in hierarchical clustering </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="194" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CHierarchical_1ae8467d5f2257ce571b448fbf79a08822" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CHierarchical::dimensions</definition>
+        <argsstring></argsstring>
+        <name>dimensions</name>
+        <briefdescription>
+<para>number of dimensions </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="197" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CHierarchical_1a06d0d0b80f3b702c257f150bce065891" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CHierarchical::assignment_size</definition>
+        <argsstring></argsstring>
+        <name>assignment_size</name>
+        <briefdescription>
+<para>size of assignment table </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="200" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CHierarchical_1ae5214cada02e75b3afee79101f7856f2" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CHierarchical::assignment</definition>
+        <argsstring></argsstring>
+        <name>assignment</name>
+        <briefdescription>
+<para>cluster assignment for the num_points </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="203" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CHierarchical_1a0c82c2d46de00615a2334573bf4213c3" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CHierarchical::table_size</definition>
+        <argsstring></argsstring>
+        <name>table_size</name>
+        <briefdescription>
+<para>size of the below tables </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="206" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CHierarchical_1aa742298aeaa94eed43f930e98c487583" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CHierarchical::pairs</definition>
+        <argsstring></argsstring>
+        <name>pairs</name>
+        <briefdescription>
+<para>tuples of i/j </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="209" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CHierarchical_1ac2d61189dab229686843ebb7b48aafbd" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CHierarchical::merge_distance</definition>
+        <argsstring></argsstring>
+        <name>merge_distance</name>
+        <briefdescription>
+<para>distance at which pair i/j was added </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="212" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1a13cdbbc70b97f5671b4f116aae58f68b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CHierarchical::CHierarchical</definition>
+        <argsstring>()</argsstring>
+        <name>CHierarchical</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1a8b0901f1b5f4023f954dff69f9ad01c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CHierarchical::CHierarchical</definition>
+        <argsstring>(int32_t merges, CDistance *d)</argsstring>
+        <name>CHierarchical</name>
+        <param>
+          <type>int32_t</type>
+          <declname>merges</declname>
+        </param>
+        <param>
+          <type>CDistance *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>merges</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the merges </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distance </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1af21df8a8e2715346adc7c921089d3792" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CHierarchical::~CHierarchical</definition>
+        <argsstring>()</argsstring>
+        <name>~CHierarchical</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1a9dd62ceea5de244d2ab2bc49439a382e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EClassifierType</type>
+        <definition>virtual EClassifierType shogun::CHierarchical::get_classifier_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_classifier_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier type</para><para><simplesect kind="return"><para>classifier type HIERARCHICAL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="55" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1a8d214e1084feaeea276c6573fddd6a2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CHierarchical::train</definition>
+        <argsstring>(CFeatures *data=NULL)</argsstring>
+        <name>train</name>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>estimate hierarchical clustering</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training data (parameter can be avoided if distance or kernel-based classifiers are used and distance/kernels are initialized with train data)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether training was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1abdaf382f2b7b67cf6d717d7770a30ea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CHierarchical::load</definition>
+        <argsstring>(FILE *srcfile)</argsstring>
+        <name>load</name>
+        <param>
+          <type>FILE *</type>
+          <declname>srcfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load distance machine from file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>srcfile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to load from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if loading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1ae186e4b58ec91cbccf906f79936f155f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CHierarchical::save</definition>
+        <argsstring>(FILE *dstfile)</argsstring>
+        <name>save</name>
+        <param>
+          <type>FILE *</type>
+          <declname>dstfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save distance machine to file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dstfile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to save to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if saving was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1a926408c1f77cf6c88dc895a5273466d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CHierarchical::set_merges</definition>
+        <argsstring>(int32_t m)</argsstring>
+        <name>set_merges</name>
+        <param>
+          <type>int32_t</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set merges</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new merges </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="86" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1abe6b2296d38ef540ac3aa6aaa778c267" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CHierarchical::get_merges</definition>
+        <argsstring>()</argsstring>
+        <name>get_merges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get merges</para><para><simplesect kind="return"><para>merges </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="96" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1a39345719908edc9cdbc6b0eaf8bc6b84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CHierarchical::get_assignment</definition>
+        <argsstring>(int32_t *&amp;assign, int32_t &amp;num)</argsstring>
+        <name>get_assignment</name>
+        <param>
+          <type>int32_t *&amp;</type>
+          <declname>assign</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get assignment</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>assign</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current assignment is stored in here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of assignments is stored in here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="106" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="105" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1a92440b8cab0fb79725dd2a4ee56684db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CHierarchical::get_merge_distance</definition>
+        <argsstring>(float64_t *&amp;dist, int32_t &amp;num)</argsstring>
+        <name>get_merge_distance</name>
+        <param>
+          <type>float64_t *&amp;</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get merge distance</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current merge distance is stored in here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of merge distances is stored in here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="117" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="116" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1aec1b02b93e0380836c5056428a7e890c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CHierarchical::get_merge_distances</definition>
+        <argsstring>(float64_t **dist, int32_t *num)</argsstring>
+        <name>get_merge_distances</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get merge distances (swig compatible)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current merge distances are stored in here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of merge distances are stored in here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="128" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="127" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1a64e565c3cf71ee43882a63bcbe6692cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CHierarchical::get_pairs</definition>
+        <argsstring>(int32_t *&amp;tuples, int32_t &amp;rows, int32_t &amp;num)</argsstring>
+        <name>get_pairs</name>
+        <param>
+          <type>int32_t *&amp;</type>
+          <declname>tuples</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get pairs</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tuples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current pairs are stored in here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of rows is stored in here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of pairs is stored in here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="144" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="143" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1a3747e240354aaddca508ba0cfe10ed26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CHierarchical::get_cluster_pairs</definition>
+        <argsstring>(int32_t **tuples, int32_t *rows, int32_t *num)</argsstring>
+        <name>get_cluster_pairs</name>
+        <param>
+          <type>int32_t **</type>
+          <declname>tuples</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get cluster pairs (swig compatible)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tuples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current pairs are stored in here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of rows is stored in here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of pairs is stored in here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="158" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="156" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1ab082e5e501f504970df59ce0e5d2f29e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>CLabels *</type>
+        <definition>virtual CLabels* shogun::CHierarchical::classify</definition>
+        <argsstring>()</argsstring>
+        <name>classify</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify objects using the currently set features</para><para><simplesect kind="return"><para>classified labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="173" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="172" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1a9358f31eb968200bbba3f348eb38334d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>CLabels *</type>
+        <definition>virtual CLabels* shogun::CHierarchical::classify</definition>
+        <argsstring>(CFeatures *data)</argsstring>
+        <name>classify</name>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify objects</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(test)data to be classified </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>classified labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="184" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="183" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHierarchical_1a9515cf2186ff35111d49cfb02d3e495e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CHierarchical::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="190" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="190" bodyend="190"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Agglomerative hierarchical single linkage clustering. </para>    </briefdescription>
+    <detaileddescription>
+<para>Starting with each object being assigned to its own cluster clusters are iteratively merged. Here the clusters are merged whose elements have minimum distance, i.e. the clusters A and B that obtain</para><para><formula id="0">\[ \min\{d({\bf x},{\bf x&apos;}): {\bf x}\in {\cal A},{\bf x&apos;}\in {\cal B}\} \]</formula></para><para>are merged.</para><para>cf e.g. <ulink url="http://en.wikipedia.org/wiki/Data_clustering">http://en.wikipedia.org/wiki/Data_clustering</ulink> </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" line="38" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/Hierarchical.h" bodystart="37" bodyend="213"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CHierarchical_1ae5214cada02e75b3afee79101f7856f2" prot="protected" virt="non-virtual"><scope>shogun::CHierarchical</scope><name>assignment</name></member>
+      <member refid="classshogun_1_1CHierarchical_1a06d0d0b80f3b702c257f150bce065891" prot="protected" virt="non-virtual"><scope>shogun::CHierarchical</scope><name>assignment_size</name></member>
+      <member refid="classshogun_1_1CHierarchical_1a13cdbbc70b97f5671b4f116aae58f68b" prot="public" virt="non-virtual"><scope>shogun::CHierarchical</scope><name>CHierarchical</name></member>
+      <member refid="classshogun_1_1CHierarchical_1a8b0901f1b5f4023f954dff69f9ad01c7" prot="public" virt="non-virtual"><scope>shogun::CHierarchical</scope><name>CHierarchical</name></member>
+      <member refid="classshogun_1_1CHierarchical_1ab082e5e501f504970df59ce0e5d2f29e" prot="public" virt="virtual"><scope>shogun::CHierarchical</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CHierarchical_1a9358f31eb968200bbba3f348eb38334d" prot="public" virt="virtual"><scope>shogun::CHierarchical</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CHierarchical_1ae8467d5f2257ce571b448fbf79a08822" prot="protected" virt="non-virtual"><scope>shogun::CHierarchical</scope><name>dimensions</name></member>
+      <member refid="classshogun_1_1CHierarchical_1a39345719908edc9cdbc6b0eaf8bc6b84" prot="public" virt="non-virtual"><scope>shogun::CHierarchical</scope><name>get_assignment</name></member>
+      <member refid="classshogun_1_1CHierarchical_1a9dd62ceea5de244d2ab2bc49439a382e" prot="public" virt="virtual"><scope>shogun::CHierarchical</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CHierarchical_1a3747e240354aaddca508ba0cfe10ed26" prot="public" virt="non-virtual"><scope>shogun::CHierarchical</scope><name>get_cluster_pairs</name></member>
+      <member refid="classshogun_1_1CHierarchical_1a92440b8cab0fb79725dd2a4ee56684db" prot="public" virt="non-virtual"><scope>shogun::CHierarchical</scope><name>get_merge_distance</name></member>
+      <member refid="classshogun_1_1CHierarchical_1aec1b02b93e0380836c5056428a7e890c" prot="public" virt="non-virtual"><scope>shogun::CHierarchical</scope><name>get_merge_distances</name></member>
+      <member refid="classshogun_1_1CHierarchical_1abe6b2296d38ef540ac3aa6aaa778c267" prot="public" virt="non-virtual"><scope>shogun::CHierarchical</scope><name>get_merges</name></member>
+      <member refid="classshogun_1_1CHierarchical_1a9515cf2186ff35111d49cfb02d3e495e" prot="public" virt="virtual"><scope>shogun::CHierarchical</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CHierarchical_1a64e565c3cf71ee43882a63bcbe6692cf" prot="public" virt="non-virtual"><scope>shogun::CHierarchical</scope><name>get_pairs</name></member>
+      <member refid="classshogun_1_1CHierarchical_1abdaf382f2b7b67cf6d717d7770a30ea0" prot="public" virt="virtual"><scope>shogun::CHierarchical</scope><name>load</name></member>
+      <member refid="classshogun_1_1CHierarchical_1ac2d61189dab229686843ebb7b48aafbd" prot="protected" virt="non-virtual"><scope>shogun::CHierarchical</scope><name>merge_distance</name></member>
+      <member refid="classshogun_1_1CHierarchical_1aefa04daad55fe6f0419499dca39dfadf" prot="protected" virt="non-virtual"><scope>shogun::CHierarchical</scope><name>merges</name></member>
+      <member refid="classshogun_1_1CHierarchical_1aa742298aeaa94eed43f930e98c487583" prot="protected" virt="non-virtual"><scope>shogun::CHierarchical</scope><name>pairs</name></member>
+      <member refid="classshogun_1_1CHierarchical_1ae186e4b58ec91cbccf906f79936f155f" prot="public" virt="virtual"><scope>shogun::CHierarchical</scope><name>save</name></member>
+      <member refid="classshogun_1_1CHierarchical_1a926408c1f77cf6c88dc895a5273466d2" prot="public" virt="non-virtual"><scope>shogun::CHierarchical</scope><name>set_merges</name></member>
+      <member refid="classshogun_1_1CHierarchical_1a0c82c2d46de00615a2334573bf4213c3" prot="protected" virt="non-virtual"><scope>shogun::CHierarchical</scope><name>table_size</name></member>
+      <member refid="classshogun_1_1CHierarchical_1a8d214e1084feaeea276c6573fddd6a2a" prot="public" virt="virtual"><scope>shogun::CHierarchical</scope><name>train</name></member>
+      <member refid="classshogun_1_1CHierarchical_1af21df8a8e2715346adc7c921089d3792" prot="public" virt="virtual"><scope>shogun::CHierarchical</scope><name>~CHierarchical</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

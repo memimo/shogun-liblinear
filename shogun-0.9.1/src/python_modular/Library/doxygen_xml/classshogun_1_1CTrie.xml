@@ -1,0 +1,2476 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CTrie" kind="class" prot="public">
+    <compoundname>shogun::CTrie</compoundname>
+    <includes local="no">Trie.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class Trie</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CTrie_1a5d34856710354804e43f7d7e455d8be0" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CTrie&lt; Trie &gt;::NUM_SYMS</definition>
+        <argsstring></argsstring>
+        <name>NUM_SYMS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of symbols </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="630" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="630" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CTrie_1ac36e4f6fd8b740ca437c67862d3c9541" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CTrie&lt; Trie &gt;::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="634" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="634" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CTrie_1a3fa105db549b8c227982973976f8efce" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CTrie&lt; Trie &gt;::trees</definition>
+        <argsstring></argsstring>
+        <name>trees</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>trees </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="636" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="636" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CTrie_1ad7d53cd61f1c71062fae3dd37a38e108" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CTrie&lt; Trie &gt;::degree</definition>
+        <argsstring></argsstring>
+        <name>degree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>degree </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="639" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="639" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CTrie_1aeabd3de70002a6ee646b89770f7eefc3" prot="protected" static="no" mutable="no">
+        <type>float64_t const *</type>
+        <definition>float64_t const* shogun::CTrie&lt; Trie &gt;::position_weights</definition>
+        <argsstring></argsstring>
+        <name>position_weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>position weights </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="641" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="641" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CTrie_1aff2933b7146e526e2774496a0aaa6e1b" prot="protected" static="no" mutable="no">
+        <type>Trie *</type>
+        <definition>Trie* shogun::CTrie&lt; Trie &gt;::TreeMem</definition>
+        <argsstring></argsstring>
+        <name>TreeMem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tree memory </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="644" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="644" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CTrie_1ab06101111401a431a6344dbadcd2b46b" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CTrie&lt; Trie &gt;::TreeMemPtr</definition>
+        <argsstring></argsstring>
+        <name>TreeMemPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tree memory pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="646" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="646" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CTrie_1aa22781be09c1af4b184283ae682133ae" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CTrie&lt; Trie &gt;::TreeMemPtrMax</definition>
+        <argsstring></argsstring>
+        <name>TreeMemPtrMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tree memory pointer maximum </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="648" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="648" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CTrie_1a4a0b25289c7f4feb2a093ea26b95c608" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CTrie&lt; Trie &gt;::use_compact_terminal_nodes</definition>
+        <argsstring></argsstring>
+        <name>use_compact_terminal_nodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if compact terminal nodes are used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="650" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="650" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CTrie_1a32a0b4966e7647e95df07329f349bf98" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CTrie&lt; Trie &gt;::weights_in_tree</definition>
+        <argsstring></argsstring>
+        <name>weights_in_tree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if weights are in tree </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="653" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="653" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CTrie_1a1df5ed79df068cb627faae55a1ef7f90" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CTrie&lt; Trie &gt;::nofsKmers</definition>
+        <argsstring></argsstring>
+        <name>nofsKmers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>nofsKmers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="656" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="656" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a9892401199baef06bd7c5aa340c8d491" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CTrie&lt; Trie &gt;::CTrie</definition>
+        <argsstring>(int32_t d, bool p_use_compact_terminal_nodes=true)</argsstring>
+        <name>CTrie</name>
+        <param>
+          <type>int32_t</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_use_compact_terminal_nodes</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degree </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_use_compact_terminal_nodes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if compact terminal nodes shall be used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="164" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="660" bodyend="673"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1ac2fa997d9c4ce863233d66c07f30ec36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CTrie&lt; Trie &gt;::CTrie</definition>
+        <argsstring>(const CTrie &amp;to_copy)</argsstring>
+        <name>CTrie</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CTrie" kindref="compound">CTrie</ref> &amp;</type>
+          <declname>to_copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="167" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="676" bodyend="701"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a0ae7add35a3ff7a07f0406a0fc33ce2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>shogun::CTrie&lt; Trie &gt;::~CTrie</definition>
+        <argsstring>()</argsstring>
+        <name>~CTrie</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="168" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1109" bodyend="1114"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a8029afbfd9341cb7e112ba4d050d8020" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classshogun_1_1CTrie" kindref="compound">CTrie</ref> &amp;</type>
+        <definition>const CTrie&lt; Trie &gt; &amp; shogun::CTrie&lt; Trie &gt;::operator=</definition>
+        <argsstring>(const CTrie &amp;to_copy)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CTrie" kindref="compound">CTrie</ref> &amp;</type>
+          <declname>to_copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload operator = </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="171" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="704" bodyend="735"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a561fb9f6ba3f2477eaf9dea3bd00ea8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CTrie&lt; Trie &gt;::compare_traverse</definition>
+        <argsstring>(int32_t node, const CTrie &amp;other, int32_t other_node)</argsstring>
+        <name>compare_traverse</name>
+        <param>
+          <type>int32_t</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classshogun_1_1CTrie" kindref="compound">CTrie</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>other_node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compare traverse</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>other trie </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>other node </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if comparison was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="181" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="904" bodyend="988"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a03c7d958140ae6fe73b792d93adde376" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CTrie&lt; Trie &gt;::compare</definition>
+        <argsstring>(const CTrie &amp;other)</argsstring>
+        <name>compare</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CTrie" kindref="compound">CTrie</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compare</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>other trie </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if comparison was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="188" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="991" bodyend="1001"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a20d69f03ddfe46bf90dbbeee8292945f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CTrie&lt; Trie &gt;::find_node</definition>
+        <argsstring>(int32_t node, int32_t *trace, int32_t &amp;trace_len) const </argsstring>
+        <name>find_node</name>
+        <param>
+          <type>int32_t</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>trace</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>trace_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>find node</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node to find </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>trace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>trace </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>trace_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of trace </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="196" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1004" bodyend="1042"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a50b9a50a9a453e5f20b903a018e5ae22" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CTrie&lt; Trie &gt;::find_deepest_node</definition>
+        <argsstring>(int32_t start_node, int32_t &amp;deepest_node) const </argsstring>
+        <name>find_deepest_node</name>
+        <param>
+          <type>int32_t</type>
+          <declname>start_node</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>deepest_node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>find deepest node</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start node </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deepest_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>deepest node will be stored in here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>depth of deepest node </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="205" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="738" bodyend="792"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1aed860dd20e6a4bc0ba957f3543b8e9bc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::display_node</definition>
+        <argsstring>(int32_t node) const </argsstring>
+        <name>display_node</name>
+        <param>
+          <type>int32_t</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>display node</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node to display </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="211" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1045" bodyend="1106"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1aa18bde3041662daa736b1b69e5290ccc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>destroy </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="214" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1116" bodyend="1129"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a8ec80749782a6fef2b2d25b59d3f85e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::set_degree</definition>
+        <argsstring>(int32_t d)</argsstring>
+        <name>set_degree</name>
+        <param>
+          <type>int32_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set degree</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new degree </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="220" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1131" bodyend="1135"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a4d84d8135b8866f011bf83c28df23172" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::create</definition>
+        <argsstring>(int32_t len, bool p_use_compact_terminal_nodes=true)</argsstring>
+        <name>create</name>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_use_compact_terminal_nodes</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>create</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of new trie </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_use_compact_terminal_nodes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if compact terminal nodes shall be used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="228" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1137" bodyend="1149"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1aad0b5be7bf15be93896dffd4012252fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::delete_trees</definition>
+        <argsstring>(bool p_use_compact_terminal_nodes=true)</argsstring>
+        <name>delete_trees</name>
+        <param>
+          <type>bool</type>
+          <declname>p_use_compact_terminal_nodes</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>delete trees</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_use_compact_terminal_nodes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if compact terminal nodes shall be used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="235" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1152" bodyend="1163"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a894984dcce7d4de28fc8b93f8f6c5912" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::add_to_trie</definition>
+        <argsstring>(int32_t i, int32_t seq_offset, int32_t *vec, float32_t alpha, float64_t *weights, bool degree_times_position_weights)</argsstring>
+        <name>add_to_trie</name>
+        <param>
+          <type>int32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>seq_offset</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>float32_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>weights</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>degree_times_position_weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add to trie</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seq_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sequence offset </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alpha </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weights </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>degree_times_position_weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if degree times position weights shall be applied </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="249" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1477" bodyend="1700"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1acfd2c6163caeb046aebb797745af0dbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CTrie&lt; Trie &gt;::compute_abs_weights_tree</definition>
+        <argsstring>(int32_t tree, int32_t depth)</argsstring>
+        <name>compute_abs_weights_tree</name>
+        <param>
+          <type>int32_t</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute absolute weights tree</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tree to compute for </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>depth </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed absolute weights tree </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="257" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1166" bodyend="1191"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a6491a6d228cbc686252810ecc44b731a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t *</type>
+        <definition>float64_t * shogun::CTrie&lt; Trie &gt;::compute_abs_weights</definition>
+        <argsstring>(int32_t &amp;len)</argsstring>
+        <name>compute_abs_weights</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute absolute weights</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed absolute weights </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="264" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1195" bodyend="1212"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1ad6e7a8b71a973cc7334164b48b79e8c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CTrie&lt; Trie &gt;::compute_by_tree_helper</definition>
+        <argsstring>(int32_t *vec, int32_t len, int32_t seq_pos, int32_t tree_pos, int32_t weight_pos, float64_t *weights, bool degree_times_position_weights)</argsstring>
+        <name>compute_by_tree_helper</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>seq_pos</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>tree_pos</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>weight_pos</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>weights</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>degree_times_position_weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute by tree helper</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seq_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sequence position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tree_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tree position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weight position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>degree_times_position_weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if degree times position weights shall be applied </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a computed value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="281" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1703" bodyend="1775"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1aa4eca3ff10a227909635b451d2b08be6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::compute_by_tree_helper</definition>
+        <argsstring>(int32_t *vec, int32_t len, int32_t seq_pos, int32_t tree_pos, int32_t weight_pos, float64_t *LevelContrib, float64_t factor, int32_t mkl_stepsize, float64_t *weights, bool degree_times_position_weights)</argsstring>
+        <name>compute_by_tree_helper</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>seq_pos</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>tree_pos</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>weight_pos</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>LevelContrib</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>factor</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>mkl_stepsize</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>weights</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>degree_times_position_weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute by tree helper</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seq_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sequence position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tree_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tree position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weight position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LevelContrib</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>level contribution </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>factor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mkl_stepsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MKL stepsize </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>degree_times_position_weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if degree times position weights shall be applied </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="301" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1778" bodyend="1991"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a57dc8b9fed8c1575fd0e76f49489c754" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::compute_scoring_helper</definition>
+        <argsstring>(int32_t tree, int32_t i, int32_t j, float64_t weight, int32_t d, int32_t max_degree, int32_t num_feat, int32_t num_sym, int32_t sym_offset, int32_t offs, float64_t *result)</argsstring>
+        <name>compute_scoring_helper</name>
+        <param>
+          <type>int32_t</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>weight</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max_degree</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_sym</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>sym_offset</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>offs</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute scoring helper</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tree </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>j </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weight </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degree </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_degree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum degree </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of symbols </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sym_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>symbol offset </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offsets </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>result </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="320" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1328" bodyend="1370"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1affa4648af66ca1ecd860ee429f8f70ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::add_example_to_tree_mismatch_recursion</definition>
+        <argsstring>(int32_t tree, int32_t i, float64_t alpha, int32_t *vec, int32_t len_rem, int32_t degree_rec, int32_t mismatch_rec, int32_t max_mismatch, float64_t *weights)</argsstring>
+        <name>add_example_to_tree_mismatch_recursion</name>
+        <param>
+          <type>int32_t</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len_rem</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>degree_rec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>mismatch_rec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max_mismatch</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add example to tree mismatch recursion</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tree </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alpha </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len_rem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of rem </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>degree_rec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degree rec </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mismatch_rec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mismatch rec </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_mismatch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum mismatch </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weights </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="337" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1215" bodyend="1325"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a7dfd1d9482978b477c15ef87534f1966" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::traverse</definition>
+        <argsstring>(int32_t tree, const int32_t p, struct TreeParseInfo info, const int32_t depth, int32_t *const x, const int32_t k)</argsstring>
+        <name>traverse</name>
+        <param>
+          <type>int32_t</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structshogun_1_1TreeParseInfo" kindref="compound">TreeParseInfo</ref></type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>int32_t *const </type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>traverse</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tree </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>p </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tree parse info </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>depth </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>k </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="350" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1373" bodyend="1420"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1aacb14ba5cd3d6a1d0066ff060db18dc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::count</definition>
+        <argsstring>(const float64_t w, const int32_t depth, const struct TreeParseInfo info, const int32_t p, int32_t *x, const int32_t k)</argsstring>
+        <name>count</name>
+        <param>
+          <type>const float64_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structshogun_1_1TreeParseInfo" kindref="compound">TreeParseInfo</ref></type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>count</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>w </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>depth </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tree parse info </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>p </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="364" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1423" bodyend="1474"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a3e64ec2ca52a822742ab4f9466d9a7da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CTrie&lt; Trie &gt;::compact_nodes</definition>
+        <argsstring>(int32_t start_node, int32_t depth, float64_t *weights)</argsstring>
+        <name>compact_nodes</name>
+        <param>
+          <type>int32_t</type>
+          <declname>start_node</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compact nodes</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start node </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>depth </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weights </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="372" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="795" bodyend="900"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a7b2d76e1e70138a5f6441a69c13142b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CTrie&lt; Trie &gt;::get_cumulative_score</definition>
+        <argsstring>(int32_t pos, uint64_t seq, int32_t deg, float64_t *weights)</argsstring>
+        <name>get_cumulative_score</name>
+        <param>
+          <type>int32_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>seq</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>deg</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get cumulative score</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sequence </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degree </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weights </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>cumulative score </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="383" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="2036" bodyend="2065"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1ab286c7946692facda384389f9e7f7897" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::fill_backtracking_table_recursion</definition>
+        <argsstring>(Trie *tree, int32_t depth, uint64_t seq, float64_t value, CDynamicArray&lt; ConsensusEntry &gt; *table, float64_t *weights)</argsstring>
+        <name>fill_backtracking_table_recursion</name>
+        <param>
+          <type>Trie *</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>seq</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="classshogun_1_1CDynamicArray" kindref="compound">CDynamicArray</ref>&lt; <ref refid="structshogun_1_1ConsensusEntry" kindref="compound">ConsensusEntry</ref> &gt; *</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>fill backtracking table recursion</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tree </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>depth </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sequence </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>table of concensus entries </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weights </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="396" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="1994" bodyend="2033"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a612fa389c3353ab20e223562a4d8e7bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::fill_backtracking_table</definition>
+        <argsstring>(int32_t pos, CDynamicArray&lt; ConsensusEntry &gt; *prev, CDynamicArray&lt; ConsensusEntry &gt; *cur, bool cumulative, float64_t *weights)</argsstring>
+        <name>fill_backtracking_table</name>
+        <param>
+          <type>int32_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classshogun_1_1CDynamicArray" kindref="compound">CDynamicArray</ref>&lt; <ref refid="structshogun_1_1ConsensusEntry" kindref="compound">ConsensusEntry</ref> &gt; *</type>
+          <declname>prev</declname>
+        </param>
+        <param>
+          <type><ref refid="classshogun_1_1CDynamicArray" kindref="compound">CDynamicArray</ref>&lt; <ref refid="structshogun_1_1ConsensusEntry" kindref="compound">ConsensusEntry</ref> &gt; *</type>
+          <declname>cur</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>cumulative</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>fill backtracking table</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>previous concencus entry </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current concensus entry </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cumulative</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if is cumulative </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weights </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="409" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="2068" bodyend="2138"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a58cbea6a674ab910e5e4d6ccec6d49bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::POIMs_extract_W</definition>
+        <argsstring>(float64_t *const *const W, const int32_t K)</argsstring>
+        <name>POIMs_extract_W</name>
+        <param>
+          <type>float64_t *const *const </type>
+          <declname>W</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>K</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>POIMs extract W</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>W</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>W </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>K</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>K </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="416"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a4b22c1681fba810ffbf85a14376386e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::POIMs_precalc_SLR</definition>
+        <argsstring>(const float64_t *const distrib)</argsstring>
+        <name>POIMs_precalc_SLR</name>
+        <param>
+          <type>const float64_t *const </type>
+          <declname>distrib</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>POIMs precalc SLR</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>distrib</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distribution </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="422"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a0ec6bb2e4b2544c011032f65fc739c5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::POIMs_get_SLR</definition>
+        <argsstring>(const int32_t parentIdx, const int32_t sym, const int32_t depth, float64_t *S, float64_t *L, float64_t *R)</argsstring>
+        <name>POIMs_get_SLR</name>
+        <param>
+          <type>const int32_t</type>
+          <declname>parentIdx</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>sym</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>S</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>R</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>POIMs get SLR</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parentIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parent index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>symbol </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>depth </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>S</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will point to S </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will point to L </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>R</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will point to R </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="435"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a83f9081946adaa4988410cd31a26cf52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::POIMs_add_SLR</definition>
+        <argsstring>(float64_t *const *const poims, const int32_t K, const int32_t debug)</argsstring>
+        <name>POIMs_add_SLR</name>
+        <param>
+          <type>float64_t *const *const </type>
+          <declname>poims</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>K</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>debug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>POIMs add SLR</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>poims</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>POIMs </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>K</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>K </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debug</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>debug level </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="445"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a4f4e7ee507bc46ad46732541d0ad74e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CTrie&lt; Trie &gt;::get_use_compact_terminal_nodes</definition>
+        <argsstring>()</argsstring>
+        <name>get_use_compact_terminal_nodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get use compact terminal nodes</para><para><simplesect kind="return"><para>if compact terminal nodes are used </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="452" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="451" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a0c32fd9d571cd44addf4879e8b2faf20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::set_use_compact_terminal_nodes</definition>
+        <argsstring>(bool p_use_compact_terminal_nodes)</argsstring>
+        <name>set_use_compact_terminal_nodes</name>
+        <param>
+          <type>bool</type>
+          <declname>p_use_compact_terminal_nodes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set use compact terminal nodes</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_use_compact_terminal_nodes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if compact terminal nodes shall be used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="463" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="461" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1aabd525ea43e3b3a5cac6e70507e3db5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CTrie&lt; Trie &gt;::get_num_used_nodes</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_used_nodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of used nodes</para><para><simplesect kind="return"><para>number of used nodes </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="472" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="471" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1acab7ea7776669c2dff9fed3f282fedb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::set_position_weights</definition>
+        <argsstring>(const float64_t *p_position_weights)</argsstring>
+        <name>set_position_weights</name>
+        <param>
+          <type>const float64_t *</type>
+          <declname>p_position_weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set position weights</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_position_weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new position weights </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="481" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="480" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1ad01967b3ea7ab7bf2b4602dc23fd4ec8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CTrie&lt; Trie &gt;::get_node</definition>
+        <argsstring>(bool last_node=false)</argsstring>
+        <name>get_node</name>
+        <param>
+          <type>bool</type>
+          <declname>last_node</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get node</para><para><simplesect kind="return"><para>node </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="490" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="489" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a2dd1dd11834704f836a6c989e9ff2905" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::check_treemem</definition>
+        <argsstring>()</argsstring>
+        <name>check_treemem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check tree memory usage </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="514" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="513" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a1df6ecbfc632bd5fac2bb2e48bb14123" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::set_weights_in_tree</definition>
+        <argsstring>(bool weights_in_tree_)</argsstring>
+        <name>set_weights_in_tree</name>
+        <param>
+          <type>bool</type>
+          <declname>weights_in_tree_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set weights in tree</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>weights_in_tree_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if weights shall be in tree </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="531" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="530" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1ae7264841e17ea07525a1f94849fba825" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CTrie&lt; Trie &gt;::get_weights_in_tree</definition>
+        <argsstring>()</argsstring>
+        <name>get_weights_in_tree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get weights in tree</para><para><simplesect kind="return"><para>if weights are in tree </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="540" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="539" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a135a3bfe3bf8be688d44ed2e02a26f09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::POIMs_extract_W_helper</definition>
+        <argsstring>(const int32_t nodeIdx, const int32_t depth, const int32_t offset, const int32_t y0, float64_t *const *const W, const int32_t K)</argsstring>
+        <name>POIMs_extract_W_helper</name>
+        <param>
+          <type>const int32_t</type>
+          <declname>nodeIdx</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>y0</declname>
+        </param>
+        <param>
+          <type>float64_t *const *const </type>
+          <declname>W</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>K</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>POIMs extract W helper</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nodeIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>depth </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>y0 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>W</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>W </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>K</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>K </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="555"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a82b9cad207fbea54528b9d409357aa04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::POIMs_calc_SLR_helper1</definition>
+        <argsstring>(const float64_t *const distrib, const int32_t i, const int32_t nodeIdx, int32_t left_tries_idx[4], const int32_t depth, int32_t const lastSym, float64_t *S, float64_t *L, float64_t *R)</argsstring>
+        <name>POIMs_calc_SLR_helper1</name>
+        <param>
+          <type>const float64_t *const </type>
+          <declname>distrib</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>nodeIdx</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>left_tries_idx</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>int32_t const </type>
+          <declname>lastSym</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>S</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>R</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>POIMs calc SLR helper</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>distrib</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distribution </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nodeIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>left_tries_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>left tries index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>depth </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lastSym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>last symbol </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>S</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>S </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>L </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>R</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>R </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="573"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1ac75a6a70adcd14c256e4a4d1d334165c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::POIMs_calc_SLR_helper2</definition>
+        <argsstring>(const float64_t *const distrib, const int32_t i, const int32_t nodeIdx, int32_t left_tries_idx[4], const int32_t depth, float64_t *S, float64_t *L, float64_t *R)</argsstring>
+        <name>POIMs_calc_SLR_helper2</name>
+        <param>
+          <type>const float64_t *const </type>
+          <declname>distrib</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>nodeIdx</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>left_tries_idx</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>S</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>R</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>POIMs calc SLR helper 2 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>distrib</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distribution </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nodeIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>left_tries_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>left tries index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>depth </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>S</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>S </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>L </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>R</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>R </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="589"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a89c7c8fdf27ce023495e47558b7e4b95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::POIMs_add_SLR_helper1</definition>
+        <argsstring>(const int32_t nodeIdx, const int32_t depth, const int32_t i, const int32_t y0, float64_t *const *const poims, const int32_t K, const int32_t debug)</argsstring>
+        <name>POIMs_add_SLR_helper1</name>
+        <param>
+          <type>const int32_t</type>
+          <declname>nodeIdx</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>y0</declname>
+        </param>
+        <param>
+          <type>float64_t *const *const </type>
+          <declname>poims</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>K</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>debug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>POIMs add SLR helper 1</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nodeIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>depth </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>y0 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>poims</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>POIMs </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>K</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>K </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debug</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>debug level </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="604"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a0c3816ef521a995deefabd72865f9a60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CTrie&lt; Trie &gt;::POIMs_add_SLR_helper2</definition>
+        <argsstring>(float64_t *const *const poims, const int32_t K, const int32_t k, const int32_t i, const int32_t y, const float64_t valW, const float64_t valS, const float64_t valL, const float64_t valR, const int32_t debug)</argsstring>
+        <name>POIMs_add_SLR_helper2</name>
+        <param>
+          <type>float64_t *const *const </type>
+          <declname>poims</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>K</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const float64_t</type>
+          <declname>valW</declname>
+        </param>
+        <param>
+          <type>const float64_t</type>
+          <declname>valS</declname>
+        </param>
+        <param>
+          <type>const float64_t</type>
+          <declname>valL</declname>
+        </param>
+        <param>
+          <type>const float64_t</type>
+          <declname>valR</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>debug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>POIMs add SLR helper 2</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>poims</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>POIMs </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>K</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>K </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>k </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>y </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valW</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value W </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value S </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value L </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value R </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debug</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>debug level </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="623"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CTrie_1a9516bb8d4d11f0ec444cca622eacc877" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CTrie&lt; Trie &gt;::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="626" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="626" bodyend="626"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class Trie implements a suffix trie, i.e. a tree in which all suffixes up to a certain length are stored. </para>    </briefdescription>
+    <detaileddescription>
+<para>It is excessively used in the CWeightedDegreeStringKernel and CWeightedDegreePositionStringKernel to construct the whole features space <formula id="0">$\Phi(x)$</formula> and enormously helps here to speed up SVM training and evaluation.</para><para>Note that depending on the underlying structure used, a single symbol in the tree requires 20 bytes (<ref refid="structshogun_1_1DNATrie" kindref="compound">DNATrie</ref>). It is also used to do the efficient recursion in computing positional oligomer importance matrices (POIMs) where the structure requires * 20+3*8 (<ref refid="structshogun_1_1POIMTrie" kindref="compound">POIMTrie</ref>) bytes.</para><para>Finally note that this try may use compact internal nodes (for strings that appear without modifications, thus not requiring further branches), which may save a lot of memory on higher degree tries. </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="156" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="155" bodyend="657"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CTrie_1affa4648af66ca1ecd860ee429f8f70ba" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>add_example_to_tree_mismatch_recursion</name></member>
+      <member refid="classshogun_1_1CTrie_1a894984dcce7d4de28fc8b93f8f6c5912" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>add_to_trie</name></member>
+      <member refid="classshogun_1_1CTrie_1a2dd1dd11834704f836a6c989e9ff2905" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>check_treemem</name></member>
+      <member refid="classshogun_1_1CTrie_1a3e64ec2ca52a822742ab4f9466d9a7da" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>compact_nodes</name></member>
+      <member refid="classshogun_1_1CTrie_1a03c7d958140ae6fe73b792d93adde376" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>compare</name></member>
+      <member refid="classshogun_1_1CTrie_1a561fb9f6ba3f2477eaf9dea3bd00ea8f" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>compare_traverse</name></member>
+      <member refid="classshogun_1_1CTrie_1a6491a6d228cbc686252810ecc44b731a" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>compute_abs_weights</name></member>
+      <member refid="classshogun_1_1CTrie_1acfd2c6163caeb046aebb797745af0dbb" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>compute_abs_weights_tree</name></member>
+      <member refid="classshogun_1_1CTrie_1ad6e7a8b71a973cc7334164b48b79e8c7" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>compute_by_tree_helper</name></member>
+      <member refid="classshogun_1_1CTrie_1aa4eca3ff10a227909635b451d2b08be6" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>compute_by_tree_helper</name></member>
+      <member refid="classshogun_1_1CTrie_1a57dc8b9fed8c1575fd0e76f49489c754" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>compute_scoring_helper</name></member>
+      <member refid="classshogun_1_1CTrie_1aacb14ba5cd3d6a1d0066ff060db18dc5" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>count</name></member>
+      <member refid="classshogun_1_1CTrie_1a4d84d8135b8866f011bf83c28df23172" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>create</name></member>
+      <member refid="classshogun_1_1CTrie_1a9892401199baef06bd7c5aa340c8d491" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>CTrie</name></member>
+      <member refid="classshogun_1_1CTrie_1ac2fa997d9c4ce863233d66c07f30ec36" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>CTrie</name></member>
+      <member refid="classshogun_1_1CTrie_1ad7d53cd61f1c71062fae3dd37a38e108" prot="protected" virt="non-virtual"><scope>shogun::CTrie</scope><name>degree</name></member>
+      <member refid="classshogun_1_1CTrie_1aad0b5be7bf15be93896dffd4012252fe" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>delete_trees</name></member>
+      <member refid="classshogun_1_1CTrie_1aa18bde3041662daa736b1b69e5290ccc" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>destroy</name></member>
+      <member refid="classshogun_1_1CTrie_1aed860dd20e6a4bc0ba957f3543b8e9bc" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>display_node</name></member>
+      <member refid="classshogun_1_1CTrie_1a612fa389c3353ab20e223562a4d8e7bb" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>fill_backtracking_table</name></member>
+      <member refid="classshogun_1_1CTrie_1ab286c7946692facda384389f9e7f7897" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>fill_backtracking_table_recursion</name></member>
+      <member refid="classshogun_1_1CTrie_1a50b9a50a9a453e5f20b903a018e5ae22" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>find_deepest_node</name></member>
+      <member refid="classshogun_1_1CTrie_1a20d69f03ddfe46bf90dbbeee8292945f" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>find_node</name></member>
+      <member refid="classshogun_1_1CTrie_1a7b2d76e1e70138a5f6441a69c13142b2" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>get_cumulative_score</name></member>
+      <member refid="classshogun_1_1CTrie_1a9516bb8d4d11f0ec444cca622eacc877" prot="public" virt="virtual"><scope>shogun::CTrie</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CTrie_1ad01967b3ea7ab7bf2b4602dc23fd4ec8" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>get_node</name></member>
+      <member refid="classshogun_1_1CTrie_1aabd525ea43e3b3a5cac6e70507e3db5b" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>get_num_used_nodes</name></member>
+      <member refid="classshogun_1_1CTrie_1a4f4e7ee507bc46ad46732541d0ad74e5" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>get_use_compact_terminal_nodes</name></member>
+      <member refid="classshogun_1_1CTrie_1ae7264841e17ea07525a1f94849fba825" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>get_weights_in_tree</name></member>
+      <member refid="classshogun_1_1CTrie_1ac36e4f6fd8b740ca437c67862d3c9541" prot="protected" virt="non-virtual"><scope>shogun::CTrie</scope><name>length</name></member>
+      <member refid="classshogun_1_1CTrie_1a1df5ed79df068cb627faae55a1ef7f90" prot="protected" virt="non-virtual"><scope>shogun::CTrie</scope><name>nofsKmers</name></member>
+      <member refid="classshogun_1_1CTrie_1a5d34856710354804e43f7d7e455d8be0" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>NUM_SYMS</name></member>
+      <member refid="classshogun_1_1CTrie_1a8029afbfd9341cb7e112ba4d050d8020" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>operator=</name></member>
+      <member refid="classshogun_1_1CTrie_1a83f9081946adaa4988410cd31a26cf52" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>POIMs_add_SLR</name></member>
+      <member refid="classshogun_1_1CTrie_1a89c7c8fdf27ce023495e47558b7e4b95" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>POIMs_add_SLR_helper1</name></member>
+      <member refid="classshogun_1_1CTrie_1a0c3816ef521a995deefabd72865f9a60" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>POIMs_add_SLR_helper2</name></member>
+      <member refid="classshogun_1_1CTrie_1a82b9cad207fbea54528b9d409357aa04" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>POIMs_calc_SLR_helper1</name></member>
+      <member refid="classshogun_1_1CTrie_1ac75a6a70adcd14c256e4a4d1d334165c" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>POIMs_calc_SLR_helper2</name></member>
+      <member refid="classshogun_1_1CTrie_1a58cbea6a674ab910e5e4d6ccec6d49bd" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>POIMs_extract_W</name></member>
+      <member refid="classshogun_1_1CTrie_1a135a3bfe3bf8be688d44ed2e02a26f09" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>POIMs_extract_W_helper</name></member>
+      <member refid="classshogun_1_1CTrie_1a0ec6bb2e4b2544c011032f65fc739c5d" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>POIMs_get_SLR</name></member>
+      <member refid="classshogun_1_1CTrie_1a4b22c1681fba810ffbf85a14376386e1" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>POIMs_precalc_SLR</name></member>
+      <member refid="classshogun_1_1CTrie_1aeabd3de70002a6ee646b89770f7eefc3" prot="protected" virt="non-virtual"><scope>shogun::CTrie</scope><name>position_weights</name></member>
+      <member refid="classshogun_1_1CTrie_1a8ec80749782a6fef2b2d25b59d3f85e9" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>set_degree</name></member>
+      <member refid="classshogun_1_1CTrie_1acab7ea7776669c2dff9fed3f282fedb3" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>set_position_weights</name></member>
+      <member refid="classshogun_1_1CTrie_1a0c32fd9d571cd44addf4879e8b2faf20" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>set_use_compact_terminal_nodes</name></member>
+      <member refid="classshogun_1_1CTrie_1a1df6ecbfc632bd5fac2bb2e48bb14123" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>set_weights_in_tree</name></member>
+      <member refid="classshogun_1_1CTrie_1a7dfd1d9482978b477c15ef87534f1966" prot="public" virt="non-virtual"><scope>shogun::CTrie</scope><name>traverse</name></member>
+      <member refid="classshogun_1_1CTrie_1aff2933b7146e526e2774496a0aaa6e1b" prot="protected" virt="non-virtual"><scope>shogun::CTrie</scope><name>TreeMem</name></member>
+      <member refid="classshogun_1_1CTrie_1ab06101111401a431a6344dbadcd2b46b" prot="protected" virt="non-virtual"><scope>shogun::CTrie</scope><name>TreeMemPtr</name></member>
+      <member refid="classshogun_1_1CTrie_1aa22781be09c1af4b184283ae682133ae" prot="protected" virt="non-virtual"><scope>shogun::CTrie</scope><name>TreeMemPtrMax</name></member>
+      <member refid="classshogun_1_1CTrie_1a3fa105db549b8c227982973976f8efce" prot="protected" virt="non-virtual"><scope>shogun::CTrie</scope><name>trees</name></member>
+      <member refid="classshogun_1_1CTrie_1a4a0b25289c7f4feb2a093ea26b95c608" prot="protected" virt="non-virtual"><scope>shogun::CTrie</scope><name>use_compact_terminal_nodes</name></member>
+      <member refid="classshogun_1_1CTrie_1a32a0b4966e7647e95df07329f349bf98" prot="protected" virt="non-virtual"><scope>shogun::CTrie</scope><name>weights_in_tree</name></member>
+      <member refid="classshogun_1_1CTrie_1a0ae7add35a3ff7a07f0406a0fc33ce2f" prot="public" virt="virtual"><scope>shogun::CTrie</scope><name>~CTrie</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CSqrtDiagKernelNormalizer" kind="class" prot="public">
+    <compoundname>shogun::CSqrtDiagKernelNormalizer</compoundname>
+    <basecompoundref refid="classshogun_1_1CKernelNormalizer" prot="public" virt="non-virtual">shogun::CKernelNormalizer</basecompoundref>
+    <includes local="no">SqrtDiagKernelNormalizer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CSqrtDiagKernelNormalizer_1a656991110ded6400726b13e567bb281d" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSqrtDiagKernelNormalizer::sqrtdiag_lhs</definition>
+        <argsstring></argsstring>
+        <name>sqrtdiag_lhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sqrt diagonal left-hand side </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" line="139" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSqrtDiagKernelNormalizer_1a14c996350be5e4cce5a9d107a6dcb876" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSqrtDiagKernelNormalizer::sqrtdiag_rhs</definition>
+        <argsstring></argsstring>
+        <name>sqrtdiag_rhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sqrt diagonal right-hand side </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" line="141" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSqrtDiagKernelNormalizer_1a5463529d6aee1eac10e6df26d44e9d9f" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CSqrtDiagKernelNormalizer::use_optimized_diagonal_computation</definition>
+        <argsstring></argsstring>
+        <name>use_optimized_diagonal_computation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>f optimized diagonal computation is used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" line="143" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CSqrtDiagKernelNormalizer_1a18ee06808a3506097050b9d2af9d1e51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSqrtDiagKernelNormalizer::CSqrtDiagKernelNormalizer</definition>
+        <argsstring>(bool use_opt_diag=false)</argsstring>
+        <name>CSqrtDiagKernelNormalizer</name>
+        <param>
+          <type>bool</type>
+          <declname>use_opt_diag</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>use_opt_diag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- some kernels support faster diagonal compuation via compute_diag(idx), this flag enables this </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" line="38" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSqrtDiagKernelNormalizer_1a65434976344dca083edc5bf83ed83390" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CSqrtDiagKernelNormalizer::~CSqrtDiagKernelNormalizer</definition>
+        <argsstring>()</argsstring>
+        <name>~CSqrtDiagKernelNormalizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" line="43" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSqrtDiagKernelNormalizer_1abbfa7b646100bec1e738fd3715a866d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSqrtDiagKernelNormalizer::init</definition>
+        <argsstring>(CKernel *k)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1a81e40e31e3ffe03d31d22a87379f195d">init</reimplements>
+        <param>
+          <type><ref refid="classshogun_1_1CKernel" kindref="compound">CKernel</ref> *</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialization of the normalizer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" line="51" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" bodystart="50" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSqrtDiagKernelNormalizer_1a1a22b0de6b686dd6ff063571a23e5d99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CSqrtDiagKernelNormalizer::normalize</definition>
+        <argsstring>(float64_t value, int32_t idx_lhs, int32_t idx_rhs)</argsstring>
+        <name>normalize</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1a93c47ed8ce631c3a1350d1aaeeb80fed">normalize</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_lhs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize the kernel value <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of left hand side vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of right hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" line="82" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" bodystart="80" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSqrtDiagKernelNormalizer_1aa9c0e4094933eb161a1f79b61759f85c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CSqrtDiagKernelNormalizer::normalize_lhs</definition>
+        <argsstring>(float64_t value, int32_t idx_lhs)</argsstring>
+        <name>normalize_lhs</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1aa25af9b375b533e4cff3768a77bd0e7f">normalize_lhs</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize only the left hand side vector <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of a component of the left hand side feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of left hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" line="92" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSqrtDiagKernelNormalizer_1a72e04a72a1f0b7322f9024942bc625ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CSqrtDiagKernelNormalizer::normalize_rhs</definition>
+        <argsstring>(float64_t value, int32_t idx_rhs)</argsstring>
+        <name>normalize_rhs</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1ac98a44e10b6b6b1bb4dc259a877e7491">normalize_rhs</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize only the right hand side vector <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of a component of the right hand side feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of right hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" line="101" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSqrtDiagKernelNormalizer_1a35b85e721d2b2b3c732b5f134ffd5708" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CSqrtDiagKernelNormalizer::alloc_and_compute_diag</definition>
+        <argsstring>(CKernel *k, float64_t *&amp;v, int32_t num)</argsstring>
+        <name>alloc_and_compute_diag</name>
+        <param>
+          <type><ref refid="classshogun_1_1CKernel" kindref="compound">CKernel</ref> *</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>float64_t *&amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>alloc and compute the vector containing the square root of the diagonal elements of this kernel. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" line="111" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" bodystart="110" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSqrtDiagKernelNormalizer_1a9f272a8ab81137fb97075dc8f96d3281" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CSqrtDiagKernelNormalizer::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" line="135" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" bodystart="135" bodyend="135"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SqrtDiagKernelNormalizer divides by the Square Root of the product of the diagonal elements. </para>    </briefdescription>
+    <detaileddescription>
+<para>This effectively normalizes the vectors in feature space to norm 1 (see <ref refid="classshogun_1_1CSqrtDiagKernelNormalizer" kindref="compound">CSqrtDiagKernelNormalizer</ref>)</para><para><formula id="29">\[ k&apos;({\bf x},{\bf x&apos;}) = \frac{k({\bf x},{\bf x&apos;})}{\sqrt{k({\bf x},{\bf x})k({\bf x&apos;},{\bf x&apos;})}} \]</formula> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="322">
+        <label>shogun::CSqrtDiagKernelNormalizer</label>
+        <link refid="classshogun_1_1CSqrtDiagKernelNormalizer"/>
+        <childnode refid="323" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="324">
+        <label>shogun::CSqrtDiagKernelNormalizer</label>
+        <link refid="classshogun_1_1CSqrtDiagKernelNormalizer"/>
+        <childnode refid="325" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="325">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" line="30" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/SqrtDiagKernelNormalizer.h" bodystart="29" bodyend="144"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CSqrtDiagKernelNormalizer_1a35b85e721d2b2b3c732b5f134ffd5708" prot="public" virt="non-virtual"><scope>shogun::CSqrtDiagKernelNormalizer</scope><name>alloc_and_compute_diag</name></member>
+      <member refid="classshogun_1_1CKernelNormalizer_1ac6fe092f0738d7de0aa36183473ae08f" prot="public" virt="non-virtual"><scope>shogun::CSqrtDiagKernelNormalizer</scope><name>CKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CSqrtDiagKernelNormalizer_1a18ee06808a3506097050b9d2af9d1e51" prot="public" virt="non-virtual"><scope>shogun::CSqrtDiagKernelNormalizer</scope><name>CSqrtDiagKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CSqrtDiagKernelNormalizer_1a9f272a8ab81137fb97075dc8f96d3281" prot="public" virt="virtual"><scope>shogun::CSqrtDiagKernelNormalizer</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSqrtDiagKernelNormalizer_1abbfa7b646100bec1e738fd3715a866d0" prot="public" virt="virtual"><scope>shogun::CSqrtDiagKernelNormalizer</scope><name>init</name></member>
+      <member refid="classshogun_1_1CSqrtDiagKernelNormalizer_1a1a22b0de6b686dd6ff063571a23e5d99" prot="public" virt="virtual"><scope>shogun::CSqrtDiagKernelNormalizer</scope><name>normalize</name></member>
+      <member refid="classshogun_1_1CSqrtDiagKernelNormalizer_1aa9c0e4094933eb161a1f79b61759f85c" prot="public" virt="virtual"><scope>shogun::CSqrtDiagKernelNormalizer</scope><name>normalize_lhs</name></member>
+      <member refid="classshogun_1_1CSqrtDiagKernelNormalizer_1a72e04a72a1f0b7322f9024942bc625ec" prot="public" virt="virtual"><scope>shogun::CSqrtDiagKernelNormalizer</scope><name>normalize_rhs</name></member>
+      <member refid="classshogun_1_1CSqrtDiagKernelNormalizer_1a656991110ded6400726b13e567bb281d" prot="protected" virt="non-virtual"><scope>shogun::CSqrtDiagKernelNormalizer</scope><name>sqrtdiag_lhs</name></member>
+      <member refid="classshogun_1_1CSqrtDiagKernelNormalizer_1a14c996350be5e4cce5a9d107a6dcb876" prot="protected" virt="non-virtual"><scope>shogun::CSqrtDiagKernelNormalizer</scope><name>sqrtdiag_rhs</name></member>
+      <member refid="classshogun_1_1CSqrtDiagKernelNormalizer_1a5463529d6aee1eac10e6df26d44e9d9f" prot="protected" virt="non-virtual"><scope>shogun::CSqrtDiagKernelNormalizer</scope><name>use_optimized_diagonal_computation</name></member>
+      <member refid="classshogun_1_1CKernelNormalizer_1a8af9672897eb3da0c1892ef1e16fb29c" prot="public" virt="virtual"><scope>shogun::CSqrtDiagKernelNormalizer</scope><name>~CKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CSqrtDiagKernelNormalizer_1a65434976344dca083edc5bf83ed83390" prot="public" virt="virtual"><scope>shogun::CSqrtDiagKernelNormalizer</scope><name>~CSqrtDiagKernelNormalizer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CRidgeKernelNormalizer" kind="class" prot="public">
+    <compoundname>shogun::CRidgeKernelNormalizer</compoundname>
+    <basecompoundref refid="classshogun_1_1CKernelNormalizer" prot="public" virt="non-virtual">shogun::CKernelNormalizer</basecompoundref>
+    <includes local="no">RidgeKernelNormalizer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CRidgeKernelNormalizer_1a0fbcf858ed3e9d1a0882ab6307327378" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CRidgeKernelNormalizer::ridge</definition>
+        <argsstring></argsstring>
+        <name>ridge</name>
+        <briefdescription>
+<para>the constant ridge to be added to the kernel diagonal </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" line="134" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CRidgeKernelNormalizer_1a2d1bd3d72b81331acce6b1e9eead8112" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CRidgeKernelNormalizer::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+<para>scaling parameter (avg of diagonal) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" line="136" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CRidgeKernelNormalizer_1a6e617136a938f793cbb17065a0a9d6fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CRidgeKernelNormalizer::CRidgeKernelNormalizer</definition>
+        <argsstring>(float64_t r=1e-10, float64_t c=0.0)</argsstring>
+        <name>CRidgeKernelNormalizer</name>
+        <param>
+          <type>float64_t</type>
+          <declname>r</declname>
+          <defval>1e-10</defval>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>c</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ridge parameter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scale parameter, if &lt;= 0 scaling will be computed from the avg of the kernel diagonal elements</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+the scalar r*c will be added to the kernel diagonal, typical use cases:<itemizedlist>
+<listitem><para>r=1e-10 and c=0.0 will add mean(diag(K))*1e-10 to the diagonal</para></listitem><listitem><para>r=0.1 and c=1 will add 0.1 to the diagonal </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" line="57" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CRidgeKernelNormalizer_1afa94696f45d7538d9efe4b476785d2df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CRidgeKernelNormalizer::~CRidgeKernelNormalizer</definition>
+        <argsstring>()</argsstring>
+        <name>~CRidgeKernelNormalizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" line="64" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CRidgeKernelNormalizer_1a25098964ac1afea86893d56f2605774c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CRidgeKernelNormalizer::init</definition>
+        <argsstring>(CKernel *k)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1a81e40e31e3ffe03d31d22a87379f195d">init</reimplements>
+        <param>
+          <type><ref refid="classshogun_1_1CKernel" kindref="compound">CKernel</ref> *</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialization of the normalizer (if needed) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" line="70" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" bodystart="69" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CRidgeKernelNormalizer_1ad7184795518dc62a5e738bb62cf8d72b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CRidgeKernelNormalizer::normalize</definition>
+        <argsstring>(float64_t value, int32_t idx_lhs, int32_t idx_rhs)</argsstring>
+        <name>normalize</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1a93c47ed8ce631c3a1350d1aaeeb80fed">normalize</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_lhs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize the kernel value <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of left hand side vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of right hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" line="102" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" bodystart="100" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CRidgeKernelNormalizer_1ac1999b5684fc7c3e43a18f78ea53bfa4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CRidgeKernelNormalizer::normalize_lhs</definition>
+        <argsstring>(float64_t value, int32_t idx_lhs)</argsstring>
+        <name>normalize_lhs</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1aa25af9b375b533e4cff3768a77bd0e7f">normalize_lhs</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize only the left hand side vector <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of a component of the left hand side feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of left hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" line="114" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" bodystart="113" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CRidgeKernelNormalizer_1a4976378455cc05bb2f164492e2bd7ccc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CRidgeKernelNormalizer::normalize_rhs</definition>
+        <argsstring>(float64_t value, int32_t idx_rhs)</argsstring>
+        <name>normalize_rhs</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1ac98a44e10b6b6b1bb4dc259a877e7491">normalize_rhs</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize only the right hand side vector <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of a component of the right hand side feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of right hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" line="124" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" bodystart="123" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CRidgeKernelNormalizer_1a0e0b4c0045efbf5025b165b3894743b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CRidgeKernelNormalizer::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" line="130" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" bodystart="130" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Normalize the kernel by adding a constant term to its diagonal. This aids kernels to become positive definite (even though they are not - often caused by numerical problems). </para>    </briefdescription>
+    <detaileddescription>
+<para>Formally,</para><para><formula id="39">\[ k&apos;(x,x&apos;)= \frac{k(x,x&apos;)}+ R\cdot {\bf E} \]</formula></para><para>where E is a matrix with ones on the diagonal and R is the scalar ridge term. The ridge term R is computed as <formula id="40">$R=r\dot c$</formula>.</para><para>Typically,</para><para><itemizedlist>
+<listitem><para>r=1e-10 and c=0.0 will add mean(diag(K))*1e-10 to the diagonal</para></listitem><listitem><para>r=0.1 and c=1 will add 0.1 to the diagonal</para></listitem></itemizedlist>
+</para><para>In case c &lt;= 0, c is compute as the mean of the kernel diagonal <formula id="41">\[ \mbox{c} = \frac{1}{N}\sum_{i=1}^N k(x_i,x_i) \]</formula> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="267">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+      <node id="266">
+        <label>shogun::CRidgeKernelNormalizer</label>
+        <link refid="classshogun_1_1CRidgeKernelNormalizer"/>
+        <childnode refid="267" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="269">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+      <node id="268">
+        <label>shogun::CRidgeKernelNormalizer</label>
+        <link refid="classshogun_1_1CRidgeKernelNormalizer"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" line="44" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/RidgeKernelNormalizer.h" bodystart="43" bodyend="137"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CKernelNormalizer_1ac6fe092f0738d7de0aa36183473ae08f" prot="public" virt="non-virtual"><scope>shogun::CRidgeKernelNormalizer</scope><name>CKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CRidgeKernelNormalizer_1a6e617136a938f793cbb17065a0a9d6fd" prot="public" virt="non-virtual"><scope>shogun::CRidgeKernelNormalizer</scope><name>CRidgeKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CRidgeKernelNormalizer_1a0e0b4c0045efbf5025b165b3894743b0" prot="public" virt="virtual"><scope>shogun::CRidgeKernelNormalizer</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CRidgeKernelNormalizer_1a25098964ac1afea86893d56f2605774c" prot="public" virt="virtual"><scope>shogun::CRidgeKernelNormalizer</scope><name>init</name></member>
+      <member refid="classshogun_1_1CRidgeKernelNormalizer_1ad7184795518dc62a5e738bb62cf8d72b" prot="public" virt="virtual"><scope>shogun::CRidgeKernelNormalizer</scope><name>normalize</name></member>
+      <member refid="classshogun_1_1CRidgeKernelNormalizer_1ac1999b5684fc7c3e43a18f78ea53bfa4" prot="public" virt="virtual"><scope>shogun::CRidgeKernelNormalizer</scope><name>normalize_lhs</name></member>
+      <member refid="classshogun_1_1CRidgeKernelNormalizer_1a4976378455cc05bb2f164492e2bd7ccc" prot="public" virt="virtual"><scope>shogun::CRidgeKernelNormalizer</scope><name>normalize_rhs</name></member>
+      <member refid="classshogun_1_1CRidgeKernelNormalizer_1a0fbcf858ed3e9d1a0882ab6307327378" prot="protected" virt="non-virtual"><scope>shogun::CRidgeKernelNormalizer</scope><name>ridge</name></member>
+      <member refid="classshogun_1_1CRidgeKernelNormalizer_1a2d1bd3d72b81331acce6b1e9eead8112" prot="protected" virt="non-virtual"><scope>shogun::CRidgeKernelNormalizer</scope><name>scale</name></member>
+      <member refid="classshogun_1_1CKernelNormalizer_1a8af9672897eb3da0c1892ef1e16fb29c" prot="public" virt="virtual"><scope>shogun::CRidgeKernelNormalizer</scope><name>~CKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CRidgeKernelNormalizer_1afa94696f45d7538d9efe4b476785d2df" prot="public" virt="virtual"><scope>shogun::CRidgeKernelNormalizer</scope><name>~CRidgeKernelNormalizer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

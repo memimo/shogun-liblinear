@@ -1,0 +1,941 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CKernelMachine" kind="class" prot="public">
+    <compoundname>shogun::CKernelMachine</compoundname>
+    <basecompoundref refid="classshogun_1_1CClassifier" prot="public" virt="non-virtual">shogun::CClassifier</basecompoundref>
+    <derivedcompoundref refid="classshogun_1_1CKernelPerceptron" prot="public" virt="non-virtual">shogun::CKernelPerceptron</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CSVM" prot="public" virt="non-virtual">shogun::CSVM</derivedcompoundref>
+    <includes local="no">KernelMachine.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CKernelMachine_1a6d47114463588d9dbd672180dc2e7357" prot="protected" static="no" mutable="no">
+        <type>CKernel *</type>
+        <definition>CKernel* shogun::CKernelMachine::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>kernel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="426" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CKernelMachine_1ade160206d7ddebd3ab2f8d1f40aaa7f9" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CKernelMachine::use_batch_computation</definition>
+        <argsstring></argsstring>
+        <name>use_batch_computation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if batch computation is enabled </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="428" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CKernelMachine_1a8dde883a0c2f53867711a2408e3bef16" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CKernelMachine::use_linadd</definition>
+        <argsstring></argsstring>
+        <name>use_linadd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if linadd is enabled </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="430" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CKernelMachine_1abf9e9cb89f609d79b36a4d1a7f6945b9" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CKernelMachine::use_bias</definition>
+        <argsstring></argsstring>
+        <name>use_bias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if bias shall be used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="432" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CKernelMachine_1a5c8a9af0e7b79d02d0be95b3cd8e9910" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CKernelMachine::m_bias</definition>
+        <argsstring></argsstring>
+        <name>m_bias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bias term b </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="434" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CKernelMachine_1ac40c305fb5587c0004d5338ea6d712d2" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CKernelMachine::m_alpha</definition>
+        <argsstring></argsstring>
+        <name>m_alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>array of coefficients alpha </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="436" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CKernelMachine_1a7e1c9037fb66d596c5dd83c28b8dce6d" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CKernelMachine::m_svs</definition>
+        <argsstring></argsstring>
+        <name>m_svs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>array of ``support vectors&apos;&apos; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="438" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CKernelMachine_1ab4fbabe44610f09e33362234eb131432" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CKernelMachine::num_svs</definition>
+        <argsstring></argsstring>
+        <name>num_svs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of ``support vectors&apos;&apos; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="440" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1af2d719c7dd34401eb1544a6124e88046" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CKernelMachine::CKernelMachine</definition>
+        <argsstring>()</argsstring>
+        <name>CKernelMachine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a5d9a0f4626b37665f847cf209e94a2ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CKernelMachine::~CKernelMachine</definition>
+        <argsstring>()</argsstring>
+        <name>~CKernelMachine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a9a26799c7d6769d6f7d052b984718c72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKernelMachine::set_kernel</definition>
+        <argsstring>(CKernel *k)</argsstring>
+        <name>set_kernel</name>
+        <param>
+          <type>CKernel *</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set kernel</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="57" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="56" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1aa065ba2b4863e152beb95c03aa6add24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CKernel *</type>
+        <definition>CKernel* shogun::CKernelMachine::get_kernel</definition>
+        <argsstring>()</argsstring>
+        <name>get_kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get kernel</para><para><simplesect kind="return"><para>kernel </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="68" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="67" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a1bef02fca7cd9808c9c67c898109a8d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKernelMachine::set_batch_computation_enabled</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>set_batch_computation_enabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set batch computation enabled</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if batch computation shall be enabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="78" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a21f1f26eab5e1177fbb0a5b361020ac2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CKernelMachine::get_batch_computation_enabled</definition>
+        <argsstring>()</argsstring>
+        <name>get_batch_computation_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check if batch computation is enabled</para><para><simplesect kind="return"><para>if batch computation is enabled </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="87" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a605209bfe9a431912fc9a718df808887" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKernelMachine::set_linadd_enabled</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>set_linadd_enabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set linadd enabled</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if linadd shall be enabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="96" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1acc42836c7731c0f029ebd77f045e25cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CKernelMachine::get_linadd_enabled</definition>
+        <argsstring>()</argsstring>
+        <name>get_linadd_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check if linadd is enabled</para><para><simplesect kind="return"><para>if linadd is enabled </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="105" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a95eb6221dd46fe2dc9fb42b53845df36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKernelMachine::set_bias_enabled</definition>
+        <argsstring>(bool enable_bias)</argsstring>
+        <name>set_bias_enabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enable_bias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set state of bias</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable_bias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if bias shall be enabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="113" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1af7b87d7a2438e8e74e8fb689e609c83b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CKernelMachine::get_bias_enabled</definition>
+        <argsstring>()</argsstring>
+        <name>get_bias_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get state of bias</para><para><simplesect kind="return"><para>state of bias </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="119" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a3221b3acb94edfe8cdefa2fc659c6fc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CKernelMachine::get_bias</definition>
+        <argsstring>()</argsstring>
+        <name>get_bias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get bias</para><para><simplesect kind="return"><para>bias </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="126" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a5edc82a48029b91216251b354d341452" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKernelMachine::set_bias</definition>
+        <argsstring>(float64_t bias)</argsstring>
+        <name>set_bias</name>
+        <param>
+          <type>float64_t</type>
+          <declname>bias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set bias to given value</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new bias </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="135" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a340532552838d25c1a0917d59de1dbee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CKernelMachine::get_support_vector</definition>
+        <argsstring>(int32_t idx)</argsstring>
+        <name>get_support_vector</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get support vector at given index</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of support vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>support vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="145" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="144" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a52348988d896bcda6a005c9af0424655" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CKernelMachine::get_alpha</definition>
+        <argsstring>(int32_t idx)</argsstring>
+        <name>get_alpha</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get alpha at given index</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of alpha </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>alpha </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="156" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="155" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a2746562f3c38954ca0a27089cfbd6eeb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CKernelMachine::set_support_vector</definition>
+        <argsstring>(int32_t idx, int32_t val)</argsstring>
+        <name>set_support_vector</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set support vector at given index to given value</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of support vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new value of support vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if operation was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="168" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="167" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a804a4f283e98849f4b85a6d52371a848" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CKernelMachine::set_alpha</definition>
+        <argsstring>(int32_t idx, float64_t val)</argsstring>
+        <name>set_alpha</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set alpha at given index to given value</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of alpha vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new value of alpha vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if operation was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="184" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="183" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a639f528d6956936a482523bdc04eb4b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CKernelMachine::get_num_support_vectors</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_support_vectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of support vectors</para><para><simplesect kind="return"><para>number of support vectors </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="198" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="197" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1ae057fbcb6071331223f1a26de82d1f88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKernelMachine::set_alphas</definition>
+        <argsstring>(float64_t *alphas, int32_t d)</argsstring>
+        <name>set_alphas</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>alphas</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set alphas to given values</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alphas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array with all alphas to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of alphas (== number of support vectors) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="208" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="207" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a69402864eced218da049c53529138c45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKernelMachine::set_support_vectors</definition>
+        <argsstring>(int32_t *svs, int32_t d)</argsstring>
+        <name>set_support_vectors</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>svs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set support vectors to given values</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>svs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array with all support vectors to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of support vectors </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="223" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="222" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a50bd31e7cf0cabc0ec41896ab97292fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKernelMachine::get_support_vectors</definition>
+        <argsstring>(int32_t **svs, int32_t *num)</argsstring>
+        <name>get_support_vectors</name>
+        <param>
+          <type>int32_t **</type>
+          <declname>svs</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get all support vectors (swig compatible)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>svs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array to contain a copy of the support vectors </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of support vectors in the array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="238" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="237" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a34137de1f460aaa60bb888bc42cd8987" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKernelMachine::get_alphas</definition>
+        <argsstring>(float64_t **alphas, int32_t *d1)</argsstring>
+        <name>get_alphas</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>alphas</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>d1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get all alphas (swig compatible)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alphas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array to contain a copy of the alphas </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of alphas in the array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="259" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="258" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1aadb3dcfa41bcdb3cedb4bb590c421f99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CKernelMachine::create_new_model</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>create_new_model</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>create new model</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of alphas and support vectors in new model </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="279" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="278" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a0915cae39b88af20c288fbc1f5979afb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CKernelMachine::init_kernel_optimization</definition>
+        <argsstring>()</argsstring>
+        <name>init_kernel_optimization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialise kernel optimisation</para><para><simplesect kind="return"><para>if operation was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a38ead2ce9c9b727eb20a463c42c9ce53" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>CLabels *</type>
+        <definition>virtual CLabels* shogun::CKernelMachine::classify</definition>
+        <argsstring>()</argsstring>
+        <name>classify</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a3944cff6766ecc2b913a08f04918f129">classify</reimplements>
+        <reimplementedby refid="classshogun_1_1CMultiClassSVM_1a079fd56e82890c78bcd620c5ed5fe602">classify</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify kernel machine</para><para><simplesect kind="return"><para>result labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1ad9cf8044ff5e5dadb06f74903cf248a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>CLabels *</type>
+        <definition>virtual CLabels* shogun::CKernelMachine::classify</definition>
+        <argsstring>(CFeatures *data)</argsstring>
+        <name>classify</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a66b1e113e7b30bd88b0e238c6ccc3bd4">classify</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify objects</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(test)<ref refid="structshogun_1_1data" kindref="compound">data</ref> to be classified </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>classified labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1ab081d4a3c5762b75e9b786b8d1025402" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CKernelMachine::classify_example</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>classify_example</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a57f85b028e040e0c79dd09903b118bdd">classify_example</reimplements>
+        <reimplementedby refid="classshogun_1_1CScatterSVM_1ae9005b86365b3643a6b29289f1f6cf11">classify_example</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMultiClassSVM_1acc0b1b93eba5946d4047369aecfe9881">classify_example</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CKernelPerceptron_1ac710cce5601d6009b03e7885d43c2324">classify_example</reimplementedby>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify one example</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which example to classify </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>classified value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="324"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classshogun_1_1CKernelMachine_1a842c2010c3c0716616facc0592e39191" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void* shogun::CKernelMachine::classify_example_helper</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>classify_example_helper</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify example helper, used in threads</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>params of the thread </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>nothing really </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="331"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A generic KernelMachine interface. </para>    </briefdescription>
+    <detaileddescription>
+<para>A kernel machine is defined as <formula id="0">\[ f({\bf x})=\sum_{i=0}^{N-1} \alpha_i k({\bf x}, {\bf x_i})+b \]</formula></para><para>where <formula id="1">$N$</formula> is the number of training examples <formula id="2">$\alpha_i$</formula> are the weights assigned to each training example <formula id="3">$k(x,x&apos;)$</formula> is the kernel and <formula id="4">$b$</formula> the bias.</para><para>Using an a-priori choosen kernel, the <formula id="2">$\alpha_i$</formula> and bias are determined in a training procedure. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="86">
+        <label>shogun::CMKLOneClass</label>
+        <link refid="classshogun_1_1CMKLOneClass"/>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>shogun::CGPBTSVM</label>
+        <link refid="classshogun_1_1CGPBTSVM"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>shogun::CLibSVMMultiClass</label>
+        <link refid="classshogun_1_1CLibSVMMultiClass"/>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>shogun::CGNPPSVM</label>
+        <link refid="classshogun_1_1CGNPPSVM"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>shogun::CLibSVMOneClass</label>
+        <link refid="classshogun_1_1CLibSVMOneClass"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>shogun::CMPDSVM</label>
+        <link refid="classshogun_1_1CMPDSVM"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>shogun::CMKLMultiClass</label>
+        <link refid="classshogun_1_1CMKLMultiClass"/>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>shogun::CKernelMachine</label>
+        <link refid="classshogun_1_1CKernelMachine"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>shogun::CMultiClassSVM</label>
+        <link refid="classshogun_1_1CMultiClassSVM"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>shogun::CMKL</label>
+        <link refid="classshogun_1_1CMKL"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>shogun::CScatterSVM</label>
+        <link refid="classshogun_1_1CScatterSVM"/>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>shogun::CLibSVM</label>
+        <link refid="classshogun_1_1CLibSVM"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+      <node id="79">
+        <label>shogun::CSVM</label>
+        <link refid="classshogun_1_1CSVM"/>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>shogun::CGMNPSVM</label>
+        <link refid="classshogun_1_1CGMNPSVM"/>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>shogun::CLaRank</label>
+        <link refid="classshogun_1_1CLaRank"/>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>shogun::CKernelPerceptron</label>
+        <link refid="classshogun_1_1CKernelPerceptron"/>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>shogun::CMKLClassification</label>
+        <link refid="classshogun_1_1CMKLClassification"/>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="94">
+        <label>shogun::CKernelMachine</label>
+        <link refid="classshogun_1_1CKernelMachine"/>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" line="44" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelMachine.h" bodystart="43" bodyend="441"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CClassifier_1a37259b3ffbe96af1eda8dd2d9428221c" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>CClassifier</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1af2d719c7dd34401eb1544a6124e88046" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>CKernelMachine</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a38ead2ce9c9b727eb20a463c42c9ce53" prot="public" virt="virtual"><scope>shogun::CKernelMachine</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ad9cf8044ff5e5dadb06f74903cf248a8" prot="public" virt="virtual"><scope>shogun::CKernelMachine</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ab081d4a3c5762b75e9b786b8d1025402" prot="public" virt="virtual"><scope>shogun::CKernelMachine</scope><name>classify_example</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a842c2010c3c0716616facc0592e39191" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>classify_example_helper</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1aadb3dcfa41bcdb3cedb4bb590c421f99" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>create_new_model</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a52348988d896bcda6a005c9af0424655" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>get_alpha</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a34137de1f460aaa60bb888bc42cd8987" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>get_alphas</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a21f1f26eab5e1177fbb0a5b361020ac2" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>get_batch_computation_enabled</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a3221b3acb94edfe8cdefa2fc659c6fc8" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>get_bias</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1af7b87d7a2438e8e74e8fb689e609c83b" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>get_bias_enabled</name></member>
+      <member refid="classshogun_1_1CClassifier_1a52d05215c6b6a252650c41a0b29d8cc5" prot="public" virt="virtual"><scope>shogun::CKernelMachine</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1aa065ba2b4863e152beb95c03aa6add24" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>get_kernel</name></member>
+      <member refid="classshogun_1_1CClassifier_1a787dcde8fe53a734fcb77f988d821408" prot="public" virt="virtual"><scope>shogun::CKernelMachine</scope><name>get_label</name></member>
+      <member refid="classshogun_1_1CClassifier_1a5f1f62d263b6201e1624990deadba5a8" prot="public" virt="virtual"><scope>shogun::CKernelMachine</scope><name>get_labels</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1acc42836c7731c0f029ebd77f045e25cf" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>get_linadd_enabled</name></member>
+      <member refid="classshogun_1_1CClassifier_1a6e48967294c55850d95235d487ce2c02" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>get_max_train_time</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a639f528d6956936a482523bdc04eb4b5" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>get_num_support_vectors</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8a3acda6819b4a4b77b656b6b9e1817c" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>get_solver_type</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a340532552838d25c1a0917d59de1dbee" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>get_support_vector</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a50bd31e7cf0cabc0ec41896ab97292fa" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>get_support_vectors</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a0915cae39b88af20c288fbc1f5979afb" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>init_kernel_optimization</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a6d47114463588d9dbd672180dc2e7357" prot="protected" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>kernel</name></member>
+      <member refid="classshogun_1_1CClassifier_1a68f1285e63422a24319ed95910d72f73" prot="protected" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1a956f6d34ff60d2d775eed5cbef17e8f3" prot="public" virt="virtual"><scope>shogun::CKernelMachine</scope><name>load</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ac40c305fb5587c0004d5338ea6d712d2" prot="protected" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>m_alpha</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a5c8a9af0e7b79d02d0be95b3cd8e9910" prot="protected" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>m_bias</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a7e1c9037fb66d596c5dd83c28b8dce6d" prot="protected" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>m_svs</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8524d634a67f3538b112f72d7835af46" prot="protected" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>max_train_time</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ab4fbabe44610f09e33362234eb131432" prot="protected" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>num_svs</name></member>
+      <member refid="classshogun_1_1CClassifier_1a3df725f5632f1c052028899d8bbe28f6" prot="public" virt="virtual"><scope>shogun::CKernelMachine</scope><name>save</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a804a4f283e98849f4b85a6d52371a848" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>set_alpha</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ae057fbcb6071331223f1a26de82d1f88" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>set_alphas</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a1bef02fca7cd9808c9c67c898109a8d2" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>set_batch_computation_enabled</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a5edc82a48029b91216251b354d341452" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>set_bias</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a95eb6221dd46fe2dc9fb42b53845df36" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>set_bias_enabled</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a9a26799c7d6769d6f7d052b984718c72" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>set_kernel</name></member>
+      <member refid="classshogun_1_1CClassifier_1aa6b87d22c14fc2b6970d8bf1edbb15fb" prot="public" virt="virtual"><scope>shogun::CKernelMachine</scope><name>set_labels</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a605209bfe9a431912fc9a718df808887" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>set_linadd_enabled</name></member>
+      <member refid="classshogun_1_1CClassifier_1af8930a0a848388d8647c9e4604a7856d" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>set_max_train_time</name></member>
+      <member refid="classshogun_1_1CClassifier_1a4c87d6f3a2342c3053aeca82c3cf528c" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>set_solver_type</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a2746562f3c38954ca0a27089cfbd6eeb" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>set_support_vector</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a69402864eced218da049c53529138c45" prot="public" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>set_support_vectors</name></member>
+      <member refid="classshogun_1_1CClassifier_1a360902e938d7b8890084c5bc6df617be" prot="protected" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>solver_type</name></member>
+      <member refid="classshogun_1_1CClassifier_1a9904cc0a8d7ec077cc1fede8d64ebb22" prot="public" virt="virtual"><scope>shogun::CKernelMachine</scope><name>train</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ade160206d7ddebd3ab2f8d1f40aaa7f9" prot="protected" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>use_batch_computation</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1abf9e9cb89f609d79b36a4d1a7f6945b9" prot="protected" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>use_bias</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a8dde883a0c2f53867711a2408e3bef16" prot="protected" virt="non-virtual"><scope>shogun::CKernelMachine</scope><name>use_linadd</name></member>
+      <member refid="classshogun_1_1CClassifier_1ae7d6c7d39fb314c1092163e958ef66a8" prot="public" virt="virtual"><scope>shogun::CKernelMachine</scope><name>~CClassifier</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a5d9a0f4626b37665f847cf209e94a2ed" prot="public" virt="virtual"><scope>shogun::CKernelMachine</scope><name>~CKernelMachine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

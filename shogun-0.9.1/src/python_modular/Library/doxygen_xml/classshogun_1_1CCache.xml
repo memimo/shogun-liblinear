@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CCache" kind="class" prot="public">
+    <compoundname>shogun::CCache</compoundname>
+    <includes local="no">Cache.h</includes>
+    <innerclass refid="structshogun_1_1CCache_1_1TEntry" prot="private">shogun::CCache::TEntry</innerclass>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CCache_1a4314ec9cf7b3cb987ff9806fb9fb64eb" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CCache&lt; T &gt;::cache_is_full</definition>
+        <argsstring></argsstring>
+        <name>cache_is_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if cache is full </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" line="236" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CCache_1ac87a0c3c5d564ceddef1493d94609fe9" prot="protected" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t shogun::CCache&lt; T &gt;::entry_size</definition>
+        <argsstring></argsstring>
+        <name>entry_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>size of one entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" line="238" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CCache_1a034f6f29fde6260848c781625f794826" prot="protected" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t shogun::CCache&lt; T &gt;::nr_cache_lines</definition>
+        <argsstring></argsstring>
+        <name>nr_cache_lines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of cache lines </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" line="240" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CCache_1ab6d014b1cf02a5edf1857adb3965bd6b" prot="protected" static="no" mutable="no">
+        <type>TEntry *</type>
+        <definition>TEntry* shogun::CCache&lt; T &gt;::lookup_table</definition>
+        <argsstring></argsstring>
+        <name>lookup_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>lookup table </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" line="242" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CCache_1a59e122cd90775ec0cb8541b2fd42452c" prot="protected" static="no" mutable="no">
+        <type>TEntry **</type>
+        <definition>TEntry** shogun::CCache&lt; T &gt;::cache_table</definition>
+        <argsstring></argsstring>
+        <name>cache_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cache table containing cached objects </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" line="244" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CCache_1a40ad562f82ed4a57ad74e8a05e9e02a2" prot="protected" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* shogun::CCache&lt; T &gt;::cache_block</definition>
+        <argsstring></argsstring>
+        <name>cache_block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cache block </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" line="246" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CCache_1aac1897c27492dd2a663ce84de2a52733" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CCache&lt; T &gt;::CCache</definition>
+        <argsstring>(int64_t cache_size, int64_t obj_size, int64_t num_entries)</argsstring>
+        <name>CCache</name>
+        <param>
+          <type>int64_t</type>
+          <declname>cache_size</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>obj_size</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>num_entries</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para>create a cache in which num_entries objects can be cached whose lookup table of sizeof(int64_t)*num_entries must fit into memory</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cache size in Megabytes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_entries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of cached objects </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" line="57" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" bodystart="55" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCache_1ab3919f7a6318e8dcf32f66ac264c045a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CCache&lt; T &gt;::~CCache</definition>
+        <argsstring>()</argsstring>
+        <name>~CCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" line="100" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" bodystart="99" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCache_1a58f074671190849c1f096417ce28b4be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CCache&lt; T &gt;::is_cached</definition>
+        <argsstring>(int64_t number)</argsstring>
+        <name>is_cached</name>
+        <param>
+          <type>int64_t</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>checks if an object is cached</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of object to check for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if an object is cached </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" line="112" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCache_1afb64d5297d68e811f85dc14fd8cfd903" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* shogun::CCache&lt; T &gt;::lock_entry</definition>
+        <argsstring>(int64_t number)</argsstring>
+        <name>lock_entry</name>
+        <param>
+          <type>int64_t</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>lock and get a cache entry</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of object to lock and get </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>cache entry or NULL when not cached </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" line="122" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" bodystart="121" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCache_1a1ccf656dbb129a50e7aa47d98c1b78b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CCache&lt; T &gt;::unlock_entry</definition>
+        <argsstring>(int64_t number)</argsstring>
+        <name>unlock_entry</name>
+        <param>
+          <type>int64_t</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>unlock a cache entry</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of object to unlock </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" line="138" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" bodystart="137" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCache_1a8d8a7b0475b68b976d895f6f0619fb6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* shogun::CCache&lt; T &gt;::set_entry</definition>
+        <argsstring>(int64_t number)</argsstring>
+        <name>set_entry</name>
+        <param>
+          <type>int64_t</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>returns the address of a free cache entry to where the data of size obj_size has to be written</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of object to unlock </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>address of a free cache entry </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" line="151" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" bodystart="150" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCache_1ad16331d2c1fd9c2438afd975a9900c71" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CCache&lt; T &gt;::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" line="232" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" bodystart="232" bodyend="232"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class Cache implements a simple cache. </para>    </briefdescription>
+    <detaileddescription>
+<para>When the cache is full -- elements that are least used are freed from the cache. Thus for the cache to be effective one should not visit loop over objects, i.e. visit elements in order 0...num_elements (with num_elements &gt;&gt; the maximal number of entries in cache) </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="18">
+        <label>shogun::CCache&lt; T &gt;::TEntry</label>
+      </node>
+      <node id="17">
+        <label>shogun::CCache&lt; T &gt;</label>
+        <link refid="classshogun_1_1CCache"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>cache_table</edgelabel>
+          <edgelabel>lookup_table</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" line="32" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Cache.h" bodystart="31" bodyend="247"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CCache_1a40ad562f82ed4a57ad74e8a05e9e02a2" prot="protected" virt="non-virtual"><scope>shogun::CCache</scope><name>cache_block</name></member>
+      <member refid="classshogun_1_1CCache_1a4314ec9cf7b3cb987ff9806fb9fb64eb" prot="protected" virt="non-virtual"><scope>shogun::CCache</scope><name>cache_is_full</name></member>
+      <member refid="classshogun_1_1CCache_1a59e122cd90775ec0cb8541b2fd42452c" prot="protected" virt="non-virtual"><scope>shogun::CCache</scope><name>cache_table</name></member>
+      <member refid="classshogun_1_1CCache_1aac1897c27492dd2a663ce84de2a52733" prot="public" virt="non-virtual"><scope>shogun::CCache</scope><name>CCache</name></member>
+      <member refid="classshogun_1_1CCache_1ac87a0c3c5d564ceddef1493d94609fe9" prot="protected" virt="non-virtual"><scope>shogun::CCache</scope><name>entry_size</name></member>
+      <member refid="classshogun_1_1CCache_1ad16331d2c1fd9c2438afd975a9900c71" prot="public" virt="virtual"><scope>shogun::CCache</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CCache_1a58f074671190849c1f096417ce28b4be" prot="public" virt="non-virtual"><scope>shogun::CCache</scope><name>is_cached</name></member>
+      <member refid="classshogun_1_1CCache_1afb64d5297d68e811f85dc14fd8cfd903" prot="public" virt="non-virtual"><scope>shogun::CCache</scope><name>lock_entry</name></member>
+      <member refid="classshogun_1_1CCache_1ab6d014b1cf02a5edf1857adb3965bd6b" prot="protected" virt="non-virtual"><scope>shogun::CCache</scope><name>lookup_table</name></member>
+      <member refid="classshogun_1_1CCache_1a034f6f29fde6260848c781625f794826" prot="protected" virt="non-virtual"><scope>shogun::CCache</scope><name>nr_cache_lines</name></member>
+      <member refid="classshogun_1_1CCache_1a8d8a7b0475b68b976d895f6f0619fb6c" prot="public" virt="non-virtual"><scope>shogun::CCache</scope><name>set_entry</name></member>
+      <member refid="classshogun_1_1CCache_1a1ccf656dbb129a50e7aa47d98c1b78b3" prot="public" virt="non-virtual"><scope>shogun::CCache</scope><name>unlock_entry</name></member>
+      <member refid="classshogun_1_1CCache_1ab3919f7a6318e8dcf32f66ac264c045a" prot="public" virt="virtual"><scope>shogun::CCache</scope><name>~CCache</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

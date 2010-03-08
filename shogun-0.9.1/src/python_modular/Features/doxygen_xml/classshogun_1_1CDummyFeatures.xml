@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CDummyFeatures" kind="class" prot="public">
+    <compoundname>shogun::CDummyFeatures</compoundname>
+    <basecompoundref refid="classshogun_1_1CFeatures" prot="public" virt="non-virtual">shogun::CFeatures</basecompoundref>
+    <includes local="no">DummyFeatures.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CDummyFeatures_1a1e05b4a08a7d7e5a5abf483cc0e760c0" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDummyFeatures::num_vectors</definition>
+        <argsstring></argsstring>
+        <name>num_vectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of feature vectors </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" line="80" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CDummyFeatures_1abeee4bd76872ac7448e3b28237f15ab8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CDummyFeatures::CDummyFeatures</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>CDummyFeatures</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of feature vectors </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" line="31" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDummyFeatures_1a66b0f219569bd7a90f4f6e427a6c23f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CDummyFeatures::CDummyFeatures</definition>
+        <argsstring>(const CDummyFeatures &amp;orig)</argsstring>
+        <name>CDummyFeatures</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CDummyFeatures" kindref="compound">CDummyFeatures</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" line="37" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDummyFeatures_1a1875fbd420cb2c73015631dee160c167" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CDummyFeatures::~CDummyFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>~CDummyFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" line="42" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDummyFeatures_1a40545471fb33840d621370468baabd59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CDummyFeatures::get_num_vectors</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_vectors</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a1f30fccf7c6c9af03277d75d0d983c52">get_num_vectors</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of feature vectors </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" line="47" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDummyFeatures_1ac09ed3c234ff7d70d65c55a39a03ef42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CDummyFeatures::get_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_size</name>
+        <reimplements refid="classshogun_1_1CFeatures_1aeed80a002f6255d1ca5c8d1698deb7bc">get_size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get size of features (always 1) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" line="53" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDummyFeatures_1a8eaf48235b6b7dd68156e7eb25b6ef16" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+        <definition>virtual CFeatures* shogun::CDummyFeatures::duplicate</definition>
+        <argsstring>() const </argsstring>
+        <name>duplicate</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a2f7adf01a52fee35ac71e455501125a9">duplicate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>duplicate features </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" line="59" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDummyFeatures_1a0e230a9aa531015856967879b18bd36f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CDummyFeatures::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type (ANY) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" line="65" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDummyFeatures_1ae74da31dee53ab4f4be618cfae78fbc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureClass</type>
+        <definition>virtual EFeatureClass shogun::CDummyFeatures::get_feature_class</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_class</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a8e1c6229db82a9215cb2994202e657f5">get_feature_class</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature class (ANY) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" line="71" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDummyFeatures_1a00e6e5bc42ed234b999f6e939a8e4328" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CDummyFeatures::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" line="76" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class DummyFeatures implements features that only know the number of feature objects (but don&apos;t actually contain any). </para>    </briefdescription>
+    <detaileddescription>
+<para>This is used in the CCustomKernel. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="31">
+        <label>shogun::CDummyFeatures</label>
+        <link refid="classshogun_1_1CDummyFeatures"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="33">
+        <label>shogun::CDummyFeatures</label>
+        <link refid="classshogun_1_1CDummyFeatures"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" line="24" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DummyFeatures.h" bodystart="23" bodyend="81"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CFeatures_1a793f371cc7dd4897997b01612f7d4b77" prot="public" virt="virtual"><scope>shogun::CDummyFeatures</scope><name>add_preproc</name></member>
+      <member refid="classshogun_1_1CDummyFeatures_1abeee4bd76872ac7448e3b28237f15ab8" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>CDummyFeatures</name></member>
+      <member refid="classshogun_1_1CDummyFeatures_1a66b0f219569bd7a90f4f6e427a6c23f5" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>CDummyFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a91ac9daf871dd99b358da47eea74eeb3" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1be7a2c5d471a3586c44988e2b4e1129" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a4ad3a39235806ab1999a1c5fb5290486" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a89609a765e1ab682ea6e73402b56c961" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>check_feature_compatibility</name></member>
+      <member refid="classshogun_1_1CFeatures_1afab00f1403d1349fd18cca31a6d63de3" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>clean_preprocs</name></member>
+      <member refid="classshogun_1_1CFeatures_1accdc453796e319852dd41fffa0c0f70c" prot="public" virt="virtual"><scope>shogun::CDummyFeatures</scope><name>del_preproc</name></member>
+      <member refid="classshogun_1_1CDummyFeatures_1a8eaf48235b6b7dd68156e7eb25b6ef16" prot="public" virt="virtual"><scope>shogun::CDummyFeatures</scope><name>duplicate</name></member>
+      <member refid="classshogun_1_1CFeatures_1a29b93c241dca0eba1415f873c83d27d8" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CDummyFeatures_1ae74da31dee53ab4f4be618cfae78fbc3" prot="public" virt="virtual"><scope>shogun::CDummyFeatures</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CDummyFeatures_1a0e230a9aa531015856967879b18bd36f" prot="public" virt="virtual"><scope>shogun::CDummyFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CDummyFeatures_1a00e6e5bc42ed234b999f6e939a8e4328" prot="public" virt="virtual"><scope>shogun::CDummyFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CFeatures_1a7662d240eab24d5753385b0f9e6e9bae" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>get_num_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a9010a03b11399648cc5da7194fb5e707" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>get_num_preprocessed</name></member>
+      <member refid="classshogun_1_1CDummyFeatures_1a40545471fb33840d621370468baabd59" prot="public" virt="virtual"><scope>shogun::CDummyFeatures</scope><name>get_num_vectors</name></member>
+      <member refid="classshogun_1_1CFeatures_1ac1015e3a736e4e6d4d6fbe24416af6c4" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>get_preproc</name></member>
+      <member refid="classshogun_1_1CDummyFeatures_1ac09ed3c234ff7d70d65c55a39a03ef42" prot="public" virt="virtual"><scope>shogun::CDummyFeatures</scope><name>get_size</name></member>
+      <member refid="classshogun_1_1CFeatures_1a07f1d7dc618a9f5f76663d80ad549d38" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1248f8829f63f9c9a42ac36065961295" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>is_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1a6412ef81478c3c9dadac2a87a544f640" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>list_feature_obj</name></member>
+      <member refid="classshogun_1_1CFeatures_1adef76a926672875a64aedd2b00c8f2bd" prot="public" virt="virtual"><scope>shogun::CDummyFeatures</scope><name>load</name></member>
+      <member refid="classshogun_1_1CDummyFeatures_1a1e05b4a08a7d7e5a5abf483cc0e760c0" prot="protected" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>num_vectors</name></member>
+      <member refid="classshogun_1_1CFeatures_1a57d67048d44a7a7ea92bcbdfed9060ea" prot="public" virt="virtual"><scope>shogun::CDummyFeatures</scope><name>reshape</name></member>
+      <member refid="classshogun_1_1CFeatures_1ae1341e3fa42733d8729d8f2dcf73709b" prot="public" virt="virtual"><scope>shogun::CDummyFeatures</scope><name>save</name></member>
+      <member refid="classshogun_1_1CFeatures_1aa88c27c0f3885d23ac71c4cc2e55c431" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>set_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab43db0bd4a231249ce4bc65f6e15f695" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a3ff3f03688a7f6a1b36dab8677407166" prot="public" virt="non-virtual"><scope>shogun::CDummyFeatures</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CDummyFeatures_1a1875fbd420cb2c73015631dee160c167" prot="public" virt="virtual"><scope>shogun::CDummyFeatures</scope><name>~CDummyFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab0e2a8a18ac5056f802e4aa51d4fcd4f" prot="public" virt="virtual"><scope>shogun::CDummyFeatures</scope><name>~CFeatures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

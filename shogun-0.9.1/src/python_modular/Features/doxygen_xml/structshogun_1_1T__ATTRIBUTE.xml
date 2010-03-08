@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structshogun_1_1T__ATTRIBUTE" kind="struct" prot="public">
+    <compoundname>shogun::T_ATTRIBUTE</compoundname>
+    <includes local="no">AttributeFeatures.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structshogun_1_1T__ATTRIBUTE_1a4a5137fc42597e53988d398d07d8d5e3" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* shogun::T_ATTRIBUTE::attr_name</definition>
+        <argsstring></argsstring>
+        <name>attr_name</name>
+        <briefdescription>
+<para>attribute name </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" line="26" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1T__ATTRIBUTE_1a17edc187d063295a99aae55991303c24" prot="public" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+        <definition>CFeatures* shogun::T_ATTRIBUTE::attr_obj</definition>
+        <argsstring></argsstring>
+        <name>attr_obj</name>
+        <briefdescription>
+<para>attribute object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" line="28" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Attribute Struct </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="145">
+        <label>shogun::T_ATTRIBUTE</label>
+        <link refid="structshogun_1_1T__ATTRIBUTE"/>
+        <childnode refid="146" relation="usage">
+          <edgelabel>attr_obj</edgelabel>
+        </childnode>
+      </node>
+      <node id="146">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" line="24" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" bodystart="23" bodyend="29"/>
+    <listofallmembers>
+      <member refid="structshogun_1_1T__ATTRIBUTE_1a4a5137fc42597e53988d398d07d8d5e3" prot="public" virt="non-virtual"><scope>shogun::T_ATTRIBUTE</scope><name>attr_name</name></member>
+      <member refid="structshogun_1_1T__ATTRIBUTE_1a17edc187d063295a99aae55991303c24" prot="public" virt="non-virtual"><scope>shogun::T_ATTRIBUTE</scope><name>attr_obj</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

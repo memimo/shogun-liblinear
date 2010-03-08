@@ -1,0 +1,561 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CDynamicArray" kind="class" prot="public">
+    <compoundname>shogun::CDynamicArray</compoundname>
+    <includes local="no">DynamicArray.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CDynamicArray_1abc1ae86e67ad52c5f0a6a624ea7ff2af" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynamicArray&lt; T &gt;::resize_granularity</definition>
+        <argsstring></argsstring>
+        <name>resize_granularity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>shrink/grow step size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="315" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynamicArray_1adc197c3007a8acb72cd1c16c4e65cfbb" prot="protected" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* shogun::CDynamicArray&lt; T &gt;::array</definition>
+        <argsstring></argsstring>
+        <name>array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>memory for dynamic array </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="318" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynamicArray_1a9d002d560a302115d091f9fcdff18eda" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynamicArray&lt; T &gt;::num_elements</definition>
+        <argsstring></argsstring>
+        <name>num_elements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the number of potentially used elements in array </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="321" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynamicArray_1a815981ac9af76be5266ef7472c2f95f6" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynamicArray&lt; T &gt;::last_element_idx</definition>
+        <argsstring></argsstring>
+        <name>last_element_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the element in the array that has largest index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="324" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1a11f43e2682dbfb1b131fae2a5b507102" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CDynamicArray&lt; T &gt;::CDynamicArray</definition>
+        <argsstring>(int32_t p_resize_granularity=128)</argsstring>
+        <name>CDynamicArray</name>
+        <param>
+          <type>int32_t</type>
+          <declname>p_resize_granularity</declname>
+          <defval>128</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_resize_granularity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>resize granularity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="36" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="34" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1a88a895b6b5461118a35259de4ca54d7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CDynamicArray&lt; T &gt;::~CDynamicArray</definition>
+        <argsstring>()</argsstring>
+        <name>~CDynamicArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="46" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1a2315b90aa4b1cbb27839dc6d2d777402" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynamicArray&lt; T &gt;::set_granularity</definition>
+        <argsstring>(int32_t g)</argsstring>
+        <name>set_granularity</name>
+        <param>
+          <type>int32_t</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set the resize granularity</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new granularity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>what has been set (minimum is 128) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="54" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="53" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1acd0adef278ff45ce5eaab4eaa7fc8d8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynamicArray&lt; T &gt;::get_array_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_array_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get array size (including granularity buffer)</para><para><simplesect kind="return"><para>total array size (including granularity buffer) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="65" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1a988dfa40d35aabbef0966eb222ba0378" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynamicArray&lt; T &gt;::get_num_elements</definition>
+        <argsstring>() const </argsstring>
+        <name>get_num_elements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of elements</para><para><simplesect kind="return"><para>number of elements </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="74" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1a1d8993dabc65d493e4649cdbb963640f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CDynamicArray&lt; T &gt;::get_element</definition>
+        <argsstring>(int32_t index) const </argsstring>
+        <name>get_element</name>
+        <param>
+          <type>int32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get array element at index</para><para>(does NOT do bounds checking)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>array element at index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="86" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1abf7dba7bd773736d371d490a0f04ce05" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CDynamicArray&lt; T &gt;::get_element_safe</definition>
+        <argsstring>(int32_t index) const </argsstring>
+        <name>get_element_safe</name>
+        <param>
+          <type>int32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get array element at index</para><para>(does bounds checking)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>array element at index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="98" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="97" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1a3dbc04bfbb4c57bd8d671e5701e00b5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CDynamicArray&lt; T &gt;::set_element</definition>
+        <argsstring>(T element, int32_t index)</argsstring>
+        <name>set_element</name>
+        <param>
+          <type>T</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set array element at index</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>element to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="114" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="113" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1a5912702893e97dca56336b75dae28ad6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CDynamicArray&lt; T &gt;::insert_element</definition>
+        <argsstring>(T element, int32_t index)</argsstring>
+        <name>insert_element</name>
+        <param>
+          <type>T</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>insert array element at index</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>element to insert </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="146" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="145" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1ac8b2258021600d1942be88732e43e161" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CDynamicArray&lt; T &gt;::append_element</definition>
+        <argsstring>(T element)</argsstring>
+        <name>append_element</name>
+        <param>
+          <type>T</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>append array element to the end of array</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>element to append </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="167" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="166" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1ad275e848e9188815bb7253099006e0d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynamicArray&lt; T &gt;::find_element</definition>
+        <argsstring>(T element)</argsstring>
+        <name>find_element</name>
+        <param>
+          <type>T</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>find first occurence of array element and return its index or -1 if not available</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>element to search for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index of element or -1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="178" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="177" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1a3e4dfc49e55cf2f2991060dbbedd2285" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CDynamicArray&lt; T &gt;::delete_element</definition>
+        <argsstring>(int32_t idx)</argsstring>
+        <name>delete_element</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>delete array element at idx (does not call delete[] or the like)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if deleting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="201" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="200" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1a1b108d7b129766994112402419d3f5c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CDynamicArray&lt; T &gt;::resize_array</definition>
+        <argsstring>(int32_t n)</argsstring>
+        <name>resize_array</name>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>resize the array</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new size </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if resizing was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="225" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="224" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1ad4a1e4c71b55f97b68d0ba6cab7218ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* shogun::CDynamicArray&lt; T &gt;::get_array</definition>
+        <argsstring>()</argsstring>
+        <name>get_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the array call get_array just before messing with it DO NOT call any [],resize/delete functions after <ref refid="classshogun_1_1CDynamicArray_1ad4a1e4c71b55f97b68d0ba6cab7218ec" kindref="member">get_array()</ref>, the pointer may become invalid !</para><para><simplesect kind="return"><para>the array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="256" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="255" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1a74203fa4aa5799ebf9fdc8b35516389f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynamicArray&lt; T &gt;::set_array</definition>
+        <argsstring>(T *p_array, int32_t p_num_elements, int32_t array_size)</argsstring>
+        <name>set_array</name>
+        <param>
+          <type>T *</type>
+          <declname>p_array</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_num_elements</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>array_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set the array pointer and free previously allocated memory</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_num_elements</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>last element index + 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>array_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of elements in array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="267" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="266" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1a52847b1b037016cd3405a31cff02f251" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynamicArray&lt; T &gt;::clear_array</definition>
+        <argsstring>()</argsstring>
+        <name>clear_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clear the array (with zeros) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="276" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="275" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1a2bfb99c87f836509178abee5da546006" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CDynamicArray&lt; T &gt;::operator[]</definition>
+        <argsstring>(int32_t index) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>operator overload for array read only access use <ref refid="classshogun_1_1CDynamicArray_1a3dbc04bfbb4c57bd8d671e5701e00b5d" kindref="member">set_element()</ref> for write access (will also make the array dynamically grow)</para><para>DOES NOT DO ANY BOUNDS CHECKING</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>element at index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="291" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="290" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1a95b49c5b49e23e862b4fbc1ee316a291" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CDynamicArray" kindref="compound">CDynamicArray</ref>&lt; T &gt; &amp;</type>
+        <definition>CDynamicArray&lt;T&gt;&amp; shogun::CDynamicArray&lt; T &gt;::operator=</definition>
+        <argsstring>(CDynamicArray&lt; T &gt; &amp;orig)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classshogun_1_1CDynamicArray" kindref="compound">CDynamicArray</ref>&lt; T &gt; &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>operator overload for array assignment</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>original array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="301" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="300" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynamicArray_1ad111c81abace11fe7aebeda184e7b174" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CDynamicArray&lt; T &gt;::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="311" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="311" bodyend="311"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template Dynamic array class that creates an array that can be used like a list or an array. </para>    </briefdescription>
+    <detaileddescription>
+<para>It grows and shrinks dynamically, while elements can be accessed via index. It is performance tuned for simple types like float etc. and for hi-level objects only stores pointers, which are not automagically SG_REF&apos;d/deleted. </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" line="28" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/DynamicArray.h" bodystart="27" bodyend="325"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CDynamicArray_1ac8b2258021600d1942be88732e43e161" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>append_element</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1adc197c3007a8acb72cd1c16c4e65cfbb" prot="protected" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>array</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1a11f43e2682dbfb1b131fae2a5b507102" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>CDynamicArray</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1a52847b1b037016cd3405a31cff02f251" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>clear_array</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1a3e4dfc49e55cf2f2991060dbbedd2285" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>delete_element</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1ad275e848e9188815bb7253099006e0d0" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>find_element</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1ad4a1e4c71b55f97b68d0ba6cab7218ec" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>get_array</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1acd0adef278ff45ce5eaab4eaa7fc8d8b" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>get_array_size</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1a1d8993dabc65d493e4649cdbb963640f" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>get_element</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1abf7dba7bd773736d371d490a0f04ce05" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>get_element_safe</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1ad111c81abace11fe7aebeda184e7b174" prot="public" virt="virtual"><scope>shogun::CDynamicArray</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1a988dfa40d35aabbef0966eb222ba0378" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>get_num_elements</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1a5912702893e97dca56336b75dae28ad6" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>insert_element</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1a815981ac9af76be5266ef7472c2f95f6" prot="protected" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>last_element_idx</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1a9d002d560a302115d091f9fcdff18eda" prot="protected" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>num_elements</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1a95b49c5b49e23e862b4fbc1ee316a291" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>operator=</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1a2bfb99c87f836509178abee5da546006" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>operator[]</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1a1b108d7b129766994112402419d3f5c0" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>resize_array</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1abc1ae86e67ad52c5f0a6a624ea7ff2af" prot="protected" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>resize_granularity</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1a74203fa4aa5799ebf9fdc8b35516389f" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>set_array</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1a3dbc04bfbb4c57bd8d671e5701e00b5d" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>set_element</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1a2315b90aa4b1cbb27839dc6d2d777402" prot="public" virt="non-virtual"><scope>shogun::CDynamicArray</scope><name>set_granularity</name></member>
+      <member refid="classshogun_1_1CDynamicArray_1a88a895b6b5461118a35259de4ca54d7f" prot="public" virt="virtual"><scope>shogun::CDynamicArray</scope><name>~CDynamicArray</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

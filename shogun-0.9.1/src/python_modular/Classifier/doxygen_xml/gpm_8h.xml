@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="gpm_8h" kind="file">
+    <compoundname>gpm.h</compoundname>
+    <includes local="yes">lib/common.h</includes>
+    <incdepgraph>
+      <node id="123">
+        <label>lib/common.h</label>
+      </node>
+      <node id="122">
+        <label>/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpm.h</label>
+        <link refid="gpm.h"/>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceshogun">shogun</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>***<sp/>Authors:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>***<sp/><sp/>Thomas<sp/>Serafini,<sp/>Luca<sp/>Zanni<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>***<sp/><sp/><sp/>Dept.<sp/>of<sp/>Mathematics,<sp/>University<sp/>of<sp/>Modena<sp/>and<sp/>Reggio<sp/>Emilia<sp/>-<sp/>ITALY<sp/>***</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>***<sp/><sp/><sp/>serafini.thomas@unimo.it,<sp/>zanni.luca@unimo.it<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>***<sp/><sp/>Gaetano<sp/>Zanghirati<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>***<sp/><sp/><sp/>Dept.<sp/>of<sp/>Mathematics,<sp/>University<sp/>of<sp/>Ferrara<sp/>-<sp/>ITALY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>***<sp/><sp/><sp/>g.zanghirati@unife.it<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>***<sp/>Software<sp/>homepage:<sp/>http://dm.unife.it/gpdt<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>***<sp/>This<sp/>work<sp/>is<sp/>supported<sp/>by<sp/>the<sp/>Italian<sp/>FIRB<sp/>Projects<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/>&apos;Statistical<sp/>Learning:<sp/>Theory,<sp/>Algorithms<sp/>and<sp/>Applications&apos;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/>(grant<sp/>RBAU01877P),<sp/>http://slipguru.disi.unige.it/ASTA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>***<sp/>and<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/>&apos;Parallel<sp/>Algorithms<sp/>and<sp/>Numerical<sp/>Nonlinear<sp/>Optimization&apos;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/>(grant<sp/>RBAU01JYPN),<sp/>http://dm.unife.it/pn2o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>***<sp/>Copyright<sp/>(C)<sp/>2004-2008<sp/>by<sp/>T.<sp/>Serafini,<sp/>G.<sp/>Zanghirati,<sp/>L.<sp/>Zanni.<sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>***<sp/>SHOGUN<sp/>adaptions<sp/><sp/>Written<sp/>(W)<sp/>2006-2008<sp/>Soeren<sp/>Sonnenburg<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">shogun</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">int32_t<sp/>gpm_solver(</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>Solver,<sp/>int32_t<sp/>Projector,<sp/>int32_t<sp/>n,<sp/>float32_t<sp/>*A,<sp/>float64_t<sp/>*b,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>c,<sp/>float64_t<sp/>e,<sp/>int32_t<sp/>*iy,<sp/>float64_t<sp/>*x,<sp/>float64_t<sp/>tol,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>*ls<sp/>=<sp/>0,<sp/>int32_t<sp/>*proj<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpm.h"/>
+  </compounddef>
+</doxygen>

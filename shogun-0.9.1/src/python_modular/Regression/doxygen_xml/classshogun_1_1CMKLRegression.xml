@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CMKLRegression" kind="class" prot="public">
+    <compoundname>shogun::CMKLRegression</compoundname>
+    <includes local="no">MKLRegression.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CMKLRegression_1a22fb2b4cb30472558da926752ee5369f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CMKLRegression::CMKLRegression</definition>
+        <argsstring>(CSVM *s=NULL)</argsstring>
+        <name>CMKLRegression</name>
+        <param>
+          <type>CSVM *</type>
+          <declname>s</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SVM to use as constraint generator in MKL SILP </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/MKLRegression.h" line="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLRegression_1a69d377da9b84be2afc2b61c7fef3ba50" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CMKLRegression::~CMKLRegression</definition>
+        <argsstring>()</argsstring>
+        <name>~CMKLRegression</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/MKLRegression.h" line="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLRegression_1ae059087f8021268f30f7469eee084dfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CMKLRegression::compute_sum_alpha</definition>
+        <argsstring>()</argsstring>
+        <name>compute_sum_alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute beta independent term from objective, e.g., in 2-class MKL sum_i alpha_i etc </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/MKLRegression.h" line="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CMKLRegression_1afa592bf33a9a69a2c784eb8b9fd8e8bb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CMKLRegression::init_training</definition>
+        <argsstring>()</argsstring>
+        <name>init_training</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check run before starting training (to e.g. check if labeling is two-class labeling in classification case </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/MKLRegression.h" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLRegression_1a58a505227de3b4d5b63d5cb9a757d591" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EClassifierType</type>
+        <definition>virtual EClassifierType shogun::CMKLRegression::get_classifier_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_classifier_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier type</para><para><simplesect kind="return"><para>classifier type MKL_REGRESSION </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/MKLRegression.h" line="53" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/MKLRegression.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLRegression_1a18b35afc16d600ea770b531d42bffaeb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CMKLRegression::compute_mkl_dual_objective</definition>
+        <argsstring>()</argsstring>
+        <name>compute_mkl_dual_objective</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute mkl dual objective</para><para><simplesect kind="return"><para>computed dual objective </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/MKLRegression.h" line="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Multiple Kernel Learning for regression. </para>    </briefdescription>
+    <detaileddescription>
+<para>Performs support vector regression while learning kernel weights at the same time. Makes only sense if multiple kernels are used.</para><para><simplesect kind="see"><para>CMKL </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/MKLRegression.h" line="26" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/regression/svr/MKLRegression.h" bodystart="25" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CMKLRegression_1a22fb2b4cb30472558da926752ee5369f" prot="public" virt="non-virtual"><scope>shogun::CMKLRegression</scope><name>CMKLRegression</name></member>
+      <member refid="classshogun_1_1CMKLRegression_1a18b35afc16d600ea770b531d42bffaeb" prot="protected" virt="virtual"><scope>shogun::CMKLRegression</scope><name>compute_mkl_dual_objective</name></member>
+      <member refid="classshogun_1_1CMKLRegression_1ae059087f8021268f30f7469eee084dfe" prot="public" virt="virtual"><scope>shogun::CMKLRegression</scope><name>compute_sum_alpha</name></member>
+      <member refid="classshogun_1_1CMKLRegression_1a58a505227de3b4d5b63d5cb9a757d591" prot="protected" virt="virtual"><scope>shogun::CMKLRegression</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CMKLRegression_1afa592bf33a9a69a2c784eb8b9fd8e8bb" prot="protected" virt="virtual"><scope>shogun::CMKLRegression</scope><name>init_training</name></member>
+      <member refid="classshogun_1_1CMKLRegression_1a69d377da9b84be2afc2b61c7fef3ba50" prot="public" virt="virtual"><scope>shogun::CMKLRegression</scope><name>~CMKLRegression</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

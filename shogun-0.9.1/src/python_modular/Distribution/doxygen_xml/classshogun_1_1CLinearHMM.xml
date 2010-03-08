@@ -1,0 +1,787 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CLinearHMM" kind="class" prot="public">
+    <compoundname>shogun::CLinearHMM</compoundname>
+    <basecompoundref refid="classshogun_1_1CDistribution" prot="public" virt="non-virtual">shogun::CDistribution</basecompoundref>
+    <includes local="no">LinearHMM.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CLinearHMM_1a4645fdcef64c3fdf657a0e8b7572c2d5" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CLinearHMM::sequence_length</definition>
+        <argsstring></argsstring>
+        <name>sequence_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>examples&apos; sequence length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="215" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CLinearHMM_1a21ee63d73374e54968862c6bde17712a" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CLinearHMM::num_symbols</definition>
+        <argsstring></argsstring>
+        <name>num_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of symbols in examples </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="217" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CLinearHMM_1aeb7d03df11073328f41af2c07bd5e578" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CLinearHMM::num_params</definition>
+        <argsstring></argsstring>
+        <name>num_params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of parameters </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="219" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CLinearHMM_1a6a3a8b833808732d3aea1912582e15e8" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CLinearHMM::transition_probs</definition>
+        <argsstring></argsstring>
+        <name>transition_probs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>transition probs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="221" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CLinearHMM_1a5b4d216cd5647808b33207e852db9df0" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CLinearHMM::log_transition_probs</definition>
+        <argsstring></argsstring>
+        <name>log_transition_probs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>logarithm of transition probs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="223" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1a4ea5d0e38c9e8b0b68a381195b0a888b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CLinearHMM::CLinearHMM</definition>
+        <argsstring>(CStringFeatures&lt; uint16_t &gt; *f)</argsstring>
+        <name>CLinearHMM</name>
+        <param>
+          <type>CStringFeatures&lt; uint16_t &gt; *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features to use </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1a599cd70e4f0d2f17bcf55f63e7563384" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CLinearHMM::CLinearHMM</definition>
+        <argsstring>(int32_t p_num_features, int32_t p_num_symbols)</argsstring>
+        <name>CLinearHMM</name>
+        <param>
+          <type>int32_t</type>
+          <declname>p_num_features</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_num_symbols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_num_features</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_num_symbols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of symbols in features </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1a2e8a6f792c5fabc3f5da5a2ecd7ab339" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CLinearHMM::~CLinearHMM</definition>
+        <argsstring>()</argsstring>
+        <name>~CLinearHMM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1a5845a94aec6ee5c0bdb31b9116f556f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CLinearHMM::train</definition>
+        <argsstring>(CFeatures *data=NULL)</argsstring>
+        <name>train</name>
+        <reimplements refid="classshogun_1_1CDistribution_1a597d0b1c5477f7df960ae30bc1bd6153">train</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>estimate LinearHMM distribution</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training data (parameter can be avoided if distance or kernel-based classifiers are used and distance/kernels are initialized with train data)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether training was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1a6448a484f80998ef118679edce98aa57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CLinearHMM::train</definition>
+        <argsstring>(const int32_t *indizes, int32_t num_indizes, float64_t pseudo_count)</argsstring>
+        <name>train</name>
+        <param>
+          <type>const int32_t *</type>
+          <declname>indizes</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_indizes</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>pseudo_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>alternative train distribution</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indizes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indices </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_indizes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of indices </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pseudo_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pseudo count </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if training was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1a815ddad3a0b5eb04f0727ca22367b5c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CLinearHMM::get_log_likelihood_example</definition>
+        <argsstring>(uint16_t *vector, int32_t len)</argsstring>
+        <name>get_log_likelihood_example</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>vector</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get logarithm of one example&apos;s likelihood</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the example </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>logarithm of likelihood </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1aca5662e1aa4919d90968568fc0ad99bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CLinearHMM::get_likelihood_example</definition>
+        <argsstring>(uint16_t *vector, int32_t len)</argsstring>
+        <name>get_likelihood_example</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>vector</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get one example&apos;s likelihood</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the example </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>likelihood </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1a9b4f1a962a55b83e8d8f3a8422ec27cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CLinearHMM::get_log_likelihood_example</definition>
+        <argsstring>(int32_t num_example)</argsstring>
+        <name>get_log_likelihood_example</name>
+        <reimplements refid="classshogun_1_1CDistribution_1ad3f236813136beae6e79f5bc8c86a859">get_log_likelihood_example</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>num_example</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get logarithm of one example&apos;s likelihood</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_example</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which example </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>logarithm of example&apos;s likelihood </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1ae60d2ce83490cf70f0134beb24c7f1fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CLinearHMM::get_log_derivative</definition>
+        <argsstring>(int32_t num_param, int32_t num_example)</argsstring>
+        <name>get_log_derivative</name>
+        <reimplements refid="classshogun_1_1CDistribution_1adf3ca306e936267b3b60aaf56254db25">get_log_derivative</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>num_param</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_example</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get logarithm of one example&apos;s derivative&apos;s likelihood</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which example&apos;s param </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_example</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which example </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>logarithm of example&apos;s derivative </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1a64e16db85433f04a991d06f777f9a743" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CLinearHMM::get_log_derivative_obsolete</definition>
+        <argsstring>(uint16_t obs, int32_t pos)</argsstring>
+        <name>get_log_derivative_obsolete</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>obsolete get logarithm of one example&apos;s derivative&apos;s likelihood</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>observation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="117" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" bodystart="115" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1a0e1586e22a59ab0f7d7cf496155ac7e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CLinearHMM::get_derivative_obsolete</definition>
+        <argsstring>(uint16_t *vector, int32_t len, int32_t pos)</argsstring>
+        <name>get_derivative_obsolete</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>vector</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>obsolete get one example&apos;s derivative</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="129" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" bodystart="127" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1aa2b1df79610fbe504da6d770f37036e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CLinearHMM::get_sequence_length</definition>
+        <argsstring>()</argsstring>
+        <name>get_sequence_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get sequence length of each example</para><para><simplesect kind="return"><para>sequence length of each example </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="138" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1ab8877ab82564e12e1583861b3fd61486" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CLinearHMM::get_num_symbols</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of symbols in examples</para><para><simplesect kind="return"><para>number of symbols in examples </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="144" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" bodystart="144" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1a4baabc9bb55555f16a68c060c263d4f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CLinearHMM::get_num_model_parameters</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_model_parameters</name>
+        <reimplements refid="classshogun_1_1CDistribution_1a9c1bdc1a6cf95b63bb197af2744ad43f">get_num_model_parameters</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of model parameters</para><para><simplesect kind="return"><para>number of model parameters </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="150" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" bodystart="150" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1ab0553abad20b4c16f7a16e9407f3b93c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CLinearHMM::get_positional_log_parameter</definition>
+        <argsstring>(uint16_t obs, int32_t position)</argsstring>
+        <name>get_positional_log_parameter</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get positional log parameter</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>observation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>positional log parameter </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="160" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" bodystart="158" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1a206eba813b97d4377fe7ba8957e9d2fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CLinearHMM::get_log_model_parameter</definition>
+        <argsstring>(int32_t num_param)</argsstring>
+        <name>get_log_model_parameter</name>
+        <reimplements refid="classshogun_1_1CDistribution_1a1a9f694299e08e7ff45b7d4626d13c17">get_log_model_parameter</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>num_param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get logarithm of given model parameter</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which param </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>logarithm of given model parameter </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="170" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" bodystart="169" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1aff3271f631e9c53ce3ce7368c75c8e8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CLinearHMM::get_log_transition_probs</definition>
+        <argsstring>(float64_t **dst, int32_t *num)</argsstring>
+        <name>get_log_transition_probs</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get logarithm of all transition probs</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where logarithm of transition probs will be stored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where number of logarithm of transition probs will be stored </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1a9168f78fb06e5080674f410d4865a915" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CLinearHMM::set_log_transition_probs</definition>
+        <argsstring>(const float64_t *src, int32_t num)</argsstring>
+        <name>set_log_transition_probs</name>
+        <param>
+          <type>const float64_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set logarithm of all transition probs</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new logarithms of transition probs </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of logarithms of transition probs </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1aa97757a02e22b384e96a13db9c39eb2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CLinearHMM::get_transition_probs</definition>
+        <argsstring>(float64_t **dst, int32_t *num)</argsstring>
+        <name>get_transition_probs</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get all transition probs</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where transition probs will be stored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where number of transition probs will be stored </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1a7be4e86e205e48e411e755e3fe65ded3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CLinearHMM::set_transition_probs</definition>
+        <argsstring>(const float64_t *src, int32_t num)</argsstring>
+        <name>set_transition_probs</name>
+        <param>
+          <type>const float64_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set all transition probs</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new transition probs </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of transition probs </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearHMM_1a15b684b4d5debe4f5745ab63f1838a54" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CLinearHMM::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="211" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" bodystart="211" bodyend="211"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class LinearHMM is for learning Higher Order Markov chains. </para>    </briefdescription>
+    <detaileddescription>
+<para>While learning the parameters <formula id="0">${\bf \theta}$</formula> in</para><para><formula id="1">\begin{eqnarray*} P({\bf x}|{\bf \theta}^\pm)&amp;=&amp;P(x_1, \ldots, x_N|{\bf \theta}^\pm)\\ &amp;=&amp;P(x_1,\ldots,x_{d}|{\bf \theta}^\pm)\prod_{i=d+1}^N P(x_i|x_{i-1},\ldots,x_{i-d},{\bf \theta}^\pm) \end{eqnarray*}</formula></para><para>are determined.</para><para>A more detailed description can be found in</para><para>Durbin et.al, Biological Sequence Analysis -Probabilistic Models of Proteins and Nucleic Acids, 1998 </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="20">
+        <label>shogun::CLinearHMM</label>
+        <link refid="classshogun_1_1CLinearHMM"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>shogun::CDistribution</label>
+        <link refid="classshogun_1_1CDistribution"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="22">
+        <label>shogun::CLinearHMM</label>
+        <link refid="classshogun_1_1CLinearHMM"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>shogun::CDistribution</label>
+        <link refid="classshogun_1_1CDistribution"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" line="40" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/LinearHMM.h" bodystart="39" bodyend="224"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CDistribution_1a6e20cc37e338851fab4ab27790dbf2f5" prot="public" virt="non-virtual"><scope>shogun::CLinearHMM</scope><name>CDistribution</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a4ea5d0e38c9e8b0b68a381195b0a888b" prot="public" virt="non-virtual"><scope>shogun::CLinearHMM</scope><name>CLinearHMM</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a599cd70e4f0d2f17bcf55f63e7563384" prot="public" virt="non-virtual"><scope>shogun::CLinearHMM</scope><name>CLinearHMM</name></member>
+      <member refid="classshogun_1_1CDistribution_1aa16fadbf5702b9afb2be003b040a4d03" prot="protected" virt="non-virtual"><scope>shogun::CLinearHMM</scope><name>features</name></member>
+      <member refid="classshogun_1_1CDistribution_1abc111da5e0301c31bce0358c2422812a" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_derivative</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a0e1586e22a59ab0f7d7cf496155ac7e6" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_derivative_obsolete</name></member>
+      <member refid="classshogun_1_1CDistribution_1a86fdfaf1ff09ee2b74aa75ce5b5faeab" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_features</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1aca5662e1aa4919d90968568fc0ad99bd" prot="public" virt="non-virtual"><scope>shogun::CLinearHMM</scope><name>get_likelihood_example</name></member>
+      <member refid="classshogun_1_1CDistribution_1ae473ea3939f5fe4143ba702cc66cf6ae" prot="public" virt="virtual" ambiguityscope="shogun::CDistribution::"><scope>shogun::CLinearHMM</scope><name>get_likelihood_example</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1ae60d2ce83490cf70f0134beb24c7f1fc" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_log_derivative</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a64e16db85433f04a991d06f777f9a743" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_log_derivative_obsolete</name></member>
+      <member refid="classshogun_1_1CDistribution_1af4853a6dfc897960a9a8ad0840cb9454" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_log_likelihood</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a815ddad3a0b5eb04f0727ca22367b5c5" prot="public" virt="non-virtual"><scope>shogun::CLinearHMM</scope><name>get_log_likelihood_example</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a9b4f1a962a55b83e8d8f3a8422ec27cc" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_log_likelihood_example</name></member>
+      <member refid="classshogun_1_1CDistribution_1a36cfa0a92291fafb06104ab26d18f6d5" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_log_likelihood_sample</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a206eba813b97d4377fe7ba8957e9d2fb" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_log_model_parameter</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1aff3271f631e9c53ce3ce7368c75c8e8e" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_log_transition_probs</name></member>
+      <member refid="classshogun_1_1CDistribution_1acd1de9ba85de99b69b6b5bb65d89560f" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_model_parameter</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a15b684b4d5debe4f5745ab63f1838a54" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a4baabc9bb55555f16a68c060c263d4f2" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_num_model_parameters</name></member>
+      <member refid="classshogun_1_1CDistribution_1ab7b1cd7fb4857be73cff243a4ff089d2" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_num_relevant_model_parameters</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1ab8877ab82564e12e1583861b3fd61486" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_num_symbols</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1ab0553abad20b4c16f7a16e9407f3b93c" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_positional_log_parameter</name></member>
+      <member refid="classshogun_1_1CDistribution_1a1e850dcb3692d4f507039dd86368dce6" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_pseudo_count</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1aa2b1df79610fbe504da6d770f37036e2" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_sequence_length</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1aa97757a02e22b384e96a13db9c39eb2e" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>get_transition_probs</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a5b4d216cd5647808b33207e852db9df0" prot="protected" virt="non-virtual"><scope>shogun::CLinearHMM</scope><name>log_transition_probs</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1aeb7d03df11073328f41af2c07bd5e578" prot="protected" virt="non-virtual"><scope>shogun::CLinearHMM</scope><name>num_params</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a21ee63d73374e54968862c6bde17712a" prot="protected" virt="non-virtual"><scope>shogun::CLinearHMM</scope><name>num_symbols</name></member>
+      <member refid="classshogun_1_1CDistribution_1aa3ab2ac558050ec4fddda8b4af1701bd" prot="protected" virt="non-virtual"><scope>shogun::CLinearHMM</scope><name>pseudo_count</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a4645fdcef64c3fdf657a0e8b7572c2d5" prot="protected" virt="non-virtual"><scope>shogun::CLinearHMM</scope><name>sequence_length</name></member>
+      <member refid="classshogun_1_1CDistribution_1a79b46db2697086c233e7768bf50d529c" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>set_features</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a9168f78fb06e5080674f410d4865a915" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>set_log_transition_probs</name></member>
+      <member refid="classshogun_1_1CDistribution_1a3ca440f678c2f556e287dd007f2d6e2a" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>set_pseudo_count</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a7be4e86e205e48e411e755e3fe65ded3" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>set_transition_probs</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a5845a94aec6ee5c0bdb31b9116f556f6" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>train</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a6448a484f80998ef118679edce98aa57" prot="public" virt="non-virtual"><scope>shogun::CLinearHMM</scope><name>train</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a6a3a8b833808732d3aea1912582e15e8" prot="protected" virt="non-virtual"><scope>shogun::CLinearHMM</scope><name>transition_probs</name></member>
+      <member refid="classshogun_1_1CDistribution_1ab38fcafc652e448eeb7e4d11ed971ed1" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>~CDistribution</name></member>
+      <member refid="classshogun_1_1CLinearHMM_1a2e8a6f792c5fabc3f5da5a2ecd7ab339" prot="public" virt="virtual"><scope>shogun::CLinearHMM</scope><name>~CLinearHMM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

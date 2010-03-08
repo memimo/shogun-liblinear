@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CIntronList" kind="class" prot="public">
+    <compoundname>shogun::CIntronList</compoundname>
+    <includes local="no">IntronList.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CIntronList_1a1b713e32eae1b2e30590b6af64e5d829" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CIntronList::m_length</definition>
+        <argsstring></argsstring>
+        <name>m_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of positions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" line="60" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CIntronList_1a6ed44050ccc2efad9dac0e836a5e5de0" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CIntronList::m_all_pos</definition>
+        <argsstring></argsstring>
+        <name>m_all_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>index of positions in the DNA sequence </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" line="63" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CIntronList_1a3940643037cf4b22b3dd27ef7c815192" prot="protected" static="no" mutable="no">
+        <type>int32_t **</type>
+        <definition>int32_t** shogun::CIntronList::m_intron_list</definition>
+        <argsstring></argsstring>
+        <name>m_intron_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data structure storing the introns; for all posible end positions there is a list of start positions stored </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" line="69" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CIntronList_1af5fd3bf153dfc43acc216613fa1a265d" prot="protected" static="no" mutable="no">
+        <type>int32_t **</type>
+        <definition>int32_t** shogun::CIntronList::m_quality_list</definition>
+        <argsstring></argsstring>
+        <name>m_quality_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data structure storing the intron quality scores; the shape is exactly the same as for the introns </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" line="74" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CIntronList_1a3afca3657a19ec75745cdc58824d405e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CIntronList::CIntronList</definition>
+        <argsstring>()</argsstring>
+        <name>CIntronList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" line="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIntronList_1a2edb775a042cba43e3f8ad1f93ed6dda" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CIntronList::~CIntronList</definition>
+        <argsstring>()</argsstring>
+        <name>~CIntronList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" line="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIntronList_1a0816bed8790234fe8cf5f866a407af0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIntronList::init_list</definition>
+        <argsstring>(int32_t *all_pos, int32_t len)</argsstring>
+        <name>init_list</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>all_pos</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize all arrays with the number of candidate positions</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>all_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of candidate positions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of candidate positions </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" line="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIntronList_1ac214bb80bafb7eae30399cf28530ed89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIntronList::read_introns</definition>
+        <argsstring>(int32_t *start_pos, int32_t *end_pos, int32_t *quality, int32_t len)</argsstring>
+        <name>read_introns</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>start_pos</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>end_pos</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>quality</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>read introns</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of start positions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of end positions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quality</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>quality scores for introns in list </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of items in all three previous arguments </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIntronList_1a34e850140f4e2819fb7cbf3f61b334f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CIntronList::get_intron_support</definition>
+        <argsstring>(int32_t *values, int32_t from_pos, int32_t to_pos)</argsstring>
+        <name>get_intron_support</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>from_pos</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>to_pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get coverage and quality score</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>values[0]: coverage of that intron; values[1]: associated quality score </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>from_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start position of intron </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end position of intron </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIntronList_1aa009da758f4f21cc7d7c632a61e00d2f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CIntronList::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" line="57" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class IntronList </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" line="21" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/IntronList.h" bodystart="20" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CIntronList_1a3afca3657a19ec75745cdc58824d405e" prot="public" virt="non-virtual"><scope>shogun::CIntronList</scope><name>CIntronList</name></member>
+      <member refid="classshogun_1_1CIntronList_1a34e850140f4e2819fb7cbf3f61b334f7" prot="public" virt="non-virtual"><scope>shogun::CIntronList</scope><name>get_intron_support</name></member>
+      <member refid="classshogun_1_1CIntronList_1aa009da758f4f21cc7d7c632a61e00d2f" prot="public" virt="virtual"><scope>shogun::CIntronList</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CIntronList_1a0816bed8790234fe8cf5f866a407af0a" prot="public" virt="non-virtual"><scope>shogun::CIntronList</scope><name>init_list</name></member>
+      <member refid="classshogun_1_1CIntronList_1a6ed44050ccc2efad9dac0e836a5e5de0" prot="protected" virt="non-virtual"><scope>shogun::CIntronList</scope><name>m_all_pos</name></member>
+      <member refid="classshogun_1_1CIntronList_1a3940643037cf4b22b3dd27ef7c815192" prot="protected" virt="non-virtual"><scope>shogun::CIntronList</scope><name>m_intron_list</name></member>
+      <member refid="classshogun_1_1CIntronList_1a1b713e32eae1b2e30590b6af64e5d829" prot="protected" virt="non-virtual"><scope>shogun::CIntronList</scope><name>m_length</name></member>
+      <member refid="classshogun_1_1CIntronList_1af5fd3bf153dfc43acc216613fa1a265d" prot="protected" virt="non-virtual"><scope>shogun::CIntronList</scope><name>m_quality_list</name></member>
+      <member refid="classshogun_1_1CIntronList_1ac214bb80bafb7eae30399cf28530ed89" prot="public" virt="non-virtual"><scope>shogun::CIntronList</scope><name>read_introns</name></member>
+      <member refid="classshogun_1_1CIntronList_1a2edb775a042cba43e3f8ad1f93ed6dda" prot="public" virt="virtual"><scope>shogun::CIntronList</scope><name>~CIntronList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

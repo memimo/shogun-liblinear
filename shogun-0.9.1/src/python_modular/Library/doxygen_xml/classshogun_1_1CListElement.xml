@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CListElement" kind="class" prot="public">
+    <compoundname>shogun::CListElement</compoundname>
+    <includes local="no">List.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CListElement_1ad7976e0f2eb79b4f064d9815d9e870d8" prot="public" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1CListElement" kindref="compound">CListElement</ref> *</type>
+        <definition>CListElement* shogun::CListElement&lt; T &gt;::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>next element in list </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/List.h" line="25" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/List.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CListElement_1a1137eee7ae9ddf45a0259e056887eb8e" prot="public" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1CListElement" kindref="compound">CListElement</ref> *</type>
+        <definition>CListElement* shogun::CListElement&lt; T &gt;::prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>previous element in list </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/List.h" line="27" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/List.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CListElement_1ac51284e7d6b2a5f3a68d1dd2d1daf44d" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T shogun::CListElement&lt; T &gt;::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data of this element </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/List.h" line="29" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/List.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CListElement_1a8ce836ffed84c3ad20b1fdb05e4b0e89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CListElement&lt; T &gt;::CListElement</definition>
+        <argsstring>(T p_data, CListElement *p_prev=NULL, CListElement *p_next=NULL)</argsstring>
+        <name>CListElement</name>
+        <param>
+          <type>T</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type><ref refid="classshogun_1_1CListElement" kindref="compound">CListElement</ref> *</type>
+          <declname>p_prev</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="classshogun_1_1CListElement" kindref="compound">CListElement</ref> *</type>
+          <declname>p_next</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data of this element </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_prev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>previous element </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_next</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>next element </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/List.h" line="39" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/List.h" bodystart="38" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CListElement_1a014fc775eef2c7ef2d1adff00652cc9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CListElement&lt; T &gt;::~CListElement</definition>
+        <argsstring>()</argsstring>
+        <name>~CListElement</name>
+        <briefdescription>
+<para>destructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/List.h" line="46" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/List.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class ListElement, defines how an element of the the list looks like. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="38">
+        <label>shogun::CListElement&lt; T &gt;</label>
+        <link refid="classshogun_1_1CListElement"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/List.h" line="22" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/List.h" bodystart="21" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CListElement_1a8ce836ffed84c3ad20b1fdb05e4b0e89" prot="public" virt="non-virtual"><scope>shogun::CListElement</scope><name>CListElement</name></member>
+      <member refid="classshogun_1_1CListElement_1ac51284e7d6b2a5f3a68d1dd2d1daf44d" prot="public" virt="non-virtual"><scope>shogun::CListElement</scope><name>data</name></member>
+      <member refid="classshogun_1_1CListElement_1ad7976e0f2eb79b4f064d9815d9e870d8" prot="public" virt="non-virtual"><scope>shogun::CListElement</scope><name>next</name></member>
+      <member refid="classshogun_1_1CListElement_1a1137eee7ae9ddf45a0259e056887eb8e" prot="public" virt="non-virtual"><scope>shogun::CListElement</scope><name>prev</name></member>
+      <member refid="classshogun_1_1CListElement_1a014fc775eef2c7ef2d1adff00652cc9d" prot="public" virt="virtual"><scope>shogun::CListElement</scope><name>~CListElement</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

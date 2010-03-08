@@ -1,0 +1,1314 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CPerformanceMeasures" kind="class" prot="public">
+    <compoundname>shogun::CPerformanceMeasures</compoundname>
+    <includes local="no">PerformanceMeasures.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CPerformanceMeasures_1a615209ea5d39770ca526e368c884277c" prot="protected" static="no" mutable="no">
+        <type>CLabels *</type>
+        <definition>CLabels* shogun::CPerformanceMeasures::m_true_labels</definition>
+        <argsstring></argsstring>
+        <name>m_true_labels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>true labels/examples as seen in real world </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="454" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPerformanceMeasures_1a1471c89f0f7792059e3b5aed78f2ce47" prot="protected" static="no" mutable="no">
+        <type>CLabels *</type>
+        <definition>CLabels* shogun::CPerformanceMeasures::m_output</definition>
+        <argsstring></argsstring>
+        <name>m_output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>output labels/hypothesis from a classifier </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="456" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPerformanceMeasures_1ad4f3b22a617b65d53087f034921f7dbf" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPerformanceMeasures::m_num_labels</definition>
+        <argsstring></argsstring>
+        <name>m_num_labels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of true labels/outputs/accuracies/ROC points </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="458" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPerformanceMeasures_1a98d52dfa81a078bbf9f3f3759a9a4b44" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPerformanceMeasures::m_all_true</definition>
+        <argsstring></argsstring>
+        <name>m_all_true</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of positive examples in true_labels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="461" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPerformanceMeasures_1a3e8628a5b86ed99b90a225bc94d80a57" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPerformanceMeasures::m_all_false</definition>
+        <argsstring></argsstring>
+        <name>m_all_false</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of negative examples in true_labels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="463" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPerformanceMeasures_1a6500c9f5b74d909286fa3de6b9b03455" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CPerformanceMeasures::m_sortedROC</definition>
+        <argsstring></argsstring>
+        <name>m_sortedROC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>array of size num_labels with indices of true_labels/output sorted to fit ROC algorithm </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="467" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPerformanceMeasures_1a5c76d7f20098500839b808b732ceca2e" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerformanceMeasures::m_auROC</definition>
+        <argsstring></argsstring>
+        <name>m_auROC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>area under ROC; 1 - area over ROC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="469" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPerformanceMeasures_1aeff7bae7d247bf86ba1772534cf2aaaf" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerformanceMeasures::m_auPRC</definition>
+        <argsstring></argsstring>
+        <name>m_auPRC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>area under PRC; 1 - area over PRC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="471" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPerformanceMeasures_1a899d6614e65d850bb4505b9fa8930429" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerformanceMeasures::m_auDET</definition>
+        <argsstring></argsstring>
+        <name>m_auDET</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>area under DET; 1 - area over DET </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="473" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a7b01531b920e3c91b6e36955ea33ed3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CPerformanceMeasures::CPerformanceMeasures</definition>
+        <argsstring>()</argsstring>
+        <name>CPerformanceMeasures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a24311a8126b1c16cedc662688f30ccb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CPerformanceMeasures::CPerformanceMeasures</definition>
+        <argsstring>(CLabels *true_labels, CLabels *output)</argsstring>
+        <name>CPerformanceMeasures</name>
+        <param>
+          <type>CLabels *</type>
+          <declname>true_labels</declname>
+        </param>
+        <param>
+          <type>CLabels *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>true_labels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true labels as seen in real world </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output labels/hypothesis from a classifier </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a89968eba86c0c0403716533ef599e698" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CPerformanceMeasures::~CPerformanceMeasures</definition>
+        <argsstring>()</argsstring>
+        <name>~CPerformanceMeasures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a71318d2235005575d4d049e9625958a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::init</definition>
+        <argsstring>(CLabels *true_labels, CLabels *output)</argsstring>
+        <name>init</name>
+        <param>
+          <type>CLabels *</type>
+          <declname>true_labels</declname>
+        </param>
+        <param>
+          <type>CLabels *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialise performance measures</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>true_labels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true labels as seen in real world </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output labels/hypothesis from a classifier </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1aaa0134b103e660bec46f188c30aa7d26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CPerformanceMeasures::set_true_labels</definition>
+        <argsstring>(CLabels *true_labels)</argsstring>
+        <name>set_true_labels</name>
+        <param>
+          <type>CLabels *</type>
+          <declname>true_labels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set true labels as seen in real world</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>true_labels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true labels </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="73" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="72" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a8f6505fcf888cd1e26b3169fbf1738e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>CLabels *</type>
+        <definition>CLabels* shogun::CPerformanceMeasures::get_true_labels</definition>
+        <argsstring>() const </argsstring>
+        <name>get_true_labels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get true labels as seen in real world</para><para><simplesect kind="return"><para>true labels as seen in real world </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="83" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1af7911e88aab0b7f57880d752384c147c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CPerformanceMeasures::set_output</definition>
+        <argsstring>(CLabels *output)</argsstring>
+        <name>set_output</name>
+        <param>
+          <type>CLabels *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set output labels/hypothesis from a classifier</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output labels </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="91" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="90" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1af851a0dac7febe4046e0c7364cd8d306" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>CLabels *</type>
+        <definition>CLabels* shogun::CPerformanceMeasures::get_output</definition>
+        <argsstring>() const </argsstring>
+        <name>get_output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier&apos;s output labels/hypothesis</para><para><simplesect kind="return"><para>output labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="101" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1ab98548a3937ff4c1461616f78f978bf1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPerformanceMeasures::get_num_labels</definition>
+        <argsstring>() const </argsstring>
+        <name>get_num_labels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of labels in output/true labels</para><para><simplesect kind="return"><para>number of labels in output/true labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="107" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a73783b6be7c71c4254445d9e31edc55b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::get_ROC</definition>
+        <argsstring>(float64_t **result, int32_t *num, int32_t *dim)</argsstring>
+        <name>get_ROC</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get Receiver Operating Curve for previously given labels (swig compatible)</para><para>ROC point = false positives / all false labels, true positives / all true labels</para><para>caller has to free</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where computed ROC values will be stored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of labels/examples </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimensions == 2 (false positive rate, true positive rate) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1ab48d0e8748a6bc14c667eb4a08154c65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerformanceMeasures::get_auROC</definition>
+        <argsstring>()</argsstring>
+        <name>get_auROC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return area under Receiver Operating Curve</para><para>calculated by adding trapezoids</para><para><simplesect kind="return"><para>area under ROC </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="130" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="129" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1af339a2fca10d5feedb5d9693f3ab2615" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerformanceMeasures::get_aoROC</definition>
+        <argsstring>()</argsstring>
+        <name>get_aoROC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return area over Reveiver Operating Curve</para><para>value is 1 - auROC</para><para><simplesect kind="return"><para>area over ROC </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="147" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a1d58b82341d4f14086c8cecafcc237d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::get_PRC</definition>
+        <argsstring>(float64_t **result, int32_t *num, int32_t *dim)</argsstring>
+        <name>get_PRC</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get Precision Recall Curve for previously given labels (swig compatible)</para><para>PRC point = true positives / all true labels, true positives / (true positives + false positives)</para><para>caller has to free</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where computed ROC values will be stored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of labels/examples </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension == 2 (recall, precision) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1adfbed803106c53ca1248e61313b1475d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerformanceMeasures::get_auPRC</definition>
+        <argsstring>()</argsstring>
+        <name>get_auPRC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return area under Precision Recall Curve</para><para>calculated by adding trapezoids</para><para><simplesect kind="return"><para>area under PRC </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="172" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="171" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1aac5b4bca33621f937a05607693e87e97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerformanceMeasures::get_aoPRC</definition>
+        <argsstring>()</argsstring>
+        <name>get_aoPRC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return area over Precision Recall Curve</para><para>value is 1 - auPRC</para><para><simplesect kind="return"><para>area over PRC </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="189" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="188" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a93b1a719582ec65969b70577594f8158" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::get_DET</definition>
+        <argsstring>(float64_t **result, int32_t *num, int32_t *dim)</argsstring>
+        <name>get_DET</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get Detection Error Tradeoff curve for previously given labels (swig compatible)</para><para>DET point = false positives / all false labels, false negatives / all false labels</para><para>caller has to free</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where computed DET values will be stored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of labels/examples </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension == 2 (false positive rate, false negative rate) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a1d78d3414b93bf30312f35c6e592beb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerformanceMeasures::get_auDET</definition>
+        <argsstring>()</argsstring>
+        <name>get_auDET</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return area under Detection Error Tradeoff curve</para><para>calculated by adding trapezoids</para><para><simplesect kind="return"><para>area under DET curve </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="214" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="213" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a9b6773e83570f9ce4c22404c36cf98fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerformanceMeasures::get_aoDET</definition>
+        <argsstring>()</argsstring>
+        <name>get_aoDET</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return area over Detection Error Tradeoff curve</para><para>value is 1 - auDET</para><para><simplesect kind="return"><para>area over DET curve </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="231" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="230" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1ad8d7fbb19a169c5d66eaefcefe371468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::get_all_accuracy</definition>
+        <argsstring>(float64_t **result, int32_t *num, int32_t *dim)</argsstring>
+        <name>get_all_accuracy</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier&apos;s accuracies (swig compatible)</para><para>accuracy = (true positives + true negatives) / all labels</para><para>caller has to free</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>storage of accuracies in 2 dim array: (output, accuracy), sorted by output </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of accuracy points </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension == 2 (output, accuracy) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a0733a34cc55cae12a29f8c30f63707c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerformanceMeasures::get_accuracy</definition>
+        <argsstring>(float64_t threshold=0)</argsstring>
+        <name>get_accuracy</name>
+        <param>
+          <type>float64_t</type>
+          <declname>threshold</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier&apos;s accuracy at given threshold</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>all values below are considered negative examples (default 0) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>classifer&apos;s accuracy at threshold </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a7b36fee903b67ad48275bc84729de5d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::get_all_error</definition>
+        <argsstring>(float64_t **result, int32_t *num, int32_t *dim)</argsstring>
+        <name>get_all_error</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier&apos;s error rates (swig compatible)</para><para>value is 1 - accuracy</para><para>caller has to free</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>storage of errors in 2 dim array: (output, error), sorted by output </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of accuracy points </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension == 2 (output, error) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a8278d90486c1710de293645cbaff99d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerformanceMeasures::get_error</definition>
+        <argsstring>(float64_t threshold=0)</argsstring>
+        <name>get_error</name>
+        <param>
+          <type>float64_t</type>
+          <declname>threshold</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier&apos;s error at threshold</para><para>value is 1 - accuracy0</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>all values below are considered negative examples (default 0) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>classifer&apos;s error at threshold </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="278" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="277" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a6ce380e8577590165e5288a22a913a52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::get_all_fmeasure</definition>
+        <argsstring>(float64_t **result, int32_t *num, int32_t *dim)</argsstring>
+        <name>get_all_fmeasure</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier&apos;s F-measure (swig compatible)</para><para>F-measure = 2 / (1 / precision + 1 / recall)</para><para>caller has to free</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>storage of F-measure in 2 dim array (output, fmeasure), sorted by output </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of accuracy points </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension == 2 (output, fmeasure) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1aa016506dd319a13347e5ff3539619550" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerformanceMeasures::get_fmeasure</definition>
+        <argsstring>(float64_t threshold=0)</argsstring>
+        <name>get_fmeasure</name>
+        <param>
+          <type>float64_t</type>
+          <declname>threshold</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier&apos;s F-measure at threshold 0</para><para><simplesect kind="return"><para>classifer&apos;s F-measure at threshold 0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1ae5b26c9b159c731dcea4dab9480fa16e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::get_all_CC</definition>
+        <argsstring>(float64_t **result, int32_t *num, int32_t *dim)</argsstring>
+        <name>get_all_CC</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier&apos;s Cross Correlation coefficients (swig compatible)</para><para>CC = ( true positives * true negatives<itemizedlist>
+<listitem><para>false positives * false negatives ) / sqrt( (true positives + false positives) * (true positives + false negatives) * (true negatives + false positives) * (true negatives + false negatives) )</para></listitem></itemizedlist>
+</para><para>also check <ulink url="http://en.wikipedia.org/wiki/Correlation">http://en.wikipedia.org/wiki/Correlation</ulink></para><para>caller has to free</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>storage of CCs in 2 dim array: (output, CC), sorted by output </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of CC points </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension == 2 (output, CC) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="328"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a2bb705ecb6b4deea1f04de31b90b4759" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerformanceMeasures::get_CC</definition>
+        <argsstring>(float64_t threshold=0)</argsstring>
+        <name>get_CC</name>
+        <param>
+          <type>float64_t</type>
+          <declname>threshold</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier&apos;s Cross Correlation coefficient at threshold</para><para><simplesect kind="return"><para>classifer&apos;s CC at threshold </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a551a84ba17ab34400bf2110b56606309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::get_all_WRAcc</definition>
+        <argsstring>(float64_t **result, int32_t *num, int32_t *dim)</argsstring>
+        <name>get_all_WRAcc</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier&apos;s Weighted Relative Accuracy (swig compatible)</para><para>WRAcc = ( true positives / (true positives + false negatives) )<itemizedlist>
+<listitem><para>( false positives / (false positives + true negatives) )</para></listitem></itemizedlist>
+</para><para>caller has to free</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>storage of WRAccs in 2 dim array: (output, WRAcc), sorted by output </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of WRAcc points </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension == 2 (output, WRAcc) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a59fc33aa8ae2dcaba5c72e22ffc90bcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerformanceMeasures::get_WRAcc</definition>
+        <argsstring>(float64_t threshold=0)</argsstring>
+        <name>get_WRAcc</name>
+        <param>
+          <type>float64_t</type>
+          <declname>threshold</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier&apos;s Weighted Relative Accuracy at threshold 0</para><para><simplesect kind="return"><para>classifer&apos;s WRAcc at threshold 0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="359"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1afebee74f4cbbf54a8b3d0848e7c632e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::get_all_BAL</definition>
+        <argsstring>(float64_t **result, int32_t *num, int32_t *dim)</argsstring>
+        <name>get_all_BAL</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier&apos;s Balanced Error (swig compatible)</para><para>BAL = 0.5 * ( true positives / all true labels + true negatives / all false labels )</para><para>caller has to free</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>storage of BAL in 2 dim array: (output, BAL), sorted by output </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of BAL points </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension == 2 (output, BAL) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a13b5440414910edefeceb0378ed25b75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerformanceMeasures::get_BAL</definition>
+        <argsstring>(float64_t threshold=0)</argsstring>
+        <name>get_BAL</name>
+        <param>
+          <type>float64_t</type>
+          <declname>threshold</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier&apos;s Balanced Error at threshold 0</para><para><simplesect kind="return"><para>classifer&apos;s BAL at threshold 0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="384"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1ac1113863f1139c821eead0585f899446" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CPerformanceMeasures::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the name of tghe object</para><para><simplesect kind="return"><para>name of object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="390" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="390" bodyend="390"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1afc7705b08c9fef64c4a634ddbc94cbb8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::init_nolabels</definition>
+        <argsstring>()</argsstring>
+        <name>init_nolabels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialise values independent from true labels/output </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="394"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a80d27dea171b602a407cf4635b6c49f9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerformanceMeasures::trapezoid_area</definition>
+        <argsstring>(float64_t x1, float64_t x2, float64_t y1, float64_t y2)</argsstring>
+        <name>trapezoid_area</name>
+        <param>
+          <type>float64_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>calculate trapezoid area for auROC</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x coordinate of point 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x coordinate of point 2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>y coordinate of point 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>y coordinate of point 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>trapezoid area for auROC </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="404"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1abbc15206f488262323b0d633ebd21e65" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::create_sortedROC</definition>
+        <argsstring>()</argsstring>
+        <name>create_sortedROC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>create index for ROC sorting </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1aea4ce70c803ba6b0498d9d59b35eb16b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::compute_ROC</definition>
+        <argsstring>(float64_t **result)</argsstring>
+        <name>compute_ROC</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute ROC points and auROC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="414"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a081376055634a70cffa245fce181ea6c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::compute_accuracy</definition>
+        <argsstring>(float64_t **result, int32_t *num, int32_t *dim, bool do_error=false)</argsstring>
+        <name>compute_accuracy</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>do_error</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute ROC accuracy/error</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where the result will be stored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of points </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension == 2 (output, accuracy/error) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>do_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if error instead of accuracy shall be computed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="424"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a860f467541470bad02f4cd33ffac8ab3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::compute_PRC</definition>
+        <argsstring>(float64_t **result)</argsstring>
+        <name>compute_PRC</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute PRC points and auPRC</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where the result will be stored </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="430"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a5af67805f37a429475931dc14153020c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::compute_DET</definition>
+        <argsstring>(float64_t **result)</argsstring>
+        <name>compute_DET</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute DET points and auDET</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where the result will be stored </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="436"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerformanceMeasures_1a4c28a567bd18cdd5679363b74e467b53" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerformanceMeasures::compute_confusion_matrix</definition>
+        <argsstring>(float64_t threshold, int32_t *tp, int32_t *fp, int32_t *fn, int32_t *tn)</argsstring>
+        <name>compute_confusion_matrix</name>
+        <param>
+          <type>float64_t</type>
+          <declname>threshold</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>tp</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>fp</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>fn</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>tn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute confusion matrix</para><para>caller has to delete[]</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threshold to compute against </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>storage of true positives or NULL if unused </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>storage of false positives or NULL if unused </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>storage of false negatives or NULL if unused </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>storage of true negatives or NULL if unused </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="450"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class to implement various performance measures. </para>    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Receiver Operating Curve (ROC)</para></listitem><listitem><para>Area under the ROC curve (auROC)</para></listitem><listitem><para>Area over the ROC curve (aoROC)</para></listitem><listitem><para>Precision Recall Curve (PRC)</para></listitem><listitem><para>Area under the PRC (auPRC)</para></listitem><listitem><para>Area over the PRC (aoPRC)</para></listitem><listitem><para>Detection Error Tradeoff (DET)</para></listitem><listitem><para>Area under the DET (auDET)</para></listitem><listitem><para>Area over the DET (aoDET)</para></listitem><listitem><para>Cross Correlation coefficient (CC)</para></listitem><listitem><para>Weighted Relative Accuracy (WRAcc)</para></listitem><listitem><para>Balanced Error (BAL)</para></listitem><listitem><para>F-Measure</para></listitem><listitem><para>Accuracy</para></listitem><listitem><para>Error</para></listitem></itemizedlist>
+</para><para>based on: Fawcett, T: March 2004, ROC Graphs: Notes and Practical Considerations for Researchers and input from Sonnenburg, S: Feburary 2008, various discussions </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" line="46" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/evaluation/PerformanceMeasures.h" bodystart="45" bodyend="474"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a081376055634a70cffa245fce181ea6c" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>compute_accuracy</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a4c28a567bd18cdd5679363b74e467b53" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>compute_confusion_matrix</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a5af67805f37a429475931dc14153020c" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>compute_DET</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a860f467541470bad02f4cd33ffac8ab3" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>compute_PRC</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1aea4ce70c803ba6b0498d9d59b35eb16b" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>compute_ROC</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a7b01531b920e3c91b6e36955ea33ed3c" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>CPerformanceMeasures</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a24311a8126b1c16cedc662688f30ccb5" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>CPerformanceMeasures</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1abbc15206f488262323b0d633ebd21e65" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>create_sortedROC</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a0733a34cc55cae12a29f8c30f63707c3" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_accuracy</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1ad8d7fbb19a169c5d66eaefcefe371468" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_all_accuracy</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1afebee74f4cbbf54a8b3d0848e7c632e1" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_all_BAL</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1ae5b26c9b159c731dcea4dab9480fa16e" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_all_CC</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a7b36fee903b67ad48275bc84729de5d9" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_all_error</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a6ce380e8577590165e5288a22a913a52" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_all_fmeasure</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a551a84ba17ab34400bf2110b56606309" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_all_WRAcc</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a9b6773e83570f9ce4c22404c36cf98fb" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_aoDET</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1aac5b4bca33621f937a05607693e87e97" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_aoPRC</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1af339a2fca10d5feedb5d9693f3ab2615" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_aoROC</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a1d78d3414b93bf30312f35c6e592beb1" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_auDET</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1adfbed803106c53ca1248e61313b1475d" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_auPRC</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1ab48d0e8748a6bc14c667eb4a08154c65" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_auROC</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a13b5440414910edefeceb0378ed25b75" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_BAL</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a2bb705ecb6b4deea1f04de31b90b4759" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_CC</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a93b1a719582ec65969b70577594f8158" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_DET</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a8278d90486c1710de293645cbaff99d6" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_error</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1aa016506dd319a13347e5ff3539619550" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_fmeasure</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1ac1113863f1139c821eead0585f899446" prot="public" virt="virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1ab98548a3937ff4c1461616f78f978bf1" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_num_labels</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1af851a0dac7febe4046e0c7364cd8d306" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_output</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a1d58b82341d4f14086c8cecafcc237d6" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_PRC</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a73783b6be7c71c4254445d9e31edc55b" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_ROC</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a8f6505fcf888cd1e26b3169fbf1738e9" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_true_labels</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a59fc33aa8ae2dcaba5c72e22ffc90bcf" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>get_WRAcc</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a71318d2235005575d4d049e9625958a5" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>init</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1afc7705b08c9fef64c4a634ddbc94cbb8" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>init_nolabels</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a3e8628a5b86ed99b90a225bc94d80a57" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>m_all_false</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a98d52dfa81a078bbf9f3f3759a9a4b44" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>m_all_true</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a899d6614e65d850bb4505b9fa8930429" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>m_auDET</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1aeff7bae7d247bf86ba1772534cf2aaaf" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>m_auPRC</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a5c76d7f20098500839b808b732ceca2e" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>m_auROC</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1ad4f3b22a617b65d53087f034921f7dbf" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>m_num_labels</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a1471c89f0f7792059e3b5aed78f2ce47" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>m_output</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a6500c9f5b74d909286fa3de6b9b03455" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>m_sortedROC</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a615209ea5d39770ca526e368c884277c" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>m_true_labels</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1af7911e88aab0b7f57880d752384c147c" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>set_output</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1aaa0134b103e660bec46f188c30aa7d26" prot="public" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>set_true_labels</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a80d27dea171b602a407cf4635b6c49f9" prot="protected" virt="non-virtual"><scope>shogun::CPerformanceMeasures</scope><name>trapezoid_area</name></member>
+      <member refid="classshogun_1_1CPerformanceMeasures_1a89968eba86c0c0403716533ef599e698" prot="public" virt="virtual"><scope>shogun::CPerformanceMeasures</scope><name>~CPerformanceMeasures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2010 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CSparseFeatures" kind="class" prot="public">
+    <compoundname>shogun::CSparseFeatures</compoundname>
+    <basecompoundref refid="classshogun_1_1CDotFeatures" prot="public" virt="non-virtual">shogun::CDotFeatures</basecompoundref>
+    <includes local="no">SparseFeatures.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class ST</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CSparseFeatures_1a7b344e1d08a41ccdf0d605e9951fdd39" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSparseFeatures&lt; ST &gt;::num_vectors</definition>
+        <argsstring></argsstring>
+        <name>num_vectors</name>
+        <briefdescription>
+<para>total number of vectors </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1355" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSparseFeatures_1a9ef557ea69be6d6a21e655ba2c65f640" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSparseFeatures&lt; ST &gt;::num_features</definition>
+        <argsstring></argsstring>
+        <name>num_features</name>
+        <briefdescription>
+<para>total number of features </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1358" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSparseFeatures_1a8fcebd1234e1e81489e7294e965aee02" prot="protected" static="no" mutable="no">
+        <type><ref refid="structshogun_1_1TSparse" kindref="compound">TSparse</ref>&lt; ST &gt; *</type>
+        <definition>TSparse&lt;ST&gt;* shogun::CSparseFeatures&lt; ST &gt;::sparse_feature_matrix</definition>
+        <argsstring></argsstring>
+        <name>sparse_feature_matrix</name>
+        <briefdescription>
+<para>array of sparse vectors of size num_vectors </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1361" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSparseFeatures_1a6ff9d4d14b6be252bfdd18e434460a52" prot="protected" static="no" mutable="no">
+        <type>CCache&lt; <ref refid="structshogun_1_1TSparseEntry" kindref="compound">TSparseEntry</ref>&lt; ST &gt; &gt; *</type>
+        <definition>CCache&lt; TSparseEntry&lt;ST&gt; &gt;* shogun::CSparseFeatures&lt; ST &gt;::feature_cache</definition>
+        <argsstring></argsstring>
+        <name>feature_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>feature cache </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1364" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1364" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1abcd2914ce32858839272be3d4fc6fe87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSparseFeatures&lt; ST &gt;::CSparseFeatures</definition>
+        <argsstring>(int32_t size=0)</argsstring>
+        <name>CSparseFeatures</name>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cache size </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="84" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a6415dc0aabec8a51a896f6b98cf21346" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSparseFeatures&lt; ST &gt;::CSparseFeatures</definition>
+        <argsstring>(TSparse&lt; ST &gt; *src, int32_t num_feat, int32_t num_vec, bool copy=false)</argsstring>
+        <name>CSparseFeatures</name>
+        <param>
+          <type><ref refid="structshogun_1_1TSparse" kindref="compound">TSparse</ref>&lt; ST &gt; *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>copy</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>convenience constructor that creates sparse features from the ones passed as argument</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dense feature matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>copy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true to copy feature matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="97" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="94" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1ab7c68c843cb20f2d404d9795e5eec7ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSparseFeatures&lt; ST &gt;::CSparseFeatures</definition>
+        <argsstring>(ST *src, int32_t num_feat, int32_t num_vec)</argsstring>
+        <name>CSparseFeatures</name>
+        <param>
+          <type>ST *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>convenience constructor that creates sparse features from dense features</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dense feature matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="123" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="120" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a82f59d9054911812b681feb1bcac2b35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSparseFeatures&lt; ST &gt;::CSparseFeatures</definition>
+        <argsstring>(const CSparseFeatures &amp;orig)</argsstring>
+        <name>CSparseFeatures</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CSparseFeatures" kindref="compound">CSparseFeatures</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="133" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="128" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a2945e7b737284b495fa6e4eb0ec63e30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSparseFeatures&lt; ST &gt;::CSparseFeatures</definition>
+        <argsstring>(char *fname)</argsstring>
+        <name>CSparseFeatures</name>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load features from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="155" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a673fd7f7d3c82536a1a2336cbbd8f275" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CSparseFeatures&lt; ST &gt;::~CSparseFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>~CSparseFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="158" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="157" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1ac4e091dd9ac076e21dbae5dba6141438" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSparseFeatures&lt; ST &gt;::free_sparse_feature_matrix</definition>
+        <argsstring>()</argsstring>
+        <name>free_sparse_feature_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>free sparse feature matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="166" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="165" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a824ef80213f6f84f51d56bd4e9e63e6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSparseFeatures&lt; ST &gt;::free_sparse_features</definition>
+        <argsstring>()</argsstring>
+        <name>free_sparse_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>free sparse feature matrix and cache </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="177" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="176" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a51f3ef5f1c3dd3d3fcb8b1bcecfd0f99" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+        <definition>virtual CFeatures* shogun::CSparseFeatures&lt; ST &gt;::duplicate</definition>
+        <argsstring>() const </argsstring>
+        <name>duplicate</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a2f7adf01a52fee35ac71e455501125a9">duplicate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>duplicate feature object</para><para><simplesect kind="return"><para>feature object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="188" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1abe28382fb2677fc6d87a7dd8f5880d22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ST</type>
+        <definition>ST shogun::CSparseFeatures&lt; ST &gt;::get_feature</definition>
+        <argsstring>(int32_t num, int32_t index)</argsstring>
+        <name>get_feature</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get a single feature</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of feature vector to retrieve </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of feature in this vector</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sum of features that match dimension index and 0 if none is found </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="200" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="199" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1aef09d801f17a0997c010e67d914918b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ST *</type>
+        <definition>ST* shogun::CSparseFeatures&lt; ST &gt;::get_full_feature_vector</definition>
+        <argsstring>(int32_t num, int32_t &amp;len)</argsstring>
+        <name>get_full_feature_vector</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>converts a sparse feature vector into a dense one preprocessed compute_feature_vector caller cleans up</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length is returned by reference </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>dense feature vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="232" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="231" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1abac1bbecc6b5eb100fed0938e46fa04a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSparseFeatures&lt; ST &gt;::get_full_feature_vector</definition>
+        <argsstring>(ST **dst, int32_t *len, int32_t num)</argsstring>
+        <name>get_full_feature_vector</name>
+        <param>
+          <type>ST **</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the fully expanded dense feature vector num</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length is returned by reference </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of feature vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="264" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="263" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1ac110055b3c1b9ad787f4ab2bc0f2987f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CSparseFeatures&lt; ST &gt;::get_nnz_features_for_vector</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>get_nnz_features_for_vector</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a45e751c294896ffb6faae83e0dc5f140">get_nnz_features_for_vector</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of non-zero features in vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of non-zero features in vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="296" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="295" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a31e207fa079dcb7ad9754537dc78e257" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structshogun_1_1TSparseEntry" kindref="compound">TSparseEntry</ref>&lt; ST &gt; *</type>
+        <definition>TSparseEntry&lt;ST&gt;* shogun::CSparseFeatures&lt; ST &gt;::get_sparse_feature_vector</definition>
+        <argsstring>(int32_t num, int32_t &amp;len, bool &amp;vfree)</argsstring>
+        <name>get_sparse_feature_vector</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>vfree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get sparse feature vector for sample num from the matrix as it is if matrix is initialized, else return preprocessed compute_feature_vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of sparse entries is returned by reference </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vfree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether returned vector must be freed by caller via free_sparse_feature_vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sparse feature vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="315" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="314" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a5fe424226f8bbe2191ad2b9a8d589781" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ST</type>
+        <definition>ST shogun::CSparseFeatures&lt; ST &gt;::sparse_dot</definition>
+        <argsstring>(ST alpha, TSparseEntry&lt; ST &gt; *avec, int32_t alen, TSparseEntry&lt; ST &gt; *bvec, int32_t blen)</argsstring>
+        <name>sparse_dot</name>
+        <param>
+          <type>ST</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type><ref refid="structshogun_1_1TSparseEntry" kindref="compound">TSparseEntry</ref>&lt; ST &gt; *</type>
+          <declname>avec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>alen</declname>
+        </param>
+        <param>
+          <type><ref refid="structshogun_1_1TSparseEntry" kindref="compound">TSparseEntry</ref>&lt; ST &gt; *</type>
+          <declname>bvec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>blen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute the dot product between two sparse feature vectors alpha * vec^T * vec</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scalar to multiply with </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>avec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first sparse feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>avec&apos;s length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bvec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second sparse feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bvec&apos;s length </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>dot product between the two sparse feature vectors </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="383" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="382" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a103af2ee7e27884accf662fb8a3a565b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ST</type>
+        <definition>ST shogun::CSparseFeatures&lt; ST &gt;::dense_dot</definition>
+        <argsstring>(ST alpha, int32_t num, ST *vec, int32_t dim, ST b)</argsstring>
+        <name>dense_dot</name>
+        <param>
+          <type>ST</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>ST *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type>ST</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute the dot product between dense weights and a sparse feature vector alpha * sparse^T * w + b</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scalar to multiply with </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dense vector to compute dot product with </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the dense vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bias </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>dot product between dense weights and a sparse feature vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="441" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="440" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1ab55b8cb6cf5a4adc67c20adff02fa4b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void shogun::CSparseFeatures&lt; ST &gt;::add_to_dense_vec</definition>
+        <argsstring>(float64_t alpha, int32_t num, float64_t *vec, int32_t dim, bool abs_val=false)</argsstring>
+        <name>add_to_dense_vec</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a96e00d9794bbe0ad0248bce58c4a346d">add_to_dense_vec</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>abs_val</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add a sparse feature vector onto a dense one dense+=alpha*sparse</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scalar to multiply with </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dense vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the dense vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>abs_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, do dense+=alpha*abs(sparse) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="470" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="469" bodyend="493"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1ac3f7316b1e370347ba0dbb73965ba343" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSparseFeatures&lt; ST &gt;::free_sparse_feature_vector</definition>
+        <argsstring>(TSparseEntry&lt; ST &gt; *feat_vec, int32_t num, bool free)</argsstring>
+        <name>free_sparse_feature_vector</name>
+        <param>
+          <type><ref refid="structshogun_1_1TSparseEntry" kindref="compound">TSparseEntry</ref>&lt; ST &gt; *</type>
+          <declname>feat_vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>free</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>free sparse feature vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>feat_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature vector to free </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of this vector in the cache </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>free</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if vector should be really deleted </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="502" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="501" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a20557a1430b5a0a78ff0396e77aa5f62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structshogun_1_1TSparse" kindref="compound">TSparse</ref>&lt; ST &gt; *</type>
+        <definition>TSparse&lt;ST&gt;* shogun::CSparseFeatures&lt; ST &gt;::get_sparse_feature_matrix</definition>
+        <argsstring>(int32_t &amp;num_feat, int32_t &amp;num_vec)</argsstring>
+        <name>get_sparse_feature_matrix</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the pointer to the sparse feature matrix num_feat,num_vectors are returned by reference</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features in matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>feature matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="518" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="517" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a225a6bce138d5808b76f0f7576fae6b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSparseFeatures&lt; ST &gt;::get_sparse_feature_matrix</definition>
+        <argsstring>(TSparse&lt; ST &gt; **dst, int32_t *num_feat, int32_t *num_vec, int64_t *nnz)</argsstring>
+        <name>get_sparse_feature_matrix</name>
+        <param>
+          <type><ref refid="structshogun_1_1TSparse" kindref="compound">TSparse</ref>&lt; ST &gt; **</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num_vec</declname>
+        </param>
+        <param>
+          <type>int64_t *</type>
+          <declname>nnz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the pointer to the sparse feature matrix (swig compatible) num_feat,num_vectors are returned by reference</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features in matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors in matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nnz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of nonzero elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="535" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="533" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a9e1dc7ddd6af5f3ebd1698e1c32d89b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSparseFeatures&lt; ST &gt;::clean_tsparse</definition>
+        <argsstring>(TSparse&lt; ST &gt; *sfm, int32_t num_vec)</argsstring>
+        <name>clean_tsparse</name>
+        <param>
+          <type><ref refid="structshogun_1_1TSparse" kindref="compound">TSparse</ref>&lt; ST &gt; *</type>
+          <declname>sfm</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clean <ref refid="structshogun_1_1TSparse" kindref="compound">TSparse</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sfm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sparse feature matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="548" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="547" bodyend="556"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1ad9b9cda626eb6cfa33884f0320a9ad86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structshogun_1_1TSparse" kindref="compound">TSparse</ref>&lt; ST &gt; *</type>
+        <definition>TSparse&lt;ST&gt;* shogun::CSparseFeatures&lt; ST &gt;::get_transposed</definition>
+        <argsstring>(int32_t &amp;num_feat, int32_t &amp;num_vec)</argsstring>
+        <name>get_transposed</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute and return the transpose of the sparse feature matrix which will be prepocessed. num_feat, num_vectors are returned by reference caller has to clean up</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features in matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>transposed sparse feature matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="568" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="567" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1ae494e2f65c0d0e7abd8a0a591556367d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CSparseFeatures&lt; ST &gt;::set_sparse_feature_matrix</definition>
+        <argsstring>(TSparse&lt; ST &gt; *src, int32_t num_feat, int32_t num_vec)</argsstring>
+        <name>set_sparse_feature_matrix</name>
+        <param>
+          <type><ref refid="structshogun_1_1TSparse" kindref="compound">TSparse</ref>&lt; ST &gt; *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set feature matrix necessary to set feature_matrix, num_features, num_vectors, where num_features is the column offset, and columns are linear in memory see below for definition of feature_matrix</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new sparse feature matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features in matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="631" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="630" bodyend="637"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a16c863ba2d0e524a9235915ac52e5b20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ST *</type>
+        <definition>ST* shogun::CSparseFeatures&lt; ST &gt;::get_full_feature_matrix</definition>
+        <argsstring>(int32_t &amp;num_feat, int32_t &amp;num_vec)</argsstring>
+        <name>get_full_feature_matrix</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gets a copy of a full feature matrix num_feat,num_vectors are returned by reference</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features in matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>full feature matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="647" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="646" bodyend="672"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a2cc9e7f367fe05f5562be357a2b63005" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSparseFeatures&lt; ST &gt;::get_full_feature_matrix</definition>
+        <argsstring>(ST **dst, int32_t *num_feat, int32_t *num_vec)</argsstring>
+        <name>get_full_feature_matrix</name>
+        <param>
+          <type>ST **</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gets a copy of a full feature matrix (swig compatible) num_feat,num_vectors are returned by reference</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full feature matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features in matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="682" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="681" bodyend="705"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1ad2fe043cd58366c477c2bfc49d486c67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSparseFeatures&lt; ST &gt;::set_full_feature_matrix</definition>
+        <argsstring>(ST *src, int32_t num_feat, int32_t num_vec)</argsstring>
+        <name>set_full_feature_matrix</name>
+        <param>
+          <type>ST *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>creates a sparse feature matrix from a full dense feature matrix necessary to set feature_matrix, num_features and num_vectors where num_features is the column offset, and columns are linear in memory see above for definition of sparse_feature_matrix</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full feature matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features in matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="717" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="716" bodyend="798"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a909ef1a190427a350dbf54e059b7ae16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSparseFeatures&lt; ST &gt;::apply_preproc</definition>
+        <argsstring>(bool force_preprocessing=false)</argsstring>
+        <name>apply_preproc</name>
+        <param>
+          <type>bool</type>
+          <declname>force_preprocessing</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>apply preprocessor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>force_preprocessing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if preprocssing shall be forced </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if applying was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="806" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="805" bodyend="829"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a1ca267b8fbb088e0085ca9d2bd2df22f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CSparseFeatures&lt; ST &gt;::get_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_size</name>
+        <reimplements refid="classshogun_1_1CFeatures_1aeed80a002f6255d1ca5c8d1698deb7bc">get_size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get memory footprint of one feature</para><para><simplesect kind="return"><para>memory footprint of one feature </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="835" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="835" bodyend="835"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1ab852425e6c3318d715c72e07a2806d07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CSparseFeatures&lt; ST &gt;::obtain_from_simple</definition>
+        <argsstring>(CSimpleFeatures&lt; ST &gt; *sf)</argsstring>
+        <name>obtain_from_simple</name>
+        <param>
+          <type><ref refid="classshogun_1_1CSimpleFeatures" kindref="compound">CSimpleFeatures</ref>&lt; ST &gt; *</type>
+          <declname>sf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>obtain sparse features from simple features</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>simple features </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if obtaining was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="843" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="842" bodyend="850"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1af0609e2d82ee045994ab76d356298337" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CSparseFeatures&lt; ST &gt;::get_num_vectors</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_vectors</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a1f30fccf7c6c9af03277d75d0d983c52">get_num_vectors</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of feature vectors</para><para><simplesect kind="return"><para>number of feature vectors </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="856" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="856" bodyend="856"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a00a195754b24ce5e40fc999ad90d2e8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSparseFeatures&lt; ST &gt;::get_num_features</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of features</para><para><simplesect kind="return"><para>number of features </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="862" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="862" bodyend="862"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1afd80f71f857b798bfd7131763dcf4d33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSparseFeatures&lt; ST &gt;::set_num_features</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>set_num_features</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set number of features</para><para>Sometimes when loading sparse features not all possible dimensions are used. This may pose a problem to classifiers when being applied to higher dimensional test-data. This function allows to artificially explode the feature space</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of features, must be larger than the current number of features </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>previous number of features </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="876" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="875" bodyend="881"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1aca2155645b2001d5f750c9ffbf12b5cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureClass</type>
+        <definition>virtual EFeatureClass shogun::CSparseFeatures&lt; ST &gt;::get_feature_class</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_class</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a8e1c6229db82a9215cb2994202e657f5">get_feature_class</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature class</para><para><simplesect kind="return"><para>feature class SPARSE </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="887" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="887" bodyend="887"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a4dc36d165878b63d0eba2b63283dfb59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureType</type>
+        <definition>virtual EFeatureType shogun::CSparseFeatures&lt; ST &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type</para><para><simplesect kind="return"><para>templated feature type </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="893"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a92044c0136d48c760ccbcc23018d4bb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSparseFeatures&lt; ST &gt;::free_feature_vector</definition>
+        <argsstring>(TSparseEntry&lt; ST &gt; *feat_vec, int32_t num, bool free)</argsstring>
+        <name>free_feature_vector</name>
+        <param>
+          <type><ref refid="structshogun_1_1TSparseEntry" kindref="compound">TSparseEntry</ref>&lt; ST &gt; *</type>
+          <declname>feat_vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>free</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>free feature vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>feat_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature vector to free </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of vector in cache </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>free</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if vector really should be deleted </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="902" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="901" bodyend="908"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1aa853fc6365b91d675b829e33cfe316f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t shogun::CSparseFeatures&lt; ST &gt;::get_num_nonzero_entries</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_nonzero_entries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of non-zero entries in sparse feature matrix</para><para><simplesect kind="return"><para>number of non-zero entries in sparse feature matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="915" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="914" bodyend="921"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1adb789a273f2b260af1f4f8eb3ada9457" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSparseFeatures&lt; ST &gt;::compute_squared</definition>
+        <argsstring>(float64_t *sq)</argsstring>
+        <name>compute_squared</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>sq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute a^2 on all feature vectors</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the square for each vector is stored in here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the square for each vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="929" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="928" bodyend="947"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a20de3c8044f6db00245748d12d81a236" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSparseFeatures&lt; ST &gt;::compute_squared_norm</definition>
+        <argsstring>(CSparseFeatures&lt; float64_t &gt; *lhs, float64_t *sq_lhs, int32_t idx_a, CSparseFeatures&lt; float64_t &gt; *rhs, float64_t *sq_rhs, int32_t idx_b)</argsstring>
+        <name>compute_squared_norm</name>
+        <param>
+          <type><ref refid="classshogun_1_1CSparseFeatures" kindref="compound">CSparseFeatures</ref>&lt; float64_t &gt; *</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>sq_lhs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_a</declname>
+        </param>
+        <param>
+          <type><ref refid="classshogun_1_1CSparseFeatures" kindref="compound">CSparseFeatures</ref>&lt; float64_t &gt; *</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>sq_rhs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute (a-b)^2 (== a^2+b^2+2ab) usually called by kernels&apos;/distances&apos; compute functions works on two feature vectors, although it is a member of a single feature: can either be called by lhs or rhs.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>left-hand side features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sq_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>squared values of left-hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of left-hand side&apos;s vector to compute </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>right-hand side features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sq_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>squared values of right-hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of right-hand side&apos;s vector to compute </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="962" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="961" bodyend="1015"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a0d59c56877579609f6047e4b3128aa38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CLabels" kindref="compound">CLabels</ref> *</type>
+        <definition>CLabels* shogun::CSparseFeatures&lt; ST &gt;::load_svmlight_file</definition>
+        <argsstring>(char *fname, bool do_sort_features=true)</argsstring>
+        <name>load_svmlight_file</name>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>do_sort_features</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load features from file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>do_sort_features</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true features will be sorted to ensure they are in ascending order </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>label object with corresponding labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1025" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1024" bodyend="1187"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a2a4c15aacbfa7f6693e1db9dbd0c6de8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSparseFeatures&lt; ST &gt;::sort_features</definition>
+        <argsstring>()</argsstring>
+        <name>sort_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ensure that features occur in ascending order, only call when no preprocessors are attached </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1192" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1191" bodyend="1231"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1ac96890cc91a7d37251a0cc5b17e59130" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CSparseFeatures&lt; ST &gt;::write_svmlight_file</definition>
+        <argsstring>(char *fname, CLabels *label)</argsstring>
+        <name>write_svmlight_file</name>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type><ref refid="classshogun_1_1CLabels" kindref="compound">CLabels</ref> *</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>write features to file using svm light format</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to write to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Label object (number of labels must correspond to number of features) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1240" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1239" bodyend="1270"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a860552a398288cb75a048fb8ad62477b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CSparseFeatures&lt; ST &gt;::get_dim_feature_space</definition>
+        <argsstring>()</argsstring>
+        <name>get_dim_feature_space</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a49b51004870dd777108e8935c5102070">get_dim_feature_space</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>obtain the dimensionality of the feature space</para><para>(not mix this up with the dimensionality of the input space, usually obtained via <ref refid="classshogun_1_1CSparseFeatures_1a00a195754b24ce5e40fc999ad90d2e8e" kindref="member">get_num_features()</ref>)</para><para><simplesect kind="return"><para>dimensionality </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1280" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1279" bodyend="1282"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a7447dcfa69aeba2557f1e8cc0bc5d361" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CSparseFeatures&lt; ST &gt;::dot</definition>
+        <argsstring>(int32_t vec_idx1, int32_t vec_idx2)</argsstring>
+        <name>dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1aceb2b9cfc936eee500067ae102d2e0cb">dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and vector2, appointed by their indices</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec_idx2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of second vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1291" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1290" bodyend="1303"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a4cec79927967e498dcf01a2b169e4649" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CSparseFeatures&lt; ST &gt;::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1312" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1311" bodyend="1330"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a6c5904a7df26e0e0cf395cdb28799ad7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CSparseFeatures&lt; ST &gt;::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1333" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1333" bodyend="1333"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a86ac7005a7dc19f2e1b1cca58e50d486" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSparseFeatures&lt; bool &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the BOOL feature can deal with</para><para><simplesect kind="return"><para>feature type BOOL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1372" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1371" bodyend="1374"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1ad45f2a33b6ead563ea8ba03dd9b4643d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSparseFeatures&lt; char &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the CHAR feature can deal with</para><para><simplesect kind="return"><para>feature type CHAR </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1381" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1380" bodyend="1383"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a732627228c668481144f2deff9aeeb23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSparseFeatures&lt; uint8_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the BYTE feature can deal with</para><para><simplesect kind="return"><para>feature type BYTE </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1390" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1389" bodyend="1392"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a5a40b8c62da6109fc33983fd6b2ccefe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSparseFeatures&lt; int16_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the SHORT feature can deal with</para><para><simplesect kind="return"><para>feature type SHORT </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1399" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1398" bodyend="1401"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a0060e873c6f7fd2db1b2e2e76a718ca0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSparseFeatures&lt; uint16_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the WORD feature can deal with</para><para><simplesect kind="return"><para>feature type WORD </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1408" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1407" bodyend="1410"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a6f667e02557a043ad7f7f126f5f44cc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSparseFeatures&lt; int32_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the INT feature can deal with</para><para><simplesect kind="return"><para>feature type INT </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1417" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1416" bodyend="1419"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a31a9b4a01fc15e0d991c1a2804fdbebc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSparseFeatures&lt; uint32_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the UINT feature can deal with</para><para><simplesect kind="return"><para>feature type UINT </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1426" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1425" bodyend="1428"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1add05ee27f75fbd9e86fa57f8beca9a49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSparseFeatures&lt; int64_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the LONG feature can deal with</para><para><simplesect kind="return"><para>feature type LONG </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1435" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1434" bodyend="1437"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a82922a9ce4b5fe8f623d855606b07ab7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSparseFeatures&lt; uint64_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the ULONG feature can deal with</para><para><simplesect kind="return"><para>feature type ULONG </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1444" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1443" bodyend="1446"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1ab32db0ffb39e884fd63f05be6ab5addd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSparseFeatures&lt; float32_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the SHORTREAL feature can deal with</para><para><simplesect kind="return"><para>feature type SHORTREAL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1453" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1452" bodyend="1455"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a816fe66cff3849d7661266b960408349" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSparseFeatures&lt; float64_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the DREAL feature can deal with</para><para><simplesect kind="return"><para>feature type DREAL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1462" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1461" bodyend="1464"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1af939128fdf123722b495530a1867e4cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSparseFeatures&lt; floatmax_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the LONGREAL feature can deal with</para><para><simplesect kind="return"><para>feature type LONGREAL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1471" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1470" bodyend="1473"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CSparseFeatures_1a5d47ad6de5f467bfd4d82361980174c0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="structshogun_1_1TSparseEntry" kindref="compound">TSparseEntry</ref>&lt; ST &gt; *</type>
+        <definition>virtual TSparseEntry&lt;ST&gt;* shogun::CSparseFeatures&lt; ST &gt;::compute_sparse_feature_vector</definition>
+        <argsstring>(int32_t num, int32_t &amp;len, TSparseEntry&lt; ST &gt; *target=NULL)</argsstring>
+        <name>compute_sparse_feature_vector</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type><ref refid="structshogun_1_1TSparseEntry" kindref="compound">TSparseEntry</ref>&lt; ST &gt; *</type>
+          <declname>target</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute feature vector for sample num if target is set the vector is written to target len is returned by reference</para><para>NOT IMPLEMENTED!</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>num </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>target </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="1347" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="1346" bodyend="1350"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class SparseFeatures implements sparse matrices. </para>    </briefdescription>
+    <detaileddescription>
+<para>Features are an array of <ref refid="structshogun_1_1TSparse" kindref="compound">TSparse</ref>, sorted w.r.t. vec_index (increasing) and withing same vec_index w.r.t. feat_index (increasing);</para><para>Sparse feature vectors can be accessed via <ref refid="classshogun_1_1CSparseFeatures_1a31e207fa079dcb7ad9754537dc78e257" kindref="member">get_sparse_feature_vector()</ref> and should be freed (this operation is a NOP in most cases) via <ref refid="classshogun_1_1CSparseFeatures_1ac3f7316b1e370347ba0dbb73965ba343" kindref="member">free_sparse_feature_vector()</ref>.</para><para>As this is a template class it can directly be used for different data types like sparse matrices of real valued, integer, byte etc type. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="104">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="105" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+      <node id="103">
+        <label>shogun::CSparseFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CSparseFeatures"/>
+        <childnode refid="104" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="107">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="108" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+      <node id="106">
+        <label>shogun::CSparseFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CSparseFeatures"/>
+        <childnode refid="107" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="75" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="74" bodyend="1365"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CFeatures_1a793f371cc7dd4897997b01612f7d4b77" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>add_preproc</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1ab55b8cb6cf5a4adc67c20adff02fa4b6" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>add_to_dense_vec</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a909ef1a190427a350dbf54e059b7ae16" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>apply_preproc</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ad688539536313914ec3711bce1739445" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a040fa070f47a2845e5fdcb89ca7c4565" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a91054c534e25c0e934ebb1a2b7217d2a" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a91ac9daf871dd99b358da47eea74eeb3" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1be7a2c5d471a3586c44988e2b4e1129" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a4ad3a39235806ab1999a1c5fb5290486" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a89609a765e1ab682ea6e73402b56c961" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>check_feature_compatibility</name></member>
+      <member refid="classshogun_1_1CFeatures_1afab00f1403d1349fd18cca31a6d63de3" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>clean_preprocs</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a9e1dc7ddd6af5f3ebd1698e1c32d89b5" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>clean_tsparse</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a4cb73c0a47276f345c49bc583d8344b2" prot="protected" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>combined_weight</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a5d47ad6de5f467bfd4d82361980174c0" prot="protected" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>compute_sparse_feature_vector</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1adb789a273f2b260af1f4f8eb3ada9457" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>compute_squared</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a20de3c8044f6db00245748d12d81a236" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>compute_squared_norm</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1abcd2914ce32858839272be3d4fc6fe87" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>CSparseFeatures</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a6415dc0aabec8a51a896f6b98cf21346" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>CSparseFeatures</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1ab7c68c843cb20f2d404d9795e5eec7ad" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>CSparseFeatures</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a82f59d9054911812b681feb1bcac2b35" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>CSparseFeatures</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a2945e7b737284b495fa6e4eb0ec63e30" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>CSparseFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1accdc453796e319852dd41fffa0c0f70c" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>del_preproc</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a103af2ee7e27884accf662fb8a3a565b" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a4cec79927967e498dcf01a2b169e4649" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ae81ed7be6b000db0ae624eb781e93590" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>dense_dot_range</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a2a69a10f3ffcc5ed76322ebbd09b5fcb" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>dense_dot_range_helper</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a01ce37f41f397454c58bc2f05987d0c1" prot="protected" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>display_progress</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a7447dcfa69aeba2557f1e8cc0bc5d361" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a51f3ef5f1c3dd3d3fcb8b1bcecfd0f99" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>duplicate</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a6ff9d4d14b6be252bfdd18e434460a52" prot="protected" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>feature_cache</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a92044c0136d48c760ccbcc23018d4bb6" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>free_feature_vector</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1ac4e091dd9ac076e21dbae5dba6141438" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>free_sparse_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1ac3f7316b1e370347ba0dbb73965ba343" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>free_sparse_feature_vector</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a824ef80213f6f84f51d56bd4e9e63e6d" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>free_sparse_features</name></member>
+      <member refid="classshogun_1_1CFeatures_1a29b93c241dca0eba1415f873c83d27d8" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a199b84c188e8f98f088c248fe5c0adea" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>get_combined_feature_weight</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a860552a398288cb75a048fb8ad62477b" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_dim_feature_space</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1abe28382fb2677fc6d87a7dd8f5880d22" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>get_feature</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1aca2155645b2001d5f750c9ffbf12b5cc" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ab3b9a12fc4f02f03e8a655e8e4884058" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a4dc36d165878b63d0eba2b63283dfb59" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a86ac7005a7dc19f2e1b1cca58e50d486" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1ad45f2a33b6ead563ea8ba03dd9b4643d" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a732627228c668481144f2deff9aeeb23" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a5a40b8c62da6109fc33983fd6b2ccefe" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a0060e873c6f7fd2db1b2e2e76a718ca0" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a6f667e02557a043ad7f7f126f5f44cc7" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a31a9b4a01fc15e0d991c1a2804fdbebc" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1add05ee27f75fbd9e86fa57f8beca9a49" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a82922a9ce4b5fe8f623d855606b07ab7" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1ab32db0ffb39e884fd63f05be6ab5addd" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a816fe66cff3849d7661266b960408349" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1af939128fdf123722b495530a1867e4cf" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a16c863ba2d0e524a9235915ac52e5b20" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>get_full_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a2cc9e7f367fe05f5562be357a2b63005" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>get_full_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1aef09d801f17a0997c010e67d914918b2" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>get_full_feature_vector</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1abac1bbecc6b5eb100fed0938e46fa04a" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>get_full_feature_vector</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a6c5904a7df26e0e0cf395cdb28799ad7" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1ac110055b3c1b9ad787f4ab2bc0f2987f" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_nnz_features_for_vector</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a00a195754b24ce5e40fc999ad90d2e8e" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>get_num_features</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1aa853fc6365b91d675b829e33cfe316f8" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>get_num_nonzero_entries</name></member>
+      <member refid="classshogun_1_1CFeatures_1a7662d240eab24d5753385b0f9e6e9bae" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>get_num_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a9010a03b11399648cc5da7194fb5e707" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>get_num_preprocessed</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1af0609e2d82ee045994ab76d356298337" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_num_vectors</name></member>
+      <member refid="classshogun_1_1CFeatures_1ac1015e3a736e4e6d4d6fbe24416af6c4" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>get_preproc</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a1ca267b8fbb088e0085ca9d2bd2df22f" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>get_size</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a20557a1430b5a0a78ff0396e77aa5f62" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>get_sparse_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a225a6bce138d5808b76f0f7576fae6b3" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>get_sparse_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a31e207fa079dcb7ad9754537dc78e257" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>get_sparse_feature_vector</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1ad9b9cda626eb6cfa33884f0320a9ad86" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>get_transposed</name></member>
+      <member refid="classshogun_1_1CFeatures_1a07f1d7dc618a9f5f76663d80ad549d38" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1248f8829f63f9c9a42ac36065961295" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>is_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1a6412ef81478c3c9dadac2a87a544f640" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>list_feature_obj</name></member>
+      <member refid="classshogun_1_1CFeatures_1adef76a926672875a64aedd2b00c8f2bd" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>load</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a0d59c56877579609f6047e4b3128aa38" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>load_svmlight_file</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a9ef557ea69be6d6a21e655ba2c65f640" prot="protected" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>num_features</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a7b344e1d08a41ccdf0d605e9951fdd39" prot="protected" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>num_vectors</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1ab852425e6c3318d715c72e07a2806d07" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>obtain_from_simple</name></member>
+      <member refid="classshogun_1_1CFeatures_1a57d67048d44a7a7ea92bcbdfed9060ea" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>reshape</name></member>
+      <member refid="classshogun_1_1CFeatures_1ae1341e3fa42733d8729d8f2dcf73709b" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>save</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a3cbcb41f5f6fb4817568469120204c10" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>set_combined_feature_weight</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1ad2fe043cd58366c477c2bfc49d486c67" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>set_full_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1afd80f71f857b798bfd7131763dcf4d33" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>set_num_features</name></member>
+      <member refid="classshogun_1_1CFeatures_1aa88c27c0f3885d23ac71c4cc2e55c431" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>set_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab43db0bd4a231249ce4bc65f6e15f695" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1ae494e2f65c0d0e7abd8a0a591556367d" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>set_sparse_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a2a4c15aacbfa7f6693e1db9dbd0c6de8" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>sort_features</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a5fe424226f8bbe2191ad2b9a8d589781" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>sparse_dot</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a8fcebd1234e1e81489e7294e965aee02" prot="protected" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>sparse_feature_matrix</name></member>
+      <member refid="classshogun_1_1CFeatures_1a3ff3f03688a7f6a1b36dab8677407166" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1ac96890cc91a7d37251a0cc5b17e59130" prot="public" virt="non-virtual"><scope>shogun::CSparseFeatures</scope><name>write_svmlight_file</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a7c86c8f9ba308b59a8cf17f236be70d2" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>~CDotFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab0e2a8a18ac5056f802e4aa51d4fcd4f" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>~CFeatures</name></member>
+      <member refid="classshogun_1_1CSparseFeatures_1a673fd7f7d3c82536a1a2336cbbd8f275" prot="public" virt="virtual"><scope>shogun::CSparseFeatures</scope><name>~CSparseFeatures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

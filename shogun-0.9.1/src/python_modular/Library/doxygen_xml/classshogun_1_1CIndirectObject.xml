@@ -1,0 +1,878 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CIndirectObject" kind="class" prot="public">
+    <compoundname>shogun::CIndirectObject</compoundname>
+    <includes local="no">IndirectObject.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+      <param>
+        <type>class P</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CIndirectObject_1a372a6554400786eb7898aeb47ad36599" prot="protected" static="yes" mutable="no">
+        <type>P</type>
+        <definition>P shogun::CIndirectObject&lt; T, P &gt;::array</definition>
+        <argsstring></argsstring>
+        <name>array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>array </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="345" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CIndirectObject_1ac3029bb4293f94aaa7e2de9eb5966d5f" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CIndirectObject&lt; T, P &gt;::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>index into array </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="348" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1ac7b52a6cf54a0ab9a594ebff46fe8aff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CIndirectObject&lt; T, P &gt;::CIndirectObject</definition>
+        <argsstring>()</argsstring>
+        <name>CIndirectObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor (initializes index with -1) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="30" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1af26c5d29bf9fb3e815f845fa99ba4771" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CIndirectObject&lt; T, P &gt;::CIndirectObject</definition>
+        <argsstring>(int32_t idx)</argsstring>
+        <name>CIndirectObject</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="37" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1aae735ddff235c7b1a434935f2487eaf3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+        <definition>CIndirectObject&lt;T,P&gt;&amp; shogun::CIndirectObject&lt; T, P &gt;::operator=</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload = operator <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>assign elements from x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="76" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="75" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1a0eed71a7de8b18c6149f915c1797163c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CIndirectObject&lt; T, P &gt;::operator|</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x) const </argsstring>
+        <name>operator|</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload | operator and return x | y</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="86" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1aa3e02aaef068f8e6e04cf5bf20b2c887" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T</type>
+        <definition>const T shogun::CIndirectObject&lt; T, P &gt;::operator&amp;</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x) const </argsstring>
+        <name>operator&amp;</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload &amp; operator and return x &amp; y</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="95" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1abd603fd4cec3ead6e68fa75991548100" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CIndirectObject&lt; T, P &gt;::operator&lt;&lt;</definition>
+        <argsstring>(int shift)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>int</type>
+          <declname>shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload &lt;&lt; operator</para><para>perform bit shift to the left</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shift</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>shift by this amount </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="106" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1a044cb791e18cd8ab95b1b91efc746e12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CIndirectObject&lt; T, P &gt;::operator&gt;&gt;</definition>
+        <argsstring>(int shift)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>int</type>
+          <declname>shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload &gt;&gt; operator</para><para>perform bit shift to the right</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shift</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>shift by this amount </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="117" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1ada8a2a2aca5def1ea3c1810259e67b16" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CIndirectObject&lt; T, P &gt;::operator^</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x) const </argsstring>
+        <name>operator^</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload ^ operator and return x ^ y</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="126" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1aa963e9478f3ab27956c4c6c1e04c54b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CIndirectObject&lt; T, P &gt;::operator+</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload + operator and return x + y</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="135" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1a773f4ff95121f319ba4d6c4bb99c0d66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CIndirectObject&lt; T, P &gt;::operator-</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload - operator and return x - y</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="144" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="143" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1ad74ecedd8879e6d5a06234d84c09639e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CIndirectObject&lt; T, P &gt;::operator/</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x) const </argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload / operator and return x / y</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="153" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1a7ad6ebd63923bd344e7f8ff58eaadf98" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CIndirectObject&lt; T, P &gt;::operator*</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload * operator and return x * y</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="162" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1a056cea8d54cd7acbbb97470d8a1883fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+        <definition>CIndirectObject&lt;T,P&gt;&amp; shogun::CIndirectObject&lt; T, P &gt;::operator+=</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload += operator; add x to current element</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="171" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="170" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1a8d700fef00f1a5e53045c3c72109853f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+        <definition>CIndirectObject&lt;T,P&gt;&amp; shogun::CIndirectObject&lt; T, P &gt;::operator-=</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload -= operator; substract x from current element</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="181" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="180" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1ac8d14f3186bf2fad5862968ff4bf7414" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+        <definition>CIndirectObject&lt;T,P&gt;&amp; shogun::CIndirectObject&lt; T, P &gt;::operator*=</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload *= operator; multiple x to with current element</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="191" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="190" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1ad6f4cb8905c535fa496681bfc752266f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+        <definition>CIndirectObject&lt;T,P&gt;&amp; shogun::CIndirectObject&lt; T, P &gt;::operator/=</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload /= operator; divide current object by x</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="201" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="200" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1ab91c5a7422be830a1298329f66ad8fed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CIndirectObject&lt; T, P &gt;::operator==</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload == operator; test if current object equals x</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="211" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="210" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1aebedec950c99f7e7496fbf26f4abdc2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CIndirectObject&lt; T, P &gt;::operator&gt;=</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x) const </argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload &gt;= operator; test if current object greater equal x</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="220" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="219" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1a6d22e0bf664c9ebdc883aebce891acf8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CIndirectObject&lt; T, P &gt;::operator&lt;=</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x) const </argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload &lt;= operator; test if current object lower equal x</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="229" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="228" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1a1ba7d6e3cc14804f60d7bcaad507d559" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CIndirectObject&lt; T, P &gt;::operator&gt;</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x) const </argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload &gt; operator; test if current object is bigger than x</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="238" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="237" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1af6e3e693349f1282616542aa733423aa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CIndirectObject&lt; T, P &gt;::operator&lt;</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x) const </argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload &lt; operator; test if current object is smaller than x</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="247" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="246" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1ab4da604e0e2a662aba6b412a97e5d040" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CIndirectObject&lt; T, P &gt;::operator!=</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload ! operator; test if current object is not equal to x</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="256" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="255" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1a2e6132a0c73d02b7a30b940b1c283d39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+        <definition>CIndirectObject&lt;T,P&gt;&amp; shogun::CIndirectObject&lt; T, P &gt;::operator|=</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x)</argsstring>
+        <name>operator|=</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload |= operator</para><para>perform bitwise or with current element and x</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="267" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="266" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1ae14d8fb2c2a725f651cab6b23002d3b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+        <definition>CIndirectObject&lt;T,P&gt;&amp; shogun::CIndirectObject&lt; T, P &gt;::operator&amp;=</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x)</argsstring>
+        <name>operator&amp;=</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload &amp;= operator</para><para>perform bitwise and with current element and x</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="279" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="278" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1a2b98dc145f74731917278d9cf291395e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+        <definition>CIndirectObject&lt;T,P&gt;&amp; shogun::CIndirectObject&lt; T, P &gt;::operator^=</definition>
+        <argsstring>(const CIndirectObject&lt; T, P &gt; &amp;x)</argsstring>
+        <name>operator^=</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload ^= operator</para><para>perform bitwise xor with current element and x</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="291" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="290" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1abae159aef9fef6c14accbc3bc0db1126" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+        <definition>CIndirectObject&lt;T,P&gt;&amp; shogun::CIndirectObject&lt; T, P &gt;::operator&lt;&lt;=</definition>
+        <argsstring>(int shift)</argsstring>
+        <name>operator&lt;&lt;=</name>
+        <param>
+          <type>int</type>
+          <declname>shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload &lt;&lt;= operator</para><para>perform bit shift to the left</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shift</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>shift by this amount </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="303" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="302" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1a6f6b1b3a013c98fdbc4c4230cce865c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+        <definition>CIndirectObject&lt;T,P&gt;&amp; shogun::CIndirectObject&lt; T, P &gt;::operator&gt;&gt;=</definition>
+        <argsstring>(int shift)</argsstring>
+        <name>operator&gt;&gt;=</name>
+        <param>
+          <type>int</type>
+          <declname>shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>overload &gt;&gt;= operator</para><para>perform bit shift to the right</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shift</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>shift by this amount </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="315" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="314" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1a6e53a54a96614d7866d5796858f44a6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CIndirectObject&lt; T, P &gt;::operator~</definition>
+        <argsstring>()</argsstring>
+        <name>operator~</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>negate element </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="322" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="321" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1a1d2ff863ee469c36fc224bfca6e0b618" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CIndirectObject&lt; T, P &gt;::operator T</definition>
+        <argsstring>() const </argsstring>
+        <name>operator T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return array element </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="327" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="327" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1afae5613364b32fada355c769230bc0b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+        <definition>CIndirectObject&lt;T,P&gt;&amp; shogun::CIndirectObject&lt; T, P &gt;::operator--</definition>
+        <argsstring>()</argsstring>
+        <name>operator--</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>decrement element by one </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="331" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="330" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1a780bbd0dd6aa60ebd97cc276f11c900a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; &amp;</type>
+        <definition>CIndirectObject&lt;T,P&gt;&amp; shogun::CIndirectObject&lt; T, P &gt;::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>increment element by one </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="338" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="337" bodyend="341"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1a8ed16e09a3d2b04707cf16e199abcc79" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CIndirectObject&lt; T, P &gt;::set_array</definition>
+        <argsstring>(P a)</argsstring>
+        <name>set_array</name>
+        <param>
+          <type>P</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set array</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="46" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1a16e60e7da4a812d6db98e17e36be0f5c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>P</type>
+        <definition>static P shogun::CIndirectObject&lt; T, P &gt;::get_array</definition>
+        <argsstring>()</argsstring>
+        <name>get_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get array</para><para><simplesect kind="return"><para>array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="55" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CIndirectObject_1ad8599e2a6c6592dac4d4bc022b6784f2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CIndirectObject&lt; T, P &gt;::init_slice</definition>
+        <argsstring>(CIndirectObject&lt; T, P &gt; *a, int32_t len, int32_t start=0, int32_t stop=-1)</argsstring>
+        <name>init_slice</name>
+        <param>
+          <type><ref refid="classshogun_1_1CIndirectObject" kindref="compound">CIndirectObject</ref>&lt; T, P &gt; *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>stop</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize slice</para><para><simplesect kind="return"><para>array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="64" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="63" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>an array class that accesses elements indirectly via an index array. </para>    </briefdescription>
+    <detaileddescription>
+<para>It does not store the objects itself, but only indices to objects. This conveniently allows e.g. sorting the array without changing the order of objects (but only the order of their indices). </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" line="24" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/IndirectObject.h" bodystart="23" bodyend="349"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CIndirectObject_1a372a6554400786eb7898aeb47ad36599" prot="protected" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>array</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1ac7b52a6cf54a0ab9a594ebff46fe8aff" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>CIndirectObject</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1af26c5d29bf9fb3e815f845fa99ba4771" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>CIndirectObject</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1a16e60e7da4a812d6db98e17e36be0f5c" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>get_array</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1ac3029bb4293f94aaa7e2de9eb5966d5f" prot="protected" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>index</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1ad8599e2a6c6592dac4d4bc022b6784f2" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>init_slice</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1a1d2ff863ee469c36fc224bfca6e0b618" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator T</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1ab4da604e0e2a662aba6b412a97e5d040" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator!=</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1aa3e02aaef068f8e6e04cf5bf20b2c887" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator&amp;</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1ae14d8fb2c2a725f651cab6b23002d3b7" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator&amp;=</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1a7ad6ebd63923bd344e7f8ff58eaadf98" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator*</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1ac8d14f3186bf2fad5862968ff4bf7414" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator*=</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1aa963e9478f3ab27956c4c6c1e04c54b9" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator+</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1a780bbd0dd6aa60ebd97cc276f11c900a" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator++</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1a056cea8d54cd7acbbb97470d8a1883fb" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator+=</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1a773f4ff95121f319ba4d6c4bb99c0d66" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator-</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1afae5613364b32fada355c769230bc0b1" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator--</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1a8d700fef00f1a5e53045c3c72109853f" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator-=</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1ad74ecedd8879e6d5a06234d84c09639e" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator/</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1ad6f4cb8905c535fa496681bfc752266f" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator/=</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1af6e3e693349f1282616542aa733423aa" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator&lt;</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1abd603fd4cec3ead6e68fa75991548100" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1abae159aef9fef6c14accbc3bc0db1126" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator&lt;&lt;=</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1a6d22e0bf664c9ebdc883aebce891acf8" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator&lt;=</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1aae735ddff235c7b1a434935f2487eaf3" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator=</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1ab91c5a7422be830a1298329f66ad8fed" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator==</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1a1ba7d6e3cc14804f60d7bcaad507d559" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator&gt;</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1aebedec950c99f7e7496fbf26f4abdc2a" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator&gt;=</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1a044cb791e18cd8ab95b1b91efc746e12" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator&gt;&gt;</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1a6f6b1b3a013c98fdbc4c4230cce865c8" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator&gt;&gt;=</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1ada8a2a2aca5def1ea3c1810259e67b16" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator^</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1a2b98dc145f74731917278d9cf291395e" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator^=</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1a0eed71a7de8b18c6149f915c1797163c" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator|</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1a2e6132a0c73d02b7a30b940b1c283d39" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator|=</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1a6e53a54a96614d7866d5796858f44a6c" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>operator~</name></member>
+      <member refid="classshogun_1_1CIndirectObject_1a8ed16e09a3d2b04707cf16e199abcc79" prot="public" virt="non-virtual"><scope>shogun::CIndirectObject</scope><name>set_array</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

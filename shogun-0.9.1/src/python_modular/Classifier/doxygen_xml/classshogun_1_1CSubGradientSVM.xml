@@ -1,0 +1,1164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CSubGradientSVM" kind="class" prot="public">
+    <compoundname>shogun::CSubGradientSVM</compoundname>
+    <basecompoundref refid="classshogun_1_1CLinearClassifier" prot="public" virt="non-virtual">shogun::CLinearClassifier</basecompoundref>
+    <includes local="no">SubGradientSVM.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1abf0235b776843c8d9330c737c3716ef1" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSubGradientSVM::C1</definition>
+        <argsstring></argsstring>
+        <name>C1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>C1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="163" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a2fc4d84ed1a6d291427ce3d4828c3e33" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSubGradientSVM::C2</definition>
+        <argsstring></argsstring>
+        <name>C2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>C2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="165" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1ab47d32d0eba9d9501b9440d46d82da40" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSubGradientSVM::epsilon</definition>
+        <argsstring></argsstring>
+        <name>epsilon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>epsilon </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="167" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1aa0c2c4a92aff7d53965ac5672e4db4db" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSubGradientSVM::work_epsilon</definition>
+        <argsstring></argsstring>
+        <name>work_epsilon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>work epsilon </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="169" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1aabf11084dc459c0994bdcba9467ca7e2" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSubGradientSVM::autoselected_epsilon</definition>
+        <argsstring></argsstring>
+        <name>autoselected_epsilon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>autoselected epsilon </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="171" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a35889ab022009f9f7e82075843fb18ad" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSubGradientSVM::qpsize</definition>
+        <argsstring></argsstring>
+        <name>qpsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>qpsize </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="173" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a5f0056adb85bb1d5f32b370bf1c3db45" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSubGradientSVM::qpsize_max</definition>
+        <argsstring></argsstring>
+        <name>qpsize_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum qpsize </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="175" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1ac2bbb328c2387a4128436213cce5b838" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSubGradientSVM::qpsize_limit</definition>
+        <argsstring></argsstring>
+        <name>qpsize_limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>limit of qpsize </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="177" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1aa314b3fb384ce69d5b91e79dd836b23c" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CSubGradientSVM::use_bias</definition>
+        <argsstring></argsstring>
+        <name>use_bias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>shall bias be used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="179" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a2342c7b1f395f3094756a69f61b3c87c" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSubGradientSVM::last_it_noimprovement</definition>
+        <argsstring></argsstring>
+        <name>last_it_noimprovement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>last iteration no improvement </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="182" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1acd779216520454a3d393b6263fca325a" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSubGradientSVM::num_it_noimprovement</definition>
+        <argsstring></argsstring>
+        <name>num_it_noimprovement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of iterations no improvement </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="184" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1ac21c7fbb993c99c6f8bfadcadeb12a5e" prot="protected" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* shogun::CSubGradientSVM::active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0=not active, 1=active, 2=on boundary </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="188" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a3cac4fb26771823e59a808f66a30b466" prot="protected" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* shogun::CSubGradientSVM::old_active</definition>
+        <argsstring></argsstring>
+        <name>old_active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>old active </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="190" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1af7a0a2a235ae8901f8870bab4464a06a" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CSubGradientSVM::idx_active</definition>
+        <argsstring></argsstring>
+        <name>idx_active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>idx active </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="192" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a339b3981db1703fb82f88506de0f9404" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CSubGradientSVM::idx_bound</definition>
+        <argsstring></argsstring>
+        <name>idx_bound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>idx bound </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="194" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1abeb6d26b092f3dd5da73c95f706bd54f" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSubGradientSVM::delta_active</definition>
+        <argsstring></argsstring>
+        <name>delta_active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>delta active </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="196" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1acc933a68c079c2556c25417edb0b6f8c" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSubGradientSVM::delta_bound</definition>
+        <argsstring></argsstring>
+        <name>delta_bound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>delta bound </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="198" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1aabb65255f1352032c25de307d751b0e3" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSubGradientSVM::proj</definition>
+        <argsstring></argsstring>
+        <name>proj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>proj </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="200" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a289f829b941888e1bbf7c8b431975f03" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSubGradientSVM::tmp_proj</definition>
+        <argsstring></argsstring>
+        <name>tmp_proj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tmp proj </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="202" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a122f846f23565a5ffc3d004901bc8a69" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CSubGradientSVM::tmp_proj_idx</definition>
+        <argsstring></argsstring>
+        <name>tmp_proj_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tmp proj index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="204" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a47d4bf461bee3133b99ac99b111de08e" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSubGradientSVM::sum_CXy_active</definition>
+        <argsstring></argsstring>
+        <name>sum_CXy_active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sum CXy active </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="208" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a995914b20e2d87da5abb6e1d062ce08d" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSubGradientSVM::v</definition>
+        <argsstring></argsstring>
+        <name>v</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>v </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="210" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1ad5201d9e68dfbef5581ab837981b058a" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSubGradientSVM::old_v</definition>
+        <argsstring></argsstring>
+        <name>old_v</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>old v </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="212" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a8ab463fec88ce80f82d8a353ff14d014" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSubGradientSVM::sum_Cy_active</definition>
+        <argsstring></argsstring>
+        <name>sum_Cy_active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sum Cy active </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="214" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a281a93efd22d674f9c620fb7b3534066" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSubGradientSVM::grad_w</definition>
+        <argsstring></argsstring>
+        <name>grad_w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>grad w </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="218" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a2bb0616023f3a540ee1b2bfbe2b57ab0" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSubGradientSVM::grad_b</definition>
+        <argsstring></argsstring>
+        <name>grad_b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>grad b </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="220" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1aa5718640b614258b48b64efaaebaa746" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSubGradientSVM::grad_proj</definition>
+        <argsstring></argsstring>
+        <name>grad_proj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>grad proj </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="222" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a5112192ef2dcef555e667a20372d767c" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSubGradientSVM::hinge_point</definition>
+        <argsstring></argsstring>
+        <name>hinge_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>hinge point </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="224" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a475c97514f07b4339bf2a362dcf3d9e7" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CSubGradientSVM::hinge_idx</definition>
+        <argsstring></argsstring>
+        <name>hinge_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>hinge index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="226" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1abd01b16c81a2d4c60a86135e0fdf40e8" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSubGradientSVM::beta</definition>
+        <argsstring></argsstring>
+        <name>beta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>beta </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="230" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1acd0a16ace7734d24d60f8d6d9ae8c7ff" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSubGradientSVM::old_beta</definition>
+        <argsstring></argsstring>
+        <name>old_beta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>old beta </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="232" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a207b27c34b799a5ff7567f7c0f3fbccd" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSubGradientSVM::Zv</definition>
+        <argsstring></argsstring>
+        <name>Zv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Zv </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="234" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a4c26ea3de30993f2558cfb40e21be343" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSubGradientSVM::old_Zv</definition>
+        <argsstring></argsstring>
+        <name>old_Zv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>old Zv </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="236" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1afd1454ee9ee8dff1b9bc570d9c3fa22a" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSubGradientSVM::Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Z </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="238" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1a0119f4fa2673655fbe273325e936c31c" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CSubGradientSVM::old_Z</definition>
+        <argsstring></argsstring>
+        <name>old_Z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>old Z </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="240" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSubGradientSVM_1ac0472004ef73b4daac7edde343795fb2" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSubGradientSVM::tim</definition>
+        <argsstring></argsstring>
+        <name>tim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timing measurement </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="243" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1a4d7f7c8aec28a2f076033e738e136b59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSubGradientSVM::CSubGradientSVM</definition>
+        <argsstring>()</argsstring>
+        <name>CSubGradientSVM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1a5e7d4de2262cb4f7d2e0ea2bb0e90873" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSubGradientSVM::CSubGradientSVM</definition>
+        <argsstring>(float64_t C, CDotFeatures *traindat, CLabels *trainlab)</argsstring>
+        <name>CSubGradientSVM</name>
+        <param>
+          <type>float64_t</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>CDotFeatures *</type>
+          <declname>traindat</declname>
+        </param>
+        <param>
+          <type>CLabels *</type>
+          <declname>trainlab</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant C </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>traindat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>trainlab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>labels for training features </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1a9f73fb0254ff36443e38a745a690edc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CSubGradientSVM::~CSubGradientSVM</definition>
+        <argsstring>()</argsstring>
+        <name>~CSubGradientSVM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1a7db8f0ea6877c1b5e14a859de1922dad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EClassifierType</type>
+        <definition>virtual EClassifierType shogun::CSubGradientSVM::get_classifier_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_classifier_type</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a52d05215c6b6a252650c41a0b29d8cc5">get_classifier_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier type</para><para><simplesect kind="return"><para>classifier type SUBGRADIENTSVM </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="44" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1a261e022ca68a47eecf234e123f75bbbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSubGradientSVM::train</definition>
+        <argsstring>(CFeatures *data=NULL)</argsstring>
+        <name>train</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a9904cc0a8d7ec077cc1fede8d64ebb22">train</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>train SVM classifier</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training <ref refid="structshogun_1_1data" kindref="compound">data</ref> (parameter can be avoided if distance or kernel-based classifiers are used and distance/kernels are initialized with train <ref refid="structshogun_1_1data" kindref="compound">data</ref>)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether training was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1ac83c1b722e7b2bca4dd0276c1635ecba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSubGradientSVM::set_C</definition>
+        <argsstring>(float64_t c1, float64_t c2)</argsstring>
+        <name>set_C</name>
+        <param>
+          <type>float64_t</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set C</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new C1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new C2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="61" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1a92f0a578d796f08fe020ad9dcd5af195" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSubGradientSVM::get_C1</definition>
+        <argsstring>()</argsstring>
+        <name>get_C1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get C1</para><para><simplesect kind="return"><para>C1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="67" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1a322832775a8dcdf1a231661cc4d9983d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSubGradientSVM::get_C2</definition>
+        <argsstring>()</argsstring>
+        <name>get_C2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get C2</para><para><simplesect kind="return"><para>C2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="73" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1a7304ca44a687c80b0aa6b6541615117b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSubGradientSVM::set_bias_enabled</definition>
+        <argsstring>(bool enable_bias)</argsstring>
+        <name>set_bias_enabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enable_bias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set if bias shall be enabled</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable_bias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if bias shall be enabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="79" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1adbcc1220af7d55f3f8775525d730a8ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CSubGradientSVM::get_bias_enabled</definition>
+        <argsstring>()</argsstring>
+        <name>get_bias_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check if bias is enabled</para><para><simplesect kind="return"><para>if bias is enabled </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="85" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1ad7a29375101432e7fadaa3d99760fe04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSubGradientSVM::set_epsilon</definition>
+        <argsstring>(float64_t eps)</argsstring>
+        <name>set_epsilon</name>
+        <param>
+          <type>float64_t</type>
+          <declname>eps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set epsilon</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new epsilon </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="91" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1a8064933af419d962f66ecd2d2318d96e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSubGradientSVM::get_epsilon</definition>
+        <argsstring>()</argsstring>
+        <name>get_epsilon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get epsilon</para><para><simplesect kind="return"><para>epsilon </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="97" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1afabb0022e3edb2c4d49d286d059be2d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSubGradientSVM::set_qpsize</definition>
+        <argsstring>(int32_t q)</argsstring>
+        <name>set_qpsize</name>
+        <param>
+          <type>int32_t</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set qpsize</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new qpsize </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="103" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="103" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1ae860216b19f2bb9673de528b0eddb75f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSubGradientSVM::get_qpsize</definition>
+        <argsstring>()</argsstring>
+        <name>get_qpsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get qpsize</para><para><simplesect kind="return"><para>qpsize </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="109" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1a239d2009dd1a9ea8850eab5a1bd0c54a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSubGradientSVM::set_qpsize_max</definition>
+        <argsstring>(int32_t q)</argsstring>
+        <name>set_qpsize_max</name>
+        <param>
+          <type>int32_t</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set qpsize_max</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new qpsize_max </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="115" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1a998c746e3724a0b2d85c9723ad3bd9f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSubGradientSVM::get_qpsize_max</definition>
+        <argsstring>()</argsstring>
+        <name>get_qpsize_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get qpsize_max</para><para><simplesect kind="return"><para>qpsize_max </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="121" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="121" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1ae242b5415611ff635223a605a8d0b75b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSubGradientSVM::find_active</definition>
+        <argsstring>(int32_t num_feat, int32_t num_vec, int32_t &amp;num_active, int32_t &amp;num_bound)</argsstring>
+        <name>find_active</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_active</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_bound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>returns number of changed constraints for precision work_epsilon and fills active array </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1a73e4d93ba3423bf92dfd4ed099abc115" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSubGradientSVM::update_active</definition>
+        <argsstring>(int32_t num_feat, int32_t num_vec)</argsstring>
+        <name>update_active</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>swaps the active / old_active and computes idx_active, idx_bound and sum_CXy_active arrays and the sum_Cy_active variable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1a21631cf6ad1e45d0c78eb25ae9418a39" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSubGradientSVM::compute_objective</definition>
+        <argsstring>(int32_t num_feat, int32_t num_vec)</argsstring>
+        <name>compute_objective</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+<para>compute svm objective </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1ad10c09d24bb0de56d9dee9d165321cd1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSubGradientSVM::compute_min_subgradient</definition>
+        <argsstring>(int32_t num_feat, int32_t num_vec, int32_t num_active, int32_t num_bound)</argsstring>
+        <name>compute_min_subgradient</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_active</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_bound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute minimum norm subgradient return norm of minimum norm subgradient </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1a5b81eb465040f0799097a8d58f7c21d3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSubGradientSVM::line_search</definition>
+        <argsstring>(int32_t num_feat, int32_t num_vec)</argsstring>
+        <name>line_search</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+<para>performs a line search to determine step size </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1a9b49287aa57fb8433ceb31f4b07e7d73" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSubGradientSVM::compute_projection</definition>
+        <argsstring>(int32_t num_feat, int32_t num_vec)</argsstring>
+        <name>compute_projection</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+<para>compute projection </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1aaee824520bfb09e281e579469222a212" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSubGradientSVM::update_projection</definition>
+        <argsstring>(float64_t alpha, int32_t num_vec)</argsstring>
+        <name>update_projection</name>
+        <param>
+          <type>float64_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+<para>only computes updates on the projection </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1a658849177f0368a917b58d264a47cb0a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSubGradientSVM::init</definition>
+        <argsstring>(int32_t num_vec, int32_t num_feat)</argsstring>
+        <name>init</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <briefdescription>
+<para>alloc helper arrays </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1ae0cdb0c61e7e7e9e504876f680d101e9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSubGradientSVM::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <briefdescription>
+<para>de-alloc helper arrays </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSubGradientSVM_1abc79f3caab1929e91ff3e0d99cf7bb71" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CSubGradientSVM::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="159" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="159" bodyend="159"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class SubGradientSVM </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="263">
+        <label>shogun::CSubGradientSVM</label>
+        <link refid="classshogun_1_1CSubGradientSVM"/>
+        <childnode refid="264" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>shogun::CLinearClassifier</label>
+        <link refid="classshogun_1_1CLinearClassifier"/>
+        <childnode refid="265" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="265">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="266">
+        <label>shogun::CSubGradientSVM</label>
+        <link refid="classshogun_1_1CSubGradientSVM"/>
+        <childnode refid="267" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="267">
+        <label>shogun::CLinearClassifier</label>
+        <link refid="classshogun_1_1CLinearClassifier"/>
+        <childnode refid="268" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="268">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" line="24" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SubGradientSVM.h" bodystart="23" bodyend="244"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CSubGradientSVM_1ac21c7fbb993c99c6f8bfadcadeb12a5e" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>active</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1aabf11084dc459c0994bdcba9467ca7e2" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>autoselected_epsilon</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1abd01b16c81a2d4c60a86135e0fdf40e8" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>beta</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a8f920d6d3dce0a27cbb8b36aed8a6220" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>bias</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1abf0235b776843c8d9330c737c3716ef1" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>C1</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a2fc4d84ed1a6d291427ce3d4828c3e33" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>C2</name></member>
+      <member refid="classshogun_1_1CClassifier_1a37259b3ffbe96af1eda8dd2d9428221c" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>CClassifier</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1ac1f1aac929b7958f5a7d48d9ea40f2f2" prot="public" virt="virtual"><scope>shogun::CSubGradientSVM</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a15ae96a018644322d1c7848a44b1afce" prot="public" virt="virtual"><scope>shogun::CSubGradientSVM</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a3d2b2e860b03a856019e5eafb41a03e4" prot="public" virt="virtual"><scope>shogun::CSubGradientSVM</scope><name>classify_example</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1ae0cdb0c61e7e7e9e504876f680d101e9" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a1e353d4462e0c790543683a7cd35261c" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>CLinearClassifier</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1ad10c09d24bb0de56d9dee9d165321cd1" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>compute_min_subgradient</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a21631cf6ad1e45d0c78eb25ae9418a39" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>compute_objective</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a9b49287aa57fb8433ceb31f4b07e7d73" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>compute_projection</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a4d7f7c8aec28a2f076033e738e136b59" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>CSubGradientSVM</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a5e7d4de2262cb4f7d2e0ea2bb0e90873" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>CSubGradientSVM</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1abeb6d26b092f3dd5da73c95f706bd54f" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>delta_active</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1acc933a68c079c2556c25417edb0b6f8c" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>delta_bound</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1ab47d32d0eba9d9501b9440d46d82da40" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>epsilon</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1abd48587ed93efcbb8b1ea3c40c229b1e" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>features</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1ae242b5415611ff635223a605a8d0b75b" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>find_active</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a6966226c35c31bf278b6b038159786fe" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>get_bias</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1adbcc1220af7d55f3f8775525d730a8ba" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>get_bias_enabled</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a92f0a578d796f08fe020ad9dcd5af195" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>get_C1</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a322832775a8dcdf1a231661cc4d9983d" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>get_C2</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a7db8f0ea6877c1b5e14a859de1922dad" prot="public" virt="virtual"><scope>shogun::CSubGradientSVM</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a8064933af419d962f66ecd2d2318d96e" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>get_epsilon</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a8ee7a0fc2702e98784765eb8ecc5d8db" prot="public" virt="virtual"><scope>shogun::CSubGradientSVM</scope><name>get_features</name></member>
+      <member refid="classshogun_1_1CClassifier_1a787dcde8fe53a734fcb77f988d821408" prot="public" virt="virtual"><scope>shogun::CSubGradientSVM</scope><name>get_label</name></member>
+      <member refid="classshogun_1_1CClassifier_1a5f1f62d263b6201e1624990deadba5a8" prot="public" virt="virtual"><scope>shogun::CSubGradientSVM</scope><name>get_labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1a6e48967294c55850d95235d487ce2c02" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>get_max_train_time</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1abc79f3caab1929e91ff3e0d99cf7bb71" prot="protected" virt="virtual"><scope>shogun::CSubGradientSVM</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1ae860216b19f2bb9673de528b0eddb75f" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>get_qpsize</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a998c746e3724a0b2d85c9723ad3bd9f1" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>get_qpsize_max</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8a3acda6819b4a4b77b656b6b9e1817c" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>get_solver_type</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a847be7aabc3656ae0263e75b7e7933c6" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>get_w</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1aae7a04f5eeb75662a3740afa3662dd83" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>get_w</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a2bb0616023f3a540ee1b2bfbe2b57ab0" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>grad_b</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1aa5718640b614258b48b64efaaebaa746" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>grad_proj</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a281a93efd22d674f9c620fb7b3534066" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>grad_w</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a475c97514f07b4339bf2a362dcf3d9e7" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>hinge_idx</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a5112192ef2dcef555e667a20372d767c" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>hinge_point</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1af7a0a2a235ae8901f8870bab4464a06a" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>idx_active</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a339b3981db1703fb82f88506de0f9404" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>idx_bound</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a658849177f0368a917b58d264a47cb0a" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>init</name></member>
+      <member refid="classshogun_1_1CClassifier_1a68f1285e63422a24319ed95910d72f73" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>labels</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a2342c7b1f395f3094756a69f61b3c87c" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>last_it_noimprovement</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a5b81eb465040f0799097a8d58f7c21d3" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>line_search</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a78010edf322d0188013cadfd891c1f61" prot="public" virt="virtual"><scope>shogun::CSubGradientSVM</scope><name>load</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8524d634a67f3538b112f72d7835af46" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>max_train_time</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1acd779216520454a3d393b6263fca325a" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>num_it_noimprovement</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a3cac4fb26771823e59a808f66a30b466" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>old_active</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1acd0a16ace7734d24d60f8d6d9ae8c7ff" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>old_beta</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1ad5201d9e68dfbef5581ab837981b058a" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>old_v</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a0119f4fa2673655fbe273325e936c31c" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>old_Z</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a4c26ea3de30993f2558cfb40e21be343" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>old_Zv</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1aabb65255f1352032c25de307d751b0e3" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>proj</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a35889ab022009f9f7e82075843fb18ad" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>qpsize</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1ac2bbb328c2387a4128436213cce5b838" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>qpsize_limit</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a5f0056adb85bb1d5f32b370bf1c3db45" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>qpsize_max</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1ad6012c92f6dd565478a43da7e3c779ab" prot="public" virt="virtual"><scope>shogun::CSubGradientSVM</scope><name>save</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1af150779eb78b46fe736d56b06f76113d" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>set_bias</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a7304ca44a687c80b0aa6b6541615117b" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>set_bias_enabled</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1ac83c1b722e7b2bca4dd0276c1635ecba" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>set_C</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1ad7a29375101432e7fadaa3d99760fe04" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>set_epsilon</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1ac2ecfddeb611425961499b644a86acaf" prot="public" virt="virtual"><scope>shogun::CSubGradientSVM</scope><name>set_features</name></member>
+      <member refid="classshogun_1_1CClassifier_1aa6b87d22c14fc2b6970d8bf1edbb15fb" prot="public" virt="virtual"><scope>shogun::CSubGradientSVM</scope><name>set_labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1af8930a0a848388d8647c9e4604a7856d" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>set_max_train_time</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1afabb0022e3edb2c4d49d286d059be2d7" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>set_qpsize</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a239d2009dd1a9ea8850eab5a1bd0c54a" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>set_qpsize_max</name></member>
+      <member refid="classshogun_1_1CClassifier_1a4c87d6f3a2342c3053aeca82c3cf528c" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>set_solver_type</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a6e5d80ca592587317e5c8842d92c60f7" prot="public" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>set_w</name></member>
+      <member refid="classshogun_1_1CClassifier_1a360902e938d7b8890084c5bc6df617be" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>solver_type</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a47d4bf461bee3133b99ac99b111de08e" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>sum_CXy_active</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a8ab463fec88ce80f82d8a353ff14d014" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>sum_Cy_active</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1ac0472004ef73b4daac7edde343795fb2" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>tim</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a289f829b941888e1bbf7c8b431975f03" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>tmp_proj</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a122f846f23565a5ffc3d004901bc8a69" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>tmp_proj_idx</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a261e022ca68a47eecf234e123f75bbbe" prot="public" virt="virtual"><scope>shogun::CSubGradientSVM</scope><name>train</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a73e4d93ba3423bf92dfd4ed099abc115" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>update_active</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1aaee824520bfb09e281e579469222a212" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>update_projection</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1aa314b3fb384ce69d5b91e79dd836b23c" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>use_bias</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a995914b20e2d87da5abb6e1d062ce08d" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>v</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a3f02f85d6c001c1fcfb4f67fbddaffe8" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>w</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1ad0ca6a36ee07ca0beba61def547f6564" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>w_dim</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1aa0c2c4a92aff7d53965ac5672e4db4db" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>work_epsilon</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1afd1454ee9ee8dff1b9bc570d9c3fa22a" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>Z</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a207b27c34b799a5ff7567f7c0f3fbccd" prot="protected" virt="non-virtual"><scope>shogun::CSubGradientSVM</scope><name>Zv</name></member>
+      <member refid="classshogun_1_1CClassifier_1ae7d6c7d39fb314c1092163e958ef66a8" prot="public" virt="virtual"><scope>shogun::CSubGradientSVM</scope><name>~CClassifier</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a9c6ccea8f5bf3a0e055aec1b4ef9fdf2" prot="public" virt="virtual"><scope>shogun::CSubGradientSVM</scope><name>~CLinearClassifier</name></member>
+      <member refid="classshogun_1_1CSubGradientSVM_1a9f73fb0254ff36443e38a745a690edc3" prot="public" virt="virtual"><scope>shogun::CSubGradientSVM</scope><name>~CSubGradientSVM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="namespaceshogun" kind="namespace">
+    <compoundname>shogun</compoundname>
+    <innerclass refid="classshogun_1_1CBrayCurtisDistance" prot="public">shogun::CBrayCurtisDistance</innerclass>
+    <innerclass refid="classshogun_1_1CCanberraMetric" prot="public">shogun::CCanberraMetric</innerclass>
+    <innerclass refid="classshogun_1_1CCanberraWordDistance" prot="public">shogun::CCanberraWordDistance</innerclass>
+    <innerclass refid="classshogun_1_1CChebyshewMetric" prot="public">shogun::CChebyshewMetric</innerclass>
+    <innerclass refid="classshogun_1_1CChiSquareDistance" prot="public">shogun::CChiSquareDistance</innerclass>
+    <innerclass refid="classshogun_1_1CCosineDistance" prot="public">shogun::CCosineDistance</innerclass>
+    <innerclass refid="classshogun_1_1CDistance" prot="public">shogun::CDistance</innerclass>
+    <innerclass refid="classshogun_1_1CEuclidianDistance" prot="public">shogun::CEuclidianDistance</innerclass>
+    <innerclass refid="classshogun_1_1CGeodesicMetric" prot="public">shogun::CGeodesicMetric</innerclass>
+    <innerclass refid="classshogun_1_1CHammingWordDistance" prot="public">shogun::CHammingWordDistance</innerclass>
+    <innerclass refid="classshogun_1_1CJensenMetric" prot="public">shogun::CJensenMetric</innerclass>
+    <innerclass refid="classshogun_1_1CManhattanMetric" prot="public">shogun::CManhattanMetric</innerclass>
+    <innerclass refid="classshogun_1_1CManhattanWordDistance" prot="public">shogun::CManhattanWordDistance</innerclass>
+    <innerclass refid="classshogun_1_1CMinkowskiMetric" prot="public">shogun::CMinkowskiMetric</innerclass>
+    <innerclass refid="classshogun_1_1CRealDistance" prot="public">shogun::CRealDistance</innerclass>
+    <innerclass refid="classshogun_1_1CSimpleDistance" prot="public">shogun::CSimpleDistance</innerclass>
+    <innerclass refid="classshogun_1_1CSparseDistance" prot="public">shogun::CSparseDistance</innerclass>
+    <innerclass refid="classshogun_1_1CSparseEuclidianDistance" prot="public">shogun::CSparseEuclidianDistance</innerclass>
+    <innerclass refid="classshogun_1_1CStringDistance" prot="public">shogun::CStringDistance</innerclass>
+    <innerclass refid="classshogun_1_1CTanimotoDistance" prot="public">shogun::CTanimotoDistance</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405" prot="public" static="no">
+        <name>EDistanceType</name>
+        <enumvalue id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405a1b583d6d2f2e1ea9d053c904b34e3a1d" prot="public">
+          <name>D_UNKNOWN</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405a9082340dcf2f57a92c68656defef0627" prot="public">
+          <name>D_MINKOWSKI</name>
+          <initializer> 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405ad46ada8f471d186cad79073ee38cf802" prot="public">
+          <name>D_MANHATTAN</name>
+          <initializer> 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405a867300421121931506bb23d0eb3ce5bf" prot="public">
+          <name>D_CANBERRA</name>
+          <initializer> 30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405a6180b44853090159d2aadf940399e9fb" prot="public">
+          <name>D_CHEBYSHEW</name>
+          <initializer> 40</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405a0afbc6eca3881c4e896292388b6aceb9" prot="public">
+          <name>D_GEODESIC</name>
+          <initializer> 50</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405a0343cdb2256fdad3f10eb323fb50b7d3" prot="public">
+          <name>D_JENSEN</name>
+          <initializer> 60</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405ae3b5b26267f5c7ee54fa315f618e8e07" prot="public">
+          <name>D_MANHATTANWORD</name>
+          <initializer> 70</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405ac1582a06e71248cd21e899c9292f3199" prot="public">
+          <name>D_HAMMINGWORD</name>
+          <initializer> 80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405a1b2437f85c9fdefed76320b66098d7b7" prot="public">
+          <name>D_CANBERRAWORD</name>
+          <initializer> 90</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405aa2d04286d679a2425d617836525c93f1" prot="public">
+          <name>D_SPARSEEUCLIDIAN</name>
+          <initializer> 100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405a4614cb785c607d7a9259106a9286c8cd" prot="public">
+          <name>D_EUCLIDIAN</name>
+          <initializer> 110</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405a0444ec34ff75f7f3dac49fe34d0ce2be" prot="public">
+          <name>D_CHISQUARE</name>
+          <initializer> 120</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405aa018849c4d35c49184010203200c7268" prot="public">
+          <name>D_TANIMOTO</name>
+          <initializer> 130</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405ac56fcf44ec8e031b1f13e48741ae5ffd" prot="public">
+          <name>D_COSINE</name>
+          <initializer> 140</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1af10db555c179d6a9277b28c4707a0405a6926db8022a02acbfee2c1f2916d8e86" prot="public">
+          <name>D_BRAYCURTIS</name>
+          <initializer>150</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" line="30" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/Distance.h" bodystart="29" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/BrayCurtisDistance.h" line="19"/>
+  </compounddef>
+</doxygen>

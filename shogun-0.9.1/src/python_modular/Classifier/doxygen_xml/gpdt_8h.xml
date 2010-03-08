@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="gpdt_8h" kind="file">
+    <compoundname>gpdt.h</compoundname>
+    <includes local="yes">kernel/Kernel.h</includes>
+    <incdepgraph>
+      <node id="116">
+        <label>/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h</label>
+        <link refid="gpdt.h"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>kernel/Kernel.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classshogun_1_1sKernel" prot="public">shogun::sKernel</innerclass>
+    <innernamespace refid="namespaceshogun">shogun</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="gpdt_8h_1a1dbd686f69551b83691025eaae058539" prot="public" static="no">
+        <name>MAXLENGTH</name>
+        <initializer>256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="76" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gpdt_8h_1a6f93392649daccf3a038140a71e59268" prot="public" static="no">
+        <name>cachetype</name>
+        <initializer>KERNELCACHE_ELEM</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="77" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gpdt_8h_1afadaa60ef8a76a8968210fb56ef7babd" prot="public" static="no">
+        <name>EPS_SV</name>
+        <initializer>1.0e-9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" line="78" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GPDT<sp/>-<sp/>Gradient<sp/>Projection<sp/>Decomposition<sp/>Technique<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>******************************************************************************</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>***<sp/>GPDT<sp/>is<sp/>a<sp/>C++<sp/>software<sp/>designed<sp/>to<sp/>train<sp/>large-scale<sp/>Support<sp/>Vector<sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>***<sp/>Machines<sp/>for<sp/>binary<sp/>classification<sp/>in<sp/>both<sp/>scalar<sp/>and<sp/>distributed<sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>***<sp/>memory<sp/>parallel<sp/>environments.<sp/>It<sp/>uses<sp/>the<sp/>Joachims&apos;<sp/>problem<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>***<sp/>decomposition<sp/>technique<sp/>to<sp/>split<sp/>the<sp/>whole<sp/>quadratic<sp/>programming<sp/>(QP)<sp/><sp/>***</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>***<sp/>problem<sp/>into<sp/>a<sp/>sequence<sp/>of<sp/>smaller<sp/>QP<sp/>subproblems,<sp/>each<sp/>one<sp/>being<sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>***<sp/>solved<sp/>by<sp/>a<sp/>suitable<sp/>gradient<sp/>projection<sp/>method<sp/>(GPM).<sp/>The<sp/>presently<sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>***<sp/>implemented<sp/>GPMs<sp/>are<sp/>the<sp/>Generalized<sp/>Variable<sp/>Projection<sp/>Method<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>***<sp/>GVPM<sp/>(T.<sp/>Serafini,<sp/>G.<sp/>Zanghirati,<sp/>L.<sp/>Zanni,<sp/>&quot;Gradient<sp/>Projection<sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>***<sp/>Methods<sp/>for<sp/>Quadratic<sp/>Programs<sp/>and<sp/>Applications<sp/>in<sp/>Training<sp/>Support<sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>***<sp/>Vector<sp/>Machines&quot;;<sp/>Optim.<sp/>Meth.<sp/>Soft.<sp/>20,<sp/>2005,<sp/>353-378)<sp/>and<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>***<sp/>Dai-Fletcher<sp/>Method<sp/>DFGPM<sp/>(Y.<sp/>Dai<sp/>and<sp/>R.<sp/>Fletcher,&quot;New<sp/>Algorithms<sp/>for<sp/><sp/>***</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>***<sp/>Singly<sp/>Linear<sp/>Constrained<sp/>Quadratic<sp/>Programs<sp/>Subject<sp/>to<sp/>Lower<sp/>and<sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>***<sp/>Upper<sp/>Bounds&quot;;<sp/>Math.<sp/>Prog.<sp/>to<sp/>appear).<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***<sp/>Authors:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>***<sp/><sp/>Thomas<sp/>Serafini,<sp/>Luca<sp/>Zanni<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>***<sp/><sp/><sp/>Dept.<sp/>of<sp/>Mathematics,<sp/>University<sp/>of<sp/>Modena<sp/>and<sp/>Reggio<sp/>Emilia<sp/>-<sp/>ITALY<sp/>***</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>***<sp/><sp/><sp/>serafini.thomas@unimo.it,<sp/>zanni.luca@unimo.it<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>***<sp/><sp/>Gaetano<sp/>Zanghirati<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>***<sp/><sp/><sp/>Dept.<sp/>of<sp/>Mathematics,<sp/>University<sp/>of<sp/>Ferrara<sp/>-<sp/>ITALY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>***<sp/><sp/><sp/>g.zanghirati@unife.it<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>***<sp/>Software<sp/>homepage:<sp/>http://dm.unife.it/gpdt<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>***<sp/>This<sp/>work<sp/>is<sp/>supported<sp/>by<sp/>the<sp/>Italian<sp/>FIRB<sp/>Projects<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/>&apos;Statistical<sp/>Learning:<sp/>Theory,<sp/>Algorithms<sp/>and<sp/>Applications&apos;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/>(grant<sp/>RBAU01877P),<sp/>http://slipguru.disi.unige.it/ASTA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>***<sp/>and<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/>&apos;Parallel<sp/>Algorithms<sp/>and<sp/>Numerical<sp/>Nonlinear<sp/>Optimization&apos;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/>(grant<sp/>RBAU01JYPN),<sp/>http://dm.unife.it/pn2o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>***<sp/>Copyright<sp/>(C)<sp/>2004<sp/>by<sp/>T.<sp/>Serafini,<sp/>G.<sp/>Zanghirati,<sp/>L.<sp/>Zanni.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>COPYRIGHT<sp/>NOTIFICATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>***<sp/>Permission<sp/>to<sp/>copy<sp/>and<sp/>modify<sp/>this<sp/>software<sp/>and<sp/>its<sp/>documentation<sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>***<sp/>for<sp/>internal<sp/>research<sp/>use<sp/>is<sp/>granted,<sp/>provided<sp/>that<sp/>this<sp/>notice<sp/>is<sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>***<sp/>retained<sp/>thereon<sp/>and<sp/>on<sp/>all<sp/>copies<sp/>or<sp/>modifications.<sp/>The<sp/>authors<sp/>and<sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>***<sp/>their<sp/>respective<sp/>Universities<sp/>makes<sp/>no<sp/>representations<sp/>as<sp/>to<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>***<sp/>suitability<sp/>and<sp/>operability<sp/>of<sp/>this<sp/>software<sp/>for<sp/>any<sp/>purpose.<sp/>It<sp/>is<sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>***<sp/>provided<sp/>&quot;as<sp/>is&quot;<sp/>without<sp/>express<sp/>or<sp/>implied<sp/>warranty.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>***<sp/>Use<sp/>of<sp/>this<sp/>software<sp/>for<sp/>commercial<sp/>purposes<sp/>is<sp/>expressly<sp/>prohibited<sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>***<sp/>without<sp/>contacting<sp/>the<sp/>authors.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>***<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>***<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by<sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>***<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or<sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>***<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>***<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>***<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>***<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>***<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>***<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>***<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>***<sp/>Foundation,<sp/>Inc.,<sp/>675<sp/>Mass<sp/>Ave,<sp/>Cambridge,<sp/>MA<sp/>02139,<sp/>USA.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>***<sp/>File:<sp/><sp/><sp/><sp/><sp/>gpdt.h<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>***<sp/>Type:<sp/><sp/><sp/><sp/><sp/>scalar<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>***<sp/>Version:<sp/><sp/>1.0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>***<sp/>Date:<sp/><sp/><sp/><sp/><sp/>October,<sp/>2005<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>***<sp/>Revision:<sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>***<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;kernel/Kernel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">shogun</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXLENGTH<sp/>256</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>cachetype<sp/>KERNELCACHE_ELEM</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EPS_SV<sp/><sp/><sp/><sp/>1.0e-9<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>precision<sp/>for<sp/>multipliers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>SOLVER_VPM<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>SOLVER_FLETCHER<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="classshogun_1_1sKernel" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classshogun_1_1sKernel" kindref="compound">sKernel</ref></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><ref refid="classshogun_1_1sKernel_1a8241cfb189293f01a3d69967b3e9ca9d" kindref="member">ker_type</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/>*<ref refid="classshogun_1_1sKernel_1a34ffeade91ce3ed15c95be6f1b8e4ea5" kindref="member">lx</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/>**<ref refid="classshogun_1_1sKernel_1a156eb07f0ddbf44cf7c5714d6f25a3b7" kindref="member">ix</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>float32_t<sp/><sp/>**<ref refid="classshogun_1_1sKernel_1ad2070275b258c912e2bb69313fdca460" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>float64_t<sp/>*<ref refid="classshogun_1_1sKernel_1ae04fcba24df0582b5046cfdc8207f402" kindref="member">nor</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1sKernel_1a4ea75b24157e2dda7c8c392f451167b2" kindref="member">sigma</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1sKernel_1a3a5b7d3a5dc6ea3e229d075ff56f61a1" kindref="member">degree</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1sKernel_1a546d92405caa05b029abef5a18af51b2" kindref="member">norm</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1sKernel_1a55173194d8a2fd23047d2d3d3bcf6ec2" kindref="member">c_poly</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1sKernel_1a8b91c3eca64905b7e849976358ecd5cb" kindref="member">KernelEvaluations</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>float64_t<sp/>(<ref refid="classshogun_1_1sKernel" kindref="compound">sKernel</ref>::*<ref refid="classshogun_1_1sKernel_1a55150ca60f3929d5468db37bd0622127" kindref="member">kernel_fun</ref>)(int32_t<sp/>i,<sp/>int32_t<sp/>j);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><ref refid="classshogun_1_1sKernel_1a08bb5141cd86d13b3a7f7fcce2e14cf6" kindref="member">sKernel</ref><sp/>(shogun::CKernel*<sp/>k,<sp/>int32_t<sp/>ell);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>~<ref refid="classshogun_1_1sKernel" kindref="compound">sKernel</ref>();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1sKernel_1a46654e4ab6c14b7cc3a26441d60547f9" kindref="member">SetData</ref>(</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float32_t<sp/>**x_,<sp/>int32_t<sp/>**ix_,<sp/>int32_t<sp/>*lx_,<sp/>int32_t<sp/>ell,<sp/>int32_t<sp/>dim);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classshogun_1_1sKernel_1aa686fd86597ae119b83c69ffc8fc5561" kindref="member">SetSubproblem</ref><sp/>(<ref refid="classshogun_1_1sKernel" kindref="compound">sKernel</ref>*<sp/>ker,<sp/>int32_t<sp/>len,<sp/>int32_t<sp/>*perm);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1sKernel_1ac3eda258aa769a52cd5b449448dc438f" kindref="member">Get</ref>(int32_t<sp/>i,<sp/>int32_t<sp/>j)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1sKernel_1a8b91c3eca64905b7e849976358ecd5cb" kindref="member">KernelEvaluations</ref><sp/>+=<sp/>1.0F;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>kernel-&gt;kernel(i,<sp/>j);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classshogun_1_1sKernel_1ae1b13081bde30ceec350f759529abb65" kindref="member">Add</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(float64_t<sp/>*v,<sp/>int32_t<sp/>j,<sp/>float64_t<sp/>mul);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1sKernel_1a4f27f3b312112f20cc194d08da67f175" kindref="member">Prod</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(float64_t<sp/>*v,<sp/>int32_t<sp/>j);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>CKernel*<sp/><ref refid="classshogun_1_1sKernel_1a405644b79a1144700239d510986b5060" kindref="member">get_kernel</ref>()</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>kernel;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/>CKernel*<sp/>kernel;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/>vauxRow;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/>IsSubproblem;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/><sp/>ell,<sp/>dim;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>float32_t<sp/><sp/>*vaux;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/>float64_t<sp/>dot<sp/><sp/><sp/><sp/><sp/>(int32_t<sp/>i,<sp/>int32_t<sp/>j);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SplitParts<sp/>(</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>n,<sp/>int32_t<sp/>part,<sp/>int32_t<sp/>parts,<sp/>int32_t<sp/>*dim,<sp/>int32_t<sp/>*off);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SplitNum<sp/><sp/><sp/>(int32_t<sp/>n,<sp/>int32_t<sp/>*nloc,<sp/>int32_t<sp/>*noff);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight></codeline>
+<codeline lineno="197"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">/***<sp/>End<sp/>of<sp/>gpdt.h<sp/>file<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/gpdt.h"/>
+  </compounddef>
+</doxygen>

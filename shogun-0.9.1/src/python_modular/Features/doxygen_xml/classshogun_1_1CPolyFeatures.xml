@@ -1,0 +1,791 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CPolyFeatures" kind="class" prot="public">
+    <compoundname>shogun::CPolyFeatures</compoundname>
+    <basecompoundref refid="classshogun_1_1CDotFeatures" prot="public" virt="non-virtual">shogun::CDotFeatures</basecompoundref>
+    <includes local="no">PolyFeatures.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CPolyFeatures_1a8014827318e8403cb21be820628c0626" prot="protected" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1CSimpleFeatures" kindref="compound">CSimpleFeatures</ref>&lt; float64_t &gt; *</type>
+        <definition>CSimpleFeatures&lt;float64_t&gt;* shogun::CPolyFeatures::m_feat</definition>
+        <argsstring></argsstring>
+        <name>m_feat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>features in original space </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="188" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPolyFeatures_1afc50cc967a7d44d7a2e3739d6cf1a51b" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPolyFeatures::m_degree</definition>
+        <argsstring></argsstring>
+        <name>m_degree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>degree of the polynomial kernel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="190" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPolyFeatures_1a948df6044926a9a2560e4a1ab6918b62" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CPolyFeatures::m_normalize</definition>
+        <argsstring></argsstring>
+        <name>m_normalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="192" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPolyFeatures_1ab2c314aaa197619af31c52f3a523248d" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPolyFeatures::m_input_dimensions</definition>
+        <argsstring></argsstring>
+        <name>m_input_dimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dimensions of the input space </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="194" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPolyFeatures_1a5f553b557f266b2198b7e8a0a00f4c0c" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPolyFeatures::m_output_dimensions</definition>
+        <argsstring></argsstring>
+        <name>m_output_dimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dimensions of the feature space of the polynomial kernel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="196" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPolyFeatures_1a113517e21cae84bc73c15bfae81a57df" prot="protected" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* shogun::CPolyFeatures::m_multi_index</definition>
+        <argsstring></argsstring>
+        <name>m_multi_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flattened matrix of all multi indices that sum do the degree of the polynomial kernel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="199" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPolyFeatures_1a79ae1522943d9a0305ef265b634ecca8" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CPolyFeatures::m_multinomial_coefficients</definition>
+        <argsstring></argsstring>
+        <name>m_multinomial_coefficients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>multinomial coefficients for all multi-indices </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="201" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPolyFeatures_1a1360cdc016a689d97f47ac331735ab38" prot="protected" static="no" mutable="no">
+        <type>float32_t *</type>
+        <definition>float32_t* shogun::CPolyFeatures::m_normalization_values</definition>
+        <argsstring></argsstring>
+        <name>m_normalization_values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>store norm of each training example </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="203" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1ad9074bce1ab4ee1051f7436397f11e5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CPolyFeatures::CPolyFeatures</definition>
+        <argsstring>(CSimpleFeatures&lt; float64_t &gt; *feat, int32_t degree, bool normalize)</argsstring>
+        <name>CPolyFeatures</name>
+        <param>
+          <type><ref refid="classshogun_1_1CSimpleFeatures" kindref="compound">CSimpleFeatures</ref>&lt; float64_t &gt; *</type>
+          <declname>feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>degree</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>normalize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>real features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>degree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degree of the polynomial kernel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>normalize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>normalize kernel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1a04364c1ee7f1cabebd4f609e3868edfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CPolyFeatures::~CPolyFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>~CPolyFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1a2665ed6cd93c175c3e163c815bc8095d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CPolyFeatures::CPolyFeatures</definition>
+        <argsstring>(const CPolyFeatures &amp;orig)</argsstring>
+        <name>CPolyFeatures</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CPolyFeatures" kindref="compound">CPolyFeatures</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy constructor</para><para>not implemented!</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>original PolyFeature </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="42" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1a8b53cf4a106c211c626ddba2cda54828" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CPolyFeatures::get_dim_feature_space</definition>
+        <argsstring>()</argsstring>
+        <name>get_dim_feature_space</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a49b51004870dd777108e8935c5102070">get_dim_feature_space</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get dimensions of feature space</para><para><simplesect kind="return"><para>dimensions of feature space </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="51" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1ab73ce6806a2acbe7cd3df750d1debdf4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CPolyFeatures::get_nnz_features_for_vector</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>get_nnz_features_for_vector</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a45e751c294896ffb6faae83e0dc5f140">get_nnz_features_for_vector</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of non-zero features in vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of non-zero features in vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="61" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1a79914c256d20e7d88a9cd38b64486c0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureType</type>
+        <definition>virtual EFeatureType shogun::CPolyFeatures::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type</para><para><simplesect kind="return"><para>feature type </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="70" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1adfc40aba00de635fe274938020a9f264" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureClass</type>
+        <definition>virtual EFeatureClass shogun::CPolyFeatures::get_feature_class</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_class</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a8e1c6229db82a9215cb2994202e657f5">get_feature_class</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature class</para><para><simplesect kind="return"><para>feature class </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="79" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1adc6186a46966fb10a6d26d808f6446c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CPolyFeatures::get_num_vectors</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_vectors</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a1f30fccf7c6c9af03277d75d0d983c52">get_num_vectors</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of vectors</para><para><simplesect kind="return"><para>number of vectors </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="88" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="87" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1a5aae51d58f50d0dbf989df4884e40ebc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CPolyFeatures::dot</definition>
+        <argsstring>(int32_t vec_idx1, int32_t vec_idx2)</argsstring>
+        <name>dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1aceb2b9cfc936eee500067ae102d2e0cb">dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and vector2, appointed by their indices</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec_idx2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of second vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1a90a71f510ec73cfbccd6d50e1585d19c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CPolyFeatures::get_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_size</name>
+        <reimplements refid="classshogun_1_1CFeatures_1aeed80a002f6255d1ca5c8d1698deb7bc">get_size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>size </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="109" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1a2c6a442ac68766d0890fc0f882eda55a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+        <definition>CFeatures* shogun::CPolyFeatures::duplicate</definition>
+        <argsstring>() const </argsstring>
+        <name>duplicate</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a2f7adf01a52fee35ac71e455501125a9">duplicate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>duplicate feature object</para><para><simplesect kind="return"><para>feature object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1ac85f3eedfed798ab2dc360413eafd86a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CPolyFeatures::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>name of class </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="123" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1a589f000c95ed1a66ed05cea00a3919a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPolyFeatures::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product of vector with index arg1 with an given second vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of second vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1a944423d73646c1a3b4fcd62b1d875911" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void shogun::CPolyFeatures::add_to_dense_vec</definition>
+        <argsstring>(float64_t alpha, int32_t vec_idx1, float64_t *vec2, int32_t vec2_len, bool abs_val)</argsstring>
+        <name>add_to_dense_vec</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a96e00d9794bbe0ad0248bce58c4a346d">add_to_dense_vec</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>abs_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute alpha*x+vec2</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alpha </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector x </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vec2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of vec2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>abs_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true add the absolute value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="142"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1af5b28e701244d055a6702d8f98ebd3e3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPolyFeatures::store_normalization_values</definition>
+        <argsstring>()</argsstring>
+        <name>store_normalization_values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>store the norm of each training example </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1a4678ba8fef07c5231fdc7358f73440cc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPolyFeatures::store_multi_index</definition>
+        <argsstring>()</argsstring>
+        <name>store_multi_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>caller function for the recursive function enumerate_multi_index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1a185eb1e6b8ad8854ca6a3e5ed36b4c57" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPolyFeatures::enumerate_multi_index</definition>
+        <argsstring>(const int32_t feat_idx, uint16_t **index, uint16_t *exponents, const int32_t degree)</argsstring>
+        <name>enumerate_multi_index</name>
+        <param>
+          <type>const int32_t</type>
+          <declname>feat_idx</declname>
+        </param>
+        <param>
+          <type>uint16_t **</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>exponents</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>degree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>recursive function enumerating all multi-indices that sum up to the degree of the polynomial kernel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1a56871153ce52cc4324a7c1d15aaf6c49" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPolyFeatures::store_multinomial_coefficients</definition>
+        <argsstring>()</argsstring>
+        <name>store_multinomial_coefficients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>function calculating the multinomial coefficients for all multi indices </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1a1b5689b79225e9674b885bab4b0ebe1e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPolyFeatures::bico2</definition>
+        <argsstring>(int32_t n, int32_t k)</argsstring>
+        <name>bico2</name>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>simple recursive implementation of binomial coefficient which is very efficient if k is small, otherwise it calls a more sophisticated implementation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1ac759e58619569200118bbfefc68026b7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPolyFeatures::bico</definition>
+        <argsstring>(int32_t n, int32_t k)</argsstring>
+        <name>bico</name>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>efficient implementation for the binomial coefficient function for larger values of k </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1aa3b1f441148dcb1226741a34b8449729" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPolyFeatures::calc_feature_space_dimensions</definition>
+        <argsstring>(int32_t N, int32_t D)</argsstring>
+        <name>calc_feature_space_dimensions</name>
+        <param>
+          <type>int32_t</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>D</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>recursion to calculate the dimensions of the feature space: A(N, D)= sum_d=0^D A(N-1, d) A(1, D)==1 A(N, 0)==1 where N is the dimensionality of the input space and D is the degree </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1aab5e2dd99e8d7a233f6b95230800c020" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPolyFeatures::multinomialcoef</definition>
+        <argsstring>(int32_t *exps, int32_t len)</argsstring>
+        <name>multinomialcoef</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>exps</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>calculate the multinomial coefficient </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1ad23abbd2eace01a46a5a49b670f4f8b1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPolyFeatures::gammln</definition>
+        <argsstring>(float64_t xx)</argsstring>
+        <name>gammln</name>
+        <param>
+          <type>float64_t</type>
+          <declname>xx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>efficient implementation of the ln(gamma(x)) function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPolyFeatures_1a17f3cf5db0de599f476906be1eb05ffd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPolyFeatures::factln</definition>
+        <argsstring>(int32_t n)</argsstring>
+        <name>factln</name>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>implementation of the ln(x!) function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="183"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>implement DotFeatures for the polynomial kernel </para>    </briefdescription>
+    <detaileddescription>
+<para>see DotFeatures for further discription </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="82">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="83" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>shogun::CPolyFeatures</label>
+        <link refid="classshogun_1_1CPolyFeatures"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="85">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>shogun::CSimpleFeatures&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimpleFeatures"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>shogun::CPolyFeatures</label>
+        <link refid="classshogun_1_1CPolyFeatures"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+        <childnode refid="87" relation="usage">
+          <edgelabel>m_feat</edgelabel>
+        </childnode>
+      </node>
+      <node id="86">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" line="24" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/PolyFeatures.h" bodystart="23" bodyend="205"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CFeatures_1a793f371cc7dd4897997b01612f7d4b77" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>add_preproc</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a944423d73646c1a3b4fcd62b1d875911" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>add_to_dense_vec</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1ac759e58619569200118bbfefc68026b7" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>bico</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a1b5689b79225e9674b885bab4b0ebe1e" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>bico2</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1aa3b1f441148dcb1226741a34b8449729" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>calc_feature_space_dimensions</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ad688539536313914ec3711bce1739445" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a040fa070f47a2845e5fdcb89ca7c4565" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a91054c534e25c0e934ebb1a2b7217d2a" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a91ac9daf871dd99b358da47eea74eeb3" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1be7a2c5d471a3586c44988e2b4e1129" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a4ad3a39235806ab1999a1c5fb5290486" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a89609a765e1ab682ea6e73402b56c961" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>check_feature_compatibility</name></member>
+      <member refid="classshogun_1_1CFeatures_1afab00f1403d1349fd18cca31a6d63de3" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>clean_preprocs</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a4cb73c0a47276f345c49bc583d8344b2" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>combined_weight</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1ad9074bce1ab4ee1051f7436397f11e5a" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>CPolyFeatures</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a2665ed6cd93c175c3e163c815bc8095d" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>CPolyFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1accdc453796e319852dd41fffa0c0f70c" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>del_preproc</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a589f000c95ed1a66ed05cea00a3919a0" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ae81ed7be6b000db0ae624eb781e93590" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>dense_dot_range</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a2a69a10f3ffcc5ed76322ebbd09b5fcb" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>dense_dot_range_helper</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a01ce37f41f397454c58bc2f05987d0c1" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>display_progress</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a5aae51d58f50d0dbf989df4884e40ebc" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a2c6a442ac68766d0890fc0f882eda55a" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>duplicate</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a185eb1e6b8ad8854ca6a3e5ed36b4c57" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>enumerate_multi_index</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a17f3cf5db0de599f476906be1eb05ffd" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>factln</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1ad23abbd2eace01a46a5a49b670f4f8b1" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>gammln</name></member>
+      <member refid="classshogun_1_1CFeatures_1a29b93c241dca0eba1415f873c83d27d8" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a199b84c188e8f98f088c248fe5c0adea" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>get_combined_feature_weight</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a8b53cf4a106c211c626ddba2cda54828" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>get_dim_feature_space</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1adfc40aba00de635fe274938020a9f264" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ab3b9a12fc4f02f03e8a655e8e4884058" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>get_feature_matrix</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a79914c256d20e7d88a9cd38b64486c0a" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1ac85f3eedfed798ab2dc360413eafd86a" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1ab73ce6806a2acbe7cd3df750d1debdf4" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>get_nnz_features_for_vector</name></member>
+      <member refid="classshogun_1_1CFeatures_1a7662d240eab24d5753385b0f9e6e9bae" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>get_num_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a9010a03b11399648cc5da7194fb5e707" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>get_num_preprocessed</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1adc6186a46966fb10a6d26d808f6446c6" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>get_num_vectors</name></member>
+      <member refid="classshogun_1_1CFeatures_1ac1015e3a736e4e6d4d6fbe24416af6c4" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>get_preproc</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a90a71f510ec73cfbccd6d50e1585d19c" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>get_size</name></member>
+      <member refid="classshogun_1_1CFeatures_1a07f1d7dc618a9f5f76663d80ad549d38" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1248f8829f63f9c9a42ac36065961295" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>is_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1a6412ef81478c3c9dadac2a87a544f640" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>list_feature_obj</name></member>
+      <member refid="classshogun_1_1CFeatures_1adef76a926672875a64aedd2b00c8f2bd" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>load</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1afc50cc967a7d44d7a2e3739d6cf1a51b" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>m_degree</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a8014827318e8403cb21be820628c0626" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>m_feat</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1ab2c314aaa197619af31c52f3a523248d" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>m_input_dimensions</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a113517e21cae84bc73c15bfae81a57df" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>m_multi_index</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a79ae1522943d9a0305ef265b634ecca8" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>m_multinomial_coefficients</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a1360cdc016a689d97f47ac331735ab38" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>m_normalization_values</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a948df6044926a9a2560e4a1ab6918b62" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>m_normalize</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a5f553b557f266b2198b7e8a0a00f4c0c" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>m_output_dimensions</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1aab5e2dd99e8d7a233f6b95230800c020" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>multinomialcoef</name></member>
+      <member refid="classshogun_1_1CFeatures_1a57d67048d44a7a7ea92bcbdfed9060ea" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>reshape</name></member>
+      <member refid="classshogun_1_1CFeatures_1ae1341e3fa42733d8729d8f2dcf73709b" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>save</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a3cbcb41f5f6fb4817568469120204c10" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>set_combined_feature_weight</name></member>
+      <member refid="classshogun_1_1CFeatures_1aa88c27c0f3885d23ac71c4cc2e55c431" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>set_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab43db0bd4a231249ce4bc65f6e15f695" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a4678ba8fef07c5231fdc7358f73440cc" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>store_multi_index</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a56871153ce52cc4324a7c1d15aaf6c49" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>store_multinomial_coefficients</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1af5b28e701244d055a6702d8f98ebd3e3" prot="protected" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>store_normalization_values</name></member>
+      <member refid="classshogun_1_1CFeatures_1a3ff3f03688a7f6a1b36dab8677407166" prot="public" virt="non-virtual"><scope>shogun::CPolyFeatures</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a7c86c8f9ba308b59a8cf17f236be70d2" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>~CDotFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab0e2a8a18ac5056f802e4aa51d4fcd4f" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>~CFeatures</name></member>
+      <member refid="classshogun_1_1CPolyFeatures_1a04364c1ee7f1cabebd4f609e3868edfc" prot="public" virt="virtual"><scope>shogun::CPolyFeatures</scope><name>~CPolyFeatures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

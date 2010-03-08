@@ -1,0 +1,832 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CPlifMatrix" kind="class" prot="public">
+    <compoundname>shogun::CPlifMatrix</compoundname>
+    <includes local="no">PlifMatrix.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CPlifMatrix_1a79f4a5a1fdfee61af8d7bc687c3e8635" prot="protected" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1CPlif" kindref="compound">CPlif</ref> **</type>
+        <definition>CPlif** shogun::CPlifMatrix::m_PEN</definition>
+        <argsstring></argsstring>
+        <name>m_PEN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>array of plifs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="203" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlifMatrix_1a3bddb75cb6875f88bfe49139e518b4d2" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPlifMatrix::m_num_plifs</definition>
+        <argsstring></argsstring>
+        <name>m_num_plifs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of plifs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="206" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlifMatrix_1acff90a419bd0cb29d9c7634f715e54d1" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPlifMatrix::m_num_limits</definition>
+        <argsstring></argsstring>
+        <name>m_num_limits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of supporting points per plif </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="209" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlifMatrix_1ac2ad5b3c378b908d0f68225a1088b377" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; int32_t &gt;</type>
+        <definition>CArray&lt;int32_t&gt; shogun::CPlifMatrix::m_ids</definition>
+        <argsstring></argsstring>
+        <name>m_ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>plif ids </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="212" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlifMatrix_1a95d4895767d5c887af44e44c17a289a7" prot="protected" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1CPlifBase" kindref="compound">CPlifBase</ref> **</type>
+        <definition>CPlifBase** shogun::CPlifMatrix::m_plif_matrix</definition>
+        <argsstring></argsstring>
+        <name>m_plif_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>plif matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="215" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlifMatrix_1ac8c96ba5d8a41944195b1452156059f9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1CPlifBase" kindref="compound">CPlifBase</ref> **</type>
+        <definition>CPlifBase** shogun::CPlifMatrix::m_state_signals</definition>
+        <argsstring></argsstring>
+        <name>m_state_signals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>state signals </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="218" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a684955de1442341931a8773332807368" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CPlifMatrix::CPlifMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>CPlifMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a9e4c7ecbbb7c5a29fb5d202d52e26061" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CPlifMatrix::~CPlifMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>~CPlifMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a51cfc0194a81da539f7028a5f8a60708" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CPlif" kindref="compound">CPlif</ref> **</type>
+        <definition>CPlif** shogun::CPlifMatrix::get_PEN</definition>
+        <argsstring>()</argsstring>
+        <name>get_PEN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get array of all plifs</para><para><simplesect kind="return"><para>plif array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="45" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a05523e45838f43c345be064c502bac15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CPlifBase" kindref="compound">CPlifBase</ref> **</type>
+        <definition>CPlifBase** shogun::CPlifMatrix::get_plif_matrix</definition>
+        <argsstring>()</argsstring>
+        <name>get_plif_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get plif matrix</para><para><simplesect kind="return"><para>matrix of plifs </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="51" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a2e59c006d5c7d82d947f9a5902077644" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CPlifBase" kindref="compound">CPlifBase</ref> **</type>
+        <definition>CPlifBase** shogun::CPlifMatrix::get_state_signals</definition>
+        <argsstring>()</argsstring>
+        <name>get_state_signals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get plifs defining the mapping of signals to states</para><para><simplesect kind="return"><para>plifs </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="57" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a16a54e3dea46312ea5f33326b94938d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPlifMatrix::get_num_plifs</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_plifs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of plifs</para><para><simplesect kind="return"><para>number of plifs </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="63" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a5a6f2b19a3d6b39cf94d118a402a2712" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPlifMatrix::get_num_limits</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_limits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of support points for picewise linear transformations (PLiFs)</para><para><simplesect kind="return"><para>number of support points </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="69" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a5642a3c476c861a740d0f6436402693a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlifMatrix::create_plifs</definition>
+        <argsstring>(int32_t num_plifs, int32_t num_limits)</argsstring>
+        <name>create_plifs</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num_plifs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_limits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>create an empty plif matrix of size num_plifs * num_limits</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_plifs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of plifs </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_limits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of plif limits </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a8a9f3e75c62301fa1da74cf3c65f4ba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlifMatrix::set_plif_ids</definition>
+        <argsstring>(int32_t *ids, int32_t num_ids)</argsstring>
+        <name>set_plif_ids</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>ids</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_ids</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set plif ids</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>plif ids </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of ids </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a32857935cb00d3b82ac32ba2dc795541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlifMatrix::set_plif_min_values</definition>
+        <argsstring>(float64_t *min_values, int32_t num_values)</argsstring>
+        <name>set_plif_min_values</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>min_values</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set array of min values for all plifs</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of min values </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a9ec6cdd54ccd1084a48c765869b37ae3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlifMatrix::set_plif_max_values</definition>
+        <argsstring>(float64_t *max_values, int32_t num_values)</argsstring>
+        <name>set_plif_max_values</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>max_values</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set array of max values for all plifs</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of max values </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a667090f4976a4173f200cb36ec0c7dd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlifMatrix::set_plif_use_cache</definition>
+        <argsstring>(bool *use_cache, int32_t num_values)</argsstring>
+        <name>set_plif_use_cache</name>
+        <param>
+          <type>bool *</type>
+          <declname>use_cache</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set plif use cache</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>use_cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set array of bool values </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a99b5cac735064ff07d91b929ff9885a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlifMatrix::set_plif_use_svm</definition>
+        <argsstring>(int32_t *use_svm, int32_t num_values)</argsstring>
+        <name>set_plif_use_svm</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>use_svm</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set plif use svm</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>use_svm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>use svm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1aebe2a6830d90bd81b1c0a42c5b2175f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlifMatrix::set_plif_limits</definition>
+        <argsstring>(float64_t *limits, int32_t num_plifs, int32_t num_limits)</argsstring>
+        <name>set_plif_limits</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>limits</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_plifs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_limits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set all abscissa values of the support points for the for the pice wise linear transformations (PLiFs)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>limits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of length num_plifs*num_limits </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_plifs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of plifs </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_limits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of support vectors </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a6e75a49da1d2bc7ba3ead993c57100f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlifMatrix::set_plif_penalties</definition>
+        <argsstring>(float64_t *penalties, int32_t num_plifs, int32_t num_limits)</argsstring>
+        <name>set_plif_penalties</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>penalties</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_plifs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_limits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set all ordinate values of the support points for the for the pice wise linear transformations (PLiFs)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>penalties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>plif values: array of length num_plifs*num_limits </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_plifs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of plifs </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_limits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of support vectors </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a2a43d203f53beae5f823261baa4e784d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlifMatrix::set_plif_names</definition>
+        <argsstring>(T_STRING&lt; char &gt; *names, int32_t num_values, int32_t maxlen=0)</argsstring>
+        <name>set_plif_names</name>
+        <param>
+          <type>T_STRING&lt; char &gt; *</type>
+          <declname>names</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_values</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>maxlen</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set names for the PLiFs</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>names </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of names </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximal string len of the names </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a56bcd583a055a98423b48f05a968a8ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlifMatrix::set_plif_transform_type</definition>
+        <argsstring>(T_STRING&lt; char &gt; *transform_type, int32_t num_values, int32_t maxlen=0)</argsstring>
+        <name>set_plif_transform_type</name>
+        <param>
+          <type>T_STRING&lt; char &gt; *</type>
+          <declname>transform_type</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_values</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>maxlen</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set plif transform type; for some features the plifs live in log space therefore the input values have to be transformed to log space before the transformation can be applied; the transform type is string coded</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transform_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>transform type (e.g. LOG(x), LOG(x+1), ...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of transform strings </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of transform strings </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1ab95086a8f19472f40998fef4c6a5b7e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPlifMatrix::get_plif_id</definition>
+        <argsstring>(int32_t idx)</argsstring>
+        <name>get_plif_id</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return plif id for idx</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>idx of plif </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>id of plif </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="155" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" bodystart="154" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1ad9dd71d20f14836817a7179b7c307819" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CPlifMatrix::compute_plif_matrix</definition>
+        <argsstring>(float64_t *penalties_array, int32_t *Dim, int32_t numDims)</argsstring>
+        <name>compute_plif_matrix</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>penalties_array</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>Dim</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>numDims</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>parse an 3D array of plif ids and compute the corresponding 2D plif matrix by subsuming the third dim into one PlifArray; Note: the class PlifArray is derived from PlifBase. It computes all individual plifs and sums them up.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>penalties_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>3D array of plif ids (nofstates x nofstates x nof(features for each transition)) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of dimensions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numDims</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of dimensions </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>success </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1afbf224b6367480ebf11e190a2380cd2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CPlifMatrix::compute_signal_plifs</definition>
+        <argsstring>(int32_t *state_signals, int32_t feat_dim3, int32_t num_states)</argsstring>
+        <name>compute_signal_plifs</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>state_signals</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>feat_dim3</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_states</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>parse an 3D array of plif ids and compute the corresponding 3D plif array;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state_signals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mapping of features to states </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>feat_dim3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximal number of features to be considered in one state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of states </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>success </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1a9fc80992e484a12e376ddf72252c597b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlifMatrix::set_plif_state_signal_matrix</definition>
+        <argsstring>(int32_t *plif_id_matrix, int32_t m, int32_t n)</argsstring>
+        <name>set_plif_state_signal_matrix</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>plif_id_matrix</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set best path plif state signal matrix</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>plif_id_matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>plif id matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension m of matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension n of matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifMatrix_1ad010b9e6619b0dc29a39f76495733b94" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CPlifMatrix::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="198" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" bodystart="198" bodyend="198"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>store plif arrays for all transitions in the model </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="24">
+        <label>shogun::CPlifBase</label>
+        <link refid="classshogun_1_1CPlifBase"/>
+      </node>
+      <node id="23">
+        <label>shogun::CPlif</label>
+        <link refid="classshogun_1_1CPlif"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>shogun::CPlifMatrix</label>
+        <link refid="classshogun_1_1CPlifMatrix"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>m_PEN</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>m_state_signals</edgelabel>
+          <edgelabel>m_plif_matrix</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" line="29" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifMatrix.h" bodystart="28" bodyend="219"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CPlifMatrix_1ad9dd71d20f14836817a7179b7c307819" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>compute_plif_matrix</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1afbf224b6367480ebf11e190a2380cd2e" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>compute_signal_plifs</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a684955de1442341931a8773332807368" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>CPlifMatrix</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a5642a3c476c861a740d0f6436402693a" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>create_plifs</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1ad010b9e6619b0dc29a39f76495733b94" prot="public" virt="virtual"><scope>shogun::CPlifMatrix</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a5a6f2b19a3d6b39cf94d118a402a2712" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>get_num_limits</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a16a54e3dea46312ea5f33326b94938d8" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>get_num_plifs</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a51cfc0194a81da539f7028a5f8a60708" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>get_PEN</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1ab95086a8f19472f40998fef4c6a5b7e0" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>get_plif_id</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a05523e45838f43c345be064c502bac15" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>get_plif_matrix</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a2e59c006d5c7d82d947f9a5902077644" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>get_state_signals</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1ac2ad5b3c378b908d0f68225a1088b377" prot="protected" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>m_ids</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1acff90a419bd0cb29d9c7634f715e54d1" prot="protected" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>m_num_limits</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a3bddb75cb6875f88bfe49139e518b4d2" prot="protected" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>m_num_plifs</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a79f4a5a1fdfee61af8d7bc687c3e8635" prot="protected" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>m_PEN</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a95d4895767d5c887af44e44c17a289a7" prot="protected" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>m_plif_matrix</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1ac8c96ba5d8a41944195b1452156059f9" prot="protected" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>m_state_signals</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a8a9f3e75c62301fa1da74cf3c65f4ba1" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>set_plif_ids</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1aebe2a6830d90bd81b1c0a42c5b2175f8" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>set_plif_limits</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a9ec6cdd54ccd1084a48c765869b37ae3" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>set_plif_max_values</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a32857935cb00d3b82ac32ba2dc795541" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>set_plif_min_values</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a2a43d203f53beae5f823261baa4e784d" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>set_plif_names</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a6e75a49da1d2bc7ba3ead993c57100f3" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>set_plif_penalties</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a9fc80992e484a12e376ddf72252c597b" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>set_plif_state_signal_matrix</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a56bcd583a055a98423b48f05a968a8ad" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>set_plif_transform_type</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a667090f4976a4173f200cb36ec0c7dd0" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>set_plif_use_cache</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a99b5cac735064ff07d91b929ff9885a9" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>set_plif_use_svm</name></member>
+      <member refid="classshogun_1_1CPlifMatrix_1a9e4c7ecbbb7c5a29fb5d202d52e26061" prot="public" virt="non-virtual"><scope>shogun::CPlifMatrix</scope><name>~CPlifMatrix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

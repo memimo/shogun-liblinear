@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CSortWordString" kind="class" prot="public">
+    <compoundname>shogun::CSortWordString</compoundname>
+    <basecompoundref refid="classshogun_1_1CStringPreProc" prot="public" virt="non-virtual">shogun::CStringPreProc&lt; uint16_t &gt;</basecompoundref>
+    <includes local="no">SortWordString.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CSortWordString_1a214e221c1b4192be42a60a6ab96ef78e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSortWordString::CSortWordString</definition>
+        <argsstring>()</argsstring>
+        <name>CSortWordString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortWordString.h" line="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSortWordString_1af46e1cd0df7d1c7a6a3d7db3e8490fe5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CSortWordString::~CSortWordString</definition>
+        <argsstring>()</argsstring>
+        <name>~CSortWordString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortWordString.h" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSortWordString_1a017cec6ab65e675064d5fa159acef0d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSortWordString::init</definition>
+        <argsstring>(CFeatures *f)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CPreProc_1afe50f73057b75cb494a9a4ab253258d6">init</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>initialize preprocessor from features </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortWordString.h" line="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSortWordString_1ad6a3377f67a71e82fd7a7db9a381381a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CSortWordString::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <reimplements refid="classshogun_1_1CPreProc_1a0f043eb1dd251b49cb3cf3ecf44b1c4b">cleanup</reimplements>
+        <briefdescription>
+<para>cleanup </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortWordString.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSortWordString_1a3db44183b63c1461c18d9e6ee174a87c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSortWordString::load</definition>
+        <argsstring>(FILE *f)</argsstring>
+        <name>load</name>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>initialize preprocessor from file </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortWordString.h" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSortWordString_1abeb06b178cee4d9b267694ea58683d3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSortWordString::save</definition>
+        <argsstring>(FILE *f)</argsstring>
+        <name>save</name>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>save preprocessor init-data to file </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortWordString.h" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSortWordString_1a8b8a280af289530cdfda2f0bfff76744" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSortWordString::apply_to_string_features</definition>
+        <argsstring>(CFeatures *f)</argsstring>
+        <name>apply_to_string_features</name>
+        <reimplements refid="classshogun_1_1CStringPreProc_1ab0073b24dc5e0bc68ca4e4c8a792aaec">apply_to_string_features</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>apply preproc on feature matrix result in feature matrix return pointer to feature_matrix, i.e. f-&gt;get_feature_matrix(); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortWordString.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSortWordString_1adf9ab9ac9d231342d4d3ed9e91d87181" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t *</type>
+        <definition>virtual uint16_t* shogun::CSortWordString::apply_to_string</definition>
+        <argsstring>(uint16_t *f, int32_t &amp;len)</argsstring>
+        <name>apply_to_string</name>
+        <reimplements refid="classshogun_1_1CStringPreProc_1a40d40a99f7596cb86099236c0497aa35">apply_to_string</reimplements>
+        <param>
+          <type>uint16_t *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>apply preproc on single feature vector result in feature matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortWordString.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSortWordString_1aac3bd154f42244bf8f337ca4c95e7eee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CSortWordString::get_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortWordString.h" line="56" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortWordString.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Preprocessor SortWordString, sorts the indivual strings in ascending order. </para>    </briefdescription>
+    <detaileddescription>
+<para>This is useful in conjunction with the CCommWordStringKernel and will result in the spectrum kernel. For this to work the strings have to be mapped into a binary higher order representation first (cf. obtain_from_*() functions in CStringFeatures) </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="55">
+        <label>shogun::CSortWordString</label>
+        <link refid="classshogun_1_1CSortWordString"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>shogun::CStringPreProc&lt; uint16_t &gt;</label>
+        <link refid="classshogun_1_1CStringPreProc"/>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>shogun::CPreProc</label>
+        <link refid="classshogun_1_1CPreProc"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="58">
+        <label>shogun::CSortWordString</label>
+        <link refid="classshogun_1_1CSortWordString"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>shogun::CStringPreProc&lt; uint16_t &gt;</label>
+        <link refid="classshogun_1_1CStringPreProc"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>shogun::CPreProc</label>
+        <link refid="classshogun_1_1CPreProc"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortWordString.h" line="30" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SortWordString.h" bodystart="29" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CSortWordString_1adf9ab9ac9d231342d4d3ed9e91d87181" prot="public" virt="virtual"><scope>shogun::CSortWordString</scope><name>apply_to_string</name></member>
+      <member refid="classshogun_1_1CSortWordString_1a8b8a280af289530cdfda2f0bfff76744" prot="public" virt="virtual"><scope>shogun::CSortWordString</scope><name>apply_to_string_features</name></member>
+      <member refid="classshogun_1_1CSortWordString_1ad6a3377f67a71e82fd7a7db9a381381a" prot="public" virt="virtual"><scope>shogun::CSortWordString</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CPreProc_1a42cd824b1e730557f07884dc6eb98e51" prot="public" virt="non-virtual"><scope>shogun::CSortWordString</scope><name>CPreProc</name></member>
+      <member refid="classshogun_1_1CSortWordString_1a214e221c1b4192be42a60a6ab96ef78e" prot="public" virt="non-virtual"><scope>shogun::CSortWordString</scope><name>CSortWordString</name></member>
+      <member refid="classshogun_1_1CStringPreProc_1a4ed13aecdf635e6a8e310227df167d07" prot="public" virt="non-virtual"><scope>shogun::CSortWordString</scope><name>CStringPreProc</name></member>
+      <member refid="classshogun_1_1CStringPreProc_1aa5c7ccd36186ce59ae5d98acb3a3f7d8" prot="public" virt="virtual"><scope>shogun::CSortWordString</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CStringPreProc_1ad4e2089a5baf77716e20da3cb08dbdcf" prot="public" virt="virtual"><scope>shogun::CSortWordString</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CPreProc_1a66dbec59819cb9ed7023fc47608ccad7" prot="public" virt="non-virtual"><scope>shogun::CSortWordString</scope><name>get_id</name></member>
+      <member refid="classshogun_1_1CSortWordString_1aac3bd154f42244bf8f337ca4c95e7eee" prot="public" virt="virtual"><scope>shogun::CSortWordString</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CPreProc_1ade7d07b45284bdae48abe425b0bf5a40" prot="public" virt="virtual" ambiguityscope="CStringPreProc&lt; uint16_t &gt;::"><scope>shogun::CSortWordString</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSortWordString_1a017cec6ab65e675064d5fa159acef0d5" prot="public" virt="virtual"><scope>shogun::CSortWordString</scope><name>init</name></member>
+      <member refid="classshogun_1_1CSortWordString_1a3db44183b63c1461c18d9e6ee174a87c" prot="public" virt="virtual"><scope>shogun::CSortWordString</scope><name>load</name></member>
+      <member refid="classshogun_1_1CPreProc_1a7905211b1e156831e64768d936351fa8" prot="protected" virt="non-virtual"><scope>shogun::CSortWordString</scope><name>preproc_id</name></member>
+      <member refid="classshogun_1_1CPreProc_1a58f21d152eaba8e982f98806d8496db3" prot="protected" virt="non-virtual"><scope>shogun::CSortWordString</scope><name>preproc_name</name></member>
+      <member refid="classshogun_1_1CSortWordString_1abeb06b178cee4d9b267694ea58683d3a" prot="public" virt="virtual"><scope>shogun::CSortWordString</scope><name>save</name></member>
+      <member refid="classshogun_1_1CPreProc_1a037b99bfd3bacbb3135525e81b134c57" prot="public" virt="virtual"><scope>shogun::CSortWordString</scope><name>~CPreProc</name></member>
+      <member refid="classshogun_1_1CSortWordString_1af46e1cd0df7d1c7a6a3d7db3e8490fe5" prot="public" virt="virtual"><scope>shogun::CSortWordString</scope><name>~CSortWordString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

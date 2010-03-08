@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structshogun_1_1data" kind="struct" prot="public">
+    <compoundname>shogun::data</compoundname>
+    <includes local="no">ssl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structshogun_1_1data_1a0205601c5d95b76987db590f860a21af" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::data::m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of examples </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" line="48" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1data_1af24167e3a581286cfd6a5d8c16b1b59d" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::data::l</definition>
+        <argsstring></argsstring>
+        <name>l</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of labeled examples </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" line="50" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1data_1aec2f589cb42a0de751ae91f8955a381c" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::data::u</definition>
+        <argsstring></argsstring>
+        <name>u</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of unlabeled examples l+u = m </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" line="52" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1data_1af1a6c8d81d5a9643a42ecd158455fff8" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::data::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of features </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" line="54" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1data_1a6491837e3eea8792639a6cad224f0624" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::data::nz</definition>
+        <argsstring></argsstring>
+        <name>nz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of non-zeros </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" line="56" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1data_1a3c9276cf8c452af81aeb7f03c63fd114" prot="public" static="no" mutable="no">
+        <type>shogun::CDotFeatures *</type>
+        <definition>shogun::CDotFeatures* shogun::data::features</definition>
+        <argsstring></argsstring>
+        <name>features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>features </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" line="59" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1data_1ab7abb48f08781c080d88285ace9b1a96" prot="public" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::data::Y</definition>
+        <argsstring></argsstring>
+        <name>Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>labels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" line="61" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1data_1aa512a22cb6543377457f38aef2e6c8eb" prot="public" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::data::C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cost associated with each example </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" line="63" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Data: Input examples are stored in sparse (Compressed Row Storage) format </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" line="46" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/ssl.h" bodystart="45" bodyend="64"/>
+    <listofallmembers>
+      <member refid="structshogun_1_1data_1aa512a22cb6543377457f38aef2e6c8eb" prot="public" virt="non-virtual"><scope>shogun::data</scope><name>C</name></member>
+      <member refid="structshogun_1_1data_1a3c9276cf8c452af81aeb7f03c63fd114" prot="public" virt="non-virtual"><scope>shogun::data</scope><name>features</name></member>
+      <member refid="structshogun_1_1data_1af24167e3a581286cfd6a5d8c16b1b59d" prot="public" virt="non-virtual"><scope>shogun::data</scope><name>l</name></member>
+      <member refid="structshogun_1_1data_1a0205601c5d95b76987db590f860a21af" prot="public" virt="non-virtual"><scope>shogun::data</scope><name>m</name></member>
+      <member refid="structshogun_1_1data_1af1a6c8d81d5a9643a42ecd158455fff8" prot="public" virt="non-virtual"><scope>shogun::data</scope><name>n</name></member>
+      <member refid="structshogun_1_1data_1a6491837e3eea8792639a6cad224f0624" prot="public" virt="non-virtual"><scope>shogun::data</scope><name>nz</name></member>
+      <member refid="structshogun_1_1data_1aec2f589cb42a0de751ae91f8955a381c" prot="public" virt="non-virtual"><scope>shogun::data</scope><name>u</name></member>
+      <member refid="structshogun_1_1data_1ab7abb48f08781c080d88285ace9b1a96" prot="public" virt="non-virtual"><scope>shogun::data</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,752 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CDotFeatures" kind="class" prot="public">
+    <compoundname>shogun::CDotFeatures</compoundname>
+    <basecompoundref refid="classshogun_1_1CFeatures" prot="public" virt="non-virtual">shogun::CFeatures</basecompoundref>
+    <derivedcompoundref refid="classshogun_1_1CSimpleFeatures" prot="public" virt="non-virtual">shogun::CSimpleFeatures&lt; float64_t &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CCombinedDotFeatures" prot="public" virt="non-virtual">shogun::CCombinedDotFeatures</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CExplicitSpecFeatures" prot="public" virt="non-virtual">shogun::CExplicitSpecFeatures</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CImplicitWeightedSpecFeatures" prot="public" virt="non-virtual">shogun::CImplicitWeightedSpecFeatures</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CPolyFeatures" prot="public" virt="non-virtual">shogun::CPolyFeatures</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CSimpleFeatures" prot="public" virt="non-virtual">shogun::CSimpleFeatures&lt; ST &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CSparseFeatures" prot="public" virt="non-virtual">shogun::CSparseFeatures&lt; ST &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CWDFeatures" prot="public" virt="non-virtual">shogun::CWDFeatures</derivedcompoundref>
+    <includes local="no">DotFeatures.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CDotFeatures_1a4cb73c0a47276f345c49bc583d8344b2" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CDotFeatures::combined_weight</definition>
+        <argsstring></argsstring>
+        <name>combined_weight</name>
+        <briefdescription>
+<para>feature weighting in combined dot features </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="184" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CDotFeatures_1ad688539536313914ec3711bce1739445" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CDotFeatures::CDotFeatures</definition>
+        <argsstring>(int32_t size=0)</argsstring>
+        <name>CDotFeatures</name>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cache size </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="47" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDotFeatures_1a040fa070f47a2845e5fdcb89ca7c4565" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CDotFeatures::CDotFeatures</definition>
+        <argsstring>(const CDotFeatures &amp;orig)</argsstring>
+        <name>CDotFeatures</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CDotFeatures" kindref="compound">CDotFeatures</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="53" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" bodystart="52" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDotFeatures_1a91054c534e25c0e934ebb1a2b7217d2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CDotFeatures::CDotFeatures</definition>
+        <argsstring>(char *fname)</argsstring>
+        <name>CDotFeatures</name>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load features from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="59" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDotFeatures_1a7c86c8f9ba308b59a8cf17f236be70d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CDotFeatures::~CDotFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>~CDotFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="61" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDotFeatures_1a49b51004870dd777108e8935c5102070" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CDotFeatures::get_dim_feature_space</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_dim_feature_space</name>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a394940e41980a0084a9223c0e917c63d">get_dim_feature_space</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CWDFeatures_1ad7e1014f94e8923c66aa7f4f118bfa6a">get_dim_feature_space</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1a860552a398288cb75a048fb8ad62477b">get_dim_feature_space</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a394940e41980a0084a9223c0e917c63d">get_dim_feature_space</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPolyFeatures_1a8b53cf4a106c211c626ddba2cda54828">get_dim_feature_space</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CImplicitWeightedSpecFeatures_1af9f4581dc0ea5aa6b56047609aae8b51">get_dim_feature_space</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CExplicitSpecFeatures_1a1c21a60be817d26780d4594a53874808">get_dim_feature_space</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCombinedDotFeatures_1acc5e6389834f1594e56c72b7ca2e5958">get_dim_feature_space</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>obtain the dimensionality of the feature space</para><para>(not mix this up with the dimensionality of the input space, usually obtained via get_num_features())</para><para><simplesect kind="return"><para>dimensionality </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDotFeatures_1aceb2b9cfc936eee500067ae102d2e0cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CDotFeatures::dot</definition>
+        <argsstring>(int32_t vec_idx1, int32_t vec_idx2)=0</argsstring>
+        <name>dot</name>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1adb3c5d8eabab09642598c5e7b620557d">dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CWDFeatures_1a66791d3f00e1c7cf6c4cfb5369bd7a2c">dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1a7447dcfa69aeba2557f1e8cc0bc5d361">dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1adb3c5d8eabab09642598c5e7b620557d">dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPolyFeatures_1a5aae51d58f50d0dbf989df4884e40ebc">dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CImplicitWeightedSpecFeatures_1ac2ec2e1bbb54adcd54317ca410c851a2">dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CExplicitSpecFeatures_1af1188129c3dda1457f289b9888aac952">dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCombinedDotFeatures_1af54b078eac179e216e2b19aed6faef51">dot</reimplementedby>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and vector2, appointed by their indices</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec_idx2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of second vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CDotFeatures::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)=0</argsstring>
+        <name>dense_dot</name>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1ab7ce7e4a1f3c36b0b42d1daa2503a11e">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a40d2cb100411baf62d1a11a9eacea26b">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a8b885e11154507dfd860e431d8186178">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1af3ef385f395bb1735355dc2ddab7e97f">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a4df3679207ae897391aeb62ead426314">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a4691a935a6c9d2d91765cafa4bbc6e2a">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a1ff643db374a2e8608e90adb04292bd5">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1ab32f81e36cccb9abda38b3db69e5998f">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1ad99ac0cf87ebe36bd230b439efbb30a5">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a52015f7afb41707163ae2f78111613cd">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a89559f1705d64e48ff23dac651b9efea">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a6e2964a5173538a113408dcc9df31715">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a808c4c5b7e5cfa9558cab5e039e34ef4">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CWDFeatures_1a3d817b64070bb6374155fc4c200d0564">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1a4cec79927967e498dcf01a2b169e4649">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a808c4c5b7e5cfa9558cab5e039e34ef4">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPolyFeatures_1a589f000c95ed1a66ed05cea00a3919a0">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CImplicitWeightedSpecFeatures_1af5bf8ce280b37e3694c42dde35947132">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CExplicitSpecFeatures_1a38324b37b1d08fd745ea2151ce835152">dense_dot</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCombinedDotFeatures_1a57941b19ea9a947614942fedc202318c">dense_dot</reimplementedby>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDotFeatures_1a96e00d9794bbe0ad0248bce58c4a346d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CDotFeatures::add_to_dense_vec</definition>
+        <argsstring>(float64_t alpha, int32_t vec_idx1, float64_t *vec2, int32_t vec2_len, bool abs_val=false)=0</argsstring>
+        <name>add_to_dense_vec</name>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a184d2e7ec90b743c112b835d248be8fc">add_to_dense_vec</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CWDFeatures_1a0bc4e1f22d49f4c6bc0e7246fd304e34">add_to_dense_vec</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1ab55b8cb6cf5a4adc67c20adff02fa4b6">add_to_dense_vec</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a184d2e7ec90b743c112b835d248be8fc">add_to_dense_vec</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPolyFeatures_1a944423d73646c1a3b4fcd62b1d875911">add_to_dense_vec</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CImplicitWeightedSpecFeatures_1a80f77ad54f8cccc88001618a805c4a4c">add_to_dense_vec</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CExplicitSpecFeatures_1a0bf8a30b0c35bf378ca343c1bb15e6b3">add_to_dense_vec</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCombinedDotFeatures_1ab32a99e49dd71815984d9144577a5b7b">add_to_dense_vec</reimplementedby>
+        <param>
+          <type>float64_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>abs_val</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add vector 1 multiplied with alpha to dense vector2</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scalar alpha </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>abs_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true add the absolute value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDotFeatures_1ae81ed7be6b000db0ae624eb781e93590" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CDotFeatures::dense_dot_range</definition>
+        <argsstring>(float64_t *output, int32_t start, int32_t stop, float64_t *alphas, float64_t *vec, int32_t dim, float64_t b)</argsstring>
+        <name>dense_dot_range</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>stop</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>alphas</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the dot product for a range of vectors. This function makes use of dense_dot alphas[i] * sparse[i]^T * w + b</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>result for the given vector range </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start vector range from this idx </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stop vector range at this idx </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alphas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scalars to multiply with, may be NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dense vector to compute dot product with </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the dense vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bias </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDotFeatures_1a45e751c294896ffb6faae83e0dc5f140" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CDotFeatures::get_nnz_features_for_vector</definition>
+        <argsstring>(int32_t num)=0</argsstring>
+        <name>get_nnz_features_for_vector</name>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1abfd7bc0fc2128e963f9714c62ae6db5c">get_nnz_features_for_vector</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CWDFeatures_1aa831c967271f4ba4ea1a8e5d33fef203">get_nnz_features_for_vector</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1ac110055b3c1b9ad787f4ab2bc0f2987f">get_nnz_features_for_vector</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1abfd7bc0fc2128e963f9714c62ae6db5c">get_nnz_features_for_vector</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPolyFeatures_1ab73ce6806a2acbe7cd3df750d1debdf4">get_nnz_features_for_vector</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CImplicitWeightedSpecFeatures_1af340a3da92feaf2a010f65441b399650">get_nnz_features_for_vector</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CExplicitSpecFeatures_1a5295c3122a8e32d20b12fe9af218f50a">get_nnz_features_for_vector</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCombinedDotFeatures_1a4364eedab109045b6426c54e574c9b77">get_nnz_features_for_vector</reimplementedby>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of non-zero features in vector</para><para>(in case accurate estimates are too expensive overestimating is OK)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of sparse features in vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDotFeatures_1a199b84c188e8f98f088c248fe5c0adea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CDotFeatures::get_combined_feature_weight</definition>
+        <argsstring>()</argsstring>
+        <name>get_combined_feature_weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get combined feature weight</para><para><simplesect kind="return"><para>combined feature weight </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="129" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDotFeatures_1a3cbcb41f5f6fb4817568469120204c10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDotFeatures::set_combined_feature_weight</definition>
+        <argsstring>(float64_t nw)</argsstring>
+        <name>set_combined_feature_weight</name>
+        <param>
+          <type>float64_t</type>
+          <declname>nw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set combined kernel weight</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new combined feature weight </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="135" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDotFeatures_1ab3b9a12fc4f02f03e8a655e8e4884058" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CDotFeatures::get_feature_matrix</definition>
+        <argsstring>(float64_t **dst, int32_t *num_feat, int32_t *num_vec)</argsstring>
+        <name>get_feature_matrix</name>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1aa46f724dc813a131a4dcabb36165df0e">get_feature_matrix</reimplementedby>
+        <param>
+          <type>float64_t **</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get a copy of the feature matrix (in feature space) num_feat,num_vectors are returned by reference</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination to store matrix in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features (rows of matrix) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors (columns of matrix) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="144"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classshogun_1_1CDotFeatures_1a2a69a10f3ffcc5ed76322ebbd09b5fcb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void* shogun::CDotFeatures::dense_dot_range_helper</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>dense_dot_range_helper</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the dot product for a range of vectors. This function is called by the threads created in dense_dot_range </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="114"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CDotFeatures_1a01ce37f41f397454c58bc2f05987d0c1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDotFeatures::display_progress</definition>
+        <argsstring>(int32_t start, int32_t stop, int32_t v)</argsstring>
+        <name>display_progress</name>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>stop</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>display progress output</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="154" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" bodystart="153" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Features that support dot products among other operations. </para>    </briefdescription>
+    <detaileddescription>
+<para>DotFeatures support the following operations:</para><para><itemizedlist>
+<listitem><para>a way to obtain the dimensionality of the feature space, i.e. <formula id="0">$\mbox{dim}({\cal X})$</formula></para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para>dot product between feature vectors:</para></listitem></itemizedlist>
+</para><para><formula id="1">\[r = {\bf x} \cdot {\bf x&apos;}\]</formula></para><para><itemizedlist>
+<listitem><para>dot product between feature vector and a dense vector <formula id="2">${\bf z}$</formula>:</para></listitem></itemizedlist>
+</para><para><formula id="3">\[r = {\bf x} \cdot {\bf z}\]</formula></para><para><itemizedlist>
+<listitem><para>multiplication with a scalar <formula id="4">$\alpha$</formula> and addition on to a dense vector <formula id="2">${\bf z}$</formula>:</para></listitem></itemizedlist>
+</para><para><formula id="5">\[{\bf z&apos;} = \alpha {\bf x} + {\bf z}\]</formula> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="23">
+        <label>shogun::CExplicitSpecFeatures</label>
+        <link refid="classshogun_1_1CExplicitSpecFeatures"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>shogun::CTOPFeatures</label>
+        <link refid="classshogun_1_1CTOPFeatures"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>shogun::CSimpleFeatures&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimpleFeatures"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>shogun::CRealFileFeatures</label>
+        <link refid="classshogun_1_1CRealFileFeatures"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>shogun::CImplicitWeightedSpecFeatures</label>
+        <link refid="classshogun_1_1CImplicitWeightedSpecFeatures"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>shogun::CPolyFeatures</label>
+        <link refid="classshogun_1_1CPolyFeatures"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>shogun::CSimpleFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CSimpleFeatures"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>shogun::CFKFeatures</label>
+        <link refid="classshogun_1_1CFKFeatures"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>shogun::CCombinedDotFeatures</label>
+        <link refid="classshogun_1_1CCombinedDotFeatures"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+      <node id="28">
+        <label>shogun::CWDFeatures</label>
+        <link refid="classshogun_1_1CWDFeatures"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>shogun::CSparseFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CSparseFeatures"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="29">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" line="39" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/DotFeatures.h" bodystart="38" bodyend="185"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CFeatures_1a793f371cc7dd4897997b01612f7d4b77" prot="public" virt="virtual"><scope>shogun::CDotFeatures</scope><name>add_preproc</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a96e00d9794bbe0ad0248bce58c4a346d" prot="public" virt="pure-virtual"><scope>shogun::CDotFeatures</scope><name>add_to_dense_vec</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ad688539536313914ec3711bce1739445" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a040fa070f47a2845e5fdcb89ca7c4565" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a91054c534e25c0e934ebb1a2b7217d2a" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a91ac9daf871dd99b358da47eea74eeb3" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1be7a2c5d471a3586c44988e2b4e1129" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a4ad3a39235806ab1999a1c5fb5290486" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a89609a765e1ab682ea6e73402b56c961" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>check_feature_compatibility</name></member>
+      <member refid="classshogun_1_1CFeatures_1afab00f1403d1349fd18cca31a6d63de3" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>clean_preprocs</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a4cb73c0a47276f345c49bc583d8344b2" prot="protected" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>combined_weight</name></member>
+      <member refid="classshogun_1_1CFeatures_1accdc453796e319852dd41fffa0c0f70c" prot="public" virt="virtual"><scope>shogun::CDotFeatures</scope><name>del_preproc</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337" prot="public" virt="pure-virtual"><scope>shogun::CDotFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ae81ed7be6b000db0ae624eb781e93590" prot="public" virt="virtual"><scope>shogun::CDotFeatures</scope><name>dense_dot_range</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a2a69a10f3ffcc5ed76322ebbd09b5fcb" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>dense_dot_range_helper</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a01ce37f41f397454c58bc2f05987d0c1" prot="protected" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>display_progress</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1aceb2b9cfc936eee500067ae102d2e0cb" prot="public" virt="pure-virtual"><scope>shogun::CDotFeatures</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CFeatures_1a2f7adf01a52fee35ac71e455501125a9" prot="public" virt="pure-virtual"><scope>shogun::CDotFeatures</scope><name>duplicate</name></member>
+      <member refid="classshogun_1_1CFeatures_1a29b93c241dca0eba1415f873c83d27d8" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a199b84c188e8f98f088c248fe5c0adea" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>get_combined_feature_weight</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a49b51004870dd777108e8935c5102070" prot="public" virt="pure-virtual"><scope>shogun::CDotFeatures</scope><name>get_dim_feature_space</name></member>
+      <member refid="classshogun_1_1CFeatures_1a8e1c6229db82a9215cb2994202e657f5" prot="public" virt="pure-virtual"><scope>shogun::CDotFeatures</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ab3b9a12fc4f02f03e8a655e8e4884058" prot="public" virt="virtual"><scope>shogun::CDotFeatures</scope><name>get_feature_matrix</name></member>
+      <member refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861" prot="public" virt="pure-virtual"><scope>shogun::CDotFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a45e751c294896ffb6faae83e0dc5f140" prot="public" virt="pure-virtual"><scope>shogun::CDotFeatures</scope><name>get_nnz_features_for_vector</name></member>
+      <member refid="classshogun_1_1CFeatures_1a7662d240eab24d5753385b0f9e6e9bae" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>get_num_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a9010a03b11399648cc5da7194fb5e707" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>get_num_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1f30fccf7c6c9af03277d75d0d983c52" prot="public" virt="pure-virtual"><scope>shogun::CDotFeatures</scope><name>get_num_vectors</name></member>
+      <member refid="classshogun_1_1CFeatures_1ac1015e3a736e4e6d4d6fbe24416af6c4" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>get_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1aeed80a002f6255d1ca5c8d1698deb7bc" prot="public" virt="pure-virtual"><scope>shogun::CDotFeatures</scope><name>get_size</name></member>
+      <member refid="classshogun_1_1CFeatures_1a07f1d7dc618a9f5f76663d80ad549d38" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1248f8829f63f9c9a42ac36065961295" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>is_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1a6412ef81478c3c9dadac2a87a544f640" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>list_feature_obj</name></member>
+      <member refid="classshogun_1_1CFeatures_1adef76a926672875a64aedd2b00c8f2bd" prot="public" virt="virtual"><scope>shogun::CDotFeatures</scope><name>load</name></member>
+      <member refid="classshogun_1_1CFeatures_1a57d67048d44a7a7ea92bcbdfed9060ea" prot="public" virt="virtual"><scope>shogun::CDotFeatures</scope><name>reshape</name></member>
+      <member refid="classshogun_1_1CFeatures_1ae1341e3fa42733d8729d8f2dcf73709b" prot="public" virt="virtual"><scope>shogun::CDotFeatures</scope><name>save</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a3cbcb41f5f6fb4817568469120204c10" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>set_combined_feature_weight</name></member>
+      <member refid="classshogun_1_1CFeatures_1aa88c27c0f3885d23ac71c4cc2e55c431" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>set_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab43db0bd4a231249ce4bc65f6e15f695" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a3ff3f03688a7f6a1b36dab8677407166" prot="public" virt="non-virtual"><scope>shogun::CDotFeatures</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a7c86c8f9ba308b59a8cf17f236be70d2" prot="public" virt="virtual"><scope>shogun::CDotFeatures</scope><name>~CDotFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab0e2a8a18ac5056f802e4aa51d4fcd4f" prot="public" virt="virtual"><scope>shogun::CDotFeatures</scope><name>~CFeatures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

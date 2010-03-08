@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="namespaceshogun" kind="namespace">
+    <compoundname>shogun</compoundname>
+    <innerclass refid="classshogun_1_1CDecompressString" prot="public">shogun::CDecompressString</innerclass>
+    <innerclass refid="classshogun_1_1CLogPlusOne" prot="public">shogun::CLogPlusOne</innerclass>
+    <innerclass refid="classshogun_1_1CNormDerivativeLem3" prot="public">shogun::CNormDerivativeLem3</innerclass>
+    <innerclass refid="classshogun_1_1CNormOne" prot="public">shogun::CNormOne</innerclass>
+    <innerclass refid="classshogun_1_1CPreProc" prot="public">shogun::CPreProc</innerclass>
+    <innerclass refid="classshogun_1_1CPruneVarSubMean" prot="public">shogun::CPruneVarSubMean</innerclass>
+    <innerclass refid="classshogun_1_1CSimplePreProc" prot="public">shogun::CSimplePreProc</innerclass>
+    <innerclass refid="classshogun_1_1CSortUlongString" prot="public">shogun::CSortUlongString</innerclass>
+    <innerclass refid="classshogun_1_1CSortWordString" prot="public">shogun::CSortWordString</innerclass>
+    <innerclass refid="classshogun_1_1CSparsePreProc" prot="public">shogun::CSparsePreProc</innerclass>
+    <innerclass refid="classshogun_1_1CStringPreProc" prot="public">shogun::CStringPreProc</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceshogun_1a1afa20958750d4f66231ea54159923f8" prot="public" static="no">
+        <name>EPreProcType</name>
+        <enumvalue id="namespaceshogun_1a1afa20958750d4f66231ea54159923f8a18d374e85d18b5c0a3d57f072a0fb045" prot="public">
+          <name>P_UNKNOWN</name>
+          <initializer>0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a1afa20958750d4f66231ea54159923f8a9aa9a1e4abdab8eb49f49ee81628764d" prot="public">
+          <name>P_NORMONE</name>
+          <initializer>10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a1afa20958750d4f66231ea54159923f8a75e00cb2ad5435d38985349ccc78862c" prot="public">
+          <name>P_LOGPLUSONE</name>
+          <initializer>20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a1afa20958750d4f66231ea54159923f8aebbfc290d366ee10221f61c78c8d5f88" prot="public">
+          <name>P_SORTWORDSTRING</name>
+          <initializer>30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a1afa20958750d4f66231ea54159923f8ae6640049908e5db7e2f743c03d8d53cf" prot="public">
+          <name>P_SORTULONGSTRING</name>
+          <initializer>40</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a1afa20958750d4f66231ea54159923f8a2543629c7cb68cb665bd20a1a04be6b8" prot="public">
+          <name>P_SORTWORD</name>
+          <initializer>50</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a1afa20958750d4f66231ea54159923f8ae86a3bdbe0368dcb956e86f8e2e36efe" prot="public">
+          <name>P_PRUNEVARSUBMEAN</name>
+          <initializer>60</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a1afa20958750d4f66231ea54159923f8a13ab9d7c21a7a21fa8adbff3b21e3aed" prot="public">
+          <name>P_DECOMPRESSCHARSTRING</name>
+          <initializer>70</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a1afa20958750d4f66231ea54159923f8a580338ea2bb3a763a21f552d6fe822ef" prot="public">
+          <name>P_DECOMPRESSBYTESTRING</name>
+          <initializer>80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a1afa20958750d4f66231ea54159923f8a8d16e7ea24d84806ad4e8d58b30c5b54" prot="public">
+          <name>P_DECOMPRESSWORDSTRING</name>
+          <initializer>90</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a1afa20958750d4f66231ea54159923f8ac72a5ac5829e79cd21fa56559707c641" prot="public">
+          <name>P_DECOMPRESSULONGSTRING</name>
+          <initializer>100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" line="27" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" bodystart="26" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" line="21"/>
+  </compounddef>
+</doxygen>

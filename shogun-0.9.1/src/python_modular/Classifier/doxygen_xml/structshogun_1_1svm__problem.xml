@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structshogun_1_1svm__problem" kind="struct" prot="public">
+    <compoundname>shogun::svm_problem</compoundname>
+    <includes local="no">SVM_libsvm.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structshogun_1_1svm__problem_1adbde85bc910cfcbcf599d456780d434d" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::svm_problem::l</definition>
+        <argsstring></argsstring>
+        <name>l</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>l </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="69" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__problem_1acefe9dc87e7f27f975e5e53ae852a83f" prot="public" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::svm_problem::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>y </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="71" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__problem_1a16ea183abadee18a73fb0aaedce32d37" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structshogun_1_1svm__node" kindref="compound">svm_node</ref> **</type>
+        <definition>struct svm_node** shogun::svm_problem::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SVM node x </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="73" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__problem_1a38b1dd149491d4dc34007b0b641b000e" prot="public" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::svm_problem::C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>weight per example </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="75" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__problem_1a190f7ffe58760a1a52c0de6e307de6f7" prot="public" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::svm_problem::pv</definition>
+        <argsstring></argsstring>
+        <name>pv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>precomputed p </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="77" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structshogun_1_1svm__problem_1a6010d88d57019c78cca0e1b616185822" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::svm_problem::svm_problem</definition>
+        <argsstring>()</argsstring>
+        <name>svm_problem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="60" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="60" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>SVM problem </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="349">
+        <label>shogun::svm_problem</label>
+        <link refid="structshogun_1_1svm__problem"/>
+        <childnode refid="350" relation="usage">
+          <edgelabel>x</edgelabel>
+        </childnode>
+      </node>
+      <node id="350">
+        <label>shogun::svm_node</label>
+        <link refid="structshogun_1_1svm__node"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="54" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="53" bodyend="79"/>
+    <listofallmembers>
+      <member refid="structshogun_1_1svm__problem_1a38b1dd149491d4dc34007b0b641b000e" prot="public" virt="non-virtual"><scope>shogun::svm_problem</scope><name>C</name></member>
+      <member refid="structshogun_1_1svm__problem_1adbde85bc910cfcbcf599d456780d434d" prot="public" virt="non-virtual"><scope>shogun::svm_problem</scope><name>l</name></member>
+      <member refid="structshogun_1_1svm__problem_1a190f7ffe58760a1a52c0de6e307de6f7" prot="public" virt="non-virtual"><scope>shogun::svm_problem</scope><name>pv</name></member>
+      <member refid="structshogun_1_1svm__problem_1a6010d88d57019c78cca0e1b616185822" prot="public" virt="non-virtual"><scope>shogun::svm_problem</scope><name>svm_problem</name></member>
+      <member refid="structshogun_1_1svm__problem_1a16ea183abadee18a73fb0aaedce32d37" prot="public" virt="non-virtual"><scope>shogun::svm_problem</scope><name>x</name></member>
+      <member refid="structshogun_1_1svm__problem_1acefe9dc87e7f27f975e5e53ae852a83f" prot="public" virt="non-virtual"><scope>shogun::svm_problem</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

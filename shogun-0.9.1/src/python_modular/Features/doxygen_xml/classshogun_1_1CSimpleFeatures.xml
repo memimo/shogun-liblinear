@@ -1,0 +1,2381 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CSimpleFeatures" kind="class" prot="public">
+    <compoundname>shogun::CSimpleFeatures</compoundname>
+    <basecompoundref refid="classshogun_1_1CDotFeatures" prot="public" virt="non-virtual">shogun::CDotFeatures</basecompoundref>
+    <includes local="no">SimpleFeatures.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>ST</declname>
+        <defname>ST</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CSimpleFeatures_1afcdd2b798010c4cb1e5b64da5d0bb805" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSimpleFeatures&lt; ST &gt;::num_vectors</definition>
+        <argsstring></argsstring>
+        <name>num_vectors</name>
+        <briefdescription>
+<para>number of vectors in cache </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="705" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="705" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSimpleFeatures_1aacda9efff0e718088499535745934ab1" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSimpleFeatures&lt; ST &gt;::num_features</definition>
+        <argsstring></argsstring>
+        <name>num_features</name>
+        <briefdescription>
+<para>number of features in cache </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="708" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="708" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSimpleFeatures_1ab92d07e1f66ea2b62abdc63b2b84a1c2" prot="protected" static="no" mutable="no">
+        <type>ST *</type>
+        <definition>ST* shogun::CSimpleFeatures&lt; ST &gt;::feature_matrix</definition>
+        <argsstring></argsstring>
+        <name>feature_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>feature matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="711" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSimpleFeatures_1a907202fa53453a1439e1fec2b2bb90e1" prot="protected" static="no" mutable="no">
+        <type>CCache&lt; ST &gt; *</type>
+        <definition>CCache&lt;ST&gt;* shogun::CSimpleFeatures&lt; ST &gt;::feature_cache</definition>
+        <argsstring></argsstring>
+        <name>feature_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>feature cache </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="714" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="714" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a198731e8c0233cb1fb76df3c5722c6f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSimpleFeatures&lt; ST &gt;::CSimpleFeatures</definition>
+        <argsstring>(int32_t size=0)</argsstring>
+        <name>CSimpleFeatures</name>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cache size </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="70" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1addc16375118b6b27dd99cfd58202aa6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSimpleFeatures&lt; ST &gt;::CSimpleFeatures</definition>
+        <argsstring>(const CSimpleFeatures &amp;orig)</argsstring>
+        <name>CSimpleFeatures</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CSimpleFeatures" kindref="compound">CSimpleFeatures</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="78" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="73" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a0096075ef8d190d58ce97b2336680f12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSimpleFeatures&lt; ST &gt;::CSimpleFeatures</definition>
+        <argsstring>(ST *src, int32_t num_feat, int32_t num_vec)</argsstring>
+        <name>CSimpleFeatures</name>
+        <param>
+          <type>ST *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features in matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="96" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="93" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a54fda828ffcbbdc836d4b625108ed8c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSimpleFeatures&lt; ST &gt;::CSimpleFeatures</definition>
+        <argsstring>(char *fname)</argsstring>
+        <name>CSimpleFeatures</name>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para>NOT IMPLEMENTED!</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load features from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="108" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1ae485eaec2c9264a0661bfdaf5db19166" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+        <definition>virtual CFeatures* shogun::CSimpleFeatures&lt; ST &gt;::duplicate</definition>
+        <argsstring>() const </argsstring>
+        <name>duplicate</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a2f7adf01a52fee35ac71e455501125a9">duplicate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>duplicate feature object</para><para><simplesect kind="return"><para>feature object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="115" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a480b565d004158a3599ab57109cc7890" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CSimpleFeatures&lt; ST &gt;::~CSimpleFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>~CSimpleFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="120" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="119" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a1deddc24e882780c97d8d7c012900d3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSimpleFeatures&lt; ST &gt;::free_feature_matrix</definition>
+        <argsstring>()</argsstring>
+        <name>free_feature_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>free feature matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="129" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="128" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1aa8bf02cb2cf32e1581abb44ff7f22784" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSimpleFeatures&lt; ST &gt;::free_features</definition>
+        <argsstring>()</argsstring>
+        <name>free_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>free feature matrix and cache </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="140" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="139" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1ac20744d3cb7b487d48952e126ebc842e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ST *</type>
+        <definition>ST* shogun::CSimpleFeatures&lt; ST &gt;::get_feature_vector</definition>
+        <argsstring>(int32_t num, int32_t &amp;len, bool &amp;dofree)</argsstring>
+        <name>get_feature_vector</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>dofree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature vector for sample num from the matrix as it is if matrix is initialized, else return preprocessed compute_feature_vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length is returned by reference </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dofree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether returned vector must be freed by caller via free_feature_vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>feature vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="157" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="156" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a7c56a23d330e1dbf2e795401159708e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSimpleFeatures&lt; ST &gt;::set_feature_vector</definition>
+        <argsstring>(ST *src, int32_t len, int32_t num)</argsstring>
+        <name>set_feature_vector</name>
+        <param>
+          <type>ST *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set feature vector num</para><para>( only available in-memory feature matrices )</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index where to put vector to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="225" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="224" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a03b446254712cdf9339c0cc25fc91f4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSimpleFeatures&lt; ST &gt;::get_feature_vector</definition>
+        <argsstring>(ST **dst, int32_t *len, int32_t num)</argsstring>
+        <name>get_feature_vector</name>
+        <param>
+          <type>ST **</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature vector num</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination to store vector in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="248" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="247" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a5a72ef6f22c82cefb215d7b9b6db65cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSimpleFeatures&lt; ST &gt;::free_feature_vector</definition>
+        <argsstring>(ST *feat_vec, int32_t num, bool dofree)</argsstring>
+        <name>free_feature_vector</name>
+        <param>
+          <type>ST *</type>
+          <declname>feat_vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>dofree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>free feature vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>feat_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature vector to free </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index in feature cache </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dofree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if vector should be really deleted </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="274" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="273" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1aa46f724dc813a131a4dcabb36165df0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSimpleFeatures&lt; ST &gt;::get_feature_matrix</definition>
+        <argsstring>(ST **dst, int32_t *num_feat, int32_t *num_vec)</argsstring>
+        <name>get_feature_matrix</name>
+        <param>
+          <type>ST **</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get a copy of the feature matrix num_feat,num_vectors are returned by reference</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination to store matrix in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features (rows of matrix) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors (columns of matrix) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="290" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="289" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1acf9004ddf3e7e8ad99c5eaa520f0bbd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ST *</type>
+        <definition>ST* shogun::CSimpleFeatures&lt; ST &gt;::get_feature_matrix</definition>
+        <argsstring>(int32_t &amp;num_feat, int32_t &amp;num_vec)</argsstring>
+        <name>get_feature_matrix</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the pointer to the feature matrix num_feat,num_vectors are returned by reference</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features in matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>feature matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="308" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="307" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a2a44b4c0d05c35a612b2fc1d62df52c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CSimpleFeatures&lt; ST &gt;::set_feature_matrix</definition>
+        <argsstring>(ST *fm, int32_t num_feat, int32_t num_vec)</argsstring>
+        <name>set_feature_matrix</name>
+        <param>
+          <type>ST *</type>
+          <declname>fm</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set feature matrix necessary to set feature_matrix, num_features, num_vectors, where num_features is the column offset, and columns are linear in memory see below for definition of feature_matrix</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature matrix to se </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features in matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="325" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="324" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a45383d6584343e61043ee69d29ca661a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CSimpleFeatures&lt; ST &gt;::copy_feature_matrix</definition>
+        <argsstring>(ST *src, int32_t num_feat, int32_t num_vec)</argsstring>
+        <name>copy_feature_matrix</name>
+        <param>
+          <type>ST *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy feature matrix store copy of feature_matrix, where num_features is the column offset, and columns are linear in memory see below for definition of feature_matrix</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature matrix to copy </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features in matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="342" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="341" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1ab87dadb5c15d2688e0d1f2e46bc1aee3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSimpleFeatures&lt; ST &gt;::apply_preproc</definition>
+        <argsstring>(bool force_preprocessing=false)</argsstring>
+        <name>apply_preproc</name>
+        <param>
+          <type>bool</type>
+          <declname>force_preprocessing</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>apply preprocessor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>force_preprocessing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if preprocssing shall be forced </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if applying was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="357" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="356" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1ab1207e479dd9fcf578f629db7b878917" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CSimpleFeatures&lt; ST &gt;::get_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_size</name>
+        <reimplements refid="classshogun_1_1CFeatures_1aeed80a002f6255d1ca5c8d1698deb7bc">get_size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get memory footprint of one feature</para><para><simplesect kind="return"><para>memory footprint of one feature </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="396" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="396" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a767626119fc7553441164cb4e953eecf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CSimpleFeatures&lt; ST &gt;::get_num_vectors</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_vectors</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a1f30fccf7c6c9af03277d75d0d983c52">get_num_vectors</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of feature vectors</para><para><simplesect kind="return"><para>number of feature vectors </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="403" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="403" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1ac4d85290b6a9435942ef76371a781b39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSimpleFeatures&lt; ST &gt;::get_num_features</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of features</para><para><simplesect kind="return"><para>number of features </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="409" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="409" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1aeafe03ff25bff3e82ba5ecaf81390353" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSimpleFeatures&lt; ST &gt;::set_num_features</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>set_num_features</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set number of features</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="416" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="415" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1aac7bc310db9f14c07c69a811d39771f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSimpleFeatures&lt; ST &gt;::set_num_vectors</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>set_num_vectors</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set number of vectors</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="431" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="430" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a2dfd5cd8ccd92593a02c9f6dfb9a84cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureClass</type>
+        <definition>virtual EFeatureClass shogun::CSimpleFeatures&lt; ST &gt;::get_feature_class</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_class</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a8e1c6229db82a9215cb2994202e657f5">get_feature_class</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature class</para><para><simplesect kind="return"><para>feature class SIMPLE </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="444" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="444" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a89dcdd2bfa1eeb715e5d12fc319afbd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureType</type>
+        <definition>virtual EFeatureType shogun::CSimpleFeatures&lt; ST &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type</para><para><simplesect kind="return"><para>templated feature type </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a0130f7dadc6257d919be40eb7cc173d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSimpleFeatures&lt; ST &gt;::reshape</definition>
+        <argsstring>(int32_t p_num_features, int32_t p_num_vectors)</argsstring>
+        <name>reshape</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a57d67048d44a7a7ea92bcbdfed9060ea">reshape</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>p_num_features</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_num_vectors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>reshape</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_num_features</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new number of features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_num_vectors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new number of vectors </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if reshaping was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="459" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="458" bodyend="468"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a394940e41980a0084a9223c0e917c63d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CSimpleFeatures&lt; ST &gt;::get_dim_feature_space</definition>
+        <argsstring>()</argsstring>
+        <name>get_dim_feature_space</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a49b51004870dd777108e8935c5102070">get_dim_feature_space</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>obtain the dimensionality of the feature space</para><para>(not mix this up with the dimensionality of the input space, usually obtained via <ref refid="classshogun_1_1CSimpleFeatures_1ac4d85290b6a9435942ef76371a781b39" kindref="member">get_num_features()</ref>)</para><para><simplesect kind="return"><para>dimensionality </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="478" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="477" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1adb3c5d8eabab09642598c5e7b620557d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CSimpleFeatures&lt; ST &gt;::dot</definition>
+        <argsstring>(int32_t vec_idx1, int32_t vec_idx2)</argsstring>
+        <name>dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1aceb2b9cfc936eee500067ae102d2e0cb">dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and vector2, appointed by their indices</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec_idx2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of second vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="489" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="488" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a808c4c5b7e5cfa9558cab5e039e34ef4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CSimpleFeatures&lt; ST &gt;::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="510"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a184d2e7ec90b743c112b835d248be8fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CSimpleFeatures&lt; ST &gt;::add_to_dense_vec</definition>
+        <argsstring>(float64_t alpha, int32_t vec_idx1, float64_t *vec2, int32_t vec2_len, bool abs_val=false)</argsstring>
+        <name>add_to_dense_vec</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a96e00d9794bbe0ad0248bce58c4a346d">add_to_dense_vec</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>abs_val</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add vector 1 multiplied with alpha to dense vector2</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scalar alpha </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>abs_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true add the absolute value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="521" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="520" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1abfd7bc0fc2128e963f9714c62ae6db5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CSimpleFeatures&lt; ST &gt;::get_nnz_features_for_vector</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>get_nnz_features_for_vector</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a45e751c294896ffb6faae83e0dc5f140">get_nnz_features_for_vector</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of non-zero features in vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of non-zero features in vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="550" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="549" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a144f492d6406399e59c1d716ac611889" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSimpleFeatures&lt; ST &gt;::Align_char_features</definition>
+        <argsstring>(CStringFeatures&lt; char &gt; *cf, CStringFeatures&lt; char &gt; *Ref, float64_t gapCost)</argsstring>
+        <name>Align_char_features</name>
+        <param>
+          <type><ref refid="classshogun_1_1CStringFeatures" kindref="compound">CStringFeatures</ref>&lt; char &gt; *</type>
+          <declname>cf</declname>
+        </param>
+        <param>
+          <type><ref refid="classshogun_1_1CStringFeatures" kindref="compound">CStringFeatures</ref>&lt; char &gt; *</type>
+          <declname>Ref</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>gapCost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>align char features</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>other char features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gapCost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gap cost </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if aligning was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="563" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="561" bodyend="565"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1ab3f090ce420bd82313354358bff38705" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSimpleFeatures&lt; ST &gt;::load</definition>
+        <argsstring>(char *fname)</argsstring>
+        <name>load</name>
+        <reimplements refid="classshogun_1_1CFeatures_1adef76a926672875a64aedd2b00c8f2bd">load</reimplements>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load features from file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if loading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="573" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="572" bodyend="589"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a5ee15be9a68445fd47d4db97dcdaa888" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSimpleFeatures&lt; ST &gt;::save</definition>
+        <argsstring>(char *fname)</argsstring>
+        <name>save</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ae1341e3fa42733d8729d8f2dcf73709b">save</reimplements>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save features to file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to save to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if saving was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="597" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="596" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a20dddb53f5fc7e42187373122a968aad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CSimpleFeatures&lt; ST &gt;::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <reimplementedby refid="classshogun_1_1CTOPFeatures_1adc7cb7211f86f3838920c1ae0d470582">get_name</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CRealFileFeatures_1a12c9846ad0b0e5b2a232502e5b045f6b">get_name</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CFKFeatures_1a04a4206fe83ebbc7f2979ebb4b1ce07b">get_name</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="623" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="623" bodyend="623"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1ab967d6a7abcc54837d310fe85042e913" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimpleFeatures&lt; bool &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the BOOL feature can deal with</para><para><simplesect kind="return"><para>feature type BOOL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="723" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="722" bodyend="725"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1adfb694ca959388f8ff8ac23c2546007e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimpleFeatures&lt; char &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the CHAR feature can deal with</para><para><simplesect kind="return"><para>feature type CHAR </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="732" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="731" bodyend="734"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a2cd7541f7e5271a7c29326e3c2830686" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimpleFeatures&lt; uint8_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the BYTE feature can deal with</para><para><simplesect kind="return"><para>feature type BYTE </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="741" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="740" bodyend="743"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a7876ec0080b11f84715605e7f3bf76ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimpleFeatures&lt; int16_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the SHORT feature can deal with</para><para><simplesect kind="return"><para>feature type SHORT </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="750" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="749" bodyend="752"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a85b372c83d055f86760d71b146f5dd56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimpleFeatures&lt; uint16_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the WORD feature can deal with</para><para><simplesect kind="return"><para>feature type WORD </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="759" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="758" bodyend="761"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a71125ee5d42ad06673b821b2ccf8f128" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimpleFeatures&lt; int32_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the INT feature can deal with</para><para><simplesect kind="return"><para>feature type INT </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="769" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="768" bodyend="771"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1ac3328b9997fdfd99ea0a3db153637dca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimpleFeatures&lt; uint32_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the UINT feature can deal with</para><para><simplesect kind="return"><para>feature type UINT </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="778" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="777" bodyend="780"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a2ec910209c8c5648e38406f8448fcfd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimpleFeatures&lt; int64_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the LONG feature can deal with</para><para><simplesect kind="return"><para>feature type LONG </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="787" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="786" bodyend="789"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a628258ccedb72a3a7139a77591d20ca9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimpleFeatures&lt; uint64_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the ULONG feature can deal with</para><para><simplesect kind="return"><para>feature type ULONG </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="796" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="795" bodyend="798"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a8ea36e2a96c3e0dba24e825c5684546a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimpleFeatures&lt; float32_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the SHORTREAL feature can deal with</para><para><simplesect kind="return"><para>feature type SHORTREAL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="805" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="804" bodyend="807"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a007dec1a00c8d0a05aa0af875d0fe445" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimpleFeatures&lt; float64_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the DREAL feature can deal with</para><para><simplesect kind="return"><para>feature type DREAL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="814" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="813" bodyend="816"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a08e7284759e2d3a8fe165bb899446ce6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimpleFeatures&lt; floatmax_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the LONGREAL feature can deal with</para><para><simplesect kind="return"><para>feature type LONGREAL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="823" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="822" bodyend="825"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a6c8d63c2762cf8dd8f0dd2087ae2a364" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>const char *</type>
+        <definition>const char * shogun::CSimpleFeatures&lt; bool &gt;::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="829" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="828" bodyend="831"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1acfe534d7e9e84c2e9b0473e8b5c6a154" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>const char *</type>
+        <definition>const char * shogun::CSimpleFeatures&lt; char &gt;::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="835" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="834" bodyend="837"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a4a4189868e02c4cb9d38f56546f39edf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>const char *</type>
+        <definition>const char * shogun::CSimpleFeatures&lt; uint8_t &gt;::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="841" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="840" bodyend="843"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1abcdefa4cadd3ba92460dfb3ae719a4c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>const char *</type>
+        <definition>const char * shogun::CSimpleFeatures&lt; int16_t &gt;::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="847" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="846" bodyend="849"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a6b794ed265e3035b12b1bc53d8b85db3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>const char *</type>
+        <definition>const char * shogun::CSimpleFeatures&lt; uint16_t &gt;::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="853" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="852" bodyend="855"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1ab5112e2b1cb47ebfe96ddfa3eca3c02f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>const char *</type>
+        <definition>const char * shogun::CSimpleFeatures&lt; int32_t &gt;::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="859" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="858" bodyend="861"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1af1b4f618d68a3f4baff76d78957d765f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>const char *</type>
+        <definition>const char * shogun::CSimpleFeatures&lt; uint32_t &gt;::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="865" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="864" bodyend="867"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1ae577506520bd112725bbc6328e31db01" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>const char *</type>
+        <definition>const char * shogun::CSimpleFeatures&lt; int64_t &gt;::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="871" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="870" bodyend="873"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a67586643e510ca306f446df0115c1d4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>const char *</type>
+        <definition>const char * shogun::CSimpleFeatures&lt; uint64_t &gt;::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="877" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="876" bodyend="879"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a62d583b11820a9fb157afa38076915a8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>const char *</type>
+        <definition>const char * shogun::CSimpleFeatures&lt; float32_t &gt;::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="883" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="882" bodyend="885"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1acd7ebd845711c07f05eb0b00d33ae1bf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>const char *</type>
+        <definition>const char * shogun::CSimpleFeatures&lt; float64_t &gt;::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="889" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="888" bodyend="891"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1ad65c75a78a3ad39996ae017cbf6cd6e8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>const char *</type>
+        <definition>const char * shogun::CSimpleFeatures&lt; floatmax_t &gt;::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="895" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="894" bodyend="897"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a7360190710e4d65ef7ffb2b9e484e3db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool shogun::CSimpleFeatures&lt; float64_t &gt;::Align_char_features</definition>
+        <argsstring>(CStringFeatures&lt; char &gt; *cf, CStringFeatures&lt; char &gt; *Ref, float64_t gapCost)</argsstring>
+        <name>Align_char_features</name>
+        <param>
+          <type><ref refid="classshogun_1_1CStringFeatures" kindref="compound">CStringFeatures</ref>&lt; char &gt; *</type>
+          <declname>cf</declname>
+        </param>
+        <param>
+          <type><ref refid="classshogun_1_1CStringFeatures" kindref="compound">CStringFeatures</ref>&lt; char &gt; *</type>
+          <declname>Ref</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>gapCost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>align strings and compute emperical kernel map based on alignment scores</para><para>non functional code - needs updating</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strings to be aligned to reference </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference strings to be aligned to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gapCost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>costs for a gap </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="909" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="907" bodyend="937"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a6e2964a5173538a113408dcc9df31715" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSimpleFeatures&lt; bool &gt;::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="940" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="939" bodyend="956"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a89559f1705d64e48ff23dac651b9efea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSimpleFeatures&lt; char &gt;::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="960" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="959" bodyend="976"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a52015f7afb41707163ae2f78111613cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSimpleFeatures&lt; uint8_t &gt;::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="979" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="978" bodyend="995"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1ad99ac0cf87ebe36bd230b439efbb30a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSimpleFeatures&lt; int16_t &gt;::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="998" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="997" bodyend="1014"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1ab32f81e36cccb9abda38b3db69e5998f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSimpleFeatures&lt; uint16_t &gt;::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="1018" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="1017" bodyend="1034"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a1ff643db374a2e8608e90adb04292bd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSimpleFeatures&lt; int32_t &gt;::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="1037" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="1036" bodyend="1053"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a4691a935a6c9d2d91765cafa4bbc6e2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSimpleFeatures&lt; uint32_t &gt;::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="1056" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="1055" bodyend="1072"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a4df3679207ae897391aeb62ead426314" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSimpleFeatures&lt; int64_t &gt;::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="1075" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="1074" bodyend="1091"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1af3ef385f395bb1735355dc2ddab7e97f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSimpleFeatures&lt; uint64_t &gt;::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="1094" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="1093" bodyend="1110"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a8b885e11154507dfd860e431d8186178" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSimpleFeatures&lt; float32_t &gt;::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="1113" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="1112" bodyend="1129"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a40d2cb100411baf62d1a11a9eacea26b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSimpleFeatures&lt; float64_t &gt;::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="1132" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="1131" bodyend="1145"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1ab7ce7e4a1f3c36b0b42d1daa2503a11e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSimpleFeatures&lt; floatmax_t &gt;::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="1148" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="1147" bodyend="1164"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CSimpleFeatures_1a0506c8081e682a34cdfb69b3bf345674" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>ST *</type>
+        <definition>virtual ST* shogun::CSimpleFeatures&lt; ST &gt;::compute_feature_vector</definition>
+        <argsstring>(int32_t num, int32_t &amp;len, ST *target=NULL)</argsstring>
+        <name>compute_feature_vector</name>
+        <reimplementedby refid="classshogun_1_1CTOPFeatures_1a47dc3b1dbafbe4a00abac0f01b9c6c71">compute_feature_vector</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CRealFileFeatures_1a555acfd9191163fb4c86bce379e550a5">compute_feature_vector</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CFKFeatures_1aa79f285ecf91cd52a02035ab6d43d81d">compute_feature_vector</reimplementedby>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>ST *</type>
+          <declname>target</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute feature vector for sample num if target is set the vector is written to target len is returned by reference</para><para>NOT IMPLEMENTED!</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>num </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>feature vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="699" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="698" bodyend="702"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class SimpleFeatures implements dense feature matrices. </para>    </briefdescription>
+    <detaileddescription>
+<para>The feature matrices are stored en-block in memory in fortran order, i.e. column-by-column, where a column denotes a feature vector.</para><para>There are <ref refid="classshogun_1_1CSimpleFeatures_1a767626119fc7553441164cb4e953eecf" kindref="member">get_num_vectors()</ref> many feature vectors, of dimension <ref refid="classshogun_1_1CSimpleFeatures_1ac4d85290b6a9435942ef76371a781b39" kindref="member">get_num_features()</ref>. To access a feature vector call <ref refid="classshogun_1_1CSimpleFeatures_1ac20744d3cb7b487d48952e126ebc842e" kindref="member">get_feature_vector()</ref> and when you are done treating it call <ref refid="classshogun_1_1CSimpleFeatures_1a5a72ef6f22c82cefb215d7b9b6db65cb" kindref="member">free_feature_vector()</ref>. While <ref refid="classshogun_1_1CSimpleFeatures_1a5a72ef6f22c82cefb215d7b9b6db65cb" kindref="member">free_feature_vector()</ref> is a NOP in most cases feature vectors might have been generated on the fly (due to a number preprocessors being attached to them).</para><para>From this template class a number the following dense feature matrix types are used and supported:</para><para><itemizedlist>
+<listitem><para>bool matrix - CSimpleFeatures&lt;bool&gt; </para></listitem>
+<listitem><para>8bit char matrix - CSimpleFeatures&lt;char&gt; </para></listitem>
+<listitem><para>8bit Byte matrix - CSimpleFeatures&lt;uint8_t&gt; </para></listitem>
+<listitem><para>16bit Integer matrix - CSimpleFeatures&lt;int16_t&gt; </para></listitem>
+<listitem><para>16bit Word matrix - CSimpleFeatures&lt;uint16_t&gt; </para></listitem>
+<listitem><para>32bit Integer matrix - CSimpleFeatures&lt;int32_t&gt; </para></listitem>
+<listitem><para>32bit Unsigned Integer matrix - CSimpleFeatures&lt;uint32_t&gt; </para></listitem>
+<listitem><para>32bit Float matrix - CSimpleFeatures&lt;float32_t&gt; </para></listitem>
+<listitem><para>64bit Float matrix - <ref refid="classshogun_1_1CSimpleFeatures" kindref="compound">CSimpleFeatures&lt;float64_t&gt;</ref> </para></listitem>
+<listitem><para>64bit Float matrix <bold>in a file</bold> - <ref refid="classshogun_1_1CRealFileFeatures" kindref="compound">CRealFileFeatures</ref> </para></listitem>
+<listitem><para>64bit Tangent of posterior log-odds (TOP) features from HMM - <ref refid="classshogun_1_1CTOPFeatures" kindref="compound">CTOPFeatures</ref> </para></listitem>
+<listitem><para>64bit Fisher Kernel (FK) features from HMM - <ref refid="classshogun_1_1CTOPFeatures" kindref="compound">CTOPFeatures</ref> </para></listitem>
+<listitem><para>96bit Float matrix - CSimpleFeatures&lt;floatmax_t&gt; </para></listitem>
+</itemizedlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="97">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>shogun::CSimpleFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CSimpleFeatures"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="100">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>ST</label>
+      </node>
+      <node id="99">
+        <label>shogun::CSimpleFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CSimpleFeatures"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+        <childnode refid="102" relation="usage">
+          <edgelabel>feature_matrix</edgelabel>
+        </childnode>
+      </node>
+      <node id="101">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" line="62" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SimpleFeatures.h" bodystart="61" bodyend="715"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CFeatures_1a793f371cc7dd4897997b01612f7d4b77" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>add_preproc</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a184d2e7ec90b743c112b835d248be8fc" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>add_to_dense_vec</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a144f492d6406399e59c1d716ac611889" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>Align_char_features</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a7360190710e4d65ef7ffb2b9e484e3db" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>Align_char_features</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ab87dadb5c15d2688e0d1f2e46bc1aee3" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>apply_preproc</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ad688539536313914ec3711bce1739445" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a040fa070f47a2845e5fdcb89ca7c4565" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a91054c534e25c0e934ebb1a2b7217d2a" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a91ac9daf871dd99b358da47eea74eeb3" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1be7a2c5d471a3586c44988e2b4e1129" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a4ad3a39235806ab1999a1c5fb5290486" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a89609a765e1ab682ea6e73402b56c961" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>check_feature_compatibility</name></member>
+      <member refid="classshogun_1_1CFeatures_1afab00f1403d1349fd18cca31a6d63de3" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>clean_preprocs</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a4cb73c0a47276f345c49bc583d8344b2" prot="protected" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>combined_weight</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a0506c8081e682a34cdfb69b3bf345674" prot="protected" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>compute_feature_vector</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a45383d6584343e61043ee69d29ca661a" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>copy_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a198731e8c0233cb1fb76df3c5722c6f5" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>CSimpleFeatures</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1addc16375118b6b27dd99cfd58202aa6a" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>CSimpleFeatures</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a0096075ef8d190d58ce97b2336680f12" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>CSimpleFeatures</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a54fda828ffcbbdc836d4b625108ed8c8" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>CSimpleFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1accdc453796e319852dd41fffa0c0f70c" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>del_preproc</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a808c4c5b7e5cfa9558cab5e039e34ef4" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a6e2964a5173538a113408dcc9df31715" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a89559f1705d64e48ff23dac651b9efea" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a52015f7afb41707163ae2f78111613cd" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ad99ac0cf87ebe36bd230b439efbb30a5" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ab32f81e36cccb9abda38b3db69e5998f" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a1ff643db374a2e8608e90adb04292bd5" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a4691a935a6c9d2d91765cafa4bbc6e2a" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a4df3679207ae897391aeb62ead426314" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1af3ef385f395bb1735355dc2ddab7e97f" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a8b885e11154507dfd860e431d8186178" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a40d2cb100411baf62d1a11a9eacea26b" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ab7ce7e4a1f3c36b0b42d1daa2503a11e" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ae81ed7be6b000db0ae624eb781e93590" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>dense_dot_range</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a2a69a10f3ffcc5ed76322ebbd09b5fcb" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>dense_dot_range_helper</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a01ce37f41f397454c58bc2f05987d0c1" prot="protected" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>display_progress</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1adb3c5d8eabab09642598c5e7b620557d" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ae485eaec2c9264a0661bfdaf5db19166" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>duplicate</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a907202fa53453a1439e1fec2b2bb90e1" prot="protected" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>feature_cache</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ab92d07e1f66ea2b62abdc63b2b84a1c2" prot="protected" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a1deddc24e882780c97d8d7c012900d3a" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>free_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a5a72ef6f22c82cefb215d7b9b6db65cb" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>free_feature_vector</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1aa8bf02cb2cf32e1581abb44ff7f22784" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>free_features</name></member>
+      <member refid="classshogun_1_1CFeatures_1a29b93c241dca0eba1415f873c83d27d8" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a199b84c188e8f98f088c248fe5c0adea" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_combined_feature_weight</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a394940e41980a0084a9223c0e917c63d" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_dim_feature_space</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a2dfd5cd8ccd92593a02c9f6dfb9a84cd" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1aa46f724dc813a131a4dcabb36165df0e" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1acf9004ddf3e7e8ad99c5eaa520f0bbd8" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_matrix</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ab3b9a12fc4f02f03e8a655e8e4884058" prot="public" virt="virtual" ambiguityscope="shogun::CDotFeatures::"><scope>shogun::CSimpleFeatures</scope><name>get_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a89dcdd2bfa1eeb715e5d12fc319afbd3" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ab967d6a7abcc54837d310fe85042e913" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1adfb694ca959388f8ff8ac23c2546007e" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a2cd7541f7e5271a7c29326e3c2830686" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a7876ec0080b11f84715605e7f3bf76ba" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a85b372c83d055f86760d71b146f5dd56" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a71125ee5d42ad06673b821b2ccf8f128" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ac3328b9997fdfd99ea0a3db153637dca" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a2ec910209c8c5648e38406f8448fcfd5" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a628258ccedb72a3a7139a77591d20ca9" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a8ea36e2a96c3e0dba24e825c5684546a" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a007dec1a00c8d0a05aa0af875d0fe445" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a08e7284759e2d3a8fe165bb899446ce6" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ac20744d3cb7b487d48952e126ebc842e" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_vector</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a03b446254712cdf9339c0cc25fc91f4c" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_feature_vector</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a20dddb53f5fc7e42187373122a968aad" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a6c8d63c2762cf8dd8f0dd2087ae2a364" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1acfe534d7e9e84c2e9b0473e8b5c6a154" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a4a4189868e02c4cb9d38f56546f39edf" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1abcdefa4cadd3ba92460dfb3ae719a4c7" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a6b794ed265e3035b12b1bc53d8b85db3" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ab5112e2b1cb47ebfe96ddfa3eca3c02f" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1af1b4f618d68a3f4baff76d78957d765f" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ae577506520bd112725bbc6328e31db01" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a67586643e510ca306f446df0115c1d4c" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a62d583b11820a9fb157afa38076915a8" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1acd7ebd845711c07f05eb0b00d33ae1bf" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ad65c75a78a3ad39996ae017cbf6cd6e8" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1abfd7bc0fc2128e963f9714c62ae6db5c" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_nnz_features_for_vector</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ac4d85290b6a9435942ef76371a781b39" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_num_features</name></member>
+      <member refid="classshogun_1_1CFeatures_1a7662d240eab24d5753385b0f9e6e9bae" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_num_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a9010a03b11399648cc5da7194fb5e707" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_num_preprocessed</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a767626119fc7553441164cb4e953eecf" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_num_vectors</name></member>
+      <member refid="classshogun_1_1CFeatures_1ac1015e3a736e4e6d4d6fbe24416af6c4" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>get_preproc</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ab1207e479dd9fcf578f629db7b878917" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>get_size</name></member>
+      <member refid="classshogun_1_1CFeatures_1a07f1d7dc618a9f5f76663d80ad549d38" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1248f8829f63f9c9a42ac36065961295" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>is_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1a6412ef81478c3c9dadac2a87a544f640" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>list_feature_obj</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1ab3f090ce420bd82313354358bff38705" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>load</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1aacda9efff0e718088499535745934ab1" prot="protected" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>num_features</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1afcdd2b798010c4cb1e5b64da5d0bb805" prot="protected" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>num_vectors</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a0130f7dadc6257d919be40eb7cc173d9" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>reshape</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a5ee15be9a68445fd47d4db97dcdaa888" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>save</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a3cbcb41f5f6fb4817568469120204c10" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>set_combined_feature_weight</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a2a44b4c0d05c35a612b2fc1d62df52c3" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>set_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a7c56a23d330e1dbf2e795401159708e8" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>set_feature_vector</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1aeafe03ff25bff3e82ba5ecaf81390353" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>set_num_features</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1aac7bc310db9f14c07c69a811d39771f2" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>set_num_vectors</name></member>
+      <member refid="classshogun_1_1CFeatures_1aa88c27c0f3885d23ac71c4cc2e55c431" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>set_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab43db0bd4a231249ce4bc65f6e15f695" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a3ff3f03688a7f6a1b36dab8677407166" prot="public" virt="non-virtual"><scope>shogun::CSimpleFeatures</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a7c86c8f9ba308b59a8cf17f236be70d2" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>~CDotFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab0e2a8a18ac5056f802e4aa51d4fcd4f" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>~CFeatures</name></member>
+      <member refid="classshogun_1_1CSimpleFeatures_1a480b565d004158a3599ab57109cc7890" prot="public" virt="virtual"><scope>shogun::CSimpleFeatures</scope><name>~CSimpleFeatures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="namespaceshogun" kind="namespace">
+    <compoundname>shogun</compoundname>
+    <innerclass refid="classshogun_1_1CDistribution" prot="public">shogun::CDistribution</innerclass>
+    <innerclass refid="classshogun_1_1CGHMM" prot="public">shogun::CGHMM</innerclass>
+    <innerclass refid="classshogun_1_1CHistogram" prot="public">shogun::CHistogram</innerclass>
+    <innerclass refid="structshogun_1_1T__ALPHA__BETA" prot="public">shogun::T_ALPHA_BETA</innerclass>
+    <innerclass refid="classshogun_1_1CModel" prot="public">shogun::CModel</innerclass>
+    <innerclass refid="classshogun_1_1CHMM" prot="public">shogun::CHMM</innerclass>
+    <innerclass refid="classshogun_1_1CLinearHMM" prot="public">shogun::CLinearHMM</innerclass>
+      <sectiondef kind="user-defined">
+      <header>HMM specific types</header>
+      <description><para><anchor id="_1amgrp23b85798ae93a1b7a57ed66a0e06c2ae"/> </para></description>
+      <memberdef kind="typedef" id="namespaceshogun_1af910a2fa9b2e1e5cf1104baecd9fbf49" prot="public" static="no">
+        <type>float64_t</type>
+        <definition>typedef float64_t shogun::T_ALPHA_BETA_TABLE</definition>
+        <argsstring></argsstring>
+        <name>T_ALPHA_BETA_TABLE</name>
+        <briefdescription>
+<para>type for alpha/beta caching table </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="37" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceshogun_1aaf70f047fd97f11e2813a8d23a5e41a4" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t shogun::T_STATES</definition>
+        <argsstring></argsstring>
+        <name>T_STATES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>type that is used for states. Probably uint8_t is enough if you have at most 256 states, however uint16_t/long/... is also possible although you might quickly run into memory problems </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="64" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceshogun_1ab7a426373e2061f524d2facdc05cbdd6" prot="public" static="no">
+        <type>T_STATES *</type>
+        <definition>typedef T_STATES* shogun::P_STATES</definition>
+        <argsstring></argsstring>
+        <name>P_STATES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="66" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceshogun_1a3ad03e02c7e4c779d669ad4548087a26" prot="public" static="no">
+        <name>BaumWelchViterbiType</name>
+        <enumvalue id="namespaceshogun_1a3ad03e02c7e4c779d669ad4548087a26a50214cfe56036787754646640dca5dba" prot="public">
+          <name>BW_NORMAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a3ad03e02c7e4c779d669ad4548087a26a5f272586b4cdde6eac22d8607b8bca19" prot="public">
+          <name>BW_TRANS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a3ad03e02c7e4c779d669ad4548087a26a4285e8e2d916d18fad7dc64e5bb2b2c5" prot="public">
+          <name>BW_DEFINED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a3ad03e02c7e4c779d669ad4548087a26a7b6de2692e820bf89b727a57d2229a56" prot="public">
+          <name>VIT_NORMAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceshogun_1a3ad03e02c7e4c779d669ad4548087a26ac739305a0eae490d1806962be13236b5" prot="public">
+          <name>VIT_DEFINED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="71" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="70" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/Distribution.h" line="19"/>
+  </compounddef>
+</doxygen>

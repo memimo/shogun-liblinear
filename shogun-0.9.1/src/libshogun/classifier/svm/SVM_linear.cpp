@@ -324,6 +324,10 @@ void l2loss_svm_fun::subXTv(float64_t *v, float64_t *XTv)
 //
 // solution will be put in w
 
+#undef GETI
+#define GETI(i) (y[i]+1)
+// To support weights for instances, use GETI(i) (i)
+
 l1r_l2_svc::l1r_l2_svc(problem_l1 *p, float64_t *w, float64_t eps, float64_t Cp, float64_t Cn)
 {	
 	this->prob_col = p;
@@ -352,19 +356,34 @@ void l1r_l2_svc::solve_l1r_l2_svc(float64_t *w, float64_t eps, float64_t Cp, flo
 	schar *y = new schar[l];
 	float64_t *b = new float64_t[l]; // b = 1-ywTx
 	float64_t *xj_sq = new float64_t[w_size];
+	float64_t *C_ex = new float64_t[w_size];
 	//TSparseEntry<ST>* x;
 
-	int32_t ab[3] = {1 , 2, 4};
-	prob_col->x->dense_dot(0, ab, 3);
-	//printf( "a: %d  %d\n", prob_col->x[5].features[0].feat_index ,  prob_col.x[5].features[1].feat_index);
+	float64_t C[3] = {Cn,0,Cp};
+	float64_t *C_vec = new float64_t[l];
+
 	for(j=0; j<l; j++)
 	{
 		b[j] = 1;
 		if(prob_col->y[j] > 0)
+		{
 			y[j] = 1;
+			C_ex[j] = C[GETI(j)];
+		}
 		else
+		{		
 			y[j] = -1;
+			C_ex[j] = C[GETI(j)];
+		}
 	}
+
+	
+
+	xj_sq=((CSparseFeatures<float64_t>*) prob_col->x)->compute_squared(xj_sq);
+
+	//printf( "a: %f  %f\n", sq_lhs[0], sq_lhs[1]);
+
+
 	
 }
 

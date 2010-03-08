@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CMemoryMappedFile" kind="class" prot="public">
+    <compoundname>shogun::CMemoryMappedFile</compoundname>
+    <includes local="no">MemoryMappedFile.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CMemoryMappedFile_1a9ccf163dded0c807b3612e70a2146ae8" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int shogun::CMemoryMappedFile&lt; T &gt;::fd</definition>
+        <argsstring></argsstring>
+        <name>fd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>file descriptor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="242" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CMemoryMappedFile_1ae9739b227ff2471b3d7896894e59a076" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t shogun::CMemoryMappedFile&lt; T &gt;::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>size of file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="244" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CMemoryMappedFile_1ae79f9abd016c625328970817d0f1944a" prot="protected" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* shogun::CMemoryMappedFile&lt; T &gt;::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mapping address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="246" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CMemoryMappedFile_1acfeb2008d00d0d599f20290d74774e3c" prot="protected" static="no" mutable="no">
+        <type>char</type>
+        <definition>char shogun::CMemoryMappedFile&lt; T &gt;::rw</definition>
+        <argsstring></argsstring>
+        <name>rw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="248" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CMemoryMappedFile_1a5587bc13bbbbff29c95521b1b1483e17" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t shogun::CMemoryMappedFile&lt; T &gt;::last_written_byte</definition>
+        <argsstring></argsstring>
+        <name>last_written_byte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>last_written_byte </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="251" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CMemoryMappedFile_1a4772a58818b7e0d5e0c2c705752938d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CMemoryMappedFile&lt; T &gt;::CMemoryMappedFile</definition>
+        <argsstring>(const char *fname, char flag=&apos;r&apos;, uint64_t fsize=0)</argsstring>
+        <name>CMemoryMappedFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>flag</declname>
+          <defval>&apos;r&apos;</defval>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>fsize</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para>open a memory mapped file for read or read/write mode</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of file, zero terminated string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>determines read or read write mode (can be &apos;r&apos; or &apos;w&apos;) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>overestimate of expected file size (in bytes) when opened in write mode; Underestimating the file size will result in an error to occur upon writing. In case the exact file size is known later on, it can be reduced via <ref refid="classshogun_1_1CMemoryMappedFile_1af244b5a7c2c24023e1d88fbefd02de3b" kindref="member">set_truncate_size()</ref> before closing the file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="49" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="47" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMemoryMappedFile_1a9c0016f81da7bf72e49ec42fae013997" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CMemoryMappedFile&lt; T &gt;::~CMemoryMappedFile</definition>
+        <argsstring>()</argsstring>
+        <name>~CMemoryMappedFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="95" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="94" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMemoryMappedFile_1ad3ab17146c395b299b68779fad4cc756" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* shogun::CMemoryMappedFile&lt; T &gt;::get_map</definition>
+        <argsstring>()</argsstring>
+        <name>get_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the mapping address It can now be accessed via, e.g.</para><para>double* x = <ref refid="classshogun_1_1CMemoryMappedFile_1ad3ab17146c395b299b68779fad4cc756" kindref="member">get_map()</ref> x[index]= foo; (for write mode) foo = x[index]; (for read and write mode)</para><para><simplesect kind="return"><para>length of file </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="116" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMemoryMappedFile_1a637b314ec64f364b88cc044c734b57f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t shogun::CMemoryMappedFile&lt; T &gt;::get_length</definition>
+        <argsstring>()</argsstring>
+        <name>get_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the number of objects of type T cointained in the file</para><para><simplesect kind="return"><para>length of file </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="125" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMemoryMappedFile_1abd03eb3bd40b6d170bd0a548d15eba64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t shogun::CMemoryMappedFile&lt; T &gt;::get_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the size of the file in bytes</para><para><simplesect kind="return"><para>size of file in bytes </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="134" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMemoryMappedFile_1ae8fc02a0dbf5232a120c5781daafae26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* shogun::CMemoryMappedFile&lt; T &gt;::get_line</definition>
+        <argsstring>(uint64_t &amp;len, uint64_t &amp;offs)</argsstring>
+        <name>get_line</name>
+        <param>
+          <type>uint64_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>uint64_t &amp;</type>
+          <declname>offs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get next line from file</para><para>The returned line may be modfied in case the file was opened read/write. It is otherwise read-only.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of line (returned via reference) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset to be passed for reading next line, should be 0 initially (returned via reference)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>line (NOT ZERO TERMINATED) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="150" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="149" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMemoryMappedFile_1af9695fdc840932978ff241e646204cc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CMemoryMappedFile&lt; T &gt;::write_line</definition>
+        <argsstring>(const char *line, uint64_t len, uint64_t &amp;offs)</argsstring>
+        <name>write_line</name>
+        <param>
+          <type>const char *</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>uint64_t &amp;</type>
+          <declname>offs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>write line to file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to be written (must not contain &apos;<linebreak/>
+&apos; and not required to be zero terminated) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the string to be written </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset to be passed for writing next line, should be 0 initially (returned via reference)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>line (NOT ZERO TERMINATED) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="179" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="178" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMemoryMappedFile_1af244b5a7c2c24023e1d88fbefd02de3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CMemoryMappedFile&lt; T &gt;::set_truncate_size</definition>
+        <argsstring>(uint64_t *sz=0)</argsstring>
+        <name>set_truncate_size</name>
+        <param>
+          <type>uint64_t *</type>
+          <declname>sz</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set file size</para><para>When the file is opened for read/write mode, it will be truncated upon destruction of the <ref refid="classshogun_1_1CMemoryMappedFile" kindref="compound">CMemoryMappedFile</ref> object. This is automagically determined when writing lines, but might have to be set manually for other data types, which is what this function is for.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>byte number at which to truncate the file, zero to disable file truncation. Has an effect only when file is opened with in read/write mode &apos;w&apos; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="204" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="203" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMemoryMappedFile_1a6314f16d1ad9809eaa0d3515d7e426ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CMemoryMappedFile&lt; T &gt;::get_num_lines</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_lines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>count the number of lines in a file</para><para><simplesect kind="return"><para>number of lines </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="213" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="212" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMemoryMappedFile_1ab167f5694cb99f5e6072cabe7242c617" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CMemoryMappedFile&lt; T &gt;::operator[]</definition>
+        <argsstring>(int32_t index) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>operator overload for file read only access</para><para>DOES NOT DO ANY BOUNDS CHECKING</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>element at index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="233" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMemoryMappedFile_1af39ca59e7f9a974e77a4c47296a5608f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CMemoryMappedFile&lt; T &gt;::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="238" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="238" bodyend="238"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>memory mapped file </para>    </briefdescription>
+    <detaileddescription>
+<para>Implements a memory mapped file for super fast file access. </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" line="32" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/MemoryMappedFile.h" bodystart="31" bodyend="252"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CMemoryMappedFile_1ae79f9abd016c625328970817d0f1944a" prot="protected" virt="non-virtual"><scope>shogun::CMemoryMappedFile</scope><name>address</name></member>
+      <member refid="classshogun_1_1CMemoryMappedFile_1a4772a58818b7e0d5e0c2c705752938d8" prot="public" virt="non-virtual"><scope>shogun::CMemoryMappedFile</scope><name>CMemoryMappedFile</name></member>
+      <member refid="classshogun_1_1CMemoryMappedFile_1a9ccf163dded0c807b3612e70a2146ae8" prot="protected" virt="non-virtual"><scope>shogun::CMemoryMappedFile</scope><name>fd</name></member>
+      <member refid="classshogun_1_1CMemoryMappedFile_1a637b314ec64f364b88cc044c734b57f6" prot="public" virt="non-virtual"><scope>shogun::CMemoryMappedFile</scope><name>get_length</name></member>
+      <member refid="classshogun_1_1CMemoryMappedFile_1ae8fc02a0dbf5232a120c5781daafae26" prot="public" virt="non-virtual"><scope>shogun::CMemoryMappedFile</scope><name>get_line</name></member>
+      <member refid="classshogun_1_1CMemoryMappedFile_1ad3ab17146c395b299b68779fad4cc756" prot="public" virt="non-virtual"><scope>shogun::CMemoryMappedFile</scope><name>get_map</name></member>
+      <member refid="classshogun_1_1CMemoryMappedFile_1af39ca59e7f9a974e77a4c47296a5608f" prot="public" virt="virtual"><scope>shogun::CMemoryMappedFile</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CMemoryMappedFile_1a6314f16d1ad9809eaa0d3515d7e426ed" prot="public" virt="non-virtual"><scope>shogun::CMemoryMappedFile</scope><name>get_num_lines</name></member>
+      <member refid="classshogun_1_1CMemoryMappedFile_1abd03eb3bd40b6d170bd0a548d15eba64" prot="public" virt="non-virtual"><scope>shogun::CMemoryMappedFile</scope><name>get_size</name></member>
+      <member refid="classshogun_1_1CMemoryMappedFile_1a5587bc13bbbbff29c95521b1b1483e17" prot="protected" virt="non-virtual"><scope>shogun::CMemoryMappedFile</scope><name>last_written_byte</name></member>
+      <member refid="classshogun_1_1CMemoryMappedFile_1ae9739b227ff2471b3d7896894e59a076" prot="protected" virt="non-virtual"><scope>shogun::CMemoryMappedFile</scope><name>length</name></member>
+      <member refid="classshogun_1_1CMemoryMappedFile_1ab167f5694cb99f5e6072cabe7242c617" prot="public" virt="non-virtual"><scope>shogun::CMemoryMappedFile</scope><name>operator[]</name></member>
+      <member refid="classshogun_1_1CMemoryMappedFile_1acfeb2008d00d0d599f20290d74774e3c" prot="protected" virt="non-virtual"><scope>shogun::CMemoryMappedFile</scope><name>rw</name></member>
+      <member refid="classshogun_1_1CMemoryMappedFile_1af244b5a7c2c24023e1d88fbefd02de3b" prot="public" virt="non-virtual"><scope>shogun::CMemoryMappedFile</scope><name>set_truncate_size</name></member>
+      <member refid="classshogun_1_1CMemoryMappedFile_1af9695fdc840932978ff241e646204cc7" prot="public" virt="non-virtual"><scope>shogun::CMemoryMappedFile</scope><name>write_line</name></member>
+      <member refid="classshogun_1_1CMemoryMappedFile_1a9c0016f81da7bf72e49ec42fae013997" prot="public" virt="virtual"><scope>shogun::CMemoryMappedFile</scope><name>~CMemoryMappedFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

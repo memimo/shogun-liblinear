@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CNormDerivativeLem3" kind="class" prot="public">
+    <compoundname>shogun::CNormDerivativeLem3</compoundname>
+    <basecompoundref refid="classshogun_1_1CSimplePreProc" prot="public" virt="non-virtual">shogun::CSimplePreProc&lt; float64_t &gt;</basecompoundref>
+    <includes local="no">NormDerivativeLem3.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CNormDerivativeLem3_1ab6899feedf58c913a8e863e5cc8010c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CNormDerivativeLem3::CNormDerivativeLem3</definition>
+        <argsstring>()</argsstring>
+        <name>CNormDerivativeLem3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormDerivativeLem3.h" line="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CNormDerivativeLem3_1a133cd6ec52771b6dbc5df0ebe448ff53" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CNormDerivativeLem3::~CNormDerivativeLem3</definition>
+        <argsstring>()</argsstring>
+        <name>~CNormDerivativeLem3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormDerivativeLem3.h" line="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CNormDerivativeLem3_1af125544fa8efc1f4d700d0313e4dadff" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CNormDerivativeLem3::init</definition>
+        <argsstring>(CFeatures *f)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CPreProc_1afe50f73057b75cb494a9a4ab253258d6">init</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>initialize preprocessor from features </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormDerivativeLem3.h" line="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CNormDerivativeLem3_1a1e38218569c786dcd097d649f7b64169" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CNormDerivativeLem3::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <reimplements refid="classshogun_1_1CPreProc_1a0f043eb1dd251b49cb3cf3ecf44b1c4b">cleanup</reimplements>
+        <briefdescription>
+<para>cleanup </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormDerivativeLem3.h" line="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CNormDerivativeLem3_1aa33c5b2df8de2dff40b9a78283f2ab51" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CNormDerivativeLem3::load</definition>
+        <argsstring>(FILE *f)</argsstring>
+        <name>load</name>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>initialize preprocessor from file </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormDerivativeLem3.h" line="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CNormDerivativeLem3_1af29dac7b885f653cdbbbb8d3996f31bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CNormDerivativeLem3::save</definition>
+        <argsstring>(FILE *f)</argsstring>
+        <name>save</name>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>save preprocessor init-data to file </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormDerivativeLem3.h" line="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CNormDerivativeLem3_1aac90a9caa69d4e41fbac97a6ba1c3bc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t *</type>
+        <definition>virtual float64_t* shogun::CNormDerivativeLem3::apply_to_feature_matrix</definition>
+        <argsstring>(CFeatures *f)</argsstring>
+        <name>apply_to_feature_matrix</name>
+        <reimplements refid="classshogun_1_1CSimplePreProc_1adec07199d03e845350456bb3f2e8c240">apply_to_feature_matrix</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>apply preproc on feature matrix result in feature matrix return pointer to feature_matrix, i.e. f-&gt;get_feature_matrix(); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormDerivativeLem3.h" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CNormDerivativeLem3_1a52f1343c1cb895a804bc8e47b9f4ba8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t *</type>
+        <definition>virtual float64_t* shogun::CNormDerivativeLem3::apply_to_feature_vector</definition>
+        <argsstring>(float64_t *f, int32_t len)</argsstring>
+        <name>apply_to_feature_vector</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>apply preproc on single feature vector result in feature matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormDerivativeLem3.h" line="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Preprocessor NormDerivativeLem3, performs the normalization used in Lemma3 in Jaakola Hausslers Fischer Kernel paper <bold>currently not implemented</bold>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="14">
+        <label>shogun::CPreProc</label>
+        <link refid="classshogun_1_1CPreProc"/>
+      </node>
+      <node id="13">
+        <label>shogun::CSimplePreProc&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimplePreProc"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>shogun::CNormDerivativeLem3</label>
+        <link refid="classshogun_1_1CNormDerivativeLem3"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="17">
+        <label>shogun::CPreProc</label>
+        <link refid="classshogun_1_1CPreProc"/>
+      </node>
+      <node id="16">
+        <label>shogun::CSimplePreProc&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimplePreProc"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>shogun::CNormDerivativeLem3</label>
+        <link refid="classshogun_1_1CNormDerivativeLem3"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormDerivativeLem3.h" line="24" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/NormDerivativeLem3.h" bodystart="23" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CNormDerivativeLem3_1aac90a9caa69d4e41fbac97a6ba1c3bc1" prot="public" virt="virtual"><scope>shogun::CNormDerivativeLem3</scope><name>apply_to_feature_matrix</name></member>
+      <member refid="classshogun_1_1CNormDerivativeLem3_1a52f1343c1cb895a804bc8e47b9f4ba8f" prot="public" virt="virtual"><scope>shogun::CNormDerivativeLem3</scope><name>apply_to_feature_vector</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1ad95caddfb7ec5ac7071b43d366da9f2a" prot="public" virt="pure-virtual" ambiguityscope="CSimplePreProc&lt; float64_t &gt;::"><scope>shogun::CNormDerivativeLem3</scope><name>apply_to_feature_vector</name></member>
+      <member refid="classshogun_1_1CNormDerivativeLem3_1a1e38218569c786dcd097d649f7b64169" prot="public" virt="virtual"><scope>shogun::CNormDerivativeLem3</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CNormDerivativeLem3_1ab6899feedf58c913a8e863e5cc8010c6" prot="public" virt="non-virtual"><scope>shogun::CNormDerivativeLem3</scope><name>CNormDerivativeLem3</name></member>
+      <member refid="classshogun_1_1CPreProc_1a42cd824b1e730557f07884dc6eb98e51" prot="public" virt="non-virtual"><scope>shogun::CNormDerivativeLem3</scope><name>CPreProc</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1a94752b9091a95a9cba6fdeb729e03bc3" prot="public" virt="non-virtual"><scope>shogun::CNormDerivativeLem3</scope><name>CSimplePreProc</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1aabe2bad66cb5c1c5fdef0a8b4ce5a8db" prot="public" virt="virtual"><scope>shogun::CNormDerivativeLem3</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1a59c6f4e6daddd0b833ab65f1ed6489db" prot="public" virt="virtual"><scope>shogun::CNormDerivativeLem3</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CPreProc_1a66dbec59819cb9ed7023fc47608ccad7" prot="public" virt="non-virtual"><scope>shogun::CNormDerivativeLem3</scope><name>get_id</name></member>
+      <member refid="classshogun_1_1CPreProc_1ade7d07b45284bdae48abe425b0bf5a40" prot="public" virt="virtual"><scope>shogun::CNormDerivativeLem3</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CNormDerivativeLem3_1af125544fa8efc1f4d700d0313e4dadff" prot="public" virt="virtual"><scope>shogun::CNormDerivativeLem3</scope><name>init</name></member>
+      <member refid="classshogun_1_1CNormDerivativeLem3_1aa33c5b2df8de2dff40b9a78283f2ab51" prot="public" virt="virtual"><scope>shogun::CNormDerivativeLem3</scope><name>load</name></member>
+      <member refid="classshogun_1_1CPreProc_1a7905211b1e156831e64768d936351fa8" prot="protected" virt="non-virtual"><scope>shogun::CNormDerivativeLem3</scope><name>preproc_id</name></member>
+      <member refid="classshogun_1_1CPreProc_1a58f21d152eaba8e982f98806d8496db3" prot="protected" virt="non-virtual"><scope>shogun::CNormDerivativeLem3</scope><name>preproc_name</name></member>
+      <member refid="classshogun_1_1CNormDerivativeLem3_1af29dac7b885f653cdbbbb8d3996f31bf" prot="public" virt="virtual"><scope>shogun::CNormDerivativeLem3</scope><name>save</name></member>
+      <member refid="classshogun_1_1CNormDerivativeLem3_1a133cd6ec52771b6dbc5df0ebe448ff53" prot="public" virt="virtual"><scope>shogun::CNormDerivativeLem3</scope><name>~CNormDerivativeLem3</name></member>
+      <member refid="classshogun_1_1CPreProc_1a037b99bfd3bacbb3135525e81b134c57" prot="public" virt="virtual"><scope>shogun::CNormDerivativeLem3</scope><name>~CPreProc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

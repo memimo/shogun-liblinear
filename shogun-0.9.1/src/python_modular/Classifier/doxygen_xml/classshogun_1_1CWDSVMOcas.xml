@@ -1,0 +1,1283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CWDSVMOcas" kind="class" prot="public">
+    <compoundname>shogun::CWDSVMOcas</compoundname>
+    <basecompoundref refid="classshogun_1_1CClassifier" prot="public" virt="non-virtual">shogun::CClassifier</basecompoundref>
+    <includes local="no">WDSVMOcas.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1acd2779842ef87dee365d2629ab5e7c4f" prot="protected" static="no" mutable="no">
+        <type>CStringFeatures&lt; uint8_t &gt; *</type>
+        <definition>CStringFeatures&lt;uint8_t&gt;* shogun::CWDSVMOcas::features</definition>
+        <argsstring></argsstring>
+        <name>features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>features </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="295" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1abbbad133e14081a80b80b5048b2afb79" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CWDSVMOcas::use_bias</definition>
+        <argsstring></argsstring>
+        <name>use_bias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if bias shall be used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="297" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1ac70ab465db8a3828843f8669ef31266f" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDSVMOcas::bufsize</definition>
+        <argsstring></argsstring>
+        <name>bufsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>buffer size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="299" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1ab6b4e6d23c3a5ccf7cb2e5e269a5da52" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWDSVMOcas::C1</definition>
+        <argsstring></argsstring>
+        <name>C1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>C1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="301" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1a6786b0c4ca5d8a79573becba1be4fc63" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWDSVMOcas::C2</definition>
+        <argsstring></argsstring>
+        <name>C2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>C2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="303" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1ab4030ca28395f67d0c98fcf4e5ffd0a0" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWDSVMOcas::epsilon</definition>
+        <argsstring></argsstring>
+        <name>epsilon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>epsilon </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="305" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1a9e6010089183cbf97951e9becdcb3067" prot="protected" static="no" mutable="no">
+        <type>E_SVM_TYPE</type>
+        <definition>E_SVM_TYPE shogun::CWDSVMOcas::method</definition>
+        <argsstring></argsstring>
+        <name>method</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>method </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="307" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1a51fe88e24720969f292d33867bcf7ad9" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDSVMOcas::degree</definition>
+        <argsstring></argsstring>
+        <name>degree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>degree </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="310" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1af60e1cf63985f333ebcbf0e9ef31fbdb" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDSVMOcas::from_degree</definition>
+        <argsstring></argsstring>
+        <name>from_degree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>from degree </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="312" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1a4a743af257507494587825e5faf7415f" prot="protected" static="no" mutable="no">
+        <type>float32_t *</type>
+        <definition>float32_t* shogun::CWDSVMOcas::wd_weights</definition>
+        <argsstring></argsstring>
+        <name>wd_weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>wd weights </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="314" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1ad921c3a111b7e21c7fb9101c9fa92f77" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDSVMOcas::num_vec</definition>
+        <argsstring></argsstring>
+        <name>num_vec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>num vectors </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="316" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1aa278c0c41c51ef570739d160c295bb33" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDSVMOcas::string_length</definition>
+        <argsstring></argsstring>
+        <name>string_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of string in vector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="318" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1aef8f9145cbbd347f63e3e2f18ba5bb48" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDSVMOcas::alphabet_size</definition>
+        <argsstring></argsstring>
+        <name>alphabet_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>size of alphabet </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="320" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1a349f5cf3f0e29d46b4697bcca8f6c9d4" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWDSVMOcas::normalization_const</definition>
+        <argsstring></argsstring>
+        <name>normalization_const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalization const </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="323" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1a6ae5799ee4bd50b2a1f292a22250e28d" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWDSVMOcas::bias</definition>
+        <argsstring></argsstring>
+        <name>bias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bias </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="326" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1ad989d309945bde383646b8036be7fea0" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWDSVMOcas::old_bias</definition>
+        <argsstring></argsstring>
+        <name>old_bias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>old_bias </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="328" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1a0f9ce699d921edc1873d9bbb4e4796c7" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CWDSVMOcas::w_offsets</definition>
+        <argsstring></argsstring>
+        <name>w_offsets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>w offsets </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="330" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1af00e749235ee38a3d8ff491fd3484034" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDSVMOcas::w_dim</definition>
+        <argsstring></argsstring>
+        <name>w_dim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>w dim </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="332" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1a7730fd8171ab208ef7b13c8b47f70bd4" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDSVMOcas::w_dim_single_char</definition>
+        <argsstring></argsstring>
+        <name>w_dim_single_char</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>w dim of a single char </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="334" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1a87e2e47c1c2dbd64794cb1a4c9fbb397" prot="protected" static="no" mutable="no">
+        <type>float32_t *</type>
+        <definition>float32_t* shogun::CWDSVMOcas::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>w </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="336" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1a36170d41a19425ef921699f2dc46b474" prot="protected" static="no" mutable="no">
+        <type>float32_t *</type>
+        <definition>float32_t* shogun::CWDSVMOcas::old_w</definition>
+        <argsstring></argsstring>
+        <name>old_w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>old w </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="338" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1ad7b38af0bfa7297ce9daa3d89d2684bc" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CWDSVMOcas::lab</definition>
+        <argsstring></argsstring>
+        <name>lab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>labels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="340" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1adc32e47fc0e6f9740341b8e177c7e8e3" prot="protected" static="no" mutable="no">
+        <type>float32_t **</type>
+        <definition>float32_t** shogun::CWDSVMOcas::cuts</definition>
+        <argsstring></argsstring>
+        <name>cuts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cuts </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="343" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWDSVMOcas_1a73b0a383ad6d747d527118bb2c93fbed" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CWDSVMOcas::cp_bias</definition>
+        <argsstring></argsstring>
+        <name>cp_bias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bias dimensions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="345" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a5c60bf44a7a300179902b93d36aa60b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CWDSVMOcas::CWDSVMOcas</definition>
+        <argsstring>(E_SVM_TYPE type)</argsstring>
+        <name>CWDSVMOcas</name>
+        <param>
+          <type>E_SVM_TYPE</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of SVM </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a12b10ca6e8eb307990e3318bc03e34f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CWDSVMOcas::CWDSVMOcas</definition>
+        <argsstring>(float64_t C, int32_t d, int32_t from_d, CStringFeatures&lt; uint8_t &gt; *traindat, CLabels *trainlab)</argsstring>
+        <name>CWDSVMOcas</name>
+        <param>
+          <type>float64_t</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>from_d</declname>
+        </param>
+        <param>
+          <type>CStringFeatures&lt; uint8_t &gt; *</type>
+          <declname>traindat</declname>
+        </param>
+        <param>
+          <type>CLabels *</type>
+          <declname>trainlab</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant C </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degree </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>from_d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>from degree </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>traindat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>trainlab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>labels for training features </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a43c4a0b1c9562f6cde771a3f9c7a38cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CWDSVMOcas::~CWDSVMOcas</definition>
+        <argsstring>()</argsstring>
+        <name>~CWDSVMOcas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a98439d73ede04b698e64cf6406898a1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EClassifierType</type>
+        <definition>virtual EClassifierType shogun::CWDSVMOcas::get_classifier_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_classifier_type</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a52d05215c6b6a252650c41a0b29d8cc5">get_classifier_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier type</para><para><simplesect kind="return"><para>classifier type WDSVMOCAS </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="52" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1ad610a6f1faf908c8790491fe5e3dafca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CWDSVMOcas::train</definition>
+        <argsstring>(CFeatures *data=NULL)</argsstring>
+        <name>train</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a9904cc0a8d7ec077cc1fede8d64ebb22">train</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>train classifier</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training <ref refid="structshogun_1_1data" kindref="compound">data</ref> (parameter can be avoided if distance or kernel-based classifiers are used and distance/kernels are initialized with train <ref refid="structshogun_1_1data" kindref="compound">data</ref>)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether training was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a03289213184e35477cf95b9e119b463e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CWDSVMOcas::set_C</definition>
+        <argsstring>(float64_t c1, float64_t c2)</argsstring>
+        <name>set_C</name>
+        <param>
+          <type>float64_t</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set C</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new C1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new C2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="69" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1af22c2c13ce3d8c1e084de53f2ff0f533" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWDSVMOcas::get_C1</definition>
+        <argsstring>()</argsstring>
+        <name>get_C1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get C1</para><para><simplesect kind="return"><para>C1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="75" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a178361a8bca1a5c4fe7a934c063c0585" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWDSVMOcas::get_C2</definition>
+        <argsstring>()</argsstring>
+        <name>get_C2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get C2</para><para><simplesect kind="return"><para>C2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="81" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a096d5fa4c8a1afcf28582364978a9275" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CWDSVMOcas::set_epsilon</definition>
+        <argsstring>(float64_t eps)</argsstring>
+        <name>set_epsilon</name>
+        <param>
+          <type>float64_t</type>
+          <declname>eps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set epsilon</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new epsilon </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="87" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a617e5c245e6a345f5f840996c3737455" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWDSVMOcas::get_epsilon</definition>
+        <argsstring>()</argsstring>
+        <name>get_epsilon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get epsilon</para><para><simplesect kind="return"><para>epsilon </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="93" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1ad85b82ffcef09bb7657190acf4873147" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CWDSVMOcas::set_features</definition>
+        <argsstring>(CStringFeatures&lt; uint8_t &gt; *feat)</argsstring>
+        <name>set_features</name>
+        <param>
+          <type>CStringFeatures&lt; uint8_t &gt; *</type>
+          <declname>feat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set features</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="100" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="99" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1acf3b1cc2827f485c6e7cd89e3a04c5f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CStringFeatures&lt; uint8_t &gt; *</type>
+        <definition>CStringFeatures&lt;uint8_t&gt;* shogun::CWDSVMOcas::get_features</definition>
+        <argsstring>()</argsstring>
+        <name>get_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get features</para><para><simplesect kind="return"><para>features </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="111" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="110" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a1d90888696e136766edb4bf039c4aa8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CWDSVMOcas::set_bias_enabled</definition>
+        <argsstring>(bool enable_bias)</argsstring>
+        <name>set_bias_enabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enable_bias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set if bias shall be enabled</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable_bias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if bias shall be enabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="120" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1af34a094cffa5ad1e0522ce991c1a519b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWDSVMOcas::get_bias_enabled</definition>
+        <argsstring>()</argsstring>
+        <name>get_bias_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check if bias is enabled</para><para><simplesect kind="return"><para>if bias is enabled </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="126" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a734dd6118120f403632971c696667898" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CWDSVMOcas::set_bufsize</definition>
+        <argsstring>(int32_t sz)</argsstring>
+        <name>set_bufsize</name>
+        <param>
+          <type>int32_t</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set buffer size</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer size </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="132" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="132" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a53ab76c3933343d485b0408a0235e72a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDSVMOcas::get_bufsize</definition>
+        <argsstring>()</argsstring>
+        <name>get_bufsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get buffer size</para><para><simplesect kind="return"><para>buffer size </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="138" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a4a78fe36e10b84147f753090bb50ca7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CWDSVMOcas::set_degree</definition>
+        <argsstring>(int32_t d, int32_t from_d)</argsstring>
+        <name>set_degree</name>
+        <param>
+          <type>int32_t</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>from_d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set degree</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degree </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>from_d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>from degree </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="146" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="145" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a2f21c33ab58026769a8acdca5f98712f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDSVMOcas::get_degree</definition>
+        <argsstring>()</argsstring>
+        <name>get_degree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get degree</para><para><simplesect kind="return"><para>degree </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="155" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="155" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a4a43b6ecac242fd87d060f59bbba82fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>CLabels *</type>
+        <definition>CLabels* shogun::CWDSVMOcas::classify</definition>
+        <argsstring>()</argsstring>
+        <name>classify</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a3944cff6766ecc2b913a08f04918f129">classify</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify all examples</para><para><simplesect kind="return"><para>resulting labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1ab3ac20239fce0590ce3bbb603e15684a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>CLabels *</type>
+        <definition>virtual CLabels* shogun::CWDSVMOcas::classify</definition>
+        <argsstring>(CFeatures *data)</argsstring>
+        <name>classify</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a66b1e113e7b30bd88b0e238c6ccc3bd4">classify</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify objects</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(test)<ref refid="structshogun_1_1data" kindref="compound">data</ref> to be classified </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>classified labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a3eba9a202d5475f97eb21a7dea861d19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CWDSVMOcas::classify_example</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>classify_example</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a57f85b028e040e0c79dd09903b118bdd">classify_example</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify one example</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of example to classify </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>classified result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="176" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="175" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a71d0fd15e9dd8f7ae66dee745d28776b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CWDSVMOcas::set_normalization_const</definition>
+        <argsstring>()</argsstring>
+        <name>set_normalization_const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set normalization const </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="205" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="204" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1aa38320ef76a4c3cc3cc980d97b5bc9d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWDSVMOcas::get_normalization_const</definition>
+        <argsstring>()</argsstring>
+        <name>get_normalization_const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get normalization const</para><para><simplesect kind="return"><para>normalization const </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="219" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="219" bodyend="219"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a3b0e2991dc2f18dc6288422967627e4c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWDSVMOcas::set_wd_weights</definition>
+        <argsstring>()</argsstring>
+        <name>set_wd_weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set wd weights</para><para><simplesect kind="return"><para>w_dim_single_c </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a2efb573819f7e55dec51ae5c5dc89b32" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CWDSVMOcas::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="291" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="291" bodyend="291"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1af08aefcc1e88821f8d68adec41dcc255" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CWDSVMOcas::compute_W</definition>
+        <argsstring>(float64_t *sq_norm_W, float64_t *dp_WoldW, float64_t *alpha, uint32_t nSel, void *ptr)</argsstring>
+        <name>compute_W</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>sq_norm_W</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>dp_WoldW</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>nSel</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute W</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sq_norm_W</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>square normed W </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dp_WoldW</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dp W old W </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alpha </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nSel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nSel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ptr </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1aa9a90c15fbba8bf0875b51e9ab1c63c4" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>static float64_t shogun::CWDSVMOcas::update_W</definition>
+        <argsstring>(float64_t t, void *ptr)</argsstring>
+        <name>update_W</name>
+        <param>
+          <type>float64_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>update W</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ptr </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>something floaty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1aeb61dd8b073fc8b6ed5bb792d780b08f" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void* shogun::CWDSVMOcas::add_new_cut_helper</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>add_new_cut_helper</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>helper function for adding a new cut</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ptr </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a672263f8407c643b7667c7ebf379a2db" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CWDSVMOcas::add_new_cut</definition>
+        <argsstring>(float64_t *new_col_H, uint32_t *new_cut, uint32_t cut_length, uint32_t nSel, void *ptr)</argsstring>
+        <name>add_new_cut</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>new_col_H</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>new_cut</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cut_length</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>nSel</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add new cut</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>new_col_H</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new col H </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_cut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new cut </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cut_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of cut </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nSel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nSel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ptr </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a89eeb513be25e9f7ad0dbaf1ed3bc450" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void* shogun::CWDSVMOcas::compute_output_helper</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>compute_output_helper</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>helper function for computing the output</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ptr </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1a1f3b045ce73ad71668df626e33b80b90" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CWDSVMOcas::compute_output</definition>
+        <argsstring>(float64_t *output, void *ptr)</argsstring>
+        <name>compute_output</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute output</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ptr </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWDSVMOcas_1ab9b82d2eb0273887a4fb5f65d079b93a" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CWDSVMOcas::sort</definition>
+        <argsstring>(float64_t *vals, uint32_t *idx, uint32_t size)</argsstring>
+        <name>sort</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>vals</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sort</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vals </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>idx </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="288"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class WDSVMOcas </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="309">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+      <node id="308">
+        <label>shogun::CWDSVMOcas</label>
+        <link refid="classshogun_1_1CWDSVMOcas"/>
+        <childnode refid="309" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="311">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+      <node id="310">
+        <label>shogun::CWDSVMOcas</label>
+        <link refid="classshogun_1_1CWDSVMOcas"/>
+        <childnode refid="311" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" line="27" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/WDSVMOcas.h" bodystart="26" bodyend="346"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CWDSVMOcas_1a672263f8407c643b7667c7ebf379a2db" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>add_new_cut</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1aeb61dd8b073fc8b6ed5bb792d780b08f" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>add_new_cut_helper</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1aef8f9145cbbd347f63e3e2f18ba5bb48" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>alphabet_size</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a6ae5799ee4bd50b2a1f292a22250e28d" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>bias</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1ac70ab465db8a3828843f8669ef31266f" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>bufsize</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1ab6b4e6d23c3a5ccf7cb2e5e269a5da52" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>C1</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a6786b0c4ca5d8a79573becba1be4fc63" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>C2</name></member>
+      <member refid="classshogun_1_1CClassifier_1a37259b3ffbe96af1eda8dd2d9428221c" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>CClassifier</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a4a43b6ecac242fd87d060f59bbba82fb" prot="public" virt="virtual"><scope>shogun::CWDSVMOcas</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1ab3ac20239fce0590ce3bbb603e15684a" prot="public" virt="virtual"><scope>shogun::CWDSVMOcas</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a3eba9a202d5475f97eb21a7dea861d19" prot="public" virt="virtual"><scope>shogun::CWDSVMOcas</scope><name>classify_example</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a1f3b045ce73ad71668df626e33b80b90" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>compute_output</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a89eeb513be25e9f7ad0dbaf1ed3bc450" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>compute_output_helper</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1af08aefcc1e88821f8d68adec41dcc255" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>compute_W</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a73b0a383ad6d747d527118bb2c93fbed" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>cp_bias</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1adc32e47fc0e6f9740341b8e177c7e8e3" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>cuts</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a5c60bf44a7a300179902b93d36aa60b4" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>CWDSVMOcas</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a12b10ca6e8eb307990e3318bc03e34f0" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>CWDSVMOcas</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a51fe88e24720969f292d33867bcf7ad9" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>degree</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1ab4030ca28395f67d0c98fcf4e5ffd0a0" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>epsilon</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1acd2779842ef87dee365d2629ab5e7c4f" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>features</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1af60e1cf63985f333ebcbf0e9ef31fbdb" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>from_degree</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1af34a094cffa5ad1e0522ce991c1a519b" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>get_bias_enabled</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a53ab76c3933343d485b0408a0235e72a" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>get_bufsize</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1af22c2c13ce3d8c1e084de53f2ff0f533" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>get_C1</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a178361a8bca1a5c4fe7a934c063c0585" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>get_C2</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a98439d73ede04b698e64cf6406898a1c" prot="public" virt="virtual"><scope>shogun::CWDSVMOcas</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a2f21c33ab58026769a8acdca5f98712f" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>get_degree</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a617e5c245e6a345f5f840996c3737455" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>get_epsilon</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1acf3b1cc2827f485c6e7cd89e3a04c5f1" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>get_features</name></member>
+      <member refid="classshogun_1_1CClassifier_1a787dcde8fe53a734fcb77f988d821408" prot="public" virt="virtual"><scope>shogun::CWDSVMOcas</scope><name>get_label</name></member>
+      <member refid="classshogun_1_1CClassifier_1a5f1f62d263b6201e1624990deadba5a8" prot="public" virt="virtual"><scope>shogun::CWDSVMOcas</scope><name>get_labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1a6e48967294c55850d95235d487ce2c02" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>get_max_train_time</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a2efb573819f7e55dec51ae5c5dc89b32" prot="protected" virt="virtual"><scope>shogun::CWDSVMOcas</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1aa38320ef76a4c3cc3cc980d97b5bc9d8" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>get_normalization_const</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8a3acda6819b4a4b77b656b6b9e1817c" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>get_solver_type</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1ad7b38af0bfa7297ce9daa3d89d2684bc" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>lab</name></member>
+      <member refid="classshogun_1_1CClassifier_1a68f1285e63422a24319ed95910d72f73" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1a956f6d34ff60d2d775eed5cbef17e8f3" prot="public" virt="virtual"><scope>shogun::CWDSVMOcas</scope><name>load</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8524d634a67f3538b112f72d7835af46" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>max_train_time</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a9e6010089183cbf97951e9becdcb3067" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>method</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a349f5cf3f0e29d46b4697bcca8f6c9d4" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>normalization_const</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1ad921c3a111b7e21c7fb9101c9fa92f77" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>num_vec</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1ad989d309945bde383646b8036be7fea0" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>old_bias</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a36170d41a19425ef921699f2dc46b474" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>old_w</name></member>
+      <member refid="classshogun_1_1CClassifier_1a3df725f5632f1c052028899d8bbe28f6" prot="public" virt="virtual"><scope>shogun::CWDSVMOcas</scope><name>save</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a1d90888696e136766edb4bf039c4aa8b" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>set_bias_enabled</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a734dd6118120f403632971c696667898" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>set_bufsize</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a03289213184e35477cf95b9e119b463e" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>set_C</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a4a78fe36e10b84147f753090bb50ca7f" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>set_degree</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a096d5fa4c8a1afcf28582364978a9275" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>set_epsilon</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1ad85b82ffcef09bb7657190acf4873147" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>set_features</name></member>
+      <member refid="classshogun_1_1CClassifier_1aa6b87d22c14fc2b6970d8bf1edbb15fb" prot="public" virt="virtual"><scope>shogun::CWDSVMOcas</scope><name>set_labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1af8930a0a848388d8647c9e4604a7856d" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>set_max_train_time</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a71d0fd15e9dd8f7ae66dee745d28776b" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>set_normalization_const</name></member>
+      <member refid="classshogun_1_1CClassifier_1a4c87d6f3a2342c3053aeca82c3cf528c" prot="public" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>set_solver_type</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a3b0e2991dc2f18dc6288422967627e4c" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>set_wd_weights</name></member>
+      <member refid="classshogun_1_1CClassifier_1a360902e938d7b8890084c5bc6df617be" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>solver_type</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1ab9b82d2eb0273887a4fb5f65d079b93a" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>sort</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1aa278c0c41c51ef570739d160c295bb33" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>string_length</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1ad610a6f1faf908c8790491fe5e3dafca" prot="public" virt="virtual"><scope>shogun::CWDSVMOcas</scope><name>train</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1aa9a90c15fbba8bf0875b51e9ab1c63c4" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>update_W</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1abbbad133e14081a80b80b5048b2afb79" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>use_bias</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a87e2e47c1c2dbd64794cb1a4c9fbb397" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>w</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1af00e749235ee38a3d8ff491fd3484034" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>w_dim</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a7730fd8171ab208ef7b13c8b47f70bd4" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>w_dim_single_char</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a0f9ce699d921edc1873d9bbb4e4796c7" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>w_offsets</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a4a743af257507494587825e5faf7415f" prot="protected" virt="non-virtual"><scope>shogun::CWDSVMOcas</scope><name>wd_weights</name></member>
+      <member refid="classshogun_1_1CClassifier_1ae7d6c7d39fb314c1092163e958ef66a8" prot="public" virt="virtual"><scope>shogun::CWDSVMOcas</scope><name>~CClassifier</name></member>
+      <member refid="classshogun_1_1CWDSVMOcas_1a43c4a0b1c9562f6cde771a3f9c7a38cc" prot="public" virt="virtual"><scope>shogun::CWDSVMOcas</scope><name>~CWDSVMOcas</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

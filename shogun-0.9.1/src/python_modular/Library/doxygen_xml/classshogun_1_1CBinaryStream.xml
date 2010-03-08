@@ -1,0 +1,412 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CBinaryStream" kind="class" prot="public">
+    <compoundname>shogun::CBinaryStream</compoundname>
+    <includes local="no">BinaryStream.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CBinaryStream_1aeb29c03014b3926460b8af9d98bd0e9c" prot="protected" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* shogun::CBinaryStream&lt; T &gt;::fd</definition>
+        <argsstring></argsstring>
+        <name>fd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>file descriptor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="210" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CBinaryStream_1ae7e53ff02557fca9e620a13654679033" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t shogun::CBinaryStream&lt; T &gt;::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>size of file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="212" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CBinaryStream_1a0a217dd6fa4833dd3a03b22c53a9a467" prot="protected" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* shogun::CBinaryStream&lt; T &gt;::rw</definition>
+        <argsstring></argsstring>
+        <name>rw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="214" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CBinaryStream_1a295e14352150613d58b67fd630b5dfda" prot="protected" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* shogun::CBinaryStream&lt; T &gt;::m_fname</definition>
+        <argsstring></argsstring>
+        <name>m_fname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>fname </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="216" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CBinaryStream_1a1ae8b26ae7116163d1860e852d867699" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CBinaryStream&lt; T &gt;::CBinaryStream</definition>
+        <argsstring>()</argsstring>
+        <name>CBinaryStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="33" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="32" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBinaryStream_1abf66e26d6fe725feab614a661b5812cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CBinaryStream&lt; T &gt;::CBinaryStream</definition>
+        <argsstring>(const char *fname, const char *flag=&quot;r&quot;)</argsstring>
+        <name>CBinaryStream</name>
+        <param>
+          <type>const char *</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>flag</declname>
+          <defval>&quot;r&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para>open a file for read mode</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of file, zero terminated string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>determines read or read write mode (currently only &apos;r&apos; is supported) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="49" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBinaryStream_1a9fcbad53eac7a7b1bfd10364f18fcad4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CBinaryStream&lt; T &gt;::CBinaryStream</definition>
+        <argsstring>(const CBinaryStream &amp;bs)</argsstring>
+        <name>CBinaryStream</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CBinaryStream" kindref="compound">CBinaryStream</ref> &amp;</type>
+          <declname>bs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binary stream to copy from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="59" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="58" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBinaryStream_1a4322563e8d4420f41f7013139559798d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CBinaryStream&lt; T &gt;::~CBinaryStream</definition>
+        <argsstring>()</argsstring>
+        <name>~CBinaryStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="67" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBinaryStream_1a387dab6a15fbc17ea0e2e0c90cf286b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CBinaryStream&lt; T &gt;::open_stream</definition>
+        <argsstring>(const char *fname, const char *flag=&quot;r&quot;)</argsstring>
+        <name>open_stream</name>
+        <param>
+          <type>const char *</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>flag</declname>
+          <defval>&quot;r&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>open file stream</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flags &quot;r&quot; for reading etc </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="77" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="76" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBinaryStream_1a0f78d677f56e45f2390678e5fbf57b18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CBinaryStream&lt; T &gt;::close_stream</definition>
+        <argsstring>()</argsstring>
+        <name>close_stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>close a file stream </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="95" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="94" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBinaryStream_1a0a3b3af49a8c4a7c146dfa4a93725898" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t shogun::CBinaryStream&lt; T &gt;::get_length</definition>
+        <argsstring>()</argsstring>
+        <name>get_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the number of objects of type T cointained in the file</para><para><simplesect kind="return"><para>length of file </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="112" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBinaryStream_1af0b38a811f455124857cf55d2537a13d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t shogun::CBinaryStream&lt; T &gt;::get_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the size of the file in bytes</para><para><simplesect kind="return"><para>size of file in bytes </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="121" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBinaryStream_1a817dcf13b00e273df87ed5ffdb92bea8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* shogun::CBinaryStream&lt; T &gt;::get_line</definition>
+        <argsstring>(uint64_t &amp;len, uint64_t &amp;offs)</argsstring>
+        <name>get_line</name>
+        <param>
+          <type>uint64_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>uint64_t &amp;</type>
+          <declname>offs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get next line from file</para><para>The returned line may be modfied in case the file was opened read/write. It is otherwise read-only.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of line (returned via reference) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset to be passed for reading next line, should be 0 initially (returned via reference)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>line (NOT ZERO TERMINATED) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="137" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBinaryStream_1adb11772ebf0f7c72ecd2d47d2b69db44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CBinaryStream&lt; T &gt;::get_num_lines</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_lines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>count the number of lines in a file</para><para><simplesect kind="return"><para>number of lines </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="146" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBinaryStream_1a1186268d0448d36b734d30169f15866d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CBinaryStream&lt; T &gt;::pre_buffer</definition>
+        <argsstring>(T *buffer, long index, long num) const </argsstring>
+        <name>pre_buffer</name>
+        <param>
+          <type>T *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>read num elements starting from index into buffer</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer that has to be at least num elements long </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index into file starting from which elements are read </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of elements to be read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="157" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="156" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBinaryStream_1ae1f8dd3123236ba6a8425d04ad6bfafd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CBinaryStream&lt; T &gt;::read_next</definition>
+        <argsstring>() const </argsstring>
+        <name>read_next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>read next</para><para><simplesect kind="return"><para>next element </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="176" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="175" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBinaryStream_1a64c41f77a1d416ebe529b1e0d8483c4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CBinaryStream&lt; T &gt;::operator[]</definition>
+        <argsstring>(int32_t index) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>operator overload for file read only access</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>element at index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="192" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="191" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBinaryStream_1a7340b68517417fb4399089ab0bfff953" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CBinaryStream&lt; T &gt;::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="206" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="206" bodyend="206"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>memory mapped emulation via binary streams (files) </para>    </briefdescription>
+    <detaileddescription>
+<para>Implements memory mapped file emulation (<simplesect kind="see"><para><ref refid="classshogun_1_1CMemoryMappedFile" kindref="compound">CMemoryMappedFile</ref>) via standard file operations like fseek, fread etc </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" line="28" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BinaryStream.h" bodystart="27" bodyend="217"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CBinaryStream_1a1ae8b26ae7116163d1860e852d867699" prot="public" virt="non-virtual"><scope>shogun::CBinaryStream</scope><name>CBinaryStream</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1abf66e26d6fe725feab614a661b5812cb" prot="public" virt="non-virtual"><scope>shogun::CBinaryStream</scope><name>CBinaryStream</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1a9fcbad53eac7a7b1bfd10364f18fcad4" prot="public" virt="non-virtual"><scope>shogun::CBinaryStream</scope><name>CBinaryStream</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1a0f78d677f56e45f2390678e5fbf57b18" prot="public" virt="non-virtual"><scope>shogun::CBinaryStream</scope><name>close_stream</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1aeb29c03014b3926460b8af9d98bd0e9c" prot="protected" virt="non-virtual"><scope>shogun::CBinaryStream</scope><name>fd</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1a0a3b3af49a8c4a7c146dfa4a93725898" prot="public" virt="non-virtual"><scope>shogun::CBinaryStream</scope><name>get_length</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1a817dcf13b00e273df87ed5ffdb92bea8" prot="public" virt="non-virtual"><scope>shogun::CBinaryStream</scope><name>get_line</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1a7340b68517417fb4399089ab0bfff953" prot="public" virt="virtual"><scope>shogun::CBinaryStream</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1adb11772ebf0f7c72ecd2d47d2b69db44" prot="public" virt="non-virtual"><scope>shogun::CBinaryStream</scope><name>get_num_lines</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1af0b38a811f455124857cf55d2537a13d" prot="public" virt="non-virtual"><scope>shogun::CBinaryStream</scope><name>get_size</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1ae7e53ff02557fca9e620a13654679033" prot="protected" virt="non-virtual"><scope>shogun::CBinaryStream</scope><name>length</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1a295e14352150613d58b67fd630b5dfda" prot="protected" virt="non-virtual"><scope>shogun::CBinaryStream</scope><name>m_fname</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1a387dab6a15fbc17ea0e2e0c90cf286b9" prot="public" virt="non-virtual"><scope>shogun::CBinaryStream</scope><name>open_stream</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1a64c41f77a1d416ebe529b1e0d8483c4c" prot="public" virt="non-virtual"><scope>shogun::CBinaryStream</scope><name>operator[]</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1a1186268d0448d36b734d30169f15866d" prot="public" virt="non-virtual"><scope>shogun::CBinaryStream</scope><name>pre_buffer</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1ae1f8dd3123236ba6a8425d04ad6bfafd" prot="public" virt="non-virtual"><scope>shogun::CBinaryStream</scope><name>read_next</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1a0a217dd6fa4833dd3a03b22c53a9a467" prot="protected" virt="non-virtual"><scope>shogun::CBinaryStream</scope><name>rw</name></member>
+      <member refid="classshogun_1_1CBinaryStream_1a4322563e8d4420f41f7013139559798d" prot="public" virt="virtual"><scope>shogun::CBinaryStream</scope><name>~CBinaryStream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,631 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CPluginEstimate" kind="class" prot="public">
+    <compoundname>shogun::CPluginEstimate</compoundname>
+    <basecompoundref refid="classshogun_1_1CClassifier" prot="public" virt="non-virtual">shogun::CClassifier</basecompoundref>
+    <includes local="no">PluginEstimate.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CPluginEstimate_1aeedaab48b4170f76a28012022d73e79b" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPluginEstimate::m_pos_pseudo</definition>
+        <argsstring></argsstring>
+        <name>m_pos_pseudo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pseudo count for positive class </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="211" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPluginEstimate_1aee2f254dfb22ab8502e947612e655a6c" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPluginEstimate::m_neg_pseudo</definition>
+        <argsstring></argsstring>
+        <name>m_neg_pseudo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pseudo count for negative class </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="213" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPluginEstimate_1a54b40392595d5cc1c973377f878285d7" prot="protected" static="no" mutable="no">
+        <type>CLinearHMM *</type>
+        <definition>CLinearHMM* shogun::CPluginEstimate::pos_model</definition>
+        <argsstring></argsstring>
+        <name>pos_model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>positive model </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="216" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPluginEstimate_1ad90deefe7b274dfb581448747bfb599a" prot="protected" static="no" mutable="no">
+        <type>CLinearHMM *</type>
+        <definition>CLinearHMM* shogun::CPluginEstimate::neg_model</definition>
+        <argsstring></argsstring>
+        <name>neg_model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>negative model </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="218" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPluginEstimate_1ab7fb4a3cdbf61785700951481ee70f3a" prot="protected" static="no" mutable="no">
+        <type>CStringFeatures&lt; uint16_t &gt; *</type>
+        <definition>CStringFeatures&lt;uint16_t&gt;* shogun::CPluginEstimate::features</definition>
+        <argsstring></argsstring>
+        <name>features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>features </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="221" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1a829bbcc5118adf6207156143bec8a9cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CPluginEstimate::CPluginEstimate</definition>
+        <argsstring>(float64_t pos_pseudo=1e-10, float64_t neg_pseudo=1e-10)</argsstring>
+        <name>CPluginEstimate</name>
+        <param>
+          <type>float64_t</type>
+          <declname>pos_pseudo</declname>
+          <defval>1e-10</defval>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>neg_pseudo</declname>
+          <defval>1e-10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos_pseudo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pseudo for positive model </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>neg_pseudo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pseudo for negative model </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1ac3c505b41302b45cbe212eb5a20e184a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CPluginEstimate::~CPluginEstimate</definition>
+        <argsstring>()</argsstring>
+        <name>~CPluginEstimate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1a45bec45391c14faca0536ab5bf6c6678" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CPluginEstimate::train</definition>
+        <argsstring>(CFeatures *data=NULL)</argsstring>
+        <name>train</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a9904cc0a8d7ec077cc1fede8d64ebb22">train</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>train plugin estimate classifier</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training <ref refid="structshogun_1_1data" kindref="compound">data</ref> (parameter can be avoided if distance or kernel-based classifiers are used and distance/kernels are initialized with train <ref refid="structshogun_1_1data" kindref="compound">data</ref>)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether training was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1a0ed965b6f9e9ae2f98a55b03c515dfaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>CLabels *</type>
+        <definition>CLabels* shogun::CPluginEstimate::classify</definition>
+        <argsstring>()</argsstring>
+        <name>classify</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a3944cff6766ecc2b913a08f04918f129">classify</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify objects using the currently set features</para><para><simplesect kind="return"><para>classified labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1a171940568b50733a0b3a6de35522d506" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>CLabels *</type>
+        <definition>virtual CLabels* shogun::CPluginEstimate::classify</definition>
+        <argsstring>(CFeatures *data)</argsstring>
+        <name>classify</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a66b1e113e7b30bd88b0e238c6ccc3bd4">classify</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify objects</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(test)<ref refid="structshogun_1_1data" kindref="compound">data</ref> to be classified </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>classified labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1abbaec62964cafd1a75768daaaaa5994e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CPluginEstimate::set_features</definition>
+        <argsstring>(CStringFeatures&lt; uint16_t &gt; *feat)</argsstring>
+        <name>set_features</name>
+        <param>
+          <type>CStringFeatures&lt; uint16_t &gt; *</type>
+          <declname>feat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set features</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="72" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="71" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1a92950bd544350628ac723adeaa13b753" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>CStringFeatures&lt; uint16_t &gt; *</type>
+        <definition>virtual CStringFeatures&lt;uint16_t&gt;* shogun::CPluginEstimate::get_features</definition>
+        <argsstring>()</argsstring>
+        <name>get_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get features</para><para><simplesect kind="return"><para>features </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="82" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1af257affa1d9f8a86a7ec0face054f334" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPluginEstimate::classify_example</definition>
+        <argsstring>(int32_t vec_idx)</argsstring>
+        <name>classify_example</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a57f85b028e040e0c79dd09903b118bdd">classify_example</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx</declname>
+        </param>
+        <briefdescription>
+<para>classify the test feature vector indexed by vec_idx </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1ad754681a44bde1faa67f18e1af047e35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPluginEstimate::posterior_log_odds_obsolete</definition>
+        <argsstring>(uint16_t *vector, int32_t len)</argsstring>
+        <name>posterior_log_odds_obsolete</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>vector</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>obsolete posterior log odds</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>something floaty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="95" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1a9b710058ee9ba4c17c2c13873a71fe13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPluginEstimate::get_parameterwise_log_odds</definition>
+        <argsstring>(uint16_t obs, int32_t position)</argsstring>
+        <name>get_parameterwise_log_odds</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get log odds parameter-wise</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>observation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>log odd at position </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="107" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="105" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1ade40812a47b2d01828098adc4a2c7c1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPluginEstimate::log_derivative_pos_obsolete</definition>
+        <argsstring>(uint16_t obs, int32_t pos)</argsstring>
+        <name>log_derivative_pos_obsolete</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get obsolete positive log derivative</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>observation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>positive log derivative </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="118" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1a4c2f029f86dda284b4654beb318d1a17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPluginEstimate::log_derivative_neg_obsolete</definition>
+        <argsstring>(uint16_t obs, int32_t pos)</argsstring>
+        <name>log_derivative_neg_obsolete</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get obsolete negative log derivative</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>observation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>negative log derivative </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="129" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="128" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1ab64173528d63b1d3d5b2402f492ce6aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CPluginEstimate::get_model_params</definition>
+        <argsstring>(float64_t *&amp;pos_params, float64_t *&amp;neg_params, int32_t &amp;seq_length, int32_t &amp;num_symbols)</argsstring>
+        <name>get_model_params</name>
+        <param>
+          <type>float64_t *&amp;</type>
+          <declname>pos_params</declname>
+        </param>
+        <param>
+          <type>float64_t *&amp;</type>
+          <declname>neg_params</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>seq_length</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_symbols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get model parameters</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos_params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameters of positive model </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>neg_params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameters of negative model </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seq_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sequence length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_symbols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numbe of symbols </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if operation was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="144" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="141" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1abaff21a6bf150fe111b3429253529caa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPluginEstimate::set_model_params</definition>
+        <argsstring>(const float64_t *pos_params, const float64_t *neg_params, int32_t seq_length, int32_t num_symbols)</argsstring>
+        <name>set_model_params</name>
+        <param>
+          <type>const float64_t *</type>
+          <declname>pos_params</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>neg_params</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>seq_length</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_symbols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set model parameters <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos_params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameters of positive model </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>neg_params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameters of negative model </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seq_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sequence length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_symbols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numbe of symbols </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="172" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="169" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1a2a893917740a5b2ba72e2af2c3aaa820" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPluginEstimate::get_num_params</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of parameters</para><para><simplesect kind="return"><para>number of parameters </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="193" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="192" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1a89091b1718188c386115e8422c78b91f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CPluginEstimate::check_models</definition>
+        <argsstring>()</argsstring>
+        <name>check_models</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check models</para><para><simplesect kind="return"><para>if one of the two models is invalid </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="202" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="201" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPluginEstimate_1adb27aeae9f76c6be125c404c5608ca9b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CPluginEstimate::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="207" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="207" bodyend="207"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class PluginEstimate </para>    </briefdescription>
+    <detaileddescription>
+<para>The class PluginEstimate takes as input two probabilistic models (of type CLinearHMM, even though general models are possible ) and classifies examples according to the rule</para><para><formula id="22">\[ f({\bf x})= \log(\mbox{Pr}({\bf x}|\theta_+)) - \log(\mbox{Pr}({\bf x}|\theta_-)) \]</formula></para><para><simplesect kind="see"><para>CLinearHMM </para><simplesectsep/><para>CDistribution </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="243">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+      <node id="242">
+        <label>shogun::CPluginEstimate</label>
+        <link refid="classshogun_1_1CPluginEstimate"/>
+        <childnode refid="243" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="245">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+      <node id="244">
+        <label>shogun::CPluginEstimate</label>
+        <link refid="classshogun_1_1CPluginEstimate"/>
+        <childnode refid="245" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" line="35" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/PluginEstimate.h" bodystart="34" bodyend="222"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CClassifier_1a37259b3ffbe96af1eda8dd2d9428221c" prot="public" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>CClassifier</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1a89091b1718188c386115e8422c78b91f" prot="public" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>check_models</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1a0ed965b6f9e9ae2f98a55b03c515dfaa" prot="public" virt="virtual"><scope>shogun::CPluginEstimate</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1a171940568b50733a0b3a6de35522d506" prot="public" virt="virtual"><scope>shogun::CPluginEstimate</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1af257affa1d9f8a86a7ec0face054f334" prot="public" virt="virtual"><scope>shogun::CPluginEstimate</scope><name>classify_example</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1a829bbcc5118adf6207156143bec8a9cd" prot="public" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>CPluginEstimate</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1ab7fb4a3cdbf61785700951481ee70f3a" prot="protected" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>features</name></member>
+      <member refid="classshogun_1_1CClassifier_1a52d05215c6b6a252650c41a0b29d8cc5" prot="public" virt="virtual"><scope>shogun::CPluginEstimate</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1a92950bd544350628ac723adeaa13b753" prot="public" virt="virtual"><scope>shogun::CPluginEstimate</scope><name>get_features</name></member>
+      <member refid="classshogun_1_1CClassifier_1a787dcde8fe53a734fcb77f988d821408" prot="public" virt="virtual"><scope>shogun::CPluginEstimate</scope><name>get_label</name></member>
+      <member refid="classshogun_1_1CClassifier_1a5f1f62d263b6201e1624990deadba5a8" prot="public" virt="virtual"><scope>shogun::CPluginEstimate</scope><name>get_labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1a6e48967294c55850d95235d487ce2c02" prot="public" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>get_max_train_time</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1ab64173528d63b1d3d5b2402f492ce6aa" prot="public" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>get_model_params</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1adb27aeae9f76c6be125c404c5608ca9b" prot="public" virt="virtual"><scope>shogun::CPluginEstimate</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1a2a893917740a5b2ba72e2af2c3aaa820" prot="public" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>get_num_params</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1a9b710058ee9ba4c17c2c13873a71fe13" prot="public" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>get_parameterwise_log_odds</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8a3acda6819b4a4b77b656b6b9e1817c" prot="public" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>get_solver_type</name></member>
+      <member refid="classshogun_1_1CClassifier_1a68f1285e63422a24319ed95910d72f73" prot="protected" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1a956f6d34ff60d2d775eed5cbef17e8f3" prot="public" virt="virtual"><scope>shogun::CPluginEstimate</scope><name>load</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1a4c2f029f86dda284b4654beb318d1a17" prot="public" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>log_derivative_neg_obsolete</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1ade40812a47b2d01828098adc4a2c7c1b" prot="public" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>log_derivative_pos_obsolete</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1aee2f254dfb22ab8502e947612e655a6c" prot="protected" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>m_neg_pseudo</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1aeedaab48b4170f76a28012022d73e79b" prot="protected" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>m_pos_pseudo</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8524d634a67f3538b112f72d7835af46" prot="protected" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>max_train_time</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1ad90deefe7b274dfb581448747bfb599a" prot="protected" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>neg_model</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1a54b40392595d5cc1c973377f878285d7" prot="protected" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>pos_model</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1ad754681a44bde1faa67f18e1af047e35" prot="public" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>posterior_log_odds_obsolete</name></member>
+      <member refid="classshogun_1_1CClassifier_1a3df725f5632f1c052028899d8bbe28f6" prot="public" virt="virtual"><scope>shogun::CPluginEstimate</scope><name>save</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1abbaec62964cafd1a75768daaaaa5994e" prot="public" virt="virtual"><scope>shogun::CPluginEstimate</scope><name>set_features</name></member>
+      <member refid="classshogun_1_1CClassifier_1aa6b87d22c14fc2b6970d8bf1edbb15fb" prot="public" virt="virtual"><scope>shogun::CPluginEstimate</scope><name>set_labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1af8930a0a848388d8647c9e4604a7856d" prot="public" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>set_max_train_time</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1abaff21a6bf150fe111b3429253529caa" prot="public" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>set_model_params</name></member>
+      <member refid="classshogun_1_1CClassifier_1a4c87d6f3a2342c3053aeca82c3cf528c" prot="public" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>set_solver_type</name></member>
+      <member refid="classshogun_1_1CClassifier_1a360902e938d7b8890084c5bc6df617be" prot="protected" virt="non-virtual"><scope>shogun::CPluginEstimate</scope><name>solver_type</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1a45bec45391c14faca0536ab5bf6c6678" prot="public" virt="virtual"><scope>shogun::CPluginEstimate</scope><name>train</name></member>
+      <member refid="classshogun_1_1CClassifier_1ae7d6c7d39fb314c1092163e958ef66a8" prot="public" virt="virtual"><scope>shogun::CPluginEstimate</scope><name>~CClassifier</name></member>
+      <member refid="classshogun_1_1CPluginEstimate_1ac3c505b41302b45cbe212eb5a20e184a" prot="public" virt="virtual"><scope>shogun::CPluginEstimate</scope><name>~CPluginEstimate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

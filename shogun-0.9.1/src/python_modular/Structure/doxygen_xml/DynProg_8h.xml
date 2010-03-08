@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="DynProg_8h" kind="file">
+    <compoundname>DynProg.h</compoundname>
+    <includes local="yes">lib/Mathematics.h</includes>
+    <includes local="yes">lib/common.h</includes>
+    <includes local="yes">base/SGObject.h</includes>
+    <includes local="yes">lib/io.h</includes>
+    <includes local="yes">lib/config.h</includes>
+    <includes refid="PlifMatrix_8h" local="yes">structure/PlifMatrix.h</includes>
+    <includes refid="PlifBase_8h" local="yes">structure/PlifBase.h</includes>
+    <includes refid="Plif_8h" local="yes">structure/Plif.h</includes>
+    <includes refid="IntronList_8h" local="yes">structure/IntronList.h</includes>
+    <includes refid="SegmentLoss_8h" local="yes">structure/SegmentLoss.h</includes>
+    <includes local="yes">features/StringFeatures.h</includes>
+    <includes local="yes">features/SparseFeatures.h</includes>
+    <includes local="yes">distributions/Distribution.h</includes>
+    <includes local="yes">lib/DynamicArray.h</includes>
+    <includes local="yes">lib/Array.h</includes>
+    <includes local="yes">lib/Array2.h</includes>
+    <includes local="yes">lib/Array3.h</includes>
+    <includes local="yes">lib/Time.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">limits.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>lib/config.h</label>
+      </node>
+      <node id="0">
+        <label>/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h</label>
+        <link refid="DynProg.h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lib/io.h</label>
+      </node>
+      <node id="7">
+        <label>features/SparseFeatures.h</label>
+      </node>
+      <node id="2">
+        <label>lib/common.h</label>
+      </node>
+      <node id="12">
+        <label>lib/Array3.h</label>
+      </node>
+      <node id="15">
+        <label>limits.h</label>
+      </node>
+      <node id="13">
+        <label>lib/Time.h</label>
+      </node>
+      <node id="8">
+        <label>distributions/Distribution.h</label>
+      </node>
+      <node id="10">
+        <label>lib/Array.h</label>
+      </node>
+      <node id="1">
+        <label>lib/Mathematics.h</label>
+      </node>
+      <node id="11">
+        <label>lib/Array2.h</label>
+      </node>
+      <node id="3">
+        <label>base/SGObject.h</label>
+      </node>
+      <node id="6">
+        <label>features/StringFeatures.h</label>
+      </node>
+      <node id="9">
+        <label>lib/DynamicArray.h</label>
+      </node>
+      <node id="14">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classshogun_1_1CDynProg" prot="public">shogun::CDynProg</innerclass>
+    <innerclass refid="structshogun_1_1CDynProg_1_1svm__values__struct" prot="protected">shogun::CDynProg::svm_values_struct</innerclass>
+    <innernamespace refid="namespaceshogun">shogun</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Written<sp/>(W)<sp/>1999-2009<sp/>Gunnar<sp/>Raetsch</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Written<sp/>(W)<sp/>1999-2009<sp/>Soeren<sp/>Sonnenburg</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Written<sp/>(W)<sp/>2008-2009<sp/>Jonas<sp/>Behr</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>1999-2009<sp/>Fraunhofer<sp/>Institute<sp/>FIRST<sp/>and<sp/>Max-Planck-Society</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__CDYNPROG_H__</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__CDYNPROG_H__</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/Mathematics.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;base/SGObject.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/io.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/config.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;structure/PlifMatrix.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;structure/PlifBase.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;structure/Plif.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;structure/IntronList.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;structure/SegmentLoss.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;features/StringFeatures.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;features/SparseFeatures.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;distributions/Distribution.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/DynamicArray.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/Array.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/Array2.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/Array3.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/Time.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">shogun</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CSparseFeatures;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CIntronList;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CPlifMatrix;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CSegmentLoss;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>DYNPROG_TIMING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>USE_BIGSTATES</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint16_t<sp/>T_STATES<sp/>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>T_STATES<sp/>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>T_STATES*<sp/>P_STATES<sp/>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classshogun_1_1CDynProg" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classshogun_1_1CDynProg" kindref="compound" tooltip="Dynamic Programming Class.">CDynProg</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>CSGObject</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CDynProg_1a90387986b54b64f9cc27217e70464a51" kindref="member">CDynProg</ref>(int32_t<sp/>p_num_svms=8);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classshogun_1_1CDynProg" kindref="compound" tooltip="Dynamic Programming Class.">CDynProg</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/><ref refid="classshogun_1_1CDynProg_1aae11ef129fd446c7a071d1452edc0be6" kindref="member">best_path_no_b</ref>(int32_t<sp/>max_iter,<sp/>int32_t<sp/>&amp;<sp/>best_iter,<sp/>int32_t<sp/>*my_path);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a681c68a4979d9594b48c3b8b4d6d4861" kindref="member">best_path_no_b_trans</ref>(int32_t<sp/>max_iter,<sp/>int32_t<sp/>&amp;<sp/>max_best_iter,<sp/>int16_t<sp/>nbest,<sp/>float64_t<sp/>*prob_nbest,<sp/>int32_t<sp/>*my_paths);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>model<sp/>related<sp/>functions</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a8e08e34132a0a1936e89afa83e3b4c8d" kindref="member">set_num_states</ref>(int32_t<sp/>N);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1a9eeb9a44641ea1f2afcf138ef5a50925" kindref="member">get_num_states</ref>();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1ac455e8b04527bfe84334ca50a41f7386" kindref="member">get_num_svms</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a92cc32087e300302642f3553b73a48ec" kindref="member">init_content_svm_value_array</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>p_num_svms);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1ab63d1b6838564b23d7b806598521a601" kindref="member">init_tiling_data</ref>(int32_t*<sp/>probe_pos,<sp/>float64_t*<sp/>intensities,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>num_probes);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a8cb7a72c3094858bd749a468c77e2d4c" kindref="member">precompute_tiling_plifs</ref>(<ref refid="classshogun_1_1CPlif" kindref="compound" tooltip="class Plif">CPlif</ref>**<sp/>PEN,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t*<sp/>tiling_plif_ids,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>num_tiling_plifs);<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1aa2b748ff0f1dbebca7dd8223d4ccaf49" kindref="member">resize_lin_feat</ref>(int32_t<sp/>num_new_feat);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a1cfe6d29017de714d45880e88136aad1" kindref="member">set_p_vector</ref>(float64_t*<sp/>p,<sp/>int32_t<sp/>N);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a703d4c423df0c47c55791bdbc4fc9cc4" kindref="member">set_q_vector</ref>(float64_t*<sp/>q,<sp/>int32_t<sp/>N);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1ada2e685b6a5ddf086dfc8909de7c04f9" kindref="member">set_a</ref>(float64_t*<sp/>a,<sp/>int32_t<sp/>M,<sp/>int32_t<sp/>N);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1aa32409a780b1aff7aa49554cb05d751e" kindref="member">set_a_id</ref>(int32_t<sp/>*a,<sp/>int32_t<sp/>M,<sp/>int32_t<sp/>N);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a6f4be6b17da85f9c1cb2e943bd2fac33" kindref="member">set_a_trans_matrix</ref>(float64_t<sp/>*a_trans,<sp/>int32_t<sp/>num_trans,<sp/>int32_t<sp/>N);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a7438fa6e9fbb8a237d8f3b179482d385" kindref="member">init_mod_words_array</ref>(int32_t<sp/>*<sp/>p_mod_words_array,<sp/>int32_t<sp/>num_elem,<sp/>int32_t<sp/>num_columns);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1adffa58ec8ba3719b5dd2af3f6cf9af15" kindref="member">check_svm_arrays</ref>();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a0121e2ecb5620e0ed6bc97e42e944759" kindref="member">set_observation_matrix</ref>(float64_t*<sp/>seq,<sp/>int32_t*<sp/>dims,<sp/>int32_t<sp/>ndims);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1ac15d6acf573bd48bd83fe147d2c7ec05" kindref="member">get_num_positions</ref>();</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1ae3c9be4aaca57e5b7fa671507cc6a24c" kindref="member">set_content_type_array</ref>(float64_t*<sp/>seg_path,<sp/>int32_t<sp/>rows,<sp/>int32_t<sp/>cols);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1ab6cd50803b7b7a7e72d560c3fea1b187" kindref="member">set_pos</ref>(int32_t*<sp/>pos,<sp/>int32_t<sp/>seq_len);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a42758542a4a10ee1efe2fd1665a62b16" kindref="member">set_orf_info</ref>(int32_t*<sp/>orf_info,<sp/>int32_t<sp/>m,<sp/>int32_t<sp/>n);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a32719571fb06dc8ffcce3e4ae9191d3b" kindref="member">set_gene_string</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>genestr,<sp/>int32_t<sp/>genestr_len);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1ab9903f1e289079c8eea468ece1225731" kindref="member">set_dict_weights</ref>(float64_t*<sp/>dictionary_weights,<sp/>int32_t<sp/>dict_len,<sp/>int32_t<sp/>n);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a091389fcc1d38a14d01f67c0ed549578" kindref="member">best_path_set_segment_loss</ref>(float64_t<sp/>*<sp/>segment_loss,<sp/>int32_t<sp/>num_segment_id1,<sp/>int32_t<sp/>num_segment_id2);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a894ea4911d12c6e0265bb6e93f8b280a" kindref="member">best_path_set_segment_ids_mask</ref>(int32_t*<sp/>segment_ids,<sp/>float64_t*<sp/>segment_mask,<sp/>int32_t<sp/>m);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a2853b10628bae17ce2ee81a681246429" kindref="member">set_sparse_features</ref>(CSparseFeatures&lt;float64_t&gt;*<sp/>seq_sparse1,<sp/>CSparseFeatures&lt;float64_t&gt;*<sp/>seq_sparse2);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1ac83138b8e70e8ee3b3c73121d65f5f24" kindref="member">set_plif_matrices</ref>(<ref refid="classshogun_1_1CPlifMatrix" kindref="compound" tooltip="store plif arrays for all transitions in the model">CPlifMatrix</ref>*<sp/>pm);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>best_path<sp/>result<sp/>retrieval<sp/>functions</highlight></codeline>
+<codeline lineno="277"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1ab25110f663d4a75fb9112c750dded217" kindref="member">get_scores</ref>(float64_t<sp/>**scores,<sp/>int32_t<sp/>*n);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a2d4564a395fba0b18720788481f0cbbb" kindref="member">get_states</ref>(int32_t<sp/>**states,<sp/>int32_t<sp/>*m,<sp/>int32_t<sp/>*n);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a169c3259de3e4bf11a4899a96b9fd46e" kindref="member">get_positions</ref>(int32_t<sp/>**positions,<sp/>int32_t<sp/>*m,<sp/>int32_t<sp/>*n);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1ac0b08e62e7b9a6a4ef68e421f534585b" kindref="member">compute_nbest_paths</ref>(int32_t<sp/>max_num_signals,</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>use_orf,<sp/>int16_t<sp/>nbest,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>with_loss,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>with_multiple_sequences);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1ab845982d2ca34936a71b6c0329664541" kindref="member">best_path_trans_deriv</ref>(</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/>my_state_seq,<sp/>int32_t<sp/>*my_pos_seq,</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>my_seq_len,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float64_t<sp/>*seq_array,<sp/>int32_t<sp/>max_num_signals);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>additional<sp/>best_path_trans_deriv<sp/>functions</highlight></codeline>
+<codeline lineno="329"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a4639afe43fc2122b1223138500c12e3e" kindref="member">set_my_state_seq</ref>(int32_t*<sp/>my_state_seq);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1aa2f98566c92171e823a16ae21e36ecb8" kindref="member">set_my_pos_seq</ref>(int32_t*<sp/>my_pos_seq);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1ac8ca433aa080e39da372e082cd82ce6c" kindref="member">get_path_scores</ref>(float64_t**<sp/>my_scores,<sp/>int32_t*<sp/>seq_len);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a10a81b8f37449ac43176ec8fce840134" kindref="member">get_path_losses</ref>(float64_t**<sp/>my_losses,<sp/>int32_t*<sp/>seq_len);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>T_STATES<sp/><ref refid="classshogun_1_1CDynProg_1ab571c2d0c0951338fa323114597680d6" kindref="member" tooltip="access function for number of states N">get_N</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="358"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a87a9ff610de23e7138caa7e8cd727694" kindref="member" tooltip="number of states">m_N</ref><sp/>;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1af773e32dde29d4e2b0fe671a1430bb9d" kindref="member">set_q</ref>(T_STATES<sp/>offset,<sp/>float64_t<sp/>value)</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CDynProg_1a06679454732f03edee0d159c4dbadc45" kindref="member" tooltip="distribution of end-states">m_end_state_distribution_q</ref>[offset]=value;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1ab3f3bdbd76cd3c7a756baab68149cde0" kindref="member">set_p</ref>(T_STATES<sp/>offset,<sp/>float64_t<sp/>value)</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CDynProg_1a5fff73c136eb13575e3cd63f132af684" kindref="member" tooltip="initial distribution of states">m_initial_state_distribution_p</ref>[offset]=value;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1ada2e685b6a5ddf086dfc8909de7c04f9" kindref="member">set_a</ref>(T_STATES<sp/>line_,<sp/>T_STATES<sp/>column,<sp/>float64_t<sp/>value)</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_transition_matrix_a.element(line_,column)=value;<sp/></highlight><highlight class="comment">//<sp/>look<sp/>also<sp/>best_path!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>float64_t<sp/><ref refid="classshogun_1_1CDynProg_1a2e4b6a0bdcbf9359011ba4108d40295f" kindref="member">get_q</ref>(T_STATES<sp/>offset)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="397"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a06679454732f03edee0d159c4dbadc45" kindref="member" tooltip="distribution of end-states">m_end_state_distribution_q</ref>[offset];</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>float64_t<sp/><ref refid="classshogun_1_1CDynProg_1a8be685920a6b621b4b03b5dccf7f2f85" kindref="member">get_q_deriv</ref>(T_STATES<sp/>offset)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="407"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_end_state_distribution_q_deriv[offset];</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>float64_t<sp/><ref refid="classshogun_1_1CDynProg_1a303574c854f2e305c3e7bad6f37965cd" kindref="member">get_p</ref>(T_STATES<sp/>offset)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="417"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a5fff73c136eb13575e3cd63f132af684" kindref="member" tooltip="initial distribution of states">m_initial_state_distribution_p</ref>[offset];</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>float64_t<sp/><ref refid="classshogun_1_1CDynProg_1aa9c10f4c147e97fa51056001aa270839" kindref="member">get_p_deriv</ref>(T_STATES<sp/>offset)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="427"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_initial_state_distribution_p_deriv[offset];</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1aba51c576831259f276d884a0af531a8e" kindref="member">precompute_content_values</ref>();</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>float64_t*<sp/><ref refid="classshogun_1_1CDynProg_1a0de99379035bc5de00a9b2d6a3736f2e" kindref="member">get_lin_feat</ref>(int32_t<sp/>&amp;<sp/>dim1,<sp/>int32_t<sp/>&amp;<sp/>dim2)<sp/></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CDynProg_1a7dc49703bbd30083d5cc3c934b062a42" kindref="member">m_lin_feat</ref>.get_array_size(dim1,<sp/>dim2);</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a7dc49703bbd30083d5cc3c934b062a42" kindref="member">m_lin_feat</ref>.get_array();</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1ad79e8200e7720c14dfe4e4d41ab1ed5a" kindref="member">set_lin_feat</ref>(float64_t*<sp/>p_lin_feat,<sp/>int32_t<sp/>p_num_svms,<sp/>int32_t<sp/>p_seq_len)<sp/></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CDynProg_1a7dc49703bbd30083d5cc3c934b062a42" kindref="member">m_lin_feat</ref>.set_array(p_lin_feat,<sp/>p_num_svms,<sp/>p_seq_len,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a8673f806bb798912e92357946d0e515e" kindref="member">create_word_string</ref>();</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a912b9173d4bda3d3302a11eceec1e5a6" kindref="member">precompute_stop_codons</ref>();</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>float64_t<sp/><ref refid="classshogun_1_1CDynProg_1a747444914a2826a014d60498b70ee3de" kindref="member">get_a</ref>(T_STATES<sp/>line_,<sp/>T_STATES<sp/>column)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="476"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_transition_matrix_a.element(line_,<sp/>column);<sp/></highlight><highlight class="comment">//<sp/>look<sp/>also<sp/>best_path()!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>float64_t<sp/><ref refid="classshogun_1_1CDynProg_1ade1447024b78228c5804399b9bc0a60e" kindref="member">get_a_deriv</ref>(T_STATES<sp/>line_,<sp/>T_STATES<sp/>column)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="487"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_transition_matrix_a_deriv.element(line_,<sp/>column);<sp/></highlight><highlight class="comment">//<sp/>look<sp/>also<sp/>best_path()!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="491"></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1aba0d5077e3ecf78e576abfaf6511affd" kindref="member">set_intron_list</ref>(<ref refid="classshogun_1_1CIntronList" kindref="compound" tooltip="class IntronList">CIntronList</ref>*<sp/>intron_list,<sp/>int32_t<sp/>num_plifs);</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CSegmentLoss" kindref="compound" tooltip="class IntronList">CSegmentLoss</ref>*<sp/><ref refid="classshogun_1_1CDynProg_1a1c244c0e892c0cc480d119497c06b82f" kindref="member">get_segment_loss_object</ref>()</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1ae37419be66144a0e844a39f48a9e20f0" kindref="member">m_seg_loss_obj</ref>;</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a8c6fa5d426a6939a372df7f23da44b81" kindref="member">long_transition_settings</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>use_long_transitions,<sp/>int32_t<sp/>threshold,<sp/>int32_t<sp/>max_len)</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CDynProg_1ac6852b788fa74e6c906ba1623944533a" kindref="member">m_long_transitions</ref><sp/>=<sp/>use_long_transitions;</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CDynProg_1a527ef4e02c718f368daae18db7af87dc" kindref="member">m_long_transition_threshold</ref><sp/>=<sp/>threshold;</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CDynProg_1a58bec03170a3117a85fdd561682a09ce" kindref="member">m_long_transition_max</ref><sp/>=<sp/>max_len;</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>helper<sp/>functions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a7f1bafc13d90e80268a97956e09f9f3c" kindref="member">lookup_content_svm_values</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>from_state,</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>to_state,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>from_pos,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>to_pos,</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t*<sp/>svm_values,<sp/>int32_t<sp/>frame);</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"></highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a7a3a6ae28d99bdc91d2722b68c4561dd" kindref="member">lookup_tiling_plif_values</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>from_state,</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>to_state,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>len,<sp/>float64_t*<sp/>svm_values);</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"></highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1af7c1e2e41226fe4b3df8b84c17c14551" kindref="member">find_frame</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>from_state);</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"></highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1a0b09f303dd35670d39aa6eb0e037ba46" kindref="member">raw_intensities_interval_query</ref>(</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>from_pos,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>to_pos,<sp/>float64_t*<sp/>intensities,<sp/>int32_t<sp/>type);</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight></codeline>
+<codeline lineno="561"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight></codeline>
+<codeline lineno="562"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="563" refid="structshogun_1_1CDynProg_1_1svm__values__struct" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structshogun_1_1CDynProg_1_1svm__values__struct" kindref="compound" tooltip="SVM values.">svm_values_struct</ref></highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="structshogun_1_1CDynProg_1_1svm__values__struct_1aab40ee38e62fbb60be1bfe4be3fd143d" kindref="member">maxlookback</ref>;</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="structshogun_1_1CDynProg_1_1svm__values__struct_1aff7a435a0d4c84dedfed2e7df08704fd" kindref="member">seqlen</ref>;</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"></highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/><ref refid="structshogun_1_1CDynProg_1_1svm__values__struct_1ac4bbd1fe4b9966255eba3b4f50addf75" kindref="member">start_pos</ref>;</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>**<sp/><ref refid="structshogun_1_1CDynProg_1_1svm__values__struct_1ac327946bdeb4814d307d69a2ef68cf6f" kindref="member">svm_values_unnormalized</ref>;</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>*<sp/>svm_values;</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>***<sp/><ref refid="structshogun_1_1CDynProg_1_1svm__values__struct_1ab9ba7a7888978681ffafb17c9be44ecd" kindref="member">word_used</ref>;</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>**<ref refid="structshogun_1_1CDynProg_1_1svm__values__struct_1aacefd2f162f9b8f2173fd94e63527b96" kindref="member">num_unique_words</ref>;</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight></codeline>
+<codeline lineno="582"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a0d24f308aa7750385176ed2c241295e6" kindref="member">extend_orf</ref>(int32_t<sp/>orf_from,<sp/>int32_t<sp/>orf_to,<sp/>int32_t<sp/>start,<sp/>int32_t<sp/>&amp;last_pos,<sp/>int32_t<sp/>to);</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"></highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classshogun_1_1CDynProg_1ad4f5caaf19113966f2b26d71c74ca0da" kindref="member">get_name</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;DynProg&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"></highlight></codeline>
+<codeline lineno="596"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"></highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T_STATES<sp/>trans_list_len;</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T_STATES<sp/>**trans_list_forward;</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T_STATES<sp/>*trans_list_forward_cnt;</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>**trans_list_forward_val;</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>**trans_list_forward_id;</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>mem_initialized;</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"></highlight></codeline>
+<codeline lineno="605"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DYNPROG_TIMING</highlight></codeline>
+<codeline lineno="606"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CTime<sp/>MyTime;</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CTime<sp/>MyTime2;</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CTime<sp/>MyTime3;</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>segment_init_time;</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>segment_pos_time;</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>segment_clean_time;</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>segment_extend_time;</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>orf_time;</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>content_time;</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>content_penalty_time;</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>content_svm_values_time<sp/>;</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>content_plifs_time<sp/>;<sp/><sp/></highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>svm_init_time;</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>svm_pos_time;</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>inner_loop_time;</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>inner_loop_max_time<sp/>;<sp/></highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>svm_clean_time;</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>long_transition_time<sp/>;</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="626"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="627"><highlight class="normal"></highlight></codeline>
+<codeline lineno="628"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="633"></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1a87a9ff610de23e7138caa7e8cd727694" kindref="member" tooltip="number of states">m_N</ref>;</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"></highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray2&lt;int32_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a8269382033e1b167abf621eb63b53a16" kindref="member" tooltip="transition matrix">m_transition_matrix_a_id</ref>;</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray2&lt;float64_t&gt;<sp/>m_transition_matrix_a;</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray2&lt;float64_t&gt;<sp/>m_transition_matrix_a_deriv;</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"></highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;float64_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a5fff73c136eb13575e3cd63f132af684" kindref="member" tooltip="initial distribution of states">m_initial_state_distribution_p</ref>;</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;float64_t&gt;<sp/>m_initial_state_distribution_p_deriv;</highlight></codeline>
+<codeline lineno="644"><highlight class="normal"></highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;float64_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a06679454732f03edee0d159c4dbadc45" kindref="member" tooltip="distribution of end-states">m_end_state_distribution_q</ref>;</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;float64_t&gt;<sp/>m_end_state_distribution_q_deriv;</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"></highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1a491ca2a2ddebfd4c43200585c5a13ffc" kindref="member">m_num_degrees</ref>;</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1a4272bb95194b7ead81e483ec753e1093" kindref="member">m_num_svms</ref>;</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"></highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;int32_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a2305705562cfed632dce6cc8bf7f0a72" kindref="member">m_word_degree</ref>;</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;int32_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1ac15c0acc3c534532b1d487a57adccc19" kindref="member">m_cum_num_words</ref>;</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>*<sp/><ref refid="classshogun_1_1CDynProg_1a9a8a96face865ebd212ddaf874b1456a" kindref="member">m_cum_num_words_array</ref>;</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;int32_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a050612d271b9714f21d42b202cbf9ff3" kindref="member">m_num_words</ref>;</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/><ref refid="classshogun_1_1CDynProg_1a250835faef7707cb2d0c54ee3382a376" kindref="member">m_num_words_array</ref>;</highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray2&lt;int32_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a63c810ce96dd7970c755fa889b04c151" kindref="member">m_mod_words</ref>;</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/><ref refid="classshogun_1_1CDynProg_1a4d96619a82645f49b07ac106f1cf44d1" kindref="member">m_mod_words_array</ref>;</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;bool&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a96dc8c22a51fc28e7b0bc298ba3b999b" kindref="member">m_sign_words</ref>;</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/><ref refid="classshogun_1_1CDynProg_1add71f311931ef964023b6b377cee8de6" kindref="member">m_sign_words_array</ref>;</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;int32_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a3ccb4aeae625e7e485d9a645d47ce7c5" kindref="member">m_string_words</ref>;</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/><ref refid="classshogun_1_1CDynProg_1ab62000a33b8cf7a47bc35c6c324dd10d" kindref="member">m_string_words_array</ref>;</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"></highlight></codeline>
+<codeline lineno="680"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;int32_t&gt;<sp/>m_svm_pos_start;</highlight></codeline>
+<codeline lineno="682"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;int32_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a8e35acdc53c40c83894acb851a0923ea" kindref="member">m_num_unique_words</ref>;</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a0aae1b43f228b281cceff027d976a80d" kindref="member">m_svm_arrays_clean</ref>;</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1a02d59272dea65d937fb10c5c33f84a80" kindref="member">m_max_a_id</ref>;</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>input<sp/>arguments</highlight></codeline>
+<codeline lineno="690"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray3&lt;float64_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a5421eb2fa9d936e3c529aaa9682679d1" kindref="member">m_observation_matrix</ref>;</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;int32_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a62e0a6fb1416a8d3a5460a392339d868" kindref="member">m_pos</ref>;</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1a46d10d37f4dc0b3a8ad5ec48c8f0cbfc" kindref="member">m_seq_len</ref>;<sp/></highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray2&lt;int32_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a11781de1bcd601aab8953d0b8245f3d0" kindref="member">m_orf_info</ref>;</highlight></codeline>
+<codeline lineno="698"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray2&lt;float64_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1aaa9c61cb2154d1a3f1d48b48fc3cc3e7" kindref="member">m_segment_sum_weights</ref>;</highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;CPlifBase*&gt;<sp/><ref refid="classshogun_1_1CDynProg_1abb8ab472ac1f7face89561f7c1f2e1cd" kindref="member">m_plif_list</ref>;</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray2&lt;CPlifBase*&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a50e10327c6f2b04e6e79ec6f6ef5b021" kindref="member">m_PEN</ref>;</highlight></codeline>
+<codeline lineno="704"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray2&lt;CPlifBase*&gt;<sp/><ref refid="classshogun_1_1CDynProg_1adcc08092c84c7f1f9e258aedc5ad3009" kindref="member">m_PEN_state_signals</ref>;</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;char&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a77f141d71b89c12d73adad8c92107acd" kindref="member">m_genestr</ref>;</highlight></codeline>
+<codeline lineno="721"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t***<sp/><ref refid="classshogun_1_1CDynProg_1aca2b388e76c5ba7faa3ba310b50ee186" kindref="member">m_wordstr</ref>;</highlight></codeline>
+<codeline lineno="723"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray2&lt;float64_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1abe5b6d3785492d25009d8516454b1539" kindref="member">m_dict_weights</ref>;</highlight></codeline>
+<codeline lineno="725"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray3&lt;float64_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a02a90f9b50b711654f99c288807e38b8" kindref="member">m_segment_loss</ref>;</highlight></codeline>
+<codeline lineno="727"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;int32_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1af846b4f080fefbce236d2e8506fd5d25" kindref="member">m_segment_ids</ref>;</highlight></codeline>
+<codeline lineno="729"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;float64_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a2847bbb709d562fe541c0813124c5220" kindref="member">m_segment_mask</ref>;</highlight></codeline>
+<codeline lineno="731"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;int32_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1af5cbe1f321d001690096011ae10574ee" kindref="member">m_my_state_seq</ref>;</highlight></codeline>
+<codeline lineno="733"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;int32_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a338f0cd2caf7040f6932daddfd9e9849" kindref="member">m_my_pos_seq</ref>;</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;float64_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a3216043f63efacce48c79f518ed8c9bf" kindref="member">m_my_scores</ref>;</highlight></codeline>
+<codeline lineno="737"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;float64_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a93697d06bdca997d147fbe1c790d6c6c" kindref="member">m_my_losses</ref>;</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"></highlight></codeline>
+<codeline lineno="741"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CSegmentLoss" kindref="compound" tooltip="class IntronList">CSegmentLoss</ref>*<sp/><ref refid="classshogun_1_1CDynProg_1ae37419be66144a0e844a39f48a9e20f0" kindref="member">m_seg_loss_obj</ref>;</highlight></codeline>
+<codeline lineno="742"><highlight class="normal"></highlight></codeline>
+<codeline lineno="743"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>output<sp/>arguments</highlight></codeline>
+<codeline lineno="745"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;float64_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a6a7f64c53feee2c6614c0e680e7ef6f1" kindref="member">m_scores</ref>;</highlight></codeline>
+<codeline lineno="747"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray2&lt;int32_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a0c9bddab0318618831c0f324775d0aca" kindref="member">m_states</ref>;</highlight></codeline>
+<codeline lineno="749"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray2&lt;int32_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a5d44176d516f3528fae6485431b55cb7" kindref="member">m_positions</ref>;</highlight></codeline>
+<codeline lineno="750"><highlight class="normal"></highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CSparseFeatures&lt;float64_t&gt;*<sp/><ref refid="classshogun_1_1CDynProg_1afc7f484b3fe7abe2b2841e2cecdcd7a3" kindref="member">m_seq_sparse1</ref>;</highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CSparseFeatures&lt;float64_t&gt;*<sp/><ref refid="classshogun_1_1CDynProg_1ae811a928cfa53a4fe3a5f69e82cab111" kindref="member">m_seq_sparse2</ref>;</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CPlifMatrix" kindref="compound" tooltip="store plif arrays for all transitions in the model">CPlifMatrix</ref>*<sp/><ref refid="classshogun_1_1CDynProg_1affe34071579a106bfed895f8bc87c590" kindref="member">m_plif_matrices</ref>;</highlight></codeline>
+<codeline lineno="757"><highlight class="normal"></highlight></codeline>
+<codeline lineno="761"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray&lt;bool&gt;<sp/><ref refid="classshogun_1_1CDynProg_1afc1572af9c3e49ba712933d2440aace9" kindref="member">m_genestr_stop</ref>;</highlight></codeline>
+<codeline lineno="762"><highlight class="normal"></highlight></codeline>
+<codeline lineno="765"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classshogun_1_1CIntronList" kindref="compound" tooltip="class IntronList">CIntronList</ref>*<sp/><ref refid="classshogun_1_1CDynProg_1a3793dd907c1277db043ae091c1b1c8b3" kindref="member">m_intron_list</ref>;</highlight></codeline>
+<codeline lineno="766"><highlight class="normal"></highlight></codeline>
+<codeline lineno="768"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1a38b76a4dc5957efe005e3f9b471cd806" kindref="member">m_num_intron_plifs</ref>;</highlight></codeline>
+<codeline lineno="769"><highlight class="normal"></highlight></codeline>
+<codeline lineno="774"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CArray2&lt;float64_t&gt;<sp/><ref refid="classshogun_1_1CDynProg_1a7dc49703bbd30083d5cc3c934b062a42" kindref="member">m_lin_feat</ref>;</highlight></codeline>
+<codeline lineno="775"><highlight class="normal"></highlight></codeline>
+<codeline lineno="777"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>*<ref refid="classshogun_1_1CDynProg_1aaa0f9431e0bf1f601e4ea3ab7d3dae0e" kindref="member">m_raw_intensities</ref>;</highlight></codeline>
+<codeline lineno="779"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/><ref refid="classshogun_1_1CDynProg_1a48dc5c7d04d1b9fa56947f7d67a04514" kindref="member">m_probe_pos</ref>;</highlight></codeline>
+<codeline lineno="781"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/><ref refid="classshogun_1_1CDynProg_1adb109317ef1745bbae0be694dd5b207a" kindref="member">m_num_probes_cum</ref>;</highlight></codeline>
+<codeline lineno="783"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/><ref refid="classshogun_1_1CDynProg_1a447013b898bd58ff2754564c66cd68a8" kindref="member">m_num_lin_feat_plifs_cum</ref>;</highlight></codeline>
+<codeline lineno="785"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1a37c3eb48fad97f79fabee83bd2dfa113" kindref="member">m_num_raw_data</ref>;</highlight></codeline>
+<codeline lineno="786"><highlight class="normal"></highlight></codeline>
+<codeline lineno="788"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1ac6852b788fa74e6c906ba1623944533a" kindref="member">m_long_transitions</ref><sp/>;</highlight></codeline>
+<codeline lineno="791"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1a527ef4e02c718f368daae18db7af87dc" kindref="member">m_long_transition_threshold</ref><sp/><sp/>;</highlight></codeline>
+<codeline lineno="796"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1a58bec03170a3117a85fdd561682a09ce" kindref="member">m_long_transition_max</ref><sp/>;</highlight></codeline>
+<codeline lineno="797"><highlight class="normal"></highlight></codeline>
+<codeline lineno="801"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1a0a6045300c4365627d316341ce15871a" kindref="member">word_degree_default</ref>[4];</highlight></codeline>
+<codeline lineno="802"><highlight class="normal"></highlight></codeline>
+<codeline lineno="806"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1aa14690a784450855e9ba3b1add7def5a" kindref="member">cum_num_words_default</ref>[5];</highlight></codeline>
+<codeline lineno="807"><highlight class="normal"></highlight></codeline>
+<codeline lineno="810"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1a02c46d89700b4d298f7687fe5a118f32" kindref="member">frame_plifs</ref>[3];</highlight></codeline>
+<codeline lineno="811"><highlight class="normal"></highlight></codeline>
+<codeline lineno="814"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1a7d27c754e3aa2b324435b29fd601ac63" kindref="member">num_words_default</ref>[4];</highlight></codeline>
+<codeline lineno="815"><highlight class="normal"></highlight></codeline>
+<codeline lineno="817"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1aa1be30c471dc51a0d07669bb9d4777d8" kindref="member">mod_words_default</ref>[32];</highlight></codeline>
+<codeline lineno="818"><highlight class="normal"></highlight></codeline>
+<codeline lineno="820"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classshogun_1_1CDynProg_1a73e8729c28902263d5a47fc951e565ab" kindref="member">sign_words_default</ref>[16];</highlight></codeline>
+<codeline lineno="821"><highlight class="normal"></highlight></codeline>
+<codeline lineno="823"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="classshogun_1_1CDynProg_1acab12862415217b452780a6339cc1a46" kindref="member">string_words_default</ref>[16];</highlight></codeline>
+<codeline lineno="824"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="825"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="826"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h"/>
+  </compounddef>
+</doxygen>

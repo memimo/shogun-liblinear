@@ -1,0 +1,721 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CKMeans" kind="class" prot="public">
+    <compoundname>shogun::CKMeans</compoundname>
+    <includes local="no">KMeans.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CKMeans_1af74e9b2117b5276664257f47ba74cc07" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CKMeans::max_iter</definition>
+        <argsstring></argsstring>
+        <name>max_iter</name>
+        <briefdescription>
+<para>maximum number of iterations </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="237" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CKMeans_1ac92d81af3ab34cbeb55e8433b4cedc3e" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CKMeans::k</definition>
+        <argsstring></argsstring>
+        <name>k</name>
+        <briefdescription>
+<para>the k parameter in KMeans </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="240" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CKMeans_1ac105f8532b1c1740bc8e370d40a79134" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CKMeans::dimensions</definition>
+        <argsstring></argsstring>
+        <name>dimensions</name>
+        <briefdescription>
+<para>number of dimensions </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="243" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CKMeans_1a9cd9f0a0427b4f1939b94a999e2f32f2" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CKMeans::R</definition>
+        <argsstring></argsstring>
+        <name>R</name>
+        <briefdescription>
+<para>radi of the clusters (size k) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="246" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CKMeans_1a6dcfaf4e40dd7aed2d73dfa86003089b" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CKMeans::mus</definition>
+        <argsstring></argsstring>
+        <name>mus</name>
+        <briefdescription>
+<para>centers of the clusters (size dimensions x k) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="249" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CKMeans_1a42251b18a5cb2882924c56c23800a70e" prot="private" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CKMeans::Weights</definition>
+        <argsstring></argsstring>
+        <name>Weights</name>
+        <briefdescription>
+<para>weighting over the train data </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="253" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1a1ab0e7d26618bad712462254fb9261d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CKMeans::CKMeans</definition>
+        <argsstring>()</argsstring>
+        <name>CKMeans</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1ae229b8397d4a78cb2990de20772f2a87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CKMeans::CKMeans</definition>
+        <argsstring>(int32_t k, CDistance *d)</argsstring>
+        <name>CKMeans</name>
+        <param>
+          <type>int32_t</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>CDistance *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter k </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distance </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1a6010a749bee5965ca13391c9bea65f2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CKMeans::~CKMeans</definition>
+        <argsstring>()</argsstring>
+        <name>~CKMeans</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1a957f68ec4e7a2d0bca9448a15088ef50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EClassifierType</type>
+        <definition>virtual EClassifierType shogun::CKMeans::get_classifier_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_classifier_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier type</para><para><simplesect kind="return"><para>classifier type KMEANS </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="57" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1a14f4cff067ca03bd8c39048900eec1ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CKMeans::train</definition>
+        <argsstring>(CFeatures *data=NULL)</argsstring>
+        <name>train</name>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>train k-means</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training data (parameter can be avoided if distance or kernel-based classifiers are used and distance/kernels are initialized with train data)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether training was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1aa1893f9c783964fd1d95c46f16d2235a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CKMeans::load</definition>
+        <argsstring>(FILE *srcfile)</argsstring>
+        <name>load</name>
+        <param>
+          <type>FILE *</type>
+          <declname>srcfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load distance machine from file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>srcfile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to load from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if loading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1a89d8e640da923d36c063ca614acc057c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CKMeans::save</definition>
+        <argsstring>(FILE *dstfile)</argsstring>
+        <name>save</name>
+        <param>
+          <type>FILE *</type>
+          <declname>dstfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save distance machine to file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dstfile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to save to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if saving was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1a4379dd33a7c0f3c8a2e52c0997adda21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKMeans::set_k</definition>
+        <argsstring>(int32_t p_k)</argsstring>
+        <name>set_k</name>
+        <param>
+          <type>int32_t</type>
+          <declname>p_k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set k</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new k </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="88" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="87" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1a8d0777e4862c98f5b2c53ac2a2cb833c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CKMeans::get_k</definition>
+        <argsstring>()</argsstring>
+        <name>get_k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get k</para><para><simplesect kind="return"><para>the parameter k </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="98" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1ad921bcdad5ae03910810271a56c16cbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKMeans::set_max_iter</definition>
+        <argsstring>(int32_t iter)</argsstring>
+        <name>set_max_iter</name>
+        <param>
+          <type>int32_t</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set maximum number of iterations</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new maximum </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="107" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="106" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1ab72d5bcccc2a74481f257d5c273938d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CKMeans::get_max_iter</definition>
+        <argsstring>()</argsstring>
+        <name>get_max_iter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get maximum number of iterations</para><para><simplesect kind="return"><para>maximum number of iterations </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="117" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1ae0d494ed42f6c87513749179077aa016" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKMeans::get_radi</definition>
+        <argsstring>(float64_t *&amp;radi, int32_t &amp;num)</argsstring>
+        <name>get_radi</name>
+        <param>
+          <type>float64_t *&amp;</type>
+          <declname>radi</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get radi</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>radi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current radi are stored in here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of radi is stored in here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="127" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="126" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1aa5f242ef82d0c6b5628fdc89651ed7cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKMeans::get_centers</definition>
+        <argsstring>(float64_t *&amp;centers, int32_t &amp;dim, int32_t &amp;num)</argsstring>
+        <name>get_centers</name>
+        <param>
+          <type>float64_t *&amp;</type>
+          <declname>centers</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get centers</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>centers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current centers are stored in here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimensions are stored in here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of centers is stored in here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="139" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="138" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1a05f898d580883701499c95643d34b639" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKMeans::get_radiuses</definition>
+        <argsstring>(float64_t **radii, int32_t *num)</argsstring>
+        <name>get_radiuses</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>radii</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get radiuses (swig compatible)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>radii</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current radiuses are stored in here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of radiuses is stored in here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="151" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="150" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1aafc245e1adbf79ddbc094224644c19cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKMeans::get_cluster_centers</definition>
+        <argsstring>(float64_t **centers, int32_t *dim, int32_t *num)</argsstring>
+        <name>get_cluster_centers</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>centers</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get cluster centers (swig compatible)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>centers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current cluster centers are stored in here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimensions are stored in here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of centers is stored in here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="168" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="166" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1a434a9d415dfc5cd64e541d1cb79f39ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CKMeans::get_dimensions</definition>
+        <argsstring>()</argsstring>
+        <name>get_dimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get dimensions</para><para><simplesect kind="return"><para>number of dimensions </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="183" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="182" bodyend="185"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1ac5dec11ba97d02f4a80618f1866cd00d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKMeans::sqdist</definition>
+        <argsstring>(float64_t *x, CSimpleFeatures&lt; float64_t &gt; *y, float64_t *z, int32_t n1, int32_t offs, int32_t n2, int32_t m)</argsstring>
+        <name>sqdist</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>CSimpleFeatures&lt; float64_t &gt; *</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>offs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sqdist</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>y </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>z </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>n1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>n2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>m </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1aef3fa1d8538854b055074bec9d8f81ed" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKMeans::clustknb</definition>
+        <argsstring>(bool use_old_mus, float64_t *mus_start)</argsstring>
+        <name>clustknb</name>
+        <param>
+          <type>bool</type>
+          <declname>use_old_mus</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>mus_start</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clustknb</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>use_old_mus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if old mus shall be used </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mus_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mus start </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1a96dedf23f902d69ee511ae4d0a65b100" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>CLabels *</type>
+        <definition>virtual CLabels* shogun::CKMeans::classify</definition>
+        <argsstring>()</argsstring>
+        <name>classify</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify objects using the currently set features</para><para><simplesect kind="return"><para>classified labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="214" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="213" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1a2b5076266494c442572fb19733db2b62" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>CLabels *</type>
+        <definition>virtual CLabels* shogun::CKMeans::classify</definition>
+        <argsstring>(CFeatures *data)</argsstring>
+        <name>classify</name>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify objects</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(test)data to be classified </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>classified labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="225" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="224" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKMeans_1affd4b579112b8978ae51b45c494b665e" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CKMeans::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="233" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="233" bodyend="233"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>KMeans clustering, partitions the data into k (a-priori specified) clusters. </para>    </briefdescription>
+    <detaileddescription>
+<para>It minimizes <formula id="1">\[ \sum_{i=1}^k\sum_{x_j\in S_i} (x_j-\mu_i)^2 \]</formula></para><para>where <formula id="2">$\mu_i$</formula> are the cluster centers and <formula id="3">$S_i,\;i=1,\dots,k$</formula> are the index sets of the clusters.</para><para>Beware that this algorithm obtains only a <emphasis>local</emphasis> optimum.</para><para>cf. <ulink url="http://en.wikipedia.org/wiki/K-means_algorithm">http://en.wikipedia.org/wiki/K-means_algorithm</ulink> </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" line="40" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/clustering/KMeans.h" bodystart="39" bodyend="254"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CKMeans_1a1ab0e7d26618bad712462254fb9261d3" prot="public" virt="non-virtual"><scope>shogun::CKMeans</scope><name>CKMeans</name></member>
+      <member refid="classshogun_1_1CKMeans_1ae229b8397d4a78cb2990de20772f2a87" prot="public" virt="non-virtual"><scope>shogun::CKMeans</scope><name>CKMeans</name></member>
+      <member refid="classshogun_1_1CKMeans_1a96dedf23f902d69ee511ae4d0a65b100" prot="protected" virt="virtual"><scope>shogun::CKMeans</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CKMeans_1a2b5076266494c442572fb19733db2b62" prot="protected" virt="virtual"><scope>shogun::CKMeans</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CKMeans_1aef3fa1d8538854b055074bec9d8f81ed" prot="protected" virt="non-virtual"><scope>shogun::CKMeans</scope><name>clustknb</name></member>
+      <member refid="classshogun_1_1CKMeans_1ac105f8532b1c1740bc8e370d40a79134" prot="protected" virt="non-virtual"><scope>shogun::CKMeans</scope><name>dimensions</name></member>
+      <member refid="classshogun_1_1CKMeans_1aa5f242ef82d0c6b5628fdc89651ed7cf" prot="public" virt="non-virtual"><scope>shogun::CKMeans</scope><name>get_centers</name></member>
+      <member refid="classshogun_1_1CKMeans_1a957f68ec4e7a2d0bca9448a15088ef50" prot="public" virt="virtual"><scope>shogun::CKMeans</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CKMeans_1aafc245e1adbf79ddbc094224644c19cf" prot="public" virt="non-virtual"><scope>shogun::CKMeans</scope><name>get_cluster_centers</name></member>
+      <member refid="classshogun_1_1CKMeans_1a434a9d415dfc5cd64e541d1cb79f39ac" prot="public" virt="non-virtual"><scope>shogun::CKMeans</scope><name>get_dimensions</name></member>
+      <member refid="classshogun_1_1CKMeans_1a8d0777e4862c98f5b2c53ac2a2cb833c" prot="public" virt="non-virtual"><scope>shogun::CKMeans</scope><name>get_k</name></member>
+      <member refid="classshogun_1_1CKMeans_1ab72d5bcccc2a74481f257d5c273938d9" prot="public" virt="non-virtual"><scope>shogun::CKMeans</scope><name>get_max_iter</name></member>
+      <member refid="classshogun_1_1CKMeans_1affd4b579112b8978ae51b45c494b665e" prot="protected" virt="virtual"><scope>shogun::CKMeans</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CKMeans_1ae0d494ed42f6c87513749179077aa016" prot="public" virt="non-virtual"><scope>shogun::CKMeans</scope><name>get_radi</name></member>
+      <member refid="classshogun_1_1CKMeans_1a05f898d580883701499c95643d34b639" prot="public" virt="non-virtual"><scope>shogun::CKMeans</scope><name>get_radiuses</name></member>
+      <member refid="classshogun_1_1CKMeans_1ac92d81af3ab34cbeb55e8433b4cedc3e" prot="protected" virt="non-virtual"><scope>shogun::CKMeans</scope><name>k</name></member>
+      <member refid="classshogun_1_1CKMeans_1aa1893f9c783964fd1d95c46f16d2235a" prot="public" virt="virtual"><scope>shogun::CKMeans</scope><name>load</name></member>
+      <member refid="classshogun_1_1CKMeans_1af74e9b2117b5276664257f47ba74cc07" prot="protected" virt="non-virtual"><scope>shogun::CKMeans</scope><name>max_iter</name></member>
+      <member refid="classshogun_1_1CKMeans_1a6dcfaf4e40dd7aed2d73dfa86003089b" prot="protected" virt="non-virtual"><scope>shogun::CKMeans</scope><name>mus</name></member>
+      <member refid="classshogun_1_1CKMeans_1a9cd9f0a0427b4f1939b94a999e2f32f2" prot="protected" virt="non-virtual"><scope>shogun::CKMeans</scope><name>R</name></member>
+      <member refid="classshogun_1_1CKMeans_1a89d8e640da923d36c063ca614acc057c" prot="public" virt="virtual"><scope>shogun::CKMeans</scope><name>save</name></member>
+      <member refid="classshogun_1_1CKMeans_1a4379dd33a7c0f3c8a2e52c0997adda21" prot="public" virt="non-virtual"><scope>shogun::CKMeans</scope><name>set_k</name></member>
+      <member refid="classshogun_1_1CKMeans_1ad921bcdad5ae03910810271a56c16cbd" prot="public" virt="non-virtual"><scope>shogun::CKMeans</scope><name>set_max_iter</name></member>
+      <member refid="classshogun_1_1CKMeans_1ac5dec11ba97d02f4a80618f1866cd00d" prot="protected" virt="non-virtual"><scope>shogun::CKMeans</scope><name>sqdist</name></member>
+      <member refid="classshogun_1_1CKMeans_1a14f4cff067ca03bd8c39048900eec1ee" prot="public" virt="virtual"><scope>shogun::CKMeans</scope><name>train</name></member>
+      <member refid="classshogun_1_1CKMeans_1a42251b18a5cb2882924c56c23800a70e" prot="private" virt="non-virtual"><scope>shogun::CKMeans</scope><name>Weights</name></member>
+      <member refid="classshogun_1_1CKMeans_1a6010a749bee5965ca13391c9bea65f2c" prot="public" virt="virtual"><scope>shogun::CKMeans</scope><name>~CKMeans</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

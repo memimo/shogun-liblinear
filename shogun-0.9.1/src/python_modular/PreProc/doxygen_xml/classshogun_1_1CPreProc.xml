@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CPreProc" kind="class" prot="public">
+    <compoundname>shogun::CPreProc</compoundname>
+    <derivedcompoundref refid="classshogun_1_1CSimplePreProc" prot="public" virt="non-virtual">shogun::CSimplePreProc&lt; float64_t &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CStringPreProc" prot="public" virt="non-virtual">shogun::CStringPreProc&lt; uint16_t &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CStringPreProc" prot="public" virt="non-virtual">shogun::CStringPreProc&lt; uint64_t &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CSimplePreProc" prot="public" virt="non-virtual">shogun::CSimplePreProc&lt; ST &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CSparsePreProc" prot="public" virt="non-virtual">shogun::CSparsePreProc&lt; ST &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CStringPreProc" prot="public" virt="non-virtual">shogun::CStringPreProc&lt; ST &gt;</derivedcompoundref>
+    <includes local="no">PreProc.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CPreProc_1a58f21d152eaba8e982f98806d8496db3" prot="protected" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* shogun::CPreProc::preproc_name</definition>
+        <argsstring></argsstring>
+        <name>preproc_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>preprocessor name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" line="91" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPreProc_1a7905211b1e156831e64768d936351fa8" prot="protected" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* shogun::CPreProc::preproc_id</definition>
+        <argsstring></argsstring>
+        <name>preproc_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>preprocessor id </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" line="93" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CPreProc_1a42cd824b1e730557f07884dc6eb98e51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CPreProc::CPreProc</definition>
+        <argsstring>(const char *name, const char *id)</argsstring>
+        <name>CPreProc</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>preprocessor&apos;s name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>preprocessor&apos;s id </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPreProc_1a037b99bfd3bacbb3135525e81b134c57" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CPreProc::~CPreProc</definition>
+        <argsstring>()</argsstring>
+        <name>~CPreProc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPreProc_1afe50f73057b75cb494a9a4ab253258d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CPreProc::init</definition>
+        <argsstring>(CFeatures *f)=0</argsstring>
+        <name>init</name>
+        <reimplementedby refid="classshogun_1_1CSortWordString_1a017cec6ab65e675064d5fa159acef0d5">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSortUlongString_1a851d3cf2526937badc750652b24a1425">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPruneVarSubMean_1a1b60f92041bb7895b5ec2a071cf72e49">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CNormOne_1a88c01be55ae23840d294e9046422bdae">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CNormDerivativeLem3_1af125544fa8efc1f4d700d0313e4dadff">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLogPlusOne_1aff856f914e33b55b7803a5f35a974ffe">init</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CDecompressString_1ad0d84c9e0aca291436fcadf47b4fcdb0">init</reimplementedby>
+        <param>
+          <type>CFeatures *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>initialize preprocessor from features </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPreProc_1a0f043eb1dd251b49cb3cf3ecf44b1c4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CPreProc::cleanup</definition>
+        <argsstring>()=0</argsstring>
+        <name>cleanup</name>
+        <reimplementedby refid="classshogun_1_1CSortWordString_1ad6a3377f67a71e82fd7a7db9a381381a">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSortUlongString_1a3ae2c8558c75a85e797792a905774e50">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPruneVarSubMean_1aa964ae1a524440c4576be9b2ff3fbdd0">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CNormOne_1a5aa76386fdfb9c368cee2c0f0986302d">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CNormDerivativeLem3_1a1e38218569c786dcd097d649f7b64169">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLogPlusOne_1ab6674755321f6e38c015f7f6e52c0e40">cleanup</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CDecompressString_1ae75c18266257f36cef82dad4a68421d0">cleanup</reimplementedby>
+        <briefdescription>
+<para>cleanup </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPreProc_1a29b1c1bbd8b45c6aa3aca8e082e2ec5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>EFeatureType</type>
+        <definition>virtual EFeatureType shogun::CPreProc::get_feature_type</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_feature_type</name>
+        <reimplementedby refid="classshogun_1_1CStringPreProc_1a5dac8314d95fdad3e571854f6e98fa3c">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringPreProc_1ab9ea8a96d88a2b2ac04a153d3578f189">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringPreProc_1a7512ecd85611edb09942b679e35e5930">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringPreProc_1a49e2b1655df4d02d4892ac342328aecb">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimplePreProc_1ad11abca3f15e1afda26494d2620266ef">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimplePreProc_1aed1ab07d8f63b0e5396cc8f24147c37b">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimplePreProc_1ae545e24c08edae8cded8aef66db7da90">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimplePreProc_1ac591b335c2024fdc7b9a824f4af3dcce">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimplePreProc_1a8b904322d7f043438dd09b971fd47b50">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimplePreProc_1a1a5fcbdf2171ce73dcbb168ed8b90851">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringPreProc_1ad4e2089a5baf77716e20da3cb08dbdcf">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringPreProc_1ad4e2089a5baf77716e20da3cb08dbdcf">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimplePreProc_1a59c6f4e6daddd0b833ab65f1ed6489db">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringPreProc_1ad4e2089a5baf77716e20da3cb08dbdcf">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimplePreProc_1a59c6f4e6daddd0b833ab65f1ed6489db">get_feature_type</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return feature type with which objects derived from <ref refid="classshogun_1_1CPreProc" kindref="compound">CPreProc</ref> can deal </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPreProc_1a917101137fbee06eeba9d09a37c063bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>EFeatureClass</type>
+        <definition>virtual EFeatureClass shogun::CPreProc::get_feature_class</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_feature_class</name>
+        <reimplementedby refid="classshogun_1_1CStringPreProc_1aa5c7ccd36186ce59ae5d98acb3a3f7d8">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringPreProc_1aa5c7ccd36186ce59ae5d98acb3a3f7d8">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimplePreProc_1aabe2bad66cb5c1c5fdef0a8b4ce5a8db">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringPreProc_1aa5c7ccd36186ce59ae5d98acb3a3f7d8">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparsePreProc_1a2903eb6a628434eb078c0bcc9afd8518">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimplePreProc_1aabe2bad66cb5c1c5fdef0a8b4ce5a8db">get_feature_class</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return feature class like Sparse,Simple,... </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPreProc_1ade7d07b45284bdae48abe425b0bf5a40" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CPreProc::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+<para>return the name of the preprocessor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" line="84" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPreProc_1a66dbec59819cb9ed7023fc47608ccad7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* shogun::CPreProc::get_id</definition>
+        <argsstring>() const </argsstring>
+        <name>get_id</name>
+        <briefdescription>
+<para>return a FOUR letter id of the preprocessor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" line="87" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class PreProc defines a preprocessor interface. </para>    </briefdescription>
+    <detaileddescription>
+<para>Preprocessors are transformation functions that don&apos;t change the domain of the input features. These functions can be applied in-place if the input features fit in memory or can be applied on-the-fly when (depending on features) a feature caching strategy is applied. However, if the individual features are in <formula id="2">$\bf{R}$</formula> they have to stay in <formula id="2">$\bf{R}$</formula> although the dimensionality of the feature vectors is allowed change.</para><para>As preprocessors might need a certain initialization they may expect that the <ref refid="classshogun_1_1CPreProc_1afe50f73057b75cb494a9a4ab253258d6" kindref="member">init()</ref> function is called before anything else. The actual preprocessing is feature type dependent and thus coordinated in the sub-classes, cf. e.g. <ref refid="classshogun_1_1CSimplePreProc" kindref="compound">CSimplePreProc</ref> . </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="33">
+        <label>shogun::CSortUlongString</label>
+        <link refid="classshogun_1_1CSortUlongString"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>shogun::CDecompressString&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CDecompressString"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>shogun::CSortWordString</label>
+        <link refid="classshogun_1_1CSortWordString"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>shogun::CStringPreProc&lt; uint16_t &gt;</label>
+        <link refid="classshogun_1_1CStringPreProc"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>shogun::CPreProc</label>
+        <link refid="classshogun_1_1CPreProc"/>
+      </node>
+      <node id="36">
+        <label>shogun::CStringPreProc&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CStringPreProc"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>shogun::CSimplePreProc&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimplePreProc"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>shogun::CSparsePreProc&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CSparsePreProc"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>shogun::CNormOne</label>
+        <link refid="classshogun_1_1CNormOne"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>shogun::CSimplePreProc&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CSimplePreProc"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>shogun::CLogPlusOne</label>
+        <link refid="classshogun_1_1CLogPlusOne"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>shogun::CPruneVarSubMean</label>
+        <link refid="classshogun_1_1CPruneVarSubMean"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>shogun::CStringPreProc&lt; uint64_t &gt;</label>
+        <link refid="classshogun_1_1CStringPreProc"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>shogun::CNormDerivativeLem3</label>
+        <link refid="classshogun_1_1CNormDerivativeLem3"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" line="58" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/PreProc.h" bodystart="57" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CPreProc_1a0f043eb1dd251b49cb3cf3ecf44b1c4b" prot="public" virt="pure-virtual"><scope>shogun::CPreProc</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CPreProc_1a42cd824b1e730557f07884dc6eb98e51" prot="public" virt="non-virtual"><scope>shogun::CPreProc</scope><name>CPreProc</name></member>
+      <member refid="classshogun_1_1CPreProc_1a917101137fbee06eeba9d09a37c063bf" prot="public" virt="pure-virtual"><scope>shogun::CPreProc</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CPreProc_1a29b1c1bbd8b45c6aa3aca8e082e2ec5d" prot="public" virt="pure-virtual"><scope>shogun::CPreProc</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CPreProc_1a66dbec59819cb9ed7023fc47608ccad7" prot="public" virt="non-virtual"><scope>shogun::CPreProc</scope><name>get_id</name></member>
+      <member refid="classshogun_1_1CPreProc_1ade7d07b45284bdae48abe425b0bf5a40" prot="public" virt="virtual"><scope>shogun::CPreProc</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CPreProc_1afe50f73057b75cb494a9a4ab253258d6" prot="public" virt="pure-virtual"><scope>shogun::CPreProc</scope><name>init</name></member>
+      <member refid="classshogun_1_1CPreProc_1a7905211b1e156831e64768d936351fa8" prot="protected" virt="non-virtual"><scope>shogun::CPreProc</scope><name>preproc_id</name></member>
+      <member refid="classshogun_1_1CPreProc_1a58f21d152eaba8e982f98806d8496db3" prot="protected" virt="non-virtual"><scope>shogun::CPreProc</scope><name>preproc_name</name></member>
+      <member refid="classshogun_1_1CPreProc_1a037b99bfd3bacbb3135525e81b134c57" prot="public" virt="virtual"><scope>shogun::CPreProc</scope><name>~CPreProc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

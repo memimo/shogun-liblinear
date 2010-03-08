@@ -1,0 +1,1267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CFile" kind="class" prot="public">
+    <compoundname>shogun::CFile</compoundname>
+    <includes local="no">File.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CFile_1ad420e1d265c921a5e8575a4614c838d8" prot="protected" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* shogun::CFile::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>file object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="320" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CFile_1ac1f091997148703747dddbd7c473d2cd" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CFile::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>status </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="322" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CFile_1acfb623ab3240057cdb070bee3e05823a" prot="protected" static="no" mutable="no">
+        <type>char</type>
+        <definition>char shogun::CFile::task</definition>
+        <argsstring></argsstring>
+        <name>task</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>task </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="324" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CFile_1ad0f2b35ef28e2c39e69c1b724dd6f45d" prot="protected" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* shogun::CFile::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>name of the handled file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="326" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CFile_1a132e6da5bcdf6d22705d88ee9aee8c36" prot="protected" static="no" mutable="no">
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CFile::expected_type</definition>
+        <argsstring></argsstring>
+        <name>expected_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>expected feature type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="328" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CFile_1ac5ecf285cf43250b72b6da752086b2bc" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CFile::num_header</definition>
+        <argsstring></argsstring>
+        <name>num_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of headers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="330" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CFile_1a8e2ff0eb9f97d7e204f3301ed22ca6b7" prot="protected" static="no" mutable="no">
+        <type>char</type>
+        <definition>char shogun::CFile::fourcc[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>fourcc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>fourcc </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="332" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CFile_1a5fa7e0117ff706be3bb69d6eca02bb69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CFile::CFile</definition>
+        <argsstring>(FILE *f)</argsstring>
+        <name>CFile</name>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>already opened file </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1a86b3f91163cf99d05635d49488a5f365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CFile::CFile</definition>
+        <argsstring>(char *fname, char rw, EFeatureType type, char fourcc[4]=NULL)</argsstring>
+        <name>CFile</name>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>rw</declname>
+        </param>
+        <param>
+          <type>EFeatureType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>fourcc</declname>
+          <array>[4]</array>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to open </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mode, &apos;r&apos; or &apos;w&apos; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the datatype used in the file (F_INT,...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fourcc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in the case fourcc is 0, type will be ignored and the file is treated as if it has a header/[typeheader,data]+ else the files header will be checked to contain the specified fourcc (e.g. &apos;RFEA&apos;) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1a129c492f4af7b67bebc4397da0469816" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CFile::~CFile</definition>
+        <argsstring>()</argsstring>
+        <name>~CFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1aaeaf41892170ea1c45a5e0d2bc7db97e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CFile::parse_first_header</definition>
+        <argsstring>(EFeatureType &amp;type)</argsstring>
+        <name>parse_first_header</name>
+        <param>
+          <type>EFeatureType &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>parse first header - defunct!</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>-1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1abad29d47866c82a2cf60734e91fed107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CFile::parse_next_header</definition>
+        <argsstring>(EFeatureType &amp;type)</argsstring>
+        <name>parse_next_header</name>
+        <param>
+          <type>EFeatureType &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>parse next header - defunct!</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>-1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1ac76c26ca62af0c87ef64b6eda453a1ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CFile::load_int_data</definition>
+        <argsstring>(int32_t *target, int64_t &amp;num)</argsstring>
+        <name>load_int_data</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>int64_t &amp;</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load integer data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>loaded data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>loaded data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1a9537e3f5fc7a0f753060149c81582058" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CFile::load_real_data</definition>
+        <argsstring>(float64_t *target, int64_t &amp;num)</argsstring>
+        <name>load_real_data</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>int64_t &amp;</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load real data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>loaded data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>loaded data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1ac9b4ce416d653cb3fe24c6ce41ee53a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float32_t *</type>
+        <definition>float32_t* shogun::CFile::load_shortreal_data</definition>
+        <argsstring>(float32_t *target, int64_t &amp;num)</argsstring>
+        <name>load_shortreal_data</name>
+        <param>
+          <type>float32_t *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>int64_t &amp;</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load shortreal data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>loaded data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>loaded data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1a0553b7c19d496eb35b1321059374c65e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* shogun::CFile::load_char_data</definition>
+        <argsstring>(char *target, int64_t &amp;num)</argsstring>
+        <name>load_char_data</name>
+        <param>
+          <type>char *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>int64_t &amp;</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load char data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>loaded data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>loaded data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1ac122b279a3432ef2f0806a5fbdd63b76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* shogun::CFile::load_byte_data</definition>
+        <argsstring>(uint8_t *target, int64_t &amp;num)</argsstring>
+        <name>load_byte_data</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>int64_t &amp;</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load byte data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>loaded data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>loaded data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1acecbec009d687a17ed3db975c47dc454" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t *</type>
+        <definition>uint16_t* shogun::CFile::load_word_data</definition>
+        <argsstring>(uint16_t *target, int64_t &amp;num)</argsstring>
+        <name>load_word_data</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>int64_t &amp;</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load word data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>loaded data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>loaded data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1ad60f7cc736a5c851917dba476f7c6bbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t *</type>
+        <definition>int16_t* shogun::CFile::load_short_data</definition>
+        <argsstring>(int16_t *target, int64_t &amp;num)</argsstring>
+        <name>load_short_data</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>int64_t &amp;</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load short data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>loaded data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>loaded data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1a84ce0596cbadc8de8dfda1a43ea7ec5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class DT</type>
+          </param>
+        </templateparamlist>
+        <type>DT *</type>
+        <definition>DT* shogun::CFile::load_data</definition>
+        <argsstring>(DT *target, int64_t &amp;num)</argsstring>
+        <name>load_data</name>
+        <param>
+          <type>DT *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>int64_t &amp;</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load data (templated)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>loaded data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>loaded data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="143" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" bodystart="142" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1ad4f8c430e49e534b8637dce250297d5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class DT</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool shogun::CFile::save_data</definition>
+        <argsstring>(DT *src, int64_t num)</argsstring>
+        <name>save_data</name>
+        <param>
+          <type>DT *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save data (templated)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to save </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether operation was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="157" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" bodystart="156" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1acf4598fa43fb0074675f22d263629f76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFile::save_int_data</definition>
+        <argsstring>(int32_t *src, int64_t num)</argsstring>
+        <name>save_int_data</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save integer data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to save </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether operation was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1a7822353a9b4548d61b9c933378aada78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFile::save_real_data</definition>
+        <argsstring>(float64_t *src, int64_t num)</argsstring>
+        <name>save_real_data</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save real data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to save </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether operation was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1a19bf814801790dcb246abea37fc33468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFile::save_shortreal_data</definition>
+        <argsstring>(float32_t *src, int64_t num)</argsstring>
+        <name>save_shortreal_data</name>
+        <param>
+          <type>float32_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save shortreal data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to save </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether operation was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1a3bb1b8135c1489f475ea4030542ae2f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFile::save_char_data</definition>
+        <argsstring>(char *src, int64_t num)</argsstring>
+        <name>save_char_data</name>
+        <param>
+          <type>char *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save char data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to save </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether operation was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1a89ed4aedb1f311f4370987756003a5c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFile::save_byte_data</definition>
+        <argsstring>(uint8_t *src, int64_t num)</argsstring>
+        <name>save_byte_data</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save byte data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to save </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether operation was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1a718e56b3b0fbeaa99ef77dfe2fd0790b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFile::save_word_data</definition>
+        <argsstring>(uint16_t *src, int64_t num)</argsstring>
+        <name>save_word_data</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save word data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to save </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether operation was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1ae2abf7d27598f58dbe02ec04a390973c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFile::save_short_data</definition>
+        <argsstring>(int16_t *src, int64_t num)</argsstring>
+        <name>save_short_data</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save short data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to save </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether operation was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1ab336352435a0438811f7f51fdc112ca4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFile::is_ok</definition>
+        <argsstring>()</argsstring>
+        <name>is_ok</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check if status is ok</para><para><simplesect kind="return"><para>whether status is ok </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="224" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" bodystart="223" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1a54626afefb550e9edb217a5de459db43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFile::read_real_valued_sparse</definition>
+        <argsstring>(TSparse&lt; float64_t &gt; *&amp;matrix, int32_t &amp;num_feat, int32_t &amp;num_vec)</argsstring>
+        <name>read_real_valued_sparse</name>
+        <param>
+          <type>TSparse&lt; float64_t &gt; *&amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>read sparse real valued features in svm light format e.g. -1 1:10.0 2:100.2 1000:1.3 with -1 == (optional) label and dim 1 - value 10.0 dim 2 - value 100.2 dim 1000 - value 1.3</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>matrix to read into </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features for each vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if reading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1a980284ef680a7b3f9916760bfcefa3fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFile::write_real_valued_sparse</definition>
+        <argsstring>(const TSparse&lt; float64_t &gt; *matrix, int32_t num_feat, int32_t num_vec)</argsstring>
+        <name>write_real_valued_sparse</name>
+        <param>
+          <type>const TSparse&lt; float64_t &gt; *</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>write sparse real valued features in svm light format</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>matrix to write </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features for each vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectros in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if writing was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1ae84f2a173f70803ccab83cf6abe818ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFile::read_real_valued_dense</definition>
+        <argsstring>(float64_t *&amp;matrix, int32_t &amp;num_feat, int32_t &amp;num_vec)</argsstring>
+        <name>read_real_valued_dense</name>
+        <param>
+          <type>float64_t *&amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>read dense real valued features, simple ascii format e.g. 1.0 1.1 0.2 2.3 3.5 5</para><para>a matrix that consists of 3 vectors with each of 2d</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>matrix to read into </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features for each vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if reading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1a8b0c61d08cde3883e736d96983ba1481" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFile::write_real_valued_dense</definition>
+        <argsstring>(const float64_t *matrix, int32_t num_feat, int32_t num_vec)</argsstring>
+        <name>write_real_valued_dense</name>
+        <param>
+          <type>const float64_t *</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>write dense real valued features, simple ascii format</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>matrix to write </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features for each vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectros in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if writing was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1a085adc555125a95de5b7dd96bf5dbb07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFile::read_char_valued_strings</definition>
+        <argsstring>(T_STRING&lt; char &gt; *&amp;strings, int32_t &amp;num_str, int32_t &amp;max_string_len)</argsstring>
+        <name>read_char_valued_strings</name>
+        <param>
+          <type>T_STRING&lt; char &gt; *&amp;</type>
+          <declname>strings</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_str</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>max_string_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>read char string features, simple ascii format e.g. foo bar ACGTACGTATCT</para><para>two strings</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>strings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strings to read into </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of strings </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_string_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of longest string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if reading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1a99a6a59409035325c6fa78fdaeabc32c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFile::write_char_valued_strings</definition>
+        <argsstring>(const T_STRING&lt; char &gt; *strings, int32_t num_str)</argsstring>
+        <name>write_char_valued_strings</name>
+        <param>
+          <type>const T_STRING&lt; char &gt; *</type>
+          <declname>strings</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>write char string features, simple ascii format</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>strings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strings to write </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of strings </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if writing was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1ad7443942679cf8c5606b73d424d50504" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CFile::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="300" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" bodystart="300" bodyend="300"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CFile_1a7156e13b5e910d42e14fbbc3890c9f5f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFile::read_header</definition>
+        <argsstring>()</argsstring>
+        <name>read_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>read header</para><para><simplesect kind="return"><para>whether operation was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFile_1a5c3371872077ee03b6aca0399818da77" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFile::write_header</definition>
+        <argsstring>()</argsstring>
+        <name>write_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>write header</para><para><simplesect kind="return"><para>whether operation was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="312"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classshogun_1_1CFile_1a4289c7acc6987c3190ec9a644a4912ff" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CFile::append_item</definition>
+        <argsstring>(CDynamicArray&lt; T &gt; *items, char *ptr_data, char *ptr_item)</argsstring>
+        <name>append_item</name>
+        <param>
+          <type><ref refid="classshogun_1_1CDynamicArray" kindref="compound">CDynamicArray</ref>&lt; T &gt; *</type>
+          <declname>items</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>ptr_data</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>ptr_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>helper function to read_*valued_* </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="316"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A File access class. </para>    </briefdescription>
+    <detaileddescription>
+<para>A file consists of a fourcc header then an alternation of a type header and data or just raw data (simplefile=true). However this implementation is not complete - the more complex stuff is currently not implemented. </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" line="41" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/File.h" bodystart="40" bodyend="333"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CFile_1a4289c7acc6987c3190ec9a644a4912ff" prot="private" virt="non-virtual"><scope>shogun::CFile</scope><name>append_item</name></member>
+      <member refid="classshogun_1_1CFile_1a5fa7e0117ff706be3bb69d6eca02bb69" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>CFile</name></member>
+      <member refid="classshogun_1_1CFile_1a86b3f91163cf99d05635d49488a5f365" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>CFile</name></member>
+      <member refid="classshogun_1_1CFile_1a132e6da5bcdf6d22705d88ee9aee8c36" prot="protected" virt="non-virtual"><scope>shogun::CFile</scope><name>expected_type</name></member>
+      <member refid="classshogun_1_1CFile_1ad420e1d265c921a5e8575a4614c838d8" prot="protected" virt="non-virtual"><scope>shogun::CFile</scope><name>file</name></member>
+      <member refid="classshogun_1_1CFile_1ad0f2b35ef28e2c39e69c1b724dd6f45d" prot="protected" virt="non-virtual"><scope>shogun::CFile</scope><name>filename</name></member>
+      <member refid="classshogun_1_1CFile_1a8e2ff0eb9f97d7e204f3301ed22ca6b7" prot="protected" virt="non-virtual"><scope>shogun::CFile</scope><name>fourcc</name></member>
+      <member refid="classshogun_1_1CFile_1ad7443942679cf8c5606b73d424d50504" prot="public" virt="virtual"><scope>shogun::CFile</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CFile_1ab336352435a0438811f7f51fdc112ca4" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>is_ok</name></member>
+      <member refid="classshogun_1_1CFile_1ac122b279a3432ef2f0806a5fbdd63b76" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>load_byte_data</name></member>
+      <member refid="classshogun_1_1CFile_1a0553b7c19d496eb35b1321059374c65e" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>load_char_data</name></member>
+      <member refid="classshogun_1_1CFile_1a84ce0596cbadc8de8dfda1a43ea7ec5b" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>load_data</name></member>
+      <member refid="classshogun_1_1CFile_1ac76c26ca62af0c87ef64b6eda453a1ed" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>load_int_data</name></member>
+      <member refid="classshogun_1_1CFile_1a9537e3f5fc7a0f753060149c81582058" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>load_real_data</name></member>
+      <member refid="classshogun_1_1CFile_1ad60f7cc736a5c851917dba476f7c6bbe" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>load_short_data</name></member>
+      <member refid="classshogun_1_1CFile_1ac9b4ce416d653cb3fe24c6ce41ee53a8" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>load_shortreal_data</name></member>
+      <member refid="classshogun_1_1CFile_1acecbec009d687a17ed3db975c47dc454" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>load_word_data</name></member>
+      <member refid="classshogun_1_1CFile_1ac5ecf285cf43250b72b6da752086b2bc" prot="protected" virt="non-virtual"><scope>shogun::CFile</scope><name>num_header</name></member>
+      <member refid="classshogun_1_1CFile_1aaeaf41892170ea1c45a5e0d2bc7db97e" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>parse_first_header</name></member>
+      <member refid="classshogun_1_1CFile_1abad29d47866c82a2cf60734e91fed107" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>parse_next_header</name></member>
+      <member refid="classshogun_1_1CFile_1a085adc555125a95de5b7dd96bf5dbb07" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>read_char_valued_strings</name></member>
+      <member refid="classshogun_1_1CFile_1a7156e13b5e910d42e14fbbc3890c9f5f" prot="protected" virt="non-virtual"><scope>shogun::CFile</scope><name>read_header</name></member>
+      <member refid="classshogun_1_1CFile_1ae84f2a173f70803ccab83cf6abe818ed" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>read_real_valued_dense</name></member>
+      <member refid="classshogun_1_1CFile_1a54626afefb550e9edb217a5de459db43" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>read_real_valued_sparse</name></member>
+      <member refid="classshogun_1_1CFile_1a89ed4aedb1f311f4370987756003a5c0" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>save_byte_data</name></member>
+      <member refid="classshogun_1_1CFile_1a3bb1b8135c1489f475ea4030542ae2f6" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>save_char_data</name></member>
+      <member refid="classshogun_1_1CFile_1ad4f8c430e49e534b8637dce250297d5c" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>save_data</name></member>
+      <member refid="classshogun_1_1CFile_1acf4598fa43fb0074675f22d263629f76" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>save_int_data</name></member>
+      <member refid="classshogun_1_1CFile_1a7822353a9b4548d61b9c933378aada78" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>save_real_data</name></member>
+      <member refid="classshogun_1_1CFile_1ae2abf7d27598f58dbe02ec04a390973c" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>save_short_data</name></member>
+      <member refid="classshogun_1_1CFile_1a19bf814801790dcb246abea37fc33468" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>save_shortreal_data</name></member>
+      <member refid="classshogun_1_1CFile_1a718e56b3b0fbeaa99ef77dfe2fd0790b" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>save_word_data</name></member>
+      <member refid="classshogun_1_1CFile_1ac1f091997148703747dddbd7c473d2cd" prot="protected" virt="non-virtual"><scope>shogun::CFile</scope><name>status</name></member>
+      <member refid="classshogun_1_1CFile_1acfb623ab3240057cdb070bee3e05823a" prot="protected" virt="non-virtual"><scope>shogun::CFile</scope><name>task</name></member>
+      <member refid="classshogun_1_1CFile_1a99a6a59409035325c6fa78fdaeabc32c" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>write_char_valued_strings</name></member>
+      <member refid="classshogun_1_1CFile_1a5c3371872077ee03b6aca0399818da77" prot="protected" virt="non-virtual"><scope>shogun::CFile</scope><name>write_header</name></member>
+      <member refid="classshogun_1_1CFile_1a8b0c61d08cde3883e736d96983ba1481" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>write_real_valued_dense</name></member>
+      <member refid="classshogun_1_1CFile_1a980284ef680a7b3f9916760bfcefa3fb" prot="public" virt="non-virtual"><scope>shogun::CFile</scope><name>write_real_valued_sparse</name></member>
+      <member refid="classshogun_1_1CFile_1a129c492f4af7b67bebc4397da0469816" prot="public" virt="virtual"><scope>shogun::CFile</scope><name>~CFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

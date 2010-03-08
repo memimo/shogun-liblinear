@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="SVM__light_8h" kind="file">
+    <compoundname>SVM_light.h</compoundname>
+    <includes local="yes">lib/config.h</includes>
+    <includedby refid="DomainAdaptationSVM_8h" local="yes">/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/DomainAdaptationSVM.h</includedby>
+    <incdepgraph>
+      <node id="198">
+        <label>lib/config.h</label>
+      </node>
+      <node id="197">
+        <label>/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_light.h</label>
+        <link refid="SVM_light.h"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***********************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/>SVM_light.h<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/>Author:<sp/>Thorsten<sp/>Joachims<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/>Date:<sp/>19.07.99<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/>Copyright<sp/>(c)<sp/>1999<sp/><sp/>Universitaet<sp/>Dortmund<sp/>-<sp/>All<sp/>rights<sp/>reserved<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/>This<sp/>software<sp/>is<sp/>available<sp/>for<sp/>non-commercial<sp/>use<sp/>only.<sp/>It<sp/>must<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/>not<sp/>be<sp/>modified<sp/>and<sp/>distributed<sp/>without<sp/>prior<sp/>permission<sp/>of<sp/>the<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/>author.<sp/>The<sp/>author<sp/>is<sp/>not<sp/>responsible<sp/>for<sp/>implications<sp/>from<sp/>the<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/>use<sp/>of<sp/>this<sp/>software.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/>THIS<sp/>INCLUDES<sp/>THE<sp/>FOLLOWING<sp/>ADDITIONS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/>Generic<sp/>Kernel<sp/>Interfacing:<sp/>Soeren<sp/>Sonnenburg<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/>Parallizations:<sp/>Soeren<sp/>Sonnenburg<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/>Multiple<sp/>Kernel<sp/>Learning:<sp/>Gunnar<sp/>Raetsch,<sp/>Soeren<sp/>Sonnenburg<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/>Linadd<sp/>Speedup:<sp/>Gunnar<sp/>Raetsch,<sp/>Soeren<sp/>Sonnenburg<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/***********************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_SVMLight_H___</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_SVMLight_H___</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/config.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>USE_SVMLIGHT</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;classifier/svm/SVM.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;kernel/Kernel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/Mathematics.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctype.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">shogun</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>VERSION<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;V3.50<sp/>--<sp/>correct??&quot;</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>VERSION_DATE<sp/><sp/>&quot;01.11.00<sp/>--<sp/>correct??&quot;</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>DEF_PRECISION<sp/>1E-14</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>MAXSHRINK<sp/>50000</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="49"><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MODEL<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">int32_t<sp/><sp/><sp/><sp/>sv_num;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">int32_t<sp/><sp/><sp/><sp/>at_upper_bound;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">float64_t<sp/>b;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">int32_t*<sp/><sp/><sp/>supvec;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">float64_t<sp/>*alpha;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">int32_t<sp/><sp/><sp/><sp/>*index;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">int32_t<sp/><sp/><sp/><sp/>totdoc;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">CKernel*<sp/>kernel;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>the<sp/>following<sp/>values<sp/>are<sp/>not<sp/>written<sp/>to<sp/>file<sp/>*/</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">float64_t<sp/>loo_error;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">float64_t<sp/>loo_recall;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">float64_t<sp/>loo_precision;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">float64_t<sp/>xa_error;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">float64_t<sp/>xa_recall;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">float64_t<sp/>xa_precision;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">quadratic_program<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>opt_n;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>opt_m;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>float64_t<sp/>*opt_ce;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>float64_t<sp/>*opt_ce0;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>float64_t<sp/>*opt_g;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>float64_t<sp/>*opt_g0;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>float64_t<sp/>*opt_xinit;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>float64_t<sp/>*opt_low;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>float64_t<sp/>*opt_up;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}<sp/>QP;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/>FNUM;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>float64_t<sp/>FVAL;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="keyword">struct<sp/></highlight><highlight class="normal">LEARN_PARM<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>type;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>float64_t<sp/>svm_c;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>float64_t*<sp/>eps;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>float64_t<sp/>svm_costratio;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>float64_t<sp/>transduction_posratio;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>classified<sp/>as<sp/>positives<sp/>*/</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>biased_hyperplane;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>sharedslack;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>svm_maxqpsize;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>svm_newvarsinqp;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>kernel_cache_size;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>float64_t<sp/>epsilon_crit;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>float64_t<sp/>epsilon_shrink;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>svm_iter_to_shrink;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>maxiter;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>remove_inconsistent;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>skip_final_opt_check;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>compute_loo;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>float64_t<sp/>rho;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>xa_depth;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>predfile[200];</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>alphafile[200];</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>you<sp/>probably<sp/>do<sp/>not<sp/>want<sp/>to<sp/>touch<sp/>the<sp/>following<sp/>*/</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>float64_t<sp/>epsilon_const;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>float64_t<sp/>epsilon_a;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/>float64_t<sp/>opt_precision;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>following<sp/>are<sp/>only<sp/>for<sp/>internal<sp/>use<sp/>*/</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>svm_c_steps;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>float64_t<sp/>svm_c_factor;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>float64_t<sp/>svm_costratio_unlab;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>float64_t<sp/>svm_unlabbound;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>float64_t<sp/>*svm_cost;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="keyword">struct<sp/></highlight><highlight class="normal">TIMING<sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>time_kernel;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>time_opti;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>time_shrink;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>time_update;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>time_model;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>time_check;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>time_select;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="keyword">struct<sp/></highlight><highlight class="normal">SHRINK_STATE</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>*active;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>*inactive_since;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>deactnum;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/>float64_t<sp/>**a_history;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>maxhistory;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/>float64_t<sp/>*last_a;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/>float64_t<sp/>*last_lin;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight></codeline>
+<codeline lineno="229"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="231"><highlight class="keyword">class<sp/></highlight><highlight class="normal">CSVMLight<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>CSVM</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/>CSVMLight();</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/>CSVMLight(float64_t<sp/>C,<sp/>CKernel*<sp/>k,<sp/>CLabels*<sp/>lab);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~CSVMLight();</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init();</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>train(CFeatures*<sp/>data=NULL);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>EClassifierType<sp/>get_classifier_type()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>CT_LIGHT;<sp/>}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>get_runtime();</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>svm_learn();</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/>int32_t<sp/>optimize_to_convergence(</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/>docs,<sp/>int32_t*<sp/>label,<sp/>int32_t<sp/>totdoc,<sp/>SHRINK_STATE<sp/>*shrink_state,</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>*inconsistent,<sp/>float64_t<sp/>*a,<sp/>float64_t<sp/>*lin,<sp/>float64_t<sp/>*c,</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TIMING<sp/>*timing_profile,<sp/>float64_t<sp/>*maxdiff,<sp/>int32_t<sp/>heldout,</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>retrain);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>float64_t<sp/>compute_objective_function(</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>*a,<sp/>float64_t<sp/>*lin,<sp/>float64_t<sp/>*c,<sp/>float64_t*<sp/>eps,<sp/>int32_t<sp/>*label,</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>totdoc);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>clear_index(int32_t<sp/>*index);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>add_to_index(int32_t<sp/>*index,<sp/>int32_t<sp/>elem);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>compute_index(int32_t<sp/>*binfeature,<sp/>int32_t<sp/>range,<sp/>int32_t<sp/>*index);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>optimize_svm(</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/>docs,<sp/>int32_t*<sp/>label,<sp/>int32_t<sp/>*exclude_from_eq_const,</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>eq_target,<sp/>int32_t<sp/>*chosen,<sp/>int32_t<sp/>*active2dnum,<sp/>int32_t<sp/>totdoc,</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>*working2dnum,<sp/>int32_t<sp/>varnum,<sp/>float64_t<sp/>*a,<sp/>float64_t<sp/>*lin,</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>*c,<sp/>float64_t<sp/>*aicache,<sp/>QP<sp/>*qp,<sp/>float64_t<sp/>*epsilon_crit_target);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>compute_matrices_for_optimization(</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/>docs,<sp/>int32_t*<sp/>label,<sp/>int32_t<sp/>*exclude_from_eq_const,</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>eq_target,<sp/>int32_t<sp/>*chosen,<sp/>int32_t<sp/>*active2dnum,<sp/>int32_t<sp/>*key,</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>*a,<sp/>float64_t<sp/>*lin,<sp/>float64_t<sp/>*c,<sp/>int32_t<sp/>varnum,<sp/>int32_t<sp/>totdoc,</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>*aicache,<sp/>QP<sp/>*qp);</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>compute_matrices_for_optimization_parallel(</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/>docs,<sp/>int32_t*<sp/>label,<sp/>int32_t<sp/>*exclude_from_eq_const,</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>eq_target,<sp/>int32_t<sp/>*chosen,<sp/>int32_t<sp/>*active2dnum,<sp/>int32_t<sp/>*key,</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>*a,<sp/>float64_t<sp/>*lin,<sp/>float64_t<sp/>*c,<sp/>int32_t<sp/>varnum,<sp/>int32_t<sp/>totdoc,</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>*aicache,<sp/>QP<sp/>*qp);</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>calculate_svm_model(</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/>docs,<sp/>int32_t<sp/>*label,float64_t<sp/>*lin,<sp/>float64_t<sp/>*a,</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t*<sp/>a_old,<sp/>float64_t<sp/>*c,<sp/>int32_t<sp/>*working2dnum,<sp/>int32_t<sp/>*active2dnum);</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>check_optimality(</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>*label,<sp/>float64_t<sp/>*a,<sp/>float64_t*<sp/>lin,<sp/>float64_t<sp/>*c,<sp/>int32_t<sp/>totdoc,</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>*maxdiff,<sp/>float64_t<sp/>epsilon_crit_org,<sp/>int32_t<sp/>*misclassified,</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>*inconsistent,int32_t*<sp/>active2dnum,<sp/>int32_t<sp/>*last_suboptimal_at,</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>iteration);</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update_linear_component(</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/>docs,<sp/>int32_t<sp/>*label,<sp/>int32_t<sp/>*active2dnum,<sp/>float64_t<sp/>*a,</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t*<sp/>a_old,<sp/>int32_t<sp/>*working2dnum,<sp/>int32_t<sp/>totdoc,<sp/>float64_t<sp/>*lin,</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>*aicache,<sp/>float64_t*<sp/>c);</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>update_linear_component_mkl_linadd_helper(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>p);</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"></highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update_linear_component_mkl(</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/>docs,<sp/>int32_t<sp/>*label,<sp/>int32_t<sp/>*active2dnum,<sp/>float64_t<sp/>*a,</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t*<sp/>a_old,<sp/>int32_t<sp/>*working2dnum,<sp/>int32_t<sp/>totdoc,<sp/>float64_t<sp/>*lin,</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>*aicache);</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update_linear_component_mkl_linadd(</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/>docs,<sp/>int32_t<sp/>*label,<sp/>int32_t<sp/>*active2dnum,<sp/>float64_t<sp/>*a,</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t*<sp/>a_old,<sp/>int32_t<sp/>*working2dnum,<sp/>int32_t<sp/>totdoc,<sp/>float64_t<sp/>*lin,</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>*aicache);</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>call_mkl_callback(float64_t*<sp/>a,<sp/>int32_t*<sp/>label,<sp/>float64_t*<sp/>lin);</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/>int32_t<sp/>select_next_qp_subproblem_grad(</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>*label,<sp/>float64_t<sp/>*a,<sp/>float64_t*<sp/>lin,<sp/>float64_t*<sp/>c,<sp/>int32_t<sp/>totdoc,</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>qp_size,<sp/>int32_t<sp/>*inconsistent,<sp/>int32_t*<sp/>active2dnum,</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/>working2dnum,<sp/>float64_t<sp/>*selcrit,<sp/>int32_t<sp/>*select,</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>cache_only,<sp/>int32_t<sp/>*key,<sp/>int32_t<sp/>*chosen);</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"></highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/>int32_t<sp/>select_next_qp_subproblem_rand(</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/>label,<sp/>float64_t<sp/>*a,<sp/>float64_t<sp/>*lin,<sp/>float64_t<sp/>*c,</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>totdoc,<sp/>int32_t<sp/>qp_size,<sp/>int32_t<sp/>*inconsistent,</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>*active2dnum,<sp/>int32_t<sp/>*working2dnum,<sp/>float64_t<sp/>*selcrit,</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>*select,<sp/>int32_t<sp/>*key,<sp/>int32_t<sp/>*chosen,<sp/>int32_t<sp/>iteration);</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"></highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>select_top_n(</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>*selcrit,<sp/>int32_t<sp/>range,<sp/>int32_t<sp/>*select,<sp/>int32_t<sp/>n);</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>init_shrink_state(</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SHRINK_STATE<sp/>*shrink_state,<sp/>int32_t<sp/>totdoc,<sp/>int32_t<sp/>maxhistory);</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"></highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>shrink_state_cleanup(SHRINK_STATE<sp/>*shrink_state);</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/>int32_t<sp/>shrink_problem(</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SHRINK_STATE<sp/>*shrink_state,<sp/>int32_t<sp/>*active2dnum,</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>*last_suboptimal_at,<sp/>int32_t<sp/>iteration,<sp/>int32_t<sp/>totdoc,</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>minshrink,<sp/>float64_t<sp/>*a,<sp/>int32_t<sp/>*inconsistent,<sp/>float64_t*<sp/>c,</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t*<sp/>lin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>label);</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"></highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>reactivate_inactive_examples(</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>*label,float64_t<sp/>*a,SHRINK_STATE<sp/>*shrink_state,<sp/>float64_t<sp/>*lin,</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>*c,<sp/>int32_t<sp/>totdoc,int32_t<sp/>iteration,<sp/>int32_t<sp/>*inconsistent,</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>*docs,float64_t<sp/>*aicache,<sp/>float64_t*<sp/>maxdiff);</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"></highlight></codeline>
+<codeline lineno="614"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>float64_t<sp/>compute_kernel(int32_t<sp/>i,<sp/>int32_t<sp/>j)</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>kernel-&gt;kernel(i,<sp/>j);</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"></highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>compute_kernel_helper(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>p);</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"></highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>update_linear_component_linadd_helper(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>p);</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"></highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>reactivate_inactive_examples_vanilla_helper(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>p);</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"></highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>reactivate_inactive_examples_linadd_helper(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>p);</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"></highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>get_name()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;SVM_light&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"></highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>interface<sp/>to<sp/>QP-solver<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>*optimize_qp(<sp/>QP<sp/>*qp,float64_t<sp/>*epsilon_crit,<sp/>int32_t<sp/>nx,</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>*threshold,<sp/>int32_t&amp;<sp/>svm_maxqpsize);</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"></highlight></codeline>
+<codeline lineno="657"><highlight class="normal"></highlight></codeline>
+<codeline lineno="658"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_BOOST_SERIALIZATION</highlight></codeline>
+<codeline lineno="659"><highlight class="preprocessor"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"></highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>class<sp/>::boost::serialization::access;</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Archive&gt;</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>serialize(Archive<sp/>&amp;<sp/>ar,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>archive_version)</highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"></highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SG_DEBUG(</highlight><highlight class="stringliteral">&quot;archiving<sp/>CSVMLight\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="667"><highlight class="normal"></highlight></codeline>
+<codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ar<sp/>&amp;<sp/>::boost::serialization::base_object&lt;CSVM&gt;(*this);</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"></highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ar<sp/>&amp;<sp/>svm_cost;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="671"><highlight class="normal"></highlight></codeline>
+<codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ar<sp/>&amp;<sp/>set_cost_individually;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="673"><highlight class="normal"></highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SG_DEBUG(</highlight><highlight class="stringliteral">&quot;done<sp/>with<sp/>CSVMLight\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"></highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"></highlight></codeline>
+<codeline lineno="678"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"></highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/>toString()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="681"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>s;</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"></highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::boost::archive::text_oarchive<sp/>oa(s);</highlight></codeline>
+<codeline lineno="685"><highlight class="normal"></highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>oa<sp/>&lt;&lt;<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"></highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s.str();</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"></highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromString(std::string<sp/>str)</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"></highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::istringstream<sp/>is(str);</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"></highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::boost::archive::text_iarchive<sp/>ia(is);</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"></highlight></codeline>
+<codeline lineno="698"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ia<sp/>&gt;&gt;<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"></highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="701"><highlight class="normal"></highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>toFile(std::string<sp/>filename)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="703"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="704"><highlight class="normal"></highlight></codeline>
+<codeline lineno="705"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::ofstream<sp/>os(filename.c_str(),<sp/>std::ios::binary);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="706"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//::boost::archive::binary_oarchive<sp/>oa(os);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="707"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ofstream<sp/>os(filename.c_str());</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::boost::archive::text_oarchive<sp/>oa(os);</highlight></codeline>
+<codeline lineno="709"><highlight class="normal"></highlight></codeline>
+<codeline lineno="710"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>oa<sp/>&lt;&lt;<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="711"><highlight class="normal"></highlight></codeline>
+<codeline lineno="712"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="713"><highlight class="normal"></highlight></codeline>
+<codeline lineno="714"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromFile(std::string<sp/>filename)</highlight></codeline>
+<codeline lineno="715"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="716"><highlight class="normal"></highlight></codeline>
+<codeline lineno="717"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::ifstream<sp/>is(filename.c_str(),<sp/>std::ios::binary);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="718"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//::boost::archive::binary_iarchive<sp/>ia(is);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="719"><highlight class="normal"></highlight></codeline>
+<codeline lineno="720"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ifstream<sp/>is(filename.c_str());</highlight></codeline>
+<codeline lineno="721"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::boost::archive::text_iarchive<sp/>ia(is);</highlight></codeline>
+<codeline lineno="722"><highlight class="normal"></highlight></codeline>
+<codeline lineno="723"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ia<sp/>&gt;&gt;<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="724"><highlight class="normal"></highlight></codeline>
+<codeline lineno="725"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO<sp/>get<sp/>non-default<sp/>stuff<sp/>to<sp/>work!!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;init();</highlight></codeline>
+<codeline lineno="727"><highlight class="normal"></highlight></codeline>
+<codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="729"><highlight class="normal"></highlight></codeline>
+<codeline lineno="730"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//HAVE_BOOST_SERIALIZATION</highlight></codeline>
+<codeline lineno="731"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="732"><highlight class="normal"></highlight></codeline>
+<codeline lineno="733"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"><sp/><sp/>MODEL*<sp/>model;</highlight></codeline>
+<codeline lineno="737"><highlight class="normal"><sp/><sp/>LEARN_PARM*<sp/>learn_parm;</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>verbosity;</highlight></codeline>
+<codeline lineno="740"><highlight class="normal"></highlight></codeline>
+<codeline lineno="742"><highlight class="normal"><sp/><sp/>float64_t<sp/>init_margin;</highlight></codeline>
+<codeline lineno="744"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><sp/>init_iter;</highlight></codeline>
+<codeline lineno="746"><highlight class="normal"><sp/><sp/>int32_t<sp/>precision_violations;</highlight></codeline>
+<codeline lineno="748"><highlight class="normal"><sp/><sp/>float64_t<sp/>model_b;</highlight></codeline>
+<codeline lineno="750"><highlight class="normal"><sp/><sp/>float64_t<sp/>opt_precision;</highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/>float64_t*<sp/>primal;</highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/>float64_t*<sp/>dual;</highlight></codeline>
+<codeline lineno="755"><highlight class="normal"></highlight></codeline>
+<codeline lineno="756"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>MKL<sp/>stuff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="757"><highlight class="normal"></highlight></codeline>
+<codeline lineno="761"><highlight class="normal"><sp/><sp/>float64_t*<sp/>W;</highlight></codeline>
+<codeline lineno="763"><highlight class="normal"><sp/><sp/>int32_t<sp/>count;</highlight></codeline>
+<codeline lineno="765"><highlight class="normal"><sp/><sp/>float64_t<sp/>mymaxdiff;</highlight></codeline>
+<codeline lineno="767"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>use_kernel_cache;</highlight></codeline>
+<codeline lineno="769"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>mkl_converged;</highlight></codeline>
+<codeline lineno="770"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="771"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="772"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//USE_SVMLIGHT</highlight></codeline>
+<codeline lineno="773"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/>//_SVMLight_H___</highlight></codeline>
+    </programlisting>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_light.h"/>
+  </compounddef>
+</doxygen>

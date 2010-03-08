@@ -1,0 +1,2974 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CStringFeatures" kind="class" prot="public">
+    <compoundname>shogun::CStringFeatures</compoundname>
+    <basecompoundref refid="classshogun_1_1CFeatures" prot="public" virt="non-virtual">shogun::CFeatures</basecompoundref>
+    <derivedcompoundref refid="classshogun_1_1CStringFileFeatures" prot="public" virt="non-virtual">shogun::CStringFileFeatures&lt; ST &gt;</derivedcompoundref>
+    <includes local="no">StringFeatures.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>ST</declname>
+        <defname>ST</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CStringFeatures_1af7713f43246402da9e8048b55f3be85d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1CAlphabet" kindref="compound">CAlphabet</ref> *</type>
+        <definition>CAlphabet* shogun::CStringFeatures&lt; ST &gt;::alphabet</definition>
+        <argsstring></argsstring>
+        <name>alphabet</name>
+        <briefdescription>
+<para>alphabet </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1837" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1837" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CStringFeatures_1ad455f70470197f826ef7baa87466316c" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CStringFeatures&lt; ST &gt;::num_vectors</definition>
+        <argsstring></argsstring>
+        <name>num_vectors</name>
+        <briefdescription>
+<para>number of string vectors </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1840" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1840" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CStringFeatures_1a0744b37374d0dd318f3bfd88e6171aca" prot="protected" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1T__STRING" kindref="compound">T_STRING</ref>&lt; ST &gt; *</type>
+        <definition>T_STRING&lt;ST&gt;* shogun::CStringFeatures&lt; ST &gt;::features</definition>
+        <argsstring></argsstring>
+        <name>features</name>
+        <briefdescription>
+<para>this contains the array of features. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1843" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1843" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CStringFeatures_1af605c7ea9267c1733795ab8912b18dbc" prot="protected" static="no" mutable="no">
+        <type>ST *</type>
+        <definition>ST* shogun::CStringFeatures&lt; ST &gt;::single_string</definition>
+        <argsstring></argsstring>
+        <name>single_string</name>
+        <briefdescription>
+<para>true when single string / created by sliding window </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1846" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1846" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CStringFeatures_1a8e77d0779631af09dac2106ae4093bb4" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CStringFeatures&lt; ST &gt;::length_of_single_string</definition>
+        <argsstring></argsstring>
+        <name>length_of_single_string</name>
+        <briefdescription>
+<para>length of prior single string </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1849" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1849" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CStringFeatures_1a87fd4ca728c5d5892285f3394f26cab5" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CStringFeatures&lt; ST &gt;::max_string_length</definition>
+        <argsstring></argsstring>
+        <name>max_string_length</name>
+        <briefdescription>
+<para>length of longest string </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1852" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1852" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CStringFeatures_1a2bfa468341a32c916238a764dc95d100" prot="protected" static="no" mutable="no">
+        <type>floatmax_t</type>
+        <definition>floatmax_t shogun::CStringFeatures&lt; ST &gt;::num_symbols</definition>
+        <argsstring></argsstring>
+        <name>num_symbols</name>
+        <briefdescription>
+<para>number of used symbols </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1855" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1855" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CStringFeatures_1afd3b8ef7ace5a73c5766afc88d8ef7e8" prot="protected" static="no" mutable="no">
+        <type>floatmax_t</type>
+        <definition>floatmax_t shogun::CStringFeatures&lt; ST &gt;::original_num_symbols</definition>
+        <argsstring></argsstring>
+        <name>original_num_symbols</name>
+        <briefdescription>
+<para>original number of used symbols (before higher order mapping) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1858" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CStringFeatures_1a351c8b11191bf47ec29503722ceabbfd" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CStringFeatures&lt; ST &gt;::order</definition>
+        <argsstring></argsstring>
+        <name>order</name>
+        <briefdescription>
+<para>order used in higher order mapping </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1861" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1861" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CStringFeatures_1a0d43676d12f9cbd228a8da4c1955f110" prot="protected" static="no" mutable="no">
+        <type>ST *</type>
+        <definition>ST* shogun::CStringFeatures&lt; ST &gt;::symbol_mask_table</definition>
+        <argsstring></argsstring>
+        <name>symbol_mask_table</name>
+        <briefdescription>
+<para>order used in higher order mapping </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1864" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1864" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CStringFeatures_1a8a1b8a882fb9969a7b104281ee8c21e6" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CStringFeatures&lt; ST &gt;::preprocess_on_get</definition>
+        <argsstring></argsstring>
+        <name>preprocess_on_get</name>
+        <briefdescription>
+<para>preprocess on-the-fly? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1867" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1867" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CStringFeatures_1a642a134efc86be31fc4521c3c3a6f937" prot="protected" static="no" mutable="no">
+        <type>CCache&lt; ST &gt; *</type>
+        <definition>CCache&lt;ST&gt;* shogun::CStringFeatures&lt; ST &gt;::feature_cache</definition>
+        <argsstring></argsstring>
+        <name>feature_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>feature cache </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1870" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1870" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a865f7bb9379fb8adb6eebd5cf959b316" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CStringFeatures&lt; ST &gt;::CStringFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>CStringFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="136" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="132" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1af4c089111bed04d90e44c769ebb668c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CStringFeatures&lt; ST &gt;::CStringFeatures</definition>
+        <argsstring>(EAlphabet alpha)</argsstring>
+        <name>CStringFeatures</name>
+        <param>
+          <type>EAlphabet</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alphabet (type) to use for string features </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="148" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="143" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ace5e31e0589489f68cc2f218e6ab5840" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CStringFeatures&lt; ST &gt;::CStringFeatures</definition>
+        <argsstring>(T_STRING&lt; ST &gt; *p_features, int32_t p_num_vectors, int32_t p_max_string_length, EAlphabet alpha)</argsstring>
+        <name>CStringFeatures</name>
+        <param>
+          <type><ref refid="classshogun_1_1T__STRING" kindref="compound">T_STRING</ref>&lt; ST &gt; *</type>
+          <declname>p_features</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_num_vectors</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_max_string_length</declname>
+        </param>
+        <param>
+          <type>EAlphabet</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_features</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_num_vectors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_max_string_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum string length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alphabet (type) to use for string features </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="168" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="162" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1aa135839eeea1ae26da128ca7f981210c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CStringFeatures&lt; ST &gt;::CStringFeatures</definition>
+        <argsstring>(CAlphabet *alpha)</argsstring>
+        <name>CStringFeatures</name>
+        <param>
+          <type><ref refid="classshogun_1_1CAlphabet" kindref="compound">CAlphabet</ref> *</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alphabet to use for string features </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="185" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="180" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ae24969774d1c358e03549dd323095558" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CStringFeatures&lt; ST &gt;::CStringFeatures</definition>
+        <argsstring>(const CStringFeatures &amp;orig)</argsstring>
+        <name>CStringFeatures</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CStringFeatures" kindref="compound">CStringFeatures</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="203" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="194" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ab6709427fef74aa32a3030e4a662b74d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CStringFeatures&lt; ST &gt;::CStringFeatures</definition>
+        <argsstring>(char *fname, EAlphabet alpha=DNA)</argsstring>
+        <name>CStringFeatures</name>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>EAlphabet</type>
+          <declname>alpha</declname>
+          <defval>DNA</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load features from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alphabet (type) to use for string features </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="239" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="235" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ad05f6cc30776eac3e20e34f976058509" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CStringFeatures&lt; ST &gt;::~CStringFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>~CStringFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="248" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="247" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ae084ead0d032dad12550ca84d5cd6427" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CStringFeatures&lt; ST &gt;::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <reimplementedby refid="classshogun_1_1CStringFileFeatures_1ad8ecb6fffdb13ed219183ae60fabfce9">cleanup</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cleanup string features </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="256" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="255" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a4e0c83bef401055bec505006f713ba23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CStringFeatures&lt; ST &gt;::cleanup_feature_vector</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>cleanup_feature_vector</name>
+        <reimplementedby refid="classshogun_1_1CStringFileFeatures_1abdd182926763c1d8008705cc9821e0f1">cleanup_feature_vector</reimplementedby>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cleanup a single feature vector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="286" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="285" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1aa71e016a67405365313351635c7f769b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureClass</type>
+        <definition>virtual EFeatureClass shogun::CStringFeatures&lt; ST &gt;::get_feature_class</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_class</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a8e1c6229db82a9215cb2994202e657f5">get_feature_class</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature class</para><para><simplesect kind="return"><para>feature class STRING </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="300" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="300" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a8b37268cf88b36545f33b305fe9950b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureType</type>
+        <definition>virtual EFeatureType shogun::CStringFeatures&lt; ST &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type</para><para><simplesect kind="return"><para>templated feature type </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="306" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="306" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1addefcfa614c337c0fff4c68aa4b5c563" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CAlphabet" kindref="compound">CAlphabet</ref> *</type>
+        <definition>CAlphabet* shogun::CStringFeatures&lt; ST &gt;::get_alphabet</definition>
+        <argsstring>()</argsstring>
+        <name>get_alphabet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get alphabet used in string features</para><para><simplesect kind="return"><para>alphabet </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="313" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="312" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ab1ab8ad80ec4638fff62e883c5cc0ca0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+        <definition>virtual CFeatures* shogun::CStringFeatures&lt; ST &gt;::duplicate</definition>
+        <argsstring>() const </argsstring>
+        <name>duplicate</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a2f7adf01a52fee35ac71e455501125a9">duplicate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>duplicate feature object</para><para><simplesect kind="return"><para>feature object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="323" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="322" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1af84e62381530c251d5cdab17e9fcafec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; ST &gt;::get_feature_vector</definition>
+        <argsstring>(ST **dst, int32_t *len, int32_t num)</argsstring>
+        <name>get_feature_vector</name>
+        <param>
+          <type>ST **</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get string for selected example num</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination where vector will be stored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features in vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="334" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="333" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a170610c3731bcb7aa53ecbb265aa237a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; ST &gt;::set_feature_vector</definition>
+        <argsstring>(ST *src, int32_t len, int32_t num)</argsstring>
+        <name>set_feature_vector</name>
+        <param>
+          <type>ST *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set string for selected example num</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination where vector will be stored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of features in vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="358" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="357" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a5490723d7c8bcabaa081978e2087ef7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; ST &gt;::enable_on_the_fly_preprocessing</definition>
+        <argsstring>()</argsstring>
+        <name>enable_on_the_fly_preprocessing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>call this to preprocess string features upon get_feature_vector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="381" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="380" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ad7e995718996addda081c2bfb88ada78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; ST &gt;::disable_on_the_fly_preprocessing</definition>
+        <argsstring>()</argsstring>
+        <name>disable_on_the_fly_preprocessing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>call this to disable on the fly feature preprocessing on get_feature_vector. Useful when you manually apply preprocessors. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="389" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="388" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1aa9cade98248b028c510682dc05f1f863" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ST *</type>
+        <definition>ST* shogun::CStringFeatures&lt; ST &gt;::get_feature_vector</definition>
+        <argsstring>(int32_t num, int32_t &amp;len, bool &amp;dofree)</argsstring>
+        <name>get_feature_vector</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>dofree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature vector for sample num</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length is returned by reference </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dofree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether returned vector must be freed by caller via free_feature_vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>feature vector for sample num </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="402" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="401" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ac729e34ba14e63bbca7d6edce5b64330" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; ST &gt;::free_feature_vector</definition>
+        <argsstring>(ST *feat_vec, int32_t num, bool dofree)</argsstring>
+        <name>free_feature_vector</name>
+        <param>
+          <type>ST *</type>
+          <declname>feat_vec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>dofree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>free feature vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>feat_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature vector to free </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index in feature cache </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dofree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if vector should be really deleted </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="443" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="442" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a091f871b0f98baf61e1a2fd3a3aba8a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>ST</type>
+        <definition>virtual ST shogun::CStringFeatures&lt; ST &gt;::get_feature</definition>
+        <argsstring>(int32_t vec_num, int32_t feat_num)</argsstring>
+        <name>get_feature</name>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_num</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>feat_num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>feat_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which feature </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>feature </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="458" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="457" bodyend="467"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a292d66d7c501396f14454b0bce04af83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CStringFeatures&lt; ST &gt;::get_vector_length</definition>
+        <argsstring>(int32_t vec_num)</argsstring>
+        <name>get_vector_length</name>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get vector length</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>length of vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="475" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="474" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ab1f4433537396443c2cc18bde3d6f36a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CStringFeatures&lt; ST &gt;::get_max_vector_length</definition>
+        <argsstring>()</argsstring>
+        <name>get_max_vector_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get maximum vector length</para><para><simplesect kind="return"><para>maximum vector/string length </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="488" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="487" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ae7339e043f6df5adfa03e56fb9273e08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CStringFeatures&lt; ST &gt;::get_num_vectors</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_vectors</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a1f30fccf7c6c9af03277d75d0d983c52">get_num_vectors</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of vectors</para><para><simplesect kind="return"><para>number of vectors </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="496" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="496" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a9029cbc48b083a7dc756e2f07ea3231e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>floatmax_t</type>
+        <definition>floatmax_t shogun::CStringFeatures&lt; ST &gt;::get_num_symbols</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of symbols</para><para>Note: floatmax_t sounds weird, but LONG is not long enough</para><para><simplesect kind="return"><para>number of symbols </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="504" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="504" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a0a7fcb2f724dd1089e28c0cdb407b45c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>floatmax_t</type>
+        <definition>floatmax_t shogun::CStringFeatures&lt; ST &gt;::get_max_num_symbols</definition>
+        <argsstring>()</argsstring>
+        <name>get_max_num_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get maximum number of symbols</para><para>Note: floatmax_t sounds weird, but int64_t is not long enough (and there is no int128_t type)</para><para><simplesect kind="return"><para>maximum number of symbols </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="513" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="513" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a0ad6e89bfeb18ca28678082eea825e1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>floatmax_t</type>
+        <definition>floatmax_t shogun::CStringFeatures&lt; ST &gt;::get_original_num_symbols</definition>
+        <argsstring>()</argsstring>
+        <name>get_original_num_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of symbols before higher order mapping</para><para><simplesect kind="return"><para>original number of symbols </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="521" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="521" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a7944d676e2e245e03e857daa8e7ef604" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CStringFeatures&lt; ST &gt;::get_order</definition>
+        <argsstring>()</argsstring>
+        <name>get_order</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>order used for higher order mapping</para><para><simplesect kind="return"><para>order </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="527" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="527" bodyend="527"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a9db0522445fff99273e6335460170cab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ST</type>
+        <definition>ST shogun::CStringFeatures&lt; ST &gt;::get_masked_symbols</definition>
+        <argsstring>(ST symbol, uint8_t mask)</argsstring>
+        <name>get_masked_symbols</name>
+        <param>
+          <type>ST</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a higher order mapped symbol will be shaped such that the symbols specified by bits in the mask will be returned.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>symbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>symbol to mask </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mask to apply </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>masked symbol </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="537" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="536" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1aa93cacf71d3e767a2e8d342292e42304" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ST</type>
+        <definition>ST shogun::CStringFeatures&lt; ST &gt;::shift_offset</definition>
+        <argsstring>(ST offset, int32_t amount)</argsstring>
+        <name>shift_offset</name>
+        <param>
+          <type>ST</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>shift offset to the left by amount</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset to shift </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>amount to shift the offset </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>shifted offset </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="549" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="548" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a98fbdd5246b3254759732f640bccf6b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ST</type>
+        <definition>ST shogun::CStringFeatures&lt; ST &gt;::shift_symbol</definition>
+        <argsstring>(ST symbol, int32_t amount)</argsstring>
+        <name>shift_symbol</name>
+        <param>
+          <type>ST</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>shift symbol to the right by amount (taking care of custom symbol sizes)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>symbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>symbol to shift </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>amount to shift the symbol </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>shifted symbol </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="561" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="560" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1aaeb951c4dd2b893bda80d097818e62fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CStringFeatures&lt; ST &gt;::load</definition>
+        <argsstring>(char *fname)</argsstring>
+        <name>load</name>
+        <reimplements refid="classshogun_1_1CFeatures_1adef76a926672875a64aedd2b00c8f2bd">load</reimplements>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load features from file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if loading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="572" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="571" bodyend="626"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a47231299e2f1766e0daa99f3d8958dc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CStringFeatures&lt; ST &gt;::load_dna_file</definition>
+        <argsstring>(char *fname, bool remap_to_bin=true)</argsstring>
+        <name>load_dna_file</name>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>remap_to_bin</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load DNA features from file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>remap_to_bin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if remap_to_bin </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if loading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="635" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="634" bodyend="763"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1aad80e8e325ad954263ebf99f421cad44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CStringFeatures&lt; ST &gt;::load_fasta_file</definition>
+        <argsstring>(const char *fname, bool ignore_invalid=false)</argsstring>
+        <name>load_fasta_file</name>
+        <param>
+          <type>const char *</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignore_invalid</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load fasta file as string features</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ignore_invalid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if set to true, characters other than A,C,G,T are converted to A </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if loading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="772" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="771" bodyend="860"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1af2b287495e0aa69373ad7643cfd19c93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CStringFeatures&lt; ST &gt;::load_fastq_file</definition>
+        <argsstring>(const char *fname, bool ignore_invalid=false, bool bitremap_in_single_string=false)</argsstring>
+        <name>load_fastq_file</name>
+        <param>
+          <type>const char *</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignore_invalid</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bitremap_in_single_string</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load fastq file as string features</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ignore_invalid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if set to true, characters other than A,C,G,T are converted to A </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitremap_in_single_string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if set to true, do binary embedding of symbols </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if loading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="871" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="869" bodyend="967"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a180509f47a88583830d8339cd8fa61f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CStringFeatures&lt; ST &gt;::load_from_directory</definition>
+        <argsstring>(char *dirname)</argsstring>
+        <name>load_from_directory</name>
+        <param>
+          <type>char *</type>
+          <declname>dirname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load features from directory</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>directory name to load from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if loading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="975" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="974" bodyend="1039"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1af02dd8c0bec570fb44cf85cb0bca8c00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CStringFeatures&lt; ST &gt;::set_features</definition>
+        <argsstring>(T_STRING&lt; ST &gt; *p_features, int32_t p_num_vectors, int32_t p_max_string_length)</argsstring>
+        <name>set_features</name>
+        <param>
+          <type><ref refid="classshogun_1_1T__STRING" kindref="compound">T_STRING</ref>&lt; ST &gt; *</type>
+          <declname>p_features</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_num_vectors</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_max_string_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set features</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_features</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_num_vectors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_max_string_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum string length </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1049" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1048" bodyend="1080"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a9735f465f42cf57391d209c8ce1ca78d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classshogun_1_1T__STRING" kindref="compound">T_STRING</ref>&lt; ST &gt; *</type>
+        <definition>virtual T_STRING&lt;ST&gt;* shogun::CStringFeatures&lt; ST &gt;::get_features</definition>
+        <argsstring>(int32_t &amp;num_str, int32_t &amp;max_str_len)</argsstring>
+        <name>get_features</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_str</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>max_str_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get_features</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of strings (returned) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_str_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximal string length (returned) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>string features </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1089" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1088" bodyend="1093"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a137dce44849d1746b7f9f6b3e236422e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classshogun_1_1T__STRING" kindref="compound">T_STRING</ref>&lt; ST &gt; *</type>
+        <definition>virtual T_STRING&lt;ST&gt;* shogun::CStringFeatures&lt; ST &gt;::copy_features</definition>
+        <argsstring>(int32_t &amp;num_str, int32_t &amp;max_str_len)</argsstring>
+        <name>copy_features</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_str</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>max_str_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy_features</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of strings (returned) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_str_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximal string length (returned) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>string features </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1102" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1101" bodyend="1121"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a57c3158a1e0b82ffeed568115b8e32b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CStringFeatures&lt; ST &gt;::get_features</definition>
+        <argsstring>(T_STRING&lt; ST &gt; **dst, int32_t *num_str)</argsstring>
+        <name>get_features</name>
+        <param>
+          <type><ref refid="classshogun_1_1T__STRING" kindref="compound">T_STRING</ref>&lt; ST &gt; **</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num_str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get_features (swig compatible)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string features (returned) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of strings (returned) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1129" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1128" bodyend="1134"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a1d9ca2d673e47c81de012fcb2145d5e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CStringFeatures&lt; ST &gt;::save</definition>
+        <argsstring>(char *dest)</argsstring>
+        <name>save</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ae1341e3fa42733d8729d8f2dcf73709b">save</reimplements>
+        <param>
+          <type>char *</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save features to file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to save to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if saving was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1142" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1141" bodyend="1144"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a2fed506f97ba2c6353c74e9d660cb28c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CStringFeatures&lt; ST &gt;::load_compressed</definition>
+        <argsstring>(char *src, bool decompress)</argsstring>
+        <name>load_compressed</name>
+        <param>
+          <type>char *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>decompress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load compressed features from file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>decompress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether to decompress on loading </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if loading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1153" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1152" bodyend="1230"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a13d0142f249a431b74a89c2c2b505a9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CStringFeatures&lt; ST &gt;::save_compressed</definition>
+        <argsstring>(char *dest, E_COMPRESSION_TYPE compression, int level)</argsstring>
+        <name>save_compressed</name>
+        <param>
+          <type>char *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>E_COMPRESSION_TYPE</type>
+          <declname>compression</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save compressed features to file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to save to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>compression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>compressor to use </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>compression level to use (1-9) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if saving was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1240" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1239" bodyend="1294"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a2e61e6789ba400eec0155188f067483c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CStringFeatures&lt; ST &gt;::get_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_size</name>
+        <reimplements refid="classshogun_1_1CFeatures_1aeed80a002f6255d1ca5c8d1698deb7bc">get_size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get memory footprint of one feature</para><para><simplesect kind="return"><para>memory footprint of one feature </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1301" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1301" bodyend="1301"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a22d575b358c62ed7bd596aa131c1874d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CStringFeatures&lt; ST &gt;::apply_preproc</definition>
+        <argsstring>(bool force_preprocessing=false)</argsstring>
+        <name>apply_preproc</name>
+        <param>
+          <type>bool</type>
+          <declname>force_preprocessing</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>apply preprocessor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>force_preprocessing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if preprocssing shall be forced </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if applying was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1309" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1308" bodyend="1330"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1aed5f5518058550c74f2cef9ddaf25ffa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CStringFeatures&lt; ST &gt;::obtain_by_sliding_window</definition>
+        <argsstring>(int32_t window_size, int32_t step_size, int32_t skip=0)</argsstring>
+        <name>obtain_by_sliding_window</name>
+        <param>
+          <type>int32_t</type>
+          <declname>window_size</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>step_size</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>skip</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>slides a window of size window_size over the current single string step_size is the amount by which the window is shifted. creates (string_len-window_size)/step_size many feature obj if skip is nonzero, skip the first &apos;skip&apos; characters of each string <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>window size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>step size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>skip </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>something inty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1342" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1341" bodyend="1373"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1afc4fa45a26d20de632940261a06e29fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CStringFeatures&lt; ST &gt;::obtain_by_position_list</definition>
+        <argsstring>(int32_t window_size, CDynamicArray&lt; int32_t &gt; *positions, int32_t skip=0)</argsstring>
+        <name>obtain_by_position_list</name>
+        <param>
+          <type>int32_t</type>
+          <declname>window_size</declname>
+        </param>
+        <param>
+          <type>CDynamicArray&lt; int32_t &gt; *</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>skip</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>extracts windows of size window_size from first string using the positions in list</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>window size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>positions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>skip </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>something inty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1384" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1383" bodyend="1435"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a7759c36cab3f93d588a1fe84c1f760cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CStringFeatures&lt; ST &gt;::obtain_from_char</definition>
+        <argsstring>(CStringFeatures&lt; char &gt; *sf, int32_t start, int32_t p_order, int32_t gap, bool rev)</argsstring>
+        <name>obtain_from_char</name>
+        <param>
+          <type><ref refid="classshogun_1_1CStringFeatures" kindref="compound">CStringFeatures</ref>&lt; char &gt; *</type>
+          <declname>sf</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>gap</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>rev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>obtain string features from char features</para><para>wrapper for template method</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>order </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gap </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if obtaining was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1449" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1448" bodyend="1451"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ad00b1f1b98d36536f4931d13f8a57be5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class CT</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool shogun::CStringFeatures&lt; ST &gt;::obtain_from_char_features</definition>
+        <argsstring>(CStringFeatures&lt; CT &gt; *sf, int32_t start, int32_t p_order, int32_t gap, bool rev)</argsstring>
+        <name>obtain_from_char_features</name>
+        <param>
+          <type><ref refid="classshogun_1_1CStringFeatures" kindref="compound">CStringFeatures</ref>&lt; CT &gt; *</type>
+          <declname>sf</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>gap</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>rev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>template obtain from char features</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>order </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gap </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if obtaining was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1464" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1463" bodyend="1535"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a6539f568e1079d63d0d4f1cca9a9c40f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CStringFeatures&lt; ST &gt;::have_same_length</definition>
+        <argsstring>(int32_t len=-1)</argsstring>
+        <name>have_same_length</name>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check if length of each vector in this feature object equals the given length.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector length to check against </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if length of each vector in this feature object equals the given length. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1545" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1544" bodyend="1560"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a58569c317ebf61ce24a5f8e679b81772" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; ST &gt;::embed_features</definition>
+        <argsstring>(int32_t p_order)</argsstring>
+        <name>embed_features</name>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>embed string features in bit representation in-place </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1567" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1566" bodyend="1615"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a99e110435c00ab38b159c4a8ef4dd5e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; ST &gt;::compute_symbol_mask_table</definition>
+        <argsstring>(int64_t max_val)</argsstring>
+        <name>compute_symbol_mask_table</name>
+        <param>
+          <type>int64_t</type>
+          <declname>max_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute symbol mask table</para><para>required to access bit-based symbols </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1622" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1621" bodyend="1643"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a10e25d57d8314b953f993c2c1436d7eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; ST &gt;::unembed_word</definition>
+        <argsstring>(ST word, uint8_t *seq, int32_t len)</argsstring>
+        <name>unembed_word</name>
+        <param>
+          <type>ST</type>
+          <declname>word</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>seq</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>remap bit-based word to character sequence</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>word</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>word to remap </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sequence of size len that remapped characters are written to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of sequence and word </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1652" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1651" bodyend="1665"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1af79a40e7283504e4913c6b7878af8437" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ST</type>
+        <definition>ST shogun::CStringFeatures&lt; ST &gt;::embed_word</definition>
+        <argsstring>(ST *seq, int32_t len)</argsstring>
+        <name>embed_word</name>
+        <param>
+          <type>ST *</type>
+          <declname>seq</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>embed a single word</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sequence of size len in a bitfield </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1673" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1672" bodyend="1683"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ab74b1c4126bebe05d9064a97c1aec37a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; ST &gt;::determine_maximum_string_length</definition>
+        <argsstring>()</argsstring>
+        <name>determine_maximum_string_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>determine new maximum string length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1688" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1687" bodyend="1693"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a59f60101ed6f7052aff46f5660145f7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CStringFeatures&lt; ST &gt;::set_feature_vector</definition>
+        <argsstring>(int32_t num, ST *string, int32_t len)</argsstring>
+        <name>set_feature_vector</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>ST *</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set feature vector for sample num</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string with the feature vector&apos;s content </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1711" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1710" bodyend="1719"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a344319205c904e5175621003f62942c6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CStringFeatures&lt; ST &gt;::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1723" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1723" bodyend="1723"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ae8d65c9f15279a84451a77b9a61384b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CStringFeatures&lt; bool &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the char feature can deal with</para><para><simplesect kind="return"><para>feature type char </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1879" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1878" bodyend="1881"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a78a20c5c7ca95ca6ace0f8da26d70b55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CStringFeatures&lt; char &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the char feature can deal with</para><para><simplesect kind="return"><para>feature type char </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1888" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1887" bodyend="1890"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a2f550c395c1facc66955f6cf30d3984b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CStringFeatures&lt; uint8_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the BYTE feature can deal with</para><para><simplesect kind="return"><para>feature type BYTE </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1897" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1896" bodyend="1899"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1acdf80dc117310f7924cff3e93be2bc30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CStringFeatures&lt; int16_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the SHORT feature can deal with</para><para><simplesect kind="return"><para>feature type SHORT </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1906" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1905" bodyend="1908"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a5733fd3af5b59dbedd9affe1c8e60da0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CStringFeatures&lt; uint16_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the WORD feature can deal with</para><para><simplesect kind="return"><para>feature type WORD </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1915" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1914" bodyend="1917"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a8b39eae3d1d090685afc31531edfdd4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CStringFeatures&lt; int32_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the INT feature can deal with</para><para><simplesect kind="return"><para>feature type INT </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1924" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1923" bodyend="1926"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a2846d6c0bcd0d5cd62854ba1ef001082" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CStringFeatures&lt; uint32_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the INT feature can deal with</para><para><simplesect kind="return"><para>feature type INT </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1933" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1932" bodyend="1935"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1afb539f9ec9d61e42a17f67c941b4d8e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CStringFeatures&lt; int64_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the LONG feature can deal with</para><para><simplesect kind="return"><para>feature type LONG </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1942" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1941" bodyend="1944"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1aa78028371efacd348c2e89398a5b3e70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CStringFeatures&lt; uint64_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the ULONG feature can deal with</para><para><simplesect kind="return"><para>feature type ULONG </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1951" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1950" bodyend="1953"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a2f96841bdbb4b28dd933c570c192a052" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CStringFeatures&lt; float32_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the SHORTREAL feature can deal with</para><para><simplesect kind="return"><para>feature type SHORTREAL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1960" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1959" bodyend="1962"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a716a2f8e1c42ab69bda10087a8b0224e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CStringFeatures&lt; float64_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the DREAL feature can deal with</para><para><simplesect kind="return"><para>feature type DREAL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1969" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1968" bodyend="1971"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1acdfb2015b973478bca5bae36950a822c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CStringFeatures&lt; floatmax_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type the LONGREAL feature can deal with</para><para><simplesect kind="return"><para>feature type LONGREAL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1978" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1977" bodyend="1980"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a0bc6cf0819a0e86111f8a7c5e38ed117" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool shogun::CStringFeatures&lt; bool &gt;::get_masked_symbols</definition>
+        <argsstring>(bool symbol, uint8_t mask)</argsstring>
+        <name>get_masked_symbols</name>
+        <param>
+          <type>bool</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1983" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1982" bodyend="1985"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1acbb259cec58241b22b95343381f187ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float32_t</type>
+        <definition>float32_t shogun::CStringFeatures&lt; float32_t &gt;::get_masked_symbols</definition>
+        <argsstring>(float32_t symbol, uint8_t mask)</argsstring>
+        <name>get_masked_symbols</name>
+        <param>
+          <type>float32_t</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1987" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1986" bodyend="1989"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a294e0d213ef6caa24f863e00cc1dc856" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float64_t</type>
+        <definition>float64_t shogun::CStringFeatures&lt; float64_t &gt;::get_masked_symbols</definition>
+        <argsstring>(float64_t symbol, uint8_t mask)</argsstring>
+        <name>get_masked_symbols</name>
+        <param>
+          <type>float64_t</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1991" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1990" bodyend="1993"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a26c80efb05e1e50a5656362f252a6951" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>floatmax_t</type>
+        <definition>floatmax_t shogun::CStringFeatures&lt; floatmax_t &gt;::get_masked_symbols</definition>
+        <argsstring>(floatmax_t symbol, uint8_t mask)</argsstring>
+        <name>get_masked_symbols</name>
+        <param>
+          <type>floatmax_t</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1995" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1994" bodyend="1997"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a4868775de9134a9e2432f004303e9454" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool shogun::CStringFeatures&lt; bool &gt;::shift_offset</definition>
+        <argsstring>(bool symbol, int32_t amount)</argsstring>
+        <name>shift_offset</name>
+        <param>
+          <type>bool</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2000" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1999" bodyend="2002"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1aa56375ba3eba64569862eaeea5339bd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float32_t</type>
+        <definition>float32_t shogun::CStringFeatures&lt; float32_t &gt;::shift_offset</definition>
+        <argsstring>(float32_t symbol, int32_t amount)</argsstring>
+        <name>shift_offset</name>
+        <param>
+          <type>float32_t</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2004" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2003" bodyend="2006"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a899e2961b604e1f82baa52611a48e52a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float64_t</type>
+        <definition>float64_t shogun::CStringFeatures&lt; float64_t &gt;::shift_offset</definition>
+        <argsstring>(float64_t symbol, int32_t amount)</argsstring>
+        <name>shift_offset</name>
+        <param>
+          <type>float64_t</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2008" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2007" bodyend="2010"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1aa8ce79b32a724196204d850d185799b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>floatmax_t</type>
+        <definition>floatmax_t shogun::CStringFeatures&lt; floatmax_t &gt;::shift_offset</definition>
+        <argsstring>(floatmax_t symbol, int32_t amount)</argsstring>
+        <name>shift_offset</name>
+        <param>
+          <type>floatmax_t</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2012" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2011" bodyend="2014"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a872e54346cb2c870b59b98d6728f9853" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool shogun::CStringFeatures&lt; bool &gt;::shift_symbol</definition>
+        <argsstring>(bool symbol, int32_t amount)</argsstring>
+        <name>shift_symbol</name>
+        <param>
+          <type>bool</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2017" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2016" bodyend="2019"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a3950519d6b815ca8105f688443075fd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float32_t</type>
+        <definition>float32_t shogun::CStringFeatures&lt; float32_t &gt;::shift_symbol</definition>
+        <argsstring>(float32_t symbol, int32_t amount)</argsstring>
+        <name>shift_symbol</name>
+        <param>
+          <type>float32_t</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2021" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2020" bodyend="2023"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ac81ddaf1f40a4ae5b438da9dfa31cdfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float64_t</type>
+        <definition>float64_t shogun::CStringFeatures&lt; float64_t &gt;::shift_symbol</definition>
+        <argsstring>(float64_t symbol, int32_t amount)</argsstring>
+        <name>shift_symbol</name>
+        <param>
+          <type>float64_t</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2025" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2024" bodyend="2027"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1aea731f527bf3ec0730974a9016e2d1c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>floatmax_t</type>
+        <definition>floatmax_t shogun::CStringFeatures&lt; floatmax_t &gt;::shift_symbol</definition>
+        <argsstring>(floatmax_t symbol, int32_t amount)</argsstring>
+        <name>shift_symbol</name>
+        <param>
+          <type>floatmax_t</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2029" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2028" bodyend="2031"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a37bc76dfab8a1949e912c95cc0b767c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool shogun::CStringFeatures&lt; float32_t &gt;::obtain_from_char_features</definition>
+        <argsstring>(CStringFeatures&lt; CT &gt; *sf, int32_t start, int32_t p_order, int32_t gap, bool rev)</argsstring>
+        <name>obtain_from_char_features</name>
+        <param>
+          <type><ref refid="classshogun_1_1CStringFeatures" kindref="compound">CStringFeatures</ref>&lt; CT &gt; *</type>
+          <declname>sf</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>gap</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>rev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2035" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2034" bodyend="2037"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a20493103fd8c8b5da27ea353460b3001" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool shogun::CStringFeatures&lt; float64_t &gt;::obtain_from_char_features</definition>
+        <argsstring>(CStringFeatures&lt; CT &gt; *sf, int32_t start, int32_t p_order, int32_t gap, bool rev)</argsstring>
+        <name>obtain_from_char_features</name>
+        <param>
+          <type><ref refid="classshogun_1_1CStringFeatures" kindref="compound">CStringFeatures</ref>&lt; CT &gt; *</type>
+          <declname>sf</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>gap</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>rev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2039" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2038" bodyend="2041"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1adfdd2052e6766f334d3524ec88aaad70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool shogun::CStringFeatures&lt; floatmax_t &gt;::obtain_from_char_features</definition>
+        <argsstring>(CStringFeatures&lt; CT &gt; *sf, int32_t start, int32_t p_order, int32_t gap, bool rev)</argsstring>
+        <name>obtain_from_char_features</name>
+        <param>
+          <type><ref refid="classshogun_1_1CStringFeatures" kindref="compound">CStringFeatures</ref>&lt; CT &gt; *</type>
+          <declname>sf</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>gap</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>rev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2043" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2042" bodyend="2045"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ac9fcde2320a74bd2ac97b0e2d52b778f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; float32_t &gt;::embed_features</definition>
+        <argsstring>(int32_t p_order)</argsstring>
+        <name>embed_features</name>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2049" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2048" bodyend="2050"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a50f8eb5962e8606360a6fc151a2315e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; float64_t &gt;::embed_features</definition>
+        <argsstring>(int32_t p_order)</argsstring>
+        <name>embed_features</name>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2052" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2051" bodyend="2053"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ac94ab141aa50f2a4305011c68127f556" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; floatmax_t &gt;::embed_features</definition>
+        <argsstring>(int32_t p_order)</argsstring>
+        <name>embed_features</name>
+        <param>
+          <type>int32_t</type>
+          <declname>p_order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2055" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2054" bodyend="2056"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ac17e88f63cf73c03f1f9ee091d52c201" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; float32_t &gt;::compute_symbol_mask_table</definition>
+        <argsstring>(int64_t max_val)</argsstring>
+        <name>compute_symbol_mask_table</name>
+        <param>
+          <type>int64_t</type>
+          <declname>max_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2059" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2058" bodyend="2060"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a5264325823e4df9f2bc8957e7f0c5f7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; float64_t &gt;::compute_symbol_mask_table</definition>
+        <argsstring>(int64_t max_val)</argsstring>
+        <name>compute_symbol_mask_table</name>
+        <param>
+          <type>int64_t</type>
+          <declname>max_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2062" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2061" bodyend="2063"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a4ccbc06da7e81a0a8fc0d44ac831a3cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; floatmax_t &gt;::compute_symbol_mask_table</definition>
+        <argsstring>(int64_t max_val)</argsstring>
+        <name>compute_symbol_mask_table</name>
+        <param>
+          <type>int64_t</type>
+          <declname>max_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2065" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2064" bodyend="2066"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a725cd39a1fa777a72413fcdef4e13cd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float32_t</type>
+        <definition>float32_t shogun::CStringFeatures&lt; float32_t &gt;::embed_word</definition>
+        <argsstring>(float32_t *seq, int32_t len)</argsstring>
+        <name>embed_word</name>
+        <param>
+          <type>float32_t *</type>
+          <declname>seq</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2069" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2068" bodyend="2071"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1aa4a56669a5d1a9bbe21639238bfbb429" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>float64_t</type>
+        <definition>float64_t shogun::CStringFeatures&lt; float64_t &gt;::embed_word</definition>
+        <argsstring>(float64_t *seq, int32_t len)</argsstring>
+        <name>embed_word</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>seq</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2073" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2072" bodyend="2075"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ab3634cc73b024e4d6889f0e1a0d35302" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>floatmax_t</type>
+        <definition>floatmax_t shogun::CStringFeatures&lt; floatmax_t &gt;::embed_word</definition>
+        <argsstring>(floatmax_t *seq, int32_t len)</argsstring>
+        <name>embed_word</name>
+        <param>
+          <type>floatmax_t *</type>
+          <declname>seq</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2077" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2076" bodyend="2079"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a05252381d2b6e036e729394421e76ce5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; float32_t &gt;::unembed_word</definition>
+        <argsstring>(float32_t word, uint8_t *seq, int32_t len)</argsstring>
+        <name>unembed_word</name>
+        <param>
+          <type>float32_t</type>
+          <declname>word</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>seq</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2082" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2081" bodyend="2083"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ac1eb80692617059e11a468d45bd90f5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; float64_t &gt;::unembed_word</definition>
+        <argsstring>(float64_t word, uint8_t *seq, int32_t len)</argsstring>
+        <name>unembed_word</name>
+        <param>
+          <type>float64_t</type>
+          <declname>word</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>seq</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2085" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2084" bodyend="2086"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a022d80ec69ba14b9c71b5ad5f9440c50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void shogun::CStringFeatures&lt; floatmax_t &gt;::unembed_word</definition>
+        <argsstring>(floatmax_t word, uint8_t *seq, int32_t len)</argsstring>
+        <name>unembed_word</name>
+        <param>
+          <type>floatmax_t</type>
+          <declname>word</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>seq</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="2088" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="2087" bodyend="2089"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1a748a9d7b1f0d5b75a993d05f8a9097b8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ST *</type>
+        <definition>static ST* shogun::CStringFeatures&lt; ST &gt;::get_zero_terminated_string_copy</definition>
+        <argsstring>(T_STRING&lt; ST &gt; str)</argsstring>
+        <name>get_zero_terminated_string_copy</name>
+        <param>
+          <type><ref refid="classshogun_1_1T__STRING" kindref="compound">T_STRING</ref>&lt; ST &gt;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1696" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1695" bodyend="1702"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CStringFeatures_1ab8c6446973515eb2c10a48242e3d0421" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>ST *</type>
+        <definition>virtual ST* shogun::CStringFeatures&lt; ST &gt;::compute_feature_vector</definition>
+        <argsstring>(int32_t num, int32_t &amp;len)</argsstring>
+        <name>compute_feature_vector</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute feature vector for sample num if target is set the vector is written to target len is returned by reference</para><para>default implementation returns</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>feature vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="1738" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="1737" bodyend="1748"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class StringFeatures implements a list of strings. </para>    </briefdescription>
+    <detaileddescription>
+<para>As this class is a template the underlying storage type is quite arbitrary and not limited to character strings, but could also be sequences of floating point numbers etc. Strings differ from matrices (cf. <ref refid="classshogun_1_1CSimpleFeatures" kindref="compound">CSimpleFeatures</ref>) in a way that the dimensionality of the feature vectors (i.e. the strings) is not fixed; it may vary between strings.</para><para>Most string kernels require StringFeatures but a number of them actually requires strings to have same length.</para><para>When preprocessors are attached to string features they may shorten the string, but are not allowed to return strings longer than max_string_length, as some algorithms depend on this.</para><para>Also note that string features cannot currently be computed on-the-fly. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="111">
+        <label>shogun::CStringFileFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CStringFileFeatures"/>
+        <childnode refid="109" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>shogun::CStringFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CStringFeatures"/>
+        <childnode refid="110" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="116">
+        <label>shogun::CAlphabet</label>
+        <link refid="classshogun_1_1CAlphabet"/>
+      </node>
+      <node id="114">
+        <label>ST</label>
+      </node>
+      <node id="115">
+        <label>shogun::T_STRING&lt; ST &gt;</label>
+        <link refid="classshogun_1_1T__STRING"/>
+      </node>
+      <node id="112">
+        <label>shogun::CStringFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CStringFeatures"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+        <childnode refid="114" relation="usage">
+          <edgelabel>single_string</edgelabel>
+          <edgelabel>symbol_mask_table</edgelabel>
+        </childnode>
+        <childnode refid="115" relation="usage">
+          <edgelabel>features</edgelabel>
+        </childnode>
+        <childnode refid="116" relation="usage">
+          <edgelabel>alphabet</edgelabel>
+        </childnode>
+      </node>
+      <node id="113">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" line="127" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFeatures.h" bodystart="126" bodyend="1871"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CFeatures_1a793f371cc7dd4897997b01612f7d4b77" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>add_preproc</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1af7713f43246402da9e8048b55f3be85d" prot="protected" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>alphabet</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a22d575b358c62ed7bd596aa131c1874d" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>apply_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a91ac9daf871dd99b358da47eea74eeb3" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1be7a2c5d471a3586c44988e2b4e1129" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a4ad3a39235806ab1999a1c5fb5290486" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a89609a765e1ab682ea6e73402b56c961" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>check_feature_compatibility</name></member>
+      <member refid="classshogun_1_1CFeatures_1afab00f1403d1349fd18cca31a6d63de3" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>clean_preprocs</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ae084ead0d032dad12550ca84d5cd6427" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a4e0c83bef401055bec505006f713ba23" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>cleanup_feature_vector</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ab8c6446973515eb2c10a48242e3d0421" prot="protected" virt="virtual"><scope>shogun::CStringFeatures</scope><name>compute_feature_vector</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a99e110435c00ab38b159c4a8ef4dd5e0" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>compute_symbol_mask_table</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ac17e88f63cf73c03f1f9ee091d52c201" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>compute_symbol_mask_table</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a5264325823e4df9f2bc8957e7f0c5f7a" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>compute_symbol_mask_table</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a4ccbc06da7e81a0a8fc0d44ac831a3cf" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>compute_symbol_mask_table</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a137dce44849d1746b7f9f6b3e236422e" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>copy_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a865f7bb9379fb8adb6eebd5cf959b316" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>CStringFeatures</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1af4c089111bed04d90e44c769ebb668c0" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>CStringFeatures</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ace5e31e0589489f68cc2f218e6ab5840" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>CStringFeatures</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aa135839eeea1ae26da128ca7f981210c" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>CStringFeatures</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ae24969774d1c358e03549dd323095558" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>CStringFeatures</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ab6709427fef74aa32a3030e4a662b74d" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>CStringFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1accdc453796e319852dd41fffa0c0f70c" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>del_preproc</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ab74b1c4126bebe05d9064a97c1aec37a" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>determine_maximum_string_length</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ad7e995718996addda081c2bfb88ada78" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>disable_on_the_fly_preprocessing</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ab1ab8ad80ec4638fff62e883c5cc0ca0" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>duplicate</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a58569c317ebf61ce24a5f8e679b81772" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>embed_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ac9fcde2320a74bd2ac97b0e2d52b778f" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>embed_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a50f8eb5962e8606360a6fc151a2315e3" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>embed_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ac94ab141aa50f2a4305011c68127f556" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>embed_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1af79a40e7283504e4913c6b7878af8437" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>embed_word</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a725cd39a1fa777a72413fcdef4e13cd2" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>embed_word</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aa4a56669a5d1a9bbe21639238bfbb429" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>embed_word</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ab3634cc73b024e4d6889f0e1a0d35302" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>embed_word</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a5490723d7c8bcabaa081978e2087ef7c" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>enable_on_the_fly_preprocessing</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a642a134efc86be31fc4521c3c3a6f937" prot="protected" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>feature_cache</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a0744b37374d0dd318f3bfd88e6171aca" prot="protected" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ac729e34ba14e63bbca7d6edce5b64330" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>free_feature_vector</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1addefcfa614c337c0fff4c68aa4b5c563" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_alphabet</name></member>
+      <member refid="classshogun_1_1CFeatures_1a29b93c241dca0eba1415f873c83d27d8" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a091f871b0f98baf61e1a2fd3a3aba8a9" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_feature</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aa71e016a67405365313351635c7f769b" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a8b37268cf88b36545f33b305fe9950b7" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ae8d65c9f15279a84451a77b9a61384b4" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a78a20c5c7ca95ca6ace0f8da26d70b55" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a2f550c395c1facc66955f6cf30d3984b" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1acdf80dc117310f7924cff3e93be2bc30" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a5733fd3af5b59dbedd9affe1c8e60da0" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a8b39eae3d1d090685afc31531edfdd4f" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a2846d6c0bcd0d5cd62854ba1ef001082" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1afb539f9ec9d61e42a17f67c941b4d8e2" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aa78028371efacd348c2e89398a5b3e70" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a2f96841bdbb4b28dd933c570c192a052" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a716a2f8e1c42ab69bda10087a8b0224e" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1acdfb2015b973478bca5bae36950a822c" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1af84e62381530c251d5cdab17e9fcafec" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_feature_vector</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aa9cade98248b028c510682dc05f1f863" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_feature_vector</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a9735f465f42cf57391d209c8ce1ca78d" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a57c3158a1e0b82ffeed568115b8e32b5" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a9db0522445fff99273e6335460170cab" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_masked_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a0bc6cf0819a0e86111f8a7c5e38ed117" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_masked_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1acbb259cec58241b22b95343381f187ae" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_masked_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a294e0d213ef6caa24f863e00cc1dc856" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_masked_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a26c80efb05e1e50a5656362f252a6951" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_masked_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a0a7fcb2f724dd1089e28c0cdb407b45c" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_max_num_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ab1f4433537396443c2cc18bde3d6f36a" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_max_vector_length</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a344319205c904e5175621003f62942c6" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CFeatures_1a7662d240eab24d5753385b0f9e6e9bae" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_num_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a9010a03b11399648cc5da7194fb5e707" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_num_preprocessed</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a9029cbc48b083a7dc756e2f07ea3231e" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_num_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ae7339e043f6df5adfa03e56fb9273e08" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_num_vectors</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a7944d676e2e245e03e857daa8e7ef604" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_order</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a0ad6e89bfeb18ca28678082eea825e1e" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_original_num_symbols</name></member>
+      <member refid="classshogun_1_1CFeatures_1ac1015e3a736e4e6d4d6fbe24416af6c4" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_preproc</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a2e61e6789ba400eec0155188f067483c" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_size</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a292d66d7c501396f14454b0bce04af83" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>get_vector_length</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a748a9d7b1f0d5b75a993d05f8a9097b8" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>get_zero_terminated_string_copy</name></member>
+      <member refid="classshogun_1_1CFeatures_1a07f1d7dc618a9f5f76663d80ad549d38" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a6539f568e1079d63d0d4f1cca9a9c40f" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>have_same_length</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1248f8829f63f9c9a42ac36065961295" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>is_preprocessed</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a8e77d0779631af09dac2106ae4093bb4" prot="protected" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>length_of_single_string</name></member>
+      <member refid="classshogun_1_1CFeatures_1a6412ef81478c3c9dadac2a87a544f640" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>list_feature_obj</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aaeb951c4dd2b893bda80d097818e62fb" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>load</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a2fed506f97ba2c6353c74e9d660cb28c" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>load_compressed</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a47231299e2f1766e0daa99f3d8958dc7" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>load_dna_file</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aad80e8e325ad954263ebf99f421cad44" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>load_fasta_file</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1af2b287495e0aa69373ad7643cfd19c93" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>load_fastq_file</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a180509f47a88583830d8339cd8fa61f6" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>load_from_directory</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a87fd4ca728c5d5892285f3394f26cab5" prot="protected" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>max_string_length</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a2bfa468341a32c916238a764dc95d100" prot="protected" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>num_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ad455f70470197f826ef7baa87466316c" prot="protected" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>num_vectors</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1afc4fa45a26d20de632940261a06e29fd" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>obtain_by_position_list</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aed5f5518058550c74f2cef9ddaf25ffa" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>obtain_by_sliding_window</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a7759c36cab3f93d588a1fe84c1f760cf" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>obtain_from_char</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ad00b1f1b98d36536f4931d13f8a57be5" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>obtain_from_char_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a37bc76dfab8a1949e912c95cc0b767c5" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>obtain_from_char_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a20493103fd8c8b5da27ea353460b3001" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>obtain_from_char_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1adfdd2052e6766f334d3524ec88aaad70" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>obtain_from_char_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a351c8b11191bf47ec29503722ceabbfd" prot="protected" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>order</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1afd3b8ef7ace5a73c5766afc88d8ef7e8" prot="protected" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>original_num_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a8a1b8a882fb9969a7b104281ee8c21e6" prot="protected" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>preprocess_on_get</name></member>
+      <member refid="classshogun_1_1CFeatures_1a57d67048d44a7a7ea92bcbdfed9060ea" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>reshape</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a1d9ca2d673e47c81de012fcb2145d5e7" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>save</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a13d0142f249a431b74a89c2c2b505a9d" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>save_compressed</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a170610c3731bcb7aa53ecbb265aa237a" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>set_feature_vector</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a59f60101ed6f7052aff46f5660145f7e" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>set_feature_vector</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1af02dd8c0bec570fb44cf85cb0bca8c00" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>set_features</name></member>
+      <member refid="classshogun_1_1CFeatures_1aa88c27c0f3885d23ac71c4cc2e55c431" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>set_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab43db0bd4a231249ce4bc65f6e15f695" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aa93cacf71d3e767a2e8d342292e42304" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>shift_offset</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a4868775de9134a9e2432f004303e9454" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>shift_offset</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aa56375ba3eba64569862eaeea5339bd3" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>shift_offset</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a899e2961b604e1f82baa52611a48e52a" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>shift_offset</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aa8ce79b32a724196204d850d185799b4" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>shift_offset</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a98fbdd5246b3254759732f640bccf6b2" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>shift_symbol</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a872e54346cb2c870b59b98d6728f9853" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>shift_symbol</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a3950519d6b815ca8105f688443075fd1" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>shift_symbol</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ac81ddaf1f40a4ae5b438da9dfa31cdfa" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>shift_symbol</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aea731f527bf3ec0730974a9016e2d1c3" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>shift_symbol</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1af605c7ea9267c1733795ab8912b18dbc" prot="protected" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>single_string</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a0d43676d12f9cbd228a8da4c1955f110" prot="protected" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>symbol_mask_table</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a10e25d57d8314b953f993c2c1436d7eb" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>unembed_word</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a05252381d2b6e036e729394421e76ce5" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>unembed_word</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ac1eb80692617059e11a468d45bd90f5e" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>unembed_word</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a022d80ec69ba14b9c71b5ad5f9440c50" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>unembed_word</name></member>
+      <member refid="classshogun_1_1CFeatures_1a3ff3f03688a7f6a1b36dab8677407166" prot="public" virt="non-virtual"><scope>shogun::CStringFeatures</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab0e2a8a18ac5056f802e4aa51d4fcd4f" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>~CFeatures</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ad05f6cc30776eac3e20e34f976058509" prot="public" virt="virtual"><scope>shogun::CStringFeatures</scope><name>~CStringFeatures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

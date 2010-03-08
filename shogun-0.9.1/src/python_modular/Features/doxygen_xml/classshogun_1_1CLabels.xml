@@ -1,0 +1,572 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CLabels" kind="class" prot="public">
+    <compoundname>shogun::CLabels</compoundname>
+    <includes local="no">Labels.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CLabels_1a49d2066d15cab4f78f40937b81e63f49" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CLabels::num_labels</definition>
+        <argsstring></argsstring>
+        <name>num_labels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of labels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="273" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CLabels_1ad15ddfeaf92aec6eb8aa64292dd6dafc" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CLabels::labels</definition>
+        <argsstring></argsstring>
+        <name>labels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the labels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="275" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CLabels_1ab448458d50e147f62117205721859113" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CLabels::CLabels</definition>
+        <argsstring>()</argsstring>
+        <name>CLabels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1a8e714b969bf807e0d9171d8ecfe1db0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CLabels::CLabels</definition>
+        <argsstring>(int32_t num_labels)</argsstring>
+        <name>CLabels</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num_labels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_labels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of labels </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1aa6269b422b51ade54e744d3ecff320e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CLabels::CLabels</definition>
+        <argsstring>(float64_t *src, int32_t len)</argsstring>
+        <name>CLabels</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>labels to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of labels </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1a9deb565b0c17b4e41d80206bd56a629f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CLabels::CLabels</definition>
+        <argsstring>(char *fname)</argsstring>
+        <name>CLabels</name>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load labels from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1abdcc73ea77c72d6655ea6ca914aabbec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CLabels::~CLabels</definition>
+        <argsstring>()</argsstring>
+        <name>~CLabels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1a6e8dd427aa5806abe04a3ffc3f56fb02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CLabels::load</definition>
+        <argsstring>(char *fname)</argsstring>
+        <name>load</name>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load labels from file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if loading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1a8142deede23ed63effc97199d9e01c02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CLabels::save</definition>
+        <argsstring>(char *fname)</argsstring>
+        <name>save</name>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save labels to file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to save to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if saving was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1aa806dba20d694a9db5d8b05aecf9a2d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CLabels::set_label</definition>
+        <argsstring>(int32_t idx, float64_t label)</argsstring>
+        <name>set_label</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set label</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of label to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of label </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="73" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" bodystart="72" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1a2543bcfb500e44ec149015959e62387a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CLabels::set_int_label</definition>
+        <argsstring>(int32_t idx, int32_t label)</argsstring>
+        <name>set_int_label</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set INT label</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of label to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>INT value of label </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="90" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" bodystart="89" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1af3a7ceb49411976ce05f2f0a9f4033c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CLabels::get_label</definition>
+        <argsstring>(int32_t idx)</argsstring>
+        <name>get_label</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get label</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of label to get </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value of label </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="106" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" bodystart="105" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1a51b0d3e354687a834b13bf83675b970c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CLabels::get_int_label</definition>
+        <argsstring>(int32_t idx)</argsstring>
+        <name>get_int_label</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get INT label</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of label to get </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>INT value of label </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="119" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" bodystart="118" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1ac87e64f37cb4ea581402b0a0ab66168e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CLabels::is_two_class_labeling</definition>
+        <argsstring>()</argsstring>
+        <name>is_two_class_labeling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>is two-class labeling</para><para><simplesect kind="return"><para>if this is two-class labeling </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1a570084f2fee3505cebd5c30b87f83db3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CLabels::get_num_classes</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_classes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return number of classes (for multiclass) labels have to be zero based 0,1,...C missing labels are illegal</para><para><simplesect kind="return"><para>number of classes </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1a71568c482bb6b8a8063953f6814ac03f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CLabels::get_labels</definition>
+        <argsstring>(int32_t &amp;len)</argsstring>
+        <name>get_labels</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get labels caller has to clean up</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of labels </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1a7b072d6a640455922e3a42df036e8a13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CLabels::get_labels</definition>
+        <argsstring>(float64_t **dst, int32_t *len)</argsstring>
+        <name>get_labels</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get labels (swig compatible)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where labels will be stored in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where number of labels will be stored in </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1a3cddb3338655c4d6275e98d5d87e9d28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CLabels::set_labels</definition>
+        <argsstring>(float64_t *src, int32_t len)</argsstring>
+        <name>set_labels</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set labels</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>labels to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of labels </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1a816dde13a9817b4af935a0306b5f3dfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CLabels::get_int_labels</definition>
+        <argsstring>(int32_t &amp;len)</argsstring>
+        <name>get_int_labels</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get INT label vector caller has to clean up</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of labels to get </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>INT labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1ac4980370e468e844821550deac1a7395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CLabels::set_int_labels</definition>
+        <argsstring>(int32_t *labels, int32_t len)</argsstring>
+        <name>set_int_labels</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>labels</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set INT labels caller has to clean up</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>labels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>INT labels </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of INT labels </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1a1173be9cc628f88f4335c059add84229" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CLabels::get_num_labels</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_labels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of labels</para><para><simplesect kind="return"><para>number of labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="185" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" bodystart="185" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLabels_1a2337e4bd63d65d8df80b48b09b5b108f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CLabels::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="188" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" bodystart="188" bodyend="188"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class Labels models labels, i.e. class assignments of objects. </para>    </briefdescription>
+    <detaileddescription>
+<para>Labels here are always real-valued and thus applicable to classification (cf. CClassifier) and regression (cf. CRegression) problems. </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" line="27" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Labels.h" bodystart="26" bodyend="276"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CLabels_1ab448458d50e147f62117205721859113" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>CLabels</name></member>
+      <member refid="classshogun_1_1CLabels_1a8e714b969bf807e0d9171d8ecfe1db0e" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>CLabels</name></member>
+      <member refid="classshogun_1_1CLabels_1aa6269b422b51ade54e744d3ecff320e1" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>CLabels</name></member>
+      <member refid="classshogun_1_1CLabels_1a9deb565b0c17b4e41d80206bd56a629f" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>CLabels</name></member>
+      <member refid="classshogun_1_1CLabels_1a51b0d3e354687a834b13bf83675b970c" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>get_int_label</name></member>
+      <member refid="classshogun_1_1CLabels_1a816dde13a9817b4af935a0306b5f3dfa" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>get_int_labels</name></member>
+      <member refid="classshogun_1_1CLabels_1af3a7ceb49411976ce05f2f0a9f4033c1" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>get_label</name></member>
+      <member refid="classshogun_1_1CLabels_1a71568c482bb6b8a8063953f6814ac03f" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>get_labels</name></member>
+      <member refid="classshogun_1_1CLabels_1a7b072d6a640455922e3a42df036e8a13" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>get_labels</name></member>
+      <member refid="classshogun_1_1CLabels_1a2337e4bd63d65d8df80b48b09b5b108f" prot="public" virt="virtual"><scope>shogun::CLabels</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CLabels_1a570084f2fee3505cebd5c30b87f83db3" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>get_num_classes</name></member>
+      <member refid="classshogun_1_1CLabels_1a1173be9cc628f88f4335c059add84229" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>get_num_labels</name></member>
+      <member refid="classshogun_1_1CLabels_1ac87e64f37cb4ea581402b0a0ab66168e" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>is_two_class_labeling</name></member>
+      <member refid="classshogun_1_1CLabels_1ad15ddfeaf92aec6eb8aa64292dd6dafc" prot="protected" virt="non-virtual"><scope>shogun::CLabels</scope><name>labels</name></member>
+      <member refid="classshogun_1_1CLabels_1a6e8dd427aa5806abe04a3ffc3f56fb02" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>load</name></member>
+      <member refid="classshogun_1_1CLabels_1a49d2066d15cab4f78f40937b81e63f49" prot="protected" virt="non-virtual"><scope>shogun::CLabels</scope><name>num_labels</name></member>
+      <member refid="classshogun_1_1CLabels_1a8142deede23ed63effc97199d9e01c02" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>save</name></member>
+      <member refid="classshogun_1_1CLabels_1a2543bcfb500e44ec149015959e62387a" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>set_int_label</name></member>
+      <member refid="classshogun_1_1CLabels_1ac4980370e468e844821550deac1a7395" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>set_int_labels</name></member>
+      <member refid="classshogun_1_1CLabels_1aa806dba20d694a9db5d8b05aecf9a2d4" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>set_label</name></member>
+      <member refid="classshogun_1_1CLabels_1a3cddb3338655c4d6275e98d5d87e9d28" prot="public" virt="non-virtual"><scope>shogun::CLabels</scope><name>set_labels</name></member>
+      <member refid="classshogun_1_1CLabels_1abdcc73ea77c72d6655ea6ca914aabbec" prot="public" virt="virtual"><scope>shogun::CLabels</scope><name>~CLabels</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

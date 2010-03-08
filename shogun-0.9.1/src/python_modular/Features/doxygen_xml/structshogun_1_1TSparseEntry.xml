@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structshogun_1_1TSparseEntry" kind="struct" prot="public">
+    <compoundname>shogun::TSparseEntry</compoundname>
+    <includes local="no">SparseFeatures.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class ST</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structshogun_1_1TSparseEntry_1ac68e8ceb2f7be7f7a523ef84bda54f59" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::TSparseEntry&lt; ST &gt;::feat_index</definition>
+        <argsstring></argsstring>
+        <name>feat_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>feature index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="44" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1TSparseEntry_1ad68e7c565d9417a2d33cd339d0357051" prot="public" static="no" mutable="no">
+        <type>ST</type>
+        <definition>ST shogun::TSparseEntry&lt; ST &gt;::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="46" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>template class <ref refid="structshogun_1_1TSparseEntry" kindref="compound">TSparseEntry</ref> </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="156">
+        <label>ST</label>
+      </node>
+      <node id="155">
+        <label>shogun::TSparseEntry&lt; ST &gt;</label>
+        <link refid="structshogun_1_1TSparseEntry"/>
+        <childnode refid="156" relation="usage">
+          <edgelabel>entry</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" line="42" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/SparseFeatures.h" bodystart="41" bodyend="47"/>
+    <listofallmembers>
+      <member refid="structshogun_1_1TSparseEntry_1ad68e7c565d9417a2d33cd339d0357051" prot="public" virt="non-virtual"><scope>shogun::TSparseEntry</scope><name>entry</name></member>
+      <member refid="structshogun_1_1TSparseEntry_1ac68e8ceb2f7be7f7a523ef84bda54f59" prot="public" virt="non-virtual"><scope>shogun::TSparseEntry</scope><name>feat_index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

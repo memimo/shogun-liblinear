@@ -1,0 +1,3420 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CDynProg" kind="class" prot="public">
+    <compoundname>shogun::CDynProg</compoundname>
+    <includes local="no">DynProg.h</includes>
+    <innerclass refid="structshogun_1_1CDynProg_1_1svm__values__struct" prot="protected">shogun::CDynProg::svm_values_struct</innerclass>
+      <sectiondef kind="user-defined">
+      <header>model specific variables.</header>
+      <description><para><anchor id="_1amgrp1cf141028fa58fcd06719f163db4ae7e"/> these are p,q,a,b,N,M etc </para></description>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a87a9ff610de23e7138caa7e8cd727694" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::m_N</definition>
+        <argsstring></argsstring>
+        <name>m_N</name>
+        <briefdescription>
+<para>number of states </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="634" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="634" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a8269382033e1b167abf621eb63b53a16" prot="protected" static="no" mutable="no">
+        <type>CArray2&lt; int32_t &gt;</type>
+        <definition>CArray2&lt;int32_t&gt; shogun::CDynProg::m_transition_matrix_a_id</definition>
+        <argsstring></argsstring>
+        <name>m_transition_matrix_a_id</name>
+        <briefdescription>
+<para>transition matrix </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="637" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a4c47b9cabc13388ad3c3129096bfc4a6" prot="protected" static="no" mutable="no">
+        <type>CArray2&lt; float64_t &gt;</type>
+        <definition>CArray2&lt;float64_t&gt; shogun::CDynProg::m_transition_matrix_a</definition>
+        <argsstring></argsstring>
+        <name>m_transition_matrix_a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="638" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="638" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a511f63dabd93f06bd01dc964937bafbc" prot="protected" static="no" mutable="no">
+        <type>CArray2&lt; float64_t &gt;</type>
+        <definition>CArray2&lt;float64_t&gt; shogun::CDynProg::m_transition_matrix_a_deriv</definition>
+        <argsstring></argsstring>
+        <name>m_transition_matrix_a_deriv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="639" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="639" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a5fff73c136eb13575e3cd63f132af684" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; float64_t &gt;</type>
+        <definition>CArray&lt;float64_t&gt; shogun::CDynProg::m_initial_state_distribution_p</definition>
+        <argsstring></argsstring>
+        <name>m_initial_state_distribution_p</name>
+        <briefdescription>
+<para>initial distribution of states </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="642" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="642" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a824a411121cb7977f59d4b5874a161b4" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; float64_t &gt;</type>
+        <definition>CArray&lt;float64_t&gt; shogun::CDynProg::m_initial_state_distribution_p_deriv</definition>
+        <argsstring></argsstring>
+        <name>m_initial_state_distribution_p_deriv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="643" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="643" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a06679454732f03edee0d159c4dbadc45" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; float64_t &gt;</type>
+        <definition>CArray&lt;float64_t&gt; shogun::CDynProg::m_end_state_distribution_q</definition>
+        <argsstring></argsstring>
+        <name>m_end_state_distribution_q</name>
+        <briefdescription>
+<para>distribution of end-states </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="646" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="646" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1afa07519bfc122f931db360c4bc57f8a3" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; float64_t &gt;</type>
+        <definition>CArray&lt;float64_t&gt; shogun::CDynProg::m_end_state_distribution_q_deriv</definition>
+        <argsstring></argsstring>
+        <name>m_end_state_distribution_q_deriv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="647" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="647" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1ae1255f2d791ac7aa8c5cfc41e5767a53" prot="private" static="no" mutable="no">
+        <type>T_STATES</type>
+        <definition>T_STATES shogun::CDynProg::trans_list_len</definition>
+        <argsstring></argsstring>
+        <name>trans_list_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="598" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="598" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1af792606f40c444f0d7e36fe9d86b1588" prot="private" static="no" mutable="no">
+        <type>T_STATES **</type>
+        <definition>T_STATES** shogun::CDynProg::trans_list_forward</definition>
+        <argsstring></argsstring>
+        <name>trans_list_forward</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="599" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="599" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a0845ab9edbd47a62f966e6995f3b3f8f" prot="private" static="no" mutable="no">
+        <type>T_STATES *</type>
+        <definition>T_STATES* shogun::CDynProg::trans_list_forward_cnt</definition>
+        <argsstring></argsstring>
+        <name>trans_list_forward_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="600" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="600" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a1fa1c2f8995908e89f165b02eec33430" prot="private" static="no" mutable="no">
+        <type>float64_t **</type>
+        <definition>float64_t** shogun::CDynProg::trans_list_forward_val</definition>
+        <argsstring></argsstring>
+        <name>trans_list_forward_val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="601" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="601" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1adbb282553b1dc97a699ff362b1e3611d" prot="private" static="no" mutable="no">
+        <type>int32_t **</type>
+        <definition>int32_t** shogun::CDynProg::trans_list_forward_id</definition>
+        <argsstring></argsstring>
+        <name>trans_list_forward_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="602" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="602" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a01e6d24cc3c5bb0046b30e499ba4cd90" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CDynProg::mem_initialized</definition>
+        <argsstring></argsstring>
+        <name>mem_initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="603" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="603" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a491ca2a2ddebfd4c43200585c5a13ffc" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::m_num_degrees</definition>
+        <argsstring></argsstring>
+        <name>m_num_degrees</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of degress </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="652" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="652" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a4272bb95194b7ead81e483ec753e1093" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::m_num_svms</definition>
+        <argsstring></argsstring>
+        <name>m_num_svms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of SVMs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="654" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="654" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a2305705562cfed632dce6cc8bf7f0a72" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; int32_t &gt;</type>
+        <definition>CArray&lt;int32_t&gt; shogun::CDynProg::m_word_degree</definition>
+        <argsstring></argsstring>
+        <name>m_word_degree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>word degree </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="657" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="657" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1ac15c0acc3c534532b1d487a57adccc19" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; int32_t &gt;</type>
+        <definition>CArray&lt;int32_t&gt; shogun::CDynProg::m_cum_num_words</definition>
+        <argsstring></argsstring>
+        <name>m_cum_num_words</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cum num words </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="659" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="659" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a9a8a96face865ebd212ddaf874b1456a" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CDynProg::m_cum_num_words_array</definition>
+        <argsstring></argsstring>
+        <name>m_cum_num_words_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cum num words array </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="661" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="661" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a050612d271b9714f21d42b202cbf9ff3" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; int32_t &gt;</type>
+        <definition>CArray&lt;int32_t&gt; shogun::CDynProg::m_num_words</definition>
+        <argsstring></argsstring>
+        <name>m_num_words</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>num words </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="663" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="663" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a250835faef7707cb2d0c54ee3382a376" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CDynProg::m_num_words_array</definition>
+        <argsstring></argsstring>
+        <name>m_num_words_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>num words array </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="665" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="665" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a63c810ce96dd7970c755fa889b04c151" prot="protected" static="no" mutable="no">
+        <type>CArray2&lt; int32_t &gt;</type>
+        <definition>CArray2&lt;int32_t&gt; shogun::CDynProg::m_mod_words</definition>
+        <argsstring></argsstring>
+        <name>m_mod_words</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mod words </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="667" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a4d96619a82645f49b07ac106f1cf44d1" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CDynProg::m_mod_words_array</definition>
+        <argsstring></argsstring>
+        <name>m_mod_words_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mod words array </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="669" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="669" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a96dc8c22a51fc28e7b0bc298ba3b999b" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; bool &gt;</type>
+        <definition>CArray&lt;bool&gt; shogun::CDynProg::m_sign_words</definition>
+        <argsstring></argsstring>
+        <name>m_sign_words</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sign words </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="671" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="671" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1add71f311931ef964023b6b377cee8de6" prot="protected" static="no" mutable="no">
+        <type>bool *</type>
+        <definition>bool* shogun::CDynProg::m_sign_words_array</definition>
+        <argsstring></argsstring>
+        <name>m_sign_words_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sign words array </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="673" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="673" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a3ccb4aeae625e7e485d9a645d47ce7c5" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; int32_t &gt;</type>
+        <definition>CArray&lt;int32_t&gt; shogun::CDynProg::m_string_words</definition>
+        <argsstring></argsstring>
+        <name>m_string_words</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>string words </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="675" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="675" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1ab62000a33b8cf7a47bc35c6c324dd10d" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CDynProg::m_string_words_array</definition>
+        <argsstring></argsstring>
+        <name>m_string_words_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>string words array </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="677" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a8e35acdc53c40c83894acb851a0923ea" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; int32_t &gt;</type>
+        <definition>CArray&lt;int32_t&gt; shogun::CDynProg::m_num_unique_words</definition>
+        <argsstring></argsstring>
+        <name>m_num_unique_words</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SVM start position number of unique words </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="682" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="682" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a0aae1b43f228b281cceff027d976a80d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CDynProg::m_svm_arrays_clean</definition>
+        <argsstring></argsstring>
+        <name>m_svm_arrays_clean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SVM arrays clean </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="684" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a02d59272dea65d937fb10c5c33f84a80" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::m_max_a_id</definition>
+        <argsstring></argsstring>
+        <name>m_max_a_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>max a id </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="686" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a5421eb2fa9d936e3c529aaa9682679d1" prot="protected" static="no" mutable="no">
+        <type>CArray3&lt; float64_t &gt;</type>
+        <definition>CArray3&lt;float64_t&gt; shogun::CDynProg::m_observation_matrix</definition>
+        <argsstring></argsstring>
+        <name>m_observation_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sequence </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="690" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a62e0a6fb1416a8d3a5460a392339d868" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; int32_t &gt;</type>
+        <definition>CArray&lt;int32_t&gt; shogun::CDynProg::m_pos</definition>
+        <argsstring></argsstring>
+        <name>m_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>candidate position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="692" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="692" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a46d10d37f4dc0b3a8ad5ec48c8f0cbfc" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::m_seq_len</definition>
+        <argsstring></argsstring>
+        <name>m_seq_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of candidate positions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="694" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a11781de1bcd601aab8953d0b8245f3d0" prot="protected" static="no" mutable="no">
+        <type>CArray2&lt; int32_t &gt;</type>
+        <definition>CArray2&lt;int32_t&gt; shogun::CDynProg::m_orf_info</definition>
+        <argsstring></argsstring>
+        <name>m_orf_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>orf info </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="696" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="696" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1aaa9c61cb2154d1a3f1d48b48fc3cc3e7" prot="protected" static="no" mutable="no">
+        <type>CArray2&lt; float64_t &gt;</type>
+        <definition>CArray2&lt;float64_t&gt; shogun::CDynProg::m_segment_sum_weights</definition>
+        <argsstring></argsstring>
+        <name>m_segment_sum_weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>segment sum weights </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="698" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="698" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1abb8ab472ac1f7face89561f7c1f2e1cd" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; <ref refid="classshogun_1_1CPlifBase" kindref="compound">CPlifBase</ref> * &gt;</type>
+        <definition>CArray&lt;CPlifBase*&gt; shogun::CDynProg::m_plif_list</definition>
+        <argsstring></argsstring>
+        <name>m_plif_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plif list </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="700" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="700" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a50e10327c6f2b04e6e79ec6f6ef5b021" prot="protected" static="no" mutable="no">
+        <type>CArray2&lt; <ref refid="classshogun_1_1CPlifBase" kindref="compound">CPlifBase</ref> * &gt;</type>
+        <definition>CArray2&lt;CPlifBase*&gt; shogun::CDynProg::m_PEN</definition>
+        <argsstring></argsstring>
+        <name>m_PEN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PEN </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="702" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1adcc08092c84c7f1f9e258aedc5ad3009" prot="protected" static="no" mutable="no">
+        <type>CArray2&lt; <ref refid="classshogun_1_1CPlifBase" kindref="compound">CPlifBase</ref> * &gt;</type>
+        <definition>CArray2&lt;CPlifBase*&gt; shogun::CDynProg::m_PEN_state_signals</definition>
+        <argsstring></argsstring>
+        <name>m_PEN_state_signals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PEN state signals </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="704" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="704" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a77f141d71b89c12d73adad8c92107acd" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; char &gt;</type>
+        <definition>CArray&lt;char&gt; shogun::CDynProg::m_genestr</definition>
+        <argsstring></argsstring>
+        <name>m_genestr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a single string (to be segmented) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="706" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="706" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1aca2b388e76c5ba7faa3ba310b50ee186" prot="protected" static="no" mutable="no">
+        <type>uint16_t ***</type>
+        <definition>uint16_t*** shogun::CDynProg::m_wordstr</definition>
+        <argsstring></argsstring>
+        <name>m_wordstr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>wordstr is a vector of L n-gram indices, with wordstr(i) representing a number betweeen 0 and 4095 corresponding to the 6-mer in genestr(i-5:i) pos is a vector of candidate transition positions (it is input to compute_nbest_paths) t_end is some index in pos</para><para>svs has been initialized by init_svm_values</para><para>At the end of this procedure, svs.svm_values[i+s*svs.seqlen] has the value of the s-th SVM on genestr(pos(t_end-i):pos(t_end)) for every i satisfying pos(t_end)-pos(t_end-i) &lt;= svs.maxlookback</para><para>The SVM weights are precomputed in m_dict_weights </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="721" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="721" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1abe5b6d3785492d25009d8516454b1539" prot="protected" static="no" mutable="no">
+        <type>CArray2&lt; float64_t &gt;</type>
+        <definition>CArray2&lt;float64_t&gt; shogun::CDynProg::m_dict_weights</definition>
+        <argsstring></argsstring>
+        <name>m_dict_weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dict weights </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="723" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="723" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a02a90f9b50b711654f99c288807e38b8" prot="protected" static="no" mutable="no">
+        <type>CArray3&lt; float64_t &gt;</type>
+        <definition>CArray3&lt;float64_t&gt; shogun::CDynProg::m_segment_loss</definition>
+        <argsstring></argsstring>
+        <name>m_segment_loss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>segment loss </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="725" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="725" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1af846b4f080fefbce236d2e8506fd5d25" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; int32_t &gt;</type>
+        <definition>CArray&lt;int32_t&gt; shogun::CDynProg::m_segment_ids</definition>
+        <argsstring></argsstring>
+        <name>m_segment_ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>segment IDs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="727" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="727" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a2847bbb709d562fe541c0813124c5220" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; float64_t &gt;</type>
+        <definition>CArray&lt;float64_t&gt; shogun::CDynProg::m_segment_mask</definition>
+        <argsstring></argsstring>
+        <name>m_segment_mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>segment mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="729" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="729" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1af5cbe1f321d001690096011ae10574ee" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; int32_t &gt;</type>
+        <definition>CArray&lt;int32_t&gt; shogun::CDynProg::m_my_state_seq</definition>
+        <argsstring></argsstring>
+        <name>m_my_state_seq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>my state seq </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="731" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="731" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a338f0cd2caf7040f6932daddfd9e9849" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; int32_t &gt;</type>
+        <definition>CArray&lt;int32_t&gt; shogun::CDynProg::m_my_pos_seq</definition>
+        <argsstring></argsstring>
+        <name>m_my_pos_seq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>my position sequence </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="733" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="733" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a3216043f63efacce48c79f518ed8c9bf" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; float64_t &gt;</type>
+        <definition>CArray&lt;float64_t&gt; shogun::CDynProg::m_my_scores</definition>
+        <argsstring></argsstring>
+        <name>m_my_scores</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>my scores </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="735" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="735" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a93697d06bdca997d147fbe1c790d6c6c" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; float64_t &gt;</type>
+        <definition>CArray&lt;float64_t&gt; shogun::CDynProg::m_my_losses</definition>
+        <argsstring></argsstring>
+        <name>m_my_losses</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>my losses </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="737" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="737" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1ae37419be66144a0e844a39f48a9e20f0" prot="protected" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1CSegmentLoss" kindref="compound">CSegmentLoss</ref> *</type>
+        <definition>CSegmentLoss* shogun::CDynProg::m_seg_loss_obj</definition>
+        <argsstring></argsstring>
+        <name>m_seg_loss_obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>segment loss object containing the functions to compute the segment loss </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="741" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="741" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a6a7f64c53feee2c6614c0e680e7ef6f1" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; float64_t &gt;</type>
+        <definition>CArray&lt;float64_t&gt; shogun::CDynProg::m_scores</definition>
+        <argsstring></argsstring>
+        <name>m_scores</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>scores </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="745" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="745" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a0c9bddab0318618831c0f324775d0aca" prot="protected" static="no" mutable="no">
+        <type>CArray2&lt; int32_t &gt;</type>
+        <definition>CArray2&lt;int32_t&gt; shogun::CDynProg::m_states</definition>
+        <argsstring></argsstring>
+        <name>m_states</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>states </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="747" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="747" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a5d44176d516f3528fae6485431b55cb7" prot="protected" static="no" mutable="no">
+        <type>CArray2&lt; int32_t &gt;</type>
+        <definition>CArray2&lt;int32_t&gt; shogun::CDynProg::m_positions</definition>
+        <argsstring></argsstring>
+        <name>m_positions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>positions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="749" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="749" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1afc7f484b3fe7abe2b2841e2cecdcd7a3" prot="protected" static="no" mutable="no">
+        <type>CSparseFeatures&lt; float64_t &gt; *</type>
+        <definition>CSparseFeatures&lt;float64_t&gt;* shogun::CDynProg::m_seq_sparse1</definition>
+        <argsstring></argsstring>
+        <name>m_seq_sparse1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sparse feature matrix dim1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="752" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="752" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1ae811a928cfa53a4fe3a5f69e82cab111" prot="protected" static="no" mutable="no">
+        <type>CSparseFeatures&lt; float64_t &gt; *</type>
+        <definition>CSparseFeatures&lt;float64_t&gt;* shogun::CDynProg::m_seq_sparse2</definition>
+        <argsstring></argsstring>
+        <name>m_seq_sparse2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sparse feature matrix dim2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="754" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="754" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1affe34071579a106bfed895f8bc87c590" prot="protected" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1CPlifMatrix" kindref="compound">CPlifMatrix</ref> *</type>
+        <definition>CPlifMatrix* shogun::CDynProg::m_plif_matrices</definition>
+        <argsstring></argsstring>
+        <name>m_plif_matrices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>plif matrices </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="756" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="756" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1afc1572af9c3e49ba712933d2440aace9" prot="protected" static="no" mutable="no">
+        <type>CArray&lt; bool &gt;</type>
+        <definition>CArray&lt;bool&gt; shogun::CDynProg::m_genestr_stop</definition>
+        <argsstring></argsstring>
+        <name>m_genestr_stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>storeage of stop codons array of size length(sequence) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="761" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="761" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a3793dd907c1277db043ae091c1b1c8b3" prot="protected" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1CIntronList" kindref="compound">CIntronList</ref> *</type>
+        <definition>CIntronList* shogun::CDynProg::m_intron_list</definition>
+        <argsstring></argsstring>
+        <name>m_intron_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>administers a list of introns and quality scores and provides functions for fast access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="765" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a38b76a4dc5957efe005e3f9b471cd806" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::m_num_intron_plifs</definition>
+        <argsstring></argsstring>
+        <name>m_num_intron_plifs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of intron features and plifs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="768" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="768" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a7dc49703bbd30083d5cc3c934b062a42" prot="protected" static="no" mutable="no">
+        <type>CArray2&lt; float64_t &gt;</type>
+        <definition>CArray2&lt;float64_t&gt; shogun::CDynProg::m_lin_feat</definition>
+        <argsstring></argsstring>
+        <name>m_lin_feat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>array for storage of precomputed linear features linge content svm values or pliffed tiling data Jonas </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="774" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="774" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1aaa0f9431e0bf1f601e4ea3ab7d3dae0e" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CDynProg::m_raw_intensities</definition>
+        <argsstring></argsstring>
+        <name>m_raw_intensities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>raw intensities </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="777" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="777" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a48dc5c7d04d1b9fa56947f7d67a04514" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CDynProg::m_probe_pos</definition>
+        <argsstring></argsstring>
+        <name>m_probe_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>probe position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="779" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="779" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1adb109317ef1745bbae0be694dd5b207a" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CDynProg::m_num_probes_cum</definition>
+        <argsstring></argsstring>
+        <name>m_num_probes_cum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of probes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="781" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="781" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a447013b898bd58ff2754564c66cd68a8" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CDynProg::m_num_lin_feat_plifs_cum</definition>
+        <argsstring></argsstring>
+        <name>m_num_lin_feat_plifs_cum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>num lin feat plifs cum </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="783" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="783" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a37c3eb48fad97f79fabee83bd2dfa113" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::m_num_raw_data</definition>
+        <argsstring></argsstring>
+        <name>m_num_raw_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of additional data tracks like tiling, RNA-Seq, ... </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="785" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="785" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1ac6852b788fa74e6c906ba1623944533a" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CDynProg::m_long_transitions</definition>
+        <argsstring></argsstring>
+        <name>m_long_transitions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>use long transition approximation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="788" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="788" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a527ef4e02c718f368daae18db7af87dc" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::m_long_transition_threshold</definition>
+        <argsstring></argsstring>
+        <name>m_long_transition_threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>threshold for transitions that are computed the traditional way </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="791" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="791" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a58bec03170a3117a85fdd561682a09ce" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::m_long_transition_max</definition>
+        <argsstring></argsstring>
+        <name>m_long_transition_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximal length of a long transition Note: is ignored in the current implementation =&gt; arbitrarily long transitions can be decoded </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="796" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="796" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a0a6045300c4365627d316341ce15871a" prot="protected" static="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::word_degree_default[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>word_degree_default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default values defining the k-mer degrees used for content type prediction </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="801" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="801" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1aa14690a784450855e9ba3b1add7def5a" prot="protected" static="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::cum_num_words_default[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>cum_num_words_default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default values storing the cumulative sum of the number of kmers that exist for the different degrees e.g. matlab spoken: cumsum(4.^[3 4 5 6]) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="806" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="806" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a02c46d89700b4d298f7687fe5a118f32" prot="protected" static="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::frame_plifs[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>frame_plifs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default values defining which of the plif are the frame specific plifs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="810" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="810" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a7d27c754e3aa2b324435b29fd601ac63" prot="protected" static="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::num_words_default[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>num_words_default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default values like cum_num_words_default but not cumsumed: e.g. 4.^[3 4 5 6] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="814" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="814" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1aa1be30c471dc51a0d07669bb9d4777d8" prot="protected" static="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::mod_words_default[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>mod_words_default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default values </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="817" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="817" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1a73e8729c28902263d5a47fc951e565ab" prot="protected" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CDynProg::sign_words_default[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>sign_words_default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default values </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="820" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="820" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CDynProg_1acab12862415217b452780a6339cc1a46" prot="protected" static="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::string_words_default[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>string_words_default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default values </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="823" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="823" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a90387986b54b64f9cc27217e70464a51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CDynProg::CDynProg</definition>
+        <argsstring>(int32_t p_num_svms=8)</argsstring>
+        <name>CDynProg</name>
+        <param>
+          <type>int32_t</type>
+          <declname>p_num_svms</declname>
+          <defval>8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_num_svms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of SVMs </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1aad270d97ff8ccc82965da813bc329a9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CDynProg::~CDynProg</definition>
+        <argsstring>()</argsstring>
+        <name>~CDynProg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1aae11ef129fd446c7a071d1452edc0be6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CDynProg::best_path_no_b</definition>
+        <argsstring>(int32_t max_iter, int32_t &amp;best_iter, int32_t *my_path)</argsstring>
+        <name>best_path_no_b</name>
+        <param>
+          <type>int32_t</type>
+          <declname>max_iter</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>best_iter</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>my_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>best path no b</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max iter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>best_iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>best iter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>my_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>my path</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>best path no b </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a681c68a4979d9594b48c3b8b4d6d4861" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::best_path_no_b_trans</definition>
+        <argsstring>(int32_t max_iter, int32_t &amp;max_best_iter, int16_t nbest, float64_t *prob_nbest, int32_t *my_paths)</argsstring>
+        <name>best_path_no_b_trans</name>
+        <param>
+          <type>int32_t</type>
+          <declname>max_iter</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>max_best_iter</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>nbest</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>prob_nbest</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>my_paths</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>best path no b transition</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max iter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_best_iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max best iter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nbest </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prob_nbest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>prob_nbest </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>my_paths</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>my paths </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a8e08e34132a0a1936e89afa83e3b4c8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_num_states</definition>
+        <argsstring>(int32_t N)</argsstring>
+        <name>set_num_states</name>
+        <param>
+          <type>int32_t</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set number of states use this to set N first</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new N </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a9eeb9a44641ea1f2afcf138ef5a50925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::get_num_states</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_states</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get num states </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ac455e8b04527bfe84334ca50a41f7386" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::get_num_svms</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_svms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get num svms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a92cc32087e300302642f3553b73a48ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::init_content_svm_value_array</definition>
+        <argsstring>(const int32_t p_num_svms)</argsstring>
+        <name>init_content_svm_value_array</name>
+        <param>
+          <type>const int32_t</type>
+          <declname>p_num_svms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>init CArray for precomputed content svm values with size seq_len x num_svms</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_num_svms</parametername>
+<parametername>:</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of svm weight vectors for content prediction </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ab63d1b6838564b23d7b806598521a601" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::init_tiling_data</definition>
+        <argsstring>(int32_t *probe_pos, float64_t *intensities, const int32_t num_probes)</argsstring>
+        <name>init_tiling_data</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>probe_pos</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>intensities</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>num_probes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>init CArray for precomputed tiling intensitie-plif-values with size seq_len x num_svms</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>probe_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>local positions of probes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intensities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>intensities of probes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_probes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of probes </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a8cb7a72c3094858bd749a468c77e2d4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::precompute_tiling_plifs</definition>
+        <argsstring>(CPlif **PEN, const int32_t *tiling_plif_ids, const int32_t num_tiling_plifs)</argsstring>
+        <name>precompute_tiling_plifs</name>
+        <param>
+          <type><ref refid="classshogun_1_1CPlif" kindref="compound">CPlif</ref> **</type>
+          <declname>PEN</declname>
+        </param>
+        <param>
+          <type>const int32_t *</type>
+          <declname>tiling_plif_ids</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>num_tiling_plifs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>precompute tiling Plifs</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PEN</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Plif PEN </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tiling_plif_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tiling plif id&apos;s </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_tiling_plifs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of tiling plifs </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1aa2b748ff0f1dbebca7dd8223d4ccaf49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::resize_lin_feat</definition>
+        <argsstring>(int32_t num_new_feat)</argsstring>
+        <name>resize_lin_feat</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num_new_feat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>append rows to linear features array</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_new_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of new rows to add </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a1cfe6d29017de714d45880e88136aad1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_p_vector</definition>
+        <argsstring>(float64_t *p, int32_t N)</argsstring>
+        <name>set_p_vector</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set vector p</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new vector p </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of vector p </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a703d4c423df0c47c55791bdbc4fc9cc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_q_vector</definition>
+        <argsstring>(float64_t *q, int32_t N)</argsstring>
+        <name>set_q_vector</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set vector q</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new vector q </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of vector q </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ada2e685b6a5ddf086dfc8909de7c04f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_a</definition>
+        <argsstring>(float64_t *a, int32_t M, int32_t N)</argsstring>
+        <name>set_a</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set matrix a</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new matrix a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>M</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension M of matrix a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension N of matrix a </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1aa32409a780b1aff7aa49554cb05d751e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_a_id</definition>
+        <argsstring>(int32_t *a, int32_t M, int32_t N)</argsstring>
+        <name>set_a_id</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set a id</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new a id (identity?) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>M</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension M of matrix a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension N of matrix a </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a6f4be6b17da85f9c1cb2e943bd2fac33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_a_trans_matrix</definition>
+        <argsstring>(float64_t *a_trans, int32_t num_trans, int32_t N)</argsstring>
+        <name>set_a_trans_matrix</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>a_trans</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_trans</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set a transition matrix</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a_trans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>transition matrix a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_trans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of transitions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension N of matrix a </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a7438fa6e9fbb8a237d8f3b179482d385" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::init_mod_words_array</definition>
+        <argsstring>(int32_t *p_mod_words_array, int32_t num_elem, int32_t num_columns)</argsstring>
+        <name>init_mod_words_array</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>p_mod_words_array</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_elem</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_columns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>init mod words array</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_mod_words_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new mod words array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_elem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of array elements </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_columns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of columns </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1adffa58ec8ba3719b5dd2af3f6cf9af15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CDynProg::check_svm_arrays</definition>
+        <argsstring>()</argsstring>
+        <name>check_svm_arrays</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check SVM arrays call this function to check consistency</para><para><simplesect kind="return"><para>whether arrays are ok </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a0121e2ecb5620e0ed6bc97e42e944759" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_observation_matrix</definition>
+        <argsstring>(float64_t *seq, int32_t *dims, int32_t ndims)</argsstring>
+        <name>set_observation_matrix</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>seq</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>dims</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>ndims</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set best path seq</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>signal features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dims</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimensions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ndims</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of dimensions </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ac15d6acf573bd48bd83fe147d2c7ec05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::get_num_positions</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_positions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of positions; the dynamic program is sparse encoded and this function gives the number of positions that can actually be part of a predicted path</para><para><simplesect kind="return"><para>number of positions </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ae3c9be4aaca57e5b7fa671507cc6a24c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_content_type_array</definition>
+        <argsstring>(float64_t *seg_path, int32_t rows, int32_t cols)</argsstring>
+        <name>set_content_type_array</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>seg_path</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set an array of length #(candidate positions) which specifies the content type of each pos and a mask that determines to which extend the loss should be applied to this position; this is a way to encode label confidence via weights between zero and one</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seg_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>seg path </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rows </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cols </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ab6cd50803b7b7a7e72d560c3fea1b187" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_pos</definition>
+        <argsstring>(int32_t *pos, int32_t seq_len)</argsstring>
+        <name>set_pos</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>seq_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set best path pos</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seq_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of sequence </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a42758542a4a10ee1efe2fd1665a62b16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_orf_info</definition>
+        <argsstring>(int32_t *orf_info, int32_t m, int32_t n)</argsstring>
+        <name>set_orf_info</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>orf_info</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set best path orf info only for compute_nbest_paths</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orf_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the orf info </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension m </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension n </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a32719571fb06dc8ffcce3e4ae9191d3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_gene_string</definition>
+        <argsstring>(char *genestr, int32_t genestr_len)</argsstring>
+        <name>set_gene_string</name>
+        <param>
+          <type>char *</type>
+          <declname>genestr</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>genestr_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set best path genesstr</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>genestr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gene string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>genestr_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of gene string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ab9903f1e289079c8eea468ece1225731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_dict_weights</definition>
+        <argsstring>(float64_t *dictionary_weights, int32_t dict_len, int32_t n)</argsstring>
+        <name>set_dict_weights</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>dictionary_weights</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dict_len</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set best path dict weights</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dictionary_weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dictionary weights </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dict_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of dictionary weights </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension n </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a091389fcc1d38a14d01f67c0ed549578" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::best_path_set_segment_loss</definition>
+        <argsstring>(float64_t *segment_loss, int32_t num_segment_id1, int32_t num_segment_id2)</argsstring>
+        <name>best_path_set_segment_loss</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>segment_loss</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_segment_id1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_segment_id2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set best path segment loss</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>segment_loss</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>segment loss </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_segment_id1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of segment id1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_segment_id2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of segment id2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a894ea4911d12c6e0265bb6e93f8b280a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::best_path_set_segment_ids_mask</definition>
+        <argsstring>(int32_t *segment_ids, float64_t *segment_mask, int32_t m)</argsstring>
+        <name>best_path_set_segment_ids_mask</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>segment_ids</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>segment_mask</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set best path segmend ids mask</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>segment_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>segment ids </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>segment_mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>segment mask </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension m </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a2853b10628bae17ce2ee81a681246429" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_sparse_features</definition>
+        <argsstring>(CSparseFeatures&lt; float64_t &gt; *seq_sparse1, CSparseFeatures&lt; float64_t &gt; *seq_sparse2)</argsstring>
+        <name>set_sparse_features</name>
+        <param>
+          <type>CSparseFeatures&lt; float64_t &gt; *</type>
+          <declname>seq_sparse1</declname>
+        </param>
+        <param>
+          <type>CSparseFeatures&lt; float64_t &gt; *</type>
+          <declname>seq_sparse2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set sparse feature matrices </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ac83138b8e70e8ee3b3c73121d65f5f24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_plif_matrices</definition>
+        <argsstring>(CPlifMatrix *pm)</argsstring>
+        <name>set_plif_matrices</name>
+        <param>
+          <type><ref refid="classshogun_1_1CPlifMatrix" kindref="compound">CPlifMatrix</ref> *</type>
+          <declname>pm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set plif matrices</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>plif matrix object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ab25110f663d4a75fb9112c750dded217" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::get_scores</definition>
+        <argsstring>(float64_t **scores, int32_t *n)</argsstring>
+        <name>get_scores</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>scores</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>best path get scores</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scores</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scores </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension n </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a2d4564a395fba0b18720788481f0cbbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::get_states</definition>
+        <argsstring>(int32_t **states, int32_t *m, int32_t *n)</argsstring>
+        <name>get_states</name>
+        <param>
+          <type>int32_t **</type>
+          <declname>states</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>best path get states</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>states </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension m </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension n </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a169c3259de3e4bf11a4899a96b9fd46e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::get_positions</definition>
+        <argsstring>(int32_t **positions, int32_t *m, int32_t *n)</argsstring>
+        <name>get_positions</name>
+        <param>
+          <type>int32_t **</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>best path get positions</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>positions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension m </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimension n </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ac0b08e62e7b9a6a4ef68e421f534585b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::compute_nbest_paths</definition>
+        <argsstring>(int32_t max_num_signals, bool use_orf, int16_t nbest, bool with_loss, bool with_multiple_sequences)</argsstring>
+        <name>compute_nbest_paths</name>
+        <param>
+          <type>int32_t</type>
+          <declname>max_num_signals</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>use_orf</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>nbest</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>with_loss</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>with_multiple_sequences</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>run the viterbi algorithm to compute the n best viterbi paths</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_num_signals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximal number of signals for a single state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>use_orf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether orf shall be used </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of best paths (n) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>with_loss</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>use loss </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>with_multiple_sequences</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>!!!not functional set to false!!! </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ab845982d2ca34936a71b6c0329664541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::best_path_trans_deriv</definition>
+        <argsstring>(int32_t *my_state_seq, int32_t *my_pos_seq, int32_t my_seq_len, const float64_t *seq_array, int32_t max_num_signals)</argsstring>
+        <name>best_path_trans_deriv</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>my_state_seq</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>my_pos_seq</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>my_seq_len</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>seq_array</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max_num_signals</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>given a path though the state model and the corresponding positions compute the features. This can be seen as the derivative of the score (output of dynamic program) with respect to the parameters</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>my_state_seq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>state sequence of the path </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>my_pos_seq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sequence of positions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>my_seq_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of state and position sequences </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seq_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_num_signals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximal number of signals </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="322"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a4639afe43fc2122b1223138500c12e3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_my_state_seq</definition>
+        <argsstring>(int32_t *my_state_seq)</argsstring>
+        <name>set_my_state_seq</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>my_state_seq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set best path my state sequence</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>my_state_seq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>my state sequence </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1aa2f98566c92171e823a16ae21e36ecb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_my_pos_seq</definition>
+        <argsstring>(int32_t *my_pos_seq)</argsstring>
+        <name>set_my_pos_seq</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>my_pos_seq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set best path my position sequence</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>my_pos_seq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>my position sequence </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="335"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ac8ca433aa080e39da372e082cd82ce6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::get_path_scores</definition>
+        <argsstring>(float64_t **my_scores, int32_t *seq_len)</argsstring>
+        <name>get_path_scores</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>my_scores</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>seq_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get path scores</para><para>best_path_trans_deriv result retrieval functions</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>my_scores</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scores </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seq_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of sequence </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a10a81b8f37449ac43176ec8fce840134" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::get_path_losses</definition>
+        <argsstring>(float64_t **my_losses, int32_t *seq_len)</argsstring>
+        <name>get_path_losses</name>
+        <param>
+          <type>float64_t **</type>
+          <declname>my_losses</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>seq_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get path losses</para><para>best_path_trans_deriv result retrieval functions</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>my_losses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>my losses </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seq_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of sequence </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ab571c2d0c0951338fa323114597680d6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T_STATES</type>
+        <definition>T_STATES shogun::CDynProg::get_N</definition>
+        <argsstring>() const </argsstring>
+        <name>get_N</name>
+        <briefdescription>
+<para>access function for number of states N </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="358" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="357" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1af773e32dde29d4e2b0fe671a1430bb9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_q</definition>
+        <argsstring>(T_STATES offset, float64_t value)</argsstring>
+        <name>set_q</name>
+        <param>
+          <type>T_STATES</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>access function for probability of end states <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 0...N-1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to be set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="367" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="366" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ab3f3bdbd76cd3c7a756baab68149cde0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_p</definition>
+        <argsstring>(T_STATES offset, float64_t value)</argsstring>
+        <name>set_p</name>
+        <param>
+          <type>T_STATES</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>access function for probability of first state <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 0...N-1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to be set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="376" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="375" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a820775bdbdf7a99cd15974e7e6c4acc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_a</definition>
+        <argsstring>(T_STATES line_, T_STATES column, float64_t value)</argsstring>
+        <name>set_a</name>
+        <param>
+          <type>T_STATES</type>
+          <declname>line_</declname>
+        </param>
+        <param>
+          <type>T_STATES</type>
+          <declname>column</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>access function for matrix a</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>row in matrix 0...N-1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>column in matrix 0...N-1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to be set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="387" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="386" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a2e4b6a0bdcbf9359011ba4108d40295f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CDynProg::get_q</definition>
+        <argsstring>(T_STATES offset) const </argsstring>
+        <name>get_q</name>
+        <param>
+          <type>T_STATES</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>access function for probability of end states</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 0...N-1 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value at offset </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="397" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="396" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a8be685920a6b621b4b03b5dccf7f2f85" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CDynProg::get_q_deriv</definition>
+        <argsstring>(T_STATES offset) const </argsstring>
+        <name>get_q_deriv</name>
+        <param>
+          <type>T_STATES</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>access function for derivated probability of end states</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 0...N-1 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value at offset </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="407" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="406" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a303574c854f2e305c3e7bad6f37965cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CDynProg::get_p</definition>
+        <argsstring>(T_STATES offset) const </argsstring>
+        <name>get_p</name>
+        <param>
+          <type>T_STATES</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>access function for probability of initial states</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 0...N-1 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value at offset </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="417" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="416" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1aa9c10f4c147e97fa51056001aa270839" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CDynProg::get_p_deriv</definition>
+        <argsstring>(T_STATES offset) const </argsstring>
+        <name>get_p_deriv</name>
+        <param>
+          <type>T_STATES</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>access function for derivated probability of initial states</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index 0...N-1 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value at offset </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="427" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="426" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1aba51c576831259f276d884a0af531a8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::precompute_content_values</definition>
+        <argsstring>()</argsstring>
+        <name>precompute_content_values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>create array of precomputed content svm values </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="434"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a0de99379035bc5de00a9b2d6a3736f2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CDynProg::get_lin_feat</definition>
+        <argsstring>(int32_t &amp;dim1, int32_t &amp;dim2)</argsstring>
+        <name>get_lin_feat</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>dim1</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>dim2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return array of precomputed linear features like content predictions and PLiFed tiling array data Jonas</para><para><simplesect kind="return"><para>lin_feat_array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="443" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="442" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ad79e8200e7720c14dfe4e4d41ab1ed5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_lin_feat</definition>
+        <argsstring>(float64_t *p_lin_feat, int32_t p_num_svms, int32_t p_seq_len)</argsstring>
+        <name>set_lin_feat</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>p_lin_feat</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_num_svms</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_seq_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set your own array of precomputed linear features like content predictions and PLiFed tiling array data Jonas</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_lin_feat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_num_svms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of tracks </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_seq_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of candidate positions </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="456" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="455" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a8673f806bb798912e92357946d0e515e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::create_word_string</definition>
+        <argsstring>()</argsstring>
+        <name>create_word_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>create word string from char* Jonas </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="463"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a912b9173d4bda3d3302a11eceec1e5a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::precompute_stop_codons</definition>
+        <argsstring>()</argsstring>
+        <name>precompute_stop_codons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>precompute stop codons </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="467"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a747444914a2826a014d60498b70ee3de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CDynProg::get_a</definition>
+        <argsstring>(T_STATES line_, T_STATES column) const </argsstring>
+        <name>get_a</name>
+        <param>
+          <type>T_STATES</type>
+          <declname>line_</declname>
+        </param>
+        <param>
+          <type>T_STATES</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>access function for matrix a</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>row in matrix 0...N-1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>column in matrix 0...N-1 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value at position line colum </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="476" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="475" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ade1447024b78228c5804399b9bc0a60e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CDynProg::get_a_deriv</definition>
+        <argsstring>(T_STATES line_, T_STATES column) const </argsstring>
+        <name>get_a_deriv</name>
+        <param>
+          <type>T_STATES</type>
+          <declname>line_</declname>
+        </param>
+        <param>
+          <type>T_STATES</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>access function for matrix a derivated</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>row in matrix 0...N-1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>column in matrix 0...N-1 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value at position line colum </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="487" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="486" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1aba0d5077e3ecf78e576abfaf6511affd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::set_intron_list</definition>
+        <argsstring>(CIntronList *intron_list, int32_t num_plifs)</argsstring>
+        <name>set_intron_list</name>
+        <param>
+          <type><ref refid="classshogun_1_1CIntronList" kindref="compound">CIntronList</ref> *</type>
+          <declname>intron_list</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_plifs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set intron list</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intron_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_plifs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of intron plifs </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="496"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a1c244c0e892c0cc480d119497c06b82f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CSegmentLoss" kindref="compound">CSegmentLoss</ref> *</type>
+        <definition>CSegmentLoss* shogun::CDynProg::get_segment_loss_object</definition>
+        <argsstring>()</argsstring>
+        <name>get_segment_loss_object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the segment loss object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="500" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="499" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a8c6fa5d426a6939a372df7f23da44b81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::long_transition_settings</definition>
+        <argsstring>(bool use_long_transitions, int32_t threshold, int32_t max_len)</argsstring>
+        <name>long_transition_settings</name>
+        <param>
+          <type>bool</type>
+          <declname>use_long_transitions</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>threshold</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>settings for long transition handling</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>use_long_transitions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>use the long transition approximation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>use long transition for segments larger than </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>allow transitions up to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="511" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="510" bodyend="515"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a7f1bafc13d90e80268a97956e09f9f3c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::lookup_content_svm_values</definition>
+        <argsstring>(const int32_t from_state, const int32_t to_state, const int32_t from_pos, const int32_t to_pos, float64_t *svm_values, int32_t frame)</argsstring>
+        <name>lookup_content_svm_values</name>
+        <param>
+          <type>const int32_t</type>
+          <declname>from_state</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>to_state</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>from_pos</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>to_pos</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>svm_values</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>lookup content SVM values</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>from_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>from state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>from_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>from position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svm_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SVM values </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="532"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a7a3a6ae28d99bdc91d2722b68c4561dd" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CDynProg::lookup_tiling_plif_values</definition>
+        <argsstring>(const int32_t from_state, const int32_t to_state, const int32_t len, float64_t *svm_values)</argsstring>
+        <name>lookup_tiling_plif_values</name>
+        <param>
+          <type>const int32_t</type>
+          <declname>from_state</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>to_state</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>svm_values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>lookup tiling Plif values</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>from_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>from state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svm_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SVM values </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="542"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1af7c1e2e41226fe4b3df8b84c17c14551" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::find_frame</definition>
+        <argsstring>(const int32_t from_state)</argsstring>
+        <name>find_frame</name>
+        <param>
+          <type>const int32_t</type>
+          <declname>from_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>find frame</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>from_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>from state </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="548"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a0b09f303dd35670d39aa6eb0e037ba46" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CDynProg::raw_intensities_interval_query</definition>
+        <argsstring>(const int32_t from_pos, const int32_t to_pos, float64_t *intensities, int32_t type)</argsstring>
+        <name>raw_intensities_interval_query</name>
+        <param>
+          <type>const int32_t</type>
+          <declname>from_pos</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>to_pos</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>intensities</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>raw intensities interval query</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>from_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>from position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intensities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>intensities </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an integer </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="559"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1a0d24f308aa7750385176ed2c241295e6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CDynProg::extend_orf</definition>
+        <argsstring>(int32_t orf_from, int32_t orf_to, int32_t start, int32_t &amp;last_pos, int32_t to)</argsstring>
+        <name>extend_orf</name>
+        <param>
+          <type>int32_t</type>
+          <declname>orf_from</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>orf_to</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>last_pos</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>extend orf</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orf_from</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>orf from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>orf_to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>orf to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>last position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="591"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDynProg_1ad4f5caaf19113966f2b26d71c74ca0da" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CDynProg::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="594" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="594" bodyend="594"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Dynamic Programming Class. </para>    </briefdescription>
+    <detaileddescription>
+<para>Structure and Function collection. This Class implements a Dynamic Programming functions. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>shogun::CPlifBase</label>
+        <link refid="classshogun_1_1CPlifBase"/>
+      </node>
+      <node id="3">
+        <label>shogun::CPlif</label>
+        <link refid="classshogun_1_1CPlif"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>shogun::CDynProg</label>
+        <link refid="classshogun_1_1CDynProg"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_plif_matrices</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>m_seg_loss_obj</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>m_intron_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>shogun::CSegmentLoss</label>
+        <link refid="classshogun_1_1CSegmentLoss"/>
+      </node>
+      <node id="2">
+        <label>shogun::CPlifMatrix</label>
+        <link refid="classshogun_1_1CPlifMatrix"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_PEN</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_state_signals</edgelabel>
+          <edgelabel>m_plif_matrix</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>shogun::CIntronList</label>
+        <link refid="classshogun_1_1CIntronList"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" line="60" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/DynProg.h" bodystart="59" bodyend="824"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CDynProg_1aae11ef129fd446c7a071d1452edc0be6" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>best_path_no_b</name></member>
+      <member refid="classshogun_1_1CDynProg_1a681c68a4979d9594b48c3b8b4d6d4861" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>best_path_no_b_trans</name></member>
+      <member refid="classshogun_1_1CDynProg_1a894ea4911d12c6e0265bb6e93f8b280a" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>best_path_set_segment_ids_mask</name></member>
+      <member refid="classshogun_1_1CDynProg_1a091389fcc1d38a14d01f67c0ed549578" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>best_path_set_segment_loss</name></member>
+      <member refid="classshogun_1_1CDynProg_1ab845982d2ca34936a71b6c0329664541" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>best_path_trans_deriv</name></member>
+      <member refid="classshogun_1_1CDynProg_1a90387986b54b64f9cc27217e70464a51" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>CDynProg</name></member>
+      <member refid="classshogun_1_1CDynProg_1adffa58ec8ba3719b5dd2af3f6cf9af15" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>check_svm_arrays</name></member>
+      <member refid="classshogun_1_1CDynProg_1ac0b08e62e7b9a6a4ef68e421f534585b" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>compute_nbest_paths</name></member>
+      <member refid="classshogun_1_1CDynProg_1a8673f806bb798912e92357946d0e515e" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>create_word_string</name></member>
+      <member refid="classshogun_1_1CDynProg_1aa14690a784450855e9ba3b1add7def5a" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>cum_num_words_default</name></member>
+      <member refid="classshogun_1_1CDynProg_1a0d24f308aa7750385176ed2c241295e6" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>extend_orf</name></member>
+      <member refid="classshogun_1_1CDynProg_1af7c1e2e41226fe4b3df8b84c17c14551" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>find_frame</name></member>
+      <member refid="classshogun_1_1CDynProg_1a02c46d89700b4d298f7687fe5a118f32" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>frame_plifs</name></member>
+      <member refid="classshogun_1_1CDynProg_1a747444914a2826a014d60498b70ee3de" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_a</name></member>
+      <member refid="classshogun_1_1CDynProg_1ade1447024b78228c5804399b9bc0a60e" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_a_deriv</name></member>
+      <member refid="classshogun_1_1CDynProg_1a0de99379035bc5de00a9b2d6a3736f2e" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_lin_feat</name></member>
+      <member refid="classshogun_1_1CDynProg_1ab571c2d0c0951338fa323114597680d6" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_N</name></member>
+      <member refid="classshogun_1_1CDynProg_1ad4f5caaf19113966f2b26d71c74ca0da" prot="protected" virt="virtual"><scope>shogun::CDynProg</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CDynProg_1ac15d6acf573bd48bd83fe147d2c7ec05" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_num_positions</name></member>
+      <member refid="classshogun_1_1CDynProg_1a9eeb9a44641ea1f2afcf138ef5a50925" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_num_states</name></member>
+      <member refid="classshogun_1_1CDynProg_1ac455e8b04527bfe84334ca50a41f7386" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_num_svms</name></member>
+      <member refid="classshogun_1_1CDynProg_1a303574c854f2e305c3e7bad6f37965cd" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_p</name></member>
+      <member refid="classshogun_1_1CDynProg_1aa9c10f4c147e97fa51056001aa270839" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_p_deriv</name></member>
+      <member refid="classshogun_1_1CDynProg_1a10a81b8f37449ac43176ec8fce840134" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_path_losses</name></member>
+      <member refid="classshogun_1_1CDynProg_1ac8ca433aa080e39da372e082cd82ce6c" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_path_scores</name></member>
+      <member refid="classshogun_1_1CDynProg_1a169c3259de3e4bf11a4899a96b9fd46e" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_positions</name></member>
+      <member refid="classshogun_1_1CDynProg_1a2e4b6a0bdcbf9359011ba4108d40295f" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_q</name></member>
+      <member refid="classshogun_1_1CDynProg_1a8be685920a6b621b4b03b5dccf7f2f85" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_q_deriv</name></member>
+      <member refid="classshogun_1_1CDynProg_1ab25110f663d4a75fb9112c750dded217" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_scores</name></member>
+      <member refid="classshogun_1_1CDynProg_1a1c244c0e892c0cc480d119497c06b82f" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_segment_loss_object</name></member>
+      <member refid="classshogun_1_1CDynProg_1a2d4564a395fba0b18720788481f0cbbb" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>get_states</name></member>
+      <member refid="classshogun_1_1CDynProg_1a92cc32087e300302642f3553b73a48ec" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>init_content_svm_value_array</name></member>
+      <member refid="classshogun_1_1CDynProg_1a7438fa6e9fbb8a237d8f3b179482d385" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>init_mod_words_array</name></member>
+      <member refid="classshogun_1_1CDynProg_1ab63d1b6838564b23d7b806598521a601" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>init_tiling_data</name></member>
+      <member refid="classshogun_1_1CDynProg_1a8c6fa5d426a6939a372df7f23da44b81" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>long_transition_settings</name></member>
+      <member refid="classshogun_1_1CDynProg_1a7f1bafc13d90e80268a97956e09f9f3c" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>lookup_content_svm_values</name></member>
+      <member refid="classshogun_1_1CDynProg_1a7a3a6ae28d99bdc91d2722b68c4561dd" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>lookup_tiling_plif_values</name></member>
+      <member refid="classshogun_1_1CDynProg_1ac15c0acc3c534532b1d487a57adccc19" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_cum_num_words</name></member>
+      <member refid="classshogun_1_1CDynProg_1a9a8a96face865ebd212ddaf874b1456a" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_cum_num_words_array</name></member>
+      <member refid="classshogun_1_1CDynProg_1abe5b6d3785492d25009d8516454b1539" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_dict_weights</name></member>
+      <member refid="classshogun_1_1CDynProg_1a06679454732f03edee0d159c4dbadc45" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_end_state_distribution_q</name></member>
+      <member refid="classshogun_1_1CDynProg_1afa07519bfc122f931db360c4bc57f8a3" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_end_state_distribution_q_deriv</name></member>
+      <member refid="classshogun_1_1CDynProg_1a77f141d71b89c12d73adad8c92107acd" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_genestr</name></member>
+      <member refid="classshogun_1_1CDynProg_1afc1572af9c3e49ba712933d2440aace9" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_genestr_stop</name></member>
+      <member refid="classshogun_1_1CDynProg_1a5fff73c136eb13575e3cd63f132af684" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_initial_state_distribution_p</name></member>
+      <member refid="classshogun_1_1CDynProg_1a824a411121cb7977f59d4b5874a161b4" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_initial_state_distribution_p_deriv</name></member>
+      <member refid="classshogun_1_1CDynProg_1a3793dd907c1277db043ae091c1b1c8b3" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_intron_list</name></member>
+      <member refid="classshogun_1_1CDynProg_1a7dc49703bbd30083d5cc3c934b062a42" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_lin_feat</name></member>
+      <member refid="classshogun_1_1CDynProg_1a58bec03170a3117a85fdd561682a09ce" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_long_transition_max</name></member>
+      <member refid="classshogun_1_1CDynProg_1a527ef4e02c718f368daae18db7af87dc" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_long_transition_threshold</name></member>
+      <member refid="classshogun_1_1CDynProg_1ac6852b788fa74e6c906ba1623944533a" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_long_transitions</name></member>
+      <member refid="classshogun_1_1CDynProg_1a02d59272dea65d937fb10c5c33f84a80" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_max_a_id</name></member>
+      <member refid="classshogun_1_1CDynProg_1a63c810ce96dd7970c755fa889b04c151" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_mod_words</name></member>
+      <member refid="classshogun_1_1CDynProg_1a4d96619a82645f49b07ac106f1cf44d1" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_mod_words_array</name></member>
+      <member refid="classshogun_1_1CDynProg_1a93697d06bdca997d147fbe1c790d6c6c" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_my_losses</name></member>
+      <member refid="classshogun_1_1CDynProg_1a338f0cd2caf7040f6932daddfd9e9849" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_my_pos_seq</name></member>
+      <member refid="classshogun_1_1CDynProg_1a3216043f63efacce48c79f518ed8c9bf" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_my_scores</name></member>
+      <member refid="classshogun_1_1CDynProg_1af5cbe1f321d001690096011ae10574ee" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_my_state_seq</name></member>
+      <member refid="classshogun_1_1CDynProg_1a87a9ff610de23e7138caa7e8cd727694" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_N</name></member>
+      <member refid="classshogun_1_1CDynProg_1a491ca2a2ddebfd4c43200585c5a13ffc" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_num_degrees</name></member>
+      <member refid="classshogun_1_1CDynProg_1a38b76a4dc5957efe005e3f9b471cd806" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_num_intron_plifs</name></member>
+      <member refid="classshogun_1_1CDynProg_1a447013b898bd58ff2754564c66cd68a8" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_num_lin_feat_plifs_cum</name></member>
+      <member refid="classshogun_1_1CDynProg_1adb109317ef1745bbae0be694dd5b207a" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_num_probes_cum</name></member>
+      <member refid="classshogun_1_1CDynProg_1a37c3eb48fad97f79fabee83bd2dfa113" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_num_raw_data</name></member>
+      <member refid="classshogun_1_1CDynProg_1a4272bb95194b7ead81e483ec753e1093" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_num_svms</name></member>
+      <member refid="classshogun_1_1CDynProg_1a8e35acdc53c40c83894acb851a0923ea" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_num_unique_words</name></member>
+      <member refid="classshogun_1_1CDynProg_1a050612d271b9714f21d42b202cbf9ff3" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_num_words</name></member>
+      <member refid="classshogun_1_1CDynProg_1a250835faef7707cb2d0c54ee3382a376" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_num_words_array</name></member>
+      <member refid="classshogun_1_1CDynProg_1a5421eb2fa9d936e3c529aaa9682679d1" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_observation_matrix</name></member>
+      <member refid="classshogun_1_1CDynProg_1a11781de1bcd601aab8953d0b8245f3d0" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_orf_info</name></member>
+      <member refid="classshogun_1_1CDynProg_1a50e10327c6f2b04e6e79ec6f6ef5b021" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_PEN</name></member>
+      <member refid="classshogun_1_1CDynProg_1adcc08092c84c7f1f9e258aedc5ad3009" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_PEN_state_signals</name></member>
+      <member refid="classshogun_1_1CDynProg_1abb8ab472ac1f7face89561f7c1f2e1cd" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_plif_list</name></member>
+      <member refid="classshogun_1_1CDynProg_1affe34071579a106bfed895f8bc87c590" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_plif_matrices</name></member>
+      <member refid="classshogun_1_1CDynProg_1a62e0a6fb1416a8d3a5460a392339d868" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_pos</name></member>
+      <member refid="classshogun_1_1CDynProg_1a5d44176d516f3528fae6485431b55cb7" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_positions</name></member>
+      <member refid="classshogun_1_1CDynProg_1a48dc5c7d04d1b9fa56947f7d67a04514" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_probe_pos</name></member>
+      <member refid="classshogun_1_1CDynProg_1aaa0f9431e0bf1f601e4ea3ab7d3dae0e" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_raw_intensities</name></member>
+      <member refid="classshogun_1_1CDynProg_1a6a7f64c53feee2c6614c0e680e7ef6f1" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_scores</name></member>
+      <member refid="classshogun_1_1CDynProg_1ae37419be66144a0e844a39f48a9e20f0" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_seg_loss_obj</name></member>
+      <member refid="classshogun_1_1CDynProg_1af846b4f080fefbce236d2e8506fd5d25" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_segment_ids</name></member>
+      <member refid="classshogun_1_1CDynProg_1a02a90f9b50b711654f99c288807e38b8" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_segment_loss</name></member>
+      <member refid="classshogun_1_1CDynProg_1a2847bbb709d562fe541c0813124c5220" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_segment_mask</name></member>
+      <member refid="classshogun_1_1CDynProg_1aaa9c61cb2154d1a3f1d48b48fc3cc3e7" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_segment_sum_weights</name></member>
+      <member refid="classshogun_1_1CDynProg_1a46d10d37f4dc0b3a8ad5ec48c8f0cbfc" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_seq_len</name></member>
+      <member refid="classshogun_1_1CDynProg_1afc7f484b3fe7abe2b2841e2cecdcd7a3" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_seq_sparse1</name></member>
+      <member refid="classshogun_1_1CDynProg_1ae811a928cfa53a4fe3a5f69e82cab111" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_seq_sparse2</name></member>
+      <member refid="classshogun_1_1CDynProg_1a96dc8c22a51fc28e7b0bc298ba3b999b" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_sign_words</name></member>
+      <member refid="classshogun_1_1CDynProg_1add71f311931ef964023b6b377cee8de6" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_sign_words_array</name></member>
+      <member refid="classshogun_1_1CDynProg_1a0c9bddab0318618831c0f324775d0aca" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_states</name></member>
+      <member refid="classshogun_1_1CDynProg_1a3ccb4aeae625e7e485d9a645d47ce7c5" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_string_words</name></member>
+      <member refid="classshogun_1_1CDynProg_1ab62000a33b8cf7a47bc35c6c324dd10d" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_string_words_array</name></member>
+      <member refid="classshogun_1_1CDynProg_1a0aae1b43f228b281cceff027d976a80d" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_svm_arrays_clean</name></member>
+      <member refid="classshogun_1_1CDynProg_1a4c47b9cabc13388ad3c3129096bfc4a6" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_transition_matrix_a</name></member>
+      <member refid="classshogun_1_1CDynProg_1a511f63dabd93f06bd01dc964937bafbc" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_transition_matrix_a_deriv</name></member>
+      <member refid="classshogun_1_1CDynProg_1a8269382033e1b167abf621eb63b53a16" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_transition_matrix_a_id</name></member>
+      <member refid="classshogun_1_1CDynProg_1a2305705562cfed632dce6cc8bf7f0a72" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_word_degree</name></member>
+      <member refid="classshogun_1_1CDynProg_1aca2b388e76c5ba7faa3ba310b50ee186" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>m_wordstr</name></member>
+      <member refid="classshogun_1_1CDynProg_1a01e6d24cc3c5bb0046b30e499ba4cd90" prot="private" virt="non-virtual"><scope>shogun::CDynProg</scope><name>mem_initialized</name></member>
+      <member refid="classshogun_1_1CDynProg_1aa1be30c471dc51a0d07669bb9d4777d8" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>mod_words_default</name></member>
+      <member refid="classshogun_1_1CDynProg_1a7d27c754e3aa2b324435b29fd601ac63" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>num_words_default</name></member>
+      <member refid="classshogun_1_1CDynProg_1aba51c576831259f276d884a0af531a8e" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>precompute_content_values</name></member>
+      <member refid="classshogun_1_1CDynProg_1a912b9173d4bda3d3302a11eceec1e5a6" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>precompute_stop_codons</name></member>
+      <member refid="classshogun_1_1CDynProg_1a8cb7a72c3094858bd749a468c77e2d4c" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>precompute_tiling_plifs</name></member>
+      <member refid="classshogun_1_1CDynProg_1a0b09f303dd35670d39aa6eb0e037ba46" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>raw_intensities_interval_query</name></member>
+      <member refid="classshogun_1_1CDynProg_1aa2b748ff0f1dbebca7dd8223d4ccaf49" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>resize_lin_feat</name></member>
+      <member refid="classshogun_1_1CDynProg_1ada2e685b6a5ddf086dfc8909de7c04f9" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_a</name></member>
+      <member refid="classshogun_1_1CDynProg_1a820775bdbdf7a99cd15974e7e6c4acc7" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_a</name></member>
+      <member refid="classshogun_1_1CDynProg_1aa32409a780b1aff7aa49554cb05d751e" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_a_id</name></member>
+      <member refid="classshogun_1_1CDynProg_1a6f4be6b17da85f9c1cb2e943bd2fac33" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_a_trans_matrix</name></member>
+      <member refid="classshogun_1_1CDynProg_1ae3c9be4aaca57e5b7fa671507cc6a24c" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_content_type_array</name></member>
+      <member refid="classshogun_1_1CDynProg_1ab9903f1e289079c8eea468ece1225731" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_dict_weights</name></member>
+      <member refid="classshogun_1_1CDynProg_1a32719571fb06dc8ffcce3e4ae9191d3b" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_gene_string</name></member>
+      <member refid="classshogun_1_1CDynProg_1aba0d5077e3ecf78e576abfaf6511affd" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_intron_list</name></member>
+      <member refid="classshogun_1_1CDynProg_1ad79e8200e7720c14dfe4e4d41ab1ed5a" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_lin_feat</name></member>
+      <member refid="classshogun_1_1CDynProg_1aa2f98566c92171e823a16ae21e36ecb8" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_my_pos_seq</name></member>
+      <member refid="classshogun_1_1CDynProg_1a4639afe43fc2122b1223138500c12e3e" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_my_state_seq</name></member>
+      <member refid="classshogun_1_1CDynProg_1a8e08e34132a0a1936e89afa83e3b4c8d" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_num_states</name></member>
+      <member refid="classshogun_1_1CDynProg_1a0121e2ecb5620e0ed6bc97e42e944759" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_observation_matrix</name></member>
+      <member refid="classshogun_1_1CDynProg_1a42758542a4a10ee1efe2fd1665a62b16" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_orf_info</name></member>
+      <member refid="classshogun_1_1CDynProg_1ab3f3bdbd76cd3c7a756baab68149cde0" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_p</name></member>
+      <member refid="classshogun_1_1CDynProg_1a1cfe6d29017de714d45880e88136aad1" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_p_vector</name></member>
+      <member refid="classshogun_1_1CDynProg_1ac83138b8e70e8ee3b3c73121d65f5f24" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_plif_matrices</name></member>
+      <member refid="classshogun_1_1CDynProg_1ab6cd50803b7b7a7e72d560c3fea1b187" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_pos</name></member>
+      <member refid="classshogun_1_1CDynProg_1af773e32dde29d4e2b0fe671a1430bb9d" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_q</name></member>
+      <member refid="classshogun_1_1CDynProg_1a703d4c423df0c47c55791bdbc4fc9cc4" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_q_vector</name></member>
+      <member refid="classshogun_1_1CDynProg_1a2853b10628bae17ce2ee81a681246429" prot="public" virt="non-virtual"><scope>shogun::CDynProg</scope><name>set_sparse_features</name></member>
+      <member refid="classshogun_1_1CDynProg_1a73e8729c28902263d5a47fc951e565ab" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>sign_words_default</name></member>
+      <member refid="classshogun_1_1CDynProg_1acab12862415217b452780a6339cc1a46" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>string_words_default</name></member>
+      <member refid="classshogun_1_1CDynProg_1af792606f40c444f0d7e36fe9d86b1588" prot="private" virt="non-virtual"><scope>shogun::CDynProg</scope><name>trans_list_forward</name></member>
+      <member refid="classshogun_1_1CDynProg_1a0845ab9edbd47a62f966e6995f3b3f8f" prot="private" virt="non-virtual"><scope>shogun::CDynProg</scope><name>trans_list_forward_cnt</name></member>
+      <member refid="classshogun_1_1CDynProg_1adbb282553b1dc97a699ff362b1e3611d" prot="private" virt="non-virtual"><scope>shogun::CDynProg</scope><name>trans_list_forward_id</name></member>
+      <member refid="classshogun_1_1CDynProg_1a1fa1c2f8995908e89f165b02eec33430" prot="private" virt="non-virtual"><scope>shogun::CDynProg</scope><name>trans_list_forward_val</name></member>
+      <member refid="classshogun_1_1CDynProg_1ae1255f2d791ac7aa8c5cfc41e5767a53" prot="private" virt="non-virtual"><scope>shogun::CDynProg</scope><name>trans_list_len</name></member>
+      <member refid="classshogun_1_1CDynProg_1a0a6045300c4365627d316341ce15871a" prot="protected" virt="non-virtual"><scope>shogun::CDynProg</scope><name>word_degree_default</name></member>
+      <member refid="classshogun_1_1CDynProg_1aad270d97ff8ccc82965da813bc329a9f" prot="public" virt="virtual"><scope>shogun::CDynProg</scope><name>~CDynProg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

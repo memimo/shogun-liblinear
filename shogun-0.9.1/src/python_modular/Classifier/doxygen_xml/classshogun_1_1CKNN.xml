@@ -1,0 +1,490 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CKNN" kind="class" prot="public">
+    <compoundname>shogun::CKNN</compoundname>
+    <basecompoundref refid="classshogun_1_1CDistanceMachine" prot="public" virt="non-virtual">shogun::CDistanceMachine</basecompoundref>
+    <includes local="no">KNN.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CKNN_1a19f9df1c3d349fadb1a54089a4431386" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CKNN::k</definition>
+        <argsstring></argsstring>
+        <name>k</name>
+        <briefdescription>
+<para>the k parameter in KNN </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="137" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CKNN_1a4a18ef1b3d7d66906841c2aba4049bce" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CKNN::num_classes</definition>
+        <argsstring></argsstring>
+        <name>num_classes</name>
+        <briefdescription>
+<para>number of classes (i.e. number of values labels can take) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="140" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CKNN_1a143c53735ed51718c4f8161b6c21e965" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CKNN::min_label</definition>
+        <argsstring></argsstring>
+        <name>min_label</name>
+        <briefdescription>
+<para>smallest label, i.e. -1 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="143" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CKNN_1a9bd786d5419d2c8998055f82eab3d792" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CKNN::num_train_labels</definition>
+        <argsstring></argsstring>
+        <name>num_train_labels</name>
+        <briefdescription>
+<para>number of train examples </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="146" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CKNN_1a46e99aeb259cb81bb5befad3a93c08a0" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CKNN::train_labels</definition>
+        <argsstring></argsstring>
+        <name>train_labels</name>
+        <briefdescription>
+<para>the actual trainlabels </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="149" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CKNN_1a2d9e99cd2ade401192eb82bec6ce2dcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CKNN::CKNN</definition>
+        <argsstring>()</argsstring>
+        <name>CKNN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKNN_1a86ec2d218858d81482674cf3a8bb55cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CKNN::CKNN</definition>
+        <argsstring>(int32_t k, CDistance *d, CLabels *trainlab)</argsstring>
+        <name>CKNN</name>
+        <param>
+          <type>int32_t</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>CDistance *</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>CLabels *</type>
+          <declname>trainlab</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>k </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distance </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>trainlab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>labels for training </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKNN_1ae5c12e69b90f87643dd49275c890b66d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CKNN::~CKNN</definition>
+        <argsstring>()</argsstring>
+        <name>~CKNN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKNN_1a58a9588aa0563f478200356ef6a62e54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EClassifierType</type>
+        <definition>virtual EClassifierType shogun::CKNN::get_classifier_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_classifier_type</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a52d05215c6b6a252650c41a0b29d8cc5">get_classifier_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier type</para><para><simplesect kind="return"><para>classifier type KNN </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="58" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKNN_1adc0634cbe1c31bae16a7e0bd90618263" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CKNN::train</definition>
+        <argsstring>(CFeatures *data=NULL)</argsstring>
+        <name>train</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a9904cc0a8d7ec077cc1fede8d64ebb22">train</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>train k-NN classifier</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training <ref refid="structshogun_1_1data" kindref="compound">data</ref> (parameter can be avoided if distance or kernel-based classifiers are used and distance/kernels are initialized with train <ref refid="structshogun_1_1data" kindref="compound">data</ref>)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether training was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKNN_1ab7237af0d40e27a40f7c8ca6698a962c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>CLabels *</type>
+        <definition>virtual CLabels* shogun::CKNN::classify</definition>
+        <argsstring>()</argsstring>
+        <name>classify</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a3944cff6766ecc2b913a08f04918f129">classify</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify all examples</para><para><simplesect kind="return"><para>resulting labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKNN_1a79efcecc52bc528c18f5d1c63690fd15" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>CLabels *</type>
+        <definition>virtual CLabels* shogun::CKNN::classify</definition>
+        <argsstring>(CFeatures *data)</argsstring>
+        <name>classify</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a66b1e113e7b30bd88b0e238c6ccc3bd4">classify</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify objects</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(test)<ref refid="structshogun_1_1data" kindref="compound">data</ref> to be classified </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>classified labels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKNN_1acd63833cb295830e905333df1d782746" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CKNN::classify_example</definition>
+        <argsstring>(int32_t vec_idx)</argsstring>
+        <name>classify_example</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a57f85b028e040e0c79dd09903b118bdd">classify_example</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx</declname>
+        </param>
+        <briefdescription>
+<para>get output for example &quot;vec_idx&quot; </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="86" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKNN_1a739068bde4c6684725d9210959ce8205" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKNN::classify_for_multiple_k</definition>
+        <argsstring>(int32_t **output, int32_t *num_vec, int32_t *k_out)</argsstring>
+        <name>classify_for_multiple_k</name>
+        <param>
+          <type>int32_t **</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>num_vec</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>k_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify all examples for 1...k</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>resulting labels for all k </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of columns (k) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of outputs </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKNN_1adaa3d52034860e63d4e26d461c09bea6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CKNN::load</definition>
+        <argsstring>(FILE *srcfile)</argsstring>
+        <name>load</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a956f6d34ff60d2d775eed5cbef17e8f3">load</reimplements>
+        <param>
+          <type>FILE *</type>
+          <declname>srcfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load from file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>srcfile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to load from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if loading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKNN_1a1d662f71918b97fb449f898a092ce3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CKNN::save</definition>
+        <argsstring>(FILE *dstfile)</argsstring>
+        <name>save</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a3df725f5632f1c052028899d8bbe28f6">save</reimplements>
+        <param>
+          <type>FILE *</type>
+          <declname>dstfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save to file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dstfile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to save to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if saving was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKNN_1a43cb5a8aab729ecd6c5fd87331e1d281" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CKNN::set_k</definition>
+        <argsstring>(int32_t p_k)</argsstring>
+        <name>set_k</name>
+        <param>
+          <type>int32_t</type>
+          <declname>p_k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set k</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new k </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="118" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" bodystart="117" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKNN_1af35ceb6b4db830f6c9a18c7f3e6818c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CKNN::get_k</definition>
+        <argsstring>()</argsstring>
+        <name>get_k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get k</para><para><simplesect kind="return"><para>k </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="128" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKNN_1a6745da29bbeba8e31be3380bcafbcda2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CKNN::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="133" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" bodystart="133" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class KNN, an implementation of the standard k-nearest neigbor classifier. </para>    </briefdescription>
+    <detaileddescription>
+<para>An example is classified to belong to the class of which the majority of the k closest examples belong to.</para><para>To avoid ties, k should be an odd number. To define how close examples are k-NN requires a CDistance object to work with (e.g., CEuclideanDistance ).</para><para>Note that k-NN has zero training time but classification times increase dramatically with the number of examples. Also note that k-NN is capable of multi-class-classification. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="102">
+        <label>shogun::CKNN</label>
+        <link refid="classshogun_1_1CKNN"/>
+        <childnode refid="103" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>shogun::CDistanceMachine</label>
+        <link refid="classshogun_1_1CDistanceMachine"/>
+        <childnode refid="104" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="105">
+        <label>shogun::CKNN</label>
+        <link refid="classshogun_1_1CKNN"/>
+        <childnode refid="106" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>shogun::CDistanceMachine</label>
+        <link refid="classshogun_1_1CDistanceMachine"/>
+        <childnode refid="107" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" line="40" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KNN.h" bodystart="39" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CClassifier_1a37259b3ffbe96af1eda8dd2d9428221c" prot="public" virt="non-virtual"><scope>shogun::CKNN</scope><name>CClassifier</name></member>
+      <member refid="classshogun_1_1CDistanceMachine_1aef8f1ef60292c0b8de2df1a45c0c5297" prot="public" virt="non-virtual"><scope>shogun::CKNN</scope><name>CDistanceMachine</name></member>
+      <member refid="classshogun_1_1CKNN_1a2d9e99cd2ade401192eb82bec6ce2dcb" prot="public" virt="non-virtual"><scope>shogun::CKNN</scope><name>CKNN</name></member>
+      <member refid="classshogun_1_1CKNN_1a86ec2d218858d81482674cf3a8bb55cd" prot="public" virt="non-virtual"><scope>shogun::CKNN</scope><name>CKNN</name></member>
+      <member refid="classshogun_1_1CKNN_1ab7237af0d40e27a40f7c8ca6698a962c" prot="public" virt="virtual"><scope>shogun::CKNN</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CKNN_1a79efcecc52bc528c18f5d1c63690fd15" prot="public" virt="virtual"><scope>shogun::CKNN</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CKNN_1acd63833cb295830e905333df1d782746" prot="public" virt="virtual"><scope>shogun::CKNN</scope><name>classify_example</name></member>
+      <member refid="classshogun_1_1CKNN_1a739068bde4c6684725d9210959ce8205" prot="public" virt="non-virtual"><scope>shogun::CKNN</scope><name>classify_for_multiple_k</name></member>
+      <member refid="classshogun_1_1CDistanceMachine_1a96a5a1e4595a433f2d2a92eba187ce94" prot="protected" virt="non-virtual"><scope>shogun::CKNN</scope><name>distance</name></member>
+      <member refid="classshogun_1_1CDistanceMachine_1a22e43b585be73b8301ff36c2bf36f893" prot="public" virt="non-virtual"><scope>shogun::CKNN</scope><name>distances_lhs</name></member>
+      <member refid="classshogun_1_1CDistanceMachine_1a20dbbd459a6927f6949daf71c381ce1e" prot="public" virt="non-virtual"><scope>shogun::CKNN</scope><name>distances_rhs</name></member>
+      <member refid="classshogun_1_1CKNN_1a58a9588aa0563f478200356ef6a62e54" prot="public" virt="virtual"><scope>shogun::CKNN</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CDistanceMachine_1abc19b42a126ff7386e3c3ae41be6b665" prot="public" virt="non-virtual"><scope>shogun::CKNN</scope><name>get_distance</name></member>
+      <member refid="classshogun_1_1CKNN_1af35ceb6b4db830f6c9a18c7f3e6818c8" prot="public" virt="non-virtual"><scope>shogun::CKNN</scope><name>get_k</name></member>
+      <member refid="classshogun_1_1CClassifier_1a787dcde8fe53a734fcb77f988d821408" prot="public" virt="virtual"><scope>shogun::CKNN</scope><name>get_label</name></member>
+      <member refid="classshogun_1_1CClassifier_1a5f1f62d263b6201e1624990deadba5a8" prot="public" virt="virtual"><scope>shogun::CKNN</scope><name>get_labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1a6e48967294c55850d95235d487ce2c02" prot="public" virt="non-virtual"><scope>shogun::CKNN</scope><name>get_max_train_time</name></member>
+      <member refid="classshogun_1_1CKNN_1a6745da29bbeba8e31be3380bcafbcda2" prot="public" virt="virtual"><scope>shogun::CKNN</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8a3acda6819b4a4b77b656b6b9e1817c" prot="public" virt="non-virtual"><scope>shogun::CKNN</scope><name>get_solver_type</name></member>
+      <member refid="classshogun_1_1CKNN_1a19f9df1c3d349fadb1a54089a4431386" prot="protected" virt="non-virtual"><scope>shogun::CKNN</scope><name>k</name></member>
+      <member refid="classshogun_1_1CClassifier_1a68f1285e63422a24319ed95910d72f73" prot="protected" virt="non-virtual"><scope>shogun::CKNN</scope><name>labels</name></member>
+      <member refid="classshogun_1_1CKNN_1adaa3d52034860e63d4e26d461c09bea6" prot="public" virt="virtual"><scope>shogun::CKNN</scope><name>load</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8524d634a67f3538b112f72d7835af46" prot="protected" virt="non-virtual"><scope>shogun::CKNN</scope><name>max_train_time</name></member>
+      <member refid="classshogun_1_1CKNN_1a143c53735ed51718c4f8161b6c21e965" prot="protected" virt="non-virtual"><scope>shogun::CKNN</scope><name>min_label</name></member>
+      <member refid="classshogun_1_1CKNN_1a4a18ef1b3d7d66906841c2aba4049bce" prot="protected" virt="non-virtual"><scope>shogun::CKNN</scope><name>num_classes</name></member>
+      <member refid="classshogun_1_1CKNN_1a9bd786d5419d2c8998055f82eab3d792" prot="protected" virt="non-virtual"><scope>shogun::CKNN</scope><name>num_train_labels</name></member>
+      <member refid="classshogun_1_1CDistanceMachine_1add523311f0e0579da16ebf49f558e207" prot="protected" virt="non-virtual"><scope>shogun::CKNN</scope><name>run_distance_thread_lhs</name></member>
+      <member refid="classshogun_1_1CDistanceMachine_1a6aa6ae69d289e7beb4ffd287aee755e8" prot="protected" virt="non-virtual"><scope>shogun::CKNN</scope><name>run_distance_thread_rhs</name></member>
+      <member refid="classshogun_1_1CKNN_1a1d662f71918b97fb449f898a092ce3c1" prot="public" virt="virtual"><scope>shogun::CKNN</scope><name>save</name></member>
+      <member refid="classshogun_1_1CDistanceMachine_1ac58a4175ffe73971427d9be0aa043aaa" prot="public" virt="non-virtual"><scope>shogun::CKNN</scope><name>set_distance</name></member>
+      <member refid="classshogun_1_1CKNN_1a43cb5a8aab729ecd6c5fd87331e1d281" prot="public" virt="non-virtual"><scope>shogun::CKNN</scope><name>set_k</name></member>
+      <member refid="classshogun_1_1CClassifier_1aa6b87d22c14fc2b6970d8bf1edbb15fb" prot="public" virt="virtual"><scope>shogun::CKNN</scope><name>set_labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1af8930a0a848388d8647c9e4604a7856d" prot="public" virt="non-virtual"><scope>shogun::CKNN</scope><name>set_max_train_time</name></member>
+      <member refid="classshogun_1_1CClassifier_1a4c87d6f3a2342c3053aeca82c3cf528c" prot="public" virt="non-virtual"><scope>shogun::CKNN</scope><name>set_solver_type</name></member>
+      <member refid="classshogun_1_1CClassifier_1a360902e938d7b8890084c5bc6df617be" prot="protected" virt="non-virtual"><scope>shogun::CKNN</scope><name>solver_type</name></member>
+      <member refid="classshogun_1_1CKNN_1adc0634cbe1c31bae16a7e0bd90618263" prot="public" virt="virtual"><scope>shogun::CKNN</scope><name>train</name></member>
+      <member refid="classshogun_1_1CKNN_1a46e99aeb259cb81bb5befad3a93c08a0" prot="protected" virt="non-virtual"><scope>shogun::CKNN</scope><name>train_labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1ae7d6c7d39fb314c1092163e958ef66a8" prot="public" virt="virtual"><scope>shogun::CKNN</scope><name>~CClassifier</name></member>
+      <member refid="classshogun_1_1CDistanceMachine_1a28ccff820f6f6e4010688dfc038e9425" prot="public" virt="virtual"><scope>shogun::CKNN</scope><name>~CDistanceMachine</name></member>
+      <member refid="classshogun_1_1CKNN_1ae5c12e69b90f87643dd49275c890b66d" prot="public" virt="virtual"><scope>shogun::CKNN</scope><name>~CKNN</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

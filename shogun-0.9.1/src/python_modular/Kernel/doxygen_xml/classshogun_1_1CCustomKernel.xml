@@ -1,0 +1,659 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CCustomKernel" kind="class" prot="public">
+    <compoundname>shogun::CCustomKernel</compoundname>
+    <basecompoundref refid="classshogun_1_1CKernel" prot="public" virt="non-virtual">shogun::CKernel</basecompoundref>
+    <includes local="no">CustomKernel.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CCustomKernel_1ae33c9950e834425e03a72b2030693ef6" prot="protected" static="no" mutable="no">
+        <type>float32_t *</type>
+        <definition>float32_t* shogun::CCustomKernel::kmatrix</definition>
+        <argsstring></argsstring>
+        <name>kmatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>kernel matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="190" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CCustomKernel_1aab5966478a5bc8966eeaaec522b55332" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CCustomKernel::num_rows</definition>
+        <argsstring></argsstring>
+        <name>num_rows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of rows </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="192" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CCustomKernel_1ad8f150242199aafc5f08825ba8d91380" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CCustomKernel::num_cols</definition>
+        <argsstring></argsstring>
+        <name>num_cols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of columns </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="194" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CCustomKernel_1a16c4be084665741d0336690ff188b5f6" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CCustomKernel::upper_diagonal</definition>
+        <argsstring></argsstring>
+        <name>upper_diagonal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>upper diagonal </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="196" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1a2ac589f67581f1f31828460fa86da442" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CCustomKernel::CCustomKernel</definition>
+        <argsstring>()</argsstring>
+        <name>CCustomKernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1a29db9ee353c427be96a4ab50d50b476f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CCustomKernel::CCustomKernel</definition>
+        <argsstring>(CKernel *k)</argsstring>
+        <name>CCustomKernel</name>
+        <param>
+          <type><ref refid="classshogun_1_1CKernel" kindref="compound">CKernel</ref> *</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para>compute custom kernel from given kernel matrix <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1ae28ae84920d2faff96032f1389d2bb37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CCustomKernel::CCustomKernel</definition>
+        <argsstring>(const float64_t *km, int32_t rows, int32_t cols)</argsstring>
+        <name>CCustomKernel</name>
+        <param>
+          <type>const float64_t *</type>
+          <declname>km</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para>sets full kernel matrix from full kernel matrix</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>km</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of rows in matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of cols in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1aae57bdf3a3073ced11d55b3384a00408" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CCustomKernel::~CCustomKernel</definition>
+        <argsstring>()</argsstring>
+        <name>~CCustomKernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1affc01b54041da764324063bad9d9eeaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CCustomKernel::dummy_init</definition>
+        <argsstring>(int32_t rows, int32_t cols)</argsstring>
+        <name>dummy_init</name>
+        <param>
+          <type>int32_t</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize kernel with dummy features</para><para>Kernels always need feature objects assigned. As the custom kernel does not really require this it creates some magic dummy features that only know about the number of vectors</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of left-hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of right-hand side </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if initializing was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1a4c4d7702321ffb1dc07d1da8ff79c1b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CCustomKernel::init</definition>
+        <argsstring>(CFeatures *l, CFeatures *r)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CKernel_1a527940658a4f7a2012cb40f2c39e23ce">init</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>CFeatures *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize kernel</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of left-hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of right-hand side </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if initializing was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1a5385d1e18ab6ec445b45c5fb4209d366" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CCustomKernel::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <reimplements refid="classshogun_1_1CKernel_1ae593c118eda68888ad76a88af0367c6e">cleanup</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clean up kernel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1a24dbeca4e53e07568e299ed7848d3dfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EKernelType</type>
+        <definition>virtual EKernelType shogun::CCustomKernel::get_kernel_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_kernel_type</name>
+        <reimplements refid="classshogun_1_1CKernel_1a13022c6fd98d925b6088b8c81fa65db9">get_kernel_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return what type of kernel we are</para><para><simplesect kind="return"><para>kernel type CUSTOM </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="83" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1ad9e38034b351e77f0d44ec359079ddf3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureType</type>
+        <definition>virtual EFeatureType shogun::CCustomKernel::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CKernel_1ac34f6a2c0b4f0506333b1a50f9304344">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return feature type the kernel can deal with</para><para><simplesect kind="return"><para>feature type ANY </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="89" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1a3fa2db8507552b795edc79c5494aee49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureClass</type>
+        <definition>virtual EFeatureClass shogun::CCustomKernel::get_feature_class</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_class</name>
+        <reimplements refid="classshogun_1_1CKernel_1aa367af5a93ba94084ef5f71330b75a24">get_feature_class</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return feature class the kernel can deal with</para><para><simplesect kind="return"><para>feature class ANY </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="95" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1a0655d5ec5652efa438f27125f15ca4c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CCustomKernel::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return the kernel&apos;s name</para><para><simplesect kind="return"><para>name Custom </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="101" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1a556a7d622c24ed2db36e1deaec789b31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CCustomKernel::set_triangle_kernel_matrix_from_triangle</definition>
+        <argsstring>(const float64_t *km, int32_t len)</argsstring>
+        <name>set_triangle_kernel_matrix_from_triangle</name>
+        <param>
+          <type>const float64_t *</type>
+          <declname>km</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set kernel matrix (only elements from upper triangle) from elements of upper triangle (concat&apos;d), including the main diagonal</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>km</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>denotes the size of the array and should match len=cols*(cols+1)/2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1ae20bc10ea2ba04953f95e9271c0b8686" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CCustomKernel::set_triangle_kernel_matrix_from_full</definition>
+        <argsstring>(const float64_t *km, int32_t rows, int32_t cols)</argsstring>
+        <name>set_triangle_kernel_matrix_from_full</name>
+        <param>
+          <type>const float64_t *</type>
+          <declname>km</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set kernel matrix (only elements from upper triangle) from squared matrix</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>km</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of rows in matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of cols in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1a056003feb10f542be8e5fcbefbfad842" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CCustomKernel::set_full_kernel_matrix_from_full</definition>
+        <argsstring>(const float64_t *km, int32_t rows, int32_t cols)</argsstring>
+        <name>set_full_kernel_matrix_from_full</name>
+        <param>
+          <type>const float64_t *</type>
+          <declname>km</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set full kernel matrix from full kernel matrix</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>km</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of rows in matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of cols in matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1a24b9323893a0e92dc7ea770c01670680" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CCustomKernel::get_num_vec_lhs</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_vec_lhs</name>
+        <reimplements refid="classshogun_1_1CKernel_1af350caa123740b96ecaa69fd28454a65">get_num_vec_lhs</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of vectors of lhs features</para><para><simplesect kind="return"><para>number of vectors of left-hand side </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="140" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1ae75e8bd6316dfcc5681db8782bbbfd1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CCustomKernel::get_num_vec_rhs</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_vec_rhs</name>
+        <reimplements refid="classshogun_1_1CKernel_1a7e45a8f4fc00c39b7d54dd37e001bed9">get_num_vec_rhs</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of vectors of rhs features</para><para><simplesect kind="return"><para>number of vectors of right-hand side </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="149" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1a0e8d83692382e919c78b7f5fa4406219" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CCustomKernel::has_features</definition>
+        <argsstring>()</argsstring>
+        <name>has_features</name>
+        <reimplements refid="classshogun_1_1CKernel_1a6db0206d0b4fe30bf64b93d8eed3b8b7">has_features</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>test whether features have been assigned to lhs and rhs</para><para><simplesect kind="return"><para>true if features are assigned </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="158" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" bodystart="157" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1aa404af77703fc111b833ea612244b89d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CCustomKernel::compute</definition>
+        <argsstring>(int32_t row, int32_t col)</argsstring>
+        <name>compute</name>
+        <reimplements refid="classshogun_1_1CKernel_1ab1765c43943a668fea15971d08ff1229">compute</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute kernel function</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>row </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>col </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed kernel function </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="170" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" bodystart="169" bodyend="182"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classshogun_1_1CCustomKernel_1a41ba7462e668a3ae3cd64963e4753f1f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CCustomKernel::cleanup_custom</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup_custom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>only cleanup stuff specific to Custom kernel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="186"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The Custom Kernelallows for custom user provided kernel matrices. </para>    </briefdescription>
+    <detaileddescription>
+<para>For squared training matrices it allows to store only the upper triangle of the kernel to save memory: Full symmetric kernel matrices can be stored as is or can be internally converted into (or directly given in) upper triangle representation. Also note that values are stored as 32bit floats. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="44">
+        <label>shogun::CKernel</label>
+        <link refid="classshogun_1_1CKernel"/>
+      </node>
+      <node id="43">
+        <label>shogun::CCustomKernel</label>
+        <link refid="classshogun_1_1CCustomKernel"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="46">
+        <label>shogun::CKernel</label>
+        <link refid="classshogun_1_1CKernel"/>
+        <childnode refid="47" relation="usage">
+          <edgelabel>normalizer</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>shogun::CCustomKernel</label>
+        <link refid="classshogun_1_1CCustomKernel"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" line="30" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/CustomKernel.h" bodystart="29" bodyend="197"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CKernel_1aabe2fe8e2cc8e2846a6aa60c364855ba" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>add_to_normal</name></member>
+      <member refid="classshogun_1_1CKernel_1ae1dc0bbc6ea973b18dcba2e4fac486b8" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>cache_size</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1a2ac589f67581f1f31828460fa86da442" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>CCustomKernel</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1a29db9ee353c427be96a4ab50d50b476f" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>CCustomKernel</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1ae28ae84920d2faff96032f1389d2bb37" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>CCustomKernel</name></member>
+      <member refid="classshogun_1_1CKernel_1a77872c37fccc650cd7f918b253bbeb68" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>CKernel</name></member>
+      <member refid="classshogun_1_1CKernel_1aa2b1f73c8585adee444bb99a98e63a5a" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>CKernel</name></member>
+      <member refid="classshogun_1_1CKernel_1a70cfe05692f9ee159aeb0dfcb8d2f5c3" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>CKernel</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1a5385d1e18ab6ec445b45c5fb4209d366" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1a41ba7462e668a3ae3cd64963e4753f1f" prot="private" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>cleanup_custom</name></member>
+      <member refid="classshogun_1_1CKernel_1a46a94bb5789a5edbf1d776610ae3fa04" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>clear_normal</name></member>
+      <member refid="classshogun_1_1CKernel_1a105026c07a74e493c1711dad83b335f1" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>combined_kernel_weight</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1aa404af77703fc111b833ea612244b89d" prot="protected" virt="virtual"><scope>shogun::CCustomKernel</scope><name>compute</name></member>
+      <member refid="classshogun_1_1CKernel_1a5fc6a483d63fd0a3460a457cee60f993" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>compute_batch</name></member>
+      <member refid="classshogun_1_1CKernel_1a9a0bbc983ee6c2050ee4d5c814496924" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>compute_by_subkernel</name></member>
+      <member refid="classshogun_1_1CKernel_1a614b39452046d4336f09c881360b4af7" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>compute_optimized</name></member>
+      <member refid="classshogun_1_1CKernel_1a813bcdc6778b8c0b4c662a5209a68776" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>compute_row_start</name></member>
+      <member refid="classshogun_1_1CKernel_1a1e5b580f5214d5fac1f07c81c2fcb0ad" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>delete_optimization</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1affc01b54041da764324063bad9d9eeaa" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>dummy_init</name></member>
+      <member refid="classshogun_1_1CKernel_1ac53fab2767fa28a2141294219ddc5ea5" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CKernel_1a70a87d5839c56ce67efad04119b16758" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>get_combined_kernel_weight</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1a3fa2db8507552b795edc79c5494aee49" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1ad9e38034b351e77f0d44ec359079ddf3" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CKernel_1a4e06bfb908463f9bc28b0c3ae7bdeef3" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>get_is_initialized</name></member>
+      <member refid="classshogun_1_1CKernel_1a1f4f83d3d7bc7e34336c4c262ca95570" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>get_kernel_matrix</name></member>
+      <member refid="classshogun_1_1CKernel_1a19c9666c242a0b019f645593e2c63e9f" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>get_kernel_matrix</name></member>
+      <member refid="classshogun_1_1CKernel_1a52f510cf6ece0052527f31ad2274e855" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>get_kernel_matrix_helper</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1a24dbeca4e53e07568e299ed7848d3dfa" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>get_kernel_type</name></member>
+      <member refid="classshogun_1_1CKernel_1a0c71c8eb3ac024069c6bd9ff61ec0c39" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>get_lhs</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1a0655d5ec5652efa438f27125f15ca4c2" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CKernel_1a7aacb7938ed0f98f1fd14253bc1e9b31" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>get_normalizer</name></member>
+      <member refid="classshogun_1_1CKernel_1a0c2a6eb4ed24590be0cc72a5871f848d" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>get_num_subkernels</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1a24b9323893a0e92dc7ea770c01670680" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>get_num_vec_lhs</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1ae75e8bd6316dfcc5681db8782bbbfd1c" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>get_num_vec_rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1aff5f02561b6963a3c2a2e63b4ac8e43c" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>get_optimization_type</name></member>
+      <member refid="classshogun_1_1CKernel_1abfd608e83f9839f8ca626ad793e452b0" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>get_rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1aed423e68a226ad9f717d05f54cf9c854" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>get_subkernel_weights</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1a0e8d83692382e919c78b7f5fa4406219" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>has_features</name></member>
+      <member refid="classshogun_1_1CKernel_1afd958e85909aec22c830e9137fcd7d4c" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1a4c4d7702321ffb1dc07d1da8ff79c1b3" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>init</name></member>
+      <member refid="classshogun_1_1CKernel_1aeb0378209b4c63b7ae60596540ebed80" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>init_normalizer</name></member>
+      <member refid="classshogun_1_1CKernel_1a913db590a96e58fadba2b1e9e34a10d6" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>init_optimization</name></member>
+      <member refid="classshogun_1_1CKernel_1a8363fd727262daf47cad9fb4842daa6c" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>init_optimization_svm</name></member>
+      <member refid="classshogun_1_1CKernel_1ab4cbfe2c04238e33322647e22960c246" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>kernel</name></member>
+      <member refid="classshogun_1_1CKernel_1a01f88ea73f221b5a768e1c67c731a763" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>kernel_matrix</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1ae33c9950e834425e03a72b2030693ef6" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>kmatrix</name></member>
+      <member refid="classshogun_1_1CKernel_1ae7bc6b54431a07498f0b6ef4ab087297" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>lhs</name></member>
+      <member refid="classshogun_1_1CKernel_1a28ef59e6dd9055579b2f95fb3a19b2cc" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>lhs_equals_rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1a29e2f0ad2694cc53a800f3ad8be56077" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>list_kernel</name></member>
+      <member refid="classshogun_1_1CKernel_1a93221d864190e13c4749793d4ae7f0b0" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>load</name></member>
+      <member refid="classshogun_1_1CKernel_1acbe5200168cf7ade8c30f1a1eb40469b" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>normalizer</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1ad8f150242199aafc5f08825ba8d91380" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>num_cols</name></member>
+      <member refid="classshogun_1_1CKernel_1a0d5cfafbf2afd0260857089504262dd6" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>num_lhs</name></member>
+      <member refid="classshogun_1_1CKernel_1a6e741d3d75546bdc15bfb5be41aa9b96" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>num_rhs</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1aab5966478a5bc8966eeaaec522b55332" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>num_rows</name></member>
+      <member refid="classshogun_1_1CKernel_1ad96fd157602292f3d88ebfef3077be00" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>opt_type</name></member>
+      <member refid="classshogun_1_1CKernel_1a5b4d22f0cd136296f6e9aee3364607d6" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>optimization_initialized</name></member>
+      <member refid="classshogun_1_1CKernel_1a16638a9afae47d4c2e36e20b2dff92f5" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>properties</name></member>
+      <member refid="classshogun_1_1CKernel_1a83df3f7334ac9876caaec761ac55314e" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>remove_lhs</name></member>
+      <member refid="classshogun_1_1CKernel_1ad56df090f52a020e34162abd0b0cd0e5" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>remove_lhs_and_rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1ade2b456ef65c988c59847e6a1d682956" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>remove_rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1a5dab35da7f429dd860f59d9a98960a3f" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1ab1241d4ce37e5352cee96f6b456439c4" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>save</name></member>
+      <member refid="classshogun_1_1CKernel_1aa552d8e2591297a3fd5aae46bebaf645" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>set_cache_size</name></member>
+      <member refid="classshogun_1_1CKernel_1a23ec2b5c3d824b3f148c905bfbafdebf" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>set_combined_kernel_weight</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1a056003feb10f542be8e5fcbefbfad842" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>set_full_kernel_matrix_from_full</name></member>
+      <member refid="classshogun_1_1CKernel_1ad2d2934daf162bfb010536c1eefd162c" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>set_is_initialized</name></member>
+      <member refid="classshogun_1_1CKernel_1a0a3fc1096d6e00f56ca0f11cadd12ab7" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>set_normalizer</name></member>
+      <member refid="classshogun_1_1CKernel_1a11ab2c3a02fc458f510f36c2fe503a2c" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>set_optimization_type</name></member>
+      <member refid="classshogun_1_1CKernel_1abd52ab8944c2fd9efd45e46dee4f27ee" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CKernel_1af1e586162ba4aadc7c0143c1c8819f1a" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>set_subkernel_weights</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1ae20bc10ea2ba04953f95e9271c0b8686" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>set_triangle_kernel_matrix_from_full</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1a556a7d622c24ed2db36e1deaec789b31" prot="public" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>set_triangle_kernel_matrix_from_triangle</name></member>
+      <member refid="classshogun_1_1CKernel_1a83025690228a1d47e4d43a8ed4304749" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1a16c4be084665741d0336690ff188b5f6" prot="protected" virt="non-virtual"><scope>shogun::CCustomKernel</scope><name>upper_diagonal</name></member>
+      <member refid="classshogun_1_1CCustomKernel_1aae57bdf3a3073ced11d55b3384a00408" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>~CCustomKernel</name></member>
+      <member refid="classshogun_1_1CKernel_1ac0b3e1e0d02e446954712d8245cd68c3" prot="public" virt="virtual"><scope>shogun::CCustomKernel</scope><name>~CKernel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

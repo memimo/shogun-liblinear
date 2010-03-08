@@ -1,0 +1,579 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CSVMSGD" kind="class" prot="public">
+    <compoundname>shogun::CSVMSGD</compoundname>
+    <basecompoundref refid="classshogun_1_1CLinearClassifier" prot="public" virt="non-virtual">shogun::CLinearClassifier</basecompoundref>
+    <includes local="no">SVMSGD.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CSVMSGD_1a7bafbc87bf477fbbe022d21075e8edf9" prot="private" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVMSGD::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="133" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVMSGD_1a10d04264ba87535958fefa1d6059ae47" prot="private" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVMSGD::C1</definition>
+        <argsstring></argsstring>
+        <name>C1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="134" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVMSGD_1a8ff5f5868f6988cc819d3c13eb0cc2dc" prot="private" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVMSGD::C2</definition>
+        <argsstring></argsstring>
+        <name>C2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="135" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVMSGD_1a124ccab51b6025fe786875fd4f116579" prot="private" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVMSGD::wscale</definition>
+        <argsstring></argsstring>
+        <name>wscale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="136" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVMSGD_1acd9fbce824cc02f89e56282b17c16197" prot="private" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVMSGD::bscale</definition>
+        <argsstring></argsstring>
+        <name>bscale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="137" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVMSGD_1ae9ee856706f9309ae3f432959e0a6bf6" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSVMSGD::epochs</definition>
+        <argsstring></argsstring>
+        <name>epochs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="138" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVMSGD_1a5b22273f57d2c871c9b9cb2b22665c86" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSVMSGD::skip</definition>
+        <argsstring></argsstring>
+        <name>skip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="139" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVMSGD_1a155c33788b74c7ef638561f93e1aad02" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSVMSGD::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="140" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVMSGD_1ab831c325a03aee8331cc434dd09b4f7d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CSVMSGD::use_bias</definition>
+        <argsstring></argsstring>
+        <name>use_bias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="142" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVMSGD_1a57f42b907e56027020044e897d7664dc" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CSVMSGD::use_regularized_bias</definition>
+        <argsstring></argsstring>
+        <name>use_regularized_bias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="143" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CSVMSGD_1a346605e869d609c1bd96dd503f4d1d0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSVMSGD::CSVMSGD</definition>
+        <argsstring>(float64_t C)</argsstring>
+        <name>CSVMSGD</name>
+        <param>
+          <type>float64_t</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant C </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMSGD_1a64ce70916c03ad242e2132308b1ec8d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSVMSGD::CSVMSGD</definition>
+        <argsstring>(float64_t C, CDotFeatures *traindat, CLabels *trainlab)</argsstring>
+        <name>CSVMSGD</name>
+        <param>
+          <type>float64_t</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>CDotFeatures *</type>
+          <declname>traindat</declname>
+        </param>
+        <param>
+          <type>CLabels *</type>
+          <declname>trainlab</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant C </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>traindat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>trainlab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>labels for training features </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMSGD_1aaed0fb5e60b4525e3d6608a4fc67673e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CSVMSGD::~CSVMSGD</definition>
+        <argsstring>()</argsstring>
+        <name>~CSVMSGD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMSGD_1adc317800a5ed8ac1519a7bee7dce0637" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EClassifierType</type>
+        <definition>virtual EClassifierType shogun::CSVMSGD::get_classifier_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_classifier_type</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a52d05215c6b6a252650c41a0b29d8cc5">get_classifier_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier type</para><para><simplesect kind="return"><para>classifier type SVMOCAS </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="58" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMSGD_1ad480ce2c6b6a9b1f0d2b3b27a5e4d909" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CSVMSGD::train</definition>
+        <argsstring>(CFeatures *data=NULL)</argsstring>
+        <name>train</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a9904cc0a8d7ec077cc1fede8d64ebb22">train</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>train classifier</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training <ref refid="structshogun_1_1data" kindref="compound">data</ref> (parameter can be avoided if distance or kernel-based classifiers are used and distance/kernels are initialized with train <ref refid="structshogun_1_1data" kindref="compound">data</ref>)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether training was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMSGD_1a36123d5e5cb2890044a424d129b7bcdc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVMSGD::set_C</definition>
+        <argsstring>(float64_t c1, float64_t c2)</argsstring>
+        <name>set_C</name>
+        <param>
+          <type>float64_t</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set C</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new C1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new C2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="75" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMSGD_1afd2dc34db9460b45b1efe6c6a228161c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVMSGD::get_C1</definition>
+        <argsstring>()</argsstring>
+        <name>get_C1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get C1</para><para><simplesect kind="return"><para>C1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="81" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMSGD_1acdbddc1326134575a71e1bb48e1b1e7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVMSGD::get_C2</definition>
+        <argsstring>()</argsstring>
+        <name>get_C2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get C2</para><para><simplesect kind="return"><para>C2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="87" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMSGD_1a59ae012c1984eec081259ada879d1a31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVMSGD::set_epochs</definition>
+        <argsstring>(int32_t e)</argsstring>
+        <name>set_epochs</name>
+        <param>
+          <type>int32_t</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set epochs</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new number of training epochs </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="93" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMSGD_1a3a7ce5c779c1a265f29fbb30b50e04b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSVMSGD::get_epochs</definition>
+        <argsstring>()</argsstring>
+        <name>get_epochs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get epochs</para><para><simplesect kind="return"><para>the number of training epochs </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="99" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMSGD_1afdbf0a70818b82393163f07a5080d2c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVMSGD::set_bias_enabled</definition>
+        <argsstring>(bool enable_bias)</argsstring>
+        <name>set_bias_enabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enable_bias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set if bias shall be enabled</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable_bias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if bias shall be enabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="105" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMSGD_1a88c6511d9ec8f2208d556a998a64f3c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CSVMSGD::get_bias_enabled</definition>
+        <argsstring>()</argsstring>
+        <name>get_bias_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check if bias is enabled</para><para><simplesect kind="return"><para>if bias is enabled </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="111" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMSGD_1abde0fae15b631223288f2008f5be9d5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVMSGD::set_regularized_bias_enabled</definition>
+        <argsstring>(bool enable_bias)</argsstring>
+        <name>set_regularized_bias_enabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enable_bias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set if regularized bias shall be enabled</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable_bias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if regularized bias shall be enabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="117" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMSGD_1a50aad6f3e640150f7cb65b7b34539bd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CSVMSGD::get_regularized_bias_enabled</definition>
+        <argsstring>()</argsstring>
+        <name>get_regularized_bias_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check if regularized bias is enabled</para><para><simplesect kind="return"><para>if regularized bias is enabled </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="123" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVMSGD_1a10a91dca91d6d96be8669bf5ebf448d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CSVMSGD::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="126" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="126" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CSVMSGD_1ad916dbead9f4c91ec4dfbbd742a6a686" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVMSGD::calibrate</definition>
+        <argsstring>()</argsstring>
+        <name>calibrate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>calibrate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="130"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class SVMSGD </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="303">
+        <label>shogun::CLinearClassifier</label>
+        <link refid="classshogun_1_1CLinearClassifier"/>
+        <childnode refid="304" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="302">
+        <label>shogun::CSVMSGD</label>
+        <link refid="classshogun_1_1CSVMSGD"/>
+        <childnode refid="303" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="304">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="306">
+        <label>shogun::CLinearClassifier</label>
+        <link refid="classshogun_1_1CLinearClassifier"/>
+        <childnode refid="307" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>shogun::CSVMSGD</label>
+        <link refid="classshogun_1_1CSVMSGD"/>
+        <childnode refid="306" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="307">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" line="34" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVMSGD.h" bodystart="33" bodyend="144"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CLinearClassifier_1a8f920d6d3dce0a27cbb8b36aed8a6220" prot="protected" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>bias</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1acd9fbce824cc02f89e56282b17c16197" prot="private" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>bscale</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1a10d04264ba87535958fefa1d6059ae47" prot="private" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>C1</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1a8ff5f5868f6988cc819d3c13eb0cc2dc" prot="private" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>C2</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1ad916dbead9f4c91ec4dfbbd742a6a686" prot="protected" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>calibrate</name></member>
+      <member refid="classshogun_1_1CClassifier_1a37259b3ffbe96af1eda8dd2d9428221c" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>CClassifier</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1ac1f1aac929b7958f5a7d48d9ea40f2f2" prot="public" virt="virtual"><scope>shogun::CSVMSGD</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a15ae96a018644322d1c7848a44b1afce" prot="public" virt="virtual"><scope>shogun::CSVMSGD</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a3d2b2e860b03a856019e5eafb41a03e4" prot="public" virt="virtual"><scope>shogun::CSVMSGD</scope><name>classify_example</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a1e353d4462e0c790543683a7cd35261c" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>CLinearClassifier</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1a155c33788b74c7ef638561f93e1aad02" prot="private" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>count</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1a346605e869d609c1bd96dd503f4d1d0a" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>CSVMSGD</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1a64ce70916c03ad242e2132308b1ec8d4" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>CSVMSGD</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1ae9ee856706f9309ae3f432959e0a6bf6" prot="private" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>epochs</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1abd48587ed93efcbb8b1ea3c40c229b1e" prot="protected" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>features</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a6966226c35c31bf278b6b038159786fe" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>get_bias</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1a88c6511d9ec8f2208d556a998a64f3c2" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>get_bias_enabled</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1afd2dc34db9460b45b1efe6c6a228161c" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>get_C1</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1acdbddc1326134575a71e1bb48e1b1e7e" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>get_C2</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1adc317800a5ed8ac1519a7bee7dce0637" prot="public" virt="virtual"><scope>shogun::CSVMSGD</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1a3a7ce5c779c1a265f29fbb30b50e04b8" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>get_epochs</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a8ee7a0fc2702e98784765eb8ecc5d8db" prot="public" virt="virtual"><scope>shogun::CSVMSGD</scope><name>get_features</name></member>
+      <member refid="classshogun_1_1CClassifier_1a787dcde8fe53a734fcb77f988d821408" prot="public" virt="virtual"><scope>shogun::CSVMSGD</scope><name>get_label</name></member>
+      <member refid="classshogun_1_1CClassifier_1a5f1f62d263b6201e1624990deadba5a8" prot="public" virt="virtual"><scope>shogun::CSVMSGD</scope><name>get_labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1a6e48967294c55850d95235d487ce2c02" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>get_max_train_time</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1a10a91dca91d6d96be8669bf5ebf448d4" prot="public" virt="virtual"><scope>shogun::CSVMSGD</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1a50aad6f3e640150f7cb65b7b34539bd5" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>get_regularized_bias_enabled</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8a3acda6819b4a4b77b656b6b9e1817c" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>get_solver_type</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a847be7aabc3656ae0263e75b7e7933c6" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>get_w</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1aae7a04f5eeb75662a3740afa3662dd83" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>get_w</name></member>
+      <member refid="classshogun_1_1CClassifier_1a68f1285e63422a24319ed95910d72f73" prot="protected" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>labels</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a78010edf322d0188013cadfd891c1f61" prot="public" virt="virtual"><scope>shogun::CSVMSGD</scope><name>load</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8524d634a67f3538b112f72d7835af46" prot="protected" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>max_train_time</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1ad6012c92f6dd565478a43da7e3c779ab" prot="public" virt="virtual"><scope>shogun::CSVMSGD</scope><name>save</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1af150779eb78b46fe736d56b06f76113d" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>set_bias</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1afdbf0a70818b82393163f07a5080d2c7" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>set_bias_enabled</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1a36123d5e5cb2890044a424d129b7bcdc" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>set_C</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1a59ae012c1984eec081259ada879d1a31" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>set_epochs</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1ac2ecfddeb611425961499b644a86acaf" prot="public" virt="virtual"><scope>shogun::CSVMSGD</scope><name>set_features</name></member>
+      <member refid="classshogun_1_1CClassifier_1aa6b87d22c14fc2b6970d8bf1edbb15fb" prot="public" virt="virtual"><scope>shogun::CSVMSGD</scope><name>set_labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1af8930a0a848388d8647c9e4604a7856d" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>set_max_train_time</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1abde0fae15b631223288f2008f5be9d5f" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>set_regularized_bias_enabled</name></member>
+      <member refid="classshogun_1_1CClassifier_1a4c87d6f3a2342c3053aeca82c3cf528c" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>set_solver_type</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a6e5d80ca592587317e5c8842d92c60f7" prot="public" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>set_w</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1a5b22273f57d2c871c9b9cb2b22665c86" prot="private" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>skip</name></member>
+      <member refid="classshogun_1_1CClassifier_1a360902e938d7b8890084c5bc6df617be" prot="protected" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>solver_type</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1a7bafbc87bf477fbbe022d21075e8edf9" prot="private" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>t</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1ad480ce2c6b6a9b1f0d2b3b27a5e4d909" prot="public" virt="virtual"><scope>shogun::CSVMSGD</scope><name>train</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1ab831c325a03aee8331cc434dd09b4f7d" prot="private" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>use_bias</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1a57f42b907e56027020044e897d7664dc" prot="private" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>use_regularized_bias</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a3f02f85d6c001c1fcfb4f67fbddaffe8" prot="protected" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>w</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1ad0ca6a36ee07ca0beba61def547f6564" prot="protected" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>w_dim</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1a124ccab51b6025fe786875fd4f116579" prot="private" virt="non-virtual"><scope>shogun::CSVMSGD</scope><name>wscale</name></member>
+      <member refid="classshogun_1_1CClassifier_1ae7d6c7d39fb314c1092163e958ef66a8" prot="public" virt="virtual"><scope>shogun::CSVMSGD</scope><name>~CClassifier</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a9c6ccea8f5bf3a0e055aec1b4ef9fdf2" prot="public" virt="virtual"><scope>shogun::CSVMSGD</scope><name>~CLinearClassifier</name></member>
+      <member refid="classshogun_1_1CSVMSGD_1aaed0fb5e60b4525e3d6608a4fc67673e" prot="public" virt="virtual"><scope>shogun::CSVMSGD</scope><name>~CSVMSGD</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

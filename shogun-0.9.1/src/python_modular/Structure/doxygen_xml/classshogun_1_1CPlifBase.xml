@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CPlifBase" kind="class" prot="public">
+    <compoundname>shogun::CPlifBase</compoundname>
+    <derivedcompoundref refid="classshogun_1_1CPlif" prot="public" virt="non-virtual">shogun::CPlif</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CPlifArray" prot="public" virt="non-virtual">shogun::CPlifArray</derivedcompoundref>
+    <includes local="no">PlifBase.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CPlifBase_1a620adc1eca5bfe97c2d04a95cb5c2808" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CPlifBase::CPlifBase</definition>
+        <argsstring>()</argsstring>
+        <name>CPlifBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifBase.h" line="25" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifBase.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifBase_1a6831a5965086b09105430e82a45fba89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CPlifBase::~CPlifBase</definition>
+        <argsstring>()</argsstring>
+        <name>~CPlifBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifBase.h" line="26" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifBase.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifBase_1a9ff4b7568bab0306f2d9e8f1d983ce22" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CPlifBase::lookup_penalty</definition>
+        <argsstring>(float64_t p_value, float64_t *svm_values) const =0</argsstring>
+        <name>lookup_penalty</name>
+        <reimplementedby refid="classshogun_1_1CPlifArray_1a7e9f75ff996955af1d7926e61b9ca7a1">lookup_penalty</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPlif_1a8f0799573d4af497c2397d6a089ae750">lookup_penalty</reimplementedby>
+        <param>
+          <type>float64_t</type>
+          <declname>p_value</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>svm_values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>lookup penalty float64_t</para><para>abstract base method</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svm_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SVM values </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>penalty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifBase.h" line="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifBase_1af8617331ff6b061ad4f13a4c60656685" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CPlifBase::lookup_penalty</definition>
+        <argsstring>(int32_t p_value, float64_t *svm_values) const =0</argsstring>
+        <name>lookup_penalty</name>
+        <reimplementedby refid="classshogun_1_1CPlifArray_1a41794bb798e844da9cdd0f61b947196c">lookup_penalty</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPlif_1af34445360a6c667fa0e3ea54708316fa">lookup_penalty</reimplementedby>
+        <param>
+          <type>int32_t</type>
+          <declname>p_value</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>svm_values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>lookup penalty int32_t</para><para>abstract base method</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svm_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SVM values </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>penalty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifBase.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifBase_1a95ae7645d3ecded11da03e036c1acad5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CPlifBase::penalty_clear_derivative</definition>
+        <argsstring>()=0</argsstring>
+        <name>penalty_clear_derivative</name>
+        <reimplementedby refid="classshogun_1_1CPlifArray_1accba58ed1c86e3c3037c87fab049ca5a">penalty_clear_derivative</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPlif_1a90fd1ab4ccf3e1249c5c56c055b5c161">penalty_clear_derivative</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>penalty clear derivative</para><para>abstrace base method </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifBase.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifBase_1ad87a915ed7353543c8d6169f727d7cdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CPlifBase::penalty_add_derivative</definition>
+        <argsstring>(float64_t p_value, float64_t *svm_values, float64_t factor)=0</argsstring>
+        <name>penalty_add_derivative</name>
+        <reimplementedby refid="classshogun_1_1CPlifArray_1ae6039743f839aa4d43086f92858457ec">penalty_add_derivative</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPlif_1a3d1296df1be845975932159731c0f22d">penalty_add_derivative</reimplementedby>
+        <param>
+          <type>float64_t</type>
+          <declname>p_value</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>svm_values</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>penalty add derivative</para><para>abstract base method</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svm_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SVM values </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>factor weighting the added value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifBase.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifBase_1a80ce9e2caad934ff75f61d0ad4acd77a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CPlifBase::get_max_value</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_max_value</name>
+        <reimplementedby refid="classshogun_1_1CPlifArray_1a6c4df38f286e234f9815bf449e2b74f9">get_max_value</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPlif_1a58b9bfb9f95cf976a46dcbc8f2a19e36">get_max_value</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get maximum value</para><para>abstract base method</para><para><simplesect kind="return"><para>maximum value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifBase.h" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifBase_1a4a1c2905858144bcb62d885c0cc1d03e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CPlifBase::get_min_value</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_min_value</name>
+        <reimplementedby refid="classshogun_1_1CPlifArray_1a8b68a2742860185b91fb9500c9d7e1d8">get_min_value</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPlif_1ab3745107f469935c13a7febc3c601d52">get_min_value</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get minimum value</para><para>abstract base method</para><para><simplesect kind="return"><para>minimum value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifBase.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifBase_1a08a1e49cd2d40a620cf29f09aac9df02" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CPlifBase::get_used_svms</definition>
+        <argsstring>(int32_t *num_svms, int32_t *svm_ids)=0</argsstring>
+        <name>get_used_svms</name>
+        <reimplementedby refid="classshogun_1_1CPlifArray_1a04db329a6da4619d93e3c68c3d65ebf3">get_used_svms</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPlif_1a4ddc76ac6996c2644878df01ca0b9dda">get_used_svms</reimplementedby>
+        <param>
+          <type>int32_t *</type>
+          <declname>num_svms</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>svm_ids</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get SVM_ids and number of SVMs used</para><para>abstract base method </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifBase.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifBase_1a155fb135af0a5cd8e33227a7abfa79ac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CPlifBase::uses_svm_values</definition>
+        <argsstring>() const =0</argsstring>
+        <name>uses_svm_values</name>
+        <reimplementedby refid="classshogun_1_1CPlifArray_1a3a1c92297df935aab4fd66681c45afdd">uses_svm_values</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPlif_1a8970be621a7d1c33d9a8240f0349c1c1">uses_svm_values</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if plif uses SVM values</para><para>abstract base method</para><para><simplesect kind="return"><para>if plif uses SVM values </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifBase.h" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifBase_1ae7b8f33cb08939abba1c6034b5b8c3e1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CPlifBase::get_max_id</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_max_id</name>
+        <reimplementedby refid="classshogun_1_1CPlifArray_1a19b1acafe7974110f604b8fb287788be">get_max_id</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPlif_1ae7d809943bfd6026e49b5bee036a928d">get_max_id</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get maximum ID</para><para>abstract base method</para><para><simplesect kind="return"><para>maximum ID </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifBase.h" line="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlifBase_1aca2dd7fc341657232ecbf0197ecaffb5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CPlifBase::list_plif</definition>
+        <argsstring>() const =0</argsstring>
+        <name>list_plif</name>
+        <reimplementedby refid="classshogun_1_1CPlifArray_1a8773e50a938f46fc14dc9cc4c29f8738">list_plif</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPlif_1af09c8e36a3cbcac0a2cfbd634ad8919a">list_plif</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print PLIF</para><para>abstract base method </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifBase.h" line="109"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class PlifBase </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>shogun::CPlifBase</label>
+        <link refid="classshogun_1_1CPlifBase"/>
+      </node>
+      <node id="18">
+        <label>shogun::CPlif</label>
+        <link refid="classshogun_1_1CPlif"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>shogun::CPlifArray</label>
+        <link refid="classshogun_1_1CPlifArray"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifBase.h" line="22" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/PlifBase.h" bodystart="21" bodyend="111"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CPlifBase_1a620adc1eca5bfe97c2d04a95cb5c2808" prot="public" virt="non-virtual"><scope>shogun::CPlifBase</scope><name>CPlifBase</name></member>
+      <member refid="classshogun_1_1CPlifBase_1ae7b8f33cb08939abba1c6034b5b8c3e1" prot="public" virt="pure-virtual"><scope>shogun::CPlifBase</scope><name>get_max_id</name></member>
+      <member refid="classshogun_1_1CPlifBase_1a80ce9e2caad934ff75f61d0ad4acd77a" prot="public" virt="pure-virtual"><scope>shogun::CPlifBase</scope><name>get_max_value</name></member>
+      <member refid="classshogun_1_1CPlifBase_1a4a1c2905858144bcb62d885c0cc1d03e" prot="public" virt="pure-virtual"><scope>shogun::CPlifBase</scope><name>get_min_value</name></member>
+      <member refid="classshogun_1_1CPlifBase_1a08a1e49cd2d40a620cf29f09aac9df02" prot="public" virt="pure-virtual"><scope>shogun::CPlifBase</scope><name>get_used_svms</name></member>
+      <member refid="classshogun_1_1CPlifBase_1aca2dd7fc341657232ecbf0197ecaffb5" prot="public" virt="pure-virtual"><scope>shogun::CPlifBase</scope><name>list_plif</name></member>
+      <member refid="classshogun_1_1CPlifBase_1a9ff4b7568bab0306f2d9e8f1d983ce22" prot="public" virt="pure-virtual"><scope>shogun::CPlifBase</scope><name>lookup_penalty</name></member>
+      <member refid="classshogun_1_1CPlifBase_1af8617331ff6b061ad4f13a4c60656685" prot="public" virt="pure-virtual"><scope>shogun::CPlifBase</scope><name>lookup_penalty</name></member>
+      <member refid="classshogun_1_1CPlifBase_1ad87a915ed7353543c8d6169f727d7cdc" prot="public" virt="pure-virtual"><scope>shogun::CPlifBase</scope><name>penalty_add_derivative</name></member>
+      <member refid="classshogun_1_1CPlifBase_1a95ae7645d3ecded11da03e036c1acad5" prot="public" virt="pure-virtual"><scope>shogun::CPlifBase</scope><name>penalty_clear_derivative</name></member>
+      <member refid="classshogun_1_1CPlifBase_1a155fb135af0a5cd8e33227a7abfa79ac" prot="public" virt="pure-virtual"><scope>shogun::CPlifBase</scope><name>uses_svm_values</name></member>
+      <member refid="classshogun_1_1CPlifBase_1a6831a5965086b09105430e82a45fba89" prot="public" virt="virtual"><scope>shogun::CPlifBase</scope><name>~CPlifBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

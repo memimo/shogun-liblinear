@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structradix__stack__t" kind="struct" prot="public">
+    <compoundname>radix_stack_t</compoundname>
+    <includes local="no">Mathematics.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structradix__stack__t_1ae9c4ffd667dce322e750442a9fff848f" prot="public" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* radix_stack_t&lt; T &gt;::sa</definition>
+        <argsstring></argsstring>
+        <name>sa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to pile </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="91" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structradix__stack__t_1a5bde2ca45fd40e9960812f8be619be11" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t radix_stack_t&lt; T &gt;::sn</definition>
+        <argsstring></argsstring>
+        <name>sn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of grams in pile </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="93" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structradix__stack__t_1a029b81548507b7cdde909f4de6dfe332" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t radix_stack_t&lt; T &gt;::si</definition>
+        <argsstring></argsstring>
+        <name>si</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Byte in current focus </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="95" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stack structure </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" line="89" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Mathematics.h" bodystart="88" bodyend="96"/>
+    <listofallmembers>
+      <member refid="structradix__stack__t_1ae9c4ffd667dce322e750442a9fff848f" prot="public" virt="non-virtual"><scope>radix_stack_t</scope><name>sa</name></member>
+      <member refid="structradix__stack__t_1a029b81548507b7cdde909f4de6dfe332" prot="public" virt="non-virtual"><scope>radix_stack_t</scope><name>si</name></member>
+      <member refid="structradix__stack__t_1a5bde2ca45fd40e9960812f8be619be11" prot="public" virt="non-virtual"><scope>radix_stack_t</scope><name>sn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

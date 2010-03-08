@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structshogun_1_1POIMTrie" kind="struct" prot="public">
+    <compoundname>shogun::POIMTrie</compoundname>
+    <includes local="no">Trie.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structshogun_1_1POIMTrie_1a3e0cd761488936853bc38c57aadc5a44" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::POIMTrie::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>weight </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="58" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1POIMTrie_1aa7cc95fc3cd337e5a0f4cfd9b2fe466d" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t shogun::POIMTrie::child_weights[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>child_weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>child weights </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="68" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1POIMTrie_1ac96f5810474c16f2dd47eb65bc24b0d5" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::POIMTrie::children[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>children</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>children </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="70" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1POIMTrie_1a28691576737aadb79dae737197966a99" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t shogun::POIMTrie::seq[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>seq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sequence </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="72" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1POIMTrie_1a8a5cfd78b8a2939e35b20d738a209968" prot="public" static="no" mutable="no">
+        <type>union shogun::POIMTrie::@0</type>
+        <definition>union shogun::POIMTrie::@0 shogun::POIMTrie::@1</definition>
+        <argsstring></argsstring>
+        <name>@1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="73"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1POIMTrie_1ae1efc777c55fe800be6de4d162126e16" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::POIMTrie::S</definition>
+        <argsstring></argsstring>
+        <name>S</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>super_string_score </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="76" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1POIMTrie_1acd074324d6026658d5a5addd89a1707c" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::POIMTrie::L</definition>
+        <argsstring></argsstring>
+        <name>L</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>left_partial_overlap_score </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="78" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1POIMTrie_1a021b93b06d51aeb3ca3dce7d4df8fe1a" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::POIMTrie::R</definition>
+        <argsstring></argsstring>
+        <name>R</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>right_partial_overlap_score </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="80" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>POIM trie </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" line="56" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Trie.h" bodystart="55" bodyend="81"/>
+    <listofallmembers>
+      <member refid="structshogun_1_1POIMTrie_1aa7cc95fc3cd337e5a0f4cfd9b2fe466d" prot="public" virt="non-virtual"><scope>shogun::POIMTrie</scope><name>child_weights</name></member>
+      <member refid="structshogun_1_1POIMTrie_1ac96f5810474c16f2dd47eb65bc24b0d5" prot="public" virt="non-virtual"><scope>shogun::POIMTrie</scope><name>children</name></member>
+      <member refid="structshogun_1_1POIMTrie_1acd074324d6026658d5a5addd89a1707c" prot="public" virt="non-virtual"><scope>shogun::POIMTrie</scope><name>L</name></member>
+      <member refid="structshogun_1_1POIMTrie_1a021b93b06d51aeb3ca3dce7d4df8fe1a" prot="public" virt="non-virtual"><scope>shogun::POIMTrie</scope><name>R</name></member>
+      <member refid="structshogun_1_1POIMTrie_1ae1efc777c55fe800be6de4d162126e16" prot="public" virt="non-virtual"><scope>shogun::POIMTrie</scope><name>S</name></member>
+      <member refid="structshogun_1_1POIMTrie_1a28691576737aadb79dae737197966a99" prot="public" virt="non-virtual"><scope>shogun::POIMTrie</scope><name>seq</name></member>
+      <member refid="structshogun_1_1POIMTrie_1a3e0cd761488936853bc38c57aadc5a44" prot="public" virt="non-virtual"><scope>shogun::POIMTrie</scope><name>weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

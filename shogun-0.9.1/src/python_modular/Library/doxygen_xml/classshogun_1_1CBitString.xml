@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CBitString" kind="class" prot="public">
+    <compoundname>shogun::CBitString</compoundname>
+    <includes local="no">BitString.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CBitString_1a5e8b70d8c8e57d58e32e7ac7f30b94fb" prot="private" static="no" mutable="no">
+        <type>CAlphabet *</type>
+        <definition>CAlphabet* shogun::CBitString::alphabet</definition>
+        <argsstring></argsstring>
+        <name>alphabet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>alphabet the bit string is based on </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="324" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CBitString_1a9af675c91836163316655181d808fcf6" prot="private" static="no" mutable="no">
+        <type>uint64_t *</type>
+        <definition>uint64_t* shogun::CBitString::string</definition>
+        <argsstring></argsstring>
+        <name>string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the bit string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="326" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CBitString_1a6ca5dd8a895e9a525262620a8b502a05" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t shogun::CBitString::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the length of the bit string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="328" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CBitString_1a48aec4687065824cbe62a029b77d4033" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CBitString::word_len</definition>
+        <argsstring></argsstring>
+        <name>word_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of a word in bits </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="330" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CBitString_1a26878b2d39fd14c9a8062ba0a35c7ad0" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t shogun::CBitString::mask</definition>
+        <argsstring></argsstring>
+        <name>mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="332" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CBitString_1a6128dd3775028c21e5fb9d84489c758c" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t shogun::CBitString::single_mask</definition>
+        <argsstring></argsstring>
+        <name>single_mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mask for a single character </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="334" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CBitString_1af784e12cd7cef569504a28577a9078c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CBitString::CBitString</definition>
+        <argsstring>(EAlphabet alpha, int32_t width=1)</argsstring>
+        <name>CBitString</name>
+        <param>
+          <type>EAlphabet</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>width</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor</para><para>creates an empty Bitstring</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alphabet </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>return this many bits upon str[idx] access operations </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="39" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="38" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBitString_1a506695f2f061a5c5a67ac3e26145b178" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CBitString::~CBitString</definition>
+        <argsstring>()</argsstring>
+        <name>~CBitString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="56" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBitString_1a571670ab6bb07ac311b9dab28c8b5542" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CBitString::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>free up memory </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="63" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="62" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBitString_1a19083e2a934048c2c45400526108c45f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CBitString::obtain_from_char</definition>
+        <argsstring>(char *str, uint64_t len)</argsstring>
+        <name>obtain_from_char</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>convert string of length len into bit sequence</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of string in bits </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="75" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="74" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBitString_1a33e6aa343adabd375b5d0b33a2dc3fe6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CBitString::load_fasta_file</definition>
+        <argsstring>(const char *fname, bool ignore_invalid=false)</argsstring>
+        <name>load_fasta_file</name>
+        <param>
+          <type>const char *</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignore_invalid</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load fasta file as bit string</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ignore_invalid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if set to true, characters other than A,C,G,T are converted to A </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if loading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="112" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="111" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBitString_1a574a558a43c37457d58b777d822804ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CBitString::set_string</definition>
+        <argsstring>(uint64_t *str, uint64_t len)</argsstring>
+        <name>set_string</name>
+        <param>
+          <type>uint64_t *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set string of length len embedded in a uint64_t sequence</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of string in bits </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="199" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="198" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBitString_1a0b8586f36e3122a4da894138e4e12a85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CBitString::create</definition>
+        <argsstring>(uint64_t len)</argsstring>
+        <name>create</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>creates string of all zeros of len bits</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of string in bits </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="210" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="209" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBitString_1a22a22b00d7c573c2dd37d28e09e4899f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t shogun::CBitString::operator[]</definition>
+        <argsstring>(uint64_t index) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>access array by [] operator</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index into array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="252" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="251" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBitString_1ad789cb1859d929e036872961388950f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CBitString::set_binary_word</definition>
+        <argsstring>(uint16_t word, uint64_t index)</argsstring>
+        <name>set_binary_word</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>word</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set a binary word</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>word</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>16 bit word to be set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>word based index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="278" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="277" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBitString_1a4c3d71278ea61fae9f1270677e1ae2fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t shogun::CBitString::get_length</definition>
+        <argsstring>() const </argsstring>
+        <name>get_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>length of the string in bits </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="317" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="317" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CBitString_1a3607a572fd0c0604c13c373a1e911ae9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CBitString::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="320" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="320" bodyend="320"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>a string class embedding a string in a compact bit representation </para>    </briefdescription>
+    <detaileddescription>
+<para>especially useful to compactly represent genomic DNA</para><para>(or any other string of small alphabet size) </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" line="29" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/BitString.h" bodystart="28" bodyend="335"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CBitString_1a5e8b70d8c8e57d58e32e7ac7f30b94fb" prot="private" virt="non-virtual"><scope>shogun::CBitString</scope><name>alphabet</name></member>
+      <member refid="classshogun_1_1CBitString_1af784e12cd7cef569504a28577a9078c0" prot="public" virt="non-virtual"><scope>shogun::CBitString</scope><name>CBitString</name></member>
+      <member refid="classshogun_1_1CBitString_1a571670ab6bb07ac311b9dab28c8b5542" prot="public" virt="non-virtual"><scope>shogun::CBitString</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CBitString_1a0b8586f36e3122a4da894138e4e12a85" prot="public" virt="non-virtual"><scope>shogun::CBitString</scope><name>create</name></member>
+      <member refid="classshogun_1_1CBitString_1a4c3d71278ea61fae9f1270677e1ae2fc" prot="public" virt="non-virtual"><scope>shogun::CBitString</scope><name>get_length</name></member>
+      <member refid="classshogun_1_1CBitString_1a3607a572fd0c0604c13c373a1e911ae9" prot="public" virt="virtual"><scope>shogun::CBitString</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CBitString_1a6ca5dd8a895e9a525262620a8b502a05" prot="private" virt="non-virtual"><scope>shogun::CBitString</scope><name>length</name></member>
+      <member refid="classshogun_1_1CBitString_1a33e6aa343adabd375b5d0b33a2dc3fe6" prot="public" virt="non-virtual"><scope>shogun::CBitString</scope><name>load_fasta_file</name></member>
+      <member refid="classshogun_1_1CBitString_1a26878b2d39fd14c9a8062ba0a35c7ad0" prot="private" virt="non-virtual"><scope>shogun::CBitString</scope><name>mask</name></member>
+      <member refid="classshogun_1_1CBitString_1a19083e2a934048c2c45400526108c45f" prot="public" virt="non-virtual"><scope>shogun::CBitString</scope><name>obtain_from_char</name></member>
+      <member refid="classshogun_1_1CBitString_1a22a22b00d7c573c2dd37d28e09e4899f" prot="public" virt="non-virtual"><scope>shogun::CBitString</scope><name>operator[]</name></member>
+      <member refid="classshogun_1_1CBitString_1ad789cb1859d929e036872961388950f8" prot="public" virt="non-virtual"><scope>shogun::CBitString</scope><name>set_binary_word</name></member>
+      <member refid="classshogun_1_1CBitString_1a574a558a43c37457d58b777d822804ca" prot="public" virt="non-virtual"><scope>shogun::CBitString</scope><name>set_string</name></member>
+      <member refid="classshogun_1_1CBitString_1a6128dd3775028c21e5fb9d84489c758c" prot="private" virt="non-virtual"><scope>shogun::CBitString</scope><name>single_mask</name></member>
+      <member refid="classshogun_1_1CBitString_1a9af675c91836163316655181d808fcf6" prot="private" virt="non-virtual"><scope>shogun::CBitString</scope><name>string</name></member>
+      <member refid="classshogun_1_1CBitString_1a48aec4687065824cbe62a029b77d4033" prot="private" virt="non-virtual"><scope>shogun::CBitString</scope><name>word_len</name></member>
+      <member refid="classshogun_1_1CBitString_1a506695f2f061a5c5a67ac3e26145b178" prot="public" virt="non-virtual"><scope>shogun::CBitString</scope><name>~CBitString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

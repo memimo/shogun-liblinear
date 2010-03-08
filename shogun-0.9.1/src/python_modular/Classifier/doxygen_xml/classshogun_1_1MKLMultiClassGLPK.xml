@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1MKLMultiClassGLPK" kind="class" prot="public">
+    <compoundname>shogun::MKLMultiClassGLPK</compoundname>
+    <includes local="no">MKLMultiClassGLPK.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1MKLMultiClassGLPK_1aec94b9a0f43361b592d4d16fc6f526ef" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::MKLMultiClassGLPK::numkernels</definition>
+        <argsstring></argsstring>
+        <name>numkernels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>stores the number of kernels which acts as a parameter for the LP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClassGLPK.h" line="86" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClassGLPK.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1MKLMultiClassGLPK_1a18665368d729348801122cc360999590" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::MKLMultiClassGLPK::MKLMultiClassGLPK</definition>
+        <argsstring>()</argsstring>
+        <name>MKLMultiClassGLPK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Class default Constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClassGLPK.h" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1MKLMultiClassGLPK_1a18211dfb9362168ea2ce8467cd55d36e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::MKLMultiClassGLPK::~MKLMultiClassGLPK</definition>
+        <argsstring>()</argsstring>
+        <name>~MKLMultiClassGLPK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Class default Destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClassGLPK.h" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1MKLMultiClassGLPK_1a780c2970ecedae356caec7ac02310bd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::MKLMultiClassGLPK::setup</definition>
+        <argsstring>(const int32_t numkernels2)</argsstring>
+        <name>setup</name>
+        <param>
+          <type>const int32_t</type>
+          <declname>numkernels2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initializes GLPK LP sover</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numkernels2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the number of kernels </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClassGLPK.h" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1MKLMultiClassGLPK_1acc90cdbd708bbbd06934ba595ec467cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::MKLMultiClassGLPK::addconstraint</definition>
+        <argsstring>(const ::std::vector&lt; float64_t &gt; &amp;normw2, const float64_t sumofpositivealphas)</argsstring>
+        <name>addconstraint</name>
+        <param>
+          <type>const ::std::vector&lt; float64_t &gt; &amp;</type>
+          <declname>normw2</declname>
+        </param>
+        <param>
+          <type>const float64_t</type>
+          <declname>sumofpositivealphas</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>adds a constraint to the LP arising in L1 MKL based on two parameters</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>normw2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the vector of <formula id="21">$ \|w_k \|^2 $</formula> for all kernels </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sumofpositivealphas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a term depending on alphas, labels and biases, see in the function float64_t getsumofsignfreealphas() from MKLMultiClass.h, it depends on the formulation of the underlying GMNPSVM. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClassGLPK.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1MKLMultiClassGLPK_1aec0a1c105d65d318ce0c56d8ed781f60" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::MKLMultiClassGLPK::computeweights</definition>
+        <argsstring>(std::vector&lt; float64_t &gt; &amp;weights2)</argsstring>
+        <name>computeweights</name>
+        <param>
+          <type>std::vector&lt; float64_t &gt; &amp;</type>
+          <declname>weights2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>computes MKL weights</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>weights2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stores the new weights </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClassGLPK.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1MKLMultiClassGLPK_1af0f8483a9304f93028ce4c5950715e35" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::MKLMultiClassGLPK::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClassGLPK.h" line="68" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClassGLPK.h" bodystart="67" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1MKLMultiClassGLPK_1a6a9c0550b8e1a0cd8ccf2b474063202d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::MKLMultiClassGLPK::MKLMultiClassGLPK</definition>
+        <argsstring>(MKLMultiClassGLPK &amp;gl)</argsstring>
+        <name>MKLMultiClassGLPK</name>
+        <param>
+          <type><ref refid="classshogun_1_1MKLMultiClassGLPK" kindref="compound">MKLMultiClassGLPK</ref> &amp;</type>
+          <declname>gl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Class Copy Constructor protected to avoid its usage because member glp_prob* linearproblem; from GLPK package is not copyable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClassGLPK.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1MKLMultiClassGLPK_1a1e3cc082b5b406dc77f24b0052876991" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classshogun_1_1MKLMultiClassGLPK" kindref="compound">MKLMultiClassGLPK</ref></type>
+        <definition>MKLMultiClassGLPK shogun::MKLMultiClassGLPK::operator=</definition>
+        <argsstring>(MKLMultiClassGLPK &amp;gl)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classshogun_1_1MKLMultiClassGLPK" kindref="compound">MKLMultiClassGLPK</ref> &amp;</type>
+          <declname>gl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Class Assignment operator protected to avoid its usage because member glp_prob* linearproblem; from GLPK package is not copyable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClassGLPK.h" line="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classshogun_1_1MKLMultiClassGLPK" kindref="compound">MKLMultiClassGLPK</ref> is a helper class for MKLMultiClass. </para>    </briefdescription>
+    <detaileddescription>
+<para>it solves the corresponding linear problem arising in SIP formulation for MKL using glpk </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClassGLPK.h" line="29" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClassGLPK.h" bodystart="28" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1MKLMultiClassGLPK_1acc90cdbd708bbbd06934ba595ec467cb" prot="public" virt="virtual"><scope>shogun::MKLMultiClassGLPK</scope><name>addconstraint</name></member>
+      <member refid="classshogun_1_1MKLMultiClassGLPK_1aec0a1c105d65d318ce0c56d8ed781f60" prot="public" virt="virtual"><scope>shogun::MKLMultiClassGLPK</scope><name>computeweights</name></member>
+      <member refid="classshogun_1_1MKLMultiClassGLPK_1af0f8483a9304f93028ce4c5950715e35" prot="public" virt="virtual"><scope>shogun::MKLMultiClassGLPK</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1MKLMultiClassGLPK_1a18665368d729348801122cc360999590" prot="public" virt="non-virtual"><scope>shogun::MKLMultiClassGLPK</scope><name>MKLMultiClassGLPK</name></member>
+      <member refid="classshogun_1_1MKLMultiClassGLPK_1a6a9c0550b8e1a0cd8ccf2b474063202d" prot="protected" virt="non-virtual"><scope>shogun::MKLMultiClassGLPK</scope><name>MKLMultiClassGLPK</name></member>
+      <member refid="classshogun_1_1MKLMultiClassGLPK_1aec94b9a0f43361b592d4d16fc6f526ef" prot="protected" virt="non-virtual"><scope>shogun::MKLMultiClassGLPK</scope><name>numkernels</name></member>
+      <member refid="classshogun_1_1MKLMultiClassGLPK_1a1e3cc082b5b406dc77f24b0052876991" prot="protected" virt="non-virtual"><scope>shogun::MKLMultiClassGLPK</scope><name>operator=</name></member>
+      <member refid="classshogun_1_1MKLMultiClassGLPK_1a780c2970ecedae356caec7ac02310bd2" prot="public" virt="virtual"><scope>shogun::MKLMultiClassGLPK</scope><name>setup</name></member>
+      <member refid="classshogun_1_1MKLMultiClassGLPK_1a18211dfb9362168ea2ce8467cd55d36e" prot="public" virt="virtual"><scope>shogun::MKLMultiClassGLPK</scope><name>~MKLMultiClassGLPK</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

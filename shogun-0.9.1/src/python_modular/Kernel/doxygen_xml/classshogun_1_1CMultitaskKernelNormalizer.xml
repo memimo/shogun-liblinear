@@ -1,0 +1,527 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CMultitaskKernelNormalizer" kind="class" prot="public">
+    <compoundname>shogun::CMultitaskKernelNormalizer</compoundname>
+    <basecompoundref refid="classshogun_1_1CKernelNormalizer" prot="public" virt="non-virtual">shogun::CKernelNormalizer</basecompoundref>
+    <includes local="no">MultitaskKernelNormalizer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CMultitaskKernelNormalizer_1a199d7a9091c271c933507bf59b99330d" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; float64_t &gt;</type>
+        <definition>std::vector&lt;float64_t&gt; shogun::CMultitaskKernelNormalizer::dependency_matrix</definition>
+        <argsstring></argsstring>
+        <name>dependency_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MxM matrix encoding similarity between tasks </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="201" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CMultitaskKernelNormalizer_1a5c842e98ec55c448081cfde9cd48f9f2" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CMultitaskKernelNormalizer::num_tasks</definition>
+        <argsstring></argsstring>
+        <name>num_tasks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of tasks </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="204" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CMultitaskKernelNormalizer_1af45889b9a525722cb01f89bac4e35bf2" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; int32_t &gt;</type>
+        <definition>std::vector&lt;int32_t&gt; shogun::CMultitaskKernelNormalizer::task_vector_lhs</definition>
+        <argsstring></argsstring>
+        <name>task_vector_lhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>task vector indicating to which task each example on the left hand side belongs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="207" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CMultitaskKernelNormalizer_1a26e6c133a324ed69768c2d3c813d87d4" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; int32_t &gt;</type>
+        <definition>std::vector&lt;int32_t&gt; shogun::CMultitaskKernelNormalizer::task_vector_rhs</definition>
+        <argsstring></argsstring>
+        <name>task_vector_rhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>task vector indicating to which task each example on the right hand side belongs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="210" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CMultitaskKernelNormalizer_1ac27b4e632f5f96dcb76c365f4ffe9b36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CMultitaskKernelNormalizer::CMultitaskKernelNormalizer</definition>
+        <argsstring>()</argsstring>
+        <name>CMultitaskKernelNormalizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="37" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMultitaskKernelNormalizer_1a7526692589c05ba706cb2fc9d3cfd1bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CMultitaskKernelNormalizer::CMultitaskKernelNormalizer</definition>
+        <argsstring>(std::vector&lt; int32_t &gt; task_lhs, std::vector&lt; int32_t &gt; task_rhs)</argsstring>
+        <name>CMultitaskKernelNormalizer</name>
+        <param>
+          <type>std::vector&lt; int32_t &gt;</type>
+          <declname>task_lhs</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int32_t &gt;</type>
+          <declname>task_rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task vector with containing task_id for each example for left hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>task_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task vector with containing task_id for each example for right hand side </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="46" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="45" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMultitaskKernelNormalizer_1a59193d593e8fb9b53ae3156fd57210ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CMultitaskKernelNormalizer::~CMultitaskKernelNormalizer</definition>
+        <argsstring>()</argsstring>
+        <name>~CMultitaskKernelNormalizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="77" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMultitaskKernelNormalizer_1a5b8c1a4626117965499ecaf0100b0959" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CMultitaskKernelNormalizer::init</definition>
+        <argsstring>(CKernel *k)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1a81e40e31e3ffe03d31d22a87379f195d">init</reimplements>
+        <param>
+          <type><ref refid="classshogun_1_1CKernel" kindref="compound">CKernel</ref> *</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialization of the normalizer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="83" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="82" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMultitaskKernelNormalizer_1a85f77778f45190f41dd5b7f6fbb7119e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CMultitaskKernelNormalizer::normalize</definition>
+        <argsstring>(float64_t value, int32_t idx_lhs, int32_t idx_rhs)</argsstring>
+        <name>normalize</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1a93c47ed8ce631c3a1350d1aaeeb80fed">normalize</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_lhs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize the kernel value <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of left hand side vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of right hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="100" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="98" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMultitaskKernelNormalizer_1ad68674a60ddb42d9a2f37411ba81a10d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CMultitaskKernelNormalizer::normalize_lhs</definition>
+        <argsstring>(float64_t value, int32_t idx_lhs)</argsstring>
+        <name>normalize_lhs</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1aa25af9b375b533e4cff3768a77bd0e7f">normalize_lhs</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize only the left hand side vector <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of a component of the left hand side feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of left hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="123" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="122" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMultitaskKernelNormalizer_1af8760f44d3d1881805583f280088deb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CMultitaskKernelNormalizer::normalize_rhs</definition>
+        <argsstring>(float64_t value, int32_t idx_rhs)</argsstring>
+        <name>normalize_rhs</name>
+        <reimplements refid="classshogun_1_1CKernelNormalizer_1ac98a44e10b6b6b1bb4dc259a877e7491">normalize_rhs</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalize only the right hand side vector <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of a component of the right hand side feature vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of right hand side vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="133" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="132" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMultitaskKernelNormalizer_1a890df25d14d74aefb1f5634cc8b4dcd0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; int32_t &gt;</type>
+        <definition>std::vector&lt;int32_t&gt; shogun::CMultitaskKernelNormalizer::get_task_vector_lhs</definition>
+        <argsstring>() const </argsstring>
+        <name>get_task_vector_lhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>vec task vector with containing task_id for each example on left hand side </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="141" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMultitaskKernelNormalizer_1a40db4004a7f14c6a954bbe8300815fae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CMultitaskKernelNormalizer::set_task_vector_lhs</definition>
+        <argsstring>(std::vector&lt; int32_t &gt; vec)</argsstring>
+        <name>set_task_vector_lhs</name>
+        <param>
+          <type>std::vector&lt; int32_t &gt;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task vector with containing task_id for each example </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="146" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="146" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMultitaskKernelNormalizer_1a43cf64b9947f7a8b4466ce22dc76473e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; int32_t &gt;</type>
+        <definition>std::vector&lt;int32_t&gt; shogun::CMultitaskKernelNormalizer::get_task_vector_rhs</definition>
+        <argsstring>() const </argsstring>
+        <name>get_task_vector_rhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>vec task vector with containing task_id for each example on right hand side </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="151" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="151" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMultitaskKernelNormalizer_1a13c6dbdc4c701b2725f7b6a45202a456" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CMultitaskKernelNormalizer::set_task_vector_rhs</definition>
+        <argsstring>(std::vector&lt; int32_t &gt; vec)</argsstring>
+        <name>set_task_vector_rhs</name>
+        <param>
+          <type>std::vector&lt; int32_t &gt;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task vector with containing task_id for each example </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="156" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="156" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMultitaskKernelNormalizer_1a4184a625deadb844fb5cebe42e50e228" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CMultitaskKernelNormalizer::set_task_vector</definition>
+        <argsstring>(std::vector&lt; int32_t &gt; vec)</argsstring>
+        <name>set_task_vector</name>
+        <param>
+          <type>std::vector&lt; int32_t &gt;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task vector with containing task_id for each example </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="161" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMultitaskKernelNormalizer_1aaffe181bba8f41f5ad2b352879d26d98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CMultitaskKernelNormalizer::get_task_similarity</definition>
+        <argsstring>(int32_t task_lhs, int32_t task_rhs)</argsstring>
+        <name>get_task_similarity</name>
+        <param>
+          <type>int32_t</type>
+          <declname>task_lhs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>task_rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task_id on left hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>task_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task_id on right hand side </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>similarity between tasks </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="171" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="171" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMultitaskKernelNormalizer_1ad924e1302e0a070df70320fb0405e39e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CMultitaskKernelNormalizer::set_task_similarity</definition>
+        <argsstring>(int32_t task_lhs, int32_t task_rhs, float64_t similarity)</argsstring>
+        <name>set_task_similarity</name>
+        <param>
+          <type>int32_t</type>
+          <declname>task_lhs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>task_rhs</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>similarity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task_lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task_id on left hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>task_rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task_id on right hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>similarity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>similarity between tasks </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="185" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="185" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMultitaskKernelNormalizer_1a51a97214fbf6d49450f09fbdfb33ea5b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CMultitaskKernelNormalizer::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="195" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="195" bodyend="195"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The MultitaskKernel allows Multitask Learning via a modified kernel function. </para>    </briefdescription>
+    <detaileddescription>
+<para>This effectively normalizes the vectors in feature space to norm 1 (see <ref refid="classshogun_1_1CSqrtDiagKernelNormalizer" kindref="compound">CSqrtDiagKernelNormalizer</ref>)</para><para><formula id="36">\[ k&apos;({\bf x},{\bf x&apos;}) = ... \]</formula> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="221">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+      <node id="220">
+        <label>shogun::CMultitaskKernelNormalizer</label>
+        <link refid="classshogun_1_1CMultitaskKernelNormalizer"/>
+        <childnode refid="221" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="223">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+      <node id="222">
+        <label>shogun::CMultitaskKernelNormalizer</label>
+        <link refid="classshogun_1_1CMultitaskKernelNormalizer"/>
+        <childnode refid="223" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" line="30" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/MultitaskKernelNormalizer.h" bodystart="29" bodyend="212"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CKernelNormalizer_1ac6fe092f0738d7de0aa36183473ae08f" prot="public" virt="non-virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>CKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1ac27b4e632f5f96dcb76c365f4ffe9b36" prot="public" virt="non-virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>CMultitaskKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1a7526692589c05ba706cb2fc9d3cfd1bf" prot="public" virt="non-virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>CMultitaskKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1a199d7a9091c271c933507bf59b99330d" prot="protected" virt="non-virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>dependency_matrix</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1a51a97214fbf6d49450f09fbdfb33ea5b" prot="public" virt="virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1aaffe181bba8f41f5ad2b352879d26d98" prot="public" virt="non-virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>get_task_similarity</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1a890df25d14d74aefb1f5634cc8b4dcd0" prot="public" virt="non-virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>get_task_vector_lhs</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1a43cf64b9947f7a8b4466ce22dc76473e" prot="public" virt="non-virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>get_task_vector_rhs</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1a5b8c1a4626117965499ecaf0100b0959" prot="public" virt="virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>init</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1a85f77778f45190f41dd5b7f6fbb7119e" prot="public" virt="virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>normalize</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1ad68674a60ddb42d9a2f37411ba81a10d" prot="public" virt="virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>normalize_lhs</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1af8760f44d3d1881805583f280088deb9" prot="public" virt="virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>normalize_rhs</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1a5c842e98ec55c448081cfde9cd48f9f2" prot="protected" virt="non-virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>num_tasks</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1ad924e1302e0a070df70320fb0405e39e" prot="public" virt="non-virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>set_task_similarity</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1a4184a625deadb844fb5cebe42e50e228" prot="public" virt="non-virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>set_task_vector</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1a40db4004a7f14c6a954bbe8300815fae" prot="public" virt="non-virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>set_task_vector_lhs</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1a13c6dbdc4c701b2725f7b6a45202a456" prot="public" virt="non-virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>set_task_vector_rhs</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1af45889b9a525722cb01f89bac4e35bf2" prot="protected" virt="non-virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>task_vector_lhs</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1a26e6c133a324ed69768c2d3c813d87d4" prot="protected" virt="non-virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>task_vector_rhs</name></member>
+      <member refid="classshogun_1_1CKernelNormalizer_1a8af9672897eb3da0c1892ef1e16fb29c" prot="public" virt="virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>~CKernelNormalizer</name></member>
+      <member refid="classshogun_1_1CMultitaskKernelNormalizer_1a59193d593e8fb9b53ae3156fd57210ac" prot="public" virt="virtual"><scope>shogun::CMultitaskKernelNormalizer</scope><name>~CMultitaskKernelNormalizer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

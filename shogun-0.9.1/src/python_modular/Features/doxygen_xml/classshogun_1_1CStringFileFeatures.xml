@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CStringFileFeatures" kind="class" prot="public">
+    <compoundname>shogun::CStringFileFeatures</compoundname>
+    <basecompoundref refid="classshogun_1_1CStringFeatures" prot="public" virt="non-virtual">shogun::CStringFeatures&lt; ST &gt;</basecompoundref>
+    <includes local="no">StringFileFeatures.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class ST</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CStringFileFeatures_1a578a2f10ff831771e13d9fe88ce477fa" prot="protected" static="no" mutable="no">
+        <type>CMemoryMappedFile&lt; ST &gt; *</type>
+        <definition>CMemoryMappedFile&lt;ST&gt;* shogun::CStringFileFeatures&lt; ST &gt;::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>memory mapped file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" line="190" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CStringFileFeatures_1ae32358cb0cf38dd70d771b27598e7c8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CStringFileFeatures&lt; ST &gt;::CStringFileFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>CStringFileFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" line="42" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFileFeatures_1abe60f200b123858cdc62d99ff9db40ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CStringFileFeatures&lt; ST &gt;::CStringFileFeatures</definition>
+        <argsstring>(const char *fname, EAlphabet alpha)</argsstring>
+        <name>CStringFileFeatures</name>
+        <param>
+          <type>const char *</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>EAlphabet</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename of the file containing line based features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alphabet (type) to use for string features </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" line="52" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" bodystart="50" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFileFeatures_1acb72bb7ac1ff5f7f45dcf754caad2646" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CStringFileFeatures&lt; ST &gt;::~CStringFileFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>~CStringFileFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" line="61" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" bodystart="60" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CStringFileFeatures_1aa72c4a0555f6ac9f5e7c549cdd75b775" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ST *</type>
+        <definition>ST* shogun::CStringFileFeatures&lt; ST &gt;::get_line</definition>
+        <argsstring>(uint64_t &amp;len, uint64_t &amp;offs, int32_t &amp;line_nr, uint64_t file_length)</argsstring>
+        <name>get_line</name>
+        <param>
+          <type>uint64_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>uint64_t &amp;</type>
+          <declname>offs</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>line_nr</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>file_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get next line from file</para><para>The returned line may be modfied in case the file was opened read/write. It is otherwise read-only.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of line (returned via reference) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset to be passed for reading next line, should be 0 initially (returned via reference) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line_nr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>used to indicate errors (returned as reference should be 0 initially) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>total length of the file (for error checking)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>line (NOT ZERO TERMINATED) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" line="82" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" bodystart="81" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFileFeatures_1ad8ecb6fffdb13ed219183ae60fabfce9" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CStringFileFeatures&lt; ST &gt;::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <reimplements refid="classshogun_1_1CStringFeatures_1ae084ead0d032dad12550ca84d5cd6427">cleanup</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cleanup string features </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" line="113" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" bodystart="112" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFileFeatures_1abdd182926763c1d8008705cc9821e0f1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CStringFileFeatures&lt; ST &gt;::cleanup_feature_vector</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>cleanup_feature_vector</name>
+        <reimplements refid="classshogun_1_1CStringFeatures_1a4e0c83bef401055bec505006f713ba23">cleanup_feature_vector</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cleanup a single feature vector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" line="132" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" bodystart="131" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CStringFileFeatures_1a92da8460bbc68f82dfd1b824798e6b6c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CStringFileFeatures&lt; ST &gt;::fetch_meta_info_from_file</definition>
+        <argsstring>(int32_t granularity=1048576)</argsstring>
+        <name>fetch_meta_info_from_file</name>
+        <param>
+          <type>int32_t</type>
+          <declname>granularity</declname>
+          <defval>1048576</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>obtain meta information from file</para><para>i.e., determine number of strings and their lengths </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" line="142" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" bodystart="141" bodyend="185"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>File based string features. </para>    </briefdescription>
+    <detaileddescription>
+<para>StringFeatures that are file based. Underneath memory mapped files are used. Derived from <ref refid="classshogun_1_1CStringFeatures" kindref="compound">CStringFeatures</ref> thus transparently enabling all of the StringFeature functionality.</para><para>Supported file format contains one string per line, lines of variable length are supported and must be separated by &apos;<linebreak/>
+&apos;. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="117">
+        <label>shogun::CStringFileFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CStringFileFeatures"/>
+        <childnode refid="118" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>shogun::CStringFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CStringFeatures"/>
+        <childnode refid="119" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="125">
+        <label>shogun::CAlphabet</label>
+        <link refid="classshogun_1_1CAlphabet"/>
+      </node>
+      <node id="123">
+        <label>ST</label>
+      </node>
+      <node id="120">
+        <label>shogun::CStringFileFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CStringFileFeatures"/>
+        <childnode refid="121" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>shogun::T_STRING&lt; ST &gt;</label>
+        <link refid="classshogun_1_1T__STRING"/>
+      </node>
+      <node id="121">
+        <label>shogun::CStringFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CStringFeatures"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+        <childnode refid="123" relation="usage">
+          <edgelabel>single_string</edgelabel>
+          <edgelabel>symbol_mask_table</edgelabel>
+        </childnode>
+        <childnode refid="124" relation="usage">
+          <edgelabel>features</edgelabel>
+        </childnode>
+        <childnode refid="125" relation="usage">
+          <edgelabel>alphabet</edgelabel>
+        </childnode>
+      </node>
+      <node id="122">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" line="35" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/StringFileFeatures.h" bodystart="34" bodyend="191"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CFeatures_1a793f371cc7dd4897997b01612f7d4b77" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>add_preproc</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1af7713f43246402da9e8048b55f3be85d" prot="protected" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>alphabet</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a22d575b358c62ed7bd596aa131c1874d" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>apply_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a91ac9daf871dd99b358da47eea74eeb3" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1be7a2c5d471a3586c44988e2b4e1129" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a4ad3a39235806ab1999a1c5fb5290486" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a89609a765e1ab682ea6e73402b56c961" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>check_feature_compatibility</name></member>
+      <member refid="classshogun_1_1CFeatures_1afab00f1403d1349fd18cca31a6d63de3" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>clean_preprocs</name></member>
+      <member refid="classshogun_1_1CStringFileFeatures_1ad8ecb6fffdb13ed219183ae60fabfce9" prot="protected" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CStringFileFeatures_1abdd182926763c1d8008705cc9821e0f1" prot="protected" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>cleanup_feature_vector</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ab8c6446973515eb2c10a48242e3d0421" prot="protected" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>compute_feature_vector</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a99e110435c00ab38b159c4a8ef4dd5e0" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>compute_symbol_mask_table</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ac17e88f63cf73c03f1f9ee091d52c201" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>compute_symbol_mask_table</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a5264325823e4df9f2bc8957e7f0c5f7a" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>compute_symbol_mask_table</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a4ccbc06da7e81a0a8fc0d44ac831a3cf" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>compute_symbol_mask_table</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a137dce44849d1746b7f9f6b3e236422e" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>copy_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a865f7bb9379fb8adb6eebd5cf959b316" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>CStringFeatures</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1af4c089111bed04d90e44c769ebb668c0" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>CStringFeatures</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ace5e31e0589489f68cc2f218e6ab5840" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>CStringFeatures</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aa135839eeea1ae26da128ca7f981210c" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>CStringFeatures</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ae24969774d1c358e03549dd323095558" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>CStringFeatures</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ab6709427fef74aa32a3030e4a662b74d" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>CStringFeatures</name></member>
+      <member refid="classshogun_1_1CStringFileFeatures_1ae32358cb0cf38dd70d771b27598e7c8a" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>CStringFileFeatures</name></member>
+      <member refid="classshogun_1_1CStringFileFeatures_1abe60f200b123858cdc62d99ff9db40ae" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>CStringFileFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1accdc453796e319852dd41fffa0c0f70c" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>del_preproc</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ab74b1c4126bebe05d9064a97c1aec37a" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>determine_maximum_string_length</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ad7e995718996addda081c2bfb88ada78" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>disable_on_the_fly_preprocessing</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ab1ab8ad80ec4638fff62e883c5cc0ca0" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>duplicate</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a58569c317ebf61ce24a5f8e679b81772" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>embed_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ac9fcde2320a74bd2ac97b0e2d52b778f" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>embed_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a50f8eb5962e8606360a6fc151a2315e3" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>embed_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ac94ab141aa50f2a4305011c68127f556" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>embed_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1af79a40e7283504e4913c6b7878af8437" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>embed_word</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a725cd39a1fa777a72413fcdef4e13cd2" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>embed_word</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aa4a56669a5d1a9bbe21639238bfbb429" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>embed_word</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ab3634cc73b024e4d6889f0e1a0d35302" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>embed_word</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a5490723d7c8bcabaa081978e2087ef7c" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>enable_on_the_fly_preprocessing</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a642a134efc86be31fc4521c3c3a6f937" prot="protected" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>feature_cache</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a0744b37374d0dd318f3bfd88e6171aca" prot="protected" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>features</name></member>
+      <member refid="classshogun_1_1CStringFileFeatures_1a92da8460bbc68f82dfd1b824798e6b6c" prot="protected" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>fetch_meta_info_from_file</name></member>
+      <member refid="classshogun_1_1CStringFileFeatures_1a578a2f10ff831771e13d9fe88ce477fa" prot="protected" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>file</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ac729e34ba14e63bbca7d6edce5b64330" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>free_feature_vector</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1addefcfa614c337c0fff4c68aa4b5c563" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_alphabet</name></member>
+      <member refid="classshogun_1_1CFeatures_1a29b93c241dca0eba1415f873c83d27d8" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a091f871b0f98baf61e1a2fd3a3aba8a9" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aa71e016a67405365313351635c7f769b" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a8b37268cf88b36545f33b305fe9950b7" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ae8d65c9f15279a84451a77b9a61384b4" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a78a20c5c7ca95ca6ace0f8da26d70b55" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a2f550c395c1facc66955f6cf30d3984b" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1acdf80dc117310f7924cff3e93be2bc30" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a5733fd3af5b59dbedd9affe1c8e60da0" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a8b39eae3d1d090685afc31531edfdd4f" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a2846d6c0bcd0d5cd62854ba1ef001082" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1afb539f9ec9d61e42a17f67c941b4d8e2" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aa78028371efacd348c2e89398a5b3e70" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a2f96841bdbb4b28dd933c570c192a052" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a716a2f8e1c42ab69bda10087a8b0224e" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1acdfb2015b973478bca5bae36950a822c" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1af84e62381530c251d5cdab17e9fcafec" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature_vector</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aa9cade98248b028c510682dc05f1f863" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_feature_vector</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a9735f465f42cf57391d209c8ce1ca78d" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a57c3158a1e0b82ffeed568115b8e32b5" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_features</name></member>
+      <member refid="classshogun_1_1CStringFileFeatures_1aa72c4a0555f6ac9f5e7c549cdd75b775" prot="protected" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_line</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a9db0522445fff99273e6335460170cab" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_masked_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a0bc6cf0819a0e86111f8a7c5e38ed117" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_masked_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1acbb259cec58241b22b95343381f187ae" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_masked_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a294e0d213ef6caa24f863e00cc1dc856" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_masked_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a26c80efb05e1e50a5656362f252a6951" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_masked_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a0a7fcb2f724dd1089e28c0cdb407b45c" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_max_num_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ab1f4433537396443c2cc18bde3d6f36a" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_max_vector_length</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a344319205c904e5175621003f62942c6" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CFeatures_1a7662d240eab24d5753385b0f9e6e9bae" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_num_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a9010a03b11399648cc5da7194fb5e707" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_num_preprocessed</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a9029cbc48b083a7dc756e2f07ea3231e" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_num_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ae7339e043f6df5adfa03e56fb9273e08" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_num_vectors</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a7944d676e2e245e03e857daa8e7ef604" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_order</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a0ad6e89bfeb18ca28678082eea825e1e" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_original_num_symbols</name></member>
+      <member refid="classshogun_1_1CFeatures_1ac1015e3a736e4e6d4d6fbe24416af6c4" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_preproc</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a2e61e6789ba400eec0155188f067483c" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_size</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a292d66d7c501396f14454b0bce04af83" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>get_vector_length</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a748a9d7b1f0d5b75a993d05f8a9097b8" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>get_zero_terminated_string_copy</name></member>
+      <member refid="classshogun_1_1CFeatures_1a07f1d7dc618a9f5f76663d80ad549d38" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a6539f568e1079d63d0d4f1cca9a9c40f" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>have_same_length</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1248f8829f63f9c9a42ac36065961295" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>is_preprocessed</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a8e77d0779631af09dac2106ae4093bb4" prot="protected" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>length_of_single_string</name></member>
+      <member refid="classshogun_1_1CFeatures_1a6412ef81478c3c9dadac2a87a544f640" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>list_feature_obj</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aaeb951c4dd2b893bda80d097818e62fb" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>load</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a2fed506f97ba2c6353c74e9d660cb28c" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>load_compressed</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a47231299e2f1766e0daa99f3d8958dc7" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>load_dna_file</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aad80e8e325ad954263ebf99f421cad44" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>load_fasta_file</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1af2b287495e0aa69373ad7643cfd19c93" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>load_fastq_file</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a180509f47a88583830d8339cd8fa61f6" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>load_from_directory</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a87fd4ca728c5d5892285f3394f26cab5" prot="protected" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>max_string_length</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a2bfa468341a32c916238a764dc95d100" prot="protected" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>num_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ad455f70470197f826ef7baa87466316c" prot="protected" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>num_vectors</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1afc4fa45a26d20de632940261a06e29fd" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>obtain_by_position_list</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aed5f5518058550c74f2cef9ddaf25ffa" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>obtain_by_sliding_window</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a7759c36cab3f93d588a1fe84c1f760cf" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>obtain_from_char</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ad00b1f1b98d36536f4931d13f8a57be5" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>obtain_from_char_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a37bc76dfab8a1949e912c95cc0b767c5" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>obtain_from_char_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a20493103fd8c8b5da27ea353460b3001" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>obtain_from_char_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1adfdd2052e6766f334d3524ec88aaad70" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>obtain_from_char_features</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a351c8b11191bf47ec29503722ceabbfd" prot="protected" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>order</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1afd3b8ef7ace5a73c5766afc88d8ef7e8" prot="protected" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>original_num_symbols</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a8a1b8a882fb9969a7b104281ee8c21e6" prot="protected" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>preprocess_on_get</name></member>
+      <member refid="classshogun_1_1CFeatures_1a57d67048d44a7a7ea92bcbdfed9060ea" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>reshape</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a1d9ca2d673e47c81de012fcb2145d5e7" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>save</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a13d0142f249a431b74a89c2c2b505a9d" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>save_compressed</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a170610c3731bcb7aa53ecbb265aa237a" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>set_feature_vector</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a59f60101ed6f7052aff46f5660145f7e" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>set_feature_vector</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1af02dd8c0bec570fb44cf85cb0bca8c00" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>set_features</name></member>
+      <member refid="classshogun_1_1CFeatures_1aa88c27c0f3885d23ac71c4cc2e55c431" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>set_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab43db0bd4a231249ce4bc65f6e15f695" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aa93cacf71d3e767a2e8d342292e42304" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>shift_offset</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a4868775de9134a9e2432f004303e9454" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>shift_offset</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aa56375ba3eba64569862eaeea5339bd3" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>shift_offset</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a899e2961b604e1f82baa52611a48e52a" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>shift_offset</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aa8ce79b32a724196204d850d185799b4" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>shift_offset</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a98fbdd5246b3254759732f640bccf6b2" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>shift_symbol</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a872e54346cb2c870b59b98d6728f9853" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>shift_symbol</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a3950519d6b815ca8105f688443075fd1" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>shift_symbol</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ac81ddaf1f40a4ae5b438da9dfa31cdfa" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>shift_symbol</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1aea731f527bf3ec0730974a9016e2d1c3" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>shift_symbol</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1af605c7ea9267c1733795ab8912b18dbc" prot="protected" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>single_string</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a0d43676d12f9cbd228a8da4c1955f110" prot="protected" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>symbol_mask_table</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a10e25d57d8314b953f993c2c1436d7eb" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>unembed_word</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a05252381d2b6e036e729394421e76ce5" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>unembed_word</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ac1eb80692617059e11a468d45bd90f5e" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>unembed_word</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1a022d80ec69ba14b9c71b5ad5f9440c50" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>unembed_word</name></member>
+      <member refid="classshogun_1_1CFeatures_1a3ff3f03688a7f6a1b36dab8677407166" prot="public" virt="non-virtual"><scope>shogun::CStringFileFeatures</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab0e2a8a18ac5056f802e4aa51d4fcd4f" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>~CFeatures</name></member>
+      <member refid="classshogun_1_1CStringFeatures_1ad05f6cc30776eac3e20e34f976058509" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>~CStringFeatures</name></member>
+      <member refid="classshogun_1_1CStringFileFeatures_1acb72bb7ac1ff5f7f45dcf754caad2646" prot="public" virt="virtual"><scope>shogun::CStringFileFeatures</scope><name>~CStringFileFeatures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

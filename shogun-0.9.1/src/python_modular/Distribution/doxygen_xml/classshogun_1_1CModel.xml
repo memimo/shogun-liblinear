@@ -1,0 +1,752 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CModel" kind="class" prot="public">
+    <compoundname>shogun::CModel</compoundname>
+    <includes local="no">HMM.h</includes>
+      <sectiondef kind="user-defined">
+      <header>learn arrays.</header>
+      <description><para><anchor id="_1amgrp2906866e5ae934c6daeaed032b93eca3"/> Everything that is to be learned is enumerated here. All values will be inititialized with random values and normalized to satisfy stochasticity. </para></description>
+      <memberdef kind="variable" id="classshogun_1_1CModel_1af870e801cd84e47bc364b5075992bb03" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CModel::learn_a</definition>
+        <argsstring></argsstring>
+        <name>learn_a</name>
+        <briefdescription>
+<para>transitions to be learned </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="302" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CModel_1a7db73505f178ef92160a04b960a28e1d" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CModel::learn_b</definition>
+        <argsstring></argsstring>
+        <name>learn_b</name>
+        <briefdescription>
+<para>emissions to be learned </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="305" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CModel_1aa6fe81995341d48961f857299731a478" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CModel::learn_p</definition>
+        <argsstring></argsstring>
+        <name>learn_p</name>
+        <briefdescription>
+<para>start states to be learned </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="308" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CModel_1a86e9e614c80703e924e740127e5ca6c3" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CModel::learn_q</definition>
+        <argsstring></argsstring>
+        <name>learn_q</name>
+        <briefdescription>
+<para>end states to be learned </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="311" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>constant arrays.</header>
+      <description><para><anchor id="_1amgrp2cbf6efa34885a5ae8287b3540256d5c"/> These arrays hold constant fields. All values that are not constant and will not be learned are initialized with 0. </para></description>
+      <memberdef kind="variable" id="classshogun_1_1CModel_1a941ae75f8e24811a25510930ea31f8aa" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CModel::const_a</definition>
+        <argsstring></argsstring>
+        <name>const_a</name>
+        <briefdescription>
+<para>transitions that have constant probability </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="321" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CModel_1ac8474e241644586209e9f0928dc5d835" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CModel::const_b</definition>
+        <argsstring></argsstring>
+        <name>const_b</name>
+        <briefdescription>
+<para>emissions that have constant probability </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="324" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CModel_1a219d77c996cf20c40fda001fe386304f" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CModel::const_p</definition>
+        <argsstring></argsstring>
+        <name>const_p</name>
+        <briefdescription>
+<para>start states that have constant probability </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="327" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CModel_1a70a262d8c25a298993d83fa441a5fb4d" prot="protected" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::CModel::const_q</definition>
+        <argsstring></argsstring>
+        <name>const_q</name>
+        <briefdescription>
+<para>end states that have constant probability </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="330" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CModel_1a6078c9a2326590d526f4d70ee13abb27" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CModel::const_a_val</definition>
+        <argsstring></argsstring>
+        <name>const_a_val</name>
+        <briefdescription>
+<para>values for transitions that have constant probability </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="334" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CModel_1a8f74140de816700de1051d9e6061e402" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CModel::const_b_val</definition>
+        <argsstring></argsstring>
+        <name>const_b_val</name>
+        <briefdescription>
+<para>values for emissions that have constant probability </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="337" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CModel_1a3c6b098951eb28ef7403e99122a27ea8" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CModel::const_p_val</definition>
+        <argsstring></argsstring>
+        <name>const_p_val</name>
+        <briefdescription>
+<para>values for start states that have constant probability </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="340" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CModel_1aab4d6ff25cb9966243f604d839110a98" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CModel::const_q_val</definition>
+        <argsstring></argsstring>
+        <name>const_q_val</name>
+        <briefdescription>
+<para>values for end states that have constant probability </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="343" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>read access functions.</header>
+      <description><para><anchor id="_1amgrpa16227628425533e2097e336f880ee63"/> For learn arrays and const arrays </para></description>
+      <memberdef kind="function" id="classshogun_1_1CModel_1afc5dd7ded1a896f724028050ef0f98b7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CModel::get_learn_a</definition>
+        <argsstring>(int32_t line, int32_t column) const </argsstring>
+        <name>get_learn_a</name>
+        <param>
+          <type>int32_t</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+<para>get entry out of learn_a matrix </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="108" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1a8a88d0961babc86d091b9c548ec8cfa7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CModel::get_learn_b</definition>
+        <argsstring>(int32_t line, int32_t column) const </argsstring>
+        <name>get_learn_b</name>
+        <param>
+          <type>int32_t</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+<para>get entry out of learn_b matrix </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="114" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1a30a1aae842a18a3d45bca16c6fb0eb9c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CModel::get_learn_p</definition>
+        <argsstring>(int32_t offset) const </argsstring>
+        <name>get_learn_p</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>get entry out of learn_p vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="120" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1a16e1f179e399ef2843aa65a4a0fcbaa6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CModel::get_learn_q</definition>
+        <argsstring>(int32_t offset) const </argsstring>
+        <name>get_learn_q</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>get entry out of learn_q vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="126" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1a73a547b8b5da9ed3096b0b2072f62e1a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CModel::get_const_a</definition>
+        <argsstring>(int32_t line, int32_t column) const </argsstring>
+        <name>get_const_a</name>
+        <param>
+          <type>int32_t</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+<para>get entry out of const_a matrix </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="132" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1a760b117ea6b4a39955fd3b066ea32391" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CModel::get_const_b</definition>
+        <argsstring>(int32_t line, int32_t column) const </argsstring>
+        <name>get_const_b</name>
+        <param>
+          <type>int32_t</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+<para>get entry out of const_b matrix </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="138" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1a864da340424a00d25079e7c152107cf5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CModel::get_const_p</definition>
+        <argsstring>(int32_t offset) const </argsstring>
+        <name>get_const_p</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>get entry out of const_p vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="144" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="143" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1a24760c2c95dd30c2d38bb971214e3501" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CModel::get_const_q</definition>
+        <argsstring>(int32_t offset) const </argsstring>
+        <name>get_const_q</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>get entry out of const_q vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="150" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1a30c0b6e870c53b86e729060255274241" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CModel::get_const_a_val</definition>
+        <argsstring>(int32_t line) const </argsstring>
+        <name>get_const_a_val</name>
+        <param>
+          <type>int32_t</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>get value out of const_a_val vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="156" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1ac492352384a75f56bbdb57770172213e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CModel::get_const_b_val</definition>
+        <argsstring>(int32_t line) const </argsstring>
+        <name>get_const_b_val</name>
+        <param>
+          <type>int32_t</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>get value out of const_b_val vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="162" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1a31e609430f3c75dd3b45d61640e53be5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CModel::get_const_p_val</definition>
+        <argsstring>(int32_t offset) const </argsstring>
+        <name>get_const_p_val</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>get value out of const_p_val vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="168" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1ae42f101d4991bd816a1acba2dc3d8eee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CModel::get_const_q_val</definition>
+        <argsstring>(int32_t offset) const </argsstring>
+        <name>get_const_q_val</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>get value out of const_q_val vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="174" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="173" bodyend="176"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>write access functions</header>
+      <description><para><anchor id="_1amgrp9486ddd73971fc281a24f087669e0e20"/> For learn and const arrays </para></description>
+      <memberdef kind="function" id="classshogun_1_1CModel_1ad600f029a770e359451fc096295ad7e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CModel::set_learn_a</definition>
+        <argsstring>(int32_t offset, int32_t value)</argsstring>
+        <name>set_learn_a</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set value in learn_a matrix </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="196" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="195" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1ae5aa4d9f2add38944a81ac0b4cc21691" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CModel::set_learn_b</definition>
+        <argsstring>(int32_t offset, int32_t value)</argsstring>
+        <name>set_learn_b</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set value in learn_b matrix </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="202" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="201" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1abdc6735f83fc513ca7e32b99d59d3d41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CModel::set_learn_p</definition>
+        <argsstring>(int32_t offset, int32_t value)</argsstring>
+        <name>set_learn_p</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set value in learn_p vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="208" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1a55ef7b4be6d53adba3af509507ebc5df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CModel::set_learn_q</definition>
+        <argsstring>(int32_t offset, int32_t value)</argsstring>
+        <name>set_learn_q</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set value in learn_q vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="214" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="213" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1abc08a9ea33ba9e6e3f15f74b473eda77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CModel::set_const_a</definition>
+        <argsstring>(int32_t offset, int32_t value)</argsstring>
+        <name>set_const_a</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set value in const_a matrix </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="220" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="219" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1a1e384f91107c5f8f52814063c7033ac2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CModel::set_const_b</definition>
+        <argsstring>(int32_t offset, int32_t value)</argsstring>
+        <name>set_const_b</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set value in const_b matrix </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="226" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="225" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1ab570c335567a7bf766ba63516d8abae9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CModel::set_const_p</definition>
+        <argsstring>(int32_t offset, int32_t value)</argsstring>
+        <name>set_const_p</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set value in const_p vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="232" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="231" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1ae1868d27c3188a72f29a4b75dee235b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CModel::set_const_q</definition>
+        <argsstring>(int32_t offset, int32_t value)</argsstring>
+        <name>set_const_q</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set value in const_q vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="238" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="237" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1a643f0863d63ad4b1f37046305494b9c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CModel::set_const_a_val</definition>
+        <argsstring>(int32_t offset, float64_t value)</argsstring>
+        <name>set_const_a_val</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set value in const_a_val vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="244" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="243" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1ad996d9234b5431588f58aaeba777a213" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CModel::set_const_b_val</definition>
+        <argsstring>(int32_t offset, float64_t value)</argsstring>
+        <name>set_const_b_val</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set value in const_b_val vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="250" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="249" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1a7a5a4d1e37fe8773cbd4853c1634a3db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CModel::set_const_p_val</definition>
+        <argsstring>(int32_t offset, float64_t value)</argsstring>
+        <name>set_const_p_val</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set value in const_p_val vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="256" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="255" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1aa11720a894e9c036c857b655ecd230bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CModel::set_const_q_val</definition>
+        <argsstring>(int32_t offset, float64_t value)</argsstring>
+        <name>set_const_q_val</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set value in const_q_val vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="262" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="261" bodyend="264"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CModel_1a4352c9e728e1500efc2d605d19a5c3af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CModel::CModel</definition>
+        <argsstring>()</argsstring>
+        <name>CModel</name>
+        <briefdescription>
+<para>Constructor - initializes all variables/structures. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1afb41cbdb3cb09b533bc798109040d701" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CModel::~CModel</definition>
+        <argsstring>()</argsstring>
+        <name>~CModel</name>
+        <briefdescription>
+<para>Destructor - cleans up. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1afa03e79cafc831181fa1d50a91cc4398" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CModel::sort_learn_a</definition>
+        <argsstring>()</argsstring>
+        <name>sort_learn_a</name>
+        <briefdescription>
+<para>sorts learn_a matrix </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="92" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CModel_1adff794838e940404a7b4545c66862857" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CModel::sort_learn_b</definition>
+        <argsstring>()</argsstring>
+        <name>sort_learn_b</name>
+        <briefdescription>
+<para>sorts learn_b matrix </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="98" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="97" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class Model </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="82" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="81" bodyend="352"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CModel_1a4352c9e728e1500efc2d605d19a5c3af" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>CModel</name></member>
+      <member refid="classshogun_1_1CModel_1a941ae75f8e24811a25510930ea31f8aa" prot="protected" virt="non-virtual"><scope>shogun::CModel</scope><name>const_a</name></member>
+      <member refid="classshogun_1_1CModel_1a6078c9a2326590d526f4d70ee13abb27" prot="protected" virt="non-virtual"><scope>shogun::CModel</scope><name>const_a_val</name></member>
+      <member refid="classshogun_1_1CModel_1ac8474e241644586209e9f0928dc5d835" prot="protected" virt="non-virtual"><scope>shogun::CModel</scope><name>const_b</name></member>
+      <member refid="classshogun_1_1CModel_1a8f74140de816700de1051d9e6061e402" prot="protected" virt="non-virtual"><scope>shogun::CModel</scope><name>const_b_val</name></member>
+      <member refid="classshogun_1_1CModel_1a219d77c996cf20c40fda001fe386304f" prot="protected" virt="non-virtual"><scope>shogun::CModel</scope><name>const_p</name></member>
+      <member refid="classshogun_1_1CModel_1a3c6b098951eb28ef7403e99122a27ea8" prot="protected" virt="non-virtual"><scope>shogun::CModel</scope><name>const_p_val</name></member>
+      <member refid="classshogun_1_1CModel_1a70a262d8c25a298993d83fa441a5fb4d" prot="protected" virt="non-virtual"><scope>shogun::CModel</scope><name>const_q</name></member>
+      <member refid="classshogun_1_1CModel_1aab4d6ff25cb9966243f604d839110a98" prot="protected" virt="non-virtual"><scope>shogun::CModel</scope><name>const_q_val</name></member>
+      <member refid="classshogun_1_1CModel_1a73a547b8b5da9ed3096b0b2072f62e1a" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>get_const_a</name></member>
+      <member refid="classshogun_1_1CModel_1a30c0b6e870c53b86e729060255274241" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>get_const_a_val</name></member>
+      <member refid="classshogun_1_1CModel_1a760b117ea6b4a39955fd3b066ea32391" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>get_const_b</name></member>
+      <member refid="classshogun_1_1CModel_1ac492352384a75f56bbdb57770172213e" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>get_const_b_val</name></member>
+      <member refid="classshogun_1_1CModel_1a864da340424a00d25079e7c152107cf5" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>get_const_p</name></member>
+      <member refid="classshogun_1_1CModel_1a31e609430f3c75dd3b45d61640e53be5" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>get_const_p_val</name></member>
+      <member refid="classshogun_1_1CModel_1a24760c2c95dd30c2d38bb971214e3501" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>get_const_q</name></member>
+      <member refid="classshogun_1_1CModel_1ae42f101d4991bd816a1acba2dc3d8eee" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>get_const_q_val</name></member>
+      <member refid="classshogun_1_1CModel_1afc5dd7ded1a896f724028050ef0f98b7" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>get_learn_a</name></member>
+      <member refid="classshogun_1_1CModel_1a8a88d0961babc86d091b9c548ec8cfa7" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>get_learn_b</name></member>
+      <member refid="classshogun_1_1CModel_1a30a1aae842a18a3d45bca16c6fb0eb9c" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>get_learn_p</name></member>
+      <member refid="classshogun_1_1CModel_1a16e1f179e399ef2843aa65a4a0fcbaa6" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>get_learn_q</name></member>
+      <member refid="classshogun_1_1CModel_1af870e801cd84e47bc364b5075992bb03" prot="protected" virt="non-virtual"><scope>shogun::CModel</scope><name>learn_a</name></member>
+      <member refid="classshogun_1_1CModel_1a7db73505f178ef92160a04b960a28e1d" prot="protected" virt="non-virtual"><scope>shogun::CModel</scope><name>learn_b</name></member>
+      <member refid="classshogun_1_1CModel_1aa6fe81995341d48961f857299731a478" prot="protected" virt="non-virtual"><scope>shogun::CModel</scope><name>learn_p</name></member>
+      <member refid="classshogun_1_1CModel_1a86e9e614c80703e924e740127e5ca6c3" prot="protected" virt="non-virtual"><scope>shogun::CModel</scope><name>learn_q</name></member>
+      <member refid="classshogun_1_1CModel_1abc08a9ea33ba9e6e3f15f74b473eda77" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>set_const_a</name></member>
+      <member refid="classshogun_1_1CModel_1a643f0863d63ad4b1f37046305494b9c6" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>set_const_a_val</name></member>
+      <member refid="classshogun_1_1CModel_1a1e384f91107c5f8f52814063c7033ac2" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>set_const_b</name></member>
+      <member refid="classshogun_1_1CModel_1ad996d9234b5431588f58aaeba777a213" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>set_const_b_val</name></member>
+      <member refid="classshogun_1_1CModel_1ab570c335567a7bf766ba63516d8abae9" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>set_const_p</name></member>
+      <member refid="classshogun_1_1CModel_1a7a5a4d1e37fe8773cbd4853c1634a3db" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>set_const_p_val</name></member>
+      <member refid="classshogun_1_1CModel_1ae1868d27c3188a72f29a4b75dee235b9" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>set_const_q</name></member>
+      <member refid="classshogun_1_1CModel_1aa11720a894e9c036c857b655ecd230bc" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>set_const_q_val</name></member>
+      <member refid="classshogun_1_1CModel_1ad600f029a770e359451fc096295ad7e7" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>set_learn_a</name></member>
+      <member refid="classshogun_1_1CModel_1ae5aa4d9f2add38944a81ac0b4cc21691" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>set_learn_b</name></member>
+      <member refid="classshogun_1_1CModel_1abdc6735f83fc513ca7e32b99d59d3d41" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>set_learn_p</name></member>
+      <member refid="classshogun_1_1CModel_1a55ef7b4be6d53adba3af509507ebc5df" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>set_learn_q</name></member>
+      <member refid="classshogun_1_1CModel_1afa03e79cafc831181fa1d50a91cc4398" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>sort_learn_a</name></member>
+      <member refid="classshogun_1_1CModel_1adff794838e940404a7b4545c66862857" prot="public" virt="non-virtual"><scope>shogun::CModel</scope><name>sort_learn_b</name></member>
+      <member refid="classshogun_1_1CModel_1afb41cbdb3cb09b533bc798109040d701" prot="public" virt="virtual"><scope>shogun::CModel</scope><name>~CModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

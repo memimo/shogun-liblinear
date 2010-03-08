@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="libocas__common_8h" kind="file">
+    <compoundname>libocas_common.h</compoundname>
+    <includes local="yes">lib/Mathematics.h</includes>
+    <includes local="yes">lib/io.h</includes>
+    <incdepgraph>
+      <node id="141">
+        <label>/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/libocas_common.h</label>
+        <link refid="libocas_common.h"/>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>lib/io.h</label>
+      </node>
+      <node id="142">
+        <label>lib/Mathematics.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceshogun">shogun</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="libocas__common_8h_1a2c1e87a0c2eb22dc36e08a891fa08d58" prot="public" static="no">
+        <name>OCAS_PLUS_INF</name>
+        <initializer>CMath::INFTY</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/libocas_common.h" line="6" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/libocas_common.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libocas__common_8h_1a58487c743169a41c42262798e87c06c1" prot="public" static="no">
+        <name>OCAS_CALLOC</name>
+        <param><defname>...</defname></param>
+        <initializer>calloc(__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/libocas_common.h" line="7" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/libocas_common.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libocas__common_8h_1aab4b812761fefe56161f95f7c2d17e10" prot="public" static="no">
+        <name>OCAS_FREE</name>
+        <param><defname>...</defname></param>
+        <initializer>free(__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/libocas_common.h" line="8" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/libocas_common.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libocas__common_8h_1a667dec9d5358b247053e06c3b7e2861d" prot="public" static="no">
+        <name>INDEX2</name>
+        <param><defname>ROW</defname></param>
+        <param><defname>COL</defname></param>
+        <param><defname>NUM_ROWS</defname></param>
+        <initializer>((COL)*(NUM_ROWS)+(ROW))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/libocas_common.h" line="10" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/libocas_common.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;lib/Mathematics.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/io.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">shogun</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OCAS_PLUS_INF<sp/>CMath::INFTY</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OCAS_CALLOC(...)<sp/>calloc(__VA_ARGS__)</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OCAS_FREE(...)<sp/>free(__VA_ARGS__)</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INDEX2(ROW,COL,NUM_ROWS)<sp/>((COL)*(NUM_ROWS)+(ROW))</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/libocas_common.h"/>
+  </compounddef>
+</doxygen>

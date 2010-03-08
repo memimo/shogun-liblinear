@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CDecompressString" kind="class" prot="public">
+    <compoundname>shogun::CDecompressString</compoundname>
+    <basecompoundref refid="classshogun_1_1CStringPreProc" prot="public" virt="non-virtual">shogun::CStringPreProc&lt; ST &gt;</basecompoundref>
+    <includes local="no">DecompressString.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class ST</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CDecompressString_1a40a0cb3b21c521c9d74613a5a792dd69" prot="protected" static="no" mutable="no">
+        <type>CCompressor *</type>
+        <definition>CCompressor* shogun::CDecompressString&lt; ST &gt;::compressor</definition>
+        <argsstring></argsstring>
+        <name>compressor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compressor used to decompress strings </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" line="124" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CDecompressString_1aeff2a8f3097ef17d637967effd3398ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CDecompressString&lt; ST &gt;::CDecompressString</definition>
+        <argsstring>(E_COMPRESSION_TYPE ct)</argsstring>
+        <name>CDecompressString</name>
+        <param>
+          <type>E_COMPRESSION_TYPE</type>
+          <declname>ct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" line="43" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDecompressString_1abbddfcd9eab714d66886bc43a2db983b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CDecompressString&lt; ST &gt;::~CDecompressString</definition>
+        <argsstring>()</argsstring>
+        <name>~CDecompressString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" line="49" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDecompressString_1ad0d84c9e0aca291436fcadf47b4fcdb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CDecompressString&lt; ST &gt;::init</definition>
+        <argsstring>(CFeatures *f)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CPreProc_1afe50f73057b75cb494a9a4ab253258d6">init</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>initialize preprocessor from features </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" line="55" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" bodystart="54" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDecompressString_1ae75c18266257f36cef82dad4a68421d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CDecompressString&lt; ST &gt;::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <reimplements refid="classshogun_1_1CPreProc_1a0f043eb1dd251b49cb3cf3ecf44b1c4b">cleanup</reimplements>
+        <briefdescription>
+<para>cleanup </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" line="62" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDecompressString_1a2b4b4c9de21d636bb751d24f90fdc216" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CDecompressString&lt; ST &gt;::load</definition>
+        <argsstring>(FILE *f)</argsstring>
+        <name>load</name>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>initialize preprocessor from file </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" line="67" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDecompressString_1a6eafa1fb1520ec6efcd77b93780c10eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CDecompressString&lt; ST &gt;::save</definition>
+        <argsstring>(FILE *f)</argsstring>
+        <name>save</name>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>save preprocessor init-data to file </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" line="73" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDecompressString_1a2e97e7c48d62e92f1506e216a5a70fdd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CDecompressString&lt; ST &gt;::apply_to_string_features</definition>
+        <argsstring>(CFeatures *f)</argsstring>
+        <name>apply_to_string_features</name>
+        <reimplements refid="classshogun_1_1CStringPreProc_1ab0073b24dc5e0bc68ca4e4c8a792aaec">apply_to_string_features</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>apply preproc on feature matrix result in feature matrix return pointer to feature_matrix, i.e. f-&gt;get_feature_matrix(); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" line="81" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" bodystart="80" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CDecompressString_1a1b7342e5d1ebcf00b1693e3bb74a51ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>ST *</type>
+        <definition>virtual ST* shogun::CDecompressString&lt; ST &gt;::apply_to_string</definition>
+        <argsstring>(ST *f, int32_t &amp;len)</argsstring>
+        <name>apply_to_string</name>
+        <reimplements refid="classshogun_1_1CStringPreProc_1a40d40a99f7596cb86099236c0497aa35">apply_to_string</reimplements>
+        <param>
+          <type>ST *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>apply preproc on single feature vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" line="105" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" bodystart="104" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Preprocessor that decompresses compressed strings. </para>    </briefdescription>
+    <detaileddescription>
+<para>Each string in CStringFeatures might be stored compressed in memory. This preprocessor decompresses these strings on the fly. This may be especially usefull for long strings and when datasets become too large to fit in memoryin uncompressed form but still when they are compressed.</para><para>Then avoiding expensive disk i/o strings are on-the-fly decompressed. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>shogun::CDecompressString&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CDecompressString"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>shogun::CPreProc</label>
+        <link refid="classshogun_1_1CPreProc"/>
+      </node>
+      <node id="1">
+        <label>shogun::CStringPreProc&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CStringPreProc"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>shogun::CDecompressString&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CDecompressString"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>shogun::CPreProc</label>
+        <link refid="classshogun_1_1CPreProc"/>
+      </node>
+      <node id="4">
+        <label>shogun::CStringPreProc&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CStringPreProc"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" line="37" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/DecompressString.h" bodystart="36" bodyend="125"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CDecompressString_1a1b7342e5d1ebcf00b1693e3bb74a51ac" prot="public" virt="virtual"><scope>shogun::CDecompressString</scope><name>apply_to_string</name></member>
+      <member refid="classshogun_1_1CDecompressString_1a2e97e7c48d62e92f1506e216a5a70fdd" prot="public" virt="virtual"><scope>shogun::CDecompressString</scope><name>apply_to_string_features</name></member>
+      <member refid="classshogun_1_1CDecompressString_1aeff2a8f3097ef17d637967effd3398ab" prot="public" virt="non-virtual"><scope>shogun::CDecompressString</scope><name>CDecompressString</name></member>
+      <member refid="classshogun_1_1CDecompressString_1ae75c18266257f36cef82dad4a68421d0" prot="public" virt="virtual"><scope>shogun::CDecompressString</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CDecompressString_1a40a0cb3b21c521c9d74613a5a792dd69" prot="protected" virt="non-virtual"><scope>shogun::CDecompressString</scope><name>compressor</name></member>
+      <member refid="classshogun_1_1CPreProc_1a42cd824b1e730557f07884dc6eb98e51" prot="public" virt="non-virtual"><scope>shogun::CDecompressString</scope><name>CPreProc</name></member>
+      <member refid="classshogun_1_1CStringPreProc_1a4ed13aecdf635e6a8e310227df167d07" prot="public" virt="non-virtual"><scope>shogun::CDecompressString</scope><name>CStringPreProc</name></member>
+      <member refid="classshogun_1_1CStringPreProc_1aa5c7ccd36186ce59ae5d98acb3a3f7d8" prot="public" virt="virtual"><scope>shogun::CDecompressString</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CStringPreProc_1ad4e2089a5baf77716e20da3cb08dbdcf" prot="public" virt="virtual"><scope>shogun::CDecompressString</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringPreProc_1a49e2b1655df4d02d4892ac342328aecb" prot="public" virt="virtual"><scope>shogun::CDecompressString</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringPreProc_1a7512ecd85611edb09942b679e35e5930" prot="public" virt="virtual"><scope>shogun::CDecompressString</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringPreProc_1ab9ea8a96d88a2b2ac04a153d3578f189" prot="public" virt="virtual"><scope>shogun::CDecompressString</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CStringPreProc_1a5dac8314d95fdad3e571854f6e98fa3c" prot="public" virt="virtual"><scope>shogun::CDecompressString</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CPreProc_1a66dbec59819cb9ed7023fc47608ccad7" prot="public" virt="non-virtual"><scope>shogun::CDecompressString</scope><name>get_id</name></member>
+      <member refid="classshogun_1_1CPreProc_1ade7d07b45284bdae48abe425b0bf5a40" prot="public" virt="virtual"><scope>shogun::CDecompressString</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CDecompressString_1ad0d84c9e0aca291436fcadf47b4fcdb0" prot="public" virt="virtual"><scope>shogun::CDecompressString</scope><name>init</name></member>
+      <member refid="classshogun_1_1CDecompressString_1a2b4b4c9de21d636bb751d24f90fdc216" prot="public" virt="non-virtual"><scope>shogun::CDecompressString</scope><name>load</name></member>
+      <member refid="classshogun_1_1CPreProc_1a7905211b1e156831e64768d936351fa8" prot="protected" virt="non-virtual"><scope>shogun::CDecompressString</scope><name>preproc_id</name></member>
+      <member refid="classshogun_1_1CPreProc_1a58f21d152eaba8e982f98806d8496db3" prot="protected" virt="non-virtual"><scope>shogun::CDecompressString</scope><name>preproc_name</name></member>
+      <member refid="classshogun_1_1CDecompressString_1a6eafa1fb1520ec6efcd77b93780c10eb" prot="public" virt="non-virtual"><scope>shogun::CDecompressString</scope><name>save</name></member>
+      <member refid="classshogun_1_1CDecompressString_1abbddfcd9eab714d66886bc43a2db983b" prot="public" virt="virtual"><scope>shogun::CDecompressString</scope><name>~CDecompressString</name></member>
+      <member refid="classshogun_1_1CPreProc_1a037b99bfd3bacbb3135525e81b134c57" prot="public" virt="virtual"><scope>shogun::CDecompressString</scope><name>~CPreProc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

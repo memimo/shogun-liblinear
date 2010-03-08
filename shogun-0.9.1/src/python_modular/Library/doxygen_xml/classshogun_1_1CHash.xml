@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CHash" kind="class" prot="public">
+    <compoundname>shogun::CHash</compoundname>
+    <includes local="no">Hash.h</includes>
+    <innerclass refid="structshogun_1_1CHash_1_1MD5Context" prot="protected">shogun::CHash::MD5Context</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CHash_1a7138d2097c79ca05b7d2c0e1c801a881" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CHash::CHash</definition>
+        <argsstring>()</argsstring>
+        <name>CHash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Hash.h" line="59" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Hash.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHash_1a2462ae4db0b9c2d4a4a7f9a77958016f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CHash::~CHash</definition>
+        <argsstring>()</argsstring>
+        <name>~CHash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Hash.h" line="61" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Hash.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHash_1a13686ddba33a478a4fe5a3e65d4bbc9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t shogun::CHash::MurmurHash2</definition>
+        <argsstring>(uint8_t *data, int32_t len, uint32_t seed)</argsstring>
+        <name>MurmurHash2</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Murmur Hash2</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to checksum (needs to be 32bit aligned on some archs) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length in number of bytes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initial seed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>hash </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Hash.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHash_1a889d8fc6a0b134226dca89178dad99ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CHash::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Hash.h" line="90" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Hash.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classshogun_1_1CHash_1ae2f7912f7dd90464a55802b20870488b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t shogun::CHash::crc32</definition>
+        <argsstring>(uint8_t *data, int32_t len)</argsstring>
+        <name>crc32</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>crc32 checksumming</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to checksum </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length in number of bytes </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Hash.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHash_1a93fe6d53d89cb713891e0676068fe351" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CHash::MD5</definition>
+        <argsstring>(unsigned char *x, unsigned l, unsigned char *buf)</argsstring>
+        <name>MD5</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wrapper for MD5 function compatible to OpenSSL interface.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buf needs to provide an allocated array of 16 bytes for the digest. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Hash.h" line="77"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classshogun_1_1CHash_1a9eb20779e0314dcebc955c06ae7ccfc4" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CHash::MD5Init</definition>
+        <argsstring>(struct MD5Context *context)</argsstring>
+        <name>MD5Init</name>
+        <param>
+          <type>struct <ref refid="structshogun_1_1CHash_1_1MD5Context" kindref="compound">MD5Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start MD5 accumulation. Set bit count to 0 and buffer to mysterious initialization constants.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structshogun_1_1CHash_1_1MD5Context" kindref="compound">MD5Context</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Hash.h" line="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHash_1a5966f4b84dbf10e77112ec5c6ae03f78" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CHash::MD5Update</definition>
+        <argsstring>(struct MD5Context *context, unsigned char const *buf, unsigned len)</argsstring>
+        <name>MD5Update</name>
+        <param>
+          <type>struct <ref refid="structshogun_1_1CHash_1_1MD5Context" kindref="compound">MD5Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>unsigned char const *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update context to reflect the concatenation of another buffer full of bytes.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initialized <ref refid="structshogun_1_1CHash_1_1MD5Context" kindref="compound">MD5Context</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to hash </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of buffer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Hash.h" line="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHash_1a467868cf3e8f982ee4a66a86e5518999" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CHash::MD5Final</definition>
+        <argsstring>(unsigned char digest[16], struct MD5Context *context)</argsstring>
+        <name>MD5Final</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>digest</declname>
+          <array>[16]</array>
+        </param>
+        <param>
+          <type>struct <ref refid="structshogun_1_1CHash_1_1MD5Context" kindref="compound">MD5Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Final wrapup - pad to 64-byte boundary with the bit pattern 1 0* (64-bit count of bits processed, MSB-first)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>digest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the 64 byte hash </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initialized <ref refid="structshogun_1_1CHash_1_1MD5Context" kindref="compound">MD5Context</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Hash.h" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CHash_1a58b4ac6d03767de6157bc7bfa2f74467" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CHash::MD5Transform</definition>
+        <argsstring>(uint32_t buf[4], uint32_t const in[16])</argsstring>
+        <name>MD5Transform</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>buf</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>uint32_t const </type>
+          <declname>in</declname>
+          <array>[16]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The core of the MD5 algorithm, this alters an existing MD5 hash to reflect the addition of 16 longwords of new data. MD5Update blocks the data and converts bytes into longwords for this routine.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>16 byte </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>64 bytes </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Hash.h" line="142"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Collection of Hashing Functions. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class implements a number of hashing functions like crc32, md5 and murmur. </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Hash.h" line="56" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Hash.h" bodystart="55" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CHash_1a7138d2097c79ca05b7d2c0e1c801a881" prot="public" virt="non-virtual"><scope>shogun::CHash</scope><name>CHash</name></member>
+      <member refid="classshogun_1_1CHash_1ae2f7912f7dd90464a55802b20870488b" prot="public" virt="non-virtual"><scope>shogun::CHash</scope><name>crc32</name></member>
+      <member refid="classshogun_1_1CHash_1a889d8fc6a0b134226dca89178dad99ab" prot="public" virt="virtual"><scope>shogun::CHash</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CHash_1a93fe6d53d89cb713891e0676068fe351" prot="public" virt="non-virtual"><scope>shogun::CHash</scope><name>MD5</name></member>
+      <member refid="classshogun_1_1CHash_1a467868cf3e8f982ee4a66a86e5518999" prot="protected" virt="non-virtual"><scope>shogun::CHash</scope><name>MD5Final</name></member>
+      <member refid="classshogun_1_1CHash_1a9eb20779e0314dcebc955c06ae7ccfc4" prot="protected" virt="non-virtual"><scope>shogun::CHash</scope><name>MD5Init</name></member>
+      <member refid="classshogun_1_1CHash_1a58b4ac6d03767de6157bc7bfa2f74467" prot="protected" virt="non-virtual"><scope>shogun::CHash</scope><name>MD5Transform</name></member>
+      <member refid="classshogun_1_1CHash_1a5966f4b84dbf10e77112ec5c6ae03f78" prot="protected" virt="non-virtual"><scope>shogun::CHash</scope><name>MD5Update</name></member>
+      <member refid="classshogun_1_1CHash_1a13686ddba33a478a4fe5a3e65d4bbc9b" prot="public" virt="non-virtual"><scope>shogun::CHash</scope><name>MurmurHash2</name></member>
+      <member refid="classshogun_1_1CHash_1a2462ae4db0b9c2d4a4a7f9a77958016f" prot="public" virt="virtual"><scope>shogun::CHash</scope><name>~CHash</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

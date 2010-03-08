@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structshogun_1_1svm__parameter" kind="struct" prot="public">
+    <compoundname>shogun::svm_parameter</compoundname>
+    <includes local="no">SVM_libsvm.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1a3612d8a03f7063dbddd24df50233877a" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::svm_parameter::svm_type</definition>
+        <argsstring></argsstring>
+        <name>svm_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SVM type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="88" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1a99fcb915d5025f15904ac496d999906c" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::svm_parameter::kernel_type</definition>
+        <argsstring></argsstring>
+        <name>kernel_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>kernel type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="90" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1a35a33e2b6f0715fb0b4f48b5e4db7fb2" prot="public" static="no" mutable="no">
+        <type>shogun::CKernel *</type>
+        <definition>shogun::CKernel* shogun::svm_parameter::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>kernel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="92" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1a0c26c089910522e25c6a008c8a339abc" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::svm_parameter::degree</definition>
+        <argsstring></argsstring>
+        <name>degree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for poly </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="94" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1ae0442a2c9dd0743f4969b300892121db" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::svm_parameter::gamma</definition>
+        <argsstring></argsstring>
+        <name>gamma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for poly/rbf/sigmoid </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="96" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1a4f9f099468df7fc47bc679d10da3905d" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::svm_parameter::coef0</definition>
+        <argsstring></argsstring>
+        <name>coef0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for poly/sigmoid </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="98" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1a0a4ad842420b7074d91af36410f332d5" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::svm_parameter::cache_size</definition>
+        <argsstring></argsstring>
+        <name>cache_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>in MB </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="102" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1ae8701c462c9d5ce8b2d3691332503504" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::svm_parameter::eps</definition>
+        <argsstring></argsstring>
+        <name>eps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>stopping criteria </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="104" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1abc991d154c182693fde691e79ac0ef29" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::svm_parameter::C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for C_SVC, EPSILON_SVR and NU_SVR </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="106" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1af6d52cd691ca42ab25dd1ffbb6d06b1b" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::svm_parameter::nr_class</definition>
+        <argsstring></argsstring>
+        <name>nr_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of classes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="108" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1a6dd44c2bd7529424addc7215442953ab" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::svm_parameter::nr_weight</definition>
+        <argsstring></argsstring>
+        <name>nr_weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for C_SVC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="110" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1a473c73ce56d9317f8a8ecda9b1418801" prot="public" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* shogun::svm_parameter::weight_label</definition>
+        <argsstring></argsstring>
+        <name>weight_label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for C_SVC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="112" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1ad2054e13a55ead7d67269571bef60c3f" prot="public" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::svm_parameter::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for C_SVC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="114" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1abeb41de53f01a089274f5b5a6742053a" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::svm_parameter::nu</definition>
+        <argsstring></argsstring>
+        <name>nu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for NU_SVC, ONE_CLASS, and NU_SVR </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="116" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1a5a40bf3963168ef50b3cc7f9b114e94a" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::svm_parameter::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for EPSILON_SVR </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="118" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1a6767e22e82f4cd7e4b4ecaa8d55f83fb" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::svm_parameter::shrinking</definition>
+        <argsstring></argsstring>
+        <name>shrinking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>use the shrinking heuristics </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="120" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1svm__parameter_1adf91ca151b6efa715e2cd1d6f3642764" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::svm_parameter::use_bias</definition>
+        <argsstring></argsstring>
+        <name>use_bias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute bias </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="122" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>SVM parameter </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" line="86" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM_libsvm.h" bodystart="85" bodyend="123"/>
+    <listofallmembers>
+      <member refid="structshogun_1_1svm__parameter_1abc991d154c182693fde691e79ac0ef29" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>C</name></member>
+      <member refid="structshogun_1_1svm__parameter_1a0a4ad842420b7074d91af36410f332d5" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>cache_size</name></member>
+      <member refid="structshogun_1_1svm__parameter_1a4f9f099468df7fc47bc679d10da3905d" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>coef0</name></member>
+      <member refid="structshogun_1_1svm__parameter_1a0c26c089910522e25c6a008c8a339abc" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>degree</name></member>
+      <member refid="structshogun_1_1svm__parameter_1ae8701c462c9d5ce8b2d3691332503504" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>eps</name></member>
+      <member refid="structshogun_1_1svm__parameter_1ae0442a2c9dd0743f4969b300892121db" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>gamma</name></member>
+      <member refid="structshogun_1_1svm__parameter_1a35a33e2b6f0715fb0b4f48b5e4db7fb2" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>kernel</name></member>
+      <member refid="structshogun_1_1svm__parameter_1a99fcb915d5025f15904ac496d999906c" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>kernel_type</name></member>
+      <member refid="structshogun_1_1svm__parameter_1af6d52cd691ca42ab25dd1ffbb6d06b1b" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>nr_class</name></member>
+      <member refid="structshogun_1_1svm__parameter_1a6dd44c2bd7529424addc7215442953ab" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>nr_weight</name></member>
+      <member refid="structshogun_1_1svm__parameter_1abeb41de53f01a089274f5b5a6742053a" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>nu</name></member>
+      <member refid="structshogun_1_1svm__parameter_1a5a40bf3963168ef50b3cc7f9b114e94a" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>p</name></member>
+      <member refid="structshogun_1_1svm__parameter_1a6767e22e82f4cd7e4b4ecaa8d55f83fb" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>shrinking</name></member>
+      <member refid="structshogun_1_1svm__parameter_1a3612d8a03f7063dbddd24df50233877a" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>svm_type</name></member>
+      <member refid="structshogun_1_1svm__parameter_1adf91ca151b6efa715e2cd1d6f3642764" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>use_bias</name></member>
+      <member refid="structshogun_1_1svm__parameter_1ad2054e13a55ead7d67269571bef60c3f" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>weight</name></member>
+      <member refid="structshogun_1_1svm__parameter_1a473c73ce56d9317f8a8ecda9b1418801" prot="public" virt="non-virtual"><scope>shogun::svm_parameter</scope><name>weight_label</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

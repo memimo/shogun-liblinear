@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CJensenMetric" kind="class" prot="public">
+    <compoundname>shogun::CJensenMetric</compoundname>
+    <basecompoundref refid="classshogun_1_1CSimpleDistance" prot="public" virt="non-virtual">shogun::CSimpleDistance&lt; float64_t &gt;</basecompoundref>
+    <includes local="no">JensenMetric.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CJensenMetric_1a944916bcccf01154fda3770106fa1aa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CJensenMetric::CJensenMetric</definition>
+        <argsstring>()</argsstring>
+        <name>CJensenMetric</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/JensenMetric.h" line="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CJensenMetric_1a8c1fa01ce4dc2ad2988d93ccb68bb6d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CJensenMetric::CJensenMetric</definition>
+        <argsstring>(CSimpleFeatures&lt; float64_t &gt; *l, CSimpleFeatures&lt; float64_t &gt; *r)</argsstring>
+        <name>CJensenMetric</name>
+        <param>
+          <type>CSimpleFeatures&lt; float64_t &gt; *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>CSimpleFeatures&lt; float64_t &gt; *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of left-hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of right-hand side </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/JensenMetric.h" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CJensenMetric_1a7426b2497a2c1b596510c0cf92396c0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CJensenMetric::~CJensenMetric</definition>
+        <argsstring>()</argsstring>
+        <name>~CJensenMetric</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/JensenMetric.h" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CJensenMetric_1a41fa39cc203ecb5c59e0a9fcb078e8b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CJensenMetric::init</definition>
+        <argsstring>(CFeatures *l, CFeatures *r)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CSimpleDistance_1af17ea30fdcb2bd37d0c94f9eca95db86">init</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>CFeatures *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>init distance</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of left-hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of right-hand side </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if init was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/JensenMetric.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CJensenMetric_1a6e4720247a2d8448f2caa16c56e30879" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CJensenMetric::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <reimplements refid="classshogun_1_1CDistance_1a12832f73a19b04488f0efda083dfa2a4">cleanup</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cleanup distance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/JensenMetric.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CJensenMetric_1aa0c43483810662ad80efc9a9bf86c830" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EDistanceType</type>
+        <definition>virtual EDistanceType shogun::CJensenMetric::get_distance_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_distance_type</name>
+        <reimplements refid="classshogun_1_1CDistance_1a93d139c95d20cea805e95db8c36f83a3">get_distance_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get distance type we are</para><para><simplesect kind="return"><para>distance type JENSEN </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/JensenMetric.h" line="64" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/JensenMetric.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CJensenMetric_1a267c0ff6fe70ea670889a2b969d893d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CJensenMetric::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get name of the distance</para><para><simplesect kind="return"><para>name Jensen-Metric </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/JensenMetric.h" line="70" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/JensenMetric.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CJensenMetric_1a24ec5ae45ea208916151fe98b4763fbd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CJensenMetric::compute</definition>
+        <argsstring>(int32_t idx_a, int32_t idx_b)</argsstring>
+        <name>compute</name>
+        <reimplements refid="classshogun_1_1CDistance_1aa55722bf35a997e7502d4d84c21d5f01">compute</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_a</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute distance for features a and b idx_{a,b} denote the index of the feature vectors in the corresponding feature object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/JensenMetric.h" line="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class JensenMetric </para>    </briefdescription>
+    <detaileddescription>
+<para>The Jensen-Shannon distance/divergence measures the similarity between two data points which is based on the Kullback-Leibler divergence.</para><para><formula id="12">\[\displaystyle d(\bf{x},\bf{x&apos;}) = \sum_{i=0}^{n} x_{i} log\frac{x_{i}}{0.5(x_{i} +x&apos;_{i})} + x&apos;_{i} log\frac{x&apos;_{i}}{0.5(x_{i}+x&apos;_{i})} \]</formula></para><para><simplesect kind="see"><para><ulink url="http://en.wikipedia.org/wiki/Jensen-Shannon_divergence">Wikipedia: Jensen-Shannon divergence</ulink> </para><simplesectsep/><para><ulink url="http://en.wikipedia.org/wiki/Kullback-Leibler_divergence">Wikipedia: Kullback-Leibler divergence</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="81">
+        <label>shogun::CSimpleDistance&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimpleDistance"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>shogun::CJensenMetric</label>
+        <link refid="classshogun_1_1CJensenMetric"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>shogun::CDistance</label>
+        <link refid="classshogun_1_1CDistance"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="84">
+        <label>shogun::CSimpleDistance&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimpleDistance"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>shogun::CJensenMetric</label>
+        <link refid="classshogun_1_1CJensenMetric"/>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>shogun::CDistance</label>
+        <link refid="classshogun_1_1CDistance"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/JensenMetric.h" line="36" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distance/JensenMetric.h" bodystart="35" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CDistance_1ac7711f406989e3650d18dc83d31e51e4" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>CDistance</name></member>
+      <member refid="classshogun_1_1CDistance_1aa3d9c5357102a59379da320189734ebd" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>CDistance</name></member>
+      <member refid="classshogun_1_1CJensenMetric_1a944916bcccf01154fda3770106fa1aa2" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>CJensenMetric</name></member>
+      <member refid="classshogun_1_1CJensenMetric_1a8c1fa01ce4dc2ad2988d93ccb68bb6d3" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>CJensenMetric</name></member>
+      <member refid="classshogun_1_1CJensenMetric_1a6e4720247a2d8448f2caa16c56e30879" prot="public" virt="virtual"><scope>shogun::CJensenMetric</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CJensenMetric_1a24ec5ae45ea208916151fe98b4763fbd" prot="protected" virt="virtual"><scope>shogun::CJensenMetric</scope><name>compute</name></member>
+      <member refid="classshogun_1_1CSimpleDistance_1ad8a3abbb66312e52e26e4289c68eb495" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>CSimpleDistance</name></member>
+      <member refid="classshogun_1_1CDistance_1a162c1fa451dd9267c15216aef28b4003" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>distance</name></member>
+      <member refid="classshogun_1_1CDistance_1a8089932a048d5ebff0bf279448c98960" prot="protected" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>do_precompute_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1a84c529f0578ef7c4084c2457c2fb5188" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>get_distance_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1a612d2ffac1258ec986ae836ce3a78d6c" prot="public" virt="virtual"><scope>shogun::CJensenMetric</scope><name>get_distance_matrix_real</name></member>
+      <member refid="classshogun_1_1CDistance_1a9681314057e505ad5c1aa93a05983e2a" prot="public" virt="virtual"><scope>shogun::CJensenMetric</scope><name>get_distance_matrix_shortreal</name></member>
+      <member refid="classshogun_1_1CJensenMetric_1aa0c43483810662ad80efc9a9bf86c830" prot="public" virt="virtual"><scope>shogun::CJensenMetric</scope><name>get_distance_type</name></member>
+      <member refid="classshogun_1_1CSimpleDistance_1a01020ebeb5cf65bb9a8053f3184bed9c" prot="public" virt="virtual"><scope>shogun::CJensenMetric</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CSimpleDistance_1a33a5b1fdb5a8095b1cb817f2d36b460a" prot="public" virt="virtual"><scope>shogun::CJensenMetric</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CDistance_1af345439df47a38f294106fe318a3e760" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>get_lhs</name></member>
+      <member refid="classshogun_1_1CJensenMetric_1a267c0ff6fe70ea670889a2b969d893d3" prot="public" virt="virtual"><scope>shogun::CJensenMetric</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CDistance_1acb26117edc0ef325aa36989328db9941" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>get_num_vec_lhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a57a7d3f55de91c8467633ae94c92fb7f" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>get_num_vec_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1ac83a7393d28483420996597a402ac8be" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>get_precompute_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1a6bffc5be35b5a80f34125db203821cd3" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>get_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a5d8ea29b5d0de2bd5f350122b6ff0465" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>has_features</name></member>
+      <member refid="classshogun_1_1CJensenMetric_1a41fa39cc203ecb5c59e0a9fcb078e8b9" prot="public" virt="virtual"><scope>shogun::CJensenMetric</scope><name>init</name></member>
+      <member refid="classshogun_1_1CDistance_1adb921211288ff18826b285ab214b87eb" prot="protected" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>lhs</name></member>
+      <member refid="classshogun_1_1CDistance_1adc977a31f34e849d64ddfbb3bca1ee06" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>lhs_equals_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a44e221e6bcb20925ed6dd1d424c15d54" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>load</name></member>
+      <member refid="classshogun_1_1CDistance_1a96e1d129ebafe7d69fc43147ae52e97f" prot="protected" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>precompute_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1af6a193233bec588c95ab38d43e0f14be" prot="protected" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>precomputed_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1afe1e59a6b35a2d35d6f1e6dcdfc94c6a" prot="public" virt="virtual"><scope>shogun::CJensenMetric</scope><name>remove_lhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a6adfb2fc33a9ce11e58bc5b203f9bf64" prot="public" virt="virtual"><scope>shogun::CJensenMetric</scope><name>remove_lhs_and_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a179d17698dfd89af6dbdfcc3eb8c7544" prot="public" virt="virtual"><scope>shogun::CJensenMetric</scope><name>remove_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a4ae58108d7045ac73b7dcf4b464f3784" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>replace_rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1ae35805ff2db463ffb6b18e9cece75f02" prot="protected" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>rhs</name></member>
+      <member refid="classshogun_1_1CDistance_1a789639ca40faccda219e4c6e509cd5ca" prot="public" virt="non-virtual"><scope>shogun::CJensenMetric</scope><name>save</name></member>
+      <member refid="classshogun_1_1CDistance_1a29136001933dfc82c5f76e0255f401c1" prot="public" virt="virtual"><scope>shogun::CJensenMetric</scope><name>set_precompute_matrix</name></member>
+      <member refid="classshogun_1_1CDistance_1ae781fab41be1536aa17cca88e3002022" prot="public" virt="virtual"><scope>shogun::CJensenMetric</scope><name>~CDistance</name></member>
+      <member refid="classshogun_1_1CJensenMetric_1a7426b2497a2c1b596510c0cf92396c0c" prot="public" virt="virtual"><scope>shogun::CJensenMetric</scope><name>~CJensenMetric</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

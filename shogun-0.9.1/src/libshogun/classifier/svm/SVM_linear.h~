@@ -43,7 +43,7 @@ struct problem_l1
 	/** y */
 	int32_t *y;
 	/** sparse features x */
-	TSparse<float64_t>* x;
+	SparseFeatures<float64_t>* x;
 	/** if bias shall be used */
 	bool use_bias;
 };
@@ -221,7 +221,7 @@ public:
 	l1r_l2_svc(problem_l1 *prob_col, float64_t *w, float64_t eps, float64_t Cp, float64_t Cn);
 private:
 	void solve_l1r_l2_svc(float64_t *w, float64_t eps, float64_t Cp, float64_t Cn);
-	const problem_l *prob_col;
+	const problem_l1 *prob_col;
 };
 
 /** class l1r_lr */

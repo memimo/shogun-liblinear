@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structshogun_1_1T__ALPHA__BETA" kind="struct" prot="public">
+    <compoundname>shogun::T_ALPHA_BETA</compoundname>
+    <includes local="no">HMM.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structshogun_1_1T__ALPHA__BETA_1a7776888e2fcfa140f1555ea1f5efc9ac" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::T_ALPHA_BETA::dimension</definition>
+        <argsstring></argsstring>
+        <name>dimension</name>
+        <briefdescription>
+<para>dimension for that alpha/beta table was generated </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="44" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1T__ALPHA__BETA_1af66fb19acfc6bf709a771bb7cd286dbe" prot="public" static="no" mutable="no">
+        <type>T_ALPHA_BETA_TABLE *</type>
+        <definition>T_ALPHA_BETA_TABLE* shogun::T_ALPHA_BETA::table</definition>
+        <argsstring></argsstring>
+        <name>table</name>
+        <briefdescription>
+<para>perversely huge alpha/beta cache table </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="47" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1T__ALPHA__BETA_1a7342b7b8f3a80760c79b659a9d84bc59" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::T_ALPHA_BETA::updated</definition>
+        <argsstring></argsstring>
+        <name>updated</name>
+        <briefdescription>
+<para>true if table is valid </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="50" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structshogun_1_1T__ALPHA__BETA_1abab513b07d1b2b9da8152856adc14df9" prot="public" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::T_ALPHA_BETA::sum</definition>
+        <argsstring></argsstring>
+        <name>sum</name>
+        <briefdescription>
+<para>sum over all paths == model_probability for this dimension </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="53" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>type for alpha/beta table </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" line="42" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/distributions/HMM.h" bodystart="41" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structshogun_1_1T__ALPHA__BETA_1a7776888e2fcfa140f1555ea1f5efc9ac" prot="public" virt="non-virtual"><scope>shogun::T_ALPHA_BETA</scope><name>dimension</name></member>
+      <member refid="structshogun_1_1T__ALPHA__BETA_1abab513b07d1b2b9da8152856adc14df9" prot="public" virt="non-virtual"><scope>shogun::T_ALPHA_BETA</scope><name>sum</name></member>
+      <member refid="structshogun_1_1T__ALPHA__BETA_1af66fb19acfc6bf709a771bb7cd286dbe" prot="public" virt="non-virtual"><scope>shogun::T_ALPHA_BETA</scope><name>table</name></member>
+      <member refid="structshogun_1_1T__ALPHA__BETA_1a7342b7b8f3a80760c79b659a9d84bc59" prot="public" virt="non-virtual"><scope>shogun::T_ALPHA_BETA</scope><name>updated</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,640 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CMKLMultiClass" kind="class" prot="public">
+    <compoundname>shogun::CMKLMultiClass</compoundname>
+    <basecompoundref refid="classshogun_1_1CMultiClassSVM" prot="public" virt="non-virtual">shogun::CMultiClassSVM</basecompoundref>
+    <includes local="no">MKLMultiClass.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CMKLMultiClass_1a7174beaec3dc0fa32523f1326e5bed64" prot="protected" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1CGMNPSVM" kindref="compound">CGMNPSVM</ref> *</type>
+        <definition>CGMNPSVM* shogun::CMKLMultiClass::svm</definition>
+        <argsstring></argsstring>
+        <name>svm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the multiclass svm for fixed MKL weights </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="165" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CMKLMultiClass_1a5893c2fb24637856ab034246f3432fd3" prot="protected" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1MKLMultiClassGLPK" kindref="compound">MKLMultiClassGLPK</ref> *</type>
+        <definition>MKLMultiClassGLPK* shogun::CMKLMultiClass::lpw</definition>
+        <argsstring></argsstring>
+        <name>lpw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the lp solver wrapper </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="169" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CMKLMultiClass_1aee3c225bd611460634f16de178ba3cc2" prot="protected" static="no" mutable="no">
+        <type>::std::vector&lt; std::vector&lt; float64_t &gt; &gt;</type>
+        <definition>::std::vector&lt; std::vector&lt; float64_t&gt; &gt; shogun::CMKLMultiClass::weightshistory</definition>
+        <argsstring></argsstring>
+        <name>weightshistory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>stores the last two mkl iteration weights </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="173" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CMKLMultiClass_1ab4b62a5aacc56ff90f26a8e8ef2639ab" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CMKLMultiClass::mkl_eps</definition>
+        <argsstring></argsstring>
+        <name>mkl_eps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MKL termination threshold is set void <ref refid="classshogun_1_1CMKLMultiClass_1aa8592b5986631b1f80fc55867dec9eda" kindref="member">set_mkl_epsilon(float64_t eps )</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="178" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CMKLMultiClass_1a3a2fcd7c3dcd73bdc495729f69e67b99" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CMKLMultiClass::max_num_mkl_iters</definition>
+        <argsstring></argsstring>
+        <name>max_num_mkl_iters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximal number of MKL iterations is set by void <ref refid="classshogun_1_1CMKLMultiClass_1ac2d8f6765329eb452ad3b9769757f236" kindref="member">set_max_num_mkliters(int32_t maxnum)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="182" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CMKLMultiClass_1a9de2917e9113e9501ef9290a4efe7c34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CMKLMultiClass::CMKLMultiClass</definition>
+        <argsstring>()</argsstring>
+        <name>CMKLMultiClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Class default Constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLMultiClass_1a0d977608a299b041b08295c38b1ffa64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CMKLMultiClass::CMKLMultiClass</definition>
+        <argsstring>(float64_t C, CKernel *k, CLabels *lab)</argsstring>
+        <name>CMKLMultiClass</name>
+        <param>
+          <type>float64_t</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>CKernel *</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>CLabels *</type>
+          <declname>lab</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Class Constructor commonly used in Shogun Toolbox <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant C </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>labels </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLMultiClass_1a66712632a74232c8d32746a7c5de2e78" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CMKLMultiClass::~CMKLMultiClass</definition>
+        <argsstring>()</argsstring>
+        <name>~CMKLMultiClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Class default Destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLMultiClass_1a431961dfba8a5e8439a4cce600c46c6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CMKLMultiClass::train</definition>
+        <argsstring>(CFeatures *data=NULL)</argsstring>
+        <name>train</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a9904cc0a8d7ec077cc1fede8d64ebb22">train</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>train Multiclass MKL classifier</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training <ref refid="structshogun_1_1data" kindref="compound">data</ref> (parameter can be avoided if distance or kernel-based classifiers are used and distance/kernels are initialized with train <ref refid="structshogun_1_1data" kindref="compound">data</ref>)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether training was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLMultiClass_1ab8746d18e28bafde4d9afd00499dc984" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EClassifierType</type>
+        <definition>virtual EClassifierType shogun::CMKLMultiClass::get_classifier_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_classifier_type</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a52d05215c6b6a252650c41a0b29d8cc5">get_classifier_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier type</para><para><simplesect kind="return"><para>classifier type GMNPMKL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="67" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" bodystart="66" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLMultiClass_1aad09157f2a4f6150b148b38dc8c25fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CMKLMultiClass::getsubkernelweights</definition>
+        <argsstring>(int32_t &amp;numweights)</argsstring>
+        <name>getsubkernelweights</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>numweights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>returns MKL weights for the different kernels</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numweights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is output parameter, is set to zero if no weights have been computed or to the number of MKL weights which is equal to the number of kernels</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>NULL if no weights have been computed or otherwise an array with the weights, caller has to delete[] the output by itself </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLMultiClass_1aa8592b5986631b1f80fc55867dec9eda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CMKLMultiClass::set_mkl_epsilon</definition>
+        <argsstring>(float64_t eps)</argsstring>
+        <name>set_mkl_epsilon</name>
+        <param>
+          <type>float64_t</type>
+          <declname>eps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sets MKL termination threshold</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the desired threshold value the termination criterion is the L2 norm between the current MKL weights and their counterpart from the previous iteration </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLMultiClass_1ac2d8f6765329eb452ad3b9769757f236" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CMKLMultiClass::set_max_num_mkliters</definition>
+        <argsstring>(int32_t maxnum)</argsstring>
+        <name>set_max_num_mkliters</name>
+        <param>
+          <type>int32_t</type>
+          <declname>maxnum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sets maximal number of MKL iterations</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maxnum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the desired maximal number of MKL iterations; when it is reached the MKL terminates irrespective of the MKL progress set it to a nonpositive value in order to turn it off </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="96"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CMKLMultiClass_1a39b9096cda462bc29e5f1ecdbc75296d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CMKLMultiClass::CMKLMultiClass</definition>
+        <argsstring>(const CMKLMultiClass &amp;cm)</argsstring>
+        <name>CMKLMultiClass</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CMKLMultiClass" kindref="compound">CMKLMultiClass</ref> &amp;</type>
+          <declname>cm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Class Copy Constructor protected to avoid its usage </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLMultiClass_1aca9f5b24ff1b3f9646052fc6642c6f5a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CMKLMultiClass" kindref="compound">CMKLMultiClass</ref></type>
+        <definition>CMKLMultiClass shogun::CMKLMultiClass::operator=</definition>
+        <argsstring>(const CMKLMultiClass &amp;cm)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CMKLMultiClass" kindref="compound">CMKLMultiClass</ref> &amp;</type>
+          <declname>cm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Class Assignment operator protected to avoid its usage </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLMultiClass_1aaabbb2e582bf7004662e016bb7a24b01" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CMKLMultiClass::initlpsolver</definition>
+        <argsstring>()</argsstring>
+        <name>initlpsolver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>performs some sanity checks (on the provided kernel), inits the GLPK-based LP solver </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLMultiClass_1acad757af4e35aab81ce17f022cf4b50c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CMKLMultiClass::initsvm</definition>
+        <argsstring>()</argsstring>
+        <name>initsvm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>inits the underlying Multiclass SVM </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLMultiClass_1a5b775f6be979d1b4edd062201683902d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CMKLMultiClass::evaluatefinishcriterion</definition>
+        <argsstring>(const int32_t numberofsilpiterations)</argsstring>
+        <name>evaluatefinishcriterion</name>
+        <param>
+          <type>const int32_t</type>
+          <declname>numberofsilpiterations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>checks MKL for convergence</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberofsilpiterations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the number of currently done iterations </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLMultiClass_1aeb1f388ec109c5b26919df44702b2157" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CMKLMultiClass::addingweightsstep</definition>
+        <argsstring>(const std::vector&lt; float64_t &gt; &amp;curweights)</argsstring>
+        <name>addingweightsstep</name>
+        <param>
+          <type>const std::vector&lt; float64_t &gt; &amp;</type>
+          <declname>curweights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>adds a constraint to the LP used in MKL</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>curweights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>are the current MKL weights</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+it uses void <ref refid="classshogun_1_1CMKLMultiClass_1aeb1f388ec109c5b26919df44702b2157" kindref="member">addingweightsstep( const std::vector&lt;float64_t&gt; &amp; curweights)</ref>; and float64_t <ref refid="classshogun_1_1CMKLMultiClass_1a8aa65e8799015fa2d7f9ec62188a5787" kindref="member">getsumofsignfreealphas()</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLMultiClass_1a8aa65e8799015fa2d7f9ec62188a5787" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CMKLMultiClass::getsumofsignfreealphas</definition>
+        <argsstring>()</argsstring>
+        <name>getsumofsignfreealphas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>computes the first svm-dependent part used for generating MKL constraints it is <formula id="19">$ \sum_y b_y^2-\sum_i \sum_{ y | y \neq y_i} \alpha_{iy}(b_{y_i}-b_y-1) $</formula> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CMKLMultiClass_1a4ee0b61b99c57d4c47ebb4cb176e5fe9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CMKLMultiClass::getsquarenormofprimalcoefficients</definition>
+        <argsstring>(const int32_t ind)</argsstring>
+        <name>getsquarenormofprimalcoefficients</name>
+        <param>
+          <type>const int32_t</type>
+          <declname>ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>computes the second svm-dependent part used for generating MKL constraints</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ind</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the index of the kernel for which to compute <formula id="20">$ \|w \|^2 $</formula> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="155"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>MKLMultiClass is a class for L1-norm multiclass MKL. </para>    </briefdescription>
+    <detaileddescription>
+<para>It is based on the GMNPSVM Multiclass SVM. Its own parameters are the L2 norm weight change based MKL Its termination criterion set by void <ref refid="classshogun_1_1CMKLMultiClass_1aa8592b5986631b1f80fc55867dec9eda" kindref="member">set_mkl_epsilon(float64_t eps )</ref>; and the maximal number of MKL iterations set by void <ref refid="classshogun_1_1CMKLMultiClass_1ac2d8f6765329eb452ad3b9769757f236" kindref="member">set_max_num_mkliters(int32_t maxnum)</ref>; It passes the regularization constants C1 and C2 to GMNPSVM. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="190">
+        <label>shogun::CMKLMultiClass</label>
+        <link refid="classshogun_1_1CMKLMultiClass"/>
+        <childnode refid="191" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>shogun::CKernelMachine</label>
+        <link refid="classshogun_1_1CKernelMachine"/>
+        <childnode refid="194" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="191">
+        <label>shogun::CMultiClassSVM</label>
+        <link refid="classshogun_1_1CMultiClassSVM"/>
+        <childnode refid="192" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+      <node id="192">
+        <label>shogun::CSVM</label>
+        <link refid="classshogun_1_1CSVM"/>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="195">
+        <label>shogun::CMKLMultiClass</label>
+        <link refid="classshogun_1_1CMKLMultiClass"/>
+        <childnode refid="196" relation="public-inheritance">
+        </childnode>
+        <childnode refid="201" relation="usage">
+          <edgelabel>svm</edgelabel>
+        </childnode>
+        <childnode refid="202" relation="usage">
+          <edgelabel>lpw</edgelabel>
+        </childnode>
+      </node>
+      <node id="198">
+        <label>shogun::CKernelMachine</label>
+        <link refid="classshogun_1_1CKernelMachine"/>
+        <childnode refid="199" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="196">
+        <label>shogun::CMultiClassSVM</label>
+        <link refid="classshogun_1_1CMultiClassSVM"/>
+        <childnode refid="197" relation="public-inheritance">
+        </childnode>
+        <childnode refid="197" relation="usage">
+          <edgelabel>m_svms</edgelabel>
+        </childnode>
+      </node>
+      <node id="200">
+        <label>shogun::CMKL</label>
+        <link refid="classshogun_1_1CMKL"/>
+        <childnode refid="197" relation="public-inheritance">
+        </childnode>
+        <childnode refid="197" relation="usage">
+          <edgelabel>svm</edgelabel>
+        </childnode>
+      </node>
+      <node id="199">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+      <node id="197">
+        <label>shogun::CSVM</label>
+        <link refid="classshogun_1_1CSVM"/>
+        <childnode refid="198" relation="public-inheritance">
+        </childnode>
+        <childnode refid="200" relation="usage">
+          <edgelabel>mkl</edgelabel>
+        </childnode>
+      </node>
+      <node id="201">
+        <label>shogun::CGMNPSVM</label>
+        <link refid="classshogun_1_1CGMNPSVM"/>
+        <childnode refid="196" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>shogun::MKLMultiClassGLPK</label>
+        <link refid="classshogun_1_1MKLMultiClassGLPK"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" line="33" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/mkl/MKLMultiClass.h" bodystart="32" bodyend="185"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CMKLMultiClass_1aeb1f388ec109c5b26919df44702b2157" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>addingweightsstep</name></member>
+      <member refid="classshogun_1_1CSVM_1abbb1e87fd73520b279ed68913e7d3952" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>C1</name></member>
+      <member refid="classshogun_1_1CSVM_1adc7f13258df96749be0c0af03d73b1a3" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>C2</name></member>
+      <member refid="classshogun_1_1CSVM_1aede8a7c6c1c29ef037648e55f79ea582" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>callback</name></member>
+      <member refid="classshogun_1_1CClassifier_1a37259b3ffbe96af1eda8dd2d9428221c" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>CClassifier</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1af2d719c7dd34401eb1544a6124e88046" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>CKernelMachine</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1a079fd56e82890c78bcd620c5ed5fe602" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ad9cf8044ff5e5dadb06f74903cf248a8" prot="public" virt="virtual" ambiguityscope="shogun::CSVM::"><scope>shogun::CMKLMultiClass</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1acc0b1b93eba5946d4047369aecfe9881" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>classify_example</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a842c2010c3c0716616facc0592e39191" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>classify_example_helper</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1afbb3e6194095fc1342731faace2b1fc3" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>classify_example_one_vs_one</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1ac2a9de722e15b4984e9bc6e3c991c978" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>classify_example_one_vs_rest</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1a1dffd1398f0dfe0ea76f48f36fcbf826" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>classify_one_vs_one</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1a5b3eaebb5ef5bd57e334476985205e7b" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>classify_one_vs_rest</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1a4985d83458c8cc4e745fb070c2ced9d8" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1a9de2917e9113e9501ef9290a4efe7c34" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>CMKLMultiClass</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1a0d977608a299b041b08295c38b1ffa64" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>CMKLMultiClass</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1a39b9096cda462bc29e5f1ecdbc75296d" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>CMKLMultiClass</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1aa572b39323fb484992fa1af1bd68e9d4" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>CMultiClassSVM</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1aa6c95f2f5a7813d8f73cbae2b669e11f" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>CMultiClassSVM</name></member>
+      <member refid="classshogun_1_1CSVM_1a799f48e17928a04f8a59e8e11450d87d" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>compute_svm_dual_objective</name></member>
+      <member refid="classshogun_1_1CSVM_1ac7a7ccc604d92c07745f0d20e3cd681f" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>compute_svm_primal_objective</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1a33dc12458e3dada6a16275c692dc1fc5" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>create_multiclass_svm</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1aadb3dcfa41bcdb3cedb4bb590c421f99" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>create_new_model</name></member>
+      <member refid="classshogun_1_1CSVM_1a9ed20fde9ba51b6f4a174e6bcdee9bb2" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>CSVM</name></member>
+      <member refid="classshogun_1_1CSVM_1ac921019d10ab940c9b9eb430cb0af50d" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>CSVM</name></member>
+      <member refid="classshogun_1_1CSVM_1a79f6290f97bdc9178917f6f37f883007" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>epsilon</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1a5b775f6be979d1b4edd062201683902d" prot="protected" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>evaluatefinishcriterion</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a52348988d896bcda6a005c9af0424655" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_alpha</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a34137de1f460aaa60bb888bc42cd8987" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_alphas</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a21f1f26eab5e1177fbb0a5b361020ac2" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_batch_computation_enabled</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a3221b3acb94edfe8cdefa2fc659c6fc8" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_bias</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1af7b87d7a2438e8e74e8fb689e609c83b" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_bias_enabled</name></member>
+      <member refid="classshogun_1_1CSVM_1aa925c40d161f332b21f5f6c1d5a9e30b" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_C1</name></member>
+      <member refid="classshogun_1_1CSVM_1a282a427d35615fe4ce9582d3efc6b766" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_C2</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1ab8746d18e28bafde4d9afd00499dc984" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CSVM_1abf4c3abcdc8f5f5ce5dca52abc631e63" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_epsilon</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1aa065ba2b4863e152beb95c03aa6add24" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_kernel</name></member>
+      <member refid="classshogun_1_1CClassifier_1a787dcde8fe53a734fcb77f988d821408" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>get_label</name></member>
+      <member refid="classshogun_1_1CClassifier_1a5f1f62d263b6201e1624990deadba5a8" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>get_labels</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1acc42836c7731c0f029ebd77f045e25cf" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_linadd_enabled</name></member>
+      <member refid="classshogun_1_1CSVM_1a97b1aa0697b753cc3898dbb8790bdcfc" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>get_linear_term</name></member>
+      <member refid="classshogun_1_1CSVM_1a8dda3a8c4315f988dd1d1dd791bd8152" prot="protected" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>get_linear_term_array</name></member>
+      <member refid="classshogun_1_1CClassifier_1a6e48967294c55850d95235d487ce2c02" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_max_train_time</name></member>
+      <member refid="classshogun_1_1CSVM_1a78b2baa898294c079e52cedc5c6102a0" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSVM_1aa7899e8953ff5bcce8918e5095430552" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_nu</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a639f528d6956936a482523bdc04eb4b5" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_num_support_vectors</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1ad9ec81290c88f67645dc47d4e7a9b30e" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_num_svms</name></member>
+      <member refid="classshogun_1_1CSVM_1a1a825064f5599e4d3a78d595565c936a" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_objective</name></member>
+      <member refid="classshogun_1_1CSVM_1aa9f220fc5a0f7222fe8a71316ffa0310" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_qpsize</name></member>
+      <member refid="classshogun_1_1CSVM_1a727c64fadb95845ffc75f0d9d1766076" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_shrinking_enabled</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8a3acda6819b4a4b77b656b6b9e1817c" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_solver_type</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a340532552838d25c1a0917d59de1dbee" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_support_vector</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a50bd31e7cf0cabc0ec41896ab97292fa" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_support_vectors</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1aaf41d29a7cfce8571ebd94a8d231984a" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>get_svm</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1a4ee0b61b99c57d4c47ebb4cb176e5fe9" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>getsquarenormofprimalcoefficients</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1aad09157f2a4f6150b148b38dc8c25fa5" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>getsubkernelweights</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1a8aa65e8799015fa2d7f9ec62188a5787" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>getsumofsignfreealphas</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a0915cae39b88af20c288fbc1f5979afb" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>init_kernel_optimization</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1aaabbb2e582bf7004662e016bb7a24b01" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>initlpsolver</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1acad757af4e35aab81ce17f022cf4b50c" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>initsvm</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a6d47114463588d9dbd672180dc2e7357" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>kernel</name></member>
+      <member refid="classshogun_1_1CClassifier_1a68f1285e63422a24319ed95910d72f73" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>labels</name></member>
+      <member refid="classshogun_1_1CSVM_1a4103dd9a97319317117e84e5cb9ce473" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>linear_term</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1aae1a53b37fde5117f1447b73ea1c48e8" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>load</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1a5893c2fb24637856ab034246f3432fd3" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>lpw</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ac40c305fb5587c0004d5338ea6d712d2" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>m_alpha</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a5c8a9af0e7b79d02d0be95b3cd8e9910" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>m_bias</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1a9209eca2e3955be1a4fdd0491689edd1" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>m_num_classes</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1a7fa029f4b26b5bd92a70b990f76663cb" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>m_num_svms</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1a573287700677f15e71c4d0ca6926b592" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>m_svms</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a7e1c9037fb66d596c5dd83c28b8dce6d" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>m_svs</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1a3a2fcd7c3dcd73bdc495729f69e67b99" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>max_num_mkl_iters</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8524d634a67f3538b112f72d7835af46" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>max_train_time</name></member>
+      <member refid="classshogun_1_1CSVM_1a94d628c09667f3b469ad4852f9e29690" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>mkl</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1ab4b62a5aacc56ff90f26a8e8ef2639ab" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>mkl_eps</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1aaba78143262f00e356b7e8f643124f81" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>multiclass_type</name></member>
+      <member refid="classshogun_1_1CSVM_1a13b42636b6f32acb975043ad16e77b0a" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>nu</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ab4fbabe44610f09e33362234eb131432" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>num_svs</name></member>
+      <member refid="classshogun_1_1CSVM_1a1793d92e74d09027ce319f5e6bf55f87" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>objective</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1aca9f5b24ff1b3f9646052fc6642c6f5a" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>operator=</name></member>
+      <member refid="classshogun_1_1CSVM_1af10c87729b08be38d1bbe7daa1502420" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>qpsize</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1a3e6e8e7881d36abb38e4b65cb632e0a9" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>save</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a804a4f283e98849f4b85a6d52371a848" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_alpha</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ae057fbcb6071331223f1a26de82d1f88" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_alphas</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a1bef02fca7cd9808c9c67c898109a8d2" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_batch_computation_enabled</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a5edc82a48029b91216251b354d341452" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_bias</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a95eb6221dd46fe2dc9fb42b53845df36" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_bias_enabled</name></member>
+      <member refid="classshogun_1_1CSVM_1af745c6d5d45c5225c4d2a0b8743632db" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_C</name></member>
+      <member refid="classshogun_1_1CSVM_1a2798c8deb9a8712d9f49666dd1fb19d6" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_callback_function</name></member>
+      <member refid="classshogun_1_1CSVM_1ac882137277cca76b55c28541ddc5e542" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_defaults</name></member>
+      <member refid="classshogun_1_1CSVM_1a49773823645284d75da2b22a1707b9e7" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_epsilon</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a9a26799c7d6769d6f7d052b984718c72" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_kernel</name></member>
+      <member refid="classshogun_1_1CClassifier_1aa6b87d22c14fc2b6970d8bf1edbb15fb" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>set_labels</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a605209bfe9a431912fc9a718df808887" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_linadd_enabled</name></member>
+      <member refid="classshogun_1_1CSVM_1a3b8ec9a1ff4992e6f9e400568aa06d09" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>set_linear_term</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1ac2d8f6765329eb452ad3b9769757f236" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_max_num_mkliters</name></member>
+      <member refid="classshogun_1_1CClassifier_1af8930a0a848388d8647c9e4604a7856d" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_max_train_time</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1aa8592b5986631b1f80fc55867dec9eda" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_mkl_epsilon</name></member>
+      <member refid="classshogun_1_1CSVM_1a80eb31d8811d31e4612a0856424db063" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_nu</name></member>
+      <member refid="classshogun_1_1CSVM_1a9fedfc8004e361f44a9eef1248088c16" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_objective</name></member>
+      <member refid="classshogun_1_1CSVM_1a349a01da8d94a5ce76475a205b9a0d17" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_qpsize</name></member>
+      <member refid="classshogun_1_1CSVM_1a3fb0649330798f231b7e864ef3659e8f" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_shrinking_enabled</name></member>
+      <member refid="classshogun_1_1CClassifier_1a4c87d6f3a2342c3053aeca82c3cf528c" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_solver_type</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a2746562f3c38954ca0a27089cfbd6eeb" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_support_vector</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a69402864eced218da049c53529138c45" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_support_vectors</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1a77b2855e7b7b429134a58884888befa7" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_svm</name></member>
+      <member refid="classshogun_1_1CSVM_1a197e3be46c604e75917e6f197562f3da" prot="public" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>set_tube_epsilon</name></member>
+      <member refid="classshogun_1_1CClassifier_1a360902e938d7b8890084c5bc6df617be" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>solver_type</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1a7174beaec3dc0fa32523f1326e5bed64" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>svm</name></member>
+      <member refid="classshogun_1_1CSVM_1a883d54a63cea716452a35467c90c0d97" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>svm_loaded</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1a431961dfba8a5e8439a4cce600c46c6c" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>train</name></member>
+      <member refid="classshogun_1_1CSVM_1aac8050c6b0d7d922330de0fa3e8c1570" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>tube_epsilon</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ade160206d7ddebd3ab2f8d1f40aaa7f9" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>use_batch_computation</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1abf9e9cb89f609d79b36a4d1a7f6945b9" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>use_bias</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a8dde883a0c2f53867711a2408e3bef16" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>use_linadd</name></member>
+      <member refid="classshogun_1_1CSVM_1a38e40e0db03787a48f54877e53f1f49b" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>use_shrinking</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1aee3c225bd611460634f16de178ba3cc2" prot="protected" virt="non-virtual"><scope>shogun::CMKLMultiClass</scope><name>weightshistory</name></member>
+      <member refid="classshogun_1_1CClassifier_1ae7d6c7d39fb314c1092163e958ef66a8" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>~CClassifier</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a5d9a0f4626b37665f847cf209e94a2ed" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>~CKernelMachine</name></member>
+      <member refid="classshogun_1_1CMKLMultiClass_1a66712632a74232c8d32746a7c5de2e78" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>~CMKLMultiClass</name></member>
+      <member refid="classshogun_1_1CMultiClassSVM_1a0fa33e9e6df8481e1b00d568e907bd44" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>~CMultiClassSVM</name></member>
+      <member refid="classshogun_1_1CSVM_1aaa7cb652cc6a927d00b696637efccd49" prot="public" virt="virtual"><scope>shogun::CMKLMultiClass</scope><name>~CSVM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

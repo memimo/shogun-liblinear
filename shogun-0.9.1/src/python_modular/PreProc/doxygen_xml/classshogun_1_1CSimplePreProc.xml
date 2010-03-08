@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CSimplePreProc" kind="class" prot="public">
+    <compoundname>shogun::CSimplePreProc</compoundname>
+    <basecompoundref refid="classshogun_1_1CPreProc" prot="public" virt="non-virtual">shogun::CPreProc</basecompoundref>
+    <includes local="no">SimplePreProc.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>ST</declname>
+        <defname>ST</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CSimplePreProc_1a94752b9091a95a9cba6fdeb729e03bc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSimplePreProc&lt; ST &gt;::CSimplePreProc</definition>
+        <argsstring>(const char *name, const char *id)</argsstring>
+        <name>CSimplePreProc</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>simple preprocessor&apos;s name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>simple preprocessor&apos;s id </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" line="39" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimplePreProc_1adec07199d03e845350456bb3f2e8c240" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>ST *</type>
+        <definition>virtual ST* shogun::CSimplePreProc&lt; ST &gt;::apply_to_feature_matrix</definition>
+        <argsstring>(CFeatures *f)=0</argsstring>
+        <name>apply_to_feature_matrix</name>
+        <reimplementedby refid="classshogun_1_1CPruneVarSubMean_1ae7394800cccc8d12fd65f3a886416446">apply_to_feature_matrix</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CNormOne_1a6c554e9de2c9f6e997e027d5159576b5">apply_to_feature_matrix</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CNormDerivativeLem3_1aac90a9caa69d4e41fbac97a6ba1c3bc1">apply_to_feature_matrix</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLogPlusOne_1a7bf75f4f52e918c1733985bc29308c20">apply_to_feature_matrix</reimplementedby>
+        <param>
+          <type>CFeatures *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>apply preproc on feature matrix result in feature matrix return pointer to feature_matrix, i.e. f-&gt;get_feature_matrix(); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimplePreProc_1ad95caddfb7ec5ac7071b43d366da9f2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>ST *</type>
+        <definition>virtual ST* shogun::CSimplePreProc&lt; ST &gt;::apply_to_feature_vector</definition>
+        <argsstring>(ST *f, int32_t &amp;len)=0</argsstring>
+        <name>apply_to_feature_vector</name>
+        <reimplementedby refid="classshogun_1_1CPruneVarSubMean_1abf9fa876025b34f247d42071af70ee9b">apply_to_feature_vector</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CNormOne_1aaeb3c4160aad997d9be858dbbe197678">apply_to_feature_vector</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLogPlusOne_1ae762dee96101a38a14589aa3f592d93e">apply_to_feature_vector</reimplementedby>
+        <param>
+          <type>ST *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>apply preproc on single feature vector result in feature matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimplePreProc_1aabe2bad66cb5c1c5fdef0a8b4ce5a8db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureClass</type>
+        <definition>virtual EFeatureClass shogun::CSimplePreProc&lt; ST &gt;::get_feature_class</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_class</name>
+        <reimplements refid="classshogun_1_1CPreProc_1a917101137fbee06eeba9d09a37c063bf">get_feature_class</reimplements>
+        <briefdescription>
+<para>return that we are simple features (just fixed size matrices) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" line="52" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimplePreProc_1a59c6f4e6daddd0b833ab65f1ed6489db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureType</type>
+        <definition>virtual EFeatureType shogun::CSimplePreProc&lt; ST &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CPreProc_1a29b1c1bbd8b45c6aa3aca8e082e2ec5d">get_feature_type</reimplements>
+        <briefdescription>
+<para>return feature type </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimplePreProc_1a1a5fcbdf2171ce73dcbb168ed8b90851" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimplePreProc&lt; float64_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CPreProc_1a29b1c1bbd8b45c6aa3aca8e082e2ec5d">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return feature type with which objects derived from <ref refid="classshogun_1_1CPreProc" kindref="compound">CPreProc</ref> can deal </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" line="58" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimplePreProc_1a8b904322d7f043438dd09b971fd47b50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimplePreProc&lt; int16_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CPreProc_1a29b1c1bbd8b45c6aa3aca8e082e2ec5d">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return feature type with which objects derived from <ref refid="classshogun_1_1CPreProc" kindref="compound">CPreProc</ref> can deal </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" line="63" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimplePreProc_1ac591b335c2024fdc7b9a824f4af3dcce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimplePreProc&lt; uint16_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CPreProc_1a29b1c1bbd8b45c6aa3aca8e082e2ec5d">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return feature type with which objects derived from <ref refid="classshogun_1_1CPreProc" kindref="compound">CPreProc</ref> can deal </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" line="68" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimplePreProc_1ae545e24c08edae8cded8aef66db7da90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimplePreProc&lt; char &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CPreProc_1a29b1c1bbd8b45c6aa3aca8e082e2ec5d">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return feature type with which objects derived from <ref refid="classshogun_1_1CPreProc" kindref="compound">CPreProc</ref> can deal </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" line="73" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimplePreProc_1aed1ab07d8f63b0e5396cc8f24147c37b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimplePreProc&lt; uint8_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CPreProc_1a29b1c1bbd8b45c6aa3aca8e082e2ec5d">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return feature type with which objects derived from <ref refid="classshogun_1_1CPreProc" kindref="compound">CPreProc</ref> can deal </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" line="78" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimplePreProc_1ad11abca3f15e1afda26494d2620266ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>EFeatureType</type>
+        <definition>EFeatureType shogun::CSimplePreProc&lt; uint64_t &gt;::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CPreProc_1a29b1c1bbd8b45c6aa3aca8e082e2ec5d">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return feature type with which objects derived from <ref refid="classshogun_1_1CPreProc" kindref="compound">CPreProc</ref> can deal </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" line="83" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class SimplePreProc, base class for preprocessors (cf. <ref refid="classshogun_1_1CPreProc" kindref="compound">CPreProc</ref>) that apply to CSimpleFeatures (i.e. rectangular dense matrices). </para>    </briefdescription>
+    <detaileddescription>
+<para>Two new functions <ref refid="classshogun_1_1CSimplePreProc_1ad95caddfb7ec5ac7071b43d366da9f2a" kindref="member">apply_to_feature_vector()</ref> and <ref refid="classshogun_1_1CSimplePreProc_1adec07199d03e845350456bb3f2e8c240" kindref="member">apply_to_feature_matrix()</ref> are defined in this interface that need to be implemented in each particular preprocessor operating on CSimpleFeatures. For examples see e.g. <ref refid="classshogun_1_1CLogPlusOne" kindref="compound">CLogPlusOne</ref> or CPCACut. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="46">
+        <label>shogun::CPreProc</label>
+        <link refid="classshogun_1_1CPreProc"/>
+      </node>
+      <node id="45">
+        <label>shogun::CSimplePreProc&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CSimplePreProc"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="48">
+        <label>shogun::CPreProc</label>
+        <link refid="classshogun_1_1CPreProc"/>
+      </node>
+      <node id="47">
+        <label>shogun::CSimplePreProc&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CSimplePreProc"/>
+        <childnode refid="48" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" line="32" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/preproc/SimplePreProc.h" bodystart="31" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CSimplePreProc_1adec07199d03e845350456bb3f2e8c240" prot="public" virt="pure-virtual"><scope>shogun::CSimplePreProc</scope><name>apply_to_feature_matrix</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1ad95caddfb7ec5ac7071b43d366da9f2a" prot="public" virt="pure-virtual"><scope>shogun::CSimplePreProc</scope><name>apply_to_feature_vector</name></member>
+      <member refid="classshogun_1_1CPreProc_1a0f043eb1dd251b49cb3cf3ecf44b1c4b" prot="public" virt="pure-virtual"><scope>shogun::CSimplePreProc</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CPreProc_1a42cd824b1e730557f07884dc6eb98e51" prot="public" virt="non-virtual"><scope>shogun::CSimplePreProc</scope><name>CPreProc</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1a94752b9091a95a9cba6fdeb729e03bc3" prot="public" virt="non-virtual"><scope>shogun::CSimplePreProc</scope><name>CSimplePreProc</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1aabe2bad66cb5c1c5fdef0a8b4ce5a8db" prot="public" virt="virtual"><scope>shogun::CSimplePreProc</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1a59c6f4e6daddd0b833ab65f1ed6489db" prot="public" virt="virtual"><scope>shogun::CSimplePreProc</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1a1a5fcbdf2171ce73dcbb168ed8b90851" prot="public" virt="virtual"><scope>shogun::CSimplePreProc</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1a8b904322d7f043438dd09b971fd47b50" prot="public" virt="virtual"><scope>shogun::CSimplePreProc</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1ac591b335c2024fdc7b9a824f4af3dcce" prot="public" virt="virtual"><scope>shogun::CSimplePreProc</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1ae545e24c08edae8cded8aef66db7da90" prot="public" virt="virtual"><scope>shogun::CSimplePreProc</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1aed1ab07d8f63b0e5396cc8f24147c37b" prot="public" virt="virtual"><scope>shogun::CSimplePreProc</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CSimplePreProc_1ad11abca3f15e1afda26494d2620266ef" prot="public" virt="virtual"><scope>shogun::CSimplePreProc</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CPreProc_1a66dbec59819cb9ed7023fc47608ccad7" prot="public" virt="non-virtual"><scope>shogun::CSimplePreProc</scope><name>get_id</name></member>
+      <member refid="classshogun_1_1CPreProc_1ade7d07b45284bdae48abe425b0bf5a40" prot="public" virt="virtual"><scope>shogun::CSimplePreProc</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CPreProc_1afe50f73057b75cb494a9a4ab253258d6" prot="public" virt="pure-virtual"><scope>shogun::CSimplePreProc</scope><name>init</name></member>
+      <member refid="classshogun_1_1CPreProc_1a7905211b1e156831e64768d936351fa8" prot="protected" virt="non-virtual"><scope>shogun::CSimplePreProc</scope><name>preproc_id</name></member>
+      <member refid="classshogun_1_1CPreProc_1a58f21d152eaba8e982f98806d8496db3" prot="protected" virt="non-virtual"><scope>shogun::CSimplePreProc</scope><name>preproc_name</name></member>
+      <member refid="classshogun_1_1CPreProc_1a037b99bfd3bacbb3135525e81b134c57" prot="public" virt="virtual"><scope>shogun::CSimplePreProc</scope><name>~CPreProc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

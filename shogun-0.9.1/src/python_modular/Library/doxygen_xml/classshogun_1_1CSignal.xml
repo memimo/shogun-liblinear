@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CSignal" kind="class" prot="public">
+    <compoundname>shogun::CSignal</compoundname>
+    <includes local="no">Signal.h</includes>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CSignal_1af47104575c4f52708e6d87f7e9b08afb" prot="protected" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int shogun::CSignal::signals[NUMTRAPPEDSIGS]</definition>
+        <argsstring>[NUMTRAPPEDSIGS]</argsstring>
+        <name>signals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>signals; handling external lib </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="102" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSignal_1ace9ca39cd292d396a858f6fbd89b8de2" prot="protected" static="yes" mutable="no">
+        <type>struct sigaction</type>
+        <definition>struct sigaction shogun::CSignal::oldsigaction[NUMTRAPPEDSIGS]</definition>
+        <argsstring>[NUMTRAPPEDSIGS]</argsstring>
+        <name>oldsigaction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>signal actions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="105" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSignal_1a8c6bf29ce930e27e6e36e221f6282a8e" prot="protected" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CSignal::active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>active signal </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="108" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSignal_1ac38dee869230231c815066ab6b73135a" prot="protected" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CSignal::cancel_computation</definition>
+        <argsstring></argsstring>
+        <name>cancel_computation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if computation should be cancelled </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="111" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSignal_1a52784c582a2ee77d3aca88f228bf8014" prot="protected" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CSignal::cancel_immediately</definition>
+        <argsstring></argsstring>
+        <name>cancel_immediately</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if shogun should return ASAP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="114" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CSignal_1aae8c5663c29b9b7ecd40091e5ad567bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSignal::CSignal</definition>
+        <argsstring>()</argsstring>
+        <name>CSignal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSignal_1a7cb6e9a24821054f58fc8ffc5099b894" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CSignal::~CSignal</definition>
+        <argsstring>()</argsstring>
+        <name>~CSignal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSignal_1a478883593c9851374a83532f33b7fbe0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CSignal::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="98" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classshogun_1_1CSignal_1a4c96f9686be3c070f5495cc0a0f52ada" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CSignal::handler</definition>
+        <argsstring>(int signal)</argsstring>
+        <name>handler</name>
+        <param>
+          <type>int</type>
+          <declname>signal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>handler</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>signal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>signal number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSignal_1a978256d0b08a7c4fc25dbd4e52220bf8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool shogun::CSignal::set_handler</definition>
+        <argsstring>()</argsstring>
+        <name>set_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set handler</para><para><simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSignal_1ab1330d6d6a8ae414e2d9936209128b78" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool shogun::CSignal::unset_handler</definition>
+        <argsstring>()</argsstring>
+        <name>unset_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>unset handler</para><para><simplesect kind="return"><para>if unsetting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSignal_1a25cd224a16c548b239a9631efee86576" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CSignal::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clear signals </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSignal_1a48f5be1f9c0cd94f303a5fd7171cc3c6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CSignal::clear_cancel</definition>
+        <argsstring>()</argsstring>
+        <name>clear_cancel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clear cancel flag signals </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSignal_1afbbc5688bfe7d4b791e703b30d799e4e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CSignal::set_cancel</definition>
+        <argsstring>(bool immediately=false)</argsstring>
+        <name>set_cancel</name>
+        <param>
+          <type>bool</type>
+          <declname>immediately</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set cancel flag signals </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSignal_1aadd904e7f7233a2ea82065a62b20b371" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool shogun::CSignal::cancel_computations</definition>
+        <argsstring>()</argsstring>
+        <name>cancel_computations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cancel computations</para><para><simplesect kind="return"><para>if computations should be cancelled </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="86" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" bodystart="85" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class Signal implements signal handling to e.g. allow ctrl+c to cancel a long running process. </para>    </briefdescription>
+    <detaileddescription>
+<para>This is done in two ways:</para><para><orderedlist>
+<listitem><para>A signal handler is attached to trap the SIGINT and SIGURG signal. Pressing ctrl+c or sending the SIGINT (kill ...) signal to the shogun process will make shogun print a message asking to immediately exit the running method and to fall back to the command line.</para></listitem><listitem><para>When an URG signal is received or ctrl+c P is pressed shogun will prematurely stop a method and continue execution. For example when an SVM solver takes a long time without progressing much, one might still be interested in the result and should thus send SIGURG or interactively prematurely stop the method </para></listitem></orderedlist>
+</para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" line="48" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/Signal.h" bodystart="47" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CSignal_1a8c6bf29ce930e27e6e36e221f6282a8e" prot="protected" virt="non-virtual"><scope>shogun::CSignal</scope><name>active</name></member>
+      <member refid="classshogun_1_1CSignal_1ac38dee869230231c815066ab6b73135a" prot="protected" virt="non-virtual"><scope>shogun::CSignal</scope><name>cancel_computation</name></member>
+      <member refid="classshogun_1_1CSignal_1aadd904e7f7233a2ea82065a62b20b371" prot="public" virt="non-virtual"><scope>shogun::CSignal</scope><name>cancel_computations</name></member>
+      <member refid="classshogun_1_1CSignal_1a52784c582a2ee77d3aca88f228bf8014" prot="protected" virt="non-virtual"><scope>shogun::CSignal</scope><name>cancel_immediately</name></member>
+      <member refid="classshogun_1_1CSignal_1a25cd224a16c548b239a9631efee86576" prot="public" virt="non-virtual"><scope>shogun::CSignal</scope><name>clear</name></member>
+      <member refid="classshogun_1_1CSignal_1a48f5be1f9c0cd94f303a5fd7171cc3c6" prot="public" virt="non-virtual"><scope>shogun::CSignal</scope><name>clear_cancel</name></member>
+      <member refid="classshogun_1_1CSignal_1aae8c5663c29b9b7ecd40091e5ad567bb" prot="public" virt="non-virtual"><scope>shogun::CSignal</scope><name>CSignal</name></member>
+      <member refid="classshogun_1_1CSignal_1a478883593c9851374a83532f33b7fbe0" prot="public" virt="virtual"><scope>shogun::CSignal</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSignal_1a4c96f9686be3c070f5495cc0a0f52ada" prot="public" virt="non-virtual"><scope>shogun::CSignal</scope><name>handler</name></member>
+      <member refid="classshogun_1_1CSignal_1ace9ca39cd292d396a858f6fbd89b8de2" prot="protected" virt="non-virtual"><scope>shogun::CSignal</scope><name>oldsigaction</name></member>
+      <member refid="classshogun_1_1CSignal_1afbbc5688bfe7d4b791e703b30d799e4e" prot="public" virt="non-virtual"><scope>shogun::CSignal</scope><name>set_cancel</name></member>
+      <member refid="classshogun_1_1CSignal_1a978256d0b08a7c4fc25dbd4e52220bf8" prot="public" virt="non-virtual"><scope>shogun::CSignal</scope><name>set_handler</name></member>
+      <member refid="classshogun_1_1CSignal_1af47104575c4f52708e6d87f7e9b08afb" prot="protected" virt="non-virtual"><scope>shogun::CSignal</scope><name>signals</name></member>
+      <member refid="classshogun_1_1CSignal_1ab1330d6d6a8ae414e2d9936209128b78" prot="public" virt="non-virtual"><scope>shogun::CSignal</scope><name>unset_handler</name></member>
+      <member refid="classshogun_1_1CSignal_1a7cb6e9a24821054f58fc8ffc5099b894" prot="public" virt="virtual"><scope>shogun::CSignal</scope><name>~CSignal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

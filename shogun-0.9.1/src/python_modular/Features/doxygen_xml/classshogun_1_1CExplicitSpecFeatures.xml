@@ -1,0 +1,568 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CExplicitSpecFeatures" kind="class" prot="public">
+    <compoundname>shogun::CExplicitSpecFeatures</compoundname>
+    <basecompoundref refid="classshogun_1_1CDotFeatures" prot="public" virt="non-virtual">shogun::CDotFeatures</basecompoundref>
+    <includes local="no">ExplicitSpecFeatures.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CExplicitSpecFeatures_1ade045ba2121b4476b5cbec86275efbdf" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CExplicitSpecFeatures::use_normalization</definition>
+        <argsstring></argsstring>
+        <name>use_normalization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>use sqrtdiag normalization </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="150" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CExplicitSpecFeatures_1aaba83f57b7b6764ea350f5f6426d98a9" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CExplicitSpecFeatures::num_strings</definition>
+        <argsstring></argsstring>
+        <name>num_strings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of strings </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="152" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CExplicitSpecFeatures_1acf4c7771b190e0875f2c63ee7bf0763c" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CExplicitSpecFeatures::alphabet_size</definition>
+        <argsstring></argsstring>
+        <name>alphabet_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>size of alphabet </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="154" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CExplicitSpecFeatures_1a33681057576e0c89406878ef4c716665" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CExplicitSpecFeatures::spec_size</definition>
+        <argsstring></argsstring>
+        <name>spec_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>size of k-mer spectrum </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="157" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CExplicitSpecFeatures_1afe3ac40ac571cbe341936c70787a70de" prot="protected" static="no" mutable="no">
+        <type>float64_t **</type>
+        <definition>float64_t** shogun::CExplicitSpecFeatures::k_spectrum</definition>
+        <argsstring></argsstring>
+        <name>k_spectrum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>k-mer counts for all strings </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="159" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CExplicitSpecFeatures_1a8e827735654c2706169c8915cef46889" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CExplicitSpecFeatures::CExplicitSpecFeatures</definition>
+        <argsstring>(CStringFeatures&lt; uint16_t &gt; *str, bool normalize=true)</argsstring>
+        <name>CExplicitSpecFeatures</name>
+        <param>
+          <type><ref refid="classshogun_1_1CStringFeatures" kindref="compound">CStringFeatures</ref>&lt; uint16_t &gt; *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>normalize</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stringfeatures (of words) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>normalize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether to use sqrtdiag normalization </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CExplicitSpecFeatures_1ac9517cc591394c174fbcb0f8bce67b80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CExplicitSpecFeatures::CExplicitSpecFeatures</definition>
+        <argsstring>(const CExplicitSpecFeatures &amp;orig)</argsstring>
+        <name>CExplicitSpecFeatures</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CExplicitSpecFeatures" kindref="compound">CExplicitSpecFeatures</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CExplicitSpecFeatures_1a4e98735a2912e08bb335deb2a2861b80" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CExplicitSpecFeatures::~CExplicitSpecFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>~CExplicitSpecFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CExplicitSpecFeatures_1a4d6dbd0a9175c596aeb54b691b6d6e18" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+        <definition>virtual CFeatures* shogun::CExplicitSpecFeatures::duplicate</definition>
+        <argsstring>() const </argsstring>
+        <name>duplicate</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a2f7adf01a52fee35ac71e455501125a9">duplicate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>duplicate feature object</para><para><simplesect kind="return"><para>feature object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CExplicitSpecFeatures_1a1c21a60be817d26780d4594a53874808" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CExplicitSpecFeatures::get_dim_feature_space</definition>
+        <argsstring>()</argsstring>
+        <name>get_dim_feature_space</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a49b51004870dd777108e8935c5102070">get_dim_feature_space</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>obtain the dimensionality of the feature space</para><para>(not mix this up with the dimensionality of the input space, usually obtained via get_num_features())</para><para><simplesect kind="return"><para>dimensionality </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="58" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CExplicitSpecFeatures_1af1188129c3dda1457f289b9888aac952" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CExplicitSpecFeatures::dot</definition>
+        <argsstring>(int32_t vec_idx1, int32_t vec_idx2)</argsstring>
+        <name>dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1aceb2b9cfc936eee500067ae102d2e0cb">dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and vector2, appointed by their indices</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec_idx2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of second vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CExplicitSpecFeatures_1a38324b37b1d08fd745ea2151ce835152" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CExplicitSpecFeatures::dense_dot</definition>
+        <argsstring>(int32_t vec_idx1, const float64_t *vec2, int32_t vec2_len)</argsstring>
+        <name>dense_dot</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a8bfe2b91faa051aae98c24b24a656337">dense_dot</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>const float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute dot product between vector1 and a dense vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CExplicitSpecFeatures_1a0bf8a30b0c35bf378ca343c1bb15e6b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CExplicitSpecFeatures::add_to_dense_vec</definition>
+        <argsstring>(float64_t alpha, int32_t vec_idx1, float64_t *vec2, int32_t vec2_len, bool abs_val=false)</argsstring>
+        <name>add_to_dense_vec</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a96e00d9794bbe0ad0248bce58c4a346d">add_to_dense_vec</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec_idx1</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>vec2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>vec2_len</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>abs_val</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add vector 1 multiplied with alpha to dense vector2</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scalar alpha </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec_idx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec2_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of real valued vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>abs_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true add the absolute value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CExplicitSpecFeatures_1a5295c3122a8e32d20b12fe9af218f50a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CExplicitSpecFeatures::get_nnz_features_for_vector</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>get_nnz_features_for_vector</name>
+        <reimplements refid="classshogun_1_1CDotFeatures_1a45e751c294896ffb6faae83e0dc5f140">get_nnz_features_for_vector</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of non-zero features in vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of non-zero features in vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="94" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CExplicitSpecFeatures_1a4b632e9b559606b1f9e3c37c2fc4ca51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureType</type>
+        <definition>virtual EFeatureType shogun::CExplicitSpecFeatures::get_feature_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_type</name>
+        <reimplements refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861">get_feature_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type</para><para><simplesect kind="return"><para>templated feature type </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="104" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CExplicitSpecFeatures_1af9e4f117f0f909e9525e10ed5c74daf7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EFeatureClass</type>
+        <definition>virtual EFeatureClass shogun::CExplicitSpecFeatures::get_feature_class</definition>
+        <argsstring>()</argsstring>
+        <name>get_feature_class</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a8e1c6229db82a9215cb2994202e657f5">get_feature_class</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature class</para><para><simplesect kind="return"><para>feature class </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="113" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CExplicitSpecFeatures_1a553948ca2a1cd15f01961175d0f13a30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CExplicitSpecFeatures::get_num_vectors</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_vectors</name>
+        <reimplements refid="classshogun_1_1CFeatures_1a1f30fccf7c6c9af03277d75d0d983c52">get_num_vectors</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of strings</para><para><simplesect kind="return"><para>number of strings </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="122" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CExplicitSpecFeatures_1a7a37ddb3877d6fd7f687dc58c0e09ba8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CExplicitSpecFeatures::get_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_size</name>
+        <reimplements refid="classshogun_1_1CFeatures_1aeed80a002f6255d1ca5c8d1698deb7bc">get_size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get size of one element</para><para><simplesect kind="return"><para>size of one element </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="131" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CExplicitSpecFeatures_1a141476e0f6dce57522b13bd37ede774b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CExplicitSpecFeatures::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="136" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" bodystart="136" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CExplicitSpecFeatures_1a1501c084307226fefde741b12940d8ad" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CExplicitSpecFeatures::obtain_kmer_spectrum</definition>
+        <argsstring>(CStringFeatures&lt; uint16_t &gt; *str)</argsstring>
+        <name>obtain_kmer_spectrum</name>
+        <param>
+          <type><ref refid="classshogun_1_1CStringFeatures" kindref="compound">CStringFeatures</ref>&lt; uint16_t &gt; *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>obtain the k-spectrum from a list of strings</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the string feature object already in k-mer format </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CExplicitSpecFeatures_1aa4b562c9bebfa8065777b3936c6e610b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CExplicitSpecFeatures::delete_kmer_spectrum</definition>
+        <argsstring>()</argsstring>
+        <name>delete_kmer_spectrum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>free kmer spectrum </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="146"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Features that compute the Spectrum Kernel feature space explicitly. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para>CCommWordStringKernel </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="35">
+        <label>shogun::CExplicitSpecFeatures</label>
+        <link refid="classshogun_1_1CExplicitSpecFeatures"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="38">
+        <label>shogun::CExplicitSpecFeatures</label>
+        <link refid="classshogun_1_1CExplicitSpecFeatures"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" line="28" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/ExplicitSpecFeatures.h" bodystart="27" bodyend="160"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CFeatures_1a793f371cc7dd4897997b01612f7d4b77" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>add_preproc</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1a0bf8a30b0c35bf378ca343c1bb15e6b3" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>add_to_dense_vec</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1acf4c7771b190e0875f2c63ee7bf0763c" prot="protected" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>alphabet_size</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ad688539536313914ec3711bce1739445" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a040fa070f47a2845e5fdcb89ca7c4565" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a91054c534e25c0e934ebb1a2b7217d2a" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>CDotFeatures</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1a8e827735654c2706169c8915cef46889" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>CExplicitSpecFeatures</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1ac9517cc591394c174fbcb0f8bce67b80" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>CExplicitSpecFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a91ac9daf871dd99b358da47eea74eeb3" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1be7a2c5d471a3586c44988e2b4e1129" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a4ad3a39235806ab1999a1c5fb5290486" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a89609a765e1ab682ea6e73402b56c961" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>check_feature_compatibility</name></member>
+      <member refid="classshogun_1_1CFeatures_1afab00f1403d1349fd18cca31a6d63de3" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>clean_preprocs</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a4cb73c0a47276f345c49bc583d8344b2" prot="protected" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>combined_weight</name></member>
+      <member refid="classshogun_1_1CFeatures_1accdc453796e319852dd41fffa0c0f70c" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>del_preproc</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1aa4b562c9bebfa8065777b3936c6e610b" prot="protected" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>delete_kmer_spectrum</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1a38324b37b1d08fd745ea2151ce835152" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>dense_dot</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ae81ed7be6b000db0ae624eb781e93590" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>dense_dot_range</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a2a69a10f3ffcc5ed76322ebbd09b5fcb" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>dense_dot_range_helper</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a01ce37f41f397454c58bc2f05987d0c1" prot="protected" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>display_progress</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1af1188129c3dda1457f289b9888aac952" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>dot</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1a4d6dbd0a9175c596aeb54b691b6d6e18" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>duplicate</name></member>
+      <member refid="classshogun_1_1CFeatures_1a29b93c241dca0eba1415f873c83d27d8" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a199b84c188e8f98f088c248fe5c0adea" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>get_combined_feature_weight</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1a1c21a60be817d26780d4594a53874808" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>get_dim_feature_space</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1af9e4f117f0f909e9525e10ed5c74daf7" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1ab3b9a12fc4f02f03e8a655e8e4884058" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>get_feature_matrix</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1a4b632e9b559606b1f9e3c37c2fc4ca51" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1a141476e0f6dce57522b13bd37ede774b" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1a5295c3122a8e32d20b12fe9af218f50a" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>get_nnz_features_for_vector</name></member>
+      <member refid="classshogun_1_1CFeatures_1a7662d240eab24d5753385b0f9e6e9bae" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>get_num_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a9010a03b11399648cc5da7194fb5e707" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>get_num_preprocessed</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1a553948ca2a1cd15f01961175d0f13a30" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>get_num_vectors</name></member>
+      <member refid="classshogun_1_1CFeatures_1ac1015e3a736e4e6d4d6fbe24416af6c4" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>get_preproc</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1a7a37ddb3877d6fd7f687dc58c0e09ba8" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>get_size</name></member>
+      <member refid="classshogun_1_1CFeatures_1a07f1d7dc618a9f5f76663d80ad549d38" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1248f8829f63f9c9a42ac36065961295" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>is_preprocessed</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1afe3ac40ac571cbe341936c70787a70de" prot="protected" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>k_spectrum</name></member>
+      <member refid="classshogun_1_1CFeatures_1a6412ef81478c3c9dadac2a87a544f640" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>list_feature_obj</name></member>
+      <member refid="classshogun_1_1CFeatures_1adef76a926672875a64aedd2b00c8f2bd" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>load</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1aaba83f57b7b6764ea350f5f6426d98a9" prot="protected" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>num_strings</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1a1501c084307226fefde741b12940d8ad" prot="protected" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>obtain_kmer_spectrum</name></member>
+      <member refid="classshogun_1_1CFeatures_1a57d67048d44a7a7ea92bcbdfed9060ea" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>reshape</name></member>
+      <member refid="classshogun_1_1CFeatures_1ae1341e3fa42733d8729d8f2dcf73709b" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>save</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a3cbcb41f5f6fb4817568469120204c10" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>set_combined_feature_weight</name></member>
+      <member refid="classshogun_1_1CFeatures_1aa88c27c0f3885d23ac71c4cc2e55c431" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>set_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab43db0bd4a231249ce4bc65f6e15f695" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1a33681057576e0c89406878ef4c716665" prot="protected" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>spec_size</name></member>
+      <member refid="classshogun_1_1CFeatures_1a3ff3f03688a7f6a1b36dab8677407166" prot="public" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1ade045ba2121b4476b5cbec86275efbdf" prot="protected" virt="non-virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>use_normalization</name></member>
+      <member refid="classshogun_1_1CDotFeatures_1a7c86c8f9ba308b59a8cf17f236be70d2" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>~CDotFeatures</name></member>
+      <member refid="classshogun_1_1CExplicitSpecFeatures_1a4e98735a2912e08bb335deb2a2861b80" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>~CExplicitSpecFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab0e2a8a18ac5056f802e4aa51d4fcd4f" prot="public" virt="virtual"><scope>shogun::CExplicitSpecFeatures</scope><name>~CFeatures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

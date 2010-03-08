@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CGCArray" kind="class" prot="public">
+    <compoundname>shogun::CGCArray</compoundname>
+    <includes local="no">GCArray.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CGCArray_1a27d6385c87118d5fcf4a5ae74c322c4e" prot="protected" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* shogun::CGCArray&lt; T &gt;::array</definition>
+        <argsstring></argsstring>
+        <name>array</name>
+        <briefdescription>
+<para>array </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h" line="85" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CGCArray_1a170971c5bdc6dd72c15dfb129f31c8c7" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CGCArray&lt; T &gt;::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>size of array </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h" line="87" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CGCArray_1ab10d2973c15c9d86f0755efb8778fd2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CGCArray&lt; T &gt;::CGCArray</definition>
+        <argsstring>(int32_t sz)</argsstring>
+        <name>CGCArray</name>
+        <param>
+          <type>int32_t</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h" line="35" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h" bodystart="34" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CGCArray_1ae781d5f9b0c8bac70821a9f881854192" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CGCArray&lt; T &gt;::~CGCArray</definition>
+        <argsstring>()</argsstring>
+        <name>~CGCArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h" line="43" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CGCArray_1a90cb4dbd473250a9dde59e1d3d1d186c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CGCArray&lt; T &gt;::set</definition>
+        <argsstring>(T element, int32_t index)</argsstring>
+        <name>set</name>
+        <param>
+          <type>T</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>write access operator</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- element to write </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- index to write to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h" line="55" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h" bodystart="54" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CGCArray_1a33af1e5bc5882a40d962fc6ceaba3493" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T shogun::CGCArray&lt; T &gt;::get</definition>
+        <argsstring>(int32_t index)</argsstring>
+        <name>get</name>
+        <param>
+          <type>int32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>read only access operator</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index to write to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>element element </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h" line="69" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h" bodystart="68" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CGCArray_1a0c005f1bee4c2a4e1a592ba8f152c038" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CGCArray&lt; T &gt;::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the name of the object</para><para><simplesect kind="return"><para>name of object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h" line="81" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class GCArray implements a garbage collecting static array. </para>    </briefdescription>
+    <detaileddescription>
+<para>This array is meant to be used for Shogun Objects (CSGObject) only, as it deals with garbage collection, i.e. on read and array assignment the reference count is increased (and decreased on delete and overwriting elements). </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h" line="28" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/GCArray.h" bodystart="27" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CGCArray_1a27d6385c87118d5fcf4a5ae74c322c4e" prot="protected" virt="non-virtual"><scope>shogun::CGCArray</scope><name>array</name></member>
+      <member refid="classshogun_1_1CGCArray_1ab10d2973c15c9d86f0755efb8778fd2a" prot="public" virt="non-virtual"><scope>shogun::CGCArray</scope><name>CGCArray</name></member>
+      <member refid="classshogun_1_1CGCArray_1a33af1e5bc5882a40d962fc6ceaba3493" prot="public" virt="non-virtual"><scope>shogun::CGCArray</scope><name>get</name></member>
+      <member refid="classshogun_1_1CGCArray_1a0c005f1bee4c2a4e1a592ba8f152c038" prot="public" virt="virtual"><scope>shogun::CGCArray</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CGCArray_1a90cb4dbd473250a9dde59e1d3d1d186c" prot="public" virt="non-virtual"><scope>shogun::CGCArray</scope><name>set</name></member>
+      <member refid="classshogun_1_1CGCArray_1a170971c5bdc6dd72c15dfb129f31c8c7" prot="protected" virt="non-virtual"><scope>shogun::CGCArray</scope><name>size</name></member>
+      <member refid="classshogun_1_1CGCArray_1ae781d5f9b0c8bac70821a9f881854192" prot="public" virt="virtual"><scope>shogun::CGCArray</scope><name>~CGCArray</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

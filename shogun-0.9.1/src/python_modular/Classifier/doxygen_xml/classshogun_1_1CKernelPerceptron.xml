@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CKernelPerceptron" kind="class" prot="public">
+    <compoundname>shogun::CKernelPerceptron</compoundname>
+    <basecompoundref refid="classshogun_1_1CKernelMachine" prot="public" virt="non-virtual">shogun::CKernelMachine</basecompoundref>
+    <includes local="no">KernelPerceptron.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CKernelPerceptron_1abab1fc9a613de981e36c6feea412248c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CKernelPerceptron::CKernelPerceptron</definition>
+        <argsstring>()</argsstring>
+        <name>CKernelPerceptron</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelPerceptron.h" line="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelPerceptron_1add48585ef3106b90786ec9f7548f5110" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CKernelPerceptron::~CKernelPerceptron</definition>
+        <argsstring>()</argsstring>
+        <name>~CKernelPerceptron</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelPerceptron.h" line="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelPerceptron_1a107d111da115ce209b5258fcb3e0d2a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CKernelPerceptron::train</definition>
+        <argsstring>(CFeatures *data=NULL)</argsstring>
+        <name>train</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a9904cc0a8d7ec077cc1fede8d64ebb22">train</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>train kernel perceptron classifier</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training <ref refid="structshogun_1_1data" kindref="compound">data</ref> (parameter can be avoided if distance or kernel-based classifiers are used and distance/kernels are initialized with train <ref refid="structshogun_1_1data" kindref="compound">data</ref>)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether training was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelPerceptron.h" line="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelPerceptron_1ac710cce5601d6009b03e7885d43c2324" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CKernelPerceptron::classify_example</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>classify_example</name>
+        <reimplements refid="classshogun_1_1CKernelMachine_1ab081d4a3c5762b75e9b786b8d1025402">classify_example</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classify one specific example</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which example to classify </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>classified value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelPerceptron.h" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelPerceptron_1aa2ac3efb22458f81b212beb2f9d08d5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CKernelPerceptron::load</definition>
+        <argsstring>(FILE *srcfile)</argsstring>
+        <name>load</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a956f6d34ff60d2d775eed5cbef17e8f3">load</reimplements>
+        <param>
+          <type>FILE *</type>
+          <declname>srcfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load KernelPerceptron from file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>srcfile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to load from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if load was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelPerceptron.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelPerceptron_1aa373203c09c08d402bdd25befd2d0319" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CKernelPerceptron::save</definition>
+        <argsstring>(FILE *dstfile)</argsstring>
+        <name>save</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a3df725f5632f1c052028899d8bbe28f6">save</reimplements>
+        <param>
+          <type>FILE *</type>
+          <declname>dstfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save KernelPerceptron to file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dstfile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to save to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if save was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelPerceptron.h" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelPerceptron_1a0efad4008f86ee7db5a22a6536622cbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EClassifierType</type>
+        <definition>virtual EClassifierType shogun::CKernelPerceptron::get_classifier_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_classifier_type</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a52d05215c6b6a252650c41a0b29d8cc5">get_classifier_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier type</para><para><simplesect kind="return"><para>classifier type KERNELPERCEPTRON </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelPerceptron.h" line="67" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelPerceptron.h" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CKernelPerceptron_1aff4a503ed04f76fed9e82fc88ce5d895" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CKernelPerceptron::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelPerceptron.h" line="72" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelPerceptron.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class KernelPerceptron - currently unfinished implementation of a Kernel Perceptron. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="97">
+        <label>shogun::CKernelMachine</label>
+        <link refid="classshogun_1_1CKernelMachine"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+      <node id="96">
+        <label>shogun::CKernelPerceptron</label>
+        <link refid="classshogun_1_1CKernelPerceptron"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="100">
+        <label>shogun::CKernelMachine</label>
+        <link refid="classshogun_1_1CKernelMachine"/>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+      <node id="99">
+        <label>shogun::CKernelPerceptron</label>
+        <link refid="classshogun_1_1CKernelPerceptron"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelPerceptron.h" line="25" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/KernelPerceptron.h" bodystart="24" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CClassifier_1a37259b3ffbe96af1eda8dd2d9428221c" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>CClassifier</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1af2d719c7dd34401eb1544a6124e88046" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>CKernelMachine</name></member>
+      <member refid="classshogun_1_1CKernelPerceptron_1abab1fc9a613de981e36c6feea412248c" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>CKernelPerceptron</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a38ead2ce9c9b727eb20a463c42c9ce53" prot="public" virt="virtual"><scope>shogun::CKernelPerceptron</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ad9cf8044ff5e5dadb06f74903cf248a8" prot="public" virt="virtual"><scope>shogun::CKernelPerceptron</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CKernelPerceptron_1ac710cce5601d6009b03e7885d43c2324" prot="public" virt="virtual"><scope>shogun::CKernelPerceptron</scope><name>classify_example</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a842c2010c3c0716616facc0592e39191" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>classify_example_helper</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1aadb3dcfa41bcdb3cedb4bb590c421f99" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>create_new_model</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a52348988d896bcda6a005c9af0424655" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>get_alpha</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a34137de1f460aaa60bb888bc42cd8987" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>get_alphas</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a21f1f26eab5e1177fbb0a5b361020ac2" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>get_batch_computation_enabled</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a3221b3acb94edfe8cdefa2fc659c6fc8" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>get_bias</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1af7b87d7a2438e8e74e8fb689e609c83b" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>get_bias_enabled</name></member>
+      <member refid="classshogun_1_1CKernelPerceptron_1a0efad4008f86ee7db5a22a6536622cbd" prot="public" virt="virtual"><scope>shogun::CKernelPerceptron</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1aa065ba2b4863e152beb95c03aa6add24" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>get_kernel</name></member>
+      <member refid="classshogun_1_1CClassifier_1a787dcde8fe53a734fcb77f988d821408" prot="public" virt="virtual"><scope>shogun::CKernelPerceptron</scope><name>get_label</name></member>
+      <member refid="classshogun_1_1CClassifier_1a5f1f62d263b6201e1624990deadba5a8" prot="public" virt="virtual"><scope>shogun::CKernelPerceptron</scope><name>get_labels</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1acc42836c7731c0f029ebd77f045e25cf" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>get_linadd_enabled</name></member>
+      <member refid="classshogun_1_1CClassifier_1a6e48967294c55850d95235d487ce2c02" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>get_max_train_time</name></member>
+      <member refid="classshogun_1_1CKernelPerceptron_1aff4a503ed04f76fed9e82fc88ce5d895" prot="public" virt="virtual"><scope>shogun::CKernelPerceptron</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a639f528d6956936a482523bdc04eb4b5" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>get_num_support_vectors</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8a3acda6819b4a4b77b656b6b9e1817c" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>get_solver_type</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a340532552838d25c1a0917d59de1dbee" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>get_support_vector</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a50bd31e7cf0cabc0ec41896ab97292fa" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>get_support_vectors</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a0915cae39b88af20c288fbc1f5979afb" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>init_kernel_optimization</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a6d47114463588d9dbd672180dc2e7357" prot="protected" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>kernel</name></member>
+      <member refid="classshogun_1_1CClassifier_1a68f1285e63422a24319ed95910d72f73" prot="protected" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>labels</name></member>
+      <member refid="classshogun_1_1CKernelPerceptron_1aa2ac3efb22458f81b212beb2f9d08d5c" prot="public" virt="virtual"><scope>shogun::CKernelPerceptron</scope><name>load</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ac40c305fb5587c0004d5338ea6d712d2" prot="protected" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>m_alpha</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a5c8a9af0e7b79d02d0be95b3cd8e9910" prot="protected" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>m_bias</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a7e1c9037fb66d596c5dd83c28b8dce6d" prot="protected" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>m_svs</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8524d634a67f3538b112f72d7835af46" prot="protected" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>max_train_time</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ab4fbabe44610f09e33362234eb131432" prot="protected" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>num_svs</name></member>
+      <member refid="classshogun_1_1CKernelPerceptron_1aa373203c09c08d402bdd25befd2d0319" prot="public" virt="virtual"><scope>shogun::CKernelPerceptron</scope><name>save</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a804a4f283e98849f4b85a6d52371a848" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>set_alpha</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ae057fbcb6071331223f1a26de82d1f88" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>set_alphas</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a1bef02fca7cd9808c9c67c898109a8d2" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>set_batch_computation_enabled</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a5edc82a48029b91216251b354d341452" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>set_bias</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a95eb6221dd46fe2dc9fb42b53845df36" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>set_bias_enabled</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a9a26799c7d6769d6f7d052b984718c72" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>set_kernel</name></member>
+      <member refid="classshogun_1_1CClassifier_1aa6b87d22c14fc2b6970d8bf1edbb15fb" prot="public" virt="virtual"><scope>shogun::CKernelPerceptron</scope><name>set_labels</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a605209bfe9a431912fc9a718df808887" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>set_linadd_enabled</name></member>
+      <member refid="classshogun_1_1CClassifier_1af8930a0a848388d8647c9e4604a7856d" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>set_max_train_time</name></member>
+      <member refid="classshogun_1_1CClassifier_1a4c87d6f3a2342c3053aeca82c3cf528c" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>set_solver_type</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a2746562f3c38954ca0a27089cfbd6eeb" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>set_support_vector</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a69402864eced218da049c53529138c45" prot="public" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>set_support_vectors</name></member>
+      <member refid="classshogun_1_1CClassifier_1a360902e938d7b8890084c5bc6df617be" prot="protected" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>solver_type</name></member>
+      <member refid="classshogun_1_1CKernelPerceptron_1a107d111da115ce209b5258fcb3e0d2a2" prot="public" virt="virtual"><scope>shogun::CKernelPerceptron</scope><name>train</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ade160206d7ddebd3ab2f8d1f40aaa7f9" prot="protected" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>use_batch_computation</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1abf9e9cb89f609d79b36a4d1a7f6945b9" prot="protected" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>use_bias</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a8dde883a0c2f53867711a2408e3bef16" prot="protected" virt="non-virtual"><scope>shogun::CKernelPerceptron</scope><name>use_linadd</name></member>
+      <member refid="classshogun_1_1CClassifier_1ae7d6c7d39fb314c1092163e958ef66a8" prot="public" virt="virtual"><scope>shogun::CKernelPerceptron</scope><name>~CClassifier</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a5d9a0f4626b37665f847cf209e94a2ed" prot="public" virt="virtual"><scope>shogun::CKernelPerceptron</scope><name>~CKernelMachine</name></member>
+      <member refid="classshogun_1_1CKernelPerceptron_1add48585ef3106b90786ec9f7548f5110" prot="public" virt="virtual"><scope>shogun::CKernelPerceptron</scope><name>~CKernelPerceptron</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="libocas_8h" kind="file">
+    <compoundname>libocas.h</compoundname>
+    <includes local="yes">lib/common.h</includes>
+    <incdepgraph>
+      <node id="139">
+        <label>lib/common.h</label>
+      </node>
+      <node id="138">
+        <label>/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/libocas.h</label>
+        <link refid="libocas.h"/>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structshogun_1_1ocas__return__value__T" prot="public">shogun::ocas_return_value_T</innerclass>
+    <innernamespace refid="namespaceshogun">shogun</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/>Implementation<sp/>of<sp/>SVM-Ocas<sp/>solver.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/>Linear<sp/>binary<sp/>SVM<sp/>solver<sp/>without<sp/>bias<sp/>term.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Modifications:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>10-oct-2007,<sp/>VF,<sp/>created.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>14-nov-2007,<sp/>VF,<sp/>timing<sp/>statistics<sp/>added</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>----------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lib/common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">shogun</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22" refid="structshogun_1_1ocas__return__value__T" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>uint32_t<sp/>nIter;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>uint32_t<sp/>nCutPlanes;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>uint32_t<sp/>nNZAlpha;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>float64_t<sp/>trn_err;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>float64_t<sp/>Q_P;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>float64_t<sp/>Q_D;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>float64_t<sp/>output_time;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>float64_t<sp/>sort_time;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>float64_t<sp/>add_time;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>float64_t<sp/>w_time;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>float64_t<sp/>solver_time;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>float64_t<sp/>ocas_time;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>int8_t<sp/>exitflag;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}<sp/><ref refid="structshogun_1_1ocas__return__value__T" kindref="compound">ocas_return_value_T</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><ref refid="structshogun_1_1ocas__return__value__T" kindref="compound">ocas_return_value_T</ref><sp/>svm_ocas_solver(</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>C,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>regularizarion<sp/>constant<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>nData,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>exmaples<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>TolRel,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>halts<sp/>if<sp/>1-Q_P/Q_D<sp/>&lt;=<sp/>TolRel<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>TolAbs,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>halts<sp/>if<sp/>Q_P-Q_D<sp/>&lt;=<sp/>TolRel<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>QPBound,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>halts<sp/>if<sp/>QP<sp/>&lt;=<sp/>QPBound<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>BufSize,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>maximal<sp/>number<sp/>of<sp/>buffered<sp/>cutting<sp/>planes<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>Method,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>0..standard<sp/>CP<sp/>(SVM-Perf,BMRM),<sp/>1..OCAS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*compute_W)(float64_t*,<sp/>float64_t*,<sp/>float64_t*,<sp/>uint32_t,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*),</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float64_t<sp/>(*update_W)(float64_t,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*),</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*add_new_cut)(float64_t*,<sp/>uint32_t*,<sp/>uint32_t,<sp/>uint32_t,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*),</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*compute_output)(<sp/>float64_t*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>),</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*sort)(float64_t*,<sp/>uint32_t*,<sp/>uint32_t),</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>user_data);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight></codeline>
+    </programlisting>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/libocas.h"/>
+  </compounddef>
+</doxygen>

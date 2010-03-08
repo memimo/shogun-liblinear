@@ -111,20 +111,25 @@ bool CLibLinear::train(CFeatures* data)
 			problem_l1 prob_col;
 			prob_col.l = num_vec;
 			prob_col.n = prob.n;
-			//((CSparseFeatures<float64_t>*) features)->get_transposed(num_feat, num_vec);
-			///prob_col.x = ((CSparseFeatures<float64_t>*) features);
-			///prob_col.x = prob_col.x->get_transposed(num_feat, num_vec);
-			prob_col.x =  ((CSparseFeatures<float64_t>*) features)->get_transposed(num_feat, num_vec);
-			//prob_col.x = prob_col.x->get_transposed(num_feat, num_vec);
+			prob_col.x = ((CSparseFeatures<float64_t>*) features);
+
+			TSparse<float64_t>* trans_matrix;
+			trans_matrix =  ((CSparseFeatures<float64_t>*) features)->get_transposed(num_feat, num_vec);
+			prob_col.x->set_sparse_feature_matrix(trans_matrix, num_feat, num_vec);
+			//CSparseFeatures<float64_t>* transp=((CSparseFeatures<float64_t>*) features)->get_transposed(num_feat, num_vec);
+			//prob_col.x->set_sparse_feature_matrix(transp, num_feat, num_vec);
+
+
 			prob_col.y = new int[prob.l];
 			prob_col.use_bias = use_bias;
-
 			for (int32_t i=0; i<prob.l; i++)
 				prob_col.y[i]=labels->get_int_label(i);
 			
+			
 			l1l2_obj=new l1r_l2_svc(&prob_col, w, eps*min(pos,neg)/prob.l, get_C1(), get_C2());
 			//printf( "a: %d  %d\n", prob_col.l, prob_col.n);
-			//printf( "a: %f  %f\n", prob_col.x[5].features[0].entry ,  prob_col.x[5].features[1].entry);
+			
+			//printf( "a: %d  %d\n", trans_matrix->get_num_vectors() ,  trans_matrix->get_num_features());
 			//printf( "a: %d  %d\n", prob_col.x[5].features[0].feat_index ,  prob_col.x[5].features[1].feat_index);
 
 			break;
@@ -154,4 +159,7 @@ bool CLibLinear::train(CFeatures* data)
 
 	return true;
 }
+
+
+
 #endif //HAVE_LAPACK

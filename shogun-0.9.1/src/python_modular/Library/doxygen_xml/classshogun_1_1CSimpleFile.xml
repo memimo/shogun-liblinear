@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CSimpleFile" kind="class" prot="public">
+    <compoundname>shogun::CSimpleFile</compoundname>
+    <includes local="no">SimpleFile.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CSimpleFile_1abce9c77edac5ec7976d3c78c1b23fdc4" prot="protected" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* shogun::CSimpleFile&lt; T &gt;::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>file descriptor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" line="204" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSimpleFile_1acdca1372e27edf2cd93bf12bc2adc7d6" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CSimpleFile&lt; T &gt;::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>status of file operations </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" line="206" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSimpleFile_1ad06bb56587e040f49ee002737ee37485" prot="protected" static="no" mutable="no">
+        <type>char</type>
+        <definition>char shogun::CSimpleFile&lt; T &gt;::task</definition>
+        <argsstring></argsstring>
+        <name>task</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>task </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" line="208" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSimpleFile_1aaf17778789eb0fc0cc93ca114625cd23" prot="protected" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* shogun::CSimpleFile&lt; T &gt;::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>filename </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" line="210" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSimpleFile_1ab42214a93ecd9e2ff2d48bd4834d6947" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSimpleFile&lt; T &gt;::line_buffer_size</definition>
+        <argsstring></argsstring>
+        <name>line_buffer_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>size of line buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" line="213" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSimpleFile_1ae251b0ecc13ae32ff81177d577df0ffb" prot="protected" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* shogun::CSimpleFile&lt; T &gt;::line_buffer</definition>
+        <argsstring></argsstring>
+        <name>line_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>line buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" line="215" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CSimpleFile_1ab0e74ec0c80ff469b5c8a41cc2f56497" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSimpleFile&lt; T &gt;::CSimpleFile</definition>
+        <argsstring>(char *fname, FILE *f)</argsstring>
+        <name>CSimpleFile</name>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor rw is either r for read and w for write</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file descriptor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" line="38" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" bodystart="36" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFile_1a1f201467ac5a43c9d97eeff0aed4257d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CSimpleFile&lt; T &gt;::~CSimpleFile</definition>
+        <argsstring>()</argsstring>
+        <name>~CSimpleFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" line="45" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFile_1a2a3aecd8d997e6b103b4f3f52ae2469c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* shogun::CSimpleFile&lt; T &gt;::load</definition>
+        <argsstring>(T *target, int64_t &amp;num=0)</argsstring>
+        <name>load</name>
+        <param>
+          <type>T *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>int64_t &amp;</type>
+          <declname>num</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>load target </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of read elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>loaded target or NULL if unsuccessful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" line="57" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" bodystart="56" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFile_1a1c959c9fbe6b4c68ef959f283f36b646" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CSimpleFile&lt; T &gt;::save</definition>
+        <argsstring>(T *target, int64_t num)</argsstring>
+        <name>save</name>
+        <param>
+          <type>T *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>target to save to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of elements to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if saving was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" line="126" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" bodystart="125" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFile_1aecbaf9ee99f8d09b76f9b61b6dbd280e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSimpleFile&lt; T &gt;::get_buffered_line</definition>
+        <argsstring>(char *line, uint64_t len)</argsstring>
+        <name>get_buffered_line</name>
+        <param>
+          <type>char *</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>read a line (buffered; to be implemented)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linebuffer to write to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum length </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" line="151" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" bodystart="150" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFile_1a5b4dbe4f9446f153e821bf9e093f8923" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSimpleFile&lt; T &gt;::free_line_buffer</definition>
+        <argsstring>()</argsstring>
+        <name>free_line_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>free the line buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" line="175" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" bodystart="174" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFile_1a5f5a5d335de10def0102336ab5db4686" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSimpleFile&lt; T &gt;::set_line_buffer_size</definition>
+        <argsstring>(int32_t bufsize)</argsstring>
+        <name>set_line_buffer_size</name>
+        <param>
+          <type>int32_t</type>
+          <declname>bufsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set the size of the line buffer</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bufsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the line buffer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" line="185" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" bodystart="184" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFile_1a681232ee1ef4b4830cd0c75689780457" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CSimpleFile&lt; T &gt;::is_ok</definition>
+        <argsstring>()</argsstring>
+        <name>is_ok</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check if status is ok</para><para><simplesect kind="return"><para>if status is ok </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" line="197" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" bodystart="197" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSimpleFile_1adb69277199e65082391d7a3bc195c356" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CSimpleFile&lt; T &gt;::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" line="200" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" bodystart="200" bodyend="200"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class SimpleFile to read and write from files. </para>    </briefdescription>
+    <detaileddescription>
+<para>Currently only simple reading and writing of blocks is supported. </para>    </detaileddescription>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" line="28" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/lib/SimpleFile.h" bodystart="27" bodyend="216"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CSimpleFile_1ab0e74ec0c80ff469b5c8a41cc2f56497" prot="public" virt="non-virtual"><scope>shogun::CSimpleFile</scope><name>CSimpleFile</name></member>
+      <member refid="classshogun_1_1CSimpleFile_1abce9c77edac5ec7976d3c78c1b23fdc4" prot="protected" virt="non-virtual"><scope>shogun::CSimpleFile</scope><name>file</name></member>
+      <member refid="classshogun_1_1CSimpleFile_1aaf17778789eb0fc0cc93ca114625cd23" prot="protected" virt="non-virtual"><scope>shogun::CSimpleFile</scope><name>filename</name></member>
+      <member refid="classshogun_1_1CSimpleFile_1a5b4dbe4f9446f153e821bf9e093f8923" prot="public" virt="non-virtual"><scope>shogun::CSimpleFile</scope><name>free_line_buffer</name></member>
+      <member refid="classshogun_1_1CSimpleFile_1aecbaf9ee99f8d09b76f9b61b6dbd280e" prot="public" virt="non-virtual"><scope>shogun::CSimpleFile</scope><name>get_buffered_line</name></member>
+      <member refid="classshogun_1_1CSimpleFile_1adb69277199e65082391d7a3bc195c356" prot="public" virt="virtual"><scope>shogun::CSimpleFile</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSimpleFile_1a681232ee1ef4b4830cd0c75689780457" prot="public" virt="non-virtual"><scope>shogun::CSimpleFile</scope><name>is_ok</name></member>
+      <member refid="classshogun_1_1CSimpleFile_1ae251b0ecc13ae32ff81177d577df0ffb" prot="protected" virt="non-virtual"><scope>shogun::CSimpleFile</scope><name>line_buffer</name></member>
+      <member refid="classshogun_1_1CSimpleFile_1ab42214a93ecd9e2ff2d48bd4834d6947" prot="protected" virt="non-virtual"><scope>shogun::CSimpleFile</scope><name>line_buffer_size</name></member>
+      <member refid="classshogun_1_1CSimpleFile_1a2a3aecd8d997e6b103b4f3f52ae2469c" prot="public" virt="non-virtual"><scope>shogun::CSimpleFile</scope><name>load</name></member>
+      <member refid="classshogun_1_1CSimpleFile_1a1c959c9fbe6b4c68ef959f283f36b646" prot="public" virt="non-virtual"><scope>shogun::CSimpleFile</scope><name>save</name></member>
+      <member refid="classshogun_1_1CSimpleFile_1a5f5a5d335de10def0102336ab5db4686" prot="public" virt="non-virtual"><scope>shogun::CSimpleFile</scope><name>set_line_buffer_size</name></member>
+      <member refid="classshogun_1_1CSimpleFile_1acdca1372e27edf2cd93bf12bc2adc7d6" prot="protected" virt="non-virtual"><scope>shogun::CSimpleFile</scope><name>status</name></member>
+      <member refid="classshogun_1_1CSimpleFile_1ad06bb56587e040f49ee002737ee37485" prot="protected" virt="non-virtual"><scope>shogun::CSimpleFile</scope><name>task</name></member>
+      <member refid="classshogun_1_1CSimpleFile_1a1f201467ac5a43c9d97eeff0aed4257d" prot="public" virt="virtual"><scope>shogun::CSimpleFile</scope><name>~CSimpleFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

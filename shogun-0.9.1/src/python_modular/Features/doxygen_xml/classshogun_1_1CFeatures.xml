@@ -1,0 +1,892 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CFeatures" kind="class" prot="public">
+    <compoundname>shogun::CFeatures</compoundname>
+    <derivedcompoundref refid="classshogun_1_1CStringFeatures" prot="public" virt="non-virtual">shogun::CStringFeatures&lt; uint16_t &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CStringFeatures" prot="public" virt="non-virtual">shogun::CStringFeatures&lt; uint8_t &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CAttributeFeatures" prot="public" virt="non-virtual">shogun::CAttributeFeatures</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CCombinedFeatures" prot="public" virt="non-virtual">shogun::CCombinedFeatures</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CDotFeatures" prot="public" virt="non-virtual">shogun::CDotFeatures</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CDummyFeatures" prot="public" virt="non-virtual">shogun::CDummyFeatures</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CStringFeatures" prot="public" virt="non-virtual">shogun::CStringFeatures&lt; ST &gt;</derivedcompoundref>
+    <includes local="no">Features.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CFeatures_1aac6e7cce589c292db00e1a73eff047db" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t shogun::CFeatures::properties</definition>
+        <argsstring></argsstring>
+        <name>properties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>feature properties </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="282" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CFeatures_1a3d9ac2ebb9e79cec42ab29bc0bb6fd96" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CFeatures::cache_size</definition>
+        <argsstring></argsstring>
+        <name>cache_size</name>
+        <briefdescription>
+<para>size of cache in MB </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="285" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CFeatures_1a19bba6c48d488ff6bdfab383271edc71" prot="private" static="no" mutable="no">
+        <type>CPreProc **</type>
+        <definition>CPreProc** shogun::CFeatures::preproc</definition>
+        <argsstring></argsstring>
+        <name>preproc</name>
+        <briefdescription>
+<para>list of preprocessors </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="288" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CFeatures_1a4642fda0f198744ac2d1356bc8e0a6fc" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CFeatures::num_preproc</definition>
+        <argsstring></argsstring>
+        <name>num_preproc</name>
+        <briefdescription>
+<para>number of preprocs in list </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="291" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CFeatures_1aa0197c268f79a0c22ee59213c3a1a4c8" prot="private" static="no" mutable="no">
+        <type>bool *</type>
+        <definition>bool* shogun::CFeatures::preprocessed</definition>
+        <argsstring></argsstring>
+        <name>preprocessed</name>
+        <briefdescription>
+<para>i&apos;th entry is true if features were already preprocessed with preproc i </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="294" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1a91ac9daf871dd99b358da47eea74eeb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CFeatures::CFeatures</definition>
+        <argsstring>(int32_t size=0)</argsstring>
+        <name>CFeatures</name>
+        <param>
+          <type>int32_t</type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cache size </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1a1be7a2c5d471a3586c44988e2b4e1129" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CFeatures::CFeatures</definition>
+        <argsstring>(const CFeatures &amp;orig)</argsstring>
+        <name>CFeatures</name>
+        <param>
+          <type>const <ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1a4ad3a39235806ab1999a1c5fb5290486" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CFeatures::CFeatures</definition>
+        <argsstring>(char *fname)</argsstring>
+        <name>CFeatures</name>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load features from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1a2f7adf01a52fee35ac71e455501125a9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+        <definition>virtual CFeatures* shogun::CFeatures::duplicate</definition>
+        <argsstring>() const =0</argsstring>
+        <name>duplicate</name>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1ab1ab8ad80ec4638fff62e883c5cc0ca0">duplicate</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1ab1ab8ad80ec4638fff62e883c5cc0ca0">duplicate</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1ae485eaec2c9264a0661bfdaf5db19166">duplicate</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CWDFeatures_1acbe38270fd1a92bcc54a2bc46a98a360">duplicate</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1ab1ab8ad80ec4638fff62e883c5cc0ca0">duplicate</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1a51f3ef5f1c3dd3d3fcb8b1bcecfd0f99">duplicate</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1ae485eaec2c9264a0661bfdaf5db19166">duplicate</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPolyFeatures_1a2c6a442ac68766d0890fc0f882eda55a">duplicate</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CImplicitWeightedSpecFeatures_1ae8b436797fa48fbfdf6529766a144e4f">duplicate</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CExplicitSpecFeatures_1a4d6dbd0a9175c596aeb54b691b6d6e18">duplicate</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CDummyFeatures_1a8eaf48235b6b7dd68156e7eb25b6ef16">duplicate</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCombinedFeatures_1abb810dba56c7c48a336486007a281861">duplicate</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCombinedDotFeatures_1a8106e6ec9c545070b7695b0565a8f9f8">duplicate</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>duplicate feature object</para><para>abstract base method</para><para><simplesect kind="return"><para>feature object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1ab0e2a8a18ac5056f802e4aa51d4fcd4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CFeatures::~CFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>~CFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>EFeatureType</type>
+        <definition>virtual EFeatureType shogun::CFeatures::get_feature_type</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_feature_type</name>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1acdfb2015b973478bca5bae36950a822c">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1a716a2f8e1c42ab69bda10087a8b0224e">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1a2f96841bdbb4b28dd933c570c192a052">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1aa78028371efacd348c2e89398a5b3e70">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1afb539f9ec9d61e42a17f67c941b4d8e2">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1a2846d6c0bcd0d5cd62854ba1ef001082">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1a8b39eae3d1d090685afc31531edfdd4f">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1a5733fd3af5b59dbedd9affe1c8e60da0">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1acdf80dc117310f7924cff3e93be2bc30">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1a2f550c395c1facc66955f6cf30d3984b">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1a78a20c5c7ca95ca6ace0f8da26d70b55">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1ae8d65c9f15279a84451a77b9a61384b4">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1af939128fdf123722b495530a1867e4cf">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1a816fe66cff3849d7661266b960408349">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1ab32db0ffb39e884fd63f05be6ab5addd">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1a82922a9ce4b5fe8f623d855606b07ab7">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1add05ee27f75fbd9e86fa57f8beca9a49">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1a31a9b4a01fc15e0d991c1a2804fdbebc">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1a6f667e02557a043ad7f7f126f5f44cc7">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1a0060e873c6f7fd2db1b2e2e76a718ca0">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1a5a40b8c62da6109fc33983fd6b2ccefe">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1a732627228c668481144f2deff9aeeb23">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1ad45f2a33b6ead563ea8ba03dd9b4643d">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1a86ac7005a7dc19f2e1b1cca58e50d486">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a08e7284759e2d3a8fe165bb899446ce6">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a007dec1a00c8d0a05aa0af875d0fe445">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a8ea36e2a96c3e0dba24e825c5684546a">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a628258ccedb72a3a7139a77591d20ca9">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a2ec910209c8c5648e38406f8448fcfd5">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1ac3328b9997fdfd99ea0a3db153637dca">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a71125ee5d42ad06673b821b2ccf8f128">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a85b372c83d055f86760d71b146f5dd56">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a7876ec0080b11f84715605e7f3bf76ba">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a2cd7541f7e5271a7c29326e3c2830686">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1adfb694ca959388f8ff8ac23c2546007e">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1ab967d6a7abcc54837d310fe85042e913">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1a8b37268cf88b36545f33b305fe9950b7">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1a8b37268cf88b36545f33b305fe9950b7">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a89dcdd2bfa1eeb715e5d12fc319afbd3">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CWDFeatures_1a1543e01d51ed576e43f29cd54dad7190">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1a8b37268cf88b36545f33b305fe9950b7">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1a4dc36d165878b63d0eba2b63283dfb59">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a89dcdd2bfa1eeb715e5d12fc319afbd3">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPolyFeatures_1a79914c256d20e7d88a9cd38b64486c0a">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CImplicitWeightedSpecFeatures_1a53fc53412a71b5c5bf8ad36ab6040fe0">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CExplicitSpecFeatures_1a4b632e9b559606b1f9e3c37c2fc4ca51">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CDummyFeatures_1a0e230a9aa531015856967879b18bd36f">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCombinedFeatures_1a6a093bf38a3a7985900e9123f4426146">get_feature_type</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCombinedDotFeatures_1a530e25bfb4a9c4ab80247242d72f41ec">get_feature_type</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature type</para><para>abstract base method</para><para><simplesect kind="return"><para>templated feature type </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1a8e1c6229db82a9215cb2994202e657f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>EFeatureClass</type>
+        <definition>virtual EFeatureClass shogun::CFeatures::get_feature_class</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_feature_class</name>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1aa71e016a67405365313351635c7f769b">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1aa71e016a67405365313351635c7f769b">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a2dfd5cd8ccd92593a02c9f6dfb9a84cd">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CWDFeatures_1a926fec48a11424e17620a45d165cf925">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1aa71e016a67405365313351635c7f769b">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1aca2155645b2001d5f750c9ffbf12b5cc">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a2dfd5cd8ccd92593a02c9f6dfb9a84cd">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPolyFeatures_1adfc40aba00de635fe274938020a9f264">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CImplicitWeightedSpecFeatures_1a0253996392a40dbe5b1bc8a37ca0e509">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CExplicitSpecFeatures_1af9e4f117f0f909e9525e10ed5c74daf7">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CDummyFeatures_1ae74da31dee53ab4f4be618cfae78fbc3">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCombinedFeatures_1ab5e57dcb7c10ef24d7622c221eface37">get_feature_class</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCombinedDotFeatures_1a3f2a030e8aa88926617e7d2527e86900">get_feature_class</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get feature class</para><para>abstract base method</para><para><simplesect kind="return"><para>feature class like STRING, SIMPLE, SPARSE... </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1a793f371cc7dd4897997b01612f7d4b77" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CFeatures::add_preproc</definition>
+        <argsstring>(CPreProc *p)</argsstring>
+        <name>add_preproc</name>
+        <param>
+          <type>CPreProc *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add preprocessor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>preprocessor to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>something inty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1accdc453796e319852dd41fffa0c0f70c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>CPreProc *</type>
+        <definition>virtual CPreProc* shogun::CFeatures::del_preproc</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>del_preproc</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>delete preprocessor from list caller has to clean up returned preproc</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of preprocessor in list </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1ac1015e3a736e4e6d4d6fbe24416af6c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CPreProc *</type>
+        <definition>CPreProc* shogun::CFeatures::get_preproc</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>get_preproc</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get specified preprocessor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of preprocessor in list </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1aa88c27c0f3885d23ac71c4cc2e55c431" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CFeatures::set_preprocessed</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>set_preprocessed</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set applied flag for preprocessor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of preprocessor in list </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="118" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1a1248f8829f63f9c9a42ac36065961295" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFeatures::is_preprocessed</definition>
+        <argsstring>(int32_t num)</argsstring>
+        <name>is_preprocessed</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get whether specified preprocessor was already applied</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of preprocessor in list </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="124" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" bodystart="124" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1a9010a03b11399648cc5da7194fb5e707" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CFeatures::get_num_preprocessed</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_preprocessed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the number of applied preprocs</para><para><simplesect kind="return"><para>number of applied preprocessors </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1a7662d240eab24d5753385b0f9e6e9bae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CFeatures::get_num_preproc</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_preproc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of preprocessors</para><para><simplesect kind="return"><para>number of preprocessors </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="136" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1afab00f1403d1349fd18cca31a6d63de3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CFeatures::clean_preprocs</definition>
+        <argsstring>()</argsstring>
+        <name>clean_preprocs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clears all preprocs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1a29b93c241dca0eba1415f873c83d27d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CFeatures::get_cache_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_cache_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get cache size</para><para><simplesect kind="return"><para>cache size </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="145" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" bodystart="145" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1a1f30fccf7c6c9af03277d75d0d983c52" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CFeatures::get_num_vectors</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_num_vectors</name>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1ae7339e043f6df5adfa03e56fb9273e08">get_num_vectors</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1ae7339e043f6df5adfa03e56fb9273e08">get_num_vectors</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a767626119fc7553441164cb4e953eecf">get_num_vectors</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CWDFeatures_1a24d07f66e633a50d8bc7e563e76d1b16">get_num_vectors</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1ae7339e043f6df5adfa03e56fb9273e08">get_num_vectors</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1af0609e2d82ee045994ab76d356298337">get_num_vectors</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a767626119fc7553441164cb4e953eecf">get_num_vectors</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPolyFeatures_1adc6186a46966fb10a6d26d808f6446c6">get_num_vectors</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CImplicitWeightedSpecFeatures_1a6d7ad88ee7c5df5e27e8e2dbf884f38d">get_num_vectors</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CExplicitSpecFeatures_1a553948ca2a1cd15f01961175d0f13a30">get_num_vectors</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CDummyFeatures_1a40545471fb33840d621370468baabd59">get_num_vectors</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCombinedFeatures_1ac762bae6bfa6ccb25bfcb5f8380df337">get_num_vectors</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCombinedDotFeatures_1adc6a7f52cb0f7e1e32ad865880e661f2">get_num_vectors</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of examples/vectors</para><para>abstract base method</para><para><simplesect kind="return"><para>number of examples/vectors </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1a57d67048d44a7a7ea92bcbdfed9060ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CFeatures::reshape</definition>
+        <argsstring>(int32_t num_features, int32_t num_vectors)</argsstring>
+        <name>reshape</name>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a0130f7dadc6257d919be40eb7cc173d9">reshape</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a0130f7dadc6257d919be40eb7cc173d9">reshape</reimplementedby>
+        <param>
+          <type>int32_t</type>
+          <declname>num_features</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vectors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>in case there is a feature matrix allow for reshaping</para><para>NOT IMPLEMENTED!</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_features</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new number of features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_vectors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new number of vectors </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if reshaping was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="163" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" bodystart="163" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1aeed80a002f6255d1ca5c8d1698deb7bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CFeatures::get_size</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_size</name>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1a2e61e6789ba400eec0155188f067483c">get_size</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1a2e61e6789ba400eec0155188f067483c">get_size</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1ab1207e479dd9fcf578f629db7b878917">get_size</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CWDFeatures_1a7af21f8ee52b8c9fe181ea89103d0622">get_size</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1a2e61e6789ba400eec0155188f067483c">get_size</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSparseFeatures_1a1ca267b8fbb088e0085ca9d2bd2df22f">get_size</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1ab1207e479dd9fcf578f629db7b878917">get_size</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CPolyFeatures_1a90a71f510ec73cfbccd6d50e1585d19c">get_size</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CImplicitWeightedSpecFeatures_1af87adefed17f8f0776a16f3e3eb2f60e">get_size</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CExplicitSpecFeatures_1a7a37ddb3877d6fd7f687dc58c0e09ba8">get_size</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CDummyFeatures_1ac09ed3c234ff7d70d65c55a39a03ef42">get_size</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCombinedFeatures_1aeef626c1df3eb54f7aa9557475cb8654">get_size</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CCombinedDotFeatures_1a3d7ab34a18bb6ef907a79f0605a70562">get_size</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get memory footprint of one feature</para><para>abstract base method</para><para><simplesect kind="return"><para>memory footprint of one feature </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1a6412ef81478c3c9dadac2a87a544f640" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CFeatures::list_feature_obj</definition>
+        <argsstring>()</argsstring>
+        <name>list_feature_obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>list feature object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1adef76a926672875a64aedd2b00c8f2bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CFeatures::load</definition>
+        <argsstring>(char *fname)</argsstring>
+        <name>load</name>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1aaeb951c4dd2b893bda80d097818e62fb">load</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1aaeb951c4dd2b893bda80d097818e62fb">load</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1ab3f090ce420bd82313354358bff38705">load</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1aaeb951c4dd2b893bda80d097818e62fb">load</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1ab3f090ce420bd82313354358bff38705">load</reimplementedby>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load features from file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to load from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if loading was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1ae1341e3fa42733d8729d8f2dcf73709b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CFeatures::save</definition>
+        <argsstring>(char *fname)</argsstring>
+        <name>save</name>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1a1d9ca2d673e47c81de012fcb2145d5e7">save</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1a1d9ca2d673e47c81de012fcb2145d5e7">save</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a5ee15be9a68445fd47d4db97dcdaa888">save</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CStringFeatures_1a1d9ca2d673e47c81de012fcb2145d5e7">save</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CSimpleFeatures_1a5ee15be9a68445fd47d4db97dcdaa888">save</reimplementedby>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>save features to file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filename to save to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if saving was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1a89609a765e1ab682ea6e73402b56c961" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFeatures::check_feature_compatibility</definition>
+        <argsstring>(CFeatures *f)</argsstring>
+        <name>check_feature_compatibility</name>
+        <param>
+          <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check feature compatibility</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features to check for compatibility </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if features are compatible </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1a07f1d7dc618a9f5f76663d80ad549d38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CFeatures::has_property</definition>
+        <argsstring>(EFeatureProperty p)</argsstring>
+        <name>has_property</name>
+        <param>
+          <type>EFeatureProperty</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check if features have given property</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature property </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if features have given property </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="202" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" bodystart="202" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1ab43db0bd4a231249ce4bc65f6e15f695" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CFeatures::set_property</definition>
+        <argsstring>(EFeatureProperty p)</argsstring>
+        <name>set_property</name>
+        <param>
+          <type>EFeatureProperty</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set property</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel property to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="209" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" bodystart="208" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CFeatures_1a3ff3f03688a7f6a1b36dab8677407166" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CFeatures::unset_property</definition>
+        <argsstring>(EFeatureProperty p)</argsstring>
+        <name>unset_property</name>
+        <param>
+          <type>EFeatureProperty</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>unset property</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel property to unset </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="218" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" bodystart="217" bodyend="220"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class Features is the base class of all feature objects. </para>    </briefdescription>
+    <detaileddescription>
+<para>It can be understood as a dense real valued feature matrix (with e.g. columns as single feature vectors), a set of strings, graphs or any other arbitrary collection of objects. As a result this class is kept very general and implements only very weak interfaces to</para><para><itemizedlist>
+<listitem><para>duplicate the Feature object</para></listitem><listitem><para>obtain the feature type (like F_DREAL, F_SHORT ...)</para></listitem><listitem><para>obtain the feature class (like Simple dense matrices, sparse or strings)</para></listitem><listitem><para>obtain the number of feature &quot;vectors&quot;</para></listitem></itemizedlist>
+</para><para>In addition it provides helpers to check e.g. for compability of feature objects.</para><para>Currently there are 3 general feature classes, which are <ref refid="classshogun_1_1CSimpleFeatures" kindref="compound">CSimpleFeatures</ref> (dense matrices), <ref refid="classshogun_1_1CSparseFeatures" kindref="compound">CSparseFeatures</ref> (sparse matrices), <ref refid="classshogun_1_1CStringFeatures" kindref="compound">CStringFeatures</ref> (a set of strings) from which all the specific features like <ref refid="classshogun_1_1CSimpleFeatures" kindref="compound">CSimpleFeatures&lt;float64_t&gt;</ref> (dense real valued feature matrices) are derived. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="52">
+        <label>shogun::CExplicitSpecFeatures</label>
+        <link refid="classshogun_1_1CExplicitSpecFeatures"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>shogun::CTOPFeatures</label>
+        <link refid="classshogun_1_1CTOPFeatures"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>shogun::CDummyFeatures</label>
+        <link refid="classshogun_1_1CDummyFeatures"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>shogun::CDotFeatures</label>
+        <link refid="classshogun_1_1CDotFeatures"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>shogun::CSimpleFeatures&lt; float64_t &gt;</label>
+        <link refid="classshogun_1_1CSimpleFeatures"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>shogun::CRealFileFeatures</label>
+        <link refid="classshogun_1_1CRealFileFeatures"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>shogun::CImplicitWeightedSpecFeatures</label>
+        <link refid="classshogun_1_1CImplicitWeightedSpecFeatures"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>shogun::CPolyFeatures</label>
+        <link refid="classshogun_1_1CPolyFeatures"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>shogun::CSimpleFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CSimpleFeatures"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>shogun::CStringFileFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CStringFileFeatures"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>shogun::CCombinedFeatures</label>
+        <link refid="classshogun_1_1CCombinedFeatures"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>shogun::CFKFeatures</label>
+        <link refid="classshogun_1_1CFKFeatures"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>shogun::CStringFeatures&lt; uint8_t &gt;</label>
+        <link refid="classshogun_1_1CStringFeatures"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>shogun::CStringFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CStringFeatures"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>shogun::CCombinedDotFeatures</label>
+        <link refid="classshogun_1_1CCombinedDotFeatures"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>shogun::CAttributeFeatures</label>
+        <link refid="classshogun_1_1CAttributeFeatures"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>shogun::CStringFeatures&lt; uint16_t &gt;</label>
+        <link refid="classshogun_1_1CStringFeatures"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+      <node id="57">
+        <label>shogun::CWDFeatures</label>
+        <link refid="classshogun_1_1CWDFeatures"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>shogun::CSparseFeatures&lt; ST &gt;</label>
+        <link refid="classshogun_1_1CSparseFeatures"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" line="51" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/Features.h" bodystart="50" bodyend="295"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CFeatures_1a793f371cc7dd4897997b01612f7d4b77" prot="public" virt="virtual"><scope>shogun::CFeatures</scope><name>add_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a3d9ac2ebb9e79cec42ab29bc0bb6fd96" prot="private" virt="non-virtual"><scope>shogun::CFeatures</scope><name>cache_size</name></member>
+      <member refid="classshogun_1_1CFeatures_1a91ac9daf871dd99b358da47eea74eeb3" prot="public" virt="non-virtual"><scope>shogun::CFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1be7a2c5d471a3586c44988e2b4e1129" prot="public" virt="non-virtual"><scope>shogun::CFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a4ad3a39235806ab1999a1c5fb5290486" prot="public" virt="non-virtual"><scope>shogun::CFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a89609a765e1ab682ea6e73402b56c961" prot="public" virt="non-virtual"><scope>shogun::CFeatures</scope><name>check_feature_compatibility</name></member>
+      <member refid="classshogun_1_1CFeatures_1afab00f1403d1349fd18cca31a6d63de3" prot="public" virt="non-virtual"><scope>shogun::CFeatures</scope><name>clean_preprocs</name></member>
+      <member refid="classshogun_1_1CFeatures_1accdc453796e319852dd41fffa0c0f70c" prot="public" virt="virtual"><scope>shogun::CFeatures</scope><name>del_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a2f7adf01a52fee35ac71e455501125a9" prot="public" virt="pure-virtual"><scope>shogun::CFeatures</scope><name>duplicate</name></member>
+      <member refid="classshogun_1_1CFeatures_1a29b93c241dca0eba1415f873c83d27d8" prot="public" virt="non-virtual"><scope>shogun::CFeatures</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CFeatures_1a8e1c6229db82a9215cb2994202e657f5" prot="public" virt="pure-virtual"><scope>shogun::CFeatures</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861" prot="public" virt="pure-virtual"><scope>shogun::CFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CFeatures_1a7662d240eab24d5753385b0f9e6e9bae" prot="public" virt="non-virtual"><scope>shogun::CFeatures</scope><name>get_num_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a9010a03b11399648cc5da7194fb5e707" prot="public" virt="non-virtual"><scope>shogun::CFeatures</scope><name>get_num_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1f30fccf7c6c9af03277d75d0d983c52" prot="public" virt="pure-virtual"><scope>shogun::CFeatures</scope><name>get_num_vectors</name></member>
+      <member refid="classshogun_1_1CFeatures_1ac1015e3a736e4e6d4d6fbe24416af6c4" prot="public" virt="non-virtual"><scope>shogun::CFeatures</scope><name>get_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1aeed80a002f6255d1ca5c8d1698deb7bc" prot="public" virt="pure-virtual"><scope>shogun::CFeatures</scope><name>get_size</name></member>
+      <member refid="classshogun_1_1CFeatures_1a07f1d7dc618a9f5f76663d80ad549d38" prot="public" virt="non-virtual"><scope>shogun::CFeatures</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1248f8829f63f9c9a42ac36065961295" prot="public" virt="non-virtual"><scope>shogun::CFeatures</scope><name>is_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1a6412ef81478c3c9dadac2a87a544f640" prot="public" virt="non-virtual"><scope>shogun::CFeatures</scope><name>list_feature_obj</name></member>
+      <member refid="classshogun_1_1CFeatures_1adef76a926672875a64aedd2b00c8f2bd" prot="public" virt="virtual"><scope>shogun::CFeatures</scope><name>load</name></member>
+      <member refid="classshogun_1_1CFeatures_1a4642fda0f198744ac2d1356bc8e0a6fc" prot="private" virt="non-virtual"><scope>shogun::CFeatures</scope><name>num_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a19bba6c48d488ff6bdfab383271edc71" prot="private" virt="non-virtual"><scope>shogun::CFeatures</scope><name>preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1aa0197c268f79a0c22ee59213c3a1a4c8" prot="private" virt="non-virtual"><scope>shogun::CFeatures</scope><name>preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1aac6e7cce589c292db00e1a73eff047db" prot="private" virt="non-virtual"><scope>shogun::CFeatures</scope><name>properties</name></member>
+      <member refid="classshogun_1_1CFeatures_1a57d67048d44a7a7ea92bcbdfed9060ea" prot="public" virt="virtual"><scope>shogun::CFeatures</scope><name>reshape</name></member>
+      <member refid="classshogun_1_1CFeatures_1ae1341e3fa42733d8729d8f2dcf73709b" prot="public" virt="virtual"><scope>shogun::CFeatures</scope><name>save</name></member>
+      <member refid="classshogun_1_1CFeatures_1aa88c27c0f3885d23ac71c4cc2e55c431" prot="public" virt="non-virtual"><scope>shogun::CFeatures</scope><name>set_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab43db0bd4a231249ce4bc65f6e15f695" prot="public" virt="non-virtual"><scope>shogun::CFeatures</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a3ff3f03688a7f6a1b36dab8677407166" prot="public" virt="non-virtual"><scope>shogun::CFeatures</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab0e2a8a18ac5056f802e4aa51d4fcd4f" prot="public" virt="virtual"><scope>shogun::CFeatures</scope><name>~CFeatures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

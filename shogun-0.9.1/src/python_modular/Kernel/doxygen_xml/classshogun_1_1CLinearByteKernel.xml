@@ -1,0 +1,471 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CLinearByteKernel" kind="class" prot="public">
+    <compoundname>shogun::CLinearByteKernel</compoundname>
+    <basecompoundref refid="classshogun_1_1CSimpleKernel" prot="public" virt="non-virtual">shogun::CSimpleKernel&lt; uint8_t &gt;</basecompoundref>
+    <includes local="no">LinearByteKernel.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CLinearByteKernel_1a060cab6336f015fad94eaf75fe7ac2d1" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CLinearByteKernel::normal</definition>
+        <argsstring></argsstring>
+        <name>normal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normal vector (used in case of optimized kernel) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" line="114" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CLinearByteKernel_1ad79336de1ef5e616977b5e8002b3ee46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CLinearByteKernel::CLinearByteKernel</definition>
+        <argsstring>()</argsstring>
+        <name>CLinearByteKernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" line="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearByteKernel_1acc57c1d70ada313f81f179634a19ac04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CLinearByteKernel::CLinearByteKernel</definition>
+        <argsstring>(CSimpleFeatures&lt; uint8_t &gt; *l, CSimpleFeatures&lt; uint8_t &gt; *r)</argsstring>
+        <name>CLinearByteKernel</name>
+        <param>
+          <type>CSimpleFeatures&lt; uint8_t &gt; *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>CSimpleFeatures&lt; uint8_t &gt; *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of left-hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of right-hand side </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearByteKernel_1a9f78a7fcbd70379c925918f802cc41f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CLinearByteKernel::~CLinearByteKernel</definition>
+        <argsstring>()</argsstring>
+        <name>~CLinearByteKernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearByteKernel_1ad4e63b460bdb4f9f912572abe548ce9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CLinearByteKernel::init</definition>
+        <argsstring>(CFeatures *l, CFeatures *r)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CSimpleKernel_1aa5c335d54b736c5cd365b279640b4eb4">init</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>CFeatures *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize kernel</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of left-hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of right-hand side </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if initializing was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearByteKernel_1a0411d0d8f55e74aad957d02af2bed02e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CLinearByteKernel::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <reimplements refid="classshogun_1_1CKernel_1ae593c118eda68888ad76a88af0367c6e">cleanup</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clean up kernel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearByteKernel_1abf24d781d2e88eed94ba2a9c3114e404" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EKernelType</type>
+        <definition>virtual EKernelType shogun::CLinearByteKernel::get_kernel_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_kernel_type</name>
+        <reimplements refid="classshogun_1_1CKernel_1a13022c6fd98d925b6088b8c81fa65db9">get_kernel_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return what type of kernel we are</para><para><simplesect kind="return"><para>kernel type LINEAR </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" line="59" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearByteKernel_1a6f78749320c1639d7f2096b9fe733c89" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CLinearByteKernel::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return the kernel&apos;s name</para><para><simplesect kind="return"><para>name FixedDegree </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" line="65" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearByteKernel_1a5b61bc964e0b83656e652cde5887d3e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CLinearByteKernel::init_optimization</definition>
+        <argsstring>(int32_t num_suppvec, int32_t *sv_idx, float64_t *alphas)</argsstring>
+        <name>init_optimization</name>
+        <reimplements refid="classshogun_1_1CKernel_1a913db590a96e58fadba2b1e9e34a10d6">init_optimization</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>num_suppvec</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>sv_idx</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>alphas</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>optimizable kernel, i.e. precompute normal vector and as phi(x) = x do scalar product in input space</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_suppvec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of support vectors </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sv_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>support vector index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alphas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alphas </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if optimization was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearByteKernel_1abc2db0ec4f33ae9ca5507a44c447060c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CLinearByteKernel::delete_optimization</definition>
+        <argsstring>()</argsstring>
+        <name>delete_optimization</name>
+        <reimplements refid="classshogun_1_1CKernel_1a1e5b580f5214d5fac1f07c81c2fcb0ad">delete_optimization</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>delete optimization</para><para><simplesect kind="return"><para>if deleting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearByteKernel_1a13e54ce9c1dfef484793d5cb2ef240a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CLinearByteKernel::compute_optimized</definition>
+        <argsstring>(int32_t idx)</argsstring>
+        <name>compute_optimized</name>
+        <reimplements refid="classshogun_1_1CKernel_1a614b39452046d4336f09c881360b4af7">compute_optimized</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute optimized</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index to compute </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>optimized value at given index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" line="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearByteKernel_1aaaa34fe8e12963641c9aa64234f5851a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CLinearByteKernel::clear_normal</definition>
+        <argsstring>()</argsstring>
+        <name>clear_normal</name>
+        <reimplements refid="classshogun_1_1CKernel_1a46a94bb5789a5edbf1d776610ae3fa04">clear_normal</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clear normal vector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CLinearByteKernel_1aeff99e198a4d483e7f39ed51ad8c0ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CLinearByteKernel::add_to_normal</definition>
+        <argsstring>(int32_t idx, float64_t weight)</argsstring>
+        <name>add_to_normal</name>
+        <reimplements refid="classshogun_1_1CKernel_1aabe2fe8e2cc8e2846a6aa60c364855ba">add_to_normal</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add to normal vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where to add </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>what to add </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" line="99"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CLinearByteKernel_1a17369289878f35bd5dcf64e7018df7aa" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CLinearByteKernel::compute</definition>
+        <argsstring>(int32_t idx_a, int32_t idx_b)</argsstring>
+        <name>compute</name>
+        <reimplements refid="classshogun_1_1CKernel_1ab1765c43943a668fea15971d08ff1229">compute</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_a</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute kernel function for features a and b idx_{a,b} denote the index of the feature vectors in the corresponding feature object</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx_a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index b </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed kernel function at indices a,b </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" line="110"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Computes the standard linear kernel on dense byte valued features. </para>    </briefdescription>
+    <detaileddescription>
+<para>Formally, it computes</para><para><formula id="30">\[ k({\bf x},{\bf x&apos;})= {\bf x}\cdot {\bf x&apos;} \]</formula> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="173">
+        <label>shogun::CKernel</label>
+        <link refid="classshogun_1_1CKernel"/>
+      </node>
+      <node id="172">
+        <label>shogun::CSimpleKernel&lt; uint8_t &gt;</label>
+        <link refid="classshogun_1_1CSimpleKernel"/>
+        <childnode refid="173" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>shogun::CLinearByteKernel</label>
+        <link refid="classshogun_1_1CLinearByteKernel"/>
+        <childnode refid="172" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="176">
+        <label>shogun::CKernel</label>
+        <link refid="classshogun_1_1CKernel"/>
+        <childnode refid="177" relation="usage">
+          <edgelabel>normalizer</edgelabel>
+        </childnode>
+      </node>
+      <node id="175">
+        <label>shogun::CSimpleKernel&lt; uint8_t &gt;</label>
+        <link refid="classshogun_1_1CSimpleKernel"/>
+        <childnode refid="176" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>shogun::CLinearByteKernel</label>
+        <link refid="classshogun_1_1CLinearByteKernel"/>
+        <childnode refid="175" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" line="29" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/LinearByteKernel.h" bodystart="28" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CLinearByteKernel_1aeff99e198a4d483e7f39ed51ad8c0ce7" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>add_to_normal</name></member>
+      <member refid="classshogun_1_1CKernel_1ae1dc0bbc6ea973b18dcba2e4fac486b8" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>cache_size</name></member>
+      <member refid="classshogun_1_1CKernel_1a77872c37fccc650cd7f918b253bbeb68" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>CKernel</name></member>
+      <member refid="classshogun_1_1CKernel_1aa2b1f73c8585adee444bb99a98e63a5a" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>CKernel</name></member>
+      <member refid="classshogun_1_1CKernel_1a70cfe05692f9ee159aeb0dfcb8d2f5c3" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>CKernel</name></member>
+      <member refid="classshogun_1_1CLinearByteKernel_1a0411d0d8f55e74aad957d02af2bed02e" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CLinearByteKernel_1aaaa34fe8e12963641c9aa64234f5851a" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>clear_normal</name></member>
+      <member refid="classshogun_1_1CLinearByteKernel_1ad79336de1ef5e616977b5e8002b3ee46" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>CLinearByteKernel</name></member>
+      <member refid="classshogun_1_1CLinearByteKernel_1acc57c1d70ada313f81f179634a19ac04" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>CLinearByteKernel</name></member>
+      <member refid="classshogun_1_1CKernel_1a105026c07a74e493c1711dad83b335f1" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>combined_kernel_weight</name></member>
+      <member refid="classshogun_1_1CLinearByteKernel_1a17369289878f35bd5dcf64e7018df7aa" prot="protected" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>compute</name></member>
+      <member refid="classshogun_1_1CKernel_1a5fc6a483d63fd0a3460a457cee60f993" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>compute_batch</name></member>
+      <member refid="classshogun_1_1CKernel_1a9a0bbc983ee6c2050ee4d5c814496924" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>compute_by_subkernel</name></member>
+      <member refid="classshogun_1_1CLinearByteKernel_1a13e54ce9c1dfef484793d5cb2ef240a4" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>compute_optimized</name></member>
+      <member refid="classshogun_1_1CKernel_1a813bcdc6778b8c0b4c662a5209a68776" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>compute_row_start</name></member>
+      <member refid="classshogun_1_1CSimpleKernel_1a52a31158ca9b854845324f28e2bcae43" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>CSimpleKernel</name></member>
+      <member refid="classshogun_1_1CSimpleKernel_1a11838797a925912bb679a8c2148665ea" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>CSimpleKernel</name></member>
+      <member refid="classshogun_1_1CSimpleKernel_1a8092c0b75fb36b9dcade6971807c0ce1" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>CSimpleKernel</name></member>
+      <member refid="classshogun_1_1CLinearByteKernel_1abc2db0ec4f33ae9ca5507a44c447060c" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>delete_optimization</name></member>
+      <member refid="classshogun_1_1CKernel_1ac53fab2767fa28a2141294219ddc5ea5" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CKernel_1a70a87d5839c56ce67efad04119b16758" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>get_combined_kernel_weight</name></member>
+      <member refid="classshogun_1_1CSimpleKernel_1a74991d79eaf19b6fe8582e8257a96636" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CSimpleKernel_1a5e3109e755e2455dc50048249ab0d1f6" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CKernel_1a4e06bfb908463f9bc28b0c3ae7bdeef3" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>get_is_initialized</name></member>
+      <member refid="classshogun_1_1CKernel_1a1f4f83d3d7bc7e34336c4c262ca95570" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>get_kernel_matrix</name></member>
+      <member refid="classshogun_1_1CKernel_1a19c9666c242a0b019f645593e2c63e9f" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>get_kernel_matrix</name></member>
+      <member refid="classshogun_1_1CKernel_1a52f510cf6ece0052527f31ad2274e855" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>get_kernel_matrix_helper</name></member>
+      <member refid="classshogun_1_1CLinearByteKernel_1abf24d781d2e88eed94ba2a9c3114e404" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>get_kernel_type</name></member>
+      <member refid="classshogun_1_1CKernel_1a0c71c8eb3ac024069c6bd9ff61ec0c39" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>get_lhs</name></member>
+      <member refid="classshogun_1_1CLinearByteKernel_1a6f78749320c1639d7f2096b9fe733c89" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CKernel_1a7aacb7938ed0f98f1fd14253bc1e9b31" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>get_normalizer</name></member>
+      <member refid="classshogun_1_1CKernel_1a0c2a6eb4ed24590be0cc72a5871f848d" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>get_num_subkernels</name></member>
+      <member refid="classshogun_1_1CKernel_1af350caa123740b96ecaa69fd28454a65" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>get_num_vec_lhs</name></member>
+      <member refid="classshogun_1_1CKernel_1a7e45a8f4fc00c39b7d54dd37e001bed9" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>get_num_vec_rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1aff5f02561b6963a3c2a2e63b4ac8e43c" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>get_optimization_type</name></member>
+      <member refid="classshogun_1_1CKernel_1abfd608e83f9839f8ca626ad793e452b0" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>get_rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1aed423e68a226ad9f717d05f54cf9c854" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>get_subkernel_weights</name></member>
+      <member refid="classshogun_1_1CKernel_1a6db0206d0b4fe30bf64b93d8eed3b8b7" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>has_features</name></member>
+      <member refid="classshogun_1_1CKernel_1afd958e85909aec22c830e9137fcd7d4c" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CLinearByteKernel_1ad4e63b460bdb4f9f912572abe548ce9e" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>init</name></member>
+      <member refid="classshogun_1_1CKernel_1aeb0378209b4c63b7ae60596540ebed80" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>init_normalizer</name></member>
+      <member refid="classshogun_1_1CLinearByteKernel_1a5b61bc964e0b83656e652cde5887d3e2" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>init_optimization</name></member>
+      <member refid="classshogun_1_1CKernel_1a8363fd727262daf47cad9fb4842daa6c" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>init_optimization_svm</name></member>
+      <member refid="classshogun_1_1CKernel_1ab4cbfe2c04238e33322647e22960c246" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>kernel</name></member>
+      <member refid="classshogun_1_1CKernel_1a01f88ea73f221b5a768e1c67c731a763" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>kernel_matrix</name></member>
+      <member refid="classshogun_1_1CKernel_1ae7bc6b54431a07498f0b6ef4ab087297" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>lhs</name></member>
+      <member refid="classshogun_1_1CKernel_1a28ef59e6dd9055579b2f95fb3a19b2cc" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>lhs_equals_rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1a29e2f0ad2694cc53a800f3ad8be56077" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>list_kernel</name></member>
+      <member refid="classshogun_1_1CKernel_1a93221d864190e13c4749793d4ae7f0b0" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>load</name></member>
+      <member refid="classshogun_1_1CLinearByteKernel_1a060cab6336f015fad94eaf75fe7ac2d1" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>normal</name></member>
+      <member refid="classshogun_1_1CKernel_1acbe5200168cf7ade8c30f1a1eb40469b" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>normalizer</name></member>
+      <member refid="classshogun_1_1CKernel_1a0d5cfafbf2afd0260857089504262dd6" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>num_lhs</name></member>
+      <member refid="classshogun_1_1CKernel_1a6e741d3d75546bdc15bfb5be41aa9b96" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>num_rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1ad96fd157602292f3d88ebfef3077be00" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>opt_type</name></member>
+      <member refid="classshogun_1_1CKernel_1a5b4d22f0cd136296f6e9aee3364607d6" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>optimization_initialized</name></member>
+      <member refid="classshogun_1_1CKernel_1a16638a9afae47d4c2e36e20b2dff92f5" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>properties</name></member>
+      <member refid="classshogun_1_1CKernel_1a83df3f7334ac9876caaec761ac55314e" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>remove_lhs</name></member>
+      <member refid="classshogun_1_1CKernel_1ad56df090f52a020e34162abd0b0cd0e5" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>remove_lhs_and_rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1ade2b456ef65c988c59847e6a1d682956" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>remove_rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1a5dab35da7f429dd860f59d9a98960a3f" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1ab1241d4ce37e5352cee96f6b456439c4" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>save</name></member>
+      <member refid="classshogun_1_1CKernel_1aa552d8e2591297a3fd5aae46bebaf645" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>set_cache_size</name></member>
+      <member refid="classshogun_1_1CKernel_1a23ec2b5c3d824b3f148c905bfbafdebf" prot="public" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>set_combined_kernel_weight</name></member>
+      <member refid="classshogun_1_1CKernel_1ad2d2934daf162bfb010536c1eefd162c" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>set_is_initialized</name></member>
+      <member refid="classshogun_1_1CKernel_1a0a3fc1096d6e00f56ca0f11cadd12ab7" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>set_normalizer</name></member>
+      <member refid="classshogun_1_1CKernel_1a11ab2c3a02fc458f510f36c2fe503a2c" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>set_optimization_type</name></member>
+      <member refid="classshogun_1_1CKernel_1abd52ab8944c2fd9efd45e46dee4f27ee" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CKernel_1af1e586162ba4aadc7c0143c1c8819f1a" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>set_subkernel_weights</name></member>
+      <member refid="classshogun_1_1CKernel_1a83025690228a1d47e4d43a8ed4304749" prot="protected" virt="non-virtual"><scope>shogun::CLinearByteKernel</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CKernel_1ac0b3e1e0d02e446954712d8245cd68c3" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>~CKernel</name></member>
+      <member refid="classshogun_1_1CLinearByteKernel_1a9f78a7fcbd70379c925918f802cc41f6" prot="public" virt="virtual"><scope>shogun::CLinearByteKernel</scope><name>~CLinearByteKernel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

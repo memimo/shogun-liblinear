@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CAttributeFeatures" kind="class" prot="public">
+    <compoundname>shogun::CAttributeFeatures</compoundname>
+    <basecompoundref refid="classshogun_1_1CFeatures" prot="public" virt="non-virtual">shogun::CFeatures</basecompoundref>
+    <includes local="no">AttributeFeatures.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CAttributeFeatures_1a7bc629df93e5f93f605b5d0ff34ad398" prot="protected" static="no" mutable="no">
+        <type>CDynamicArray&lt; <ref refid="structshogun_1_1T__ATTRIBUTE" kindref="compound">T_ATTRIBUTE</ref> &gt;</type>
+        <definition>CDynamicArray&lt;T_ATTRIBUTE&gt; shogun::CAttributeFeatures::features</definition>
+        <argsstring></argsstring>
+        <name>features</name>
+        <briefdescription>
+<para>list of attributes (sorted) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" line="162" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CAttributeFeatures_1ada03192680d405021603c7a563bb6cdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CAttributeFeatures::CAttributeFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>CAttributeFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAttributeFeatures_1a3395ec5af29a25f74bb1b5266a04bdb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CAttributeFeatures::~CAttributeFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>~CAttributeFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAttributeFeatures_1a0fd2c8741290dc9349286db008e779dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+        <definition>CFeatures* shogun::CAttributeFeatures::get_attribute</definition>
+        <argsstring>(char *attr_name)</argsstring>
+        <name>get_attribute</name>
+        <param>
+          <type>char *</type>
+          <declname>attr_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return the feature object matching attribute name</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attr_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>attribute name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>feature object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" line="62" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" bodystart="61" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAttributeFeatures_1a8f9ae44136dd573acaa4bf9e2ccd145f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CAttributeFeatures::get_attribute_by_index</definition>
+        <argsstring>(int idx, const char *&amp;attr_name, CFeatures *&amp;attr_obj)</argsstring>
+        <name>get_attribute_by_index</name>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>const char *&amp;</type>
+          <declname>attr_name</declname>
+        </param>
+        <param>
+          <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *&amp;</type>
+          <declname>attr_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return the feature object at index</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of attribute </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attr_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>attribute name (returned by reference) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attr_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>attribute object (returned by reference) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" line="81" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" bodystart="80" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAttributeFeatures_1a3ded34322a1009b507a96eab65d69589" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CAttributeFeatures::set_attribute</definition>
+        <argsstring>(char *attr_name, CFeatures *attr_obj)</argsstring>
+        <name>set_attribute</name>
+        <param>
+          <type>char *</type>
+          <declname>attr_name</declname>
+        </param>
+        <param>
+          <type><ref refid="classshogun_1_1CFeatures" kindref="compound">CFeatures</ref> *</type>
+          <declname>attr_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set the feature object for attribute name</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attr_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>attribute name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attr_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>feature object to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" line="95" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" bodystart="94" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAttributeFeatures_1ac494e96bb2bd9145f491219a23810e08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CAttributeFeatures::del_attribute</definition>
+        <argsstring>(char *attr_name)</argsstring>
+        <name>del_attribute</name>
+        <param>
+          <type>char *</type>
+          <declname>attr_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>delete the attribute matching attribute name</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attr_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>attribute name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" line="115" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" bodystart="114" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAttributeFeatures_1aa7f1e1d670bc41962b4a13bdce6cecfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CAttributeFeatures::get_num_attributes</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_attributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of attributes</para><para><simplesect kind="return"><para>number of attributes </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" line="134" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CAttributeFeatures_1afa6397c1f8c4c1045beadab51b6e0427" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CAttributeFeatures::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" line="139" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" bodystart="139" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CAttributeFeatures_1abb8e6f353c456b2d5195a4c452b327d0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CAttributeFeatures::find_attr_index</definition>
+        <argsstring>(char *attr_name)</argsstring>
+        <name>find_attr_index</name>
+        <param>
+          <type>char *</type>
+          <declname>attr_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>find the index of the attribute matching attribute name</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attr_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>attribute name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index (if found), otherwise -1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" line="148" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" bodystart="147" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implements attributed features, that is in the simplest case a number of (attribute, value) pairs. </para>    </briefdescription>
+    <detaileddescription>
+<para>For example</para><para>x[0...].attr1 = &lt;value(s)&gt; x[0...].attr2 = &lt;value(s)&gt;.</para><para>A more complex example would be nested structures x[0...].attr1[0...].subattr1 = ..</para><para>This might be used to represent (attr, value) pairs, simple structures, trees ... </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>shogun::CAttributeFeatures</label>
+        <link refid="classshogun_1_1CAttributeFeatures"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>shogun::CAttributeFeatures</label>
+        <link refid="classshogun_1_1CAttributeFeatures"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>shogun::CFeatures</label>
+        <link refid="classshogun_1_1CFeatures"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" line="47" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/features/AttributeFeatures.h" bodystart="46" bodyend="163"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CFeatures_1a793f371cc7dd4897997b01612f7d4b77" prot="public" virt="virtual"><scope>shogun::CAttributeFeatures</scope><name>add_preproc</name></member>
+      <member refid="classshogun_1_1CAttributeFeatures_1ada03192680d405021603c7a563bb6cdf" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>CAttributeFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a91ac9daf871dd99b358da47eea74eeb3" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1be7a2c5d471a3586c44988e2b4e1129" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a4ad3a39235806ab1999a1c5fb5290486" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>CFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1a89609a765e1ab682ea6e73402b56c961" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>check_feature_compatibility</name></member>
+      <member refid="classshogun_1_1CFeatures_1afab00f1403d1349fd18cca31a6d63de3" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>clean_preprocs</name></member>
+      <member refid="classshogun_1_1CAttributeFeatures_1ac494e96bb2bd9145f491219a23810e08" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>del_attribute</name></member>
+      <member refid="classshogun_1_1CFeatures_1accdc453796e319852dd41fffa0c0f70c" prot="public" virt="virtual"><scope>shogun::CAttributeFeatures</scope><name>del_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a2f7adf01a52fee35ac71e455501125a9" prot="public" virt="pure-virtual"><scope>shogun::CAttributeFeatures</scope><name>duplicate</name></member>
+      <member refid="classshogun_1_1CAttributeFeatures_1a7bc629df93e5f93f605b5d0ff34ad398" prot="protected" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>features</name></member>
+      <member refid="classshogun_1_1CAttributeFeatures_1abb8e6f353c456b2d5195a4c452b327d0" prot="protected" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>find_attr_index</name></member>
+      <member refid="classshogun_1_1CAttributeFeatures_1a0fd2c8741290dc9349286db008e779dc" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>get_attribute</name></member>
+      <member refid="classshogun_1_1CAttributeFeatures_1a8f9ae44136dd573acaa4bf9e2ccd145f" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>get_attribute_by_index</name></member>
+      <member refid="classshogun_1_1CFeatures_1a29b93c241dca0eba1415f873c83d27d8" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CFeatures_1a8e1c6229db82a9215cb2994202e657f5" prot="public" virt="pure-virtual"><scope>shogun::CAttributeFeatures</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CFeatures_1ad31f5104f5c8d340d49850d2650ce861" prot="public" virt="pure-virtual"><scope>shogun::CAttributeFeatures</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CAttributeFeatures_1afa6397c1f8c4c1045beadab51b6e0427" prot="public" virt="virtual"><scope>shogun::CAttributeFeatures</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CAttributeFeatures_1aa7f1e1d670bc41962b4a13bdce6cecfd" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>get_num_attributes</name></member>
+      <member refid="classshogun_1_1CFeatures_1a7662d240eab24d5753385b0f9e6e9bae" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>get_num_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1a9010a03b11399648cc5da7194fb5e707" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>get_num_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1f30fccf7c6c9af03277d75d0d983c52" prot="public" virt="pure-virtual"><scope>shogun::CAttributeFeatures</scope><name>get_num_vectors</name></member>
+      <member refid="classshogun_1_1CFeatures_1ac1015e3a736e4e6d4d6fbe24416af6c4" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>get_preproc</name></member>
+      <member refid="classshogun_1_1CFeatures_1aeed80a002f6255d1ca5c8d1698deb7bc" prot="public" virt="pure-virtual"><scope>shogun::CAttributeFeatures</scope><name>get_size</name></member>
+      <member refid="classshogun_1_1CFeatures_1a07f1d7dc618a9f5f76663d80ad549d38" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a1248f8829f63f9c9a42ac36065961295" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>is_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1a6412ef81478c3c9dadac2a87a544f640" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>list_feature_obj</name></member>
+      <member refid="classshogun_1_1CFeatures_1adef76a926672875a64aedd2b00c8f2bd" prot="public" virt="virtual"><scope>shogun::CAttributeFeatures</scope><name>load</name></member>
+      <member refid="classshogun_1_1CFeatures_1a57d67048d44a7a7ea92bcbdfed9060ea" prot="public" virt="virtual"><scope>shogun::CAttributeFeatures</scope><name>reshape</name></member>
+      <member refid="classshogun_1_1CFeatures_1ae1341e3fa42733d8729d8f2dcf73709b" prot="public" virt="virtual"><scope>shogun::CAttributeFeatures</scope><name>save</name></member>
+      <member refid="classshogun_1_1CAttributeFeatures_1a3ded34322a1009b507a96eab65d69589" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>set_attribute</name></member>
+      <member refid="classshogun_1_1CFeatures_1aa88c27c0f3885d23ac71c4cc2e55c431" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>set_preprocessed</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab43db0bd4a231249ce4bc65f6e15f695" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CFeatures_1a3ff3f03688a7f6a1b36dab8677407166" prot="public" virt="non-virtual"><scope>shogun::CAttributeFeatures</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CAttributeFeatures_1a3395ec5af29a25f74bb1b5266a04bdb1" prot="public" virt="virtual"><scope>shogun::CAttributeFeatures</scope><name>~CAttributeFeatures</name></member>
+      <member refid="classshogun_1_1CFeatures_1ab0e2a8a18ac5056f802e4aa51d4fcd4f" prot="public" virt="virtual"><scope>shogun::CAttributeFeatures</scope><name>~CFeatures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

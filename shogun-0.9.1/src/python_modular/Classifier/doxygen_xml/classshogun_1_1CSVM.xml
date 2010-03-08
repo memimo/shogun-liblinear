@@ -1,0 +1,987 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CSVM" kind="class" prot="public">
+    <compoundname>shogun::CSVM</compoundname>
+    <basecompoundref refid="classshogun_1_1CKernelMachine" prot="public" virt="non-virtual">shogun::CKernelMachine</basecompoundref>
+    <derivedcompoundref refid="classshogun_1_1CGNPPSVM" prot="public" virt="non-virtual">shogun::CGNPPSVM</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CGPBTSVM" prot="public" virt="non-virtual">shogun::CGPBTSVM</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CLibSVM" prot="public" virt="non-virtual">shogun::CLibSVM</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CLibSVMOneClass" prot="public" virt="non-virtual">shogun::CLibSVMOneClass</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CMKL" prot="public" virt="non-virtual">shogun::CMKL</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CMPDSVM" prot="public" virt="non-virtual">shogun::CMPDSVM</derivedcompoundref>
+    <derivedcompoundref refid="classshogun_1_1CMultiClassSVM" prot="public" virt="non-virtual">shogun::CMultiClassSVM</derivedcompoundref>
+    <includes local="no">SVM.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CSVM_1a4103dd9a97319317117e84e5cb9ce473" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; float64_t &gt;</type>
+        <definition>std::vector&lt;float64_t&gt; shogun::CSVM::linear_term</definition>
+        <argsstring></argsstring>
+        <name>linear_term</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>linear term in qp </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="288" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVM_1a883d54a63cea716452a35467c90c0d97" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CSVM::svm_loaded</definition>
+        <argsstring></argsstring>
+        <name>svm_loaded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if SVM is loaded </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="291" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVM_1a79f6290f97bdc9178917f6f37f883007" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVM::epsilon</definition>
+        <argsstring></argsstring>
+        <name>epsilon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>epsilon </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="293" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVM_1aac8050c6b0d7d922330de0fa3e8c1570" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVM::tube_epsilon</definition>
+        <argsstring></argsstring>
+        <name>tube_epsilon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tube epsilon for support vector regression </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="295" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVM_1a13b42636b6f32acb975043ad16e77b0a" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVM::nu</definition>
+        <argsstring></argsstring>
+        <name>nu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>nu </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="297" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVM_1abbb1e87fd73520b279ed68913e7d3952" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVM::C1</definition>
+        <argsstring></argsstring>
+        <name>C1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>C1 regularization const </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="299" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVM_1adc7f13258df96749be0c0af03d73b1a3" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVM::C2</definition>
+        <argsstring></argsstring>
+        <name>C2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>C2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="301" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVM_1a1793d92e74d09027ce319f5e6bf55f87" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVM::objective</definition>
+        <argsstring></argsstring>
+        <name>objective</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>objective </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="303" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVM_1af10c87729b08be38d1bbe7daa1502420" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSVM::qpsize</definition>
+        <argsstring></argsstring>
+        <name>qpsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>qpsize </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="305" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVM_1a38e40e0db03787a48f54877e53f1f49b" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CSVM::use_shrinking</definition>
+        <argsstring></argsstring>
+        <name>use_shrinking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if shrinking shall be used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="307" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVM_1aede8a7c6c1c29ef037648e55f79ea582" prot="protected" static="no" mutable="no">
+        <type>bool(*</type>
+        <definition>bool(* shogun::CSVM::callback)(CMKL *mkl, const float64_t *sumw, const float64_t suma)</definition>
+        <argsstring>)(CMKL *mkl, const float64_t *sumw, const float64_t suma)</argsstring>
+        <name>callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>callback function svm optimizers may call when they have a new (small) set of alphas </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="311"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CSVM_1a94d628c09667f3b469ad4852f9e29690" prot="protected" static="no" mutable="no">
+        <type><ref refid="classshogun_1_1CMKL" kindref="compound">CMKL</ref> *</type>
+        <definition>CMKL* shogun::CSVM::mkl</definition>
+        <argsstring></argsstring>
+        <name>mkl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mkl object that svm optimizers need to pass when calling the callback function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="314" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a9ed20fde9ba51b6f4a174e6bcdee9bb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSVM::CSVM</definition>
+        <argsstring>(int32_t num_sv=0)</argsstring>
+        <name>CSVM</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num_sv</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an empty Support Vector Machine Object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_sv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>with num_sv support vectors </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1ac921019d10ab940c9b9eb430cb0af50d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CSVM::CSVM</definition>
+        <argsstring>(float64_t C, CKernel *k, CLabels *lab)</argsstring>
+        <name>CSVM</name>
+        <param>
+          <type>float64_t</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>CKernel *</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>CLabels *</type>
+          <declname>lab</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a Support Vector Machine Object from a trained SVM</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the C parameter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Kernel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Label object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1aaa7cb652cc6a927d00b696637efccd49" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CSVM::~CSVM</definition>
+        <argsstring>()</argsstring>
+        <name>~CSVM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1ac882137277cca76b55c28541ddc5e542" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVM::set_defaults</definition>
+        <argsstring>(int32_t num_sv=0)</argsstring>
+        <name>set_defaults</name>
+        <param>
+          <type>int32_t</type>
+          <declname>num_sv</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set default values for members a SVM object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a97b1aa0697b753cc3898dbb8790bdcfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; float64_t &gt;</type>
+        <definition>virtual std::vector&lt;float64_t&gt; shogun::CSVM::get_linear_term</definition>
+        <argsstring>()</argsstring>
+        <name>get_linear_term</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get linear term</para><para><simplesect kind="return"><para>lin the linear term </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a3b8ec9a1ff4992e6f9e400568aa06d09" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CSVM::set_linear_term</definition>
+        <argsstring>(std::vector&lt; float64_t &gt; lin)</argsstring>
+        <name>set_linear_term</name>
+        <param>
+          <type>std::vector&lt; float64_t &gt;</type>
+          <declname>lin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set linear term of the QP</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the linear term </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a53bdb4afaf8f88c2e52d783b28d68703" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool shogun::CSVM::load</definition>
+        <argsstring>(FILE *svm_file)</argsstring>
+        <name>load</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a956f6d34ff60d2d775eed5cbef17e8f3">load</reimplements>
+        <reimplementedby refid="classshogun_1_1CMultiClassSVM_1aae1a53b37fde5117f1447b73ea1c48e8">load</reimplementedby>
+        <param>
+          <type>FILE *</type>
+          <declname>svm_file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load a SVM from file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>svm_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the file handle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1aec8a6cbb16a1803a291f383ef8eb7c71" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool shogun::CSVM::save</definition>
+        <argsstring>(FILE *svm_file)</argsstring>
+        <name>save</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a3df725f5632f1c052028899d8bbe28f6">save</reimplements>
+        <reimplementedby refid="classshogun_1_1CMultiClassSVM_1a3e6e8e7881d36abb38e4b65cb632e0a9">save</reimplementedby>
+        <param>
+          <type>FILE *</type>
+          <declname>svm_file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>write a SVM to a file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>svm_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the file handle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a80eb31d8811d31e4612a0856424db063" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVM::set_nu</definition>
+        <argsstring>(float64_t nue)</argsstring>
+        <name>set_nu</name>
+        <param>
+          <type>float64_t</type>
+          <declname>nue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set nu</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new nu </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="99" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1af745c6d5d45c5225c4d2a0b8743632db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVM::set_C</definition>
+        <argsstring>(float64_t c1, float64_t c2)</argsstring>
+        <name>set_C</name>
+        <param>
+          <type>float64_t</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set C</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new C constant for negatively labelled examples </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new C constant for positively labelled examples</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Note that not all SVMs support this (however at least <ref refid="classshogun_1_1CLibSVM" kindref="compound">CLibSVM</ref> and CSVMLight do) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="109" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a49773823645284d75da2b22a1707b9e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVM::set_epsilon</definition>
+        <argsstring>(float64_t eps)</argsstring>
+        <name>set_epsilon</name>
+        <param>
+          <type>float64_t</type>
+          <declname>eps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set epsilon</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new epsilon </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="115" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a197e3be46c604e75917e6f197562f3da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVM::set_tube_epsilon</definition>
+        <argsstring>(float64_t eps)</argsstring>
+        <name>set_tube_epsilon</name>
+        <param>
+          <type>float64_t</type>
+          <declname>eps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set tube epsilon</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new tube epsilon </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="121" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a349a01da8d94a5ce76475a205b9a0d17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVM::set_qpsize</definition>
+        <argsstring>(int32_t qps)</argsstring>
+        <name>set_qpsize</name>
+        <param>
+          <type>int32_t</type>
+          <declname>qps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set qpsize</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>qps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new qpsize </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="127" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="127" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1abf4c3abcdc8f5f5ce5dca52abc631e63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVM::get_epsilon</definition>
+        <argsstring>()</argsstring>
+        <name>get_epsilon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get epsilon</para><para><simplesect kind="return"><para>epsilon </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="133" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="133" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1aa7899e8953ff5bcce8918e5095430552" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVM::get_nu</definition>
+        <argsstring>()</argsstring>
+        <name>get_nu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get nu</para><para><simplesect kind="return"><para>nu </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="139" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="139" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1aa925c40d161f332b21f5f6c1d5a9e30b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVM::get_C1</definition>
+        <argsstring>()</argsstring>
+        <name>get_C1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get C1</para><para><simplesect kind="return"><para>C1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="145" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="145" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a282a427d35615fe4ce9582d3efc6b766" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVM::get_C2</definition>
+        <argsstring>()</argsstring>
+        <name>get_C2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get C2</para><para><simplesect kind="return"><para>C2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="151" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="151" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1aa9f220fc5a0f7222fe8a71316ffa0310" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CSVM::get_qpsize</definition>
+        <argsstring>()</argsstring>
+        <name>get_qpsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get qpsize</para><para><simplesect kind="return"><para>qpsize </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="157" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="157" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a3fb0649330798f231b7e864ef3659e8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVM::set_shrinking_enabled</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>set_shrinking_enabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set state of shrinking</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if shrinking will be enabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="164" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a727c64fadb95845ffc75f0d9d1766076" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CSVM::get_shrinking_enabled</definition>
+        <argsstring>()</argsstring>
+        <name>get_shrinking_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get state of shrinking</para><para><simplesect kind="return"><para>if shrinking is enabled </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="173" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="172" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a799f48e17928a04f8a59e8e11450d87d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVM::compute_svm_dual_objective</definition>
+        <argsstring>()</argsstring>
+        <name>compute_svm_dual_objective</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute svm dual objective</para><para><simplesect kind="return"><para>computed dual objective </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1ac7a7ccc604d92c07745f0d20e3cd681f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVM::compute_svm_primal_objective</definition>
+        <argsstring>()</argsstring>
+        <name>compute_svm_primal_objective</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute svm primal objective</para><para><simplesect kind="return"><para>computed svm primal objective </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a9fedfc8004e361f44a9eef1248088c16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVM::set_objective</definition>
+        <argsstring>(float64_t v)</argsstring>
+        <name>set_objective</name>
+        <param>
+          <type>float64_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set objective</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>objective </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="194" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="193" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a1a825064f5599e4d3a78d595565c936a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CSVM::get_objective</definition>
+        <argsstring>()</argsstring>
+        <name>get_objective</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get objective</para><para><simplesect kind="return"><para>objective </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="203" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="202" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a2798c8deb9a8712d9f49666dd1fb19d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CSVM::set_callback_function</definition>
+        <argsstring>(CMKL *m, bool(*cb)(CMKL *mkl, const float64_t *sumw, const float64_t suma))</argsstring>
+        <name>set_callback_function</name>
+        <param>
+          <type><ref refid="classshogun_1_1CMKL" kindref="compound">CMKL</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>bool(*)(<ref refid="classshogun_1_1CMKL" kindref="compound">CMKL</ref> *<ref refid="classshogun_1_1CSVM_1a94d628c09667f3b469ad4852f9e29690" kindref="member">mkl</ref>, const float64_t *sumw, const float64_t suma)</type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set callback function svm optimizers may call when they have a new (small) set of alphas</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to mkl object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a78b2baa898294c079e52cedc5c6102a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CSVM::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <reimplementedby refid="classshogun_1_1CScatterSVM_1abcd3ead514e2560cdf50e16224f618bc">get_name</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMPDSVM_1ad87c11d3105c26f99dc4a88b49f4dfd0">get_name</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLibSVMOneClass_1ae1e79eecd0510fd8cf11f6d3c435619d">get_name</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLibSVMMultiClass_1a491fd60e94841df52f83daf9a9489c6b">get_name</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLibSVM_1ad46ccf05ca48b8f658803fcad0a474e9">get_name</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CLaRank_1a947c89efca41841af950c7cf978b3da1">get_name</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CGPBTSVM_1a9d7f2b13c69f9447c5888bff65ee9a3c">get_name</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CGNPPSVM_1a4a854b8f93db4bf5d978cc69b782a130">get_name</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CGMNPSVM_1a3bfafb3be7e75cc76a59e8ee95adf5ff">get_name</reimplementedby>
+        <reimplementedby refid="classshogun_1_1CMKL_1aaa98be05bc9d5ff0c489c30343d28914">get_name</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="218" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="218" bodyend="218"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CSVM_1a8dda3a8c4315f988dd1d1dd791bd8152" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t *</type>
+        <definition>virtual float64_t* shogun::CSVM::get_linear_term_array</definition>
+        <argsstring>()</argsstring>
+        <name>get_linear_term_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get linear term copy as dynamic array</para><para><simplesect kind="return"><para>linear term copied to a dynamic array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="285"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A generic Support Vector Machine Interface. </para>    </briefdescription>
+    <detaileddescription>
+<para>A support vector machine is defined as <formula id="0">\[ f({\bf x})=\sum_{i=0}^{N-1} \alpha_i k({\bf x}, {\bf x_i})+b \]</formula></para><para>where <formula id="1">$N$</formula> is the number of training examples <formula id="2">$\alpha_i$</formula> are the weights assigned to each training example <formula id="3">$k(x,x&apos;)$</formula> is the kernel and <formula id="4">$b$</formula> the bias.</para><para>Using an a-priori choosen kernel, the <formula id="2">$\alpha_i$</formula> and bias are determined by solving the following quadratic program</para><para><formula id="23">\begin{eqnarray*} \max_{\bf \alpha} &amp;&amp; \sum_{i=0}^{N-1} \alpha_i - \sum_{i=0}^{N-1}\sum_{j=0}^{N-1} \alpha_i y_i \alpha_j y_j k({\bf x_i}, {\bf x_j})\\ \mbox{s.t.} &amp;&amp; 0\leq\alpha_i\leq C\\ &amp;&amp; \sum_{i=0}^{N-1} \alpha_i y_i=0\\ \end{eqnarray*}</formula> here C is a pre-specified regularization parameter. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="278">
+        <label>shogun::CMKLOneClass</label>
+        <link refid="classshogun_1_1CMKLOneClass"/>
+        <childnode refid="276" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>shogun::CGPBTSVM</label>
+        <link refid="classshogun_1_1CGPBTSVM"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="283">
+        <label>shogun::CLibSVMMultiClass</label>
+        <link refid="classshogun_1_1CLibSVMMultiClass"/>
+        <childnode refid="280" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>shogun::CGNPPSVM</label>
+        <link refid="classshogun_1_1CGNPPSVM"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="275">
+        <label>shogun::CLibSVMOneClass</label>
+        <link refid="classshogun_1_1CLibSVMOneClass"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="279">
+        <label>shogun::CMPDSVM</label>
+        <link refid="classshogun_1_1CMPDSVM"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="284">
+        <label>shogun::CMKLMultiClass</label>
+        <link refid="classshogun_1_1CMKLMultiClass"/>
+        <childnode refid="280" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="270">
+        <label>shogun::CKernelMachine</label>
+        <link refid="classshogun_1_1CKernelMachine"/>
+        <childnode refid="271" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>shogun::CMultiClassSVM</label>
+        <link refid="classshogun_1_1CMultiClassSVM"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>shogun::CMKL</label>
+        <link refid="classshogun_1_1CMKL"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>shogun::CScatterSVM</label>
+        <link refid="classshogun_1_1CScatterSVM"/>
+        <childnode refid="280" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="274">
+        <label>shogun::CLibSVM</label>
+        <link refid="classshogun_1_1CLibSVM"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="271">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+      <node id="269">
+        <label>shogun::CSVM</label>
+        <link refid="classshogun_1_1CSVM"/>
+        <childnode refid="270" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>shogun::CGMNPSVM</label>
+        <link refid="classshogun_1_1CGMNPSVM"/>
+        <childnode refid="280" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="282">
+        <label>shogun::CLaRank</label>
+        <link refid="classshogun_1_1CLaRank"/>
+        <childnode refid="280" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="277">
+        <label>shogun::CMKLClassification</label>
+        <link refid="classshogun_1_1CMKLClassification"/>
+        <childnode refid="276" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="287">
+        <label>shogun::CKernelMachine</label>
+        <link refid="classshogun_1_1CKernelMachine"/>
+        <childnode refid="288" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>shogun::CMKL</label>
+        <link refid="classshogun_1_1CMKL"/>
+        <childnode refid="286" relation="public-inheritance">
+        </childnode>
+        <childnode refid="286" relation="usage">
+          <edgelabel>svm</edgelabel>
+        </childnode>
+      </node>
+      <node id="288">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+      <node id="286">
+        <label>shogun::CSVM</label>
+        <link refid="classshogun_1_1CSVM"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+        <childnode refid="289" relation="usage">
+          <edgelabel>mkl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" line="47" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/svm/SVM.h" bodystart="46" bodyend="315"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CSVM_1abbb1e87fd73520b279ed68913e7d3952" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>C1</name></member>
+      <member refid="classshogun_1_1CSVM_1adc7f13258df96749be0c0af03d73b1a3" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>C2</name></member>
+      <member refid="classshogun_1_1CSVM_1aede8a7c6c1c29ef037648e55f79ea582" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>callback</name></member>
+      <member refid="classshogun_1_1CClassifier_1a37259b3ffbe96af1eda8dd2d9428221c" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>CClassifier</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1af2d719c7dd34401eb1544a6124e88046" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>CKernelMachine</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a38ead2ce9c9b727eb20a463c42c9ce53" prot="public" virt="virtual"><scope>shogun::CSVM</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ad9cf8044ff5e5dadb06f74903cf248a8" prot="public" virt="virtual"><scope>shogun::CSVM</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ab081d4a3c5762b75e9b786b8d1025402" prot="public" virt="virtual"><scope>shogun::CSVM</scope><name>classify_example</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a842c2010c3c0716616facc0592e39191" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>classify_example_helper</name></member>
+      <member refid="classshogun_1_1CSVM_1a799f48e17928a04f8a59e8e11450d87d" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>compute_svm_dual_objective</name></member>
+      <member refid="classshogun_1_1CSVM_1ac7a7ccc604d92c07745f0d20e3cd681f" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>compute_svm_primal_objective</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1aadb3dcfa41bcdb3cedb4bb590c421f99" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>create_new_model</name></member>
+      <member refid="classshogun_1_1CSVM_1a9ed20fde9ba51b6f4a174e6bcdee9bb2" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>CSVM</name></member>
+      <member refid="classshogun_1_1CSVM_1ac921019d10ab940c9b9eb430cb0af50d" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>CSVM</name></member>
+      <member refid="classshogun_1_1CSVM_1a79f6290f97bdc9178917f6f37f883007" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>epsilon</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a52348988d896bcda6a005c9af0424655" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_alpha</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a34137de1f460aaa60bb888bc42cd8987" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_alphas</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a21f1f26eab5e1177fbb0a5b361020ac2" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_batch_computation_enabled</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a3221b3acb94edfe8cdefa2fc659c6fc8" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_bias</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1af7b87d7a2438e8e74e8fb689e609c83b" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_bias_enabled</name></member>
+      <member refid="classshogun_1_1CSVM_1aa925c40d161f332b21f5f6c1d5a9e30b" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_C1</name></member>
+      <member refid="classshogun_1_1CSVM_1a282a427d35615fe4ce9582d3efc6b766" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_C2</name></member>
+      <member refid="classshogun_1_1CClassifier_1a52d05215c6b6a252650c41a0b29d8cc5" prot="public" virt="virtual"><scope>shogun::CSVM</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CSVM_1abf4c3abcdc8f5f5ce5dca52abc631e63" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_epsilon</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1aa065ba2b4863e152beb95c03aa6add24" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_kernel</name></member>
+      <member refid="classshogun_1_1CClassifier_1a787dcde8fe53a734fcb77f988d821408" prot="public" virt="virtual"><scope>shogun::CSVM</scope><name>get_label</name></member>
+      <member refid="classshogun_1_1CClassifier_1a5f1f62d263b6201e1624990deadba5a8" prot="public" virt="virtual"><scope>shogun::CSVM</scope><name>get_labels</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1acc42836c7731c0f029ebd77f045e25cf" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_linadd_enabled</name></member>
+      <member refid="classshogun_1_1CSVM_1a97b1aa0697b753cc3898dbb8790bdcfc" prot="public" virt="virtual"><scope>shogun::CSVM</scope><name>get_linear_term</name></member>
+      <member refid="classshogun_1_1CSVM_1a8dda3a8c4315f988dd1d1dd791bd8152" prot="protected" virt="virtual"><scope>shogun::CSVM</scope><name>get_linear_term_array</name></member>
+      <member refid="classshogun_1_1CClassifier_1a6e48967294c55850d95235d487ce2c02" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_max_train_time</name></member>
+      <member refid="classshogun_1_1CSVM_1a78b2baa898294c079e52cedc5c6102a0" prot="public" virt="virtual"><scope>shogun::CSVM</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CSVM_1aa7899e8953ff5bcce8918e5095430552" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_nu</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a639f528d6956936a482523bdc04eb4b5" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_num_support_vectors</name></member>
+      <member refid="classshogun_1_1CSVM_1a1a825064f5599e4d3a78d595565c936a" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_objective</name></member>
+      <member refid="classshogun_1_1CSVM_1aa9f220fc5a0f7222fe8a71316ffa0310" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_qpsize</name></member>
+      <member refid="classshogun_1_1CSVM_1a727c64fadb95845ffc75f0d9d1766076" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_shrinking_enabled</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8a3acda6819b4a4b77b656b6b9e1817c" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_solver_type</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a340532552838d25c1a0917d59de1dbee" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_support_vector</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a50bd31e7cf0cabc0ec41896ab97292fa" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>get_support_vectors</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a0915cae39b88af20c288fbc1f5979afb" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>init_kernel_optimization</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a6d47114463588d9dbd672180dc2e7357" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>kernel</name></member>
+      <member refid="classshogun_1_1CClassifier_1a68f1285e63422a24319ed95910d72f73" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>labels</name></member>
+      <member refid="classshogun_1_1CSVM_1a4103dd9a97319317117e84e5cb9ce473" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>linear_term</name></member>
+      <member refid="classshogun_1_1CSVM_1a53bdb4afaf8f88c2e52d783b28d68703" prot="public" virt="virtual"><scope>shogun::CSVM</scope><name>load</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ac40c305fb5587c0004d5338ea6d712d2" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>m_alpha</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a5c8a9af0e7b79d02d0be95b3cd8e9910" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>m_bias</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a7e1c9037fb66d596c5dd83c28b8dce6d" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>m_svs</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8524d634a67f3538b112f72d7835af46" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>max_train_time</name></member>
+      <member refid="classshogun_1_1CSVM_1a94d628c09667f3b469ad4852f9e29690" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>mkl</name></member>
+      <member refid="classshogun_1_1CSVM_1a13b42636b6f32acb975043ad16e77b0a" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>nu</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ab4fbabe44610f09e33362234eb131432" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>num_svs</name></member>
+      <member refid="classshogun_1_1CSVM_1a1793d92e74d09027ce319f5e6bf55f87" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>objective</name></member>
+      <member refid="classshogun_1_1CSVM_1af10c87729b08be38d1bbe7daa1502420" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>qpsize</name></member>
+      <member refid="classshogun_1_1CSVM_1aec8a6cbb16a1803a291f383ef8eb7c71" prot="public" virt="virtual"><scope>shogun::CSVM</scope><name>save</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a804a4f283e98849f4b85a6d52371a848" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_alpha</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ae057fbcb6071331223f1a26de82d1f88" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_alphas</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a1bef02fca7cd9808c9c67c898109a8d2" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_batch_computation_enabled</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a5edc82a48029b91216251b354d341452" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_bias</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a95eb6221dd46fe2dc9fb42b53845df36" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_bias_enabled</name></member>
+      <member refid="classshogun_1_1CSVM_1af745c6d5d45c5225c4d2a0b8743632db" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_C</name></member>
+      <member refid="classshogun_1_1CSVM_1a2798c8deb9a8712d9f49666dd1fb19d6" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_callback_function</name></member>
+      <member refid="classshogun_1_1CSVM_1ac882137277cca76b55c28541ddc5e542" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_defaults</name></member>
+      <member refid="classshogun_1_1CSVM_1a49773823645284d75da2b22a1707b9e7" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_epsilon</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a9a26799c7d6769d6f7d052b984718c72" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_kernel</name></member>
+      <member refid="classshogun_1_1CClassifier_1aa6b87d22c14fc2b6970d8bf1edbb15fb" prot="public" virt="virtual"><scope>shogun::CSVM</scope><name>set_labels</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a605209bfe9a431912fc9a718df808887" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_linadd_enabled</name></member>
+      <member refid="classshogun_1_1CSVM_1a3b8ec9a1ff4992e6f9e400568aa06d09" prot="public" virt="virtual"><scope>shogun::CSVM</scope><name>set_linear_term</name></member>
+      <member refid="classshogun_1_1CClassifier_1af8930a0a848388d8647c9e4604a7856d" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_max_train_time</name></member>
+      <member refid="classshogun_1_1CSVM_1a80eb31d8811d31e4612a0856424db063" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_nu</name></member>
+      <member refid="classshogun_1_1CSVM_1a9fedfc8004e361f44a9eef1248088c16" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_objective</name></member>
+      <member refid="classshogun_1_1CSVM_1a349a01da8d94a5ce76475a205b9a0d17" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_qpsize</name></member>
+      <member refid="classshogun_1_1CSVM_1a3fb0649330798f231b7e864ef3659e8f" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_shrinking_enabled</name></member>
+      <member refid="classshogun_1_1CClassifier_1a4c87d6f3a2342c3053aeca82c3cf528c" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_solver_type</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a2746562f3c38954ca0a27089cfbd6eeb" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_support_vector</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a69402864eced218da049c53529138c45" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_support_vectors</name></member>
+      <member refid="classshogun_1_1CSVM_1a197e3be46c604e75917e6f197562f3da" prot="public" virt="non-virtual"><scope>shogun::CSVM</scope><name>set_tube_epsilon</name></member>
+      <member refid="classshogun_1_1CClassifier_1a360902e938d7b8890084c5bc6df617be" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>solver_type</name></member>
+      <member refid="classshogun_1_1CSVM_1a883d54a63cea716452a35467c90c0d97" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>svm_loaded</name></member>
+      <member refid="classshogun_1_1CClassifier_1a9904cc0a8d7ec077cc1fede8d64ebb22" prot="public" virt="virtual"><scope>shogun::CSVM</scope><name>train</name></member>
+      <member refid="classshogun_1_1CSVM_1aac8050c6b0d7d922330de0fa3e8c1570" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>tube_epsilon</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1ade160206d7ddebd3ab2f8d1f40aaa7f9" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>use_batch_computation</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1abf9e9cb89f609d79b36a4d1a7f6945b9" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>use_bias</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a8dde883a0c2f53867711a2408e3bef16" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>use_linadd</name></member>
+      <member refid="classshogun_1_1CSVM_1a38e40e0db03787a48f54877e53f1f49b" prot="protected" virt="non-virtual"><scope>shogun::CSVM</scope><name>use_shrinking</name></member>
+      <member refid="classshogun_1_1CClassifier_1ae7d6c7d39fb314c1092163e958ef66a8" prot="public" virt="virtual"><scope>shogun::CSVM</scope><name>~CClassifier</name></member>
+      <member refid="classshogun_1_1CKernelMachine_1a5d9a0f4626b37665f847cf209e94a2ed" prot="public" virt="virtual"><scope>shogun::CSVM</scope><name>~CKernelMachine</name></member>
+      <member refid="classshogun_1_1CSVM_1aaa7cb652cc6a927d00b696637efccd49" prot="public" virt="virtual"><scope>shogun::CSVM</scope><name>~CSVM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

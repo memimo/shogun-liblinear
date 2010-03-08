@@ -1,0 +1,1226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CPlif" kind="class" prot="public">
+    <compoundname>shogun::CPlif</compoundname>
+    <basecompoundref refid="classshogun_1_1CPlifBase" prot="public" virt="non-virtual">shogun::CPlifBase</basecompoundref>
+    <includes local="no">Plif.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CPlif_1a4ca689b6cf374d1683f306e1ec36602b" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPlif::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>len </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="433" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlif_1aa6af75b0fc40a2ca7cfd773fd9f029ea" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CPlif::limits</definition>
+        <argsstring></argsstring>
+        <name>limits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>limits </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="435" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlif_1a971fa95aa9d1a89fe6c2e4325d640bd8" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CPlif::penalties</definition>
+        <argsstring></argsstring>
+        <name>penalties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>penalties </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="437" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlif_1a7cc3ef8179c5c1fee38cc9bea60b562b" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CPlif::cum_derivatives</definition>
+        <argsstring></argsstring>
+        <name>cum_derivatives</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cum derivatives </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="439" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlif_1afd2d6587eb502bed90ad6365dc00c20c" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPlif::max_value</definition>
+        <argsstring></argsstring>
+        <name>max_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="441" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlif_1ae0eef8c4e7e726e1ff2601e08c6606a1" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPlif::min_value</definition>
+        <argsstring></argsstring>
+        <name>min_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>minimum value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="443" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlif_1a03a085043580a0400c65fe240b7a5a75" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CPlif::cache</definition>
+        <argsstring></argsstring>
+        <name>cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cache </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="445" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlif_1a3c972044e0b60333fc599e87fde3cc8b" prot="protected" static="no" mutable="no">
+        <type>enum ETransformType</type>
+        <definition>enum ETransformType shogun::CPlif::transform</definition>
+        <argsstring></argsstring>
+        <name>transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>transform type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="447" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlif_1a9b9d2df99dc14a307f7328dab7043038" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPlif::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>id </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="449" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="449" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlif_1ae7ee27a4dc15704ca9eb1a85af80c3a1" prot="protected" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* shogun::CPlif::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="451" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlif_1a36437331007e90f254c3b28b45960682" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPlif::use_svm</definition>
+        <argsstring></argsstring>
+        <name>use_svm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if SVM shall be used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="453" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="453" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlif_1a90fb771377f1f3bb9ca719f2d64d1a15" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CPlif::use_cache</definition>
+        <argsstring></argsstring>
+        <name>use_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if cache shall be used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="455" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPlif_1a99d550ac0885621b73080c3dc3064b3c" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CPlif::do_calc</definition>
+        <argsstring></argsstring>
+        <name>do_calc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>do calc if this is true: lookup_penalty behaves normal else: lookup_penalty returns the p_value untransformed </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="459" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a56f618b301fd3fe8bd79b69c80098acc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CPlif::CPlif</definition>
+        <argsstring>(int32_t len=0)</argsstring>
+        <name>CPlif</name>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1af2aa861e5d05423d0eae533a1fb13e8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CPlif::~CPlif</definition>
+        <argsstring>()</argsstring>
+        <name>~CPlif</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a418b6f063076449c5c76c1fa69aa04f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::init_penalty_struct_cache</definition>
+        <argsstring>()</argsstring>
+        <name>init_penalty_struct_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>init penalty struct cache </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a41e2e56fa210a59fc305c0fc6b980432" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPlif::lookup_penalty_svm</definition>
+        <argsstring>(float64_t p_value, float64_t *d_values) const </argsstring>
+        <name>lookup_penalty_svm</name>
+        <param>
+          <type>float64_t</type>
+          <declname>p_value</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>d_values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>lookup penalty SVM</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>d values </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the penalty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a8f0799573d4af497c2397d6a089ae750" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPlif::lookup_penalty</definition>
+        <argsstring>(float64_t p_value, float64_t *svm_values) const </argsstring>
+        <name>lookup_penalty</name>
+        <reimplements refid="classshogun_1_1CPlifBase_1a9ff4b7568bab0306f2d9e8f1d983ce22">lookup_penalty</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>p_value</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>svm_values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>lookup penalty float64_t</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svm_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SVM values </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the penalty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1af34445360a6c667fa0e3ea54708316fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPlif::lookup_penalty</definition>
+        <argsstring>(int32_t p_value, float64_t *svm_values) const </argsstring>
+        <name>lookup_penalty</name>
+        <reimplements refid="classshogun_1_1CPlifBase_1af8617331ff6b061ad4f13a4c60656685">lookup_penalty</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>p_value</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>svm_values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>lookup penalty int32_t</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svm_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SVM values </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the penalty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1ab9b2299a2aba8a26e53564cf46e8e5f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPlif::lookup</definition>
+        <argsstring>(float64_t p_value)</argsstring>
+        <name>lookup</name>
+        <param>
+          <type>float64_t</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>lookup</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a penalty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="76" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="75" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a90fd1ab4ccf3e1249c5c56c055b5c161" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::penalty_clear_derivative</definition>
+        <argsstring>()</argsstring>
+        <name>penalty_clear_derivative</name>
+        <reimplements refid="classshogun_1_1CPlifBase_1a95ae7645d3ecded11da03e036c1acad5">penalty_clear_derivative</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>penalty clear derivative </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1aeeb1e5df9d96da03afd70a5f6570baef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::penalty_add_derivative_svm</definition>
+        <argsstring>(float64_t p_value, float64_t *svm_values, float64_t factor)</argsstring>
+        <name>penalty_add_derivative_svm</name>
+        <param>
+          <type>float64_t</type>
+          <declname>p_value</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>svm_values</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>penalty add derivative SVM</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svm_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SVM values </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>factor weighting the added value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a3d1296df1be845975932159731c0f22d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::penalty_add_derivative</definition>
+        <argsstring>(float64_t p_value, float64_t *svm_values, float64_t factor)</argsstring>
+        <name>penalty_add_derivative</name>
+        <reimplements refid="classshogun_1_1CPlifBase_1ad87a915ed7353543c8d6169f727d7cdc">penalty_add_derivative</reimplements>
+        <param>
+          <type>float64_t</type>
+          <declname>p_value</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>svm_values</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>penalty add derivative</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svm_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SVM values </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>factor weighting the added value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a2722811f6c4bc06d0b5b7e69f48cd8d6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const float64_t *</type>
+        <definition>const float64_t* shogun::CPlif::get_cum_derivative</definition>
+        <argsstring>(int32_t &amp;p_len) const </argsstring>
+        <name>get_cum_derivative</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>p_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get cum derivative</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>cum derivative </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="107" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="106" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a99a521b70e6f6d5ede1a9917ab25369a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CPlif::set_transform_type</definition>
+        <argsstring>(const char *type_str)</argsstring>
+        <name>set_transform_type</name>
+        <param>
+          <type>const char *</type>
+          <declname>type_str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set transform type</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type (string) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1ab9c5876edd7599a78c9c012029a0db34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* shogun::CPlif::get_transform_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_transform_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get transform type</para><para><simplesect kind="return"><para>type_str type (string) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="124" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="123" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a8c592ccffb75bcb16d760a15884fc393" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::set_id</definition>
+        <argsstring>(int32_t p_id)</argsstring>
+        <name>set_id</name>
+        <param>
+          <type>int32_t</type>
+          <declname>p_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set ID</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the id to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="146" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1ae2048370ec5c42541be25db47536583a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPlif::get_id</definition>
+        <argsstring>() const </argsstring>
+        <name>get_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get ID</para><para><simplesect kind="return"><para>the ID </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="155" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1ae7d809943bfd6026e49b5bee036a928d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPlif::get_max_id</definition>
+        <argsstring>() const </argsstring>
+        <name>get_max_id</name>
+        <reimplements refid="classshogun_1_1CPlifBase_1ae7b8f33cb08939abba1c6034b5b8c3e1">get_max_id</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get maximum ID</para><para><simplesect kind="return"><para>maximum ID </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="164" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a09097745e8e1332050a1d867b2571c72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::set_use_svm</definition>
+        <argsstring>(int32_t p_use_svm)</argsstring>
+        <name>set_use_svm</name>
+        <param>
+          <type>int32_t</type>
+          <declname>p_use_svm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set use SVM</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_use_svm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if SVM shall be used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="173" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="172" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a1b1ea811303155f1f3e274765a8720a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPlif::get_use_svm</definition>
+        <argsstring>() const </argsstring>
+        <name>get_use_svm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get use SVM</para><para><simplesect kind="return"><para>if SVM is used </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="183" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a8970be621a7d1c33d9a8240f0349c1c1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CPlif::uses_svm_values</definition>
+        <argsstring>() const </argsstring>
+        <name>uses_svm_values</name>
+        <reimplements refid="classshogun_1_1CPlifBase_1a155fb135af0a5cd8e33227a7abfa79ac">uses_svm_values</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check if plif uses SVM values</para><para><simplesect kind="return"><para>if plif uses SVM values </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="192" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="191" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a998ba4c6dbf83a0bd941a7a1f9526398" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::set_use_cache</definition>
+        <argsstring>(int32_t p_use_cache)</argsstring>
+        <name>set_use_cache</name>
+        <param>
+          <type>int32_t</type>
+          <declname>p_use_cache</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set use cache</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_use_cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if cache shall be used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="201" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="200" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1abff50ec6b39bd90e98153ccc6d9b9baa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::invalidate_cache</definition>
+        <argsstring>()</argsstring>
+        <name>invalidate_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>invalidate the cache </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="209" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="208" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1ad3777bfc30f71f0bdd18f538042c702d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPlif::get_use_cache</definition>
+        <argsstring>()</argsstring>
+        <name>get_use_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get use cache</para><para><simplesect kind="return"><para>if cache is used </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="219" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="218" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1aed099a47e34118e4112fd6a552474bdc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::set_plif</definition>
+        <argsstring>(int32_t p_len, float64_t *p_limits, float64_t *p_penalties)</argsstring>
+        <name>set_plif</name>
+        <param>
+          <type>int32_t</type>
+          <declname>p_len</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>p_limits</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>p_penalties</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set plif</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_limits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>limit </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_penalties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>penalties </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="231" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="229" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a2445518b49aeb54d619c29733b42d612" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::set_plif_limits</definition>
+        <argsstring>(float64_t *p_limits, int32_t p_len)</argsstring>
+        <name>set_plif_limits</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>p_limits</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set plif_limits</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_limits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>limit </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="250" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="249" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1ad27b88e55926afc0ea451ea57645eb15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::set_plif_penalty</definition>
+        <argsstring>(float64_t *p_penalties, int32_t p_len)</argsstring>
+        <name>set_plif_penalty</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>p_penalties</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>p_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set plif penalty</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_penalties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>penalties </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="269" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="268" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a711eefab688f0781575e04f36479577b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::set_plif_length</definition>
+        <argsstring>(int32_t p_len)</argsstring>
+        <name>set_plif_length</name>
+        <param>
+          <type>int32_t</type>
+          <declname>p_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set plif length</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="284" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="283" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a4d260ce98f8009420cdd331b3d905142" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CPlif::get_plif_limits</definition>
+        <argsstring>()</argsstring>
+        <name>get_plif_limits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get Plif limits</para><para><simplesect kind="return"><para>limits </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="313" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="312" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a5faa86346418fa8533bfdc3f7ed9c0de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CPlif::get_plif_penalties</definition>
+        <argsstring>()</argsstring>
+        <name>get_plif_penalties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get plif penalty</para><para><simplesect kind="return"><para>plif penalty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="322" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="321" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1ac07b88bb269103ed8223f9266e44c547" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::set_max_value</definition>
+        <argsstring>(float64_t p_max_value)</argsstring>
+        <name>set_max_value</name>
+        <param>
+          <type>float64_t</type>
+          <declname>p_max_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set maximum value</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_max_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="330" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="329" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a58b9bfb9f95cf976a46dcbc8f2a19e36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CPlif::get_max_value</definition>
+        <argsstring>() const </argsstring>
+        <name>get_max_value</name>
+        <reimplements refid="classshogun_1_1CPlifBase_1a80ce9e2caad934ff75f61d0ad4acd77a">get_max_value</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get maximum value</para><para><simplesect kind="return"><para>maximum value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="340" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="339" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a40ee8b511d580210ba315218ca95abbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::set_min_value</definition>
+        <argsstring>(float64_t p_min_value)</argsstring>
+        <name>set_min_value</name>
+        <param>
+          <type>float64_t</type>
+          <declname>p_min_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set minimum value</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_min_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="349" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="348" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1ab3745107f469935c13a7febc3c601d52" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CPlif::get_min_value</definition>
+        <argsstring>() const </argsstring>
+        <name>get_min_value</name>
+        <reimplements refid="classshogun_1_1CPlifBase_1a4a1c2905858144bcb62d885c0cc1d03e">get_min_value</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get minimum value</para><para><simplesect kind="return"><para>minimum value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="359" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="358" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1ae0bf2b83b21208bcd303bdaf83261042" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::set_plif_name</definition>
+        <argsstring>(char *p_name)</argsstring>
+        <name>set_plif_name</name>
+        <param>
+          <type>char *</type>
+          <declname>p_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set name</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1ad9d03eacd1c43e32389c75099a4d0af9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* shogun::CPlif::get_plif_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_plif_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get name</para><para><simplesect kind="return"><para>name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="374" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="373" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a4fe624ba8dcc6116ba8be55daf0bf628" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CPlif::get_do_calc</definition>
+        <argsstring>()</argsstring>
+        <name>get_do_calc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get do calc</para><para><simplesect kind="return"><para>if calc shall be done </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a6fc27389a925a4ad9935ea355a536223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::set_do_calc</definition>
+        <argsstring>(bool b)</argsstring>
+        <name>set_do_calc</name>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set do calc</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if calc shall be done </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="396"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a4ddc76ac6996c2644878df01ca0b9dda" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void shogun::CPlif::get_used_svms</definition>
+        <argsstring>(int32_t *num_svms, int32_t *svm_ids)</argsstring>
+        <name>get_used_svms</name>
+        <reimplements refid="classshogun_1_1CPlifBase_1a08a1e49cd2d40a620cf29f09aac9df02">get_used_svms</reimplements>
+        <param>
+          <type>int32_t *</type>
+          <declname>num_svms</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>svm_ids</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get SVM_ids and number of SVMs used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a1c5c3571b927fd0ce42e9457be2dc17b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPlif::get_plif_len</definition>
+        <argsstring>()</argsstring>
+        <name>get_plif_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get plif len</para><para><simplesect kind="return"><para>plif len </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="408" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="407" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1af09c8e36a3cbcac0a2cfbd634ad8919a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CPlif::list_plif</definition>
+        <argsstring>() const </argsstring>
+        <name>list_plif</name>
+        <reimplements refid="classshogun_1_1CPlifBase_1aca2dd7fc341657232ecbf0197ecaffb5">list_plif</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print PLIF</para><para>lists some properties of the PLIF </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="417" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="416" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPlif_1af0cc627914ebe08969101803a63514a8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CPlif::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="429" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="429" bodyend="429"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classshogun_1_1CPlif_1a45baaf40ee8c2a696a006ff8d623d56a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void shogun::CPlif::delete_penalty_struct</definition>
+        <argsstring>(CPlif **PEN, int32_t P)</argsstring>
+        <name>delete_penalty_struct</name>
+        <param>
+          <type><ref refid="classshogun_1_1CPlif" kindref="compound">CPlif</ref> **</type>
+          <declname>PEN</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>delete plif struct</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PEN</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of plifs </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of plif </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="426"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class Plif </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="10">
+        <label>shogun::CPlifBase</label>
+        <link refid="classshogun_1_1CPlifBase"/>
+      </node>
+      <node id="9">
+        <label>shogun::CPlif</label>
+        <link refid="classshogun_1_1CPlif"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="12">
+        <label>shogun::CPlifBase</label>
+        <link refid="classshogun_1_1CPlifBase"/>
+      </node>
+      <node id="11">
+        <label>shogun::CPlif</label>
+        <link refid="classshogun_1_1CPlif"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" line="32" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/structure/Plif.h" bodystart="31" bodyend="460"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CPlif_1a03a085043580a0400c65fe240b7a5a75" prot="protected" virt="non-virtual"><scope>shogun::CPlif</scope><name>cache</name></member>
+      <member refid="classshogun_1_1CPlif_1a56f618b301fd3fe8bd79b69c80098acc" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>CPlif</name></member>
+      <member refid="classshogun_1_1CPlifBase_1a620adc1eca5bfe97c2d04a95cb5c2808" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>CPlifBase</name></member>
+      <member refid="classshogun_1_1CPlif_1a7cc3ef8179c5c1fee38cc9bea60b562b" prot="protected" virt="non-virtual"><scope>shogun::CPlif</scope><name>cum_derivatives</name></member>
+      <member refid="classshogun_1_1CPlif_1a45baaf40ee8c2a696a006ff8d623d56a" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>delete_penalty_struct</name></member>
+      <member refid="classshogun_1_1CPlif_1a99d550ac0885621b73080c3dc3064b3c" prot="protected" virt="non-virtual"><scope>shogun::CPlif</scope><name>do_calc</name></member>
+      <member refid="classshogun_1_1CPlif_1a2722811f6c4bc06d0b5b7e69f48cd8d6" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>get_cum_derivative</name></member>
+      <member refid="classshogun_1_1CPlif_1a4fe624ba8dcc6116ba8be55daf0bf628" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>get_do_calc</name></member>
+      <member refid="classshogun_1_1CPlif_1ae2048370ec5c42541be25db47536583a" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>get_id</name></member>
+      <member refid="classshogun_1_1CPlif_1ae7d809943bfd6026e49b5bee036a928d" prot="public" virt="virtual"><scope>shogun::CPlif</scope><name>get_max_id</name></member>
+      <member refid="classshogun_1_1CPlif_1a58b9bfb9f95cf976a46dcbc8f2a19e36" prot="public" virt="virtual"><scope>shogun::CPlif</scope><name>get_max_value</name></member>
+      <member refid="classshogun_1_1CPlif_1ab3745107f469935c13a7febc3c601d52" prot="public" virt="virtual"><scope>shogun::CPlif</scope><name>get_min_value</name></member>
+      <member refid="classshogun_1_1CPlif_1af0cc627914ebe08969101803a63514a8" prot="public" virt="virtual"><scope>shogun::CPlif</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CPlif_1a1c5c3571b927fd0ce42e9457be2dc17b" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>get_plif_len</name></member>
+      <member refid="classshogun_1_1CPlif_1a4d260ce98f8009420cdd331b3d905142" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>get_plif_limits</name></member>
+      <member refid="classshogun_1_1CPlif_1ad9d03eacd1c43e32389c75099a4d0af9" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>get_plif_name</name></member>
+      <member refid="classshogun_1_1CPlif_1a5faa86346418fa8533bfdc3f7ed9c0de" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>get_plif_penalties</name></member>
+      <member refid="classshogun_1_1CPlif_1ab9c5876edd7599a78c9c012029a0db34" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>get_transform_type</name></member>
+      <member refid="classshogun_1_1CPlif_1ad3777bfc30f71f0bdd18f538042c702d" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>get_use_cache</name></member>
+      <member refid="classshogun_1_1CPlif_1a1b1ea811303155f1f3e274765a8720a3" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>get_use_svm</name></member>
+      <member refid="classshogun_1_1CPlif_1a4ddc76ac6996c2644878df01ca0b9dda" prot="public" virt="virtual"><scope>shogun::CPlif</scope><name>get_used_svms</name></member>
+      <member refid="classshogun_1_1CPlif_1a9b9d2df99dc14a307f7328dab7043038" prot="protected" virt="non-virtual"><scope>shogun::CPlif</scope><name>id</name></member>
+      <member refid="classshogun_1_1CPlif_1a418b6f063076449c5c76c1fa69aa04f7" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>init_penalty_struct_cache</name></member>
+      <member refid="classshogun_1_1CPlif_1abff50ec6b39bd90e98153ccc6d9b9baa" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>invalidate_cache</name></member>
+      <member refid="classshogun_1_1CPlif_1a4ca689b6cf374d1683f306e1ec36602b" prot="protected" virt="non-virtual"><scope>shogun::CPlif</scope><name>len</name></member>
+      <member refid="classshogun_1_1CPlif_1aa6af75b0fc40a2ca7cfd773fd9f029ea" prot="protected" virt="non-virtual"><scope>shogun::CPlif</scope><name>limits</name></member>
+      <member refid="classshogun_1_1CPlif_1af09c8e36a3cbcac0a2cfbd634ad8919a" prot="public" virt="virtual"><scope>shogun::CPlif</scope><name>list_plif</name></member>
+      <member refid="classshogun_1_1CPlif_1ab9b2299a2aba8a26e53564cf46e8e5f8" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>lookup</name></member>
+      <member refid="classshogun_1_1CPlif_1a8f0799573d4af497c2397d6a089ae750" prot="public" virt="virtual"><scope>shogun::CPlif</scope><name>lookup_penalty</name></member>
+      <member refid="classshogun_1_1CPlif_1af34445360a6c667fa0e3ea54708316fa" prot="public" virt="virtual"><scope>shogun::CPlif</scope><name>lookup_penalty</name></member>
+      <member refid="classshogun_1_1CPlif_1a41e2e56fa210a59fc305c0fc6b980432" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>lookup_penalty_svm</name></member>
+      <member refid="classshogun_1_1CPlif_1afd2d6587eb502bed90ad6365dc00c20c" prot="protected" virt="non-virtual"><scope>shogun::CPlif</scope><name>max_value</name></member>
+      <member refid="classshogun_1_1CPlif_1ae0eef8c4e7e726e1ff2601e08c6606a1" prot="protected" virt="non-virtual"><scope>shogun::CPlif</scope><name>min_value</name></member>
+      <member refid="classshogun_1_1CPlif_1ae7ee27a4dc15704ca9eb1a85af80c3a1" prot="protected" virt="non-virtual"><scope>shogun::CPlif</scope><name>name</name></member>
+      <member refid="classshogun_1_1CPlif_1a971fa95aa9d1a89fe6c2e4325d640bd8" prot="protected" virt="non-virtual"><scope>shogun::CPlif</scope><name>penalties</name></member>
+      <member refid="classshogun_1_1CPlif_1a3d1296df1be845975932159731c0f22d" prot="public" virt="virtual"><scope>shogun::CPlif</scope><name>penalty_add_derivative</name></member>
+      <member refid="classshogun_1_1CPlif_1aeeb1e5df9d96da03afd70a5f6570baef" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>penalty_add_derivative_svm</name></member>
+      <member refid="classshogun_1_1CPlif_1a90fd1ab4ccf3e1249c5c56c055b5c161" prot="public" virt="virtual"><scope>shogun::CPlif</scope><name>penalty_clear_derivative</name></member>
+      <member refid="classshogun_1_1CPlif_1a6fc27389a925a4ad9935ea355a536223" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>set_do_calc</name></member>
+      <member refid="classshogun_1_1CPlif_1a8c592ccffb75bcb16d760a15884fc393" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>set_id</name></member>
+      <member refid="classshogun_1_1CPlif_1ac07b88bb269103ed8223f9266e44c547" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>set_max_value</name></member>
+      <member refid="classshogun_1_1CPlif_1a40ee8b511d580210ba315218ca95abbb" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>set_min_value</name></member>
+      <member refid="classshogun_1_1CPlif_1aed099a47e34118e4112fd6a552474bdc" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>set_plif</name></member>
+      <member refid="classshogun_1_1CPlif_1a711eefab688f0781575e04f36479577b" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>set_plif_length</name></member>
+      <member refid="classshogun_1_1CPlif_1a2445518b49aeb54d619c29733b42d612" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>set_plif_limits</name></member>
+      <member refid="classshogun_1_1CPlif_1ae0bf2b83b21208bcd303bdaf83261042" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>set_plif_name</name></member>
+      <member refid="classshogun_1_1CPlif_1ad27b88e55926afc0ea451ea57645eb15" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>set_plif_penalty</name></member>
+      <member refid="classshogun_1_1CPlif_1a99a521b70e6f6d5ede1a9917ab25369a" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>set_transform_type</name></member>
+      <member refid="classshogun_1_1CPlif_1a998ba4c6dbf83a0bd941a7a1f9526398" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>set_use_cache</name></member>
+      <member refid="classshogun_1_1CPlif_1a09097745e8e1332050a1d867b2571c72" prot="public" virt="non-virtual"><scope>shogun::CPlif</scope><name>set_use_svm</name></member>
+      <member refid="classshogun_1_1CPlif_1a3c972044e0b60333fc599e87fde3cc8b" prot="protected" virt="non-virtual"><scope>shogun::CPlif</scope><name>transform</name></member>
+      <member refid="classshogun_1_1CPlif_1a90fb771377f1f3bb9ca719f2d64d1a15" prot="protected" virt="non-virtual"><scope>shogun::CPlif</scope><name>use_cache</name></member>
+      <member refid="classshogun_1_1CPlif_1a36437331007e90f254c3b28b45960682" prot="protected" virt="non-virtual"><scope>shogun::CPlif</scope><name>use_svm</name></member>
+      <member refid="classshogun_1_1CPlif_1a8970be621a7d1c33d9a8240f0349c1c1" prot="public" virt="virtual"><scope>shogun::CPlif</scope><name>uses_svm_values</name></member>
+      <member refid="classshogun_1_1CPlif_1af2aa861e5d05423d0eae533a1fb13e8a" prot="public" virt="virtual"><scope>shogun::CPlif</scope><name>~CPlif</name></member>
+      <member refid="classshogun_1_1CPlifBase_1a6831a5965086b09105430e82a45fba89" prot="public" virt="virtual"><scope>shogun::CPlif</scope><name>~CPlifBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

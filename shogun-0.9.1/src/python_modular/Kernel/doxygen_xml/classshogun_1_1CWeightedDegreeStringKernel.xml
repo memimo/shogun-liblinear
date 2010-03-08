@@ -1,0 +1,2286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CWeightedDegreeStringKernel" kind="class" prot="public">
+    <compoundname>shogun::CWeightedDegreeStringKernel</compoundname>
+    <basecompoundref refid="classshogun_1_1CStringKernel" prot="public" virt="non-virtual">shogun::CStringKernel&lt; char &gt;</basecompoundref>
+    <includes local="no">WeightedDegreeStringKernel.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1a29c9680329520088eea53551b8b49c2f" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CWeightedDegreeStringKernel::weights</definition>
+        <argsstring></argsstring>
+        <name>weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>degree*length weights length must match seq_length if != 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="845" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="845" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1a19be3b9d7383567dcd10f511bb405647" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CWeightedDegreeStringKernel::position_weights</definition>
+        <argsstring></argsstring>
+        <name>position_weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>position weights </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="847" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="847" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1a8475d4d49bf289fe2f1db28fb7e244f8" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CWeightedDegreeStringKernel::weights_buffer</definition>
+        <argsstring></argsstring>
+        <name>weights_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>weights buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="849" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="849" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1abf68278eb480cdc73114c467c005cfc6" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWeightedDegreeStringKernel::mkl_stepsize</definition>
+        <argsstring></argsstring>
+        <name>mkl_stepsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MKL step size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="851" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="851" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1adc0bae0254427460e9881556cd55e9df" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWeightedDegreeStringKernel::degree</definition>
+        <argsstring></argsstring>
+        <name>degree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>degree </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="853" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1a449850e8725d337472428d0f182c05c0" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWeightedDegreeStringKernel::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="855" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="855" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1adba3ee921a5ca883aeccbce2fbc1dac7" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWeightedDegreeStringKernel::max_mismatch</definition>
+        <argsstring></argsstring>
+        <name>max_mismatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum mismatch </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="858" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1a55079bab600baf66e623b88b394446f3" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWeightedDegreeStringKernel::seq_length</definition>
+        <argsstring></argsstring>
+        <name>seq_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sequence length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="860" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="860" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1a0125a484998a05c5904eae024fabb842" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::initialized</definition>
+        <argsstring></argsstring>
+        <name>initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if kernel is initialized </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="863" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="863" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1a6c73b13311eb0d2e781c296f4cc03abd" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::block_computation</definition>
+        <argsstring></argsstring>
+        <name>block_computation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if block computation is used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="866" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="866" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1ad59c2d9f403bc6c577139b2729936dee" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWeightedDegreeStringKernel::num_block_weights_external</definition>
+        <argsstring></argsstring>
+        <name>num_block_weights_external</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of external block weights </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="869" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="869" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1a23a06c0b8ac118ab1601ab6db053025b" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CWeightedDegreeStringKernel::block_weights_external</definition>
+        <argsstring></argsstring>
+        <name>block_weights_external</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>external block weights </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="871" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="871" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1a30f0f762d5704e049179bdfefb12ff70" prot="protected" static="no" mutable="no">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CWeightedDegreeStringKernel::block_weights</definition>
+        <argsstring></argsstring>
+        <name>block_weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(internal) block weights </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="874" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="874" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1af8c464190da14292ce02d9afbf8c3aba" prot="protected" static="no" mutable="no">
+        <type>EWDKernType</type>
+        <definition>EWDKernType shogun::CWeightedDegreeStringKernel::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>WeightedDegree kernel type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="876" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="876" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1a26dc94b88f1bc1bbb514abf50c0239ad" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWeightedDegreeStringKernel::which_degree</definition>
+        <argsstring></argsstring>
+        <name>which_degree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>which degree </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="878" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="878" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1acf4450f20f60b7c62bcfe0573777f4e4" prot="protected" static="no" mutable="no">
+        <type>CTrie&lt; DNATrie &gt; *</type>
+        <definition>CTrie&lt;DNATrie&gt;* shogun::CWeightedDegreeStringKernel::tries</definition>
+        <argsstring></argsstring>
+        <name>tries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tries </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="881" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="881" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1adcd2b196776048bf3b38ada123d63bac" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::tree_initialized</definition>
+        <argsstring></argsstring>
+        <name>tree_initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if tree is initialized </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="884" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="884" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CWeightedDegreeStringKernel_1abceb9cc737c8b06a5b72a493639f20a8" prot="protected" static="no" mutable="no">
+        <type>CAlphabet *</type>
+        <definition>CAlphabet* shogun::CWeightedDegreeStringKernel::alphabet</definition>
+        <argsstring></argsstring>
+        <name>alphabet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>alphabet of features </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="887" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="887" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a7d5d0a9d9c4c28f39e14455a037000e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CWeightedDegreeStringKernel::CWeightedDegreeStringKernel</definition>
+        <argsstring>(int32_t degree, EWDKernType type=E_WD)</argsstring>
+        <name>CWeightedDegreeStringKernel</name>
+        <param>
+          <type>int32_t</type>
+          <declname>degree</declname>
+        </param>
+        <param>
+          <type>EWDKernType</type>
+          <declname>type</declname>
+          <defval>E_WD</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>degree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degree </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weighted degree kernel type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a5e7be5c18b1a3df94c7976482be70fb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CWeightedDegreeStringKernel::CWeightedDegreeStringKernel</definition>
+        <argsstring>(float64_t *weights, int32_t degree)</argsstring>
+        <name>CWeightedDegreeStringKernel</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>weights</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>degree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kernel&apos;s weights </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>degree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degree </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a1669c3895594621cb7feace3e4475b86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CWeightedDegreeStringKernel::CWeightedDegreeStringKernel</definition>
+        <argsstring>(CStringFeatures&lt; char &gt; *l, CStringFeatures&lt; char &gt; *r, int32_t degree)</argsstring>
+        <name>CWeightedDegreeStringKernel</name>
+        <param>
+          <type>CStringFeatures&lt; char &gt; *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>CStringFeatures&lt; char &gt; *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>degree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of left-hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of right-hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>degree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degree </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a86f075d45922ff784b7714fa459f9df0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CWeightedDegreeStringKernel::~CWeightedDegreeStringKernel</definition>
+        <argsstring>()</argsstring>
+        <name>~CWeightedDegreeStringKernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a6d68d9a3d81da7ed17f77d344e96b804" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CWeightedDegreeStringKernel::init</definition>
+        <argsstring>(CFeatures *l, CFeatures *r)</argsstring>
+        <name>init</name>
+        <reimplements refid="classshogun_1_1CStringKernel_1a42b3447b58bb35080b980a7fde823376">init</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>CFeatures *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize kernel</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of left-hand side </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>features of right-hand side </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if initializing was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a1deef69f7578af43459fb61e60bbcfc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CWeightedDegreeStringKernel::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <reimplements refid="classshogun_1_1CKernel_1ae593c118eda68888ad76a88af0367c6e">cleanup</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clean up kernel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a36bace0931cc05c47ef75074d37a28c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>EWDKernType</type>
+        <definition>EWDKernType shogun::CWeightedDegreeStringKernel::get_type</definition>
+        <argsstring>() const </argsstring>
+        <name>get_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get WD kernel weighting type</para><para><simplesect kind="return"><para>weighting type</para></simplesect>
+<simplesect kind="see"><para>EWDKernType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="100" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a17e22f5e468a9565190aa392a3449013" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWeightedDegreeStringKernel::get_degree</definition>
+        <argsstring>() const </argsstring>
+        <name>get_degree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get degree of WD kernel</para><para><simplesect kind="return"><para>degree of the kernel </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="109" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a499bdd6a751b934e14c6e5d7268983b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWeightedDegreeStringKernel::get_max_mismatch</definition>
+        <argsstring>() const </argsstring>
+        <name>get_max_mismatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the number of mismatches that are allowed in WD kernel computation</para><para><simplesect kind="return"><para>number of mismatches </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="119" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1ab721553bf67bcb57d3ddc6484ed96a90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EKernelType</type>
+        <definition>virtual EKernelType shogun::CWeightedDegreeStringKernel::get_kernel_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_kernel_type</name>
+        <reimplements refid="classshogun_1_1CKernel_1a13022c6fd98d925b6088b8c81fa65db9">get_kernel_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return what type of kernel we are</para><para><simplesect kind="return"><para>kernel type WEIGHTEDDEGREE </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="127" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="127" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1ae323127b4ab4a56f5366a751bfb6f160" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CWeightedDegreeStringKernel::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return the kernel&apos;s name</para><para><simplesect kind="return"><para>name WeightedDegree </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="133" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="133" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a4774c210163f3d56f8c8f523de54cb95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CWeightedDegreeStringKernel::init_optimization</definition>
+        <argsstring>(int32_t count, int32_t *IDX, float64_t *alphas)</argsstring>
+        <name>init_optimization</name>
+        <reimplements refid="classshogun_1_1CKernel_1a913db590a96e58fadba2b1e9e34a10d6">init_optimization</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>IDX</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>alphas</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize optimization</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>count </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IDX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alphas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alphas </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if initializing was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="144" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="142" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a21009c5f2e9ed5b8900ec8a746588b93" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CWeightedDegreeStringKernel::init_optimization</definition>
+        <argsstring>(int32_t count, int32_t *IDX, float64_t *alphas, int32_t tree_num)</argsstring>
+        <name>init_optimization</name>
+        <param>
+          <type>int32_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>IDX</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>alphas</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>tree_num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize optimization do initialization for tree_num up to upto_tree, use tree_num=-1 to construct all trees</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>count </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IDX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IDX </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alphas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alphas </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tree_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which tree </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if initializing was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a7d391fbd0f8f16657810d1cbf9a67baa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CWeightedDegreeStringKernel::delete_optimization</definition>
+        <argsstring>()</argsstring>
+        <name>delete_optimization</name>
+        <reimplements refid="classshogun_1_1CKernel_1a1e5b580f5214d5fac1f07c81c2fcb0ad">delete_optimization</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>delete optimization</para><para><simplesect kind="return"><para>if deleting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1acf0e7d7653b61d8de8a39e2558e96feb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float64_t</type>
+        <definition>virtual float64_t shogun::CWeightedDegreeStringKernel::compute_optimized</definition>
+        <argsstring>(int32_t idx)</argsstring>
+        <name>compute_optimized</name>
+        <reimplements refid="classshogun_1_1CKernel_1a614b39452046d4336f09c881360b4af7">compute_optimized</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute optimized</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index to compute </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>optimized value at given index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="173" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="172" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a619a810f4889c612357b8ab0227b6c8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CWeightedDegreeStringKernel::compute_batch</definition>
+        <argsstring>(int32_t num_vec, int32_t *vec_idx, float64_t *target, int32_t num_suppvec, int32_t *IDX, float64_t *alphas, float64_t factor=1.0)</argsstring>
+        <name>compute_batch</name>
+        <reimplements refid="classshogun_1_1CKernel_1a5fc6a483d63fd0a3460a457cee60f993">compute_batch</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>num_vec</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>vec_idx</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_suppvec</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>IDX</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>alphas</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>factor</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute batch</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>target </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_suppvec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of support vectors </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IDX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IDX </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alphas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alphas </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>factor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a235ddfbd82304b189fa1825f71b15db2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CWeightedDegreeStringKernel::clear_normal</definition>
+        <argsstring>()</argsstring>
+        <name>clear_normal</name>
+        <reimplements refid="classshogun_1_1CKernel_1a46a94bb5789a5edbf1d776610ae3fa04">clear_normal</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clear normal subkernel functionality </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="206" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="205" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a2593dbf55012ead8c4687d797295ea27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CWeightedDegreeStringKernel::add_to_normal</definition>
+        <argsstring>(int32_t idx, float64_t weight)</argsstring>
+        <name>add_to_normal</name>
+        <reimplements refid="classshogun_1_1CKernel_1aabe2fe8e2cc8e2846a6aa60c364855ba">add_to_normal</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add to normal</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where to add </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>what to add </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="220" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="219" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a3d5644a319abf64a7e9cf5909802e124" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int32_t</type>
+        <definition>virtual int32_t shogun::CWeightedDegreeStringKernel::get_num_subkernels</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_subkernels</name>
+        <reimplements refid="classshogun_1_1CKernel_1a0c2a6eb4ed24590be0cc72a5871f848d">get_num_subkernels</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get number of subkernels</para><para><simplesect kind="return"><para>number of subkernels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="234" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="233" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1ac744f94f465aac0a279b3f0f22c644c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void shogun::CWeightedDegreeStringKernel::compute_by_subkernel</definition>
+        <argsstring>(int32_t idx, float64_t *subkernel_contrib)</argsstring>
+        <name>compute_by_subkernel</name>
+        <reimplements refid="classshogun_1_1CKernel_1a9a0bbc983ee6c2050ee4d5c814496924">compute_by_subkernel</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>subkernel_contrib</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute by subkernel</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>subkernel_contrib</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subkernel contribution </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="249" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="247" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a5ca7a5a07cd62c69b04a57d2479392c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const float64_t *</type>
+        <definition>const float64_t* shogun::CWeightedDegreeStringKernel::get_subkernel_weights</definition>
+        <argsstring>(int32_t &amp;num_weights)</argsstring>
+        <name>get_subkernel_weights</name>
+        <reimplements refid="classshogun_1_1CKernel_1aed423e68a226ad9f717d05f54cf9c854">get_subkernel_weights</reimplements>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get subkernel weights</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of weights will be stored here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>subkernel weights </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="265" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="264" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1af9a3e90182e2e55362261d09280eb1f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void shogun::CWeightedDegreeStringKernel::set_subkernel_weights</definition>
+        <argsstring>(float64_t *weights2, int32_t num_weights2)</argsstring>
+        <name>set_subkernel_weights</name>
+        <reimplements refid="classshogun_1_1CKernel_1af1e586162ba4aadc7c0143c1c8819f1a">set_subkernel_weights</reimplements>
+        <param>
+          <type>float64_t *</type>
+          <declname>weights2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_weights2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set subkernel weights</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>weights2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weights </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_weights2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of weights </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="288" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="286" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a436a679de71448b3b273671b0a274165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CWeightedDegreeStringKernel::compute_abs_weights</definition>
+        <argsstring>(int32_t &amp;len)</argsstring>
+        <name>compute_abs_weights</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute abs weights</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed abs weights </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a6e4a6ff20c2010327beaf36003343623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CWeightedDegreeStringKernel::compute_by_tree</definition>
+        <argsstring>(int32_t idx, float64_t *LevelContrib)</argsstring>
+        <name>compute_by_tree</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>float64_t *</type>
+          <declname>LevelContrib</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute by tree</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LevelContrib</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>level contribution </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a34aef1305585d66445f6fba584fe284d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::is_tree_initialized</definition>
+        <argsstring>()</argsstring>
+        <name>is_tree_initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check if tree is initialized</para><para><simplesect kind="return"><para>if tree is initialized </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="348" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="348" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1aa2c21c7d97e1374f98eb418b5daca541" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CWeightedDegreeStringKernel::get_degree_weights</definition>
+        <argsstring>(int32_t &amp;d, int32_t &amp;len)</argsstring>
+        <name>get_degree_weights</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get degree weights</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degree weights will be stored here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of degree weights will be stored here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="356" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="355" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1ad82e40b90fccbad7539308adfb46f6f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CWeightedDegreeStringKernel::get_weights</definition>
+        <argsstring>(int32_t &amp;num_weights)</argsstring>
+        <name>get_weights</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>num_weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get weights</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of weights will be stored here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>weights </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="368" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="367" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a92391a2881c4ef9c4477c4d82d4dc50a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float64_t *</type>
+        <definition>float64_t* shogun::CWeightedDegreeStringKernel::get_position_weights</definition>
+        <argsstring>(int32_t &amp;len)</argsstring>
+        <name>get_position_weights</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get position weights</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of position weights will be stored here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>position weights </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="387" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="386" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a5b77a43cfe595af51434af9e0aac9ffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::set_wd_weights_by_type</definition>
+        <argsstring>(EWDKernType type)</argsstring>
+        <name>set_wd_weights_by_type</name>
+        <param>
+          <type>EWDKernType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set wd weights</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weighted degree kernel type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a2e867ffa082351a021604d2747c42cf3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CWeightedDegreeStringKernel::set_wd_weights</definition>
+        <argsstring>(float64_t *p_weights, int32_t d)</argsstring>
+        <name>set_wd_weights</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>p_weights</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set wd weights</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new eights </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degree </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="406" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="405" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a8c961b9b17226ee2ddc52793ca88a9b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::set_weights</definition>
+        <argsstring>(float64_t *weights, int32_t d, int32_t len)</argsstring>
+        <name>set_weights</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>weights</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set weights</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new weights </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degree </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of weights </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="416"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a1a6a6de6715b089d89b6eb2e855d7bc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::set_position_weights</definition>
+        <argsstring>(float64_t *position_weights, int32_t len=0)</argsstring>
+        <name>set_position_weights</name>
+        <param>
+          <type>float64_t *</type>
+          <declname>position_weights</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set position weights</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position_weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new position weights </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of position weights </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="424"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1ab0a30673682cb07e5f175afa9a888126" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::init_block_weights</definition>
+        <argsstring>()</argsstring>
+        <name>init_block_weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize block weights</para><para><simplesect kind="return"><para>if initialization was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="430"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1aa97299ec15b36958263ad76a17de692a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::init_block_weights_from_wd</definition>
+        <argsstring>()</argsstring>
+        <name>init_block_weights_from_wd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize block weights from weighted degree</para><para><simplesect kind="return"><para>if initialization was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="436"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a3bd4c2cfc5af13f9f77781c5cf847566" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::init_block_weights_from_wd_external</definition>
+        <argsstring>()</argsstring>
+        <name>init_block_weights_from_wd_external</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize block weights from external weighted degree</para><para><simplesect kind="return"><para>if initialization was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1af48548253636edfac358df39cce778a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::init_block_weights_const</definition>
+        <argsstring>()</argsstring>
+        <name>init_block_weights_const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize block weights constant</para><para><simplesect kind="return"><para>if initialization was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="448"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a2e4879eecf064798b22257cd5854caa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::init_block_weights_linear</definition>
+        <argsstring>()</argsstring>
+        <name>init_block_weights_linear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize block weights linear</para><para><simplesect kind="return"><para>if initialization was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="454"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1affb145988acbcb69f4dd673af14cf8e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::init_block_weights_sqpoly</definition>
+        <argsstring>()</argsstring>
+        <name>init_block_weights_sqpoly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize block weights squared polynomial</para><para><simplesect kind="return"><para>if initialization was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="460"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a14c111658e968f6f1ebc4009a6e9e315" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::init_block_weights_cubicpoly</definition>
+        <argsstring>()</argsstring>
+        <name>init_block_weights_cubicpoly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize block weights cubic polynomial</para><para><simplesect kind="return"><para>if initialization was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="466"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a83185a14dba5618df9f9c2e257242ac9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::init_block_weights_exp</definition>
+        <argsstring>()</argsstring>
+        <name>init_block_weights_exp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize block weights exponential</para><para><simplesect kind="return"><para>if initialization was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="472"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1afd809ef67fcaf45c9d76b00b962c189d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::init_block_weights_log</definition>
+        <argsstring>()</argsstring>
+        <name>init_block_weights_log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize block weights logarithmic</para><para><simplesect kind="return"><para>if initialization was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="478"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a80f3233bfd487324d3d9768b545f492f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::init_block_weights_external</definition>
+        <argsstring>()</argsstring>
+        <name>init_block_weights_external</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialize block weights external</para><para><simplesect kind="return"><para>if initialization was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="484"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1aa839cab90dcce389710fcd8529448d66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::delete_position_weights</definition>
+        <argsstring>()</argsstring>
+        <name>delete_position_weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>delete position weights</para><para><simplesect kind="return"><para>if deleting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="491" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="490" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1aa74ee81cbc861b148919fd83642246a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::set_max_mismatch</definition>
+        <argsstring>(int32_t max)</argsstring>
+        <name>set_max_mismatch</name>
+        <param>
+          <type>int32_t</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set maximum mismatch</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new maximum mismatch </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="502"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a7973cfc7f236d980a84f95baff37f3fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWeightedDegreeStringKernel::get_max_mismatch</definition>
+        <argsstring>()</argsstring>
+        <name>get_max_mismatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get maximum mismatch</para><para><simplesect kind="return"><para>maximum mismatch </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="508" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="508" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1acac2fd33bb9a42ef22592c5bfe53bfa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::set_degree</definition>
+        <argsstring>(int32_t deg)</argsstring>
+        <name>set_degree</name>
+        <param>
+          <type>int32_t</type>
+          <declname>deg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set degree</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>deg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new degree </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="515" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="515" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a836e41c1bfdf5f2c6c9a281f5334a723" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWeightedDegreeStringKernel::get_degree</definition>
+        <argsstring>()</argsstring>
+        <name>get_degree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get degree</para><para><simplesect kind="return"><para>degree </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="521" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="521" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1aaf2e8931de6699b016d643c18be1f8ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::set_use_block_computation</definition>
+        <argsstring>(bool block)</argsstring>
+        <name>set_use_block_computation</name>
+        <param>
+          <type>bool</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set if block computation shall be performed</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if block computation shall be performed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="529" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="528" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a2bef01382fdb8e667d92eb189937684e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::get_use_block_computation</definition>
+        <argsstring>()</argsstring>
+        <name>get_use_block_computation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check if block computation is performed</para><para><simplesect kind="return"><para>if block computation is performed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="538" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="538" bodyend="538"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a4d1117a5e26d664af638beb748552690" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::set_mkl_stepsize</definition>
+        <argsstring>(int32_t step)</argsstring>
+        <name>set_mkl_stepsize</name>
+        <param>
+          <type>int32_t</type>
+          <declname>step</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set MKL steps ize</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new step size </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="546" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="545" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a5b3ee7987746a319e12f07441a17f907" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWeightedDegreeStringKernel::get_mkl_stepsize</definition>
+        <argsstring>()</argsstring>
+        <name>get_mkl_stepsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get MKL step size</para><para><simplesect kind="return"><para>MKL step size </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="557" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="557" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a79be85235c1e49d038de67a789323c76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool shogun::CWeightedDegreeStringKernel::set_which_degree</definition>
+        <argsstring>(int32_t which)</argsstring>
+        <name>set_which_degree</name>
+        <param>
+          <type>int32_t</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set which degree</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>which</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which degree </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if setting was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="565" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="564" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a2117d292af2232c34ce95bef120d9e28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CWeightedDegreeStringKernel::get_which_degree</definition>
+        <argsstring>()</argsstring>
+        <name>get_which_degree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get which degree</para><para><simplesect kind="return"><para>which degree </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="574" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="574" bodyend="574"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a2cad0f563a3eb6e36d38e2a5545071a0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void* shogun::CWeightedDegreeStringKernel::compute_batch_helper</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>compute_batch_helper</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>helper for compute batch</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>thread parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="185"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a287d6d8fcb60c69cf465395ad4d7f264" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CWeightedDegreeStringKernel::create_empty_tries</definition>
+        <argsstring>()</argsstring>
+        <name>create_empty_tries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>create emtpy tries </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="578"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a8a76d316f0fb6950a3367063cfaf4bbb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CWeightedDegreeStringKernel::add_example_to_tree</definition>
+        <argsstring>(int32_t idx, float64_t weight)</argsstring>
+        <name>add_example_to_tree</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add example to tree</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weight </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="585"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1acbfaf258a6de0d6c5ea3c8118823b2ac" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CWeightedDegreeStringKernel::add_example_to_single_tree</definition>
+        <argsstring>(int32_t idx, float64_t weight, int32_t tree_num)</argsstring>
+        <name>add_example_to_single_tree</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>weight</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>tree_num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add example to single tree</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weight </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tree_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which tree </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="594"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a78db75d13aa5e36cf5f3b3fcf686f8f7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CWeightedDegreeStringKernel::add_example_to_tree_mismatch</definition>
+        <argsstring>(int32_t idx, float64_t weight)</argsstring>
+        <name>add_example_to_tree_mismatch</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add example to tree mismatch</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weight </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="601"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a433e7eb37ba60f068e5e5ae840a03980" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CWeightedDegreeStringKernel::add_example_to_single_tree_mismatch</definition>
+        <argsstring>(int32_t idx, float64_t weight, int32_t tree_num)</argsstring>
+        <name>add_example_to_single_tree_mismatch</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>float64_t</type>
+          <declname>weight</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>tree_num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add example to single tree mismatch</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weight </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tree_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which tree </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="610"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a5128e2b85c51407933a51c7950f31bb4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWeightedDegreeStringKernel::compute_by_tree</definition>
+        <argsstring>(int32_t idx)</argsstring>
+        <name>compute_by_tree</name>
+        <param>
+          <type>int32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute by tree</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="617"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a76d12963d24be097cd0e1beac527725f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWeightedDegreeStringKernel::compute</definition>
+        <argsstring>(int32_t idx_a, int32_t idx_b)</argsstring>
+        <name>compute</name>
+        <reimplements refid="classshogun_1_1CKernel_1ab1765c43943a668fea15971d08ff1229">compute</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_a</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>idx_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute kernel function for features a and b idx_{a,b} denote the index of the feature vectors in the corresponding feature object</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx_a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx_b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index b </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed kernel function at indices a,b </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="627"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1abb162954c80bbec62711c470475e0246" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWeightedDegreeStringKernel::compute_with_mismatch</definition>
+        <argsstring>(char *avec, int32_t alen, char *bvec, int32_t blen)</argsstring>
+        <name>compute_with_mismatch</name>
+        <param>
+          <type>char *</type>
+          <declname>avec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>alen</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>bvec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>blen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute with mismatch</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>avec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of vector a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bvec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector b </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of vector b </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="638"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a6cfc9fa63bc71249807e1b8a269c6b54" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWeightedDegreeStringKernel::compute_without_mismatch</definition>
+        <argsstring>(char *avec, int32_t alen, char *bvec, int32_t blen)</argsstring>
+        <name>compute_without_mismatch</name>
+        <param>
+          <type>char *</type>
+          <declname>avec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>alen</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>bvec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>blen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute without mismatch</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>avec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of vector a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bvec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector b </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of vector b </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="649"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1af3290d784b270a56b2aa9c7f3722deb4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWeightedDegreeStringKernel::compute_without_mismatch_matrix</definition>
+        <argsstring>(char *avec, int32_t alen, char *bvec, int32_t blen)</argsstring>
+        <name>compute_without_mismatch_matrix</name>
+        <param>
+          <type>char *</type>
+          <declname>avec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>alen</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>bvec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>blen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute without mismatch matrix</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>avec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of vector a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bvec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector b </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of vector b </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="660"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1a69a4540f8e71e2c9ce064ac0094391b8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CWeightedDegreeStringKernel::compute_using_block</definition>
+        <argsstring>(char *avec, int32_t alen, char *bvec, int32_t blen)</argsstring>
+        <name>compute_using_block</name>
+        <param>
+          <type>char *</type>
+          <declname>avec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>alen</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>bvec</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>blen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute using block</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>avec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of vector a </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bvec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector b </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of vector b </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="671"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CWeightedDegreeStringKernel_1aeac2a9c172cd47da8ca1bfbfbf2f2ebb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void shogun::CWeightedDegreeStringKernel::remove_lhs</definition>
+        <argsstring>()</argsstring>
+        <name>remove_lhs</name>
+        <reimplements refid="classshogun_1_1CKernel_1a83df3f7334ac9876caaec761ac55314e">remove_lhs</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>remove lhs from kernel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="674"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The Weighted Degree String kernel. </para>    </briefdescription>
+    <detaileddescription>
+<para>The WD kernel of order d compares two sequences <formula id="8">${\bf x}$</formula> and <formula id="24">${\bf x&apos;}$</formula> of length L by summing all contributions of k-mer matches of lengths <formula id="51">$k\in\{1,\dots,d\}$</formula>, weighted by coefficients <formula id="49">$\beta_k$</formula>. It is defined as <formula id="56">\[ k({\bf x},{\bf x&apos;})=\sum_{k=1}^d\beta_k\sum_{l=1}^{L-k+1}I({\bf u}_{k,l}({\bf x})={\bf u}_{k,l}({\bf x&apos;})). \]</formula> Here, <formula id="57">${\bf u}_{k,l}({\bf x})$</formula> is the string of length k starting at position l of the sequence <formula id="8">${\bf x}$</formula> and <formula id="58">$I(\cdot)$</formula> is the indicator function which evaluates to 1 when its argument is true and to 0 otherwise. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="364">
+        <label>shogun::CKernel</label>
+        <link refid="classshogun_1_1CKernel"/>
+      </node>
+      <node id="362">
+        <label>shogun::CWeightedDegreeStringKernel</label>
+        <link refid="classshogun_1_1CWeightedDegreeStringKernel"/>
+        <childnode refid="363" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="363">
+        <label>shogun::CStringKernel&lt; char &gt;</label>
+        <link refid="classshogun_1_1CStringKernel"/>
+        <childnode refid="364" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="367">
+        <label>shogun::CKernel</label>
+        <link refid="classshogun_1_1CKernel"/>
+        <childnode refid="368" relation="usage">
+          <edgelabel>normalizer</edgelabel>
+        </childnode>
+      </node>
+      <node id="365">
+        <label>shogun::CWeightedDegreeStringKernel</label>
+        <link refid="classshogun_1_1CWeightedDegreeStringKernel"/>
+        <childnode refid="366" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="368">
+        <label>shogun::CKernelNormalizer</label>
+        <link refid="classshogun_1_1CKernelNormalizer"/>
+      </node>
+      <node id="366">
+        <label>shogun::CStringKernel&lt; char &gt;</label>
+        <link refid="classshogun_1_1CStringKernel"/>
+        <childnode refid="367" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" line="53" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/kernel/WeightedDegreeStringKernel.h" bodystart="52" bodyend="888"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1acbfaf258a6de0d6c5ea3c8118823b2ac" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>add_example_to_single_tree</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a433e7eb37ba60f068e5e5ae840a03980" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>add_example_to_single_tree_mismatch</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a8a76d316f0fb6950a3367063cfaf4bbb" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>add_example_to_tree</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a78db75d13aa5e36cf5f3b3fcf686f8f7" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>add_example_to_tree_mismatch</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a2593dbf55012ead8c4687d797295ea27" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>add_to_normal</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1abceb9cc737c8b06a5b72a493639f20a8" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>alphabet</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a6c73b13311eb0d2e781c296f4cc03abd" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>block_computation</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a30f0f762d5704e049179bdfefb12ff70" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>block_weights</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a23a06c0b8ac118ab1601ab6db053025b" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>block_weights_external</name></member>
+      <member refid="classshogun_1_1CKernel_1ae1dc0bbc6ea973b18dcba2e4fac486b8" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>cache_size</name></member>
+      <member refid="classshogun_1_1CKernel_1a77872c37fccc650cd7f918b253bbeb68" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>CKernel</name></member>
+      <member refid="classshogun_1_1CKernel_1aa2b1f73c8585adee444bb99a98e63a5a" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>CKernel</name></member>
+      <member refid="classshogun_1_1CKernel_1a70cfe05692f9ee159aeb0dfcb8d2f5c3" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>CKernel</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a1deef69f7578af43459fb61e60bbcfc8" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>cleanup</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a235ddfbd82304b189fa1825f71b15db2" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>clear_normal</name></member>
+      <member refid="classshogun_1_1CKernel_1a105026c07a74e493c1711dad83b335f1" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>combined_kernel_weight</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a76d12963d24be097cd0e1beac527725f" prot="protected" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>compute</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a436a679de71448b3b273671b0a274165" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>compute_abs_weights</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a619a810f4889c612357b8ab0227b6c8e" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>compute_batch</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a2cad0f563a3eb6e36d38e2a5545071a0" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>compute_batch_helper</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1ac744f94f465aac0a279b3f0f22c644c5" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>compute_by_subkernel</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a6e4a6ff20c2010327beaf36003343623" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>compute_by_tree</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a5128e2b85c51407933a51c7950f31bb4" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>compute_by_tree</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1acf0e7d7653b61d8de8a39e2558e96feb" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>compute_optimized</name></member>
+      <member refid="classshogun_1_1CKernel_1a813bcdc6778b8c0b4c662a5209a68776" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>compute_row_start</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a69a4540f8e71e2c9ce064ac0094391b8" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>compute_using_block</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1abb162954c80bbec62711c470475e0246" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>compute_with_mismatch</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a6cfc9fa63bc71249807e1b8a269c6b54" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>compute_without_mismatch</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1af3290d784b270a56b2aa9c7f3722deb4" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>compute_without_mismatch_matrix</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a287d6d8fcb60c69cf465395ad4d7f264" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>create_empty_tries</name></member>
+      <member refid="classshogun_1_1CStringKernel_1af170456997db0dda48d7abe68c9f94ce" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>CStringKernel</name></member>
+      <member refid="classshogun_1_1CStringKernel_1aa97ba03f6e02171efd195386b6df838e" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>CStringKernel</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a7d5d0a9d9c4c28f39e14455a037000e6" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>CWeightedDegreeStringKernel</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a5e7be5c18b1a3df94c7976482be70fb5" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>CWeightedDegreeStringKernel</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a1669c3895594621cb7feace3e4475b86" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>CWeightedDegreeStringKernel</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1adc0bae0254427460e9881556cd55e9df" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>degree</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a7d391fbd0f8f16657810d1cbf9a67baa" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>delete_optimization</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1aa839cab90dcce389710fcd8529448d66" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>delete_position_weights</name></member>
+      <member refid="classshogun_1_1CKernel_1ac53fab2767fa28a2141294219ddc5ea5" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_cache_size</name></member>
+      <member refid="classshogun_1_1CKernel_1a70a87d5839c56ce67efad04119b16758" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_combined_kernel_weight</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a17e22f5e468a9565190aa392a3449013" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_degree</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a836e41c1bfdf5f2c6c9a281f5334a723" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_degree</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1aa2c21c7d97e1374f98eb418b5daca541" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_degree_weights</name></member>
+      <member refid="classshogun_1_1CStringKernel_1a36d05c13b46e70f5d9bc8d02945b1750" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_feature_class</name></member>
+      <member refid="classshogun_1_1CStringKernel_1af95571fddbc562ccf38623511a8a629c" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_feature_type</name></member>
+      <member refid="classshogun_1_1CKernel_1a4e06bfb908463f9bc28b0c3ae7bdeef3" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_is_initialized</name></member>
+      <member refid="classshogun_1_1CKernel_1a1f4f83d3d7bc7e34336c4c262ca95570" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_kernel_matrix</name></member>
+      <member refid="classshogun_1_1CKernel_1a19c9666c242a0b019f645593e2c63e9f" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_kernel_matrix</name></member>
+      <member refid="classshogun_1_1CKernel_1a52f510cf6ece0052527f31ad2274e855" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_kernel_matrix_helper</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1ab721553bf67bcb57d3ddc6484ed96a90" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_kernel_type</name></member>
+      <member refid="classshogun_1_1CKernel_1a0c71c8eb3ac024069c6bd9ff61ec0c39" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_lhs</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a499bdd6a751b934e14c6e5d7268983b2" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_max_mismatch</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a7973cfc7f236d980a84f95baff37f3fc" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_max_mismatch</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a5b3ee7987746a319e12f07441a17f907" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_mkl_stepsize</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1ae323127b4ab4a56f5366a751bfb6f160" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CKernel_1a7aacb7938ed0f98f1fd14253bc1e9b31" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_normalizer</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a3d5644a319abf64a7e9cf5909802e124" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_num_subkernels</name></member>
+      <member refid="classshogun_1_1CKernel_1af350caa123740b96ecaa69fd28454a65" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_num_vec_lhs</name></member>
+      <member refid="classshogun_1_1CKernel_1a7e45a8f4fc00c39b7d54dd37e001bed9" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_num_vec_rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1aff5f02561b6963a3c2a2e63b4ac8e43c" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_optimization_type</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a92391a2881c4ef9c4477c4d82d4dc50a" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_position_weights</name></member>
+      <member refid="classshogun_1_1CKernel_1abfd608e83f9839f8ca626ad793e452b0" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_rhs</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a5ca7a5a07cd62c69b04a57d2479392c3" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_subkernel_weights</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a36bace0931cc05c47ef75074d37a28c9" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_type</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a2bef01382fdb8e667d92eb189937684e" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_use_block_computation</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1ad82e40b90fccbad7539308adfb46f6f0" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_weights</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a2117d292af2232c34ce95bef120d9e28" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>get_which_degree</name></member>
+      <member refid="classshogun_1_1CKernel_1a6db0206d0b4fe30bf64b93d8eed3b8b7" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>has_features</name></member>
+      <member refid="classshogun_1_1CKernel_1afd958e85909aec22c830e9137fcd7d4c" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>has_property</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a6d68d9a3d81da7ed17f77d344e96b804" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>init</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1ab0a30673682cb07e5f175afa9a888126" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>init_block_weights</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1af48548253636edfac358df39cce778a4" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>init_block_weights_const</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a14c111658e968f6f1ebc4009a6e9e315" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>init_block_weights_cubicpoly</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a83185a14dba5618df9f9c2e257242ac9" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>init_block_weights_exp</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a80f3233bfd487324d3d9768b545f492f" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>init_block_weights_external</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1aa97299ec15b36958263ad76a17de692a" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>init_block_weights_from_wd</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a3bd4c2cfc5af13f9f77781c5cf847566" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>init_block_weights_from_wd_external</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a2e4879eecf064798b22257cd5854caa5" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>init_block_weights_linear</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1afd809ef67fcaf45c9d76b00b962c189d" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>init_block_weights_log</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1affb145988acbcb69f4dd673af14cf8e3" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>init_block_weights_sqpoly</name></member>
+      <member refid="classshogun_1_1CKernel_1aeb0378209b4c63b7ae60596540ebed80" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>init_normalizer</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a4774c210163f3d56f8c8f523de54cb95" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>init_optimization</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a21009c5f2e9ed5b8900ec8a746588b93" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>init_optimization</name></member>
+      <member refid="classshogun_1_1CKernel_1a8363fd727262daf47cad9fb4842daa6c" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>init_optimization_svm</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a0125a484998a05c5904eae024fabb842" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>initialized</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a34aef1305585d66445f6fba584fe284d" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>is_tree_initialized</name></member>
+      <member refid="classshogun_1_1CKernel_1ab4cbfe2c04238e33322647e22960c246" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>kernel</name></member>
+      <member refid="classshogun_1_1CKernel_1a01f88ea73f221b5a768e1c67c731a763" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>kernel_matrix</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a449850e8725d337472428d0f182c05c0" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>length</name></member>
+      <member refid="classshogun_1_1CKernel_1ae7bc6b54431a07498f0b6ef4ab087297" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>lhs</name></member>
+      <member refid="classshogun_1_1CKernel_1a28ef59e6dd9055579b2f95fb3a19b2cc" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>lhs_equals_rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1a29e2f0ad2694cc53a800f3ad8be56077" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>list_kernel</name></member>
+      <member refid="classshogun_1_1CKernel_1a93221d864190e13c4749793d4ae7f0b0" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>load</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1adba3ee921a5ca883aeccbce2fbc1dac7" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>max_mismatch</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1abf68278eb480cdc73114c467c005cfc6" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>mkl_stepsize</name></member>
+      <member refid="classshogun_1_1CKernel_1acbe5200168cf7ade8c30f1a1eb40469b" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>normalizer</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1ad59c2d9f403bc6c577139b2729936dee" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>num_block_weights_external</name></member>
+      <member refid="classshogun_1_1CKernel_1a0d5cfafbf2afd0260857089504262dd6" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>num_lhs</name></member>
+      <member refid="classshogun_1_1CKernel_1a6e741d3d75546bdc15bfb5be41aa9b96" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>num_rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1ad96fd157602292f3d88ebfef3077be00" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>opt_type</name></member>
+      <member refid="classshogun_1_1CKernel_1a5b4d22f0cd136296f6e9aee3364607d6" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>optimization_initialized</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a19be3b9d7383567dcd10f511bb405647" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>position_weights</name></member>
+      <member refid="classshogun_1_1CKernel_1a16638a9afae47d4c2e36e20b2dff92f5" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>properties</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1aeac2a9c172cd47da8ca1bfbfbf2f2ebb" prot="protected" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>remove_lhs</name></member>
+      <member refid="classshogun_1_1CKernel_1ad56df090f52a020e34162abd0b0cd0e5" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>remove_lhs_and_rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1ade2b456ef65c988c59847e6a1d682956" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>remove_rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1a5dab35da7f429dd860f59d9a98960a3f" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>rhs</name></member>
+      <member refid="classshogun_1_1CKernel_1ab1241d4ce37e5352cee96f6b456439c4" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>save</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a55079bab600baf66e623b88b394446f3" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>seq_length</name></member>
+      <member refid="classshogun_1_1CKernel_1aa552d8e2591297a3fd5aae46bebaf645" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>set_cache_size</name></member>
+      <member refid="classshogun_1_1CKernel_1a23ec2b5c3d824b3f148c905bfbafdebf" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>set_combined_kernel_weight</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1acac2fd33bb9a42ef22592c5bfe53bfa7" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>set_degree</name></member>
+      <member refid="classshogun_1_1CKernel_1ad2d2934daf162bfb010536c1eefd162c" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>set_is_initialized</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1aa74ee81cbc861b148919fd83642246a5" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>set_max_mismatch</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a4d1117a5e26d664af638beb748552690" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>set_mkl_stepsize</name></member>
+      <member refid="classshogun_1_1CKernel_1a0a3fc1096d6e00f56ca0f11cadd12ab7" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>set_normalizer</name></member>
+      <member refid="classshogun_1_1CKernel_1a11ab2c3a02fc458f510f36c2fe503a2c" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>set_optimization_type</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a1a6a6de6715b089d89b6eb2e855d7bc8" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>set_position_weights</name></member>
+      <member refid="classshogun_1_1CKernel_1abd52ab8944c2fd9efd45e46dee4f27ee" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>set_property</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1af9a3e90182e2e55362261d09280eb1f7" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>set_subkernel_weights</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1aaf2e8931de6699b016d643c18be1f8ba" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>set_use_block_computation</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a2e867ffa082351a021604d2747c42cf3" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>set_wd_weights</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a5b77a43cfe595af51434af9e0aac9ffb" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>set_wd_weights_by_type</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a8c961b9b17226ee2ddc52793ca88a9b5" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>set_weights</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a79be85235c1e49d038de67a789323c76" prot="public" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>set_which_degree</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1adcd2b196776048bf3b38ada123d63bac" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>tree_initialized</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1acf4450f20f60b7c62bcfe0573777f4e4" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>tries</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1af8c464190da14292ce02d9afbf8c3aba" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>type</name></member>
+      <member refid="classshogun_1_1CKernel_1a83025690228a1d47e4d43a8ed4304749" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>unset_property</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a29c9680329520088eea53551b8b49c2f" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>weights</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a8475d4d49bf289fe2f1db28fb7e244f8" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>weights_buffer</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a26dc94b88f1bc1bbb514abf50c0239ad" prot="protected" virt="non-virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>which_degree</name></member>
+      <member refid="classshogun_1_1CKernel_1ac0b3e1e0d02e446954712d8245cd68c3" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>~CKernel</name></member>
+      <member refid="classshogun_1_1CWeightedDegreeStringKernel_1a86f075d45922ff784b7714fa459f9df0" prot="public" virt="virtual"><scope>shogun::CWeightedDegreeStringKernel</scope><name>~CWeightedDegreeStringKernel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

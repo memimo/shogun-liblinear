@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classshogun_1_1CPerceptron" kind="class" prot="public">
+    <compoundname>shogun::CPerceptron</compoundname>
+    <basecompoundref refid="classshogun_1_1CLinearClassifier" prot="public" virt="non-virtual">shogun::CLinearClassifier</basecompoundref>
+    <includes local="no">Perceptron.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classshogun_1_1CPerceptron_1a266385b8b2063823038ac94b8cafb456" prot="protected" static="no" mutable="no">
+        <type>float64_t</type>
+        <definition>float64_t shogun::CPerceptron::learn_rate</definition>
+        <argsstring></argsstring>
+        <name>learn_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>learning rate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" line="77" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classshogun_1_1CPerceptron_1a81d7c9a6779a936a213e6bf3a7319277" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t shogun::CPerceptron::max_iter</definition>
+        <argsstring></argsstring>
+        <name>max_iter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum number of iterations </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" line="79" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classshogun_1_1CPerceptron_1ad2ebd13d401bd2309632eeb0dadf7177" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CPerceptron::CPerceptron</definition>
+        <argsstring>()</argsstring>
+        <name>CPerceptron</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerceptron_1a4259f9cbd37f1b0a7be08c49574b5815" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shogun::CPerceptron::CPerceptron</definition>
+        <argsstring>(CDotFeatures *traindat, CLabels *trainlab)</argsstring>
+        <name>CPerceptron</name>
+        <param>
+          <type>CDotFeatures *</type>
+          <declname>traindat</declname>
+        </param>
+        <param>
+          <type>CLabels *</type>
+          <declname>trainlab</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>traindat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training features </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>trainlab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>labels for training features </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerceptron_1ac214e24dc8e5b7b2171e9c4a3b92d69b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual shogun::CPerceptron::~CPerceptron</definition>
+        <argsstring>()</argsstring>
+        <name>~CPerceptron</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerceptron_1a3bb1dfd3802728a0a9d080241b80d851" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EClassifierType</type>
+        <definition>virtual EClassifierType shogun::CPerceptron::get_classifier_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_classifier_type</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a52d05215c6b6a252650c41a0b29d8cc5">get_classifier_type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get classifier type</para><para><simplesect kind="return"><para>classifier type PERCEPTRON </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" line="48" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerceptron_1ab2ccf7d5150ae5dd44244a65f7662680" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool shogun::CPerceptron::train</definition>
+        <argsstring>(CFeatures *data=NULL)</argsstring>
+        <name>train</name>
+        <reimplements refid="classshogun_1_1CClassifier_1a9904cc0a8d7ec077cc1fede8d64ebb22">train</reimplements>
+        <param>
+          <type>CFeatures *</type>
+          <declname>data</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>train classifier</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structshogun_1_1data" kindref="compound">data</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training <ref refid="structshogun_1_1data" kindref="compound">data</ref> (parameter can be avoided if distance or kernel-based classifiers are used and distance/kernels are initialized with train <ref refid="structshogun_1_1data" kindref="compound">data</ref>)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether training was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerceptron_1a93e5b745d0dd7159a6dab69d62bd0edc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerceptron::set_learn_rate</definition>
+        <argsstring>(float64_t r)</argsstring>
+        <name>set_learn_rate</name>
+        <param>
+          <type>float64_t</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>set learn rate of gradient descent training algorithm </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" line="62" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerceptron_1a168d860a41c4a91aa9175ac847eabf88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void shogun::CPerceptron::set_max_iter</definition>
+        <argsstring>(int32_t i)</argsstring>
+        <name>set_max_iter</name>
+        <param>
+          <type>int32_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>set maximum number of iterations </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" line="68" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classshogun_1_1CPerceptron_1a32bbced934851a47ab3e80961f765ca7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* shogun::CPerceptron::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" line="73" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class Perceptron implements the standard linear (online) perceptron. </para>    </briefdescription>
+    <detaileddescription>
+<para>Given a maximum number of iterations (the standard perceptron algorithm is not guaranteed to converge) and a fixed lerning rate, the result is a linear classifier.</para><para><simplesect kind="see"><para><ref refid="classshogun_1_1CLinearClassifier" kindref="compound">CLinearClassifier</ref> </para><simplesectsep/><para><ulink url="http://en.wikipedia.org/wiki/Perceptron">http://en.wikipedia.org/wiki/Perceptron</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="237">
+        <label>shogun::CLinearClassifier</label>
+        <link refid="classshogun_1_1CLinearClassifier"/>
+        <childnode refid="238" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>shogun::CPerceptron</label>
+        <link refid="classshogun_1_1CPerceptron"/>
+        <childnode refid="237" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="238">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="240">
+        <label>shogun::CLinearClassifier</label>
+        <link refid="classshogun_1_1CLinearClassifier"/>
+        <childnode refid="241" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>shogun::CPerceptron</label>
+        <link refid="classshogun_1_1CPerceptron"/>
+        <childnode refid="240" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>shogun::CClassifier</label>
+        <link refid="classshogun_1_1CClassifier"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" line="31" bodyfile="/home/thor/Projects/shogun-liblinear/shogun-0.9.1/src/shogun/classifier/Perceptron.h" bodystart="30" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classshogun_1_1CLinearClassifier_1a8f920d6d3dce0a27cbb8b36aed8a6220" prot="protected" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>bias</name></member>
+      <member refid="classshogun_1_1CClassifier_1a37259b3ffbe96af1eda8dd2d9428221c" prot="public" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>CClassifier</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1ac1f1aac929b7958f5a7d48d9ea40f2f2" prot="public" virt="virtual"><scope>shogun::CPerceptron</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a15ae96a018644322d1c7848a44b1afce" prot="public" virt="virtual"><scope>shogun::CPerceptron</scope><name>classify</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a3d2b2e860b03a856019e5eafb41a03e4" prot="public" virt="virtual"><scope>shogun::CPerceptron</scope><name>classify_example</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a1e353d4462e0c790543683a7cd35261c" prot="public" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>CLinearClassifier</name></member>
+      <member refid="classshogun_1_1CPerceptron_1ad2ebd13d401bd2309632eeb0dadf7177" prot="public" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>CPerceptron</name></member>
+      <member refid="classshogun_1_1CPerceptron_1a4259f9cbd37f1b0a7be08c49574b5815" prot="public" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>CPerceptron</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1abd48587ed93efcbb8b1ea3c40c229b1e" prot="protected" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>features</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a6966226c35c31bf278b6b038159786fe" prot="public" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>get_bias</name></member>
+      <member refid="classshogun_1_1CPerceptron_1a3bb1dfd3802728a0a9d080241b80d851" prot="public" virt="virtual"><scope>shogun::CPerceptron</scope><name>get_classifier_type</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a8ee7a0fc2702e98784765eb8ecc5d8db" prot="public" virt="virtual"><scope>shogun::CPerceptron</scope><name>get_features</name></member>
+      <member refid="classshogun_1_1CClassifier_1a787dcde8fe53a734fcb77f988d821408" prot="public" virt="virtual"><scope>shogun::CPerceptron</scope><name>get_label</name></member>
+      <member refid="classshogun_1_1CClassifier_1a5f1f62d263b6201e1624990deadba5a8" prot="public" virt="virtual"><scope>shogun::CPerceptron</scope><name>get_labels</name></member>
+      <member refid="classshogun_1_1CClassifier_1a6e48967294c55850d95235d487ce2c02" prot="public" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>get_max_train_time</name></member>
+      <member refid="classshogun_1_1CPerceptron_1a32bbced934851a47ab3e80961f765ca7" prot="public" virt="virtual"><scope>shogun::CPerceptron</scope><name>get_name</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8a3acda6819b4a4b77b656b6b9e1817c" prot="public" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>get_solver_type</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a847be7aabc3656ae0263e75b7e7933c6" prot="public" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>get_w</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1aae7a04f5eeb75662a3740afa3662dd83" prot="public" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>get_w</name></member>
+      <member refid="classshogun_1_1CClassifier_1a68f1285e63422a24319ed95910d72f73" prot="protected" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>labels</name></member>
+      <member refid="classshogun_1_1CPerceptron_1a266385b8b2063823038ac94b8cafb456" prot="protected" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>learn_rate</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a78010edf322d0188013cadfd891c1f61" prot="public" virt="virtual"><scope>shogun::CPerceptron</scope><name>load</name></member>
+      <member refid="classshogun_1_1CPerceptron_1a81d7c9a6779a936a213e6bf3a7319277" prot="protected" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>max_iter</name></member>
+      <member refid="classshogun_1_1CClassifier_1a8524d634a67f3538b112f72d7835af46" prot="protected" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>max_train_time</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1ad6012c92f6dd565478a43da7e3c779ab" prot="public" virt="virtual"><scope>shogun::CPerceptron</scope><name>save</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1af150779eb78b46fe736d56b06f76113d" prot="public" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>set_bias</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1ac2ecfddeb611425961499b644a86acaf" prot="public" virt="virtual"><scope>shogun::CPerceptron</scope><name>set_features</name></member>
+      <member refid="classshogun_1_1CClassifier_1aa6b87d22c14fc2b6970d8bf1edbb15fb" prot="public" virt="virtual"><scope>shogun::CPerceptron</scope><name>set_labels</name></member>
+      <member refid="classshogun_1_1CPerceptron_1a93e5b745d0dd7159a6dab69d62bd0edc" prot="public" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>set_learn_rate</name></member>
+      <member refid="classshogun_1_1CPerceptron_1a168d860a41c4a91aa9175ac847eabf88" prot="public" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>set_max_iter</name></member>
+      <member refid="classshogun_1_1CClassifier_1af8930a0a848388d8647c9e4604a7856d" prot="public" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>set_max_train_time</name></member>
+      <member refid="classshogun_1_1CClassifier_1a4c87d6f3a2342c3053aeca82c3cf528c" prot="public" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>set_solver_type</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a6e5d80ca592587317e5c8842d92c60f7" prot="public" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>set_w</name></member>
+      <member refid="classshogun_1_1CClassifier_1a360902e938d7b8890084c5bc6df617be" prot="protected" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>solver_type</name></member>
+      <member refid="classshogun_1_1CPerceptron_1ab2ccf7d5150ae5dd44244a65f7662680" prot="public" virt="virtual"><scope>shogun::CPerceptron</scope><name>train</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a3f02f85d6c001c1fcfb4f67fbddaffe8" prot="protected" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>w</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1ad0ca6a36ee07ca0beba61def547f6564" prot="protected" virt="non-virtual"><scope>shogun::CPerceptron</scope><name>w_dim</name></member>
+      <member refid="classshogun_1_1CClassifier_1ae7d6c7d39fb314c1092163e958ef66a8" prot="public" virt="virtual"><scope>shogun::CPerceptron</scope><name>~CClassifier</name></member>
+      <member refid="classshogun_1_1CLinearClassifier_1a9c6ccea8f5bf3a0e055aec1b4ef9fdf2" prot="public" virt="virtual"><scope>shogun::CPerceptron</scope><name>~CLinearClassifier</name></member>
+      <member refid="classshogun_1_1CPerceptron_1ac214e24dc8e5b7b2171e9c4a3b92d69b" prot="public" virt="virtual"><scope>shogun::CPerceptron</scope><name>~CPerceptron</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
